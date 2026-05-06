@@ -1,0 +1,545 @@
+ENIGMA
+(Based on Decrypto by Thomas Dagenais-Lespérance)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OVERVIEW
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Two teams each guard 4 secret code words (numbered 1–4), visible only to their own team.
+Each round, one player per team (the Encryptor) receives a secret 3-digit code and must give
+3 word clues — one per digit — without revealing the words themselves. Their own team tries to
+decode the clues (and botches it if they guess wrong). The opposing team, armed only with
+accumulated clue history from previous rounds, tries to break the code. First team to 2 breaks
+wins; first to 2 botches loses. After 8 rounds with no decisive result, most (breaks minus
+botches) wins.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ASSETS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Wallpaper: specs/enigma/wallpaper.jpg → upload to Cloudinary images/enigma/
+Banner:    specs/enigma/banner.jpg    → upload to Cloudinary images/enigma/
+
+Team colors (same as greater_fool.json):
+  Red:  #D83232
+  Blue: #4EC1D0
+
+Role avatars (reuse from greater_fool.json):
+  Red team:  https://res.cloudinary.com/liars-club/image/upload/red_owl_ansgnc.png
+  Blue team: https://res.cloudinary.com/liars-club/image/upload/blue_bat_pshd0l.png
+
+Card back for word decks / code deck:
+  Use the standard dark/mystery cardback (TBD — pick something neutral)
+
+Cardback for clue history cards:
+  Transparent (clue cards are always face-up and text is the point)
+
+Animations:
+  "Break" (successful interception): use a dramatic celebration lottie — TBD
+  "Botch" (own-team miscommunication): use a sad/failure lottie — TBD
+  (Look at Roundabout's suit-win animations for format reference)
+
+Sound effects:
+  Break: soundboard.victory (or similar success cue)
+  Botch: soundboard.sad (or similar failure cue)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PLAYER COUNT & TEAMS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+minPlayers: 4
+maxPlayers: 24
+Always exactly 2 teams: Red and Blue.
+
+Team assignment: random, like greater_fool.
+  - Shuffle allPlayers
+  - divideIndex = floor(numPlayers / 2)
+  - redTeam  = sublist(shuffled, 0, divideIndex)
+  - blueTeam = sublist(shuffled, divideIndex, end)
+  (Odd player counts give blue the extra player.)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ROLES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Default role (pre-assignment):
+  player        — "Player", team "all", default role
+
+Red team roles (all share team "red", red owl avatar):
+  redPlayer     — "Red"             (base role, most rounds)
+  redEncryptor  — "Red Encryptor"   (this round's clue-giver; rotates each round)
+  redClicker    — "Red Clicker"     (designated guesser for the team; selected once at start)
+
+Blue team roles (all share team "blue", blue bat avatar):
+  bluePlayer    — "Blue"
+  blueEncryptor — "Blue Encryptor"
+  blueClicker   — "Blue Clicker"
+
+Notes:
+  - redEncryptor and blueEncryptor are set at the start of each round and reset at the end.
+  - redClicker and blueClicker are set once during setup and remain sticky for the whole game
+    (but the active clicker for a turn is whichever of the 2 clickers is not the Encryptor).
+  - For games with ≤5 players, skip the clicker-selection vote; instead pick the clicker each
+    round as a random non-Encryptor from the team.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SCORE SYSTEM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Two scores per player, both team-wide (all players on the same team share the same value):
+  Main score   = "Code Breaks"  (number of times this team broke the opposing code)
+  Second score = "Botches"      (number of times this team botched their own decoding)
+
+Score display: show score from each team to both teams (everyone sees both team scores).
+
+Win conditions checked after each round:
+  - A team with 2 breaks wins immediately.
+  - A team with 2 botches loses immediately (the other team wins).
+  - If both happen in the same round (edge case), the team with 2 breaks wins.
+
+End-of-game (after round 8 with no decisive result):
+  winner = team with higher (breaks - botches)
+  If tied, it's a tie.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CENTRAL WIDGET LAYOUT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+dimensions: [2, 4]  — 2 rows, 4 columns
+
+Row 0 (top):    Red team's 4 position decks
+  red_1, red_2, red_3, red_4
+
+Row 1 (bottom): Blue team's 4 position decks
+  blue_1, blue_2, blue_3, blue_4
+
+Each deck:
+  - Label  = the secret word for that position (e.g. "OCEAN")
+             labelInspectors = that team only
+             (At game end, reveal all labels to everyone via setLabelInspectors)
+  - Cards  = accumulated clue history (one card added per round showing that round's clue)
+             inspectDeck = true (so any player can inspect to see the full history)
+             inspectors  = allUsers (everyone can look at the full stack)
+  - counter = true (shows how many clue rounds have passed, i.e. which round we're on)
+
+All 8 decks are always visible to all players. Only the labels are restricted.
+
+Deck visual style:
+  Red decks:  backgroundColor = #D83232 or a red tint; textColor = white
+  Blue decks: backgroundColor = #4EC1D0 or a blue tint; textColor = white
+  (Exact styling TBD — enough to visually separate the two rows)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+CARD TYPES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. WORD CARDS (set: "enigma_words", ~110 cards)
+   Use the real Decrypto word list. Each card:
+     name:  unique slug (e.g. "word_ocean")
+     label: the word in all caps (e.g. "OCEAN")
+   Used only at game setup to randomly assign 4 words per team via deck labels.
+   After setup, word cards are discarded; only the deck labels matter.
+
+2. CODE CARDS (set: "enigma_codes", 24 cards)
+   All permutations of 3 distinct digits from {1,2,3,4}.
+   Each card:
+     name:    "code_1_2_3" etc.
+     label:   "1 — 2 — 3"  (displayed if card is ever shown publicly)
+     rank:    first digit  (1–4)
+     points:  second digit (1–4)
+     weight:  third digit  (1–4)
+   At start of each round: shuffle the code deck; deal 1 privately to each Encryptor.
+   After each round: recall code cards back to the code deck.
+
+3. CLUE CARDS (generated in-game via createCard)
+   One card created per clue per round, placed directly into the corresponding position deck.
+   Each card:
+     deck:     "red_N" or "blue_N" (matching position digit from the code)
+     cardText: "[clue]"  (just the clue word/phrase — round context comes from card position)
+     facedown: false
+   These cards accumulate — after 8 rounds, each deck has up to 8 clue cards.
+   Background color should match the team (red/blue) for visual clarity.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+BEFORE LOOP ACTIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[1] Init cache
+  roundNumber = 1
+  redBreaks = 0, blueBreaks = 0
+  redBotches = 0, blueBotches = 0
+  redEncryptorIndex = 0, blueEncryptorIndex = 0
+  deckToDigit = {"red_1":1,"red_2":2,"red_3":3,"red_4":4,
+                 "blue_1":1,"blue_2":2,"blue_3":3,"blue_4":4}
+
+[2] Assign teams
+  - shuffleList(allPlayers) → restPlayers
+  - divideIndex = integerDivide(numPlayers, 2)
+  - redTeam  = sublist(restPlayers, 0, divideIndex)
+  - blueTeam = sublist(restPlayers, divideIndex, numPlayers)
+  - setRole(redPlayer, redTeam)
+  - setRole(bluePlayer, blueTeam)
+  - highlightPlayers(red, redTeam), highlightPlayers(blue, blueTeam)
+  - showScore: updateScore 0 for all; showScore for red→everyone, blue→everyone
+
+[3] Open conversation groups
+  - createTeamsConversationGroups (video: true, audio: true, private: false,
+                                   isVideoForAll: false, onlyForLargeTeams: true)
+
+[4] Set up word decks
+  - createDeck("enigma_words", set: "enigma_words") — the word card pool
+  - shuffleDeck("enigma_words")
+  - createCustomDeck("red_words_scratch"), createCustomDeck("blue_words_scratch")
+  - dealDeck(targets: redTeam[0], deck: "enigma_words", qnt: 4) — deal 4 words to a scratch hand
+    OR: deal 4 to "red_words_scratch" directly, 4 to "blue_words_scratch"
+  - For each position 1–4 (repeat x4):
+      word = getDeckCards("red_words_scratch")[repeatIndex].label
+      createCustomDeck("red_{repeatIndex+1}",
+        label: word,
+        labelInspectors: redTeam,
+        inspectDeck: true,
+        inspectors: allUsers,
+        counter: true,
+        public: true)
+      [Same for blue]
+  - moveCards(type: "deck", from: "red_words_scratch", to: discard)
+    [Same for blue] — discard the scratch word cards; labels are now set on the decks
+
+  Note: The exact mechanism for reading a card label from a scratch deck and assigning it as
+  a position deck label needs to follow the same pattern as the summary card label-reading
+  used in Roundabout. Use getDeckCards + getObjectField(card, "label") + setDeckLabel.
+
+[5] Create central widget
+  - createGenericCardWidget(dimensions: [2, 4],
+      decks: ["red_1","red_2","red_3","red_4","blue_1","blue_2","blue_3","blue_4"],
+      cardback: transparent_url)
+
+[6] Create code deck
+  - createDeck("enigma_codes", set: "enigma_codes")
+  - shuffleDeck("enigma_codes")
+
+[7] Create videobox decks for all players
+  - createVideoboxDecks(players: allPlayers)
+
+[8] Clicker selection (≥6 players only; skip for 4–5 players)
+  Pattern: mirror greater_fool's "Choose clickers" section.
+  - Each team's Encryptor (for round 1, the first player in the list) asks teammates to nominate
+    themselves as one of 2 Clickers.
+  - createVote (target_point, actors: encryptor, targets: teammates, answersQuantity: 2)
+    → save redClickers (list of 2) and blueClickers (list of 2)
+  - setRole(redClicker, redClickers[0]), setRole(redClicker, redClickers[1]) [both get the role]
+  - Same for blue
+  - showRole(from: redClicker, to: players), showRole(from: blueClicker, to: players)
+
+  For 4–5 players: no vote needed; the active clicker is computed each round as
+  randomElement(listsSubtract(redTeam, [redEncryptor])) and same for blue.
+
+[9] Notification: "Get ready! Round 1 starts now."
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+GAME LOOP  (repeat up to 8 rounds; early exit on win/loss)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+─── [A] Assign Encryptors ─────────────────────────────────────────────────────
+
+  redEncryptor  = redTeam[redEncryptorIndex % len(redTeam)]
+  blueEncryptor = blueTeam[blueEncryptorIndex % len(blueTeam)]
+  setRole(redEncryptor, redEncryptor)
+  setRole(blueEncryptor, blueEncryptor)
+  showRole(from: redEncryptor, to: players)
+  showRole(from: blueEncryptor, to: players)
+
+  For ≤5 players: also pick the active clicker for this round:
+    redActiveClicker  = randomElement(listsSubtract(redTeam,  [redEncryptor]))
+    blueActiveClicker = randomElement(listsSubtract(blueTeam, [blueEncryptor]))
+  For ≥6 players:
+    redActiveClicker  = the redClicker that is NOT the current redEncryptor
+                        = selectElement(listsSubtract(redClickers, [redEncryptor]), 0)
+                        (falls back to redClickers[0] if encryptor isn't a clicker)
+    blueActiveClicker = same pattern for blue
+
+  Cache: redEncryptor, blueEncryptor, redActiveClicker, blueActiveClicker
+
+─── [B] Deal code cards (parallel x2, one per team) ──────────────────────────
+
+  parallel: { type: "smart", qnt: 2 }
+  spaIndex=0 → red:  dealDeck(targets: redEncryptor,  deck: "enigma_codes", qnt: 1, facedown: true)
+  spaIndex=1 → blue: dealDeck(targets: blueEncryptor, deck: "enigma_codes", qnt: 1, facedown: true)
+
+  Then (emptyAction, saveValueInCache):
+    redCode  = playerHand(redEncryptor)[0]   → store full card object
+    blueCode = playerHand(blueEncryptor)[0]
+    (From these, extract redCode.rank/points/weight for digit1/2/3 when checking guesses.)
+
+─── [C] Notify Encryptors of their code ──────────────────────────────────────
+
+  parallel x2:
+  createNotification(
+    to: [redEncryptor],
+    header: "Your secret code",
+    text: formatString(
+      "Code: ($1) — ($2) — ($3)\n\n1: [red word 1]\n2: [red word 2]\n3: [red word 3]\n4: [red word 4]",
+      redCode.rank, redCode.points, redCode.weight)
+  )
+  [Same for blue Encryptor with blue words]
+
+  The word labels are fetched via getDeckLabel("red_1"), getDeckLabel("red_2"), etc.
+  These are only visible to this player so showing the words in the notification is safe.
+
+─── [D] Clue-giving phase (teams in breakout rooms) ──────────────────────────
+
+  parallel x2 (red and blue simultaneously):
+  For each digit in the code (3 sequential createInput actions):
+
+    createInput(
+      title: "Clue for position ($1) — word: ($2)",  ← only visible to encryptor
+      [title uses getDeckLabel to show the word]
+      type: "text",
+      scope: "private",
+      terminationCondition: "get_all_values",
+      actors: [encryptor],
+      question: "Give a one-word clue for word ($1) of your code (position ($2))"
+    )
+    saveValueInCache: clue_N = lastActionResult (N = 1, 2, 3)
+
+  After all 3 clues given, save per team:
+    redClue1 = first clue, redClue2 = second clue, redClue3 = third clue
+    [same for blue]
+
+  Note: The createInput question/title should remind the Encryptor which digit and which word
+  they are cluing. The digit comes from redCode.rank (clue 1), redCode.points (clue 2),
+  redCode.weight (clue 3). The word comes from getDeckLabel("red_{digit}").
+
+─── [E] Reveal clues publicly ────────────────────────────────────────────────
+
+  createNotification(
+    to: allPlayers,
+    header: "($1)'s clues — Round ($2)",
+    text: "Position 1 clue: ($3)\nPosition 2 clue: ($4)\nPosition 3 clue: ($5)",
+    [for red encryptor, then blue encryptor — two notifications]
+  )
+
+  Create 3 clue cards for red, placing each in the correct deck:
+    For digit1 (redCode.rank):
+      createCard(deck: "red_{digit1}", cardText: redClue1, background: "#D83232", textColor: "white")
+    For digit2 (redCode.points):
+      createCard(deck: "red_{digit2}", cardText: redClue2, background: "#D83232", textColor: "white")
+    For digit3 (redCode.weight):
+      createCard(deck: "red_{digit3}", cardText: redClue3, background: "#D83232", textColor: "white")
+  [Same for blue with #4EC1D0]
+
+  Note: Because clues go into the deck AT the corresponding position, the deck itself visually
+  becomes the clue history for that word. No explicit "round N" label is needed on the card —
+  the stack order is chronological.
+
+─── [F] Guessing phase ───────────────────────────────────────────────────────
+
+  Two parallel sub-phases:
+
+  SUB-PHASE 1: Own-team decoding (parallel x2)
+    Each team's active clicker selects 3 decks from their OWN row to guess their code.
+    parallel: { type: "smart", qnt: 2 }
+    spaIndex=0 → Red team decode:
+      3 sequential selectCentralWidgetDeck actions (actors: redActiveClicker, decks: [red_1..4])
+      save clicked deck IDs → convert to digits via deckToDigit map
+      redDecodeGuess = [digit1, digit2, digit3]
+    spaIndex=1 → Blue team decode:
+      same, for blueActiveClicker, decks: [blue_1..4]
+      blueDecodeGuess = [digit1, digit2, digit3]
+
+  SUB-PHASE 2: Interception — opposing team guesses (parallel x2)
+    Each team's active clicker selects 3 decks from the OPPOSING row.
+    parallel: { type: "smart", qnt: 2 }
+    spaIndex=0 → Red intercepts blue:
+      3 sequential selectCentralWidgetDeck (actors: redActiveClicker, decks: [blue_1..4])
+      Red clicker cannot see blue deck labels (labelInspectors = blueTeam only)
+      redInterceptionGuess = [digit1, digit2, digit3]
+    spaIndex=1 → Blue intercepts red:
+      same, for blueActiveClicker, decks: [red_1..4]
+      blueInterceptionGuess = [digit1, digit2, digit3]
+
+  Implementation note for 3-click guess capture:
+    Each selectCentralWidgetDeck saves the result as lastActionResult = {userId: deckId}.
+    The clicked deck is: getObjectField(lastActionResult, activeClicker[0])
+    Convert to digit: getObjectField(deckToDigit, clickedDeck)
+    Three sequential actions give guessDigit1, guessDigit2, guessDigit3.
+    Then construct the guess list = createList(guessDigit1, guessDigit2, guessDigit3).
+
+  Note on clue visibility during guessing:
+    While the red clicker is guessing the blue code, they CANNOT see the blue deck labels
+    (labelInspectors restricts this). They are navigating purely by the clue card history.
+    Their own team's labels ARE visible, so decoding is informed by knowing the words.
+
+─── [G] Reveal results & score ───────────────────────────────────────────────
+
+  Check red decode (did redTeam correctly decode their own code?):
+    redDecodeCorrect = equals(redDecodeGuess, [redCode.rank, redCode.points, redCode.weight])
+
+  Check blue decode:
+    blueDecodeCorrect = same for blue
+
+  Check red interception (did redTeam correctly guess the blue code?):
+    redInterceptionCorrect = equals(redInterceptionGuess, [blueCode.rank, blueCode.points, blueCode.weight])
+
+  Check blue interception:
+    blueInterceptionCorrect = same
+
+  Score updates:
+    If NOT redDecodeCorrect:
+      redBotches += 1
+      updateScore(secondScore: true, score: redBotches, list: redTeam)
+      notification: "($1) botched the decode! The code was ($2)-($3)-($4)" [to all]
+      animateBox(redTeam, sad animation)
+
+    If NOT blueDecodeCorrect:
+      blueBotches += 1
+      updateScore(secondScore: true, score: blueBotches, list: blueTeam)
+      notification: same for blue
+
+    If blueInterceptionCorrect:  ← blue broke red's code
+      blueBreaks += 1
+      updateScore(score: blueBreaks, list: blueTeam)
+      notification: "Blue team broke Red's code! ($1)-($2)-($3)" [to all]
+      animateBox(blueTeam, break/celebration animation)
+
+    If redInterceptionCorrect:   ← red broke blue's code
+      redBreaks += 1
+      updateScore(score: redBreaks, list: redTeam)
+      notification: "Red team broke Blue's code!" [to all]
+      animateBox(redTeam, break/celebration animation)
+
+    Also: notify all players what the correct codes were, and show what each team guessed.
+
+─── [H] Recall code cards ────────────────────────────────────────────────────
+
+    recallCards(targets: [redEncryptor, blueEncryptor], deck: "enigma_codes")
+    setRole(redPlayer, redEncryptor)   ← reset Encryptor role back to Player
+    setRole(bluePlayer, blueEncryptor)
+
+─── [I] Win / end-of-round check ─────────────────────────────────────────────
+
+    isRedWin     = greaterThanOrEqual(redBreaks,  2)
+    isBlueWin    = greaterThanOrEqual(blueBreaks, 2)
+    isRedLose    = greaterThanOrEqual(redBotches,  2)  → Blue wins
+    isBlueLose   = greaterThanOrEqual(blueBotches, 2)  → Red wins
+    isLastRound  = equals(roundNumber, 8)
+
+    If isRedWin OR isBlueLose:   → Red wins → go to postGameActions
+    If isBlueWin OR isRedLose:   → Blue wins → go to postGameActions
+    If isLastRound:               → tiebreaker: compare (breaks - botches), or tie
+    Otherwise:
+      roundNumber += 1
+      redEncryptorIndex  += 1
+      blueEncryptorIndex += 1
+      Notification: "Round ($1) begins!"
+      Continue game loop
+
+  Edge case: both teams simultaneously reach 2 breaks → the team with MORE breaks wins;
+  if exactly equal → tie.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+POST-GAME ACTIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. Destroy conversation groups (destroyConversationGroups)
+
+  2. Reveal all deck labels (setLabelInspectors, labelInspectors: allUsers for all 8 decks)
+     — now everyone can see both teams' secret words
+
+  3. Show final scores notification:
+     "Red team: ($1) breaks, ($2) botches | Blue team: ($3) breaks, ($4) botches"
+
+  4. Winner announcement:
+     Standard multi-winner notification: "($1) wins!" or "It's a tie!"
+     Use getPlayersWithMaxScore to identify winner(s) for the notification.
+
+  5. removeWidget (optional — clear the board)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SPECTATOR ↔ PLAYER TRANSITIONS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Enigma doesn't support mid-game team swaps (the team word secret would be compromised).
+  Players can become spectators between games but not between rounds.
+  Since this is a single-game experience (no "play again" loop), spectator transitions
+  are limited to post-game only.
+
+  turnPlayerToSpectatorActions: standard — update cached players list, update numPlayers.
+  turnSpectatorToPlayerActions: not applicable mid-game.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+TECHNICAL NOTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DECK LABEL ASSIGNMENT
+  At setup, we need to read a word from the top card of a scratch deck and write it as the
+  label of a position deck. Pattern:
+    word = getObjectField(getDeckCards("red_words_scratch")[0], "label")
+    setDeckLabel(deck: "red_1", label: word)
+    moveCards(type: "deck", from: "red_words_scratch", to: "discard", qnt: 1)
+  Repeat x4 for each position (using repeatIndex). Same for blue.
+
+GUESSING: 3-CLICK CODE SUBMISSION
+  Each guess = 3 sequential selectCentralWidgetDeck actions.
+  After each click:
+    clickedDeck = getObjectField(lastActionResult, activeClicker[0])
+    guessDigitN = getObjectField(deckToDigit, clickedDeck)
+  Compare: equals(createList(guessDigit1, guessDigit2, guessDigit3),
+                  createList(codeDigit1, codeDigit2, codeDigit3))
+  deckToDigit is a dict cached at start:
+    {"red_1":1,"red_2":2,"red_3":3,"red_4":4,"blue_1":1,"blue_2":2,"blue_3":3,"blue_4":4}
+
+CODE CARD DIGIT EXTRACTION
+  code card has: rank = digit1, points = digit2, weight = digit3
+  Fetch from hand: codeCard = playerHand(encryptor)[0]
+  digit1 = getObjectField(codeCard, "rank")
+  digit2 = getObjectField(codeCard, "points")
+  digit3 = getObjectField(codeCard, "weight")
+  (Save all 3 immediately after dealing to avoid needing to re-fetch in later phases.)
+
+PARALLEL TEAM ACTIONS WITH TEAM-SPECIFIC CACHE SAVES
+  For parallel x2 actions (e.g., guessing), use spaIndex to branch:
+    currentTeam = selectElement(["red", "blue"], spaIndex)
+    currentClicker = selectElement([redActiveClicker, blueActiveClicker], spaIndex)
+    currentDecks = selectElement([["red_1",...], ["blue_1",...]], spaIndex)
+  Use setCachedObjectFieldValue(objectName: "guesses", fieldName: currentTeam, value: guess)
+  to save results per-team within the same parallel action.
+  After parallel: redGuess = getCachedObjectValue("guesses", "red"), etc.
+
+LABELINSPECTORS PATTERN
+  On createCustomDeck: set labelInspectors to the team's player list (e.g. redTeam).
+  This makes the deck label visible only to those players; everyone else sees "?" or blank.
+  At game end: setLabelInspectors(deck: "red_1", labelInspectors: allUsers) for each deck.
+  Reference: greater_fool.json uses exactly this pattern for its word decks.
+
+CLUE CARD PLACEMENT
+  The code tells us which position each clue belongs to. E.g., if redCode = 3-1-4:
+    clue1 (for position 3) → createCard(deck: "red_3", cardText: clue1)
+    clue2 (for position 1) → createCard(deck: "red_1", cardText: clue2)
+    clue3 (for position 4) → createCard(deck: "red_4", cardText: clue3)
+  Use ifElse chains or a positional computation to map codeDigitN to the deck name.
+  Deck name construction: formatString("red_($1)", digit) → "red_3"
+
+ENCRYPTOR REMINDER IN CREATEINPUT
+  The createInput title/question should tell the Encryptor:
+    "Give a clue for word ($1): ($2)"
+  where arg1 = the digit (from codeDigit1/2/3) and arg2 = getDeckLabel("red_{digit}").
+  This means the encryptor knows which word they're giving a clue for, and the Ludio
+  createInput modal serves as their secret notepad.
+
+SCORING
+  All players on a team get the same score. Use updateScore with list: redTeam / blueTeam.
+  Main score (index 0) = breaks. Second score = botches.
+  showScore from: redTeam to: allPlayers (so everyone always sees both team scores).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OPEN QUESTIONS / FOLLOW-UPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- Confirm break/botch animation Lottie URLs (currently TBD)
+- Confirm cardback URL for code deck and word scratch decks
+- Confirm background color/style for clue history cards in the decks
+- Decide whether to show clue history cards as face-up text (preferred) or as inspectable
+  face-down cards (worse UX; face-up is better here)
+- Decide whether to show a "which round was each clue from" indicator on the clue cards
+  (could add "R1:", "R2:" prefix to cardText for readability — probably yes)

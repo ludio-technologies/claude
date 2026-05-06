@@ -1,0 +1,1202 @@
+{
+  "gameInitOptions": {
+    "allowRecorder": false,
+    "allowSpectatorBecomePlayer": false,
+    "allowPlayerBecomeSpectator": false,
+    "roleConfirmation": false,
+    "useDefaultRoles": true,
+    "minPlayers": 4,
+    "maxPlayers": 12,
+    "timePerRound": 5,
+    "teams": {
+      "all": {
+        "id": "all",
+        "name": "All",
+        "color": "#7B2FBE",
+        "roles": ["player", "orangePlayer", "tealPlayer"]
+      }
+    },
+    "roles": [
+      {
+        "roleInfo": {
+          "id": "player",
+          "name": "Player",
+          "description": "You and your team are trying to read each other's minds!",
+          "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
+          "team": "all",
+          "prefix": "a "
+        },
+        "isDefaultRole": true,
+        "isRequired": false
+      },
+      {
+        "roleInfo": {
+          "id": "orangePlayer",
+          "name": "Orange",
+          "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
+          "team": "all"
+        },
+        "isDefaultRole": false,
+        "isRequired": false
+      },
+      {
+        "roleInfo": {
+          "id": "tealPlayer",
+          "name": "Teal",
+          "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
+          "team": "all"
+        },
+        "isDefaultRole": false,
+        "isRequired": false
+      }
+    ],
+    "rolesPreset": {},
+    "images": {
+      "transparent": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/transparent_sbx4wv.png"
+      },
+      "banner": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/transparent_sbx4wv.png"
+      },
+      "wallpaper": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/transparent_sbx4wv.png"
+      },
+      "winner": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/winner_h5eyfr.gif"
+      }
+    },
+    "soundboard": {
+      "default": {
+        "success": "https://res.cloudinary.com/liars-club/video/upload/audio/avalon/sounds/success.mp3",
+        "failure": "https://res.cloudinary.com/liars-club/video/upload/audio/sad_music.mp3",
+        "clap": "https://res.cloudinary.com/liars-club/video/upload/audio/polite_clap.mp3"
+      }
+    }
+  },
+  "visualSettings": {
+    "isCardAnimationsOff": true
+  },
+  "beforeLoopActions": [
+    {
+      "key": "emptyAction",
+      "saveValueInCache": [
+        {
+          "name": "players",
+          "value": {"selector": "allPlayers"}
+        },
+        {
+          "name": "numPlayers",
+          "value": {
+            "selector": "listLength",
+            "params": [{"name": "list", "type": "computed", "value": {"selector": "allPlayers"}}]
+          }
+        },
+        {
+          "name": "host",
+          "value": {
+            "selector": "createList",
+            "params": [{"name": "list", "type": "cached", "value": "players.0"}]
+          }
+        },
+        {"name": "orangeScore", "value": 0},
+        {"name": "tealScore", "value": 0},
+        {"name": "playAgain", "value": true},
+        {"name": "reset", "value": false},
+        {"name": "winner", "value": "Orange"},
+        {"name": "activeTeam", "value": "orange"},
+        {"name": "guess", "value": 5},
+        {"name": "currentTarget", "value": 5},
+        {"name": "counterRight", "value": false},
+        {
+          "name": "spectrumPairs",
+          "value": [
+            ["Hot", "Cold"],
+            ["Good", "Evil"],
+            ["Fast", "Slow"],
+            ["Famous", "Unknown"],
+            ["Loud", "Quiet"],
+            ["Clean", "Dirty"],
+            ["Funny", "Serious"],
+            ["Safe", "Dangerous"],
+            ["Expensive", "Cheap"],
+            ["Healthy", "Unhealthy"],
+            ["Overrated", "Underrated"],
+            ["Common", "Rare"],
+            ["Beautiful", "Ugly"],
+            ["Old", "Young"],
+            ["Natural", "Artificial"],
+            ["Scary", "Cute"],
+            ["Lucky", "Unlucky"],
+            ["Big", "Small"],
+            ["Summer", "Winter"],
+            ["Modern", "Ancient"]
+          ]
+        }
+      ]
+    },
+    {
+      "key": "createNotification",
+      "payload": {
+        "preset": {
+          "image": "banner",
+          "header": "Wavelength",
+          "text": "A mind-reading party game. Two teams compete to read each other's minds using spectrum clues!",
+          "duration": 6,
+          "backgroundColor": "#1A0333",
+          "borderColor": "#7B2FBE",
+          "textColor": "white"
+        },
+        "cached": {"to": "players"}
+      }
+    },
+    {
+      "key": "createMixVote",
+      "payload": {
+        "preset": {
+          "title": "Tutorial mode",
+          "terminationCondition": "get_all_votes",
+          "showResultInRealTime": true,
+          "showResultDuration": 2,
+          "showResultDelay": 0,
+          "point.allowFewerAnswers": true,
+          "point.terminationCondition": "get_all_votes",
+          "poll.answersQuantity": 1,
+          "poll.targets": ["Everybody!", "Nobody!"],
+          "oneClick": true,
+          "allowRevoting": true,
+          "pollVoteTargetsOptions": {
+            "Everybody!": {
+              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+              "backgroundColor": "#D3D3D3",
+              "boxIconColor": "#D3D3D3",
+              "textColor": "black",
+              "widgetIconColor": "green"
+            },
+            "Nobody!": {
+              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+              "backgroundColor": "#D3D3D3",
+              "boxIconColor": "#D3D3D3",
+              "textColor": "black",
+              "widgetIconColor": "red"
+            }
+          },
+          "poll.terminationCondition": "get_all_votes",
+          "backgroundColor": "#1A0333",
+          "borderColor": "#7B2FBE",
+          "textColor": "white"
+        },
+        "cached": {
+          "actors": "host",
+          "point.targets": "players",
+          "point.answersQuantity": "numPlayers"
+        },
+        "computed": {
+          "question": {
+            "selector": "formatString",
+            "params": [
+              {"name": "format", "type": "preset", "value": "($1), who needs the tutorial? Click on the players or select from the middle."},
+              {"name": "arg1", "type": "computed", "value": {"selector": "getPlayerNameById", "params": [{"name": "id", "type": "cached", "value": "host.0"}]}}
+            ]
+          }
+        }
+      },
+      "saveValueInCache": [
+        {
+          "name": "voteResult",
+          "value": {"selector": "getCachedValue", "params": [{"name": "name", "type": "preset", "value": "lastActionResult.voteResult"}]}
+        },
+        {
+          "name": "learners",
+          "value": {
+            "selector": "ifElse",
+            "params": [
+              {"name": "condition", "type": "computed", "value": {"selector": "contains", "params": [
+                {"name": "list", "type": "cached", "value": "players"},
+                {"name": "element", "type": "cached", "value": "voteResult.0"}
+              ]}},
+              {"name": "thenValue", "type": "cached", "value": "voteResult"},
+              {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [
+                {"name": "condition", "type": "computed", "value": {"selector": "contains", "params": [
+                  {"name": "list", "type": "cached", "value": "voteResult"},
+                  {"name": "element", "type": "preset", "value": "Everybody!"}
+                ]}},
+                {"name": "thenValue", "type": "cached", "value": "players"},
+                {"name": "elseValue", "type": "preset", "value": []}
+              ]}}
+            ]
+          }
+        },
+        {
+          "name": "tutorial",
+          "value": {
+            "selector": "greaterThan",
+            "params": [
+              {"name": "arg1", "type": "computed", "value": {"selector": "listLength", "params": [{"name": "list", "type": "cached", "value": "learners"}]}},
+              {"name": "arg2", "type": "preset", "value": 0}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "createVote",
+      "payload": {
+        "preset": {
+          "type": "target_point",
+          "title": "Form teams",
+          "terminationCondition": "get_all_votes",
+          "allowFewerAnswers": true,
+          "showResultInRealTime": true,
+          "showResultDuration": 2,
+          "oneClick": true,
+          "backgroundColor": "#FF7043",
+          "borderColor": "#009688",
+          "textColor": "white"
+        },
+        "cached": {
+          "actors": "host",
+          "targets": "players"
+        },
+        "computed": {
+          "question": {
+            "selector": "formatString",
+            "params": [
+              {"name": "format", "type": "preset", "value": "($1), click the players for the Orange Team! Everyone else joins Teal. Pick at least 2 per team."},
+              {"name": "arg1", "type": "computed", "value": {"selector": "getPlayerNameById", "params": [{"name": "id", "type": "cached", "value": "host.0"}]}}
+            ]
+          },
+          "answersQuantity": {
+            "selector": "dec",
+            "params": [{"name": "arg", "type": "computed", "value": {"selector": "dec", "params": [{"name": "arg", "type": "cached", "value": "numPlayers"}]}}]
+          }
+        }
+      },
+      "saveValueInCache": [
+        {
+          "name": "orangeTeam",
+          "value": {"selector": "getCachedValue", "params": [{"name": "name", "type": "preset", "value": "lastActionResult.voteResult"}]}
+        }
+      ]
+    },
+    {
+      "key": "emptyAction",
+      "saveValueInCache": [
+        {
+          "name": "tealTeam",
+          "value": {
+            "selector": "listsSubtract",
+            "params": [
+              {"name": "list1", "type": "cached", "value": "players"},
+              {"name": "list2", "type": "cached", "value": "orangeTeam"}
+            ]
+          }
+        },
+        {
+          "name": "numOrange",
+          "value": {"selector": "listLength", "params": [{"name": "list", "type": "cached", "value": "orangeTeam"}]}
+        },
+        {
+          "name": "numTeal",
+          "value": {"selector": "listLength", "params": [{"name": "list", "type": "cached", "value": "tealTeam"}]}
+        }
+      ]
+    }
+  ],
+  "gameLoop": [
+    {
+      "name": "Tutorial",
+      "skipCondition": [{"selector": "logicalNOT", "params": [{"name": "arg", "type": "cached", "value": "tutorial"}]}],
+      "actions": [
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "header": "How to play: Wavelength (1/2)",
+              "text": "Two teams take turns. Each round, the active team's <b>Psychic</b> sees a secret position (1-10) on a spectrum card — e.g. Hot vs Cold.<br/><br/>The Psychic gives ONE word or phrase as a clue to hint at where the target falls on the spectrum.",
+              "duration": 15,
+              "backgroundColor": "#1A0333",
+              "borderColor": "#7B2FBE",
+              "textColor": "white"
+            },
+            "cached": {"to": "learners"}
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "header": "How to play: Wavelength (2/2)",
+              "text": "<b>Your team</b> votes on where the target is (1 = far left, 10 = far right).<br/><br/><b>The other team</b> guesses Left or Right of your answer before the reveal.<br/><br/><b>Scoring:</b> Exact = 4 pts | Off by 1 = 3 pts | Off by 2 = 2 pts | Off by 3+ = 0 pts.<br/>Correct counter-guess = 1 bonus pt for the opposing team.<br/><br/><b>First team to 10 points wins!</b>",
+              "duration": 20,
+              "backgroundColor": "#1A0333",
+              "borderColor": "#7B2FBE",
+              "textColor": "white"
+            },
+            "cached": {"to": "learners"}
+          }
+        },
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [{"name": "tutorial", "value": false}]
+        }
+      ]
+    },
+    {
+      "name": "Setup - Set orange roles",
+      "skipCondition": [{"selector": "greaterThan", "params": [{"name": "arg1", "type": "cached", "value": "gameLoopIndex"}, {"name": "arg2", "type": "preset", "value": 0}]}],
+      "repeat": {"qnt": {"type": "cached", "value": "numOrange"}, "indexVar": "repeatIndex"},
+      "actions": [
+        {
+          "key": "setRole",
+          "payload": {
+            "preset": {"roleId": "orangePlayer"},
+            "computed": {
+              "playerId": {
+                "selector": "selectElement",
+                "params": [
+                  {"name": "list", "type": "cached", "value": "orangeTeam"},
+                  {"name": "index", "type": "cached", "value": "repeatIndex"}
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Setup - Set teal roles",
+      "skipCondition": [{"selector": "greaterThan", "params": [{"name": "arg1", "type": "cached", "value": "gameLoopIndex"}, {"name": "arg2", "type": "preset", "value": 0}]}],
+      "repeat": {"qnt": {"type": "cached", "value": "numTeal"}, "indexVar": "repeatIndex"},
+      "actions": [
+        {
+          "key": "setRole",
+          "payload": {
+            "preset": {"roleId": "tealPlayer"},
+            "computed": {
+              "playerId": {
+                "selector": "selectElement",
+                "params": [
+                  {"name": "list", "type": "cached", "value": "tealTeam"},
+                  {"name": "index", "type": "cached", "value": "repeatIndex"}
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Setup - Init psychics",
+      "skipCondition": [{"selector": "greaterThan", "params": [{"name": "arg1", "type": "cached", "value": "gameLoopIndex"}, {"name": "arg2", "type": "preset", "value": 0}]}],
+      "actions": [
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "currentOrangePsychic",
+              "value": {
+                "selector": "selectElement",
+                "params": [
+                  {"name": "list", "type": "cached", "value": "orangeTeam"},
+                  {"name": "index", "type": "computed", "value": {"selector": "dec", "params": [{"name": "arg", "type": "cached", "value": "numOrange"}]}}
+                ]
+              }
+            },
+            {
+              "name": "currentTealPsychic",
+              "value": {
+                "selector": "selectElement",
+                "params": [
+                  {"name": "list", "type": "cached", "value": "tealTeam"},
+                  {"name": "index", "type": "computed", "value": {"selector": "dec", "params": [{"name": "arg", "type": "cached", "value": "numTeal"}]}}
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Round prep",
+      "actions": [
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "activeTeamPlayers",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "activeTeam"}, {"name": "arg2", "type": "preset", "value": "orange"}]}},
+                  {"name": "thenValue", "type": "cached", "value": "orangeTeam"},
+                  {"name": "elseValue", "type": "cached", "value": "tealTeam"}
+                ]
+              }
+            },
+            {
+              "name": "prevPsychicForTeam",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "activeTeam"}, {"name": "arg2", "type": "preset", "value": "orange"}]}},
+                  {"name": "thenValue", "type": "cached", "value": "currentOrangePsychic"},
+                  {"name": "elseValue", "type": "cached", "value": "currentTealPsychic"}
+                ]
+              }
+            },
+            {
+              "name": "activePsychic",
+              "value": {
+                "selector": "nextPlayer",
+                "params": [
+                  {"name": "playersList", "type": "cached", "value": "activeTeamPlayers"},
+                  {"name": "playerId", "type": "cached", "value": "prevPsychicForTeam"}
+                ]
+              }
+            },
+            {
+              "name": "currentOrangePsychic",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "activeTeam"}, {"name": "arg2", "type": "preset", "value": "orange"}]}},
+                  {"name": "thenValue", "type": "cached", "value": "activePsychic"},
+                  {"name": "elseValue", "type": "cached", "value": "currentOrangePsychic"}
+                ]
+              }
+            },
+            {
+              "name": "currentTealPsychic",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "activeTeam"}, {"name": "arg2", "type": "preset", "value": "teal"}]}},
+                  {"name": "thenValue", "type": "cached", "value": "activePsychic"},
+                  {"name": "elseValue", "type": "cached", "value": "currentTealPsychic"}
+                ]
+              }
+            },
+            {
+              "name": "activeNonPsychics",
+              "value": {
+                "selector": "listsSubtract",
+                "params": [
+                  {"name": "list1", "type": "cached", "value": "activeTeamPlayers"},
+                  {"name": "list2", "type": "computed", "value": {"selector": "createList", "params": [{"name": "list", "type": "cached", "value": "activePsychic"}]}}
+                ]
+              }
+            },
+            {
+              "name": "opposingTeam",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "activeTeam"}, {"name": "arg2", "type": "preset", "value": "orange"}]}},
+                  {"name": "thenValue", "type": "cached", "value": "tealTeam"},
+                  {"name": "elseValue", "type": "cached", "value": "orangeTeam"}
+                ]
+              }
+            },
+            {
+              "name": "spectrumIndex",
+              "value": {
+                "selector": "randomNumber",
+                "params": [
+                  {"name": "max", "type": "preset", "value": 19},
+                  {"name": "min", "type": "preset", "value": 0}
+                ]
+              }
+            },
+            {
+              "name": "spectrumPair",
+              "value": {
+                "selector": "selectElement",
+                "params": [
+                  {"name": "list", "type": "cached", "value": "spectrumPairs"},
+                  {"name": "index", "type": "cached", "value": "spectrumIndex"}
+                ]
+              }
+            },
+            {
+              "name": "spectrumLeft",
+              "value": {
+                "selector": "selectElement",
+                "params": [
+                  {"name": "list", "type": "cached", "value": "spectrumPair"},
+                  {"name": "index", "type": "preset", "value": 0}
+                ]
+              }
+            },
+            {
+              "name": "spectrumRight",
+              "value": {
+                "selector": "selectElement",
+                "params": [
+                  {"name": "list", "type": "cached", "value": "spectrumPair"},
+                  {"name": "index", "type": "preset", "value": 1}
+                ]
+              }
+            },
+            {
+              "name": "currentTarget",
+              "value": {
+                "selector": "randomNumber",
+                "params": [
+                  {"name": "max", "type": "preset", "value": 10},
+                  {"name": "min", "type": "preset", "value": 1}
+                ]
+              }
+            },
+            {
+              "name": "activePsychicName",
+              "value": {
+                "selector": "getPlayerNameById",
+                "params": [{"name": "id", "type": "cached", "value": "activePsychic"}]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Show spectrum and target",
+      "actions": [
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "header": "New Round!",
+              "duration": 5,
+              "backgroundColor": "#1A0333",
+              "borderColor": "#7B2FBE",
+              "textColor": "white"
+            },
+            "cached": {"to": "players"},
+            "computed": {
+              "text": {
+                "selector": "formatString",
+                "params": [
+                  {"name": "format", "type": "preset", "value": "Spectrum: ($1)  <--->  ($2)<br/><br/>Waiting for ($3) to give a clue..."},
+                  {"name": "arg1", "type": "cached", "value": "spectrumLeft"},
+                  {"name": "arg2", "type": "cached", "value": "spectrumRight"},
+                  {"name": "arg3", "type": "cached", "value": "activePsychicName"}
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "header": "Your Secret Target",
+              "duration": 15,
+              "backgroundColor": "#FF7043",
+              "borderColor": "white",
+              "textColor": "white"
+            },
+            "computed": {
+              "to": {
+                "selector": "createList",
+                "params": [{"name": "list", "type": "cached", "value": "activePsychic"}]
+              },
+              "text": {
+                "selector": "formatString",
+                "params": [
+                  {"name": "format", "type": "preset", "value": "Spectrum: ($1) <---> ($2)<br/>Your target: <b>($3) / 10</b><br/><br/>1 = far ($1) side | 10 = far ($2) side<br/><br/>Think of your clue, then hit OK!"},
+                  {"name": "arg1", "type": "cached", "value": "spectrumLeft"},
+                  {"name": "arg2", "type": "cached", "value": "spectrumRight"},
+                  {"name": "arg3", "type": "cached", "value": "currentTarget"}
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Psychic gives clue",
+      "actions": [
+        {
+          "key": "createInput",
+          "payload": {
+            "preset": {
+              "type": "text",
+              "terminationCondition": "get_all_values",
+              "title": "Your clue",
+              "private": true,
+              "scope": "player"
+            },
+            "computed": {
+              "question": {
+                "selector": "formatString",
+                "params": [
+                  {"name": "format", "type": "preset", "value": "Give ONE word or phrase as a clue for position ($1) on the spectrum: ($2) <---> ($3)"},
+                  {"name": "arg1", "type": "cached", "value": "currentTarget"},
+                  {"name": "arg2", "type": "cached", "value": "spectrumLeft"},
+                  {"name": "arg3", "type": "cached", "value": "spectrumRight"}
+                ]
+              },
+              "actors": {
+                "selector": "createList",
+                "params": [{"name": "list", "type": "cached", "value": "activePsychic"}]
+              },
+              "duration": {
+                "selector": "ifElse",
+                "params": [
+                  {"name": "condition", "type": "computed", "value": {"selector": "contains", "params": [
+                    {"name": "list", "type": "computed", "value": {"selector": "allConnectedUsers"}},
+                    {"name": "element", "type": "cached", "value": "activePsychic"}
+                  ]}},
+                  {"name": "thenValue", "type": "preset", "value": 90},
+                  {"name": "elseValue", "type": "preset", "value": 1}
+                ]
+              }
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "currentClue",
+              "value": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {"name": "objectName", "type": "preset", "value": "lastActionResult"},
+                  {"name": "value", "type": "cached", "value": "activePsychic"},
+                  {"name": "defaultValue", "type": "preset", "value": "(no clue given)"}
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Announce clue",
+      "actions": [
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "duration": 6,
+              "backgroundColor": "#1A0333",
+              "borderColor": "#7B2FBE",
+              "textColor": "white"
+            },
+            "cached": {"to": "players"},
+            "computed": {
+              "header": {
+                "selector": "formatString",
+                "params": [
+                  {"name": "format", "type": "preset", "value": "($1)'s clue: \"($2)\""},
+                  {"name": "arg1", "type": "cached", "value": "activePsychicName"},
+                  {"name": "arg2", "type": "cached", "value": "currentClue"}
+                ]
+              },
+              "text": {
+                "selector": "formatString",
+                "params": [
+                  {"name": "format", "type": "preset", "value": "Spectrum: ($1) <---> ($2)<br/><br/>Discuss with your team, then vote on the target position 1-10!"},
+                  {"name": "arg1", "type": "cached", "value": "spectrumLeft"},
+                  {"name": "arg2", "type": "cached", "value": "spectrumRight"}
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Team guesses",
+      "actions": [
+        {
+          "key": "createVote",
+          "payload": {
+            "preset": {
+              "type": "target_poll",
+              "title": "Where is the target?",
+              "terminationCondition": "get_majority",
+              "targets": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+              "showResultInRealTime": true,
+              "showResultDuration": 2,
+              "oneClick": true,
+              "allowRevoting": true,
+              "duration": 60,
+              "backgroundColor": "#1A0333",
+              "borderColor": "#7B2FBE",
+              "textColor": "white"
+            },
+            "cached": {"actors": "activeNonPsychics"},
+            "computed": {
+              "question": {
+                "selector": "formatString",
+                "params": [
+                  {"name": "format", "type": "preset", "value": "($1) said '($2)'. Spectrum: ($3) <---> ($4). Vote for target position 1-10!"},
+                  {"name": "arg1", "type": "cached", "value": "activePsychicName"},
+                  {"name": "arg2", "type": "cached", "value": "currentClue"},
+                  {"name": "arg3", "type": "cached", "value": "spectrumLeft"},
+                  {"name": "arg4", "type": "cached", "value": "spectrumRight"}
+                ]
+              }
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "guess",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {"name": "condition", "type": "computed", "value": {"selector": "isTargetGotMajority", "params": [{"name": "voteResult", "type": "cached", "value": "lastActionResult"}, {"name": "target", "type": "preset", "value": "1"}]}},
+                  {"name": "thenValue", "type": "preset", "value": 1},
+                  {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [
+                    {"name": "condition", "type": "computed", "value": {"selector": "isTargetGotMajority", "params": [{"name": "voteResult", "type": "cached", "value": "lastActionResult"}, {"name": "target", "type": "preset", "value": "2"}]}},
+                    {"name": "thenValue", "type": "preset", "value": 2},
+                    {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [
+                      {"name": "condition", "type": "computed", "value": {"selector": "isTargetGotMajority", "params": [{"name": "voteResult", "type": "cached", "value": "lastActionResult"}, {"name": "target", "type": "preset", "value": "3"}]}},
+                      {"name": "thenValue", "type": "preset", "value": 3},
+                      {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [
+                        {"name": "condition", "type": "computed", "value": {"selector": "isTargetGotMajority", "params": [{"name": "voteResult", "type": "cached", "value": "lastActionResult"}, {"name": "target", "type": "preset", "value": "4"}]}},
+                        {"name": "thenValue", "type": "preset", "value": 4},
+                        {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [
+                          {"name": "condition", "type": "computed", "value": {"selector": "isTargetGotMajority", "params": [{"name": "voteResult", "type": "cached", "value": "lastActionResult"}, {"name": "target", "type": "preset", "value": "5"}]}},
+                          {"name": "thenValue", "type": "preset", "value": 5},
+                          {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [
+                            {"name": "condition", "type": "computed", "value": {"selector": "isTargetGotMajority", "params": [{"name": "voteResult", "type": "cached", "value": "lastActionResult"}, {"name": "target", "type": "preset", "value": "6"}]}},
+                            {"name": "thenValue", "type": "preset", "value": 6},
+                            {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [
+                              {"name": "condition", "type": "computed", "value": {"selector": "isTargetGotMajority", "params": [{"name": "voteResult", "type": "cached", "value": "lastActionResult"}, {"name": "target", "type": "preset", "value": "7"}]}},
+                              {"name": "thenValue", "type": "preset", "value": 7},
+                              {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [
+                                {"name": "condition", "type": "computed", "value": {"selector": "isTargetGotMajority", "params": [{"name": "voteResult", "type": "cached", "value": "lastActionResult"}, {"name": "target", "type": "preset", "value": "8"}]}},
+                                {"name": "thenValue", "type": "preset", "value": 8},
+                                {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [
+                                  {"name": "condition", "type": "computed", "value": {"selector": "isTargetGotMajority", "params": [{"name": "voteResult", "type": "cached", "value": "lastActionResult"}, {"name": "target", "type": "preset", "value": "9"}]}},
+                                  {"name": "thenValue", "type": "preset", "value": 9},
+                                  {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [
+                                    {"name": "condition", "type": "computed", "value": {"selector": "isTargetGotMajority", "params": [{"name": "voteResult", "type": "cached", "value": "lastActionResult"}, {"name": "target", "type": "preset", "value": "10"}]}},
+                                    {"name": "thenValue", "type": "preset", "value": 10},
+                                    {"name": "elseValue", "type": "preset", "value": 5}
+                                  ]}}
+                                ]}}
+                              ]}}
+                            ]}}
+                          ]}}
+                        ]}}
+                      ]}}
+                    ]}}
+                  ]}}
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Counter-guess",
+      "actions": [
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "header": "Counter-guess time!",
+              "duration": 5,
+              "backgroundColor": "#1A0333",
+              "borderColor": "#7B2FBE",
+              "textColor": "white"
+            },
+            "cached": {"to": "players"},
+            "computed": {
+              "text": {
+                "selector": "formatString",
+                "params": [
+                  {"name": "format", "type": "preset", "value": "($1) guessed position ($2) / 10 on spectrum ($3) <---> ($4).<br/><br/>Opposing team: vote LEFT or RIGHT of their guess!"},
+                  {"name": "arg1", "type": "cached", "value": "activePsychicName"},
+                  {"name": "arg2", "type": "cached", "value": "guess"},
+                  {"name": "arg3", "type": "cached", "value": "spectrumLeft"},
+                  {"name": "arg4", "type": "cached", "value": "spectrumRight"}
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "createVote",
+          "payload": {
+            "preset": {
+              "type": "target_poll",
+              "title": "Left or Right?",
+              "terminationCondition": "get_majority",
+              "targets": ["Left", "Right"],
+              "showResultInRealTime": true,
+              "showResultDuration": 2,
+              "oneClick": true,
+              "allowRevoting": true,
+              "duration": 30,
+              "backgroundColor": "#009688",
+              "borderColor": "white",
+              "textColor": "white"
+            },
+            "cached": {"actors": "opposingTeam"},
+            "computed": {
+              "question": {
+                "selector": "formatString",
+                "params": [
+                  {"name": "format", "type": "preset", "value": "Is the real target to the LEFT or RIGHT of position ($1)?"},
+                  {"name": "arg1", "type": "cached", "value": "guess"}
+                ]
+              }
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "counterRight",
+              "value": {
+                "selector": "isTargetGotMajority",
+                "params": [
+                  {"name": "voteResult", "type": "cached", "value": "lastActionResult"},
+                  {"name": "target", "type": "preset", "value": "Right"}
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reveal and score",
+      "actions": [
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "diff",
+              "value": {
+                "selector": "abs",
+                "params": [{"name": "arg", "type": "computed", "value": {"selector": "subtract", "params": [
+                  {"name": "arg1", "type": "cached", "value": "guess"},
+                  {"name": "arg2", "type": "cached", "value": "currentTarget"}
+                ]}}]
+              }
+            },
+            {
+              "name": "earnedPoints",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "diff"}, {"name": "arg2", "type": "preset", "value": 0}]}},
+                  {"name": "thenValue", "type": "preset", "value": 4},
+                  {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [
+                    {"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "diff"}, {"name": "arg2", "type": "preset", "value": 1}]}},
+                    {"name": "thenValue", "type": "preset", "value": 3},
+                    {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [
+                      {"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "diff"}, {"name": "arg2", "type": "preset", "value": 2}]}},
+                      {"name": "thenValue", "type": "preset", "value": 2},
+                      {"name": "elseValue", "type": "preset", "value": 0}
+                    ]}}
+                  ]}}
+                ]
+              }
+            },
+            {
+              "name": "counterCorrect",
+              "value": {
+                "selector": "logicalAND",
+                "params": [
+                  {"name": "arg1", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "diff"}, {"name": "arg2", "type": "preset", "value": 0}]}}]}},
+                  {"name": "arg2", "type": "computed", "value": {"selector": "ifElse", "params": [
+                    {"name": "condition", "type": "computed", "value": {"selector": "greaterThan", "params": [{"name": "arg1", "type": "cached", "value": "currentTarget"}, {"name": "arg2", "type": "cached", "value": "guess"}]}},
+                    {"name": "thenValue", "type": "cached", "value": "counterRight"},
+                    {"name": "elseValue", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "cached", "value": "counterRight"}]}}
+                  ]}}
+                ]
+              }
+            },
+            {
+              "name": "counterPoint",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {"name": "condition", "type": "cached", "value": "counterCorrect"},
+                  {"name": "thenValue", "type": "preset", "value": 1},
+                  {"name": "elseValue", "type": "preset", "value": 0}
+                ]
+              }
+            },
+            {
+              "name": "orangeScore",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "activeTeam"}, {"name": "arg2", "type": "preset", "value": "orange"}]}},
+                  {"name": "thenValue", "type": "computed", "value": {"selector": "add", "params": [{"name": "arg1", "type": "cached", "value": "orangeScore"}, {"name": "arg2", "type": "cached", "value": "earnedPoints"}]}},
+                  {"name": "elseValue", "type": "computed", "value": {"selector": "add", "params": [{"name": "arg1", "type": "cached", "value": "orangeScore"}, {"name": "arg2", "type": "cached", "value": "counterPoint"}]}}
+                ]
+              }
+            },
+            {
+              "name": "tealScore",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "activeTeam"}, {"name": "arg2", "type": "preset", "value": "teal"}]}},
+                  {"name": "thenValue", "type": "computed", "value": {"selector": "add", "params": [{"name": "arg1", "type": "cached", "value": "tealScore"}, {"name": "arg2", "type": "cached", "value": "earnedPoints"}]}},
+                  {"name": "elseValue", "type": "computed", "value": {"selector": "add", "params": [{"name": "arg1", "type": "cached", "value": "tealScore"}, {"name": "arg2", "type": "cached", "value": "counterPoint"}]}}
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "duration": 8,
+              "sounds.waitForSoundEnd": false,
+              "backgroundColor": "#1A0333",
+              "borderColor": "#7B2FBE",
+              "textColor": "white"
+            },
+            "cached": {
+              "to": "players",
+              "playList.0": "players"
+            },
+            "computed": {
+              "header": {
+                "selector": "formatString",
+                "params": [
+                  {"name": "format", "type": "preset", "value": "Target was ($1)/10 — Guess was ($2)/10"},
+                  {"name": "arg1", "type": "cached", "value": "currentTarget"},
+                  {"name": "arg2", "type": "cached", "value": "guess"}
+                ]
+              },
+              "text": {
+                "selector": "formatString",
+                "params": [
+                  {"name": "format", "type": "preset", "value": "Active team: +($1) pts. Opposing team guessed ($2) — ($3)."},
+                  {"name": "arg1", "type": "cached", "value": "earnedPoints"},
+                  {"name": "arg2", "type": "computed", "value": {"selector": "ifElse", "params": [
+                    {"name": "condition", "type": "cached", "value": "counterRight"},
+                    {"name": "thenValue", "type": "preset", "value": "Right"},
+                    {"name": "elseValue", "type": "preset", "value": "Left"}
+                  ]}},
+                  {"name": "arg3", "type": "computed", "value": {"selector": "ifElse", "params": [
+                    {"name": "condition", "type": "cached", "value": "counterCorrect"},
+                    {"name": "thenValue", "type": "preset", "value": "+1 pt!"},
+                    {"name": "elseValue", "type": "preset", "value": "no point"}
+                  ]}}
+                ]
+              },
+              "sounds.list": {
+                "selector": "ifElse",
+                "params": [
+                  {"name": "condition", "type": "computed", "value": {"selector": "greaterThan", "params": [{"name": "arg1", "type": "cached", "value": "earnedPoints"}, {"name": "arg2", "type": "preset", "value": 0}]}},
+                  {"name": "thenValue", "type": "preset", "value": ["success"]},
+                  {"name": "elseValue", "type": "preset", "value": ["failure"]}
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "header": "Score Update",
+              "duration": 4,
+              "backgroundColor": "#1A0333",
+              "borderColor": "#7B2FBE",
+              "textColor": "white"
+            },
+            "cached": {"to": "players"},
+            "computed": {
+              "text": {
+                "selector": "formatString",
+                "params": [
+                  {"name": "format", "type": "preset", "value": "Orange: ($1) / 10   |   Teal: ($2) / 10"},
+                  {"name": "arg1", "type": "cached", "value": "orangeScore"},
+                  {"name": "arg2", "type": "cached", "value": "tealScore"}
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "End game?",
+      "checkWinCondition": true,
+      "actions": [
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "winner",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {"name": "condition", "type": "computed", "value": {"selector": "greaterThan", "params": [{"name": "arg1", "type": "cached", "value": "orangeScore"}, {"name": "arg2", "type": "cached", "value": "tealScore"}]}},
+                  {"name": "thenValue", "type": "preset", "value": "Orange"},
+                  {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [
+                    {"name": "condition", "type": "computed", "value": {"selector": "greaterThan", "params": [{"name": "arg1", "type": "cached", "value": "tealScore"}, {"name": "arg2", "type": "cached", "value": "orangeScore"}]}},
+                    {"name": "thenValue", "type": "preset", "value": "Teal"},
+                    {"name": "elseValue", "type": "preset", "value": "Both teams"}
+                  ]}}
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "createVote",
+          "payload": {
+            "preset": {
+              "title": "PLAY AGAIN?",
+              "type": "target_poll",
+              "terminationCondition": "get_majority",
+              "showResultInRealTime": true,
+              "showResultDuration": 1,
+              "showResultDelay": 0,
+              "targets": ["Reset scores", "Keep scores", "I'M SO DONE"],
+              "pollVoteTargetsOptions": {
+                "Keep scores": {
+                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                  "backgroundColor": "#D3D3D3",
+                  "boxIconColor": "#D3D3D3",
+                  "textColor": "black",
+                  "widgetIconColor": "green"
+                },
+                "Reset scores": {
+                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                  "backgroundColor": "#D3D3D3",
+                  "boxIconColor": "#D3D3D3",
+                  "textColor": "black",
+                  "widgetIconColor": "blue"
+                },
+                "I'M SO DONE": {
+                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+                  "backgroundColor": "#D3D3D3",
+                  "boxIconColor": "#D3D3D3",
+                  "textColor": "black",
+                  "widgetIconColor": "red"
+                }
+              },
+              "duration": 120,
+              "question": "Would you like to play another round?",
+              "allowRevoting": true,
+              "backgroundColor": "#1A0333",
+              "borderColor": "#7B2FBE",
+              "textColor": "white"
+            },
+            "cached": {"actors": "host"}
+          },
+          "saveValueInCache": [
+            {
+              "name": "playAgain",
+              "value": {
+                "selector": "logicalNOT",
+                "params": [{"name": "arg", "type": "computed", "value": {"selector": "isTargetGotMajority", "params": [
+                  {"name": "voteResult", "type": "cached", "value": "lastActionResult"},
+                  {"name": "target", "type": "preset", "value": "I'M SO DONE"}
+                ]}}]
+              }
+            },
+            {
+              "name": "reset",
+              "value": {
+                "selector": "isTargetGotMajority",
+                "params": [
+                  {"name": "voteResult", "type": "cached", "value": "lastActionResult"},
+                  {"name": "target", "type": "preset", "value": "Reset scores"}
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reset scores",
+      "skipCondition": [{"selector": "logicalNOT", "params": [{"name": "arg", "type": "cached", "value": "reset"}]}],
+      "actions": [
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {"name": "orangeScore", "value": 0},
+            {"name": "tealScore", "value": 0}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "End round",
+      "actions": [
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "activeTeam",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "activeTeam"}, {"name": "arg2", "type": "preset", "value": "orange"}]}},
+                  {"name": "thenValue", "type": "preset", "value": "teal"},
+                  {"name": "elseValue", "type": "preset", "value": "orange"}
+                ]
+              }
+            },
+            {"name": "reset", "value": false},
+            {"name": "playAgain", "value": true}
+          ]
+        }
+      ]
+    }
+  ],
+  "playersWinCondition": {
+    "gameOverCondition": {
+      "selector": "logicalOR",
+      "params": [
+        {"name": "arg1", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "cached", "value": "playAgain"}]}},
+        {"name": "arg2", "type": "computed", "value": {"selector": "greaterThanOrEqual", "params": [{"name": "arg1", "type": "cached", "value": "orangeScore"}, {"name": "arg2", "type": "preset", "value": 10}]}},
+        {"name": "arg3", "type": "computed", "value": {"selector": "greaterThanOrEqual", "params": [{"name": "arg1", "type": "cached", "value": "tealScore"}, {"name": "arg2", "type": "preset", "value": 10}]}}
+      ]
+    },
+    "winners": {
+      "selector": "ifElse",
+      "params": [
+        {"name": "condition", "type": "computed", "value": {"selector": "greaterThan", "params": [{"name": "arg1", "type": "cached", "value": "orangeScore"}, {"name": "arg2", "type": "cached", "value": "tealScore"}]}},
+        {"name": "thenValue", "type": "cached", "value": "orangeTeam"},
+        {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [
+          {"name": "condition", "type": "computed", "value": {"selector": "greaterThan", "params": [{"name": "arg1", "type": "cached", "value": "tealScore"}, {"name": "arg2", "type": "cached", "value": "orangeScore"}]}},
+          {"name": "thenValue", "type": "cached", "value": "tealTeam"},
+          {"name": "elseValue", "type": "cached", "value": "players"}
+        ]}}
+      ]
+    }
+  },
+  "postGameActions": [
+    {
+      "key": "createNotification",
+      "payload": {
+        "preset": {
+          "image": "winner",
+          "backgroundColor": "#1A0333",
+          "borderColor": "#7B2FBE"
+        },
+        "cached": {"to": "players"},
+        "computed": {
+          "header": {
+            "selector": "ifElse",
+            "params": [
+              {"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "winner"}, {"name": "arg2", "type": "preset", "value": "Both teams"}]}},
+              {"name": "thenValue", "type": "preset", "value": "Both teams share the win!"},
+              {"name": "elseValue", "type": "computed", "value": {"selector": "formatString", "params": [
+                {"name": "format", "type": "preset", "value": "($1) wins!"},
+                {"name": "arg1", "type": "cached", "value": "winner"}
+              ]}}
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

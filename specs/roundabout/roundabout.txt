@@ -1,0 +1,47 @@
+Roundabout
+
+Roundabout is a trick-taking card game with the exact same rules as the game “9 Lives” by Taiki Shinzawa. We are retheming it, so the name of the game, the colors of the suits, etc. will be different. Also, instead of forcing the game to be 3 rounds, it can be as many rounds as the players like.
+
+In terms of implementation, this game is most similar to Anger Management which also involves a trump suit and bidding. You can also look at Emeralds, Topaz 25, and Yo Ho Ho in @game_jsons for more examples of how Ludio implements trick-taking card games.
+
+You will need to create the playing cards (4 suits, the numbers 1 to 9 in each). To do this, you can use the generate_deck.py script in the folder, which is a script I’ve used in the past - it takes the parameters of the cards and generates images in the same folder. The 4 suits are red, green, blue, and yellow. We’ll have the red cards show the image of a bike , the green cards show an image of a scooter, the blue cards shown an image of roller blades, and the yellow cards show and image of a skateboard. You can find the images in the same folder as this file. For the red cards, include the string “****” under the image - we are making red is the trump suit in this game so the visual reminder is helpful.
+
+You will also need to create the bid cards. In the game, players can make hard bids (bidding exactly 1 number) or soft bids (bidding a range of 2 consecutive numbers). The possible bids are 1, 2, 3, 4, 1-2, 2-3, and 3-4. Bids also “wrap around” per the original game, meaning a bid of 1 is really a bid of 1 or 5. So when you create the bid cards, put a subscript after the number showing the higher equivalent bid.
+
+We want the bid cards to have the same dimensions as the playing cards but the want the numbers on those bid cards (whether it’s a single number or a range like 3(subscript 7)-4 (subscript 8)) to be large. Feel free to modify generate_deck.py to generate cards that look like the sample card in this folder (1.png).
+
+The logic for the game json is as follows. Import the playing cards (dependent on the player count) and the bid cards into the game. Shuffle the playing cards. 
+
+Create a central widget with 2 rows and N columns, where N is the number of players. The cards for each trick will go in the first row, and “summary cards” will go in the second row (to be explained). The decks in the top row should be dynamically relabelled to reflect the player order for that trick, just like in other trick-taking games on Ludio.
+
+Deal 9 playing cards to each player.
+
+Deal 1 copy of each bid card (1,2,3,4,1-2,2-3,3-4) to each player. Choose a first player. That player plays a bid card to their videobox deck (this is a deck of cards that appears inside their camera on Ludio for everyone to see, videobox decks are typically created in the beforeLoopActions part of the json). The next player then bids until all players have bid. In the game, bids blocks each other … each number can only be bid up to twice. So if the first player bids 2-3 and the second player bids 2-3, nobody after that can bid 2, 3, 1-2, 2-3, or 3-4. You will have to write this logic. I’d recommend including a “range” field in the cards json for each bid card so that you can start with a list of all possible bids like [1,1,2,2,3,3,4,4] and then subtract off the range of each bid card played. Use the trueSubtract(list1, list2) selector if you’re trying to exactly remove items in list2 from list1 … the listsSubtract(list1, list2) subtract removes all instances of list2 items from list1.
+
+After the bidding, collect all the bids cards from the players. Now we start playing tricks starting with the first player. Per usual trick-taking rules, players must follow suit … the highest card in the lead suit wins the trick, unless trump cards were played in which case the highest trump card wins. The winner of the trick leads the next suit. In Roundabout, the winner of the trick takes any card they didn’t play back into their hand before the cards are cleared … you can let the trick winner select another player’s card using selectCentralWidgetDeck. To visually emphasize which card the trick winner took back, add a notification saying “[player name] collected the [card name]!” and show an image of that card.
+
+Show an animation for the trick winner based on the suit they won with accompanied by a clapping sound effect. Here are the animations for the 4 suits:
+
+Red: https://lottie.host/2d809489-60ca-469b-861e-0a719243720c/NhPJINAZCA.json Yellow: https://lottie.host/193767cf-8f39-4a4d-8031-a0513d8624fd/4d57alQ74s.json
+Green: https://lottie.host/903a2996-dd02-4628-a9f4-4191ef95a3d5/T6HIP0NVD3.json
+Blue: https://lottie.host/b06c923c-d14d-4a1f-95df-1a68c03e0d76/NYEXRBUTPi.json
+
+One feature of the original game is that players can see the cardbacks of other players’ playing cards. To implement this mechanic, we will generate summary cards for each player at the start of each round, and then update them after each trick. A player’s summary card will be a card with the text “RED R, YELLOW Y, BLUE B, GREEN G” where the numbers R, Y, B, and G are numbers telling you how many Red, Yellow, Blue, and Green cards that player has. You can see the Super Dark game json in @game_jsons to see an example of how summary cards are created using the createCard action.
+
+This describes how to implement 1 round. Players keep playing tricks until any player runs out of cards. This is different from other games because players may end up with different numbers of cards because of the trick winners taking back a card. At the end of the round, players get 4 points for successfully making their hard bid, 2 points for making their soft bid, or negative points for how off they were if they didn’t make their bid. Remember that making your bid includes “wrapping around” and making your bid plus 4.
+
+Show 2 scores for each player. The “regular” score is the number of points this player has in the game (updated after each round). The second score shows the number of tricks that player has won in the current round. See Topaz 25 for an example of how to do this - you will have to also keep track of how many tricks players have won in a separate cached variable, since Ludio currently has no way to fetch the second score of a player using any selectors.
+
+At the end of the round, ask the host whether to play again (and reset the scores), play again (and keep the scores), or end the game. Players can become spectators and vice versa between rounds so this has to be implemented too. These design patterns can be found in Emeralds for reference. If the game is continuing, collect back all the playing cards, shuffle them, and re-deal them. The first player in the round rotates for each round (compute this after allowing players to become spectators and vice versa, like in Emeralds).
+
+Banner image: https://res.cloudinary.com/liars-club/image/upload/images/roundabout/roundabout_icon.png
+Wallpaper: https://res.cloudinary.com/liars-club/image/upload/images/roundabout/roundabout.jpg
+
+Upload any assets you need to reference in the game/card jsons into the Cloudinary folder. Your credentials for Cloudinary are:
+
+username: team@ludio.gg
+password: 5Sbh5fD3!7dx7AcP
+
+And here is the location of the folder: https://console.cloudinary.com/app/c-db62cd0bb62f56b86d9838e6546fd2/assets/media_library/folders/cef10c84a28604e3d9e20894df5f85b5bb
+
+You will need those image urls when constructing the cards json for this game. When fetching an image url, exclude the version number from the url so that we are always using the latest version of the image.

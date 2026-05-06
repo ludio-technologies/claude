@@ -1,0 +1,47 @@
+CRITICAL Rules & Engine Quirks You Must Follow
+1. JSON Structure, Setup & Flow
+*  Architecture: A game JSON has distinct sections: gameInitOptions, visualSettings, beforeLoopActions, gameLoop, winCondition (or playersWinCondition), and postGameActions.  
+*  beforeLoopActions Limitations: This is a simple list of actions, NOT action groups. You CANNOT use repeat or parallel modifiers here. Do all deck creations (createCustomDeck, createDeck) and array initializations here so they execute only once.  
+*  Dynamic Setup: If you need dynamic setup based on player count, do it in the first group of the gameLoop with a skipCondition of gameLoopIndex > 0.  
+*  Score Initialization: Player scores default to 0 at game start. Never call updateScore to initialize scores to 0 — it is unnecessary.  
+*  showScore Placement: showScore should typically be called in beforeLoopActions so the score display is visible from the very start of the game.  
+*  Game Loop Execution: The gameLoop is a list of action groups (objects or arrays for nested loops). It repeats until playersWinCondition.gameOverCondition evaluates to true. To skip an action or action group, use a skipCondition that evaluates to a boolean.  
+*  Idiomatic Double Loops: Nested loops automatically restart at the top of their bracket unless a cached variable isActionLoop evaluates to false. If you need a nested loop, wrap the outer loop in square brackets [] (which provides a native loopIndex variable). Inside that bracket, use an emptyAction to evaluate an isActionLoop boolean to natively break out of the outer loop, and use a repeat block for the inner loop. You do not need to add skipCondition: isActionLoop == false to subsequent actions inside the bracket; the engine handles the exit automatically.  
+2. Payloads & Selectors (Strict Syntax)
+*  Payload Types: Actions take inputs in their payload divided into preset (primitives), cached (variables saved to cache), and computed (values derived dynamically using selector functions). Selector functions include ifElse, listLength, incObjectFieldValue, getPlayersWithMaxScore, listsSubtract, etc.  
+*  Strict Param Structure: Inside a selector, EVERY item in the params list MUST be an object with exactly three keys: "name", "type", and "value". Never use shorthand.  
+*  Eager Evaluation Trap: In an ifElse selector, Ludio computes BOTH the thenValue and elseValue regardless of the condition. You must never evaluate the index of a list if that list might be empty, as it will crash.  
+* Safe Lookups & Manipulation:
+    * Always use the defaultValue field with the getCachedObjectValue selector so the engine doesn't crash if the key doesn't exist yet.  
+    * NEVER use the equals selector to compare booleans. To check if a variable is true, use getCachedValue. To check if it is false, use the logicalNOT selector.  
+    * Use the native inc and dec selectors (which take a single "arg") instead of using add/subtract with 1.  
+*  Strings in Computed: If formatting a string to determine a dynamic target (e.g., "videobox_($1)"), it MUST go in the computed block, never the cached block.  
+3. Cards & Actions
+*  dealDeck Rules & Safety: dealDeck is the ONLY action used to move cards from a deck to a player's hand. You MUST specify a qnt (quantity), or the engine will vacuum up the entire deck. Always sort dealDeck by weight asc. Always check if a deck has cards before dealing from it, skipping the action if it is empty. If drawing a dynamic amount, use the minValue selector to ensure you don't draw more cards than exist in the deck.  
+*  Other Card Movements: moveCards (type: "deck") is strictly for moving cards DECK-to-DECK. moveCards (type: "hand") is for moving cards HAND-to-HAND. recallCards is strictly for moving cards from a player's HAND to a DECK.  
+*  playCards Rules: Do not use oneClick: true if the action requires playing more than 1 card. You do not need to remove/restore the central widget just to play cards.  
+4. Voting, Targeting UX, & Interactions
+*  createVote Requirements: Must ALWAYS include title, type, question, terminationCondition, actors, and showResultInRealTime. Use oneClick: true to let players click targets without needing a second confirmation click.  
+*  Lists for Actors/Targets: Actions like createVote or createNotification require the actors or to payloads to be lists. Use the createList selector to wrap a single player ID.  
+*  Targeting via Decks: Instead of using createVote to target a player, it is often better UX to use selectCentralWidgetDeck to let a player click on their target's public discard deck to inspect the field. This action returns a dictionary of {userId: deckId}. Safe targeting requires subtracting a player's own decks from the clickable pool so they cannot click themselves.  
+*  Input Parallelism: The createInput action is natively parallel. If you set actors: "players", everyone gets their own input box simultaneously. It outputs a dictionary mapping player IDs to their submitted strings to lastActionResult. Do not wrap createInput in a parallel action group.  
+*  Avoid Redundant Pre-Round Notifications: In fast-paced round games, do not add a createNotification before each selectCentralWidgetDeck. After the tutorial, players know what to do — the repeated pop-up is noise.  
+*  PostHandlers: Use postHandlers (e.g., randomSelectForOneAnswerTargetVote or playOneRandomCard) strictly on timed actions (actions with a duration) to prevent AFK stalling. Do not use them on untimed actions.  
+5. Standard Game Patterns
+*  The Tutorial Sequence: Use beforeLoopActions to show a welcome createNotification with the game's banner image, find the host, and trigger a createMixVote asking if the group wants a tutorial. If yes, the first gameLoop group should explain the rules.  
+* End of Round & Play Again:
+    * Instead of hard-coding a round limit, use gameLoopIndex (e.g., gameLoopIndex % X == Y) to trigger a "Play Again?" vote every few rounds. Save the result to a playAgain cache variable and tie gameOverCondition to logicalNOT -> playAgain.  
+    * At the end of the gameLoop, insert an untimed "Review Round" selectCentralWidgetDeck action so players can see the field, then ask the host if they want to play again.  
+    * End the loop with an empty group containing "checkWinCondition": true. You do not need to manually skip actions if playAgain is false—the engine will naturally terminate the game.  
+* Win Conditions & Winner Announcements:
+    * If a game is team-based, use winCondition (a dictionary mapping team names to boolean selectors). If individual-based, use playersWinCondition.  
+    * In postGameActions, use an ifElse selector checking if the length of getPlayersWithMaxScore is 1. If 1, output "wins!". If > 1, output "share the win!".  
+*  Round Winner Feedback (Fast-Paced Games): In short-round games, prefer sound effects and animations over createNotification/highlightPlayers to celebrate a round winner. Use an emptyAction with computed sounds.list and cached playList.0 (targeting all players) for a broadcast sound, then animateBox (payload: preset.animation name + cached.userIds pointing to scoringWinners) to play a named animation in the winning player's camera box. Reserve createNotification/highlightPlayers for slower games where the extra clarity is worth the extra time.  
+*  Spectator Management: If allowing spectator transitions, implement turnSpectatorToPlayerActions and turnPlayerToSpectatorActions at the root. When updating the players cache variable during these transitions, use the allPlayers selector to preserve strict player order perfectly. Grant late joiners the currentMinScore so they don't start at 0. Add the flags "turnSpectatorsToPlayers": true and "turnPlayersToSpectators": true to the safe action groups in the gameLoop where central widgets or decks can be reconstructed.  
+6. UI, Visuals & Audio Quirks
+*  UI Grids: When generating a GenericCard Widget, the dimensions array format is [rows, columns]. Set the widget decks to facedown: true and set the label to the owning player's name.  
+*  setImagesRow and Card Hand Space: Use setImagesRow with a transparent image only when players hold a card hand that opens from the bottom of the screen, so the hand doesn't collide with the central widget. If players have no hand (e.g. Buffalo), omit setImagesRow entirely. Heights: maxHeight: 140 for normal-sized hands; maxHeight: 230 when "increaseHandHeight": true is set in visualSettings. You cannot set maxHeight to 0 — use 10 to visually clear it at end of game.  
+*  Hand Visuals: If players hold very few cards, set "increaseHandHeight": true in visualSettings and set "maxHeight": 230 in the setImagesRow action.  
+*  Audio Arrays (playList): If you pass an array of sounds to sounds.list, you must use playList.0 to broadcast all sounds to the target players. Using playList.1 maps only to the first sound, playList.2 to the second, etc.  
+*  drawArrows: This action visually shows one player pointing to another. The computed payload requires a dictionary where the keys are the origin player IDs and the values are lists of target player IDs.
+*  gameInitOptions Timing Fields: Use exactly one of time, timePerPlayer, or timePerRound (integers, in minutes). time = total game duration constant regardless of player count. timePerPlayer = scales with player count. timePerRound = duration of a single round, minimum value 1 (use for round-based games like Buffalo). Never include more than one timing field. 

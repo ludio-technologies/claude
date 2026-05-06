@@ -1,0 +1,4239 @@
+{
+    "gameInitOptions": {
+        "allowRecorder": true,
+        "allowSpectatorBecomePlayer": true,
+        "allowPlayerBecomeSpectator": true,
+        "useDefaultRoles": true,
+        "roleConfirmation": false,
+        "minPlayers": 3,
+        "maxPlayers": 12,
+        "preferredPlayersQnt": [
+            5,
+            6,
+            7
+        ],
+        "showImageRowOnSmallScreen": false,
+        "minExtraRoles": 0,
+        "maxExtraRoles": 0,
+        "time": 15,
+        "notChangeLayoutAfterGame": true,
+        "teams": {
+            "all": {
+                "id": "all",
+                "name": "All",
+                "description": "Just a group of sophisticated card-playing friends...",
+                "color": "#297a4d",
+                "roles": [
+                    "player"
+                ]
+            }
+        },
+        "roles": [
+            {
+                "roleInfo": {
+                    "id": "player",
+                    "name": "Player",
+                    "description": "You love earning points, and you always play to win 😎",
+                    "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
+                    "team": "all",
+                    "prefix": "a "
+                },
+                "isDefaultRole": true,
+                "isRequired": false
+            }
+        ],
+        "rolesPreset": {},
+        "images": {
+            "question": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/questions_gnh6cx.jpg"
+            },
+            "wave_cardback": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/waves_kuo5dh.jpg"
+            },
+            "fish_cardback": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/piranha_dgg0hc.webp"
+            },
+            "cardback": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/sound_act_draw/Sky_MainCardBack.png"
+            },
+            "banner": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/sound_act_draw/SoundActDraw_ludionEW1-01-01.png"
+            },
+            "transparent": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/transparent_sbx4wv.png"
+            },
+            "wallpaper": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/takeoff_wallpaper_qhtnbf.jpg"
+            },
+            "arrow": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/arrow_s2g0ap.webp"
+            },
+            "scoring": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/scoring_qcsfds.png"
+            },
+            "winner": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/winner_h5eyfr.gif"
+            },
+            "player_score": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/player_score_ckyxfc.png"
+            },
+            "sample_card": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/sound_act_draw/Cinema%20-%20Cards/Sky_MainCardFront_C1-01.png"
+            }
+        },
+        "animations": {
+            "success": "https://lottie.host/7acf1d4a-8669-4ad4-8fbd-c752a9421c33/aGJeW7DeoO.json"
+        },
+        "soundboard": {
+            "default": {
+                "reminder": "https://res.cloudinary.com/liars-club/video/upload/audio/reminder.mp4",
+                "guess": "https://res.cloudinary.com/liars-club/video/upload/audio/avalon/sounds/success.mp3",
+                "success": "https://res.cloudinary.com/liars-club/video/upload/audio/forsee.mp3",
+                "music_1": "https://res.cloudinary.com/liars-club/video/upload/audio/soft_indie.mp3",
+                "bubbles": "https://res.cloudinary.com/liars-club/video/upload/audio/bubbles.mp3"
+            }
+        },
+        "voices": {
+            "default": {
+                "sad1": "https://res.cloudinary.com/liars-club/video/upload/audio/sound_act_draw/sad1.mp3",
+                "sad2": "https://res.cloudinary.com/liars-club/video/upload/audio/sound_act_draw/sad2.mp3",
+                "sad3": "https://res.cloudinary.com/liars-club/video/upload/audio/sound_act_draw/sad3.mp3",
+                "sad4": "https://res.cloudinary.com/liars-club/video/upload/audio/sound_act_draw/sad4.mp3",
+                "sad5": "https://res.cloudinary.com/liars-club/video/upload/audio/sound_act_draw/sad5.mp3",
+                "sad6": "https://res.cloudinary.com/liars-club/video/upload/audio/sound_act_draw/sad6.mp3"
+            }
+        }
+    },
+    "visualSettings": {
+        "cardHandBackgroundImage": "https://res.cloudinary.com/liars-club/image/upload/blue_background_izlan7.jpg"
+    },
+    "turnPlayerToSpectatorActions": [
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {
+                    "name": "players",
+                    "value": {
+                        "selector": "allPlayers"
+                    }
+                },
+                {
+                    "name": "numPlayers",
+                    "value": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "turnSpectatorToPlayerActions": [
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {
+                    "name": "newPlayer",
+                    "value": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "waitingSpectator"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "players",
+                    "value": {
+                        "selector": "append",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            },
+                            {
+                                "name": "element",
+                                "type": "cached",
+                                "value": "newPlayer"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "numPlayers",
+                    "value": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "updateScore",
+            "payload": {
+                "computed": {
+                    "scores": {
+                        "selector": "createList",
+                        "params": [
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "createDict",
+                                    "params": [
+                                        {
+                                            "name": "keys",
+                                            "type": "preset",
+                                            "value": [
+                                                "list",
+                                                "score"
+                                            ]
+                                        },
+                                        {
+                                            "name": "values",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "createList",
+                                                "params": [
+                                                    {
+                                                        "name": "arg1",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "createList",
+                                                            "params": [
+                                                                {
+                                                                    "name": "arg1",
+                                                                    "type": "cached",
+                                                                    "value": "newPlayer"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "arg2",
+                                                        "type": "cached",
+                                                        "value": "currentMinScore"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "showScore",
+            "payload": {
+                "preset": {
+                    "order": "highest"
+                },
+                "cached": {
+                    "from": "players",
+                    "to": "players"
+                }
+            }
+        }
+    ],
+    "beforeLoopActions": [
+        {
+            "key": "changeBackground",
+            "payload": {
+                "preset": {
+                    "image": "wallpaper"
+                }
+            }
+        },
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {
+                    "name": "players",
+                    "value": {
+                        "selector": "allPlayers"
+                    }
+                },
+                {
+                    "name": "generationToLabel",
+                    "value": {
+                        "boomerCards": "Boomer",
+                        "millenialCards": "Millenial",
+                        "genXCards": "Gen X",
+                        "genZCards": "Gen Z"
+                    }
+                },
+                {
+                    "name": "numPlayers",
+                    "value": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "playAgain",
+                    "value": true
+                },
+                {
+                    "name": "boomerCards",
+                    "value": [
+                        "John Lennon",
+                        "2001: A Space Odyssey",
+                        "Barbie Doll",
+                        "Marilyn Monroe",
+                        "The Graduate",
+                        "Mr. Potato Head",
+                        "John F Kennedy",
+                        "James Bond",
+                        "Slinky",
+                        "Muhammad Ali",
+                        "Psycho",
+                        "Twister (game)",
+                        "Clint Eastwood",
+                        "The Twilight Zone",
+                        "Lego",
+                        "Jack Nicholson",
+                        "Mary Poppins",
+                        "The Moon Landing",
+                        "Jimi Hendrix",
+                        "Dr. Strangelove",
+                        "Lava Lamp",
+                        "Jerry Garcia",
+                        "Doctor Who",
+                        "LSD",
+                        "Bob Marley",
+                        "Bewitched",
+                        "Pinball Machine",
+                        "Cher",
+                        "Star Trek",
+                        "HulaHoop",
+                        "Frank Sinatra",
+                        "The Godfather",
+                        "Yo-yo",
+                        "Martin Luther King",
+                        "Young Frankenstein",
+                        "Paperboy",
+                        "Judy Garland",
+                        "Planet of the Apes",
+                        "Monopoly",
+                        "Dolly Parton",
+                        "Rocky",
+                        "Microwave oven",
+                        "Jim Morrison",
+                        "A Clockwork Orange",
+                        "Disco Ball",
+                        "Andy Warhol",
+                        "I dream of Jeannie",
+                        "Magic 8 Ball",
+                        "Stevie Wonder",
+                        "The Brady Bunch",
+                        "Volkswagen Bus",
+                        "Johnny Cash",
+                        "Breakfast at Tiffany’s",
+                        "G.I. Joe",
+                        "Dr. Seuss",
+                        "The Flintstones",
+                        "Disneyland",
+                        "David Bowie",
+                        "Batman (TV series)",
+                        "Woodstock",
+                        "Elvis Presley",
+                        "Superman",
+                        "Play Doh",
+                        "Queen Elizabeth",
+                        "Jaws",
+                        "Super Bowl",
+                        "Ozzy Osbourne",
+                        "Scooby-Doo",
+                        "Playboy Magazine",
+                        "Johnny Carson",
+                        "The Addams Family",
+                        "Watergate",
+                        "Bob Dylan",
+                        "Taxi Driver",
+                        "Surfing",
+                        "Bruce Lee",
+                        "The Jetsons",
+                        "Etch A Sketch",
+                        "Mick Jagger",
+                        "Gilligan's Island",
+                        "Pong"
+                    ]
+                },
+                {
+                    "name": "genXCards",
+                    "value": [
+                        "Kurt Cobain",
+                        "Star Wars",
+                        "Cassette Tape",
+                        "Ronald Regan",
+                        "Nightmare on Elm Street",
+                        "Skateboarding",
+                        "Princess Diana",
+                        "The Muppets",
+                        "Dr. Martens",
+                        "Snoop Dogg",
+                        "Dirty Dancing",
+                        "Fanny pack",
+                        "Oprah",
+                        "Cheers",
+                        "Doritos",
+                        "Larry Bird",
+                        "Scarface",
+                        "Tetris",
+                        "Tupac Shakur",
+                        "Alien",
+                        "Nike Air Sneakers",
+                        "Michael Jackson",
+                        "The Breakfast Club",
+                        "Boombox",
+                        "Prince",
+                        "Ghostbusters",
+                        "Walkman",
+                        "Steven Hawking",
+                        "The Simpsons",
+                        "Rollerblading",
+                        "Freddie Mercury",
+                        "Sesame Street",
+                        "Atari",
+                        "Bill Gates",
+                        "Indiana Jones",
+                        "Aerobics",
+                        "Tom Hanks",
+                        "Back to the Future",
+                        "Super Mario Brothers",
+                        "Mike Tyson",
+                        "The Terminator",
+                        "Macintosh computer (Apple)",
+                        "Eddie Murphy",
+                        "Teenage Mutant Ninja Turtles",
+                        "Cabbage Patch Kids",
+                        "Madonna",
+                        "The Goonies",
+                        "Rubik’s Cube",
+                        "Michael Jordan",
+                        "Transformers",
+                        "Mullet haircut",
+                        "Pamala Anderson",
+                        "E.T",
+                        "Arcade",
+                        "Howard Stern",
+                        "Willy Wonka and the Chocolate Factory",
+                        "Donkey Kong",
+                        "Whitney Houston",
+                        "Mad Max",
+                        "Sonic the Hedgehog",
+                        "Donald Trump",
+                        "Miami Vice",
+                        "Pepsi",
+                        "Tom Cruise",
+                        "Halloween",
+                        "Dungeons and Dragons",
+                        "Bill Clinton",
+                        "Grease",
+                        "Blockbuster Video",
+                        "Jim Carrey",
+                        "Pulp Fiction",
+                        "VCR",
+                        "Steve Jobs",
+                        "Top Gun",
+                        "MTV network"
+                    ]
+                },
+                {
+                    "name": "millenialCards",
+                    "value": [
+                        "Mark Zuckerburg",
+                        "Mean Girls",
+                        "Compact Disc (CDs)",
+                        "Prince Harry",
+                        "Avatar",
+                        "PlayStation",
+                        "Maria Carey",
+                        "Toy Story",
+                        "Furby",
+                        "Britney Spears",
+                        "American Pie",
+                        "iPod",
+                        "Will Smith",
+                        "The Fast and the Furious",
+                        "XBOX",
+                        "Barack Obama",
+                        "Harry Potter",
+                        "Twitter",
+                        "Leonardo Dicaprio",
+                        "The Lord of the Rings",
+                        "Cornhole",
+                        "Lionel Messi",
+                        "The Hunger Games",
+                        "Facebook",
+                        "Elon Musk",
+                        "Bridesmaids",
+                        "Instagram",
+                        "Justin Timberlake",
+                        "SpongeBob SquarePants",
+                        "Yoga",
+                        "Johnny Depp",
+                        "The Office",
+                        "Jenga",
+                        "Jennifer Lopez",
+                        "The Hangover",
+                        "GameBoy",
+                        "Serena Williams",
+                        "Elf",
+                        "Pokemon",
+                        "Tiger Woods",
+                        "Shrek",
+                        "Amazon",
+                        "Christina Agulara",
+                        "Bad Santa",
+                        "Nintendo Wii",
+                        "Kim Kardashian",
+                        "Game of Thrones",
+                        "Grand Theft Auto",
+                        "Eminem",
+                        "Breaking Bad",
+                        "Tinder",
+                        "Lebron James",
+                        "The Matrix",
+                        "Starbucks",
+                        "Amy Winehouse",
+                        "South Park",
+                        "Smartphones",
+                        "Avril Lavigne",
+                        "The Big Bang Theory",
+                        "Electric Car",
+                        "Kanye West",
+                        "The Walking Dead",
+                        "Tamagotchi",
+                        "Jay Z",
+                        "The Big Lebowski",
+                        "Halo",
+                        "Beyonce",
+                        "Family Guy",
+                        "Lara Croft Tomb Raider",
+                        "Lady Gaga",
+                        "Jurassic Park",
+                        "Mario Kart"
+                    ]
+                },
+                {
+                    "name": "genZCards",
+                    "value": [
+                        "Miley Cyrus",
+                        "Guardians of the Galaxy",
+                        "Tik Tok",
+                        "Taylor Swift",
+                        "HeartBreak High",
+                        "Cryptocurrency",
+                        "Doja Cat",
+                        "The Joker",
+                        "Fake Meat",
+                        "Lizzo",
+                        "Deadpool",
+                        "Ghosting",
+                        "Billie Eilish",
+                        "Lady Bird",
+                        " Drones",
+                        "Tom Holland",
+                        "Frozen",
+                        "E-scooters",
+                        "Margot Robbie",
+                        "Minions",
+                        "OnlyFans",
+                        "Post Malone",
+                        "Wednesday Adams",
+                        "Airpods",
+                        "Zendaya",
+                        "The Boys",
+                        "VR (virtual reality)",
+                        "Sydney Sweeney",
+                        "Rick and Morty",
+                        "Boston Dynamics (Robots)",
+                        "Harry Styles",
+                        "Kung Fu Panda",
+                        "Fidget Spinner",
+                        "MrBeast",
+                        "The White Lotus",
+                        "Fortnite",
+                        "Patrick Mahomes",
+                        "Dune",
+                        "Driverless Cars",
+                        "Cardi B",
+                        "Inside Out",
+                        "Minecraft",
+                        "Ariana Grande",
+                        "The Mandalorian",
+                        "UberEats",
+                        "Lana Del Ray",
+                        "Fallout",
+                        "Metaverse",
+                        "Ryan Gosling",
+                        "Top Chef",
+                        "The Last of Us",
+                        "Rihanna",
+                        "Squid Game",
+                        "Coachella",
+                        "Drake",
+                        "Stranger Things",
+                        "Avocado Toast",
+                        "Timothee Chalamet",
+                        "Euphoria",
+                        "Pumpkin Spice Latte",
+                        "Selena Gomez",
+                        "Bob’s Burgers",
+                        "Tesla Cybertruck",
+                        "Bad Bunny",
+                        "The Bachelor",
+                        "3D printer",
+                        "Kamala Harris",
+                        "Poor Things",
+                        "Artificial Intelligence",
+                        "Mac Miller",
+                        "Schitt’s Creek",
+                        "Ring Camera"
+                    ]
+                },
+                {
+                    "name": "generationCards",
+                    "value": {
+                        "selector": "concat",
+                        "params": [
+                            {
+                                "name": "list1",
+                                "type": "cached",
+                                "value": "boomerCards"
+                            },
+                            {
+                                "name": "list2",
+                                "type": "cached",
+                                "value": "genXCards"
+                            },
+                            {
+                                "name": "list3",
+                                "type": "cached",
+                                "value": "millenialCards"
+                            },
+                            {
+                                "name": "list4",
+                                "type": "cached",
+                                "value": "genZCards"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "words",
+                    "value": [
+        "Oppenheimer",
+        "Barbie",
+        "The Bear",
+        "Severance",
+        "Succession",
+        "Squid Game",
+        "Euphoria",
+        "Ted Lasso",
+        "The Last of Us",
+        "Glass Onion",
+        "Top Gun Maverick",
+        "Wednesday",
+        "White Lotus",
+        "Yellowjackets",
+        "Abbott Elementary",
+        "Only Murders in the Building",
+        "House of the Dragon",
+        "Yellowstone",
+        "The Diplomat",
+        "Killers of the Flower Moon",
+        "Saltburn",
+        "Poor Things",
+        "Wonka",
+        "The Holdovers",
+        "M3GAN",
+        "Everything Everywhere All at Once",
+        "The Batman",
+        "Bullet Train",
+        "Elvis",
+        "Prey",
+        "Bodies Bodies Bodies",
+        "Nope",
+        "The Menu",
+        "Smile",
+        "Barbarian",
+        "Nomadland",
+        "CODA",
+        "Dune",
+        "Encanto",
+        "Turning Red",
+        "Elemental",
+        "Inside Out 2",
+        "Moana 2",
+        "Dungeons and Dragons",
+        "Triangle of Sadness",
+        "RRR",
+        "Promising Young Woman",
+        "The Power of the Dog",
+        "Belfast",
+        "No Time to Die",
+        "Don't Look Up",
+        "Knives Out",
+        "Scream",
+        "Morbius",
+        "Asteroid City",
+        "The Banshees of Inisherin",
+        "Past Lives",
+        "Anatomy of a Fall",
+        "Society of the Snow",
+        "American Fiction",
+        "Mission Impossible Dead Reckoning",
+        "Indiana Jones",
+        "Fast X",
+        "Guardians of the Galaxy",
+        "Secret Invasion",
+        "Loki Season 2",
+        "Andor",
+        "Ahsoka",
+        "Rings of Power",
+        "Reservation Dogs",
+        "Beef",
+        "Silo",
+        "Bear Season 2",
+        "Beyoncé",
+        "Bad Bunny",
+        "Taylor Swift",
+        "Timothée Chalamet",
+        "Zendaya",
+        "Cardi B",
+        "Pedro Pascal",
+        "Billie Eilish",
+        "Dua Lipa",
+        "Harry Styles",
+        "Olivia Rodrigo",
+        "SZA",
+        "Kendrick Lamar",
+        "Post Malone",
+        "The Weeknd",
+        "Doja Cat",
+        "Lizzo",
+        "Lil Nas X",
+        "Florence Pugh",
+        "Sydney Sweeney",
+        "Jenna Ortega",
+        "Emma Stone",
+        "Ryan Gosling",
+        "Ana de Armas",
+        "Margot Robbie",
+        "Austin Butler",
+        "Jeremy Allen White",
+        "Jacob Elordi",
+        "Barry Keoghan",
+        "Ayo Edebiri",
+        "Paul Mescal",
+        "Andrew Garfield",
+        "Tom Holland",
+        "Angela Bassett",
+        "Viola Davis",
+        "Cate Blanchett",
+        "Michelle Yeoh",
+        "Ke Huy Quan",
+        "Jamie Lee Curtis",
+        "Brendan Fraser",
+        "Sabrina Carpenter",
+        "Chappell Roan",
+        "Gracie Abrams",
+        "Renée Rapp",
+        "Doechii",
+        "GloRilla",
+        "Ice Spice",
+        "Nicki Minaj",
+        "Noa Kirel",
+        "Sexyy Red",
+        "Avocado Toast",
+        "Charcuterie Board",
+        "Birria Tacos",
+        "Bubble Tea",
+        "Cold Brew",
+        "Ramen Bowl",
+        "Acai Bowl",
+        "Crème Brûlée",
+        "Sourdough Starter",
+        "Matcha Latte",
+        "Spam Musubi",
+        "Smash Burger",
+        "Nashville Hot Chicken",
+        "Elote",
+        "Mochi Ice Cream",
+        "Dalgona Coffee",
+        "Poke Bowl",
+        "Bulgogi",
+        "Banh Mi",
+        "Pho",
+        "Pad See Ew",
+        "Ceviche",
+        "Pupusa",
+        "Arepa",
+        "Jerk Chicken",
+        "Jollof Rice",
+        "Shakshuka",
+        "Baklava",
+        "Mole Sauce",
+        "Birria Quesadilla",
+        "Dirty Chai",
+        "Mushroom Coffee",
+        "Natural Wine",
+        "Orange Wine",
+        "Zero Proof Cocktail",
+        "Kombucha",
+        "Kefir",
+        "Kimchi Pancake",
+        "Tteokbokki",
+        "Hotteok",
+        "Tiramisu Martini",
+        "Espresso Tonic",
+        "Honey Jalapeño Margarita",
+        "Wagyu Beef",
+        "Truffle Fries",
+        "Lobster Roll",
+        "Uni Pasta",
+        "Cacio e Pepe",
+        "Gochujang Pasta",
+        "Dubai Chocolate",
+        "Pistachio Kunafa",
+        "Chamoy Pickle",
+        "Tajín",
+        "Croffle",
+        "Dirty Soda",
+        "Pickleball",
+        "Axe Throwing",
+        "Escape Room",
+        "Parkour",
+        "Cornhole",
+        "Cold Plunge",
+        "Padel Tennis",
+        "Bouldering",
+        "Roller Derby",
+        "E-Sports",
+        "Disc Golf",
+        "Spikeball",
+        "Bubble Soccer",
+        "Cheese Rolling Race",
+        "Wife Carrying Race",
+        "Zorbing",
+        "Extreme Ironing",
+        "Chess Boxing",
+        "Underwater Hockey",
+        "Sepak Takraw",
+        "Kabaddi",
+        "Bossaball",
+        "Footgolf",
+        "Obstacle Course Race",
+        "Mud Run",
+        "Go-Karting",
+        "Laser Tag",
+        "Paintball",
+        "Drone Racing",
+        "Flyboarding",
+        "Kitesurfing",
+        "Wakeboarding",
+        "Freediving",
+        "Cave Diving",
+        "Wingsuit Flying",
+        "Doomscrolling",
+        "Ghosting",
+        "FOMO",
+        "Main Character Energy",
+        "Vibe Check",
+        "Situationship",
+        "Touch Grass",
+        "Hot Take",
+        "Soft Launch",
+        "Quiet Quitting",
+        "Goblin Mode",
+        "Bed Rotting",
+        "Brain Rot",
+        "Rizz",
+        "Delulu",
+        "No Cap",
+        "Understood the Assignment",
+        "Living Rent Free",
+        "Roman Empire",
+        "Girl Dinner",
+        "Girl Math",
+        "NPC Mode",
+        "Beige Flag",
+        "Green Flag",
+        "Red Flag",
+        "Trauma Dump",
+        "Parasocial Relationship",
+        "Going Viral",
+        "For You Page",
+        "Shadowbanned",
+        "Ratio",
+        "Clout Chasing",
+        "Hot Girl Walk",
+        "That Girl",
+        "Old Money Aesthetic",
+        "Dark Academia",
+        "Cottagecore",
+        "Barbiecore",
+        "Coastal Grandmother",
+        "Clean Girl Aesthetic",
+        "Slay Era",
+        "Unhinged",
+        "Based",
+        "Lowkey Obsessed",
+        "Enshittification",
+        "Air Fryer",
+        "Roomba",
+        "Ring Doorbell",
+        "Weighted Blanket",
+        "Electric Scooter",
+        "Selfie Ring Light",
+        "Smart Speaker",
+        "Drone",
+        "VR Headset",
+        "Foam Roller",
+        "Massage Gun",
+        "Infrared Sauna",
+        "Standing Desk",
+        "Blue Light Glasses",
+        "Peloton Bike",
+        "Instant Pot",
+        "Sous Vide Machine",
+        "Coffee Pod Machine",
+        "Portable Blender",
+        "Stanley Cup",
+        "Reusable Straw",
+        "Bread Machine",
+        "Cold Plunge Tub",
+        "Smart Fridge",
+        "Robot Dog",
+        "3D Printer",
+        "Mechanical Keyboard",
+        "Curved Monitor",
+        "Gaming Chair",
+        "LED Strip Lights",
+        "Machu Picchu",
+        "Santorini",
+        "Bali",
+        "Petra",
+        "Angkor Wat",
+        "Patagonia",
+        "Northern Lights",
+        "Galápagos Islands",
+        "Amalfi Coast",
+        "Area 51",
+        "Tulum",
+        "Maldives",
+        "Iceland",
+        "New Zealand",
+        "Costa Rica",
+        "Morocco",
+        "Kenya",
+        "Tanzania",
+        "Rwanda",
+        "South Korea",
+        "Thailand",
+        "Vietnam",
+        "Cambodia",
+        "Philippines",
+        "Taiwan",
+        "Singapore",
+        "Bhutan",
+        "Nepal",
+        "Sri Lanka",
+        "Uzbekistan",
+        "Faroe Islands",
+        "Albania",
+        "Georgia",
+        "Armenia",
+        "Cappadocia",
+        "Tbilisi",
+        "Yerevan",
+        "Tashkent",
+        "Almaty",
+        "Kathmandu",
+        "Vientiane",
+        "Phnom Penh",
+        "Yangon",
+        "Havana",
+        "Cartagena",
+        "Medellín",
+        "Bogotá",
+        "Lima",
+        "Buenos Aires",
+        "Capybara",
+        "Quokka",
+        "Axolotl",
+        "Narwhal",
+        "Meerkat",
+        "Fennec Fox",
+        "Red Panda",
+        "Platypus",
+        "Sloth",
+        "Blue-Footed Booby",
+        "Pangolin",
+        "Aardvark",
+        "Tapir",
+        "Okapi",
+        "Binturong",
+        "Fossa",
+        "Aye-Aye",
+        "Tarsier",
+        "Proboscis Monkey",
+        "Mandrill",
+        "Mantis Shrimp",
+        "Pistol Shrimp",
+        "Mimic Octopus",
+        "Leafy Sea Dragon",
+        "Blobfish",
+        "Dumbo Octopus",
+        "Glass Frog",
+        "Peacock Spider",
+        "Satanic Leaf Gecko",
+        "Pink Fairy Armadillo",
+        "Renaissance Fair",
+        "Flash Mob",
+        "Speed Dating",
+        "Karaoke Duet",
+        "Loch Ness Monster",
+        "Conspiracy Theory",
+        "Dad Joke",
+        "Book Club",
+        "Battle Rap",
+        "TED Talk",
+        "Pitch Deck",
+        "Crypto Crash",
+        "NFT",
+        "Metaverse",
+        "AI Chatbot",
+        "Deepfake",
+        "Open Mic Night",
+        "Improv Comedy",
+        "Stand-Up Comedy",
+        "Roast Battle",
+        "Murder Mystery Dinner",
+        "True Crime Podcast",
+        "Street Magician",
+        "Busker",
+        "Lip Sync Battle",
+        "Air Guitar",
+        "Drum Solo",
+        "Mosh Pit",
+        "Stage Dive",
+        "Viral Dance",
+        "TikTok Trend",
+        "Unboxing Video",
+        "ASMR",
+        "Mukbang",
+        "Reaction Video",
+        "Podcast Studio",
+        "Brand Deal",
+        "Sponsored Content",
+        "Farmers Market",
+        "Thrift Haul",
+        "Capsule Wardrobe",
+        "Vintage Shop",
+        "Pop-Up Shop",
+        "Goat Yoga",
+        "Puppy Yoga",
+        "Cat Café",
+        "Dog Park",
+        "Chicken Keeping",
+        "Mushroom Foraging",
+        "Urban Farming",
+        "Rooftop Garden",
+        "Bee Keeping",
+        "Sourdough Fail",
+        "Dry January",
+        "Sober Curious",
+        "Juice Cleanse",
+        "Gut Health",
+        "Bone Broth",
+        "Sound Bath",
+        "Breathwork",
+        "Reiki",
+        "Float Tank",
+        "Cryotherapy",
+        "Red Light Therapy",
+        "Gua Sha",
+        "Jade Roller",
+        "Skin Cycling",
+        "Glass Skin",
+        "Wellness Retreat",
+        "Silent Retreat",
+        "Digital Detox",
+        "Dopamine Detox",
+        "Manifestation",
+        "Vision Board",
+        "Journaling",
+        "Shadow Work",
+        "Inner Child",
+        "Love Bombing",
+        "Breadcrumbing",
+        "Orbiting",
+        "Slow Living",
+        "Slow Fashion",
+        "Buy Nothing Group",
+        "Little Free Library",
+        "Community Fridge",
+        "Mutual Aid",
+        "Silent Disco",
+        "Foam Party",
+        "Rage Room",
+        "Pottery Class",
+        "Paint and Sip",
+        "Picnic Aesthetic",
+        "Grazing Table",
+        "Immersive Art Experience",
+        "Spelling Bee",
+        "Science Fair",
+        "Baking Competition",
+        "Love Island",
+        "Bachelor in Paradise",
+        "Love is Blind",
+        "Too Hot to Handle",
+        "The Circle",
+        "Survivor Tribal Council",
+        "Great British Bake Off",
+        "MasterChef",
+        "Hell's Kitchen",
+        "Competitive Eating",
+        "Iron Chef",
+        "Karaoke Machine",
+        "Photo Booth",
+        "Selfie Museum",
+        "Pop Art Portrait",
+        "Neon Sign",
+        "Polaroid Camera",
+        "Disposable Camera",
+        "Film Photography",
+        "Darkroom",
+        "Analog Synth",
+        "Vinyl Record",
+        "Record Player",
+        "Cassette Tape",
+        "VHS Tape",
+        "Blockbuster Video",
+        "Floppy Disk",
+        "Pager",
+        "Tamagotchi",
+        "Gameboy",
+        "Dial-Up Internet",
+        "Myspace Page",
+        "AIM Chatroom",
+        "Napster",
+        "MSN Messenger",
+        "AOL Buddy List",
+        "ICQ"
+]
+                },
+                {
+                    "name": "unusedWords",
+                    "value": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "words"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "currentPlayer",
+                    "value": {
+                        "selector": "selectElement",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            },
+                            {
+                                "name": "index",
+                                "type": "preset",
+                                "value": 0
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {
+                    "name": "host",
+                    "value": {
+                        "selector": "ifElse",
+                        "params": [
+                            {
+                                "name": "condition",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "contains",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "allPlayers"
+                                            }
+                                        },
+                                        {
+                                            "name": "element",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getHostPlayerId"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "thenValue",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getHostPlayerId"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "elseValue",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "selectElement",
+                                                "params": [
+                                                    {
+                                                        "name": "list",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "allPlayers"
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "index",
+                                                        "type": "preset",
+                                                        "value": 0
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "createNotification",
+            "payload": {
+                "preset": {
+                    "header": "Welcome to Sound Act Draw!",
+                    "image": "banner",
+                    "duration": 7,
+                    "backgroundColor": "#FFC680",
+                    "borderColor": "black"
+                },
+                "computed": {
+                    "to": {
+                        "selector": "allPlayers"
+                    },
+                    "text": {
+                        "selector": "formatString",
+                        "params": [
+                            {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!"
+                            },
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "listToString",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getPlayerNamesByIds",
+                                                "params": [
+                                                    {
+                                                        "name": "ids",
+                                                        "type": "cached",
+                                                        "value": "host"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "createMixVote",
+            "payload": {
+                "preset": {
+                    "title": "Tutorial mode",
+                    "terminationCondition": "get_all_votes",
+                    "showResultInRealTime": true,
+                    "showResultDuration": 2,
+                    "showResultDelay": 0,
+                    "point.allowFewerAnswers": true,
+                    "point.terminationCondition": "get_all_votes",
+                    "poll.answersQuantity": 1,
+                    "poll.targets": [
+                        "Everybody!",
+                        "Nobody!"
+                    ],
+                    "oneClick": true,
+                    "allowRevoting": true,
+                    "pollVoteTargetsOptions": {
+                        "Everybody!": {
+                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                            "backgroundColor": "#D3D3D3",
+                            "boxIconColor": "#D3D3D3",
+                            "textColor": "black",
+                            "widgetIconColor": "green"
+                        },
+                        "Nobody!": {
+                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+                            "backgroundColor": "#D3D3D3",
+                            "boxIconColor": "#D3D3D3",
+                            "textColor": "black",
+                            "widgetIconColor": "red"
+                        }
+                    },
+                    "poll.terminationCondition": "get_all_votes",
+                    "backgroundColor": "#FFC680",
+                    "borderColor": "black"
+                },
+                "cached": {
+                    "actors": "host",
+                    "point.targets": "players",
+                    "point.answersQuantity": "numPlayers"
+                },
+                "computed": {
+                    "question": {
+                        "selector": "formatString",
+                        "params": [
+                            {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "($1), who needs the tutorial? Click on the players or select from the middle."
+                            },
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "getPlayerNameById",
+                                    "params": [
+                                        {
+                                            "name": "id",
+                                            "type": "cached",
+                                            "value": "host.0"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "saveValueInCache": [
+                {
+                    "name": "voteResult",
+                    "value": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "lastActionResult.voteResult"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "learners",
+                    "value": {
+                        "selector": "ifElse",
+                        "params": [
+                            {
+                                "name": "condition",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "contains",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "players"
+                                        },
+                                        {
+                                            "name": "element",
+                                            "type": "cached",
+                                            "value": "voteResult.0"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "thenValue",
+                                "type": "cached",
+                                "value": "voteResult"
+                            },
+                            {
+                                "name": "elseValue",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "ifElse",
+                                    "params": [
+                                        {
+                                            "name": "condition",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "contains",
+                                                "params": [
+                                                    {
+                                                        "name": "list",
+                                                        "type": "cached",
+                                                        "value": "voteResult"
+                                                    },
+                                                    {
+                                                        "name": "element",
+                                                        "type": "preset",
+                                                        "value": "Everybody!"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "thenValue",
+                                            "type": "cached",
+                                            "value": "players"
+                                        },
+                                        {
+                                            "name": "elseValue",
+                                            "type": "preset",
+                                            "value": []
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "tutorial",
+                    "value": {
+                        "selector": "greaterThan",
+                        "params": [
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "listLength",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "learners"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 0
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "createDeck",
+            "payload": {
+                "preset": {
+                    "name": "sound_act_draw",
+                    "set": "travel",
+                    "customName": "travel"
+                }
+            }
+        },
+        {
+            "key": "createDeck",
+            "payload": {
+                "preset": {
+                    "name": "sound_act_draw",
+                    "set": "conversation",
+                    "customName": "conversation"
+                }
+            }
+        },
+        {
+            "key": "shuffleDeck",
+            "payload": {
+                "preset": {
+                    "deck": "travel"
+                }
+            }
+        },
+        {
+            "key": "shuffleDeck",
+            "payload": {
+                "preset": {
+                    "deck": "conversation"
+                }
+            }
+        },
+        {
+            "key": "createCustomDeck",
+            "payload": {
+                "preset": {
+                    "name": "playing_deck",
+                    "public": true,
+                    "enlargeOnHover": true,
+                    "label": "Conversation Card"
+                }
+            }
+        },
+        {
+            "key": "createCustomDeck",
+            "payload": {
+                "preset": {
+                    "name": "discard",
+                    "public": true,
+                    "facedown": true,
+                    "counter": true,
+                    "cardback": "cardback",
+                    "label": "Discard"
+                }
+            }
+        },
+        {
+            "key": "showScore",
+            "payload": {
+                "preset": {
+                    "order": "highest"
+                },
+                "cached": {
+                    "from": "players",
+                    "to": "players"
+                }
+            }
+        }
+    ],
+    "gameLoop": [
+        {
+            "name": "Tutorial Part 1",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createConversationGroup",
+                    "payload": {
+                        "preset": {
+                            "video": true,
+                            "audio": true,
+                            "private": false,
+                            "indicator": "💡",
+                            "isVideoForAll": false
+                        },
+                        "cached": {
+                            "members": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "voices.sad1",
+                                "voices.sad5"
+                            ]
+                        },
+                        "cached": {
+                            "playList.0": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "destroyConversationGroups"
+                }
+            ]
+        },
+        {
+            "name": "Start clip",
+            "skipCondition": [
+                {
+                    "selector": "greaterThan",
+                    "params": [
+                        {
+                            "name": "arg1",
+                            "type": "cached",
+                            "value": "gameLoopIndex"
+                        },
+                        {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 0
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "startClip",
+                    "payload": {
+                        "computed": {
+                            "title": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "Sound Act Draw!"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Max points",
+            "skipCondition": [
+                {
+                    "selector": "greaterThan",
+                    "params": [
+                        {
+                            "name": "arg1",
+                            "type": "cached",
+                            "value": "gameLoopIndex"
+                        },
+                        {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 0
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createVote",
+                    "payload": {
+                        "preset": {
+                            "title": "Which version are we playing?",
+                            "type": "target_poll",
+                            "terminationCondition": "get_all_votes",
+                            "showResultInRealTime": true,
+                            "showResultDuration": 2,
+                            "showResult": true,
+                            "allowRevoting": false,
+                            "targets": [
+                                "Standard",
+                                "Generations",
+                                "SKY"
+                            ],
+                            "pollVoteTargetsOptions": {
+                                "Standard": {
+                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                                    "backgroundColor": "#D3D3D3",
+                                    "boxIconColor": "#D3D3D3",
+                                    "textColor": "black",
+                                    "widgetIconColor": "green"
+                                },
+                                "Generations": {
+                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/generations.svg",
+                                    "backgroundColor": "#D3D3D3",
+                                    "boxIconColor": "#D3D3D3",
+                                    "textColor": "black",
+                                    "widgetIconColor": "purple"
+                                },
+                                "SKY": {
+                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/plane.svg",
+                                    "backgroundColor": "#D3D3D3",
+                                    "boxIconColor": "#D3D3D3",
+                                    "textColor": "black",
+                                    "widgetIconColor": "blue"
+                                }
+                            },
+                            "backgroundColor": "#FFC680",
+                            "borderColor": "black"
+                        },
+                        "computed": {
+                            "question": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "($1), which version of the game do you want to play?"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listToString",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "getPlayerNamesByIds",
+                                                        "params": [
+                                                            {
+                                                                "name": "ids",
+                                                                "type": "cached",
+                                                                "value": "host"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "cached": {
+                            "actors": "host"
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "edition",
+                            "value": {
+                                "selector": "selectElement",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "append",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "lastActionResult.voteResult"
+                                                },
+                                                {
+                                                    "name": "element",
+                                                    "type": "preset",
+                                                    "value": "Standard"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "index",
+                                        "type": "preset",
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "skyEdition",
+                            "value": {
+                                "selector": "isTargetGotMajority",
+                                "params": [
+                                    {
+                                        "name": "voteResult",
+                                        "type": "cached",
+                                        "value": "lastActionResult"
+                                    },
+                                    {
+                                        "name": "target",
+                                        "type": "preset",
+                                        "value": "SKY"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "generationsEdition",
+                            "value": {
+                                "selector": "isTargetGotMajority",
+                                "params": [
+                                    {
+                                        "name": "voteResult",
+                                        "type": "cached",
+                                        "value": "lastActionResult"
+                                    },
+                                    {
+                                        "name": "target",
+                                        "type": "preset",
+                                        "value": "Generations"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "image": "banner",
+                            "duration": 12,
+                            "backgroundColor": "#FFC680",
+                            "borderColor": "black"
+                        },
+                        "cached": {
+                            "to": "players"
+                        },
+                        "computed": {
+                            "header": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "You have chosen to the play the ($1) Edition!"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "edition"
+                                    }
+                                ]
+                            },
+                            "text": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "($1)"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "ifElse",
+                                            "params": [
+                                                {
+                                                    "name": "condition",
+                                                    "type": "cached",
+                                                    "value": "generationsEdition"
+                                                },
+                                                {
+                                                    "name": "thenValue",
+                                                    "type": "preset",
+                                                    "value": "Each group of phrases corresponds to a <b>Boomer</b>, <b>Gen X</b>, <b>Millenial</b>, or <b>Gen Z</b> card!"
+                                                },
+                                                {
+                                                    "name": "elseValue",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "ifElse",
+                                                        "params": [
+                                                            {
+                                                                "name": "condition",
+                                                                "type": "cached",
+                                                                "value": "skyEdition"
+                                                            },
+                                                            {
+                                                                "name": "thenValue",
+                                                                "type": "preset",
+                                                                "value": "This edition comes with <b>Situation cards</b> (where you fill in the blank) and <b>Conversation cards</b> (where you tell a story in response to a question to earn extra points)."
+                                                            },
+                                                            {
+                                                                "name": "elseValue",
+                                                                "type": "preset",
+                                                                "value": "The phrases are a random assortment of books, movies, locations, concepts, and idioms."
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Tutorial Part 2",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createConversationGroup",
+                    "payload": {
+                        "preset": {
+                            "video": true,
+                            "audio": true,
+                            "private": false,
+                            "indicator": "💡",
+                            "isVideoForAll": false
+                        },
+                        "cached": {
+                            "members": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "voices.sad2"
+                            ]
+                        },
+                        "cached": {
+                            "playList.0": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "destroyConversationGroups"
+                }
+            ]
+        },
+        {
+            "name": "Highlight current player, give them 1 travel card",
+            "actions": [
+                {
+                    "key": "changeLayout",
+                    "payload": {
+                        "preset": {
+                            "type": "HIGHLIGHT",
+                            "direction": "VERTICAL",
+                            "percent": 35
+                        },
+                        "computed": {
+                            "top": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "currentPlayer"
+                                    }
+                                ]
+                            },
+                            "bottom": {
+                                "selector": "listsSubtract",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "cached",
+                                        "value": "players"
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createList",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "currentPlayer"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "highlightPlayers",
+                    "payload": {
+                        "preset": {
+                            "color": "red"
+                        },
+                        "computed": {
+                            "listOfPlayers": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "currentPlayer"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "moveCards",
+                    "skipCondition": {
+                        "selector": "greaterThan",
+                        "params": [
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "listLength",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getDeckCards",
+                                                "params": [
+                                                    {
+                                                        "name": "deck",
+                                                        "type": "preset",
+                                                        "value": "travel"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "type": "deck",
+                            "from": "discard",
+                            "to": "travel",
+                            "cardType": [
+                                "song",
+                                "situation",
+                                "site",
+                                "event",
+                                "cinema"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "key": "shuffleDeck",
+                    "skipCondition": {
+                        "selector": "isPrevActionSkipped"
+                    },
+                    "payload": {
+                        "preset": {
+                            "deck": "travel"
+                        }
+                    }
+                },
+                {
+                    "key": "moveCards",
+                    "payload": {
+                        "preset": {
+                            "type": "deck",
+                            "from": "travel",
+                            "to": "playing_deck",
+                            "qnt": 1
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "topCardType",
+                            "value": {
+                                "selector": "getObjectField",
+                                "params": [
+                                    {
+                                        "name": "obj",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "selectElement",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "getDeckCards",
+                                                        "params": [
+                                                            {
+                                                                "name": "deck",
+                                                                "type": "preset",
+                                                                "value": "playing_deck"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "index",
+                                                    "type": "preset",
+                                                    "value": 0
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "field",
+                                        "type": "preset",
+                                        "value": "type"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "isSituation",
+                            "value": {
+                                "selector": "equals",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "topCardType"
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "preset",
+                                        "value": "situation"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "topCardOptions",
+                            "value": {
+                                "selector": "getObjectField",
+                                "params": [
+                                    {
+                                        "name": "obj",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "selectElement",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "getDeckCards",
+                                                        "params": [
+                                                            {
+                                                                "name": "deck",
+                                                                "type": "preset",
+                                                                "value": "playing_deck"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "index",
+                                                    "type": "preset",
+                                                    "value": 0
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "field",
+                                        "type": "preset",
+                                        "value": "options"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "topCardImage",
+                            "value": {
+                                "selector": "getObjectField",
+                                "params": [
+                                    {
+                                        "name": "obj",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "selectElement",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "getDeckCards",
+                                                        "params": [
+                                                            {
+                                                                "name": "deck",
+                                                                "type": "preset",
+                                                                "value": "playing_deck"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "index",
+                                                    "type": "preset",
+                                                    "value": 0
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "field",
+                                        "type": "preset",
+                                        "value": "image"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "emptyAction",
+                    "skipCondition": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "skyEdition"
+                            }
+                        ]
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "isSituation",
+                            "value": false
+                        },
+                        {
+                            "name": "randomGeneration",
+                            "value": {
+                                "selector": "randomElement",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "preset",
+                                        "value": [
+                                            "boomerCards",
+                                            "millenialCards",
+                                            "genXCards",
+                                            "genZCards"
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "randomGenerationLabel",
+                            "value": {
+                                "selector": "getCachedObjectValue",
+                                "params": [
+                                    {
+                                        "name": "objectName",
+                                        "type": "preset",
+                                        "value": "generationToLabel"
+                                    },
+                                    {
+                                        "name": "value",
+                                        "type": "cached",
+                                        "value": "randomGeneration"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "topCardOptions",
+                            "value": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "generationsEdition"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "randomElementsList",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "getCachedValue",
+                                                        "params": [
+                                                            {
+                                                                "name": "name",
+                                                                "type": "cached",
+                                                                "value": "randomGeneration"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "length",
+                                                    "type": "preset",
+                                                    "value": 3
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "randomElementsList",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "unusedWords"
+                                                },
+                                                {
+                                                    "name": "length",
+                                                    "type": "preset",
+                                                    "value": 3
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "unusedWords",
+                            "value": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "lessThan",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "listLength",
+                                                        "params": [
+                                                            {
+                                                                "name": "list",
+                                                                "type": "cached",
+                                                                "value": "unusedWords"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "arg2",
+                                                    "type": "preset",
+                                                    "value": 6
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "cached",
+                                        "value": "words"
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listsSubtract",
+                                            "params": [
+                                                {
+                                                    "name": "list1",
+                                                    "type": "cached",
+                                                    "value": "unusedWords"
+                                                },
+                                                {
+                                                    "name": "list2",
+                                                    "type": "cached",
+                                                    "value": "topCardOptions"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "topCardImage",
+                            "value": "question"
+                        }
+                    ]
+                },
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "optionAppearances",
+                            "value": {
+                                "selector": "createDict",
+                                "params": [
+                                    {
+                                        "name": "keys",
+                                        "type": "cached",
+                                        "value": "topCardOptions"
+                                    },
+                                    {
+                                        "name": "values",
+                                        "type": "preset",
+                                        "value": [
+                                            {
+                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/letter_a.svg",
+                                                "backgroundColor": "#93c47d",
+                                                "boxIconColor": "#93c47d",
+                                                "textColor": "black",
+                                                "widgetIconColor": "black"
+                                            },
+                                            {
+                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/letter_b.svg",
+                                                "backgroundColor": "#FFFFCC",
+                                                "boxIconColor": "#FFFFCC",
+                                                "textColor": "black",
+                                                "widgetIconColor": "black"
+                                            },
+                                            {
+                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/letter_c.svg",
+                                                "backgroundColor": "#e1f2fb",
+                                                "boxIconColor": "#e1f2fb",
+                                                "textColor": "black",
+                                                "widgetIconColor": "black"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "duration": 4,
+                            "backgroundColor": "#FFC680",
+                            "borderColor": "black"
+                        },
+                        "cached": {
+                            "to": "players"
+                        },
+                        "computed": {
+                            "text": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "generationsEdition"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "formatString",
+                                            "params": [
+                                                {
+                                                    "name": "format",
+                                                    "type": "preset",
+                                                    "value": "This is a <b>($1)</b> card."
+                                                },
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "randomGenerationLabel"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "preset",
+                                        "value": ""
+                                    }
+                                ]
+                            },
+                            "header": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "type": "preset",
+                                        "name": "format",
+                                        "value": "($1), your turn!"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getPlayerNameById",
+                                            "params": [
+                                                {
+                                                    "name": "id",
+                                                    "type": "cached",
+                                                    "value": "currentPlayer"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "skipCondition": {
+                        "selector": "logicalNOT",
+                        "params": [
+                            {
+                                "name": "arg",
+                                "type": "cached",
+                                "value": "generationsEdition"
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "duration": 1,
+                            "isAnnounceOnly": true
+                        },
+                        "cached": {
+                            "to": "players"
+                        },
+                        "computed": {
+                            "header": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "This is a <b>($1)</b> card."
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "randomGenerationLabel"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": false,
+                            "sounds.list": [
+                                "soundboard.music_1"
+                            ]
+                        },
+                        "cached": {
+                            "playList.1": "players"
+                        }
+                    }
+                },
+                {
+                    "key": "createInput",
+                    "skipCondition": {
+                        "selector": "logicalNOT",
+                        "params": [
+                            {
+                                "name": "arg",
+                                "type": "cached",
+                                "value": "isSituation"
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "title": "Submit input",
+                            "type": "text",
+                            "duration": 45,
+                            "scope": "player",
+                            "lowerCase": true,
+                            "terminationCondition": "get_all_values",
+                            "vertical": true,
+                            "private": true,
+                            "backgroundColor": "#FFC680",
+                            "borderColor": "black"
+                        },
+                        "cached": {
+                            "image": "topCardImage"
+                        },
+                        "computed": {
+                            "actors": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "currentPlayer"
+                                    }
+                                ]
+                            },
+                            "question": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "Fill in the blank: ($1)"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "topCardOptions.0"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "answers",
+                            "value": {
+                                "selector": "getCachedValue",
+                                "params": [
+                                    {
+                                        "name": "name",
+                                        "type": "preset",
+                                        "value": "lastActionResult"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "choice",
+                            "value": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getCachedObjectValue",
+                                            "params": [
+                                                {
+                                                    "name": "objectName",
+                                                    "type": "preset",
+                                                    "value": "answers"
+                                                },
+                                                {
+                                                    "name": "value",
+                                                    "type": "cached",
+                                                    "value": "currentPlayer"
+                                                },
+                                                {
+                                                    "name": "defaultValue",
+                                                    "type": "preset",
+                                                    "value": "(Did not submit)"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "createVote",
+                    "skipCondition": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "isSituation"
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "title": "Show card",
+                            "vertical": true,
+                            "type": "target_poll",
+                            "terminationCondition": "get_all_votes",
+                            "showResultInRealTime": true,
+                            "showResultDuration": 0,
+                            "duration": 20,
+                            "backgroundColor": "#FFC680",
+                            "borderColor": "black",
+                            "private": true
+                        },
+                        "cached": {
+                            "targets": "topCardOptions",
+                            "image": "topCardImage",
+                            "pollVoteTargetsOptions": "optionAppearances"
+                        },
+                        "computed": {
+                            "actors": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "currentPlayer"
+                                    }
+                                ]
+                            },
+                            "question": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "type": "preset",
+                                        "name": "format",
+                                        "value": "($1), pick one!"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getPlayerNameById",
+                                            "params": [
+                                                {
+                                                    "name": "id",
+                                                    "type": "cached",
+                                                    "value": "currentPlayer"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "postHandler": "randomSelectForOneAnswerTargetVote",
+                    "saveValueInCache": [
+                        {
+                            "name": "choice",
+                            "value": {
+                                "selector": "getCachedValue",
+                                "params": [
+                                    {
+                                        "name": "name",
+                                        "type": "preset",
+                                        "value": "lastActionResult"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "duration": 1,
+                            "isAnnounceOnly": true
+                        },
+                        "computed": {
+                            "to": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "currentPlayer"
+                                    }
+                                ]
+                            },
+                            "header": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "<b>($1)</b>"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "choice"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "duration": 4,
+                            "text": "Get ready to give your clue!",
+                            "backgroundColor": "#FFC680",
+                            "borderColor": "black",
+                            "suppressHistory": true
+                        },
+                        "computed": {
+                            "to": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "currentPlayer"
+                                    }
+                                ]
+                            },
+                            "header": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "\"($1)\""
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "choice.0"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "soundboard.bubbles"
+                            ]
+                        },
+                        "cached": {
+                            "playList.1": "players"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "skipCondition": {
+                        "selector": "isPrevActionSkipped"
+                    },
+                    "payload": {
+                        "preset": {
+                            "delay": 0.5
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Tutorial Part 3",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createConversationGroup",
+                    "payload": {
+                        "preset": {
+                            "video": true,
+                            "audio": true,
+                            "private": false,
+                            "indicator": "💡",
+                            "isVideoForAll": false
+                        },
+                        "cached": {
+                            "members": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "voices.sad3"
+                            ]
+                        },
+                        "cached": {
+                            "playList.0": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "destroyConversationGroups"
+                },
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "tutorial",
+                            "value": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sound Act Draw",
+            "actions": [
+                {
+                    "key": "createDrawing",
+                    "payload": {
+                        "preset": {
+                            "terminationCondition": "get_all",
+                            "duration": 75,
+                            "capture": true,
+                            "vertical": true,
+                            "sounds.list": [
+                                "soundboard.reminder"
+                            ],
+                            "sounds.waitForSoundEnd": true
+                        },
+                        "computed": {
+                            "colors": {
+                                "selector": "randomElementsList",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "preset",
+                                        "value": [
+                                            "red",
+                                            "green",
+                                            "blue",
+                                            "aqua",
+                                            "black",
+                                            "orange",
+                                            "brown",
+                                            "gold",
+                                            "pink",
+                                            "purple",
+                                            "coral"
+                                        ]
+                                    },
+                                    {
+                                        "name": "length",
+                                        "type": "preset",
+                                        "value": 6
+                                    }
+                                ]
+                            },
+                            "question": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "isSituation"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "cached",
+                                        "value": "topCardOptions.0"
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "formatString",
+                                            "params": [
+                                                {
+                                                    "name": "format",
+                                                    "type": "preset",
+                                                    "value": "($1), use this whiteboard if you need to draw!"
+                                                },
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "getPlayerNameById",
+                                                        "params": [
+                                                            {
+                                                                "name": "id",
+                                                                "type": "cached",
+                                                                "value": "currentPlayer"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "actors": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "currentPlayer"
+                                    }
+                                ]
+                            },
+                            "playList.1": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "currentPlayer"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "lastImage",
+                            "value": {
+                                "selector": "getCachedValue",
+                                "params": [
+                                    {
+                                        "name": "name",
+                                        "type": "preset",
+                                        "value": "lastActionResult.url"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mark winners",
+            "actions": [
+                {
+                    "key": "createMixVote",
+                    "payload": {
+                        "preset": {
+                            "title": "Mark winner",
+                            "terminationCondition": "get_all_votes",
+                            "showResultInRealTime": true,
+                            "showResultDuration": 2,
+                            "showResultDelay": 0,
+                            "point.answersQuantity": 6,
+                            "point.allowFewerAnswers": true,
+                            "point.terminationCondition": "get_all_votes",
+                            "poll.answersQuantity": 1,
+                            "duration": 60,
+                            "poll.targets": [
+                                "Nobody got it!"
+                            ],
+                            "oneClick": true,
+                            "allowRevoting": true,
+                            "pollVoteTargetsOptions": {
+                                "Nobody got it!": {
+                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+                                    "backgroundColor": "#D3D3D3",
+                                    "boxIconColor": "#D3D3D3",
+                                    "textColor": "black",
+                                    "widgetIconColor": "red"
+                                }
+                            },
+                            "poll.terminationCondition": "get_all_votes",
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "soundboard.reminder"
+                            ],
+                            "backgroundColor": "#FFC680",
+                            "borderColor": "black"
+                        },
+                        "computed": {
+                            "question": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "($1), who guessed the correct answer first? You may choose up to 6 players."
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getPlayerNameById",
+                                            "params": [
+                                                {
+                                                    "name": "id",
+                                                    "type": "cached",
+                                                    "value": "currentPlayer"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "playList.1": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "currentPlayer"
+                                    }
+                                ]
+                            },
+                            "actors": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "currentPlayer"
+                                    }
+                                ]
+                            },
+                            "point.targets": {
+                                "selector": "listsSubtract",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "cached",
+                                        "value": "players"
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createList",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "currentPlayer"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "winner",
+                            "value": {
+                                "selector": "getCachedValue",
+                                "params": [
+                                    {
+                                        "name": "name",
+                                        "type": "preset",
+                                        "value": "lastActionResult.voteResult"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "success",
+                            "value": {
+                                "selector": "contains",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "cached",
+                                        "value": "players"
+                                    },
+                                    {
+                                        "name": "element",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "selectElement",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "append",
+                                                        "params": [
+                                                            {
+                                                                "name": "list",
+                                                                "type": "cached",
+                                                                "value": "winner"
+                                                            },
+                                                            {
+                                                                "name": "element",
+                                                                "type": "preset",
+                                                                "value": "Nobody got it!"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "index",
+                                                    "type": "preset",
+                                                    "value": 0
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "emptyAction",
+                    "skipCondition": {
+                        "selector": "logicalNOT",
+                        "params": [
+                            {
+                                "name": "arg",
+                                "type": "cached",
+                                "value": "success"
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": false,
+                            "sounds.list": [
+                                "soundboard.guess"
+                            ]
+                        },
+                        "cached": {
+                            "playList.1": "players"
+                        }
+                    }
+                },
+                {
+                    "key": "animateBox",
+                    "skipCondition": {
+                        "selector": "isPrevActionSkipped"
+                    },
+                    "payload": {
+                        "preset": {
+                            "animation": "success"
+                        },
+                        "computed": {
+                            "userIds": {
+                                "selector": "append",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "cached",
+                                        "value": "winner"
+                                    },
+                                    {
+                                        "name": "element",
+                                        "type": "cached",
+                                        "value": "currentPlayer"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "skipCondition": {
+                        "selector": "isPrevActionSkipped"
+                    },
+                    "payload": {
+                        "preset": {
+                            "delay": 1
+                        }
+                    }
+                },
+                {
+                    "key": "updateScore",
+                    "skipCondition": {
+                        "selector": "isPrevActionSkipped"
+                    },
+                    "payload": {
+                        "computed": {
+                            "scores": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createDict",
+                                            "params": [
+                                                {
+                                                    "name": "keys",
+                                                    "type": "preset",
+                                                    "value": [
+                                                        "list",
+                                                        "delta"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "values",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "createList",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "append",
+                                                                    "params": [
+                                                                        {
+                                                                            "name": "list",
+                                                                            "type": "cached",
+                                                                            "value": "winner"
+                                                                        },
+                                                                        {
+                                                                            "name": "element",
+                                                                            "type": "cached",
+                                                                            "value": "currentPlayer"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "arg2",
+                                                                "type": "preset",
+                                                                "value": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "moveCards",
+                    "payload": {
+                        "preset": {
+                            "type": "deck",
+                            "from": "playing_deck",
+                            "to": "discard"
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "duration": 3,
+                            "backgroundColor": "#FFC680",
+                            "borderColor": "black",
+                            "text": "... was the phrase!"
+                        },
+                        "cached": {
+                            "to": "players"
+                        },
+                        "computed": {
+                            "header": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "type": "preset",
+                                        "name": "format",
+                                        "value": "\"($1)\"..."
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "choice.0"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Conversation card",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "skyEdition"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "moveCards",
+                    "skipCondition": {
+                        "selector": "greaterThan",
+                        "params": [
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "listLength",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getDeckCards",
+                                                "params": [
+                                                    {
+                                                        "name": "deck",
+                                                        "type": "preset",
+                                                        "value": "conversation"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "type": "deck",
+                            "from": "discard",
+                            "to": "travel",
+                            "cardType": [
+                                "conversation"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "key": "shuffleDeck",
+                    "skipCondition": {
+                        "selector": "isPrevActionSkipped"
+                    },
+                    "payload": {
+                        "preset": {
+                            "deck": "conversation"
+                        }
+                    }
+                },
+                {
+                    "key": "moveCards",
+                    "payload": {
+                        "preset": {
+                            "type": "deck",
+                            "from": "conversation",
+                            "to": "playing_deck",
+                            "qnt": 1
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "topCardImage",
+                            "value": {
+                                "selector": "getObjectField",
+                                "params": [
+                                    {
+                                        "name": "obj",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "selectElement",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "getDeckCards",
+                                                        "params": [
+                                                            {
+                                                                "name": "deck",
+                                                                "type": "preset",
+                                                                "value": "playing_deck"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "index",
+                                                    "type": "preset",
+                                                    "value": 0
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "field",
+                                        "type": "preset",
+                                        "value": "image"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "createGenericCardWidget",
+                    "payload": {
+                        "preset": {
+                            "ratio": "0.77",
+                            "cardback": "wave_cardback",
+                            "backgroundImage": "https://res.cloudinary.com/liars-club/image/upload/blue_background_izlan7.jpg",
+                            "decks": [
+                                "playing_deck",
+                                "discard"
+                            ],
+                            "dimensions": [
+                                1,
+                                2
+                            ]
+                        }
+                    }
+                },
+                {
+                    "key": "selectCentralWidgetDeck",
+                    "payload": {
+                        "preset": {
+                            "duration": 120,
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "soundboard.reminder"
+                            ],
+                            "decks": [
+                                "playing_deck",
+                                "discard"
+                            ]
+                        },
+                        "computed": {
+                            "question": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "type": "preset",
+                                        "name": "format",
+                                        "value": "($1), answer the question! Everyone else, click on the conversation card if the question was answered, otherwise click on the Discard pile."
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getPlayerNameById",
+                                            "params": [
+                                                {
+                                                    "name": "id",
+                                                    "type": "cached",
+                                                    "value": "currentPlayer"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "actors": {
+                                "selector": "listsSubtract",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "cached",
+                                        "value": "players"
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createList",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "currentPlayer"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "playList.1": {
+                                "selector": "listsSubtract",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "cached",
+                                        "value": "players"
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createList",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "currentPlayer"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "votes",
+                            "value": {
+                                "selector": "getCachedValue",
+                                "params": [
+                                    {
+                                        "name": "name",
+                                        "type": "preset",
+                                        "value": "lastActionResult"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "numYes",
+                            "value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Compute majority",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "skyEdition"
+                        }
+                    ]
+                }
+            ],
+            "repeat": {
+                "qnt": {
+                    "selector": "getCachedValue",
+                    "params": [
+                        {
+                            "name": "name",
+                            "type": "preset",
+                            "value": "numPlayers"
+                        }
+                    ]
+                }
+            },
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "skipCondition": {
+                        "selector": "equals",
+                        "params": [
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "getCachedObjectValue",
+                                    "params": [
+                                        {
+                                            "name": "objectName",
+                                            "type": "preset",
+                                            "value": "votes"
+                                        },
+                                        {
+                                            "name": "value",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "selectElement",
+                                                "params": [
+                                                    {
+                                                        "name": "list",
+                                                        "type": "cached",
+                                                        "value": "players"
+                                                    },
+                                                    {
+                                                        "name": "index",
+                                                        "type": "cached",
+                                                        "value": "repeatIndex"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "defaultValue",
+                                            "type": "preset",
+                                            "value": "discard"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": "discard"
+                            }
+                        ]
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "numYes",
+                            "value": {
+                                "selector": "inc",
+                                "params": [
+                                    {
+                                        "name": "arg",
+                                        "type": "cached",
+                                        "value": "numYes"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Success?",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "skyEdition"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "success",
+                            "value": {
+                                "selector": "greaterThan",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "multiply",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "numYes"
+                                                },
+                                                {
+                                                    "name": "arg2",
+                                                    "type": "preset",
+                                                    "value": 2
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "dec",
+                                            "params": [
+                                                {
+                                                    "name": "arg",
+                                                    "type": "cached",
+                                                    "value": "numPlayers"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Update scores",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "skyEdition"
+                        }
+                    ]
+                },
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "success"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": false,
+                            "sounds.list": [
+                                "soundboard.success"
+                            ]
+                        },
+                        "cached": {
+                            "playList.1": "players"
+                        }
+                    }
+                },
+                {
+                    "key": "animateBox",
+                    "payload": {
+                        "preset": {
+                            "animation": "success"
+                        },
+                        "computed": {
+                            "userIds": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "currentPlayer"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 1
+                        }
+                    }
+                },
+                {
+                    "key": "updateScore",
+                    "payload": {
+                        "computed": {
+                            "scores": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createDict",
+                                            "params": [
+                                                {
+                                                    "name": "keys",
+                                                    "type": "preset",
+                                                    "value": [
+                                                        "list",
+                                                        "delta"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "values",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "createList",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "createList",
+                                                                    "params": [
+                                                                        {
+                                                                            "name": "arg1",
+                                                                            "type": "cached",
+                                                                            "value": "currentPlayer"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "arg2",
+                                                                "type": "preset",
+                                                                "value": 1
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Manage variables",
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "currentMinScore",
+                            "value": {
+                                "selector": "getMinCurrentScore"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "PLAY AGAIN?",
+            "skipCondition": [
+                {
+                    "selector": "notEqual",
+                    "params": [
+                        {
+                            "name": "arg1",
+                            "type": "computed",
+                            "value": {
+                                "selector": "remainder",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "gameLoopIndex"
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "preset",
+                                        "value": 3
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 2
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createVote",
+                    "payload": {
+                        "preset": {
+                            "title": "PLAY AGAIN?",
+                            "vertical": true,
+                            "type": "binary",
+                            "terminationCondition": "get_majority",
+                            "showResultInRealTime": true,
+                            "showResultDuration": 1,
+                            "showResultDelay": 0,
+                            "binaryAnswerAliases": [
+                                "HELL YEAH!",
+                                "I'M SO DONE"
+                            ],
+                            "pollVoteTargetsOptions": {
+                                "HELL YEAH!": {
+                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                                    "backgroundColor": "#D3D3D3",
+                                    "boxIconColor": "#D3D3D3",
+                                    "textColor": "black",
+                                    "widgetIconColor": "green"
+                                },
+                                "I'M SO DONE": {
+                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+                                    "backgroundColor": "#D3D3D3",
+                                    "boxIconColor": "#D3D3D3",
+                                    "textColor": "black",
+                                    "widgetIconColor": "red"
+                                }
+                            },
+                            "duration": 300,
+                            "question": "Would you like to keep playing?",
+                            "allowRevoting": true,
+                            "backgroundColor": "#FFC680",
+                            "borderColor": "black"
+                        },
+                        "cached": {
+                            "actors": "players"
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "playAgain",
+                            "value": {
+                                "selector": "isTargetGotMajority",
+                                "params": [
+                                    {
+                                        "name": "voteResult",
+                                        "type": "cached",
+                                        "value": "lastActionResult"
+                                    },
+                                    {
+                                        "name": "target",
+                                        "type": "preset",
+                                        "value": "HELL YEAH!"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "checkWinCondition": true
+        },
+        {
+            "name": "Next player",
+            "turnPlayersToSpectators": true,
+            "turnSpectatorsToPlayers": true,
+            "actions": [
+                {
+                    "key": "removeWidget",
+                    "payload": {
+                        "preset": {
+                            "id": "GenericCardWidget"
+                        }
+                    }
+                },
+                {
+                    "key": "removeAllHighlights"
+                },
+                {
+                    "key": "moveCards",
+                    "payload": {
+                        "preset": {
+                            "type": "deck",
+                            "from": "playing_deck",
+                            "to": "discard"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "currentPlayer",
+                            "value": {
+                                "selector": "nextPlayer",
+                                "params": [
+                                    {
+                                        "name": "playersList",
+                                        "type": "cached",
+                                        "value": "players"
+                                    },
+                                    {
+                                        "name": "playerId",
+                                        "type": "cached",
+                                        "value": "currentPlayer"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "winCondition": {},
+    "postGameActions": [
+        {
+            "key": "createNotification",
+            "payload": {
+                "preset": {
+                    "image": "winner",
+                    "backgroundColor": "#FFC680",
+                    "borderColor": "black"
+                },
+                "cached": {
+                    "to": "players"
+                },
+                "computed": {
+                    "header": {
+                        "selector": "formatString",
+                        "params": [
+                            {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "($1) ($2)!"
+                            },
+                            {
+                                "name": "arg1",
+                                "type": "cached",
+                                "value": "winner"
+                            },
+                            {
+                                "name": "arg2",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "ifElse",
+                                    "params": [
+                                        {
+                                            "name": "condition",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "equals",
+                                                "params": [
+                                                    {
+                                                        "name": "arg1",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "listLength",
+                                                            "params": [
+                                                                {
+                                                                    "name": "list",
+                                                                    "type": "computed",
+                                                                    "value": {
+                                                                        "selector": "getPlayersWithMaxScore"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "arg2",
+                                                        "type": "preset",
+                                                        "value": 1
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "thenValue",
+                                            "type": "preset",
+                                            "value": "wins"
+                                        },
+                                        {
+                                            "name": "elseValue",
+                                            "type": "preset",
+                                            "value": "share the win"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "endClip"
+        }
+    ],
+    "playersWinCondition": {
+        "gameOverCondition": {
+            "selector": "logicalNOT",
+            "params": [
+                {
+                    "name": "arg",
+                    "type": "cached",
+                    "value": "playAgain"
+                }
+            ]
+        },
+        "winners": {
+            "selector": "getPlayerNamesByIds",
+            "params": [
+                {
+                    "name": "ids",
+                    "type": "computed",
+                    "value": {
+                        "selector": "getPlayersWithMaxScore"
+                    }
+                }
+            ]
+        }
+    }
+}

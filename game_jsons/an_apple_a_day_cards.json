@@ -1,0 +1,220 @@
+{
+    "name": "an_apple_a_day",
+    "cards": [
+        {
+            "name": "apple",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/an_apple_a_day/apple.png",
+            "label": "Apple",
+            "type": "apple",
+            "rank": 0,
+            "weight": -2
+        },
+        {
+            "name": "doctor",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/an_apple_a_day/doctor.png",
+            "label": "Doctor",
+            "type": "doctor",
+            "rank": 0,
+            "weight": -1
+        },
+        {
+            "name": "1",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-01.png",
+            "label": "1",
+            "type": "bid",
+            "rank": 1,
+            "weight": 1
+        },
+        {
+            "name": "2",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-02.png",
+            "label": "2",
+            "type": "bid",
+            "rank": 2,
+            "weight": 2
+        },
+        {
+            "name": "3",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-03.png",
+            "label": "3",
+            "type": "bid",
+            "rank": 3,
+            "weight": 3
+        },
+        {
+            "name": "4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-04.png",
+            "label": "4",
+            "type": "bid",
+            "rank": 4,
+            "weight": 4
+        },
+        {
+            "name": "5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-05.png",
+            "label": "5",
+            "type": "bid",
+            "rank": 5,
+            "weight": 5
+        },
+        {
+            "name": "6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-06.png",
+            "label": "6",
+            "type": "bid",
+            "rank": 6,
+            "weight": 6
+        },
+        {
+            "name": "7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-07.png",
+            "label": "7",
+            "type": "bid",
+            "rank": 7,
+            "weight": 7
+        },
+        {
+            "name": "8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-08.png",
+            "label": "8",
+            "type": "bid",
+            "rank": 8,
+            "weight": 8
+        },
+        {
+            "name": "9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-09.png",
+            "label": "9",
+            "type": "bid",
+            "rank": 9,
+            "weight": 9
+        },
+        {
+            "name": "10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-10.png",
+            "label": "10",
+            "type": "bid",
+            "rank": 10,
+            "weight": 10
+        },
+        {
+            "name": "11",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-11.png",
+            "label": "11",
+            "type": "bid",
+            "rank": 11,
+            "weight": 11
+        },
+        {
+            "name": "12",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-12.png",
+            "label": "12",
+            "type": "bid",
+            "rank": 12,
+            "weight": 12
+        },
+        {
+            "name": "13",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-13.png",
+            "label": "13",
+            "type": "bid",
+            "rank": 13,
+            "weight": 13
+        },
+        {
+            "name": "14",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-14.png",
+            "label": "14",
+            "type": "bid",
+            "rank": 14,
+            "weight": 14
+        },
+        {
+            "name": "15",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-15.png",
+            "label": "15",
+            "type": "bid",
+            "rank": 15,
+            "weight": 15
+        },
+        {
+            "name": "16",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-16.png",
+            "label": "16",
+            "type": "bid",
+            "rank": 16,
+            "weight": 16
+        },
+        {
+            "name": "17",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-17.png",
+            "label": "17",
+            "type": "bid",
+            "rank": 17,
+            "weight": 17
+        },
+        {
+            "name": "18",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-18.png",
+            "label": "18",
+            "type": "bid",
+            "rank": 18,
+            "weight": 18
+        },
+        {
+            "name": "19",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-19.png",
+            "label": "19",
+            "type": "bid",
+            "rank": 19,
+            "weight": 19
+        },
+        {
+            "name": "20",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/discrete_dodgeball/throw-20.png",
+            "label": "20",
+            "type": "bid",
+            "rank": 20,
+            "weight": 20
+        },
+        {
+            "name": "pass",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/picky_eaters/special/pass.png",
+            "label": "Pass",
+            "type": "bid",
+            "rank": 100,
+            "weight": 0
+        }
+    ],
+    "sets": {
+        "apples": {
+            "apple": 50
+        },
+        "doctors": {
+            "doctor": 20
+        },
+        "bids": {
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "pass": 1
+        }
+    }
+}

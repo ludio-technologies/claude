@@ -1,0 +1,494 @@
+{
+  "name": "roundabout",
+  "cards": [
+    {
+      "name": "red_1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/red_1.png",
+      "label": "Red 1",
+      "type": "red",
+      "suit": "red",
+      "rank": 1,
+      "weight": 1
+    },
+    {
+      "name": "red_2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/red_2.png",
+      "label": "Red 2",
+      "type": "red",
+      "suit": "red",
+      "rank": 2,
+      "weight": 2
+    },
+    {
+      "name": "red_3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/red_3.png",
+      "label": "Red 3",
+      "type": "red",
+      "suit": "red",
+      "rank": 3,
+      "weight": 3
+    },
+    {
+      "name": "red_4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/red_4.png",
+      "label": "Red 4",
+      "type": "red",
+      "suit": "red",
+      "rank": 4,
+      "weight": 4
+    },
+    {
+      "name": "red_5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/red_5.png",
+      "label": "Red 5",
+      "type": "red",
+      "suit": "red",
+      "rank": 5,
+      "weight": 5
+    },
+    {
+      "name": "red_6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/red_6.png",
+      "label": "Red 6",
+      "type": "red",
+      "suit": "red",
+      "rank": 6,
+      "weight": 6
+    },
+    {
+      "name": "red_7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/red_7.png",
+      "label": "Red 7",
+      "type": "red",
+      "suit": "red",
+      "rank": 7,
+      "weight": 7
+    },
+    {
+      "name": "red_8",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/red_8.png",
+      "label": "Red 8",
+      "type": "red",
+      "suit": "red",
+      "rank": 8,
+      "weight": 8
+    },
+    {
+      "name": "red_9",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/red_9.png",
+      "label": "Red 9",
+      "type": "red",
+      "suit": "red",
+      "rank": 9,
+      "weight": 9
+    },
+    {
+      "name": "green_1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/green_1.png",
+      "label": "Green 1",
+      "type": "green",
+      "suit": "green",
+      "rank": 1,
+      "weight": 11
+    },
+    {
+      "name": "green_2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/green_2.png",
+      "label": "Green 2",
+      "type": "green",
+      "suit": "green",
+      "rank": 2,
+      "weight": 12
+    },
+    {
+      "name": "green_3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/green_3.png",
+      "label": "Green 3",
+      "type": "green",
+      "suit": "green",
+      "rank": 3,
+      "weight": 13
+    },
+    {
+      "name": "green_4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/green_4.png",
+      "label": "Green 4",
+      "type": "green",
+      "suit": "green",
+      "rank": 4,
+      "weight": 14
+    },
+    {
+      "name": "green_5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/green_5.png",
+      "label": "Green 5",
+      "type": "green",
+      "suit": "green",
+      "rank": 5,
+      "weight": 15
+    },
+    {
+      "name": "green_6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/green_6.png",
+      "label": "Green 6",
+      "type": "green",
+      "suit": "green",
+      "rank": 6,
+      "weight": 16
+    },
+    {
+      "name": "green_7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/green_7.png",
+      "label": "Green 7",
+      "type": "green",
+      "suit": "green",
+      "rank": 7,
+      "weight": 17
+    },
+    {
+      "name": "green_8",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/green_8.png",
+      "label": "Green 8",
+      "type": "green",
+      "suit": "green",
+      "rank": 8,
+      "weight": 18
+    },
+    {
+      "name": "green_9",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/green_9.png",
+      "label": "Green 9",
+      "type": "green",
+      "suit": "green",
+      "rank": 9,
+      "weight": 19
+    },
+    {
+      "name": "blue_1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/blue_1.png",
+      "label": "Blue 1",
+      "type": "blue",
+      "suit": "blue",
+      "rank": 1,
+      "weight": 21
+    },
+    {
+      "name": "blue_2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/blue_2.png",
+      "label": "Blue 2",
+      "type": "blue",
+      "suit": "blue",
+      "rank": 2,
+      "weight": 22
+    },
+    {
+      "name": "blue_3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/blue_3.png",
+      "label": "Blue 3",
+      "type": "blue",
+      "suit": "blue",
+      "rank": 3,
+      "weight": 23
+    },
+    {
+      "name": "blue_4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/blue_4.png",
+      "label": "Blue 4",
+      "type": "blue",
+      "suit": "blue",
+      "rank": 4,
+      "weight": 24
+    },
+    {
+      "name": "blue_5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/blue_5.png",
+      "label": "Blue 5",
+      "type": "blue",
+      "suit": "blue",
+      "rank": 5,
+      "weight": 25
+    },
+    {
+      "name": "blue_6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/blue_6.png",
+      "label": "Blue 6",
+      "type": "blue",
+      "suit": "blue",
+      "rank": 6,
+      "weight": 26
+    },
+    {
+      "name": "blue_7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/blue_7.png",
+      "label": "Blue 7",
+      "type": "blue",
+      "suit": "blue",
+      "rank": 7,
+      "weight": 27
+    },
+    {
+      "name": "blue_8",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/blue_8.png",
+      "label": "Blue 8",
+      "type": "blue",
+      "suit": "blue",
+      "rank": 8,
+      "weight": 28
+    },
+    {
+      "name": "blue_9",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/blue_9.png",
+      "label": "Blue 9",
+      "type": "blue",
+      "suit": "blue",
+      "rank": 9,
+      "weight": 29
+    },
+    {
+      "name": "yellow_1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/yellow_1.png",
+      "label": "Yellow 1",
+      "type": "yellow",
+      "suit": "yellow",
+      "rank": 1,
+      "weight": 31
+    },
+    {
+      "name": "yellow_2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/yellow_2.png",
+      "label": "Yellow 2",
+      "type": "yellow",
+      "suit": "yellow",
+      "rank": 2,
+      "weight": 32
+    },
+    {
+      "name": "yellow_3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/yellow_3.png",
+      "label": "Yellow 3",
+      "type": "yellow",
+      "suit": "yellow",
+      "rank": 3,
+      "weight": 33
+    },
+    {
+      "name": "yellow_4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/yellow_4.png",
+      "label": "Yellow 4",
+      "type": "yellow",
+      "suit": "yellow",
+      "rank": 4,
+      "weight": 34
+    },
+    {
+      "name": "yellow_5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/yellow_5.png",
+      "label": "Yellow 5",
+      "type": "yellow",
+      "suit": "yellow",
+      "rank": 5,
+      "weight": 35
+    },
+    {
+      "name": "yellow_6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/yellow_6.png",
+      "label": "Yellow 6",
+      "type": "yellow",
+      "suit": "yellow",
+      "rank": 6,
+      "weight": 36
+    },
+    {
+      "name": "yellow_7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/yellow_7.png",
+      "label": "Yellow 7",
+      "type": "yellow",
+      "suit": "yellow",
+      "rank": 7,
+      "weight": 37
+    },
+    {
+      "name": "yellow_8",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/yellow_8.png",
+      "label": "Yellow 8",
+      "type": "yellow",
+      "suit": "yellow",
+      "rank": 8,
+      "weight": 38
+    },
+    {
+      "name": "yellow_9",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/cards/yellow_9.png",
+      "label": "Yellow 9",
+      "type": "yellow",
+      "suit": "yellow",
+      "rank": 9,
+      "weight": 39
+    },
+    {
+      "name": "bid_1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/bids/bid_1.png",
+      "label": "Bid 1",
+      "type": "bid_1",
+      "lo": 1,
+      "hi": 1,
+      "range": [
+        1
+      ],
+      "weight": -7
+    },
+    {
+      "name": "bid_2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/bids/bid_2.png",
+      "label": "Bid 2",
+      "type": "bid_2",
+      "lo": 2,
+      "hi": 2,
+      "range": [
+        2
+      ],
+      "weight": -6
+    },
+    {
+      "name": "bid_3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/bids/bid_3.png",
+      "label": "Bid 3",
+      "type": "bid_3",
+      "lo": 3,
+      "hi": 3,
+      "range": [
+        3
+      ],
+      "weight": -5
+    },
+    {
+      "name": "bid_4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/bids/bid_4.png",
+      "label": "Bid 4",
+      "type": "bid_4",
+      "lo": 4,
+      "hi": 4,
+      "range": [
+        4
+      ],
+      "weight": -4
+    },
+    {
+      "name": "bid_1_2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/bids/bid_1_2.png",
+      "label": "Bid 1-2",
+      "type": "bid_1_2",
+      "lo": 1,
+      "hi": 2,
+      "range": [
+        1,
+        2
+      ],
+      "weight": -3
+    },
+    {
+      "name": "bid_2_3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/bids/bid_2_3.png",
+      "label": "Bid 2-3",
+      "type": "bid_2_3",
+      "lo": 2,
+      "hi": 3,
+      "range": [
+        2,
+        3
+      ],
+      "weight": -2
+    },
+    {
+      "name": "bid_3_4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/roundabout/bids/bid_3_4.png",
+      "label": "Bid 3-4",
+      "type": "bid_3_4",
+      "lo": 3,
+      "hi": 4,
+      "range": [
+        3,
+        4
+      ],
+      "weight": -1
+    }
+  ],
+  "sets": {
+    "3": {
+      "red_1": 1,
+      "red_2": 1,
+      "red_3": 1,
+      "red_4": 1,
+      "red_5": 1,
+      "red_6": 1,
+      "red_7": 1,
+      "red_8": 1,
+      "red_9": 1,
+      "green_1": 1,
+      "green_2": 1,
+      "green_3": 1,
+      "green_4": 1,
+      "green_5": 1,
+      "green_6": 1,
+      "green_7": 1,
+      "green_8": 1,
+      "green_9": 1,
+      "yellow_1": 1,
+      "yellow_2": 1,
+      "yellow_3": 1,
+      "yellow_4": 1,
+      "yellow_5": 1,
+      "yellow_6": 1,
+      "yellow_7": 1,
+      "yellow_8": 1,
+      "yellow_9": 1
+    },
+    "4": {
+      "red_1": 1,
+      "red_2": 1,
+      "red_3": 1,
+      "red_4": 1,
+      "red_5": 1,
+      "red_6": 1,
+      "red_7": 1,
+      "red_8": 1,
+      "red_9": 1,
+      "green_1": 1,
+      "green_2": 1,
+      "green_3": 1,
+      "green_4": 1,
+      "green_5": 1,
+      "green_6": 1,
+      "green_7": 1,
+      "green_8": 1,
+      "green_9": 1,
+      "blue_1": 1,
+      "blue_2": 1,
+      "blue_3": 1,
+      "blue_4": 1,
+      "blue_5": 1,
+      "blue_6": 1,
+      "blue_7": 1,
+      "blue_8": 1,
+      "blue_9": 1,
+      "yellow_1": 1,
+      "yellow_2": 1,
+      "yellow_3": 1,
+      "yellow_4": 1,
+      "yellow_5": 1,
+      "yellow_6": 1,
+      "yellow_7": 1,
+      "yellow_8": 1,
+      "yellow_9": 1
+    },
+    "all_bids": {
+      "bid_1": 1,
+      "bid_2": 1,
+      "bid_3": 1,
+      "bid_4": 1,
+      "bid_1_2": 1,
+      "bid_2_3": 1,
+      "bid_3_4": 1
+    }
+  }
+}

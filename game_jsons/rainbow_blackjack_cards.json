@@ -1,0 +1,227 @@
+{
+    "name": "rainbow_blackjack",
+    "cards": [
+        {
+            "name": "times_2",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/times_2.png",
+            "label": "x2",
+            "points": 0,
+            "rank": -1,
+            "type": "number"
+        },
+        {
+            "name": "plus_2",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/plus_2.png",
+            "label": "+2",
+            "points": 0,
+            "rank": -2,
+            "type": "number"
+        },
+        {
+            "name": "plus_4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/plus_4.png",
+            "label": "+4",
+            "points": 0,
+            "rank": -3,
+            "type": "number"
+        },
+        {
+            "name": "plus_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/plus_6.png",
+            "label": "+6",
+            "points": 0,
+            "rank": -4,
+            "type": "number"
+        },
+        {
+            "name": "plus_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/plus_8.png",
+            "label": "+8",
+            "points": 0,
+            "rank": -5,
+            "type": "number"
+        },
+        {
+            "name": "plus_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/plus_10.png",
+            "label": "+10",
+            "points": 0,
+            "rank": -6,
+            "type": "number"
+        },
+        {
+            "name": "1",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/1.png",
+            "label": "1",
+            "points": 1,
+            "rank": 1,
+            "type": "number"
+        },
+        {
+            "name": "2",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/2.png",
+            "label": "2",
+            "points": 2,
+            "rank": 2,
+            "type": "number"
+        },
+        {
+            "name": "3",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/3.png",
+            "label": "3",
+            "points": 3,
+            "rank": 3,
+            "type": "number"
+        },
+        {
+            "name": "4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/4.png",
+            "label": "4",
+            "points": 4,
+            "rank": 4,
+            "type": "number"
+        },
+        {
+            "name": "5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/5.png",
+            "label": "5",
+            "points": 5,
+            "rank": 5,
+            "type": "number"
+        },
+        {
+            "name": "6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/6.png",
+            "label": "6",
+            "points": 6,
+            "rank": 6,
+            "type": "number"
+        },
+        {
+            "name": "7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/7.png",
+            "label": "7",
+            "points": 7,
+            "rank": 7,
+            "type": "number"
+        },
+        {
+            "name": "8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/8.png",
+            "label": "8",
+            "points": 8,
+            "rank": 8,
+            "type": "number"
+        },
+        {
+            "name": "9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/9.png",
+            "label": "9",
+            "points": 9,
+            "rank": 9,
+            "type": "number"
+        },
+        {
+            "name": "10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/10.png",
+            "label": "10",
+            "points": 10,
+            "rank": 10,
+            "type": "number"
+        },
+        {
+            "name": "11",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/11.png",
+            "label": "11",
+            "points": 11,
+            "rank": 11,
+            "type": "number"
+        },
+        {
+            "name": "12",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/12.png",
+            "label": "12",
+            "points": 12,
+            "rank": 12,
+            "type": "number"
+        },
+        {
+            "name": "0",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/0.png",
+            "label": "0",
+            "points": 0,
+            "rank": 0,
+            "type": "number"
+        },
+        {
+            "name": "hit",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/hit.png",
+            "label": "Hit!",
+            "points": 0,
+            "rank": -20,
+            "type": "special"
+        },
+        {
+            "name": "stay",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/stay.png",
+            "label": "Stay",
+            "points": 0,
+            "rank": -19,
+            "type": "special"
+        },
+        {
+            "name": "freeze",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/stop.png",
+            "label": "Stop",
+            "points": 0,
+            "rank": -7,
+            "type": "number"
+        },
+        {
+            "name": "second_chance",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/second_chance.png",
+            "label": "Extra Life",
+            "points": 0,
+            "rank": -8,
+            "type": "number"
+        },
+        {
+            "name": "flip",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/rainbow_blackjack/flip.png",
+            "label": "Force Flip",
+            "points": 0,
+            "rank": -9,
+            "type": "number"
+        }
+    ],
+    "sets": {
+        "cards": {
+            "0": 1,
+            "1": 1,
+            "2": 2,
+            "3": 3,
+            "4": 4,
+            "5": 5,
+            "6": 6,
+            "7": 7,
+            "8": 8,
+            "9": 9,
+            "10": 10,
+            "11": 11,
+            "12": 12,
+            "times_2": 1,
+            "plus_2": 1,
+            "plus_4": 1,
+            "plus_6": 1,
+            "plus_8": 1,
+            "plus_10": 1,
+            "freeze": 3,
+            "second_chance": 3,
+            "flip": 3
+        },
+        "special": {
+            "hit": 20,
+            "stay": 20
+        }
+    }
+}

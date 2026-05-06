@@ -1,0 +1,19 @@
+{
+  "games": [
+    {"id": 1, "name": "Wavelength", "genre": "party", "status": "done", "notes": "Uploaded 2026-05-05; setup ID: d2b24cbb-e927-4296-b17f-e627af10db48; banner pending upload to Cloudinary"},
+    {"id": 2, "name": "Hearts", "genre": "trick-taking card game (4 players)", "status": "pending", "notes": ""},
+    {"id": 3, "name": "Liar's Dice", "genre": "bluffing/dice", "status": "pending", "notes": ""},
+    {"id": 4, "name": "Euchre", "genre": "trick-taking card game", "status": "pending", "notes": ""},
+    {"id": 5, "name": "Detective Club", "genre": "social deduction/art", "status": "pending", "notes": ""},
+    {"id": 6, "name": "Sea Salt and Paper", "genre": "card game", "status": "pending", "notes": ""},
+    {"id": 7, "name": "Parade", "genre": "card game", "status": "pending", "notes": ""},
+    {"id": 8, "name": "High Society", "genre": "card game", "status": "pending", "notes": ""},
+    {"id": 9, "name": "Poison", "genre": "card game", "status": "pending", "notes": ""},
+    {"id": 10, "name": "MonsDRAWcity", "genre": "drawing game", "status": "pending", "notes": ""},
+    {"id": 11, "name": "Marshmallow Test", "genre": "card game", "status": "pending", "notes": ""},
+    {"id": 12, "name": "Paper Pirates", "genre": "Steam game", "status": "pending", "notes": ""},
+    {"id": 13, "name": "Push the Button", "genre": "Jackbox game", "status": "pending", "notes": ""},
+    {"id": 14, "name": "Tortuga 1867", "genre": "social deduction", "status": "pending", "notes": ""},
+    {"id": 15, "name": "Shamans", "genre": "card game", "status": "pending", "notes": ""}
+  ]
+}

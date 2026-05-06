@@ -1,0 +1,3174 @@
+{
+    "gameInitOptions": {
+        "allowRecorder": true,
+        "allowSpectatorBecomePlayer": true,
+        "roleConfirmation": false,
+        "useDefaultRoles": true,
+        "minPlayers": 4,
+        "maxPlayers": 24,
+        "preferredPlayersQnt": [
+            10,
+            12
+        ],
+        "time": 20,
+        "configVariables": [
+            {
+                "name": "firstSetClueDuration",
+                "label": "Time for First Clue (seconds)",
+                "type": "number",
+                "default": 300
+            },
+            {
+                "name": "nextSetClueDuration",
+                "label": "Time for All Other Clues (seconds)",
+                "type": "number",
+                "default": 120
+            },
+            {
+                "name": "guessDuration",
+                "label": "Time per guess (seconds)",
+                "type": "number",
+                "default": 120
+            }
+        ],
+        "notChangeLayoutAfterGame": true,
+        "teams": {
+            "red": {
+                "id": "red",
+                "name": "Red Team",
+                "description": "The Red team",
+                "color": "#D83232",
+                "roles": [
+                    "red_player",
+                    "red_codemaster",
+                    "red"
+                ]
+            },
+            "redPlayer": {
+                "id": "redPlayer",
+                "name": "Red Team",
+                "description": "The Red team",
+                "color": "#D83232",
+                "roles": [
+                    "red"
+                ]
+            },
+            "blue": {
+                "id": "blue",
+                "name": "Blue Team",
+                "description": "The Blue team",
+                "color": "#4EC1D0",
+                "roles": [
+                    "blue_player",
+                    "blue_codemaster",
+                    "blue"
+                ]
+            },
+            "bluePlayer": {
+                "id": "bluePlayer",
+                "name": "Blue Team",
+                "description": "The Blue team",
+                "color": "#4EC1D0",
+                "roles": [
+                    "blue_player",
+                    "blue_codemaster",
+                    "blue"
+                ]
+            },
+            "all": {
+                "id": "all",
+                "name": "All",
+                "description": "All teams",
+                "color": "",
+                "roles": [
+                    "player"
+                ]
+            }
+        },
+        "roles": [
+            {
+                "roleInfo": {
+                    "id": "player",
+                    "name": "Player",
+                    "description": "Word association blows your mind 😎",
+                    "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
+                    "team": "all",
+                    "prefix": "a "
+                },
+                "isRequired": false,
+                "isDefaultRole": true
+            },
+            {
+                "roleInfo": {
+                    "id": "red_player",
+                    "name": "Clicker",
+                    "description": "You're on team Red!",
+                    "avatar": "https://res.cloudinary.com/liars-club/image/upload/red_owl_ansgnc.png",
+                    "team": "red",
+                    "prefix": "a "
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "red",
+                    "name": "Player",
+                    "description": "You're on team Red!",
+                    "avatar": "https://res.cloudinary.com/liars-club/image/upload/red_owl_ansgnc.png",
+                    "team": "redPlayer",
+                    "prefix": "a "
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "blue_player",
+                    "name": "Clicker",
+                    "description": "You're on team Blue!",
+                    "avatar": "https://res.cloudinary.com/liars-club/image/upload/blue_bat_pshd0l.png",
+                    "team": "blue",
+                    "prefix": "a "
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "blue",
+                    "name": "Player",
+                    "description": "You're on team Blue!",
+                    "avatar": "https://res.cloudinary.com/liars-club/image/upload/blue_bat_pshd0l.png",
+                    "team": "bluePlayer",
+                    "prefix": "a "
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "red_codemaster",
+                    "name": "Guide",
+                    "description": "",
+                    "avatar": "",
+                    "team": "red",
+                    "prefix": "a "
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "blue_codemaster",
+                    "name": "Guide",
+                    "description": "",
+                    "avatar": "",
+                    "team": "blue",
+                    "prefix": "a "
+                },
+                "isRequired": false
+            }
+        ],
+        "rolesPreset": {},
+        "cheatsheet": {
+            "label": "Cheatsheet",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/pitfall/pitfall_cheatsheet.png"
+        },
+        "voices": {
+            "default": {
+                "p1": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p1.mp3",
+                "p2": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p2.mp3",
+                "p3": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p3.mp3",
+                "p4": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p4.mp3",
+                "p5": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p5.mp3",
+                "p6": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p6.mp3",
+                "p7": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p7.mp3",
+                "p8": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p8.mp3",
+                "p9": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p9.mp3"
+            }
+        },
+        "soundboard": {
+            "default": {
+                "evil_laugh": "https://res.cloudinary.com/liars-club/video/upload/audio/evil_laugh.mp3",
+                "reminder": "https://res.cloudinary.com/liars-club/video/upload/audio/reminder.mp4",
+                "red_clue": "https://res.cloudinary.com/liars-club/video/upload/audio/classic_mafia/sounds/gong.mp3",
+                "blue_clue": "https://res.cloudinary.com/liars-club/video/upload/audio/classic_mafia/sounds/gong.mp3"
+            }
+        },
+        "images": {
+            "background": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/pitfall/pitfall_purple.jpg"
+            },
+            "red_background": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/pitfall/pitfall_red.png"
+            },
+            "blue_background": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/pitfall/pitfall_blue.png"
+            },
+            "banner": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/pitfall_banner_nzhaep.png"
+            },
+            "spies": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/spies_argfoj.jpg"
+            },
+            "assassin_word": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/pitfall_banner_nzhaep.png"
+            },
+            "word_association": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/word_association_p3gsge.png"
+            },
+            "Red": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/red_owl_ansgnc.png"
+            },
+            "Blue": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/blue_bat_pshd0l.png"
+            },
+            "red_spy": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/red_owl_ansgnc.png"
+            },
+            "blue_spy": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/blue_bat_pshd0l.png"
+            },
+            "grid": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/grid_nhgvfd.png"
+            },
+            "give_clue": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/give_clue_z8uzcz.png"
+            }
+        },
+        "animations": {
+            "clue": "https://assets10.lottiefiles.com/packages/lf20_vvx2gjpt.json",
+            "guess": "https://assets6.lottiefiles.com/packages/lf20_lzhwcgzg.json",
+            "spymaster": "https://lottie.host/02b4eaac-8d75-47d0-8375-47ac7f6a046d/1mOPVEHu5C.json"
+        }
+    },
+    "turnSpectatorToPlayerActions": [
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {
+                    "name": "newPlayer",
+                    "value": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "waitingSpectator"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "players",
+                    "value": {
+                        "selector": "allPlayers"
+                    }
+                },
+                {
+                    "name": "numPlayers",
+                    "value": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "setRole",
+            "payload": {
+                "computed": {
+                    "roleId": {
+                        "selector": "ifElse",
+                        "params": [
+                            {
+                                "name": "condition",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "lessThan",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "add",
+                                                "params": [
+                                                    {
+                                                        "name": "arg1",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "listLength",
+                                                            "params": [
+                                                                {
+                                                                    "name": "list",
+                                                                    "type": "computed",
+                                                                    "value": {
+                                                                        "selector": "getPlayersFromTeam",
+                                                                        "params": [
+                                                                            {
+                                                                                "name": "teamId",
+                                                                                "type": "preset",
+                                                                                "value": "red"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "arg2",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "listLength",
+                                                            "params": [
+                                                                {
+                                                                    "name": "list",
+                                                                    "type": "computed",
+                                                                    "value": {
+                                                                        "selector": "getPlayersFromTeam",
+                                                                        "params": [
+                                                                            {
+                                                                                "name": "teamId",
+                                                                                "type": "preset",
+                                                                                "value": "redPlayer"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "arg2",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "add",
+                                                "params": [
+                                                    {
+                                                        "name": "arg1",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "listLength",
+                                                            "params": [
+                                                                {
+                                                                    "name": "list",
+                                                                    "type": "computed",
+                                                                    "value": {
+                                                                        "selector": "getPlayersFromTeam",
+                                                                        "params": [
+                                                                            {
+                                                                                "name": "teamId",
+                                                                                "type": "preset",
+                                                                                "value": "blue"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "arg2",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "listLength",
+                                                            "params": [
+                                                                {
+                                                                    "name": "list",
+                                                                    "type": "computed",
+                                                                    "value": {
+                                                                        "selector": "getPlayersFromTeam",
+                                                                        "params": [
+                                                                            {
+                                                                                "name": "teamId",
+                                                                                "type": "preset",
+                                                                                "value": "bluePlayer"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "thenValue",
+                                "type": "preset",
+                                "value": "red"
+                            },
+                            {
+                                "name": "elseValue",
+                                "type": "preset",
+                                "value": "blue"
+                            }
+                        ]
+                    }
+                },
+                "cached": {
+                    "playerId": "newPlayer"
+                }
+            }
+        },
+        {
+            "key": "showTeam",
+            "payload": {
+                "cached": {
+                    "from": "players",
+                    "to": "players"
+                }
+            }
+        },
+        {
+            "key": "showRole",
+            "payload": {
+                "cached": {
+                    "to": "players"
+                },
+                "computed": {
+                    "from": {
+                        "selector": "getPlayersByRole",
+                        "params": [
+                            {
+                                "name": "role",
+                                "type": "preset",
+                                "value": "red_codemaster"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "showRole",
+            "payload": {
+                "cached": {
+                    "to": "players"
+                },
+                "computed": {
+                    "from": {
+                        "selector": "getPlayersByRole",
+                        "params": [
+                            {
+                                "name": "role",
+                                "type": "preset",
+                                "value": "red_player"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "showRole",
+            "payload": {
+                "cached": {
+                    "to": "players"
+                },
+                "computed": {
+                    "from": {
+                        "selector": "getPlayersByRole",
+                        "params": [
+                            {
+                                "name": "role",
+                                "type": "preset",
+                                "value": "blue_codemaster"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "showRole",
+            "payload": {
+                "cached": {
+                    "to": "players"
+                },
+                "computed": {
+                    "from": {
+                        "selector": "getPlayersByRole",
+                        "params": [
+                            {
+                                "name": "role",
+                                "type": "preset",
+                                "value": "blue_player"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "removeAllHighlights"
+        },
+        {
+            "key": "highlightPlayers",
+            "payload": {
+                "preset": {
+                    "color": "#D83232"
+                },
+                "computed": {
+                    "listOfPlayers": {
+                        "selector": "concat",
+                        "params": [
+                            {
+                                "name": "list1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "getPlayersFromTeam",
+                                    "params": [
+                                        {
+                                            "name": "teamId",
+                                            "type": "preset",
+                                            "value": "red"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "list2",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "getPlayersFromTeam",
+                                    "params": [
+                                        {
+                                            "name": "teamId",
+                                            "type": "preset",
+                                            "value": "redPlayer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "highlightPlayers",
+            "payload": {
+                "preset": {
+                    "color": "#4EC1D0"
+                },
+                "computed": {
+                    "listOfPlayers": {
+                        "selector": "concat",
+                        "params": [
+                            {
+                                "name": "list1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "getPlayersFromTeam",
+                                    "params": [
+                                        {
+                                            "name": "teamId",
+                                            "type": "preset",
+                                            "value": "blue"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "list2",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "getPlayersFromTeam",
+                                    "params": [
+                                        {
+                                            "name": "teamId",
+                                            "type": "preset",
+                                            "value": "bluePlayer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "changeLayout",
+            "payload": {
+                "preset": {
+                    "type": "HIGHLIGHT",
+                    "direction": "VERTICAL"
+                },
+                "computed": {
+                    "top": {
+                        "selector": "concat",
+                        "params": [
+                            {
+                                "name": "list1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "getPlayersFromTeam",
+                                    "params": [
+                                        {
+                                            "name": "teamId",
+                                            "type": "preset",
+                                            "value": "red"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "list2",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "getPlayersFromTeam",
+                                    "params": [
+                                        {
+                                            "name": "teamId",
+                                            "type": "preset",
+                                            "value": "redPlayer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "bottom": {
+                        "selector": "concat",
+                        "params": [
+                            {
+                                "name": "list1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "getPlayersFromTeam",
+                                    "params": [
+                                        {
+                                            "name": "teamId",
+                                            "type": "preset",
+                                            "value": "blue"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "list2",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "getPlayersFromTeam",
+                                    "params": [
+                                        {
+                                            "name": "teamId",
+                                            "type": "preset",
+                                            "value": "bluePlayer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "beforeLoopActions": [
+        {
+            "key": "changeBackground",
+            "payload": {
+                "preset": {
+                    "image": "background"
+                }
+            }
+        },
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {
+                    "name": "players",
+                    "value": {
+                        "selector": "allPlayers"
+                    }
+                },
+                {
+                    "name": "numPlayers",
+                    "value": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "host",
+                    "value": {
+                        "selector": "ifElse",
+                        "params": [
+                            {
+                                "name": "condition",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "contains",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "allPlayers"
+                                            }
+                                        },
+                                        {
+                                            "name": "element",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getHostPlayerId"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "thenValue",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getHostPlayerId"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "elseValue",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "selectElement",
+                                                "params": [
+                                                    {
+                                                        "name": "list",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "allPlayers"
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "index",
+                                                        "type": "preset",
+                                                        "value": 0
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "firstRound",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "key": "createNotification",
+            "payload": {
+                "preset": {
+                    "header": "Welcome to Pitfall!",
+                    "image": "banner",
+                    "duration": 8,
+                    "backgroundColor": "#eed9c4",
+                    "borderColor": "black"
+                },
+                "computed": {
+                    "to": {
+                        "selector": "allPlayers"
+                    },
+                    "text": {
+                        "selector": "formatString",
+                        "params": [
+                            {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!"
+                            },
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "listToString",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getPlayerNamesByIds",
+                                                "params": [
+                                                    {
+                                                        "name": "ids",
+                                                        "type": "cached",
+                                                        "value": "host"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "createMixVote",
+            "payload": {
+                "preset": {
+                    "title": "Tutorial mode",
+                    "terminationCondition": "get_all_votes",
+                    "showResultInRealTime": true,
+                    "showResultDuration": 2,
+                    "showResultDelay": 0,
+                    "point.allowFewerAnswers": true,
+                    "point.terminationCondition": "get_all_votes",
+                    "poll.answersQuantity": 1,
+                    "poll.targets": [
+                        "Everybody!",
+                        "Nobody!"
+                    ],
+                    "oneClick": true,
+                    "allowRevoting": true,
+                    "pollVoteTargetsOptions": {
+                        "Everybody!": {
+                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                            "backgroundColor": "#D3D3D3",
+                            "boxIconColor": "#D3D3D3",
+                            "textColor": "black",
+                            "widgetIconColor": "green"
+                        },
+                        "Nobody!": {
+                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+                            "backgroundColor": "#D3D3D3",
+                            "boxIconColor": "#D3D3D3",
+                            "textColor": "black",
+                            "widgetIconColor": "red"
+                        }
+                    },
+                    "poll.terminationCondition": "get_all_votes",
+                    "backgroundColor": "#eed9c4",
+                    "borderColor": "black"
+                },
+                "cached": {
+                    "actors": "host",
+                    "point.targets": "players",
+                    "point.answersQuantity": "numPlayers"
+                },
+                "computed": {
+                    "question": {
+                        "selector": "formatString",
+                        "params": [
+                            {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "($1), who needs the tutorial? Click on the players or select from the middle."
+                            },
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "getPlayerNameById",
+                                    "params": [
+                                        {
+                                            "name": "id",
+                                            "type": "cached",
+                                            "value": "host.0"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "saveValueInCache": [
+                {
+                    "name": "voteResult",
+                    "value": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "lastActionResult.voteResult"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "learners",
+                    "value": {
+                        "selector": "ifElse",
+                        "params": [
+                            {
+                                "name": "condition",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "contains",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "players"
+                                        },
+                                        {
+                                            "name": "element",
+                                            "type": "cached",
+                                            "value": "voteResult.0"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "thenValue",
+                                "type": "cached",
+                                "value": "voteResult"
+                            },
+                            {
+                                "name": "elseValue",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "ifElse",
+                                    "params": [
+                                        {
+                                            "name": "condition",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "contains",
+                                                "params": [
+                                                    {
+                                                        "name": "list",
+                                                        "type": "cached",
+                                                        "value": "voteResult"
+                                                    },
+                                                    {
+                                                        "name": "element",
+                                                        "type": "preset",
+                                                        "value": "Everybody!"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "thenValue",
+                                            "type": "cached",
+                                            "value": "players"
+                                        },
+                                        {
+                                            "name": "elseValue",
+                                            "type": "preset",
+                                            "value": []
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "tutorial",
+                    "value": {
+                        "selector": "greaterThan",
+                        "params": [
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "listLength",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "learners"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 0
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "tutorialRedGuide",
+                    "value": false
+                },
+                {
+                    "name": "tutorialBlueGuide",
+                    "value": false
+                }
+            ]
+        }
+    ],
+    "gameLoop": [
+        {
+            "name": "Tutorial Part 1",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createConversationGroup",
+                    "payload": {
+                        "preset": {
+                            "video": true,
+                            "audio": true,
+                            "private": false,
+                            "indicator": "💡",
+                            "isVideoForAll": false
+                        },
+                        "cached": {
+                            "members": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "voices.p1"
+                            ]
+                        },
+                        "cached": {
+                            "playList.0": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "destroyConversationGroups"
+                }
+            ]
+        },
+        {
+            "name": "Setting up",
+            "skipCondition": [
+                {
+                    "selector": "greaterThan",
+                    "params": [
+                        {
+                            "name": "arg1",
+                            "type": "cached",
+                            "value": "gameLoopIndex"
+                        },
+                        {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 0
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "atLeast6",
+                            "value": {
+                                "selector": "greaterThanOrEqual",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "numPlayers"
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "preset",
+                                        "value": 6
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "createVote",
+                    "payload": {
+                        "preset": {
+                            "title": "Vote for Guides",
+                            "type": "target_point",
+                            "terminationCondition": "get_all_votes",
+                            "showResultInRealTime": true,
+                            "showResultDuration": 2,
+                            "backgroundColor": "#eed9c4",
+                            "borderColor": "black",
+                            "oneClick": true,
+                            "allowRevoting": true
+                        },
+                        "cached": {
+                            "actors": "host",
+                            "targets": "players",
+                            "allowFewerAnswers": "atLeast6"
+                        },
+                        "computed": {
+                            "answersQuantity": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "atLeast6"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "preset",
+                                        "value": 4
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "preset",
+                                        "value": 2
+                                    }
+                                ]
+                            },
+                            "question": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "($1), choose 2 ($2)Guides!"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getPlayerNameById",
+                                            "params": [
+                                                {
+                                                    "name": "id",
+                                                    "type": "cached",
+                                                    "value": "host.0"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "ifElse",
+                                            "params": [
+                                                {
+                                                    "name": "condition",
+                                                    "type": "cached",
+                                                    "value": "atLeast6"
+                                                },
+                                                {
+                                                    "name": "thenValue",
+                                                    "type": "preset",
+                                                    "value": "to 4 "
+                                                },
+                                                {
+                                                    "name": "elseValue",
+                                                    "type": "preset",
+                                                    "value": ""
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "guides",
+                            "value": {
+                                "selector": "getCachedValue",
+                                "params": [
+                                    {
+                                        "name": "name",
+                                        "type": "preset",
+                                        "value": "lastActionResult.voteResult"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "underflow",
+                            "value": {
+                                "selector": "lessThan",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listLength",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "guides"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "preset",
+                                        "value": 2
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "createVote",
+                    "skipCondition": {
+                        "selector": "logicalNOT",
+                        "params": [
+                            {
+                                "name": "arg",
+                                "type": "cached",
+                                "value": "underflow"
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "title": "Vote for Guides",
+                            "type": "target_point",
+                            "terminationCondition": "get_all_votes",
+                            "showResultInRealTime": true,
+                            "showResultDuration": 2,
+                            "backgroundColor": "#eed9c4",
+                            "borderColor": "black",
+                            "oneClick": true
+                        },
+                        "cached": {
+                            "actors": "host",
+                            "targets": "players",
+                            "allowFewerAnswers": "atLeast6"
+                        },
+                        "computed": {
+                            "answersQuantity": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "atLeast6"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "preset",
+                                        "value": 3
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "preset",
+                                        "value": 1
+                                    }
+                                ]
+                            },
+                            "question": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "($1), choose ($2)!"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getPlayerNameById",
+                                            "params": [
+                                                {
+                                                    "name": "id",
+                                                    "type": "cached",
+                                                    "value": "host.0"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "ifElse",
+                                            "params": [
+                                                {
+                                                    "name": "condition",
+                                                    "type": "cached",
+                                                    "value": "atLeast6"
+                                                },
+                                                {
+                                                    "name": "thenValue",
+                                                    "type": "preset",
+                                                    "value": "1 to 3 additional Guides"
+                                                },
+                                                {
+                                                    "name": "elseValue",
+                                                    "type": "preset",
+                                                    "value": "an additional Guide"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "guides",
+                            "value": {
+                                "selector": "concat",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "cached",
+                                        "value": "guides"
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "cached",
+                                        "value": "lastActionResult.voteResult"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "redGuides",
+                            "value": {
+                                "selector": "sublist",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "cached",
+                                        "value": "guides"
+                                    },
+                                    {
+                                        "name": "start",
+                                        "type": "preset",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "end",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "integerDivide",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "inc",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "listLength",
+                                                                    "params": [
+                                                                        {
+                                                                            "name": "list",
+                                                                            "type": "cached",
+                                                                            "value": "guides"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "arg2",
+                                                    "type": "preset",
+                                                    "value": 2
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "blueGuides",
+                            "value": {
+                                "selector": "listsSubtract",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "cached",
+                                        "value": "guides"
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "cached",
+                                        "value": "redGuides"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "setRole",
+                    "payload": {
+                        "preset": {
+                            "roleId": "red_codemaster"
+                        },
+                        "cached": {
+                            "playerId": "redGuides"
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "tutorialRedGuide",
+                            "value": {
+                                "selector": "greaterThan",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listLength",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "intersect",
+                                                        "params": [
+                                                            {
+                                                                "name": "list1",
+                                                                "type": "cached",
+                                                                "value": "learners"
+                                                            },
+                                                            {
+                                                                "name": "list2",
+                                                                "type": "cached",
+                                                                "value": "redGuides"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "preset",
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "setRole",
+                    "payload": {
+                        "preset": {
+                            "roleId": "blue_codemaster"
+                        },
+                        "cached": {
+                            "playerId": "blueGuides"
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "tutorialBlueGuide",
+                            "value": {
+                                "selector": "greaterThan",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listLength",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "intersect",
+                                                        "params": [
+                                                            {
+                                                                "name": "list1",
+                                                                "type": "cached",
+                                                                "value": "learners"
+                                                            },
+                                                            {
+                                                                "name": "list2",
+                                                                "type": "cached",
+                                                                "value": "blueGuides"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "preset",
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "animateBox",
+                    "payload": {
+                        "preset": {
+                            "animation": "spymaster",
+                            "delay": 3
+                        },
+                        "cached": {
+                            "userIds": "guides"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "restPlayers",
+                            "value": {
+                                "selector": "shuffleList",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getPlayersFromTeam",
+                                            "params": [
+                                                {
+                                                    "name": "teamId",
+                                                    "type": "preset",
+                                                    "value": "all"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "divideIndex",
+                            "value": {
+                                "selector": "integerDivide",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listLength",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "restPlayers"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "preset",
+                                        "value": 2
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "redTeam",
+                            "value": {
+                                "selector": "sublist",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "cached",
+                                        "value": "restPlayers"
+                                    },
+                                    {
+                                        "name": "start",
+                                        "type": "preset",
+                                        "value": 0
+                                    },
+                                    {
+                                        "name": "end",
+                                        "type": "cached",
+                                        "value": "divideIndex"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "blueTeam",
+                            "value": {
+                                "selector": "sublist",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "cached",
+                                        "value": "restPlayers"
+                                    },
+                                    {
+                                        "name": "start",
+                                        "type": "cached",
+                                        "value": "divideIndex"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "setRole",
+                    "payload": {
+                        "preset": {
+                            "roleId": "red_player"
+                        },
+                        "cached": {
+                            "playerId": "redTeam"
+                        }
+                    }
+                },
+                {
+                    "key": "setRole",
+                    "payload": {
+                        "preset": {
+                            "roleId": "blue_player"
+                        },
+                        "cached": {
+                            "playerId": "blueTeam"
+                        }
+                    }
+                },
+                {
+                    "key": "showTeam",
+                    "payload": {
+                        "cached": {
+                            "from": "players",
+                            "to": "players"
+                        }
+                    }
+                },
+                {
+                    "key": "showRole",
+                    "payload": {
+                        "cached": {
+                            "to": "players"
+                        },
+                        "computed": {
+                            "from": {
+                                "selector": "getPlayersByRole",
+                                "params": [
+                                    {
+                                        "name": "role",
+                                        "type": "preset",
+                                        "value": "red_codemaster"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "showRole",
+                    "payload": {
+                        "cached": {
+                            "to": "players"
+                        },
+                        "computed": {
+                            "from": {
+                                "selector": "getPlayersByRole",
+                                "params": [
+                                    {
+                                        "name": "role",
+                                        "type": "preset",
+                                        "value": "blue_codemaster"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "showRole",
+                    "payload": {
+                        "preset": {
+                            "to": "spectators"
+                        },
+                        "cached": {
+                            "from": "players"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Change layout, highlight players",
+            "skipCondition": [
+                {
+                    "selector": "greaterThan",
+                    "params": [
+                        {
+                            "name": "arg1",
+                            "type": "cached",
+                            "value": "gameLoopIndex"
+                        },
+                        {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 0
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "changeLayout",
+                    "payload": {
+                        "preset": {
+                            "type": "HIGHLIGHT",
+                            "direction": "VERTICAL"
+                        },
+                        "computed": {
+                            "top": {
+                                "selector": "getPlayersFromTeam",
+                                "params": [
+                                    {
+                                        "name": "teamId",
+                                        "type": "preset",
+                                        "value": "red"
+                                    }
+                                ]
+                            },
+                            "bottom": {
+                                "selector": "getPlayersFromTeam",
+                                "params": [
+                                    {
+                                        "name": "teamId",
+                                        "type": "preset",
+                                        "value": "blue"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "highlightPlayers",
+                    "payload": {
+                        "preset": {
+                            "color": "#D83232"
+                        },
+                        "computed": {
+                            "listOfPlayers": {
+                                "selector": "getPlayersFromTeam",
+                                "params": [
+                                    {
+                                        "name": "teamId",
+                                        "type": "preset",
+                                        "value": "red"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "highlightPlayers",
+                    "payload": {
+                        "preset": {
+                            "color": "#4EC1D0"
+                        },
+                        "computed": {
+                            "listOfPlayers": {
+                                "selector": "getPlayersFromTeam",
+                                "params": [
+                                    {
+                                        "name": "teamId",
+                                        "type": "preset",
+                                        "value": "blue"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Team Red chooses 2 clickers",
+            "skipCondition": [
+                {
+                    "selector": "greaterThan",
+                    "params": [
+                        {
+                            "name": "arg1",
+                            "type": "cached",
+                            "value": "gameLoopIndex"
+                        },
+                        {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "selector": "lessThanOrEqual",
+                    "params": [
+                        {
+                            "name": "arg1",
+                            "type": "cached",
+                            "value": "numPlayers"
+                        },
+                        {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 12
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createVote",
+                    "payload": {
+                        "preset": {
+                            "title": "Vote for Guides",
+                            "type": "target_poll",
+                            "question": "Who wants to be a Red Clicker? We need 2 of you!",
+                            "terminationCondition": "get_needed_votes",
+                            "neededVotes": 2,
+                            "showResultInRealTime": true,
+                            "showResultDuration": 3,
+                            "duration": 60,
+                            "targets": [
+                                "ME!"
+                            ],
+                            "pollVoteTargetsOptions": {
+                                "ME!": {
+                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                                    "backgroundColor": "#D3D3D3",
+                                    "boxIconColor": "#D3D3D3",
+                                    "textColor": "black",
+                                    "widgetIconColor": "green"
+                                }
+                            },
+                            "backgroundColor": "#eed9c4",
+                            "borderColor": "black"
+                        },
+                        "cached": {
+                            "actors": "redTeam"
+                        }
+                    },
+                    "postHandler": "randomSelectNeededVoters",
+                    "saveValueInCache": [
+                        {
+                            "name": "redTeam",
+                            "value": {
+                                "selector": "getCachedValue",
+                                "params": [
+                                    {
+                                        "name": "name",
+                                        "type": "preset",
+                                        "value": "lastActionResult"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "setRole",
+                    "payload": {
+                        "preset": {
+                            "roleId": "red"
+                        },
+                        "computed": {
+                            "playerId": {
+                                "selector": "listsSubtract",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getPlayersByRole",
+                                            "params": [
+                                                {
+                                                    "name": "role",
+                                                    "type": "preset",
+                                                    "value": "red_player"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "cached",
+                                        "value": "redTeam"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "showRole",
+                    "payload": {
+                        "cached": {
+                            "from": "redTeam",
+                            "to": "players"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Team Blue chooses 2 clickers",
+            "skipCondition": [
+                {
+                    "selector": "greaterThan",
+                    "params": [
+                        {
+                            "name": "arg1",
+                            "type": "cached",
+                            "value": "gameLoopIndex"
+                        },
+                        {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "selector": "lessThanOrEqual",
+                    "params": [
+                        {
+                            "name": "arg1",
+                            "type": "cached",
+                            "value": "numPlayers"
+                        },
+                        {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 12
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createVote",
+                    "payload": {
+                        "preset": {
+                            "title": "Vote for Guides",
+                            "type": "target_poll",
+                            "question": "Who wants to be a Blue Clicker? We need 2 of you!",
+                            "terminationCondition": "get_needed_votes",
+                            "neededVotes": 2,
+                            "showResultInRealTime": true,
+                            "showResultDuration": 3,
+                            "duration": 60,
+                            "targets": [
+                                "ME!"
+                            ],
+                            "pollVoteTargetsOptions": {
+                                "ME!": {
+                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                                    "backgroundColor": "#D3D3D3",
+                                    "boxIconColor": "#D3D3D3",
+                                    "textColor": "black",
+                                    "widgetIconColor": "green"
+                                }
+                            },
+                            "backgroundColor": "#eed9c4",
+                            "borderColor": "black"
+                        },
+                        "cached": {
+                            "actors": "blueTeam"
+                        }
+                    },
+                    "postHandler": "randomSelectNeededVoters",
+                    "saveValueInCache": [
+                        {
+                            "name": "blueTeam",
+                            "value": {
+                                "selector": "getCachedValue",
+                                "params": [
+                                    {
+                                        "name": "name",
+                                        "type": "preset",
+                                        "value": "lastActionResult"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "setRole",
+                    "payload": {
+                        "preset": {
+                            "roleId": "blue"
+                        },
+                        "computed": {
+                            "playerId": {
+                                "selector": "listsSubtract",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getPlayersByRole",
+                                            "params": [
+                                                {
+                                                    "name": "role",
+                                                    "type": "preset",
+                                                    "value": "blue_player"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "cached",
+                                        "value": "blueTeam"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "showRole",
+                    "payload": {
+                        "cached": {
+                            "from": "blueTeam",
+                            "to": "players"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Create grid",
+            "skipCondition": [
+                {
+                    "selector": "greaterThan",
+                    "params": [
+                        {
+                            "name": "arg1",
+                            "type": "cached",
+                            "value": "gameLoopIndex"
+                        },
+                        {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 0
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createCodenames"
+                }
+            ]
+        },
+        {
+            "name": "Tutorial Part 2",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createConversationGroup",
+                    "payload": {
+                        "preset": {
+                            "video": true,
+                            "audio": true,
+                            "private": false,
+                            "indicator": "💡",
+                            "isVideoForAll": false
+                        },
+                        "cached": {
+                            "members": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "voices.p2",
+                                "voices.p3",
+                                "voices.p4"
+                            ]
+                        },
+                        "cached": {
+                            "playList.0": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "destroyConversationGroups"
+                }
+            ]
+        },
+        {
+            "name": "Red Turn",
+            "turnSpectatorsToPlayers": true,
+            "actions": [
+                {
+                    "key": "endClip"
+                },
+                {
+                    "key": "animateBox",
+                    "payload": {
+                        "preset": {
+                            "animation": "clue",
+                            "delay": 2
+                        },
+                        "computed": {
+                            "userIds": {
+                                "selector": "getPlayersByRole",
+                                "params": [
+                                    {
+                                        "name": "role",
+                                        "type": "preset",
+                                        "value": "red_codemaster"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 1
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "image": "red_spy",
+                            "duration": 8,
+                            "backgroundColor": "#eed9c4",
+                            "borderColor": "black"
+                        },
+                        "cached": {
+                            "to": "players"
+                        },
+                        "computed": {
+                            "text": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "equals",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "gameLoopIndex"
+                                                },
+                                                {
+                                                    "name": "arg2",
+                                                    "type": "preset",
+                                                    "value": 0
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "preset",
+                                        "value": "A reminder that your clue must:<br/><li>Be <b>one word</b> long<br/><li><b>NOT</b> be a word in the grid<br/><li><b>NOT</b> be an acronym<br/><li>Relate to the <b>meaning</b> of the word<br/><li><b>NOT</b> share a root with the word<br/><li>Be in <b>English</b>"
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "preset",
+                                        "value": ""
+                                    }
+                                ]
+                            },
+                            "header": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "($1), time to give your team a clue!"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listToString",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "getPlayerNamesByIds",
+                                                        "params": [
+                                                            {
+                                                                "name": "ids",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "getPlayersByRole",
+                                                                    "params": [
+                                                                        {
+                                                                            "name": "role",
+                                                                            "type": "preset",
+                                                                            "value": "red_codemaster"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "createConversationGroup",
+                    "skipCondition": {
+                        "selector": "logicalNOT",
+                        "params": [
+                            {
+                                "name": "arg",
+                                "type": "cached",
+                                "value": "tutorialRedGuide"
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "video": true,
+                            "audio": true,
+                            "private": false,
+                            "indicator": "💡",
+                            "isVideoForAll": false
+                        },
+                        "computed": {
+                            "members": {
+                                "selector": "getPlayersByRole",
+                                "params": [
+                                    {
+                                        "name": "role",
+                                        "type": "preset",
+                                        "value": "red_codemaster"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "skipCondition": {
+                        "selector": "isPrevActionSkipped"
+                    },
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "voices.p5"
+                            ]
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "getPlayersByRole",
+                                "params": [
+                                    {
+                                        "name": "role",
+                                        "type": "preset",
+                                        "value": "red_codemaster"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "destroyConversationGroups",
+                    "skipCondition": {
+                        "selector": "isPrevActionSkipped"
+                    }
+                },
+                {
+                    "key": "changeBackground",
+                    "payload": {
+                        "preset": {
+                            "image": "red_background"
+                        }
+                    }
+                },
+                {
+                    "key": "createConversationGroup",
+                    "skipCondition": {
+                        "selector": "equals",
+                        "params": [
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "listLength",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "redGuides"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "video": true,
+                            "audio": true,
+                            "isVideoForAll": false,
+                            "indicator": "🔴"
+                        },
+                        "computed": {
+                            "members": {
+                                "selector": "getPlayersByRole",
+                                "params": [
+                                    {
+                                        "name": "role",
+                                        "type": "preset",
+                                        "value": "red_codemaster"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.list": [
+                                "soundboard.reminder"
+                            ],
+                            "sounds.waitForSoundEnd": false
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "getPlayersByRole",
+                                "params": [
+                                    {
+                                        "name": "role",
+                                        "type": "preset",
+                                        "value": "red_codemaster"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "setMasterClue",
+                    "payload": {
+                        "preset": {
+                            "team": "red"
+                        },
+                        "computed": {
+                            "duration": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "firstRound"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "cached",
+                                        "value": "firstSetClueDuration"
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "cached",
+                                        "value": "nextSetClueDuration"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "startClip",
+                    "payload": {
+                        "preset": {
+                            "title": "Pitfall, Red guess"
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "image": "Red",
+                            "header": "Team Red, time to guess!",
+                            "duration": 3,
+                            "backgroundColor": "#eed9c4",
+                            "borderColor": "black",
+                            "sounds.list": [
+                                "soundboard.red_clue"
+                            ],
+                            "sounds.waitForSoundEnd": true
+                        },
+                        "cached": {
+                            "to": "players",
+                            "playList.0": "players"
+                        },
+                        "computed": {
+                            "text": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "<b>($1)</b>, you will be clicking on the words!"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listToString",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "getPlayerNamesByIds",
+                                                        "params": [
+                                                            {
+                                                                "name": "ids",
+                                                                "type": "cached",
+                                                                "value": "redTeam"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "readable",
+                                                    "type": "preset",
+                                                    "value": true
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "destroyConversationGroups"
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 2
+                        }
+                    }
+                },
+                {
+                    "key": "createConversationGroup",
+                    "skipCondition": {
+                        "selector": "logicalNOT",
+                        "params": [
+                            {
+                                "name": "arg",
+                                "type": "cached",
+                                "value": "tutorial"
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "video": true,
+                            "audio": true,
+                            "private": false,
+                            "indicator": "💡",
+                            "isVideoForAll": false
+                        },
+                        "cached": {
+                            "members": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "skipCondition": {
+                        "selector": "isPrevActionSkipped"
+                    },
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "voices.p6",
+                                "voices.p7"
+                            ]
+                        },
+                        "cached": {
+                            "playList.0": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "destroyConversationGroups",
+                    "skipCondition": {
+                        "selector": "isPrevActionSkipped"
+                    }
+                },
+                {
+                    "key": "teamTurn",
+                    "payload": {
+                        "preset": {
+                            "team": "red"
+                        },
+                        "cached": {
+                            "duration": "guessDuration"
+                        }
+                    }
+                }
+            ],
+            "checkWinCondition": true
+        },
+        {
+            "name": "Blue Turn",
+            "turnSpectatorsToPlayers": true,
+            "actions": [
+                {
+                    "key": "endClip"
+                },
+                {
+                    "key": "animateBox",
+                    "payload": {
+                        "preset": {
+                            "animation": "clue",
+                            "delay": 2
+                        },
+                        "computed": {
+                            "userIds": {
+                                "selector": "getPlayersByRole",
+                                "params": [
+                                    {
+                                        "name": "role",
+                                        "type": "preset",
+                                        "value": "blue_codemaster"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 1
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "image": "blue_spy",
+                            "duration": 8,
+                            "backgroundColor": "#eed9c4",
+                            "borderColor": "black"
+                        },
+                        "cached": {
+                            "to": "players"
+                        },
+                        "computed": {
+                            "text": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "equals",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "gameLoopIndex"
+                                                },
+                                                {
+                                                    "name": "arg2",
+                                                    "type": "preset",
+                                                    "value": 0
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "preset",
+                                        "value": "A reminder that your clue must:<br/><li>Be <b>one word</b> long<br/><li><b>NOT</b> be a word in the grid<br/><li><b>NOT</b> be an acronym<br/><li>Relate to the <b>meaning</b> of the word<br/><li><b>NOT</b> share a root with the word<br/><li>Be in <b>English</b>"
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "preset",
+                                        "value": ""
+                                    }
+                                ]
+                            },
+                            "header": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "($1), time to give your team a clue!"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listToString",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "getPlayerNamesByIds",
+                                                        "params": [
+                                                            {
+                                                                "name": "ids",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "getPlayersByRole",
+                                                                    "params": [
+                                                                        {
+                                                                            "name": "role",
+                                                                            "type": "preset",
+                                                                            "value": "blue_codemaster"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "createConversationGroup",
+                    "skipCondition": {
+                        "selector": "logicalNOT",
+                        "params": [
+                            {
+                                "name": "arg",
+                                "type": "cached",
+                                "value": "tutorialBlueGuide"
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "video": true,
+                            "audio": true,
+                            "private": false,
+                            "indicator": "💡",
+                            "isVideoForAll": false
+                        },
+                        "computed": {
+                            "members": {
+                                "selector": "getPlayersByRole",
+                                "params": [
+                                    {
+                                        "name": "role",
+                                        "type": "preset",
+                                        "value": "blue_codemaster"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "skipCondition": {
+                        "selector": "isPrevActionSkipped"
+                    },
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "voices.p8"
+                            ]
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "getPlayersByRole",
+                                "params": [
+                                    {
+                                        "name": "role",
+                                        "type": "preset",
+                                        "value": "blue_codemaster"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "destroyConversationGroups",
+                    "skipCondition": {
+                        "selector": "isPrevActionSkipped"
+                    }
+                },
+                {
+                    "key": "changeBackground",
+                    "payload": {
+                        "preset": {
+                            "image": "blue_background"
+                        }
+                    }
+                },
+                {
+                    "key": "createConversationGroup",
+                    "skipCondition": {
+                        "selector": "equals",
+                        "params": [
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "listLength",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "blueGuides"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "video": true,
+                            "audio": true,
+                            "isVideoForAll": false,
+                            "indicator": "🔵"
+                        },
+                        "computed": {
+                            "members": {
+                                "selector": "getPlayersByRole",
+                                "params": [
+                                    {
+                                        "name": "role",
+                                        "type": "preset",
+                                        "value": "blue_codemaster"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.list": [
+                                "soundboard.reminder"
+                            ],
+                            "sounds.waitForSoundEnd": false
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "getPlayersByRole",
+                                "params": [
+                                    {
+                                        "name": "role",
+                                        "type": "preset",
+                                        "value": "blue_codemaster"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "setMasterClue",
+                    "payload": {
+                        "preset": {
+                            "team": "blue"
+                        },
+                        "computed": {
+                            "duration": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "firstRound"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "cached",
+                                        "value": "firstSetClueDuration"
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "cached",
+                                        "value": "nextSetClueDuration"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "startClip",
+                    "payload": {
+                        "preset": {
+                            "title": "Pitfall, Blue guess"
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "image": "Blue",
+                            "header": "Team Blue, time to guess!",
+                            "duration": 3,
+                            "backgroundColor": "#eed9c4",
+                            "borderColor": "black",
+                            "sounds.list": [
+                                "soundboard.blue_clue"
+                            ],
+                            "sounds.waitForSoundEnd": true
+                        },
+                        "cached": {
+                            "to": "players",
+                            "playList.0": "players"
+                        },
+                        "computed": {
+                            "text": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "<b>($1)</b>, you will be clicking on the words!"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listToString",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "getPlayerNamesByIds",
+                                                        "params": [
+                                                            {
+                                                                "name": "ids",
+                                                                "type": "cached",
+                                                                "value": "blueTeam"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "readable",
+                                                    "type": "preset",
+                                                    "value": true
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "destroyConversationGroups"
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 2
+                        }
+                    }
+                },
+                {
+                    "key": "teamTurn",
+                    "payload": {
+                        "preset": {
+                            "team": "blue"
+                        },
+                        "cached": {
+                            "duration": "guessDuration"
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "firstRound",
+                            "value": false
+                        }
+                    ]
+                }
+            ],
+            "checkWinCondition": true
+        },
+        {
+            "name": "Tutorial Part 3",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createConversationGroup",
+                    "payload": {
+                        "preset": {
+                            "video": true,
+                            "audio": true,
+                            "private": false,
+                            "indicator": "💡",
+                            "isVideoForAll": false
+                        },
+                        "cached": {
+                            "members": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "voices.p9"
+                            ]
+                        },
+                        "cached": {
+                            "playList.0": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "destroyConversationGroups"
+                },
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "tutorial",
+                            "value": false
+                        },
+                        {
+                            "name": "tutorialRedGuide",
+                            "value": false
+                        },
+                        {
+                            "name": "tutorialBlueGuide",
+                            "value": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "winCondition": {
+        "Red": {
+            "selector": "equals",
+            "params": [
+                {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                        "selector": "getCodenamesWinner"
+                    }
+                },
+                {
+                    "name": "arg2",
+                    "type": "preset",
+                    "value": "red"
+                }
+            ]
+        },
+        "Blue": {
+            "selector": "equals",
+            "params": [
+                {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                        "selector": "getCodenamesWinner"
+                    }
+                },
+                {
+                    "name": "arg2",
+                    "type": "preset",
+                    "value": "blue"
+                }
+            ]
+        }
+    },
+    "postGameActions": [
+        {
+            "key": "changeBackground",
+            "payload": {
+                "preset": {
+                    "image": "background"
+                }
+            }
+        },
+        {
+            "key": "createNotification",
+            "payload": {
+                "preset": {
+                    "backgroundColor": "#eed9c4",
+                    "borderColor": "black"
+                },
+                "cached": {
+                    "image": "winner",
+                    "to": "players"
+                },
+                "computed": {
+                    "header": {
+                        "selector": "formatString",
+                        "params": [
+                            {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "Team ($1) wins!"
+                            },
+                            {
+                                "name": "arg1",
+                                "type": "cached",
+                                "value": "winner"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "endClip"
+        }
+    ]
+}

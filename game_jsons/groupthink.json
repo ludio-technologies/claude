@@ -1,0 +1,4803 @@
+{
+  "gameInitOptions": {
+    "allowRecorder": true,
+    "allowSpectatorBecomePlayer": true,
+    "allowPlayerBecomeSpectator": true,
+    "useDefaultRoles": true,
+    "roleConfirmation": false,
+    "time": 15,
+    "minPlayers": 4,
+    "teams": {
+      "players": {
+        "id": "all",
+        "name": "All",
+        "description": "They just LOVE to blend in",
+        "color": "#4EC1D0",
+        "roles": [
+          "player"
+        ]
+      }
+    },
+    "roles": [
+      {
+        "roleInfo": {
+          "id": "player",
+          "name": "Player",
+          "description": "You just LOVE to blend in.",
+          "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
+          "team": "all"
+        },
+        "isDefaultRole": true,
+        "isRequired": false
+      }
+    ],
+    "rolesPreset": {},
+    "animations": {
+      "winner": "https://lottie.host/3cba778c-312b-410c-8240-c9fdc0c4f5ef/Iu7CfEX2Va.json",
+      "loser": "https://assets5.lottiefiles.com/packages/lf20_oAByvh2C1K.json"
+    },
+    "soundboard": {
+      "default": {
+        "bubbles": "https://res.cloudinary.com/liars-club/video/upload/audio/bubbles.mp3",
+        "music_1": "https://res.cloudinary.com/liars-club/video/upload/audio/soft_indie.mp3",
+        "success": "https://res.cloudinary.com/liars-club/video/upload/audio/avalon/sounds/success.mp3",
+        "failure": "https://res.cloudinary.com/liars-club/video/upload/audio/avalon/sounds/failure.mp3"
+      }
+    },
+    "voices": {
+      "default": {
+        "g1": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g1.mp3",
+        "g2": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g2.mp3",
+        "g3": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g3.mp3",
+        "g4": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g4.mp3",
+        "g5": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g5.mp3",
+        "g6": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g6.mp3",
+        "g7": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g7.mp3",
+        "g8": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g8.mp3",
+        "g9": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g9.mp3",
+        "g10": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g10.mp3",
+        "g11": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g11.mp3",
+        "g12": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g12.mp3",
+        "g13": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g13.mp3",
+        "g14": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g14.mp3",
+        "g15": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g15.mp3",
+        "g16": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g16.mp3",
+        "g17": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g17.mp3",
+        "g18": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g18.mp3",
+        "g19": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g19.mp3",
+        "g20": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g20.mp3",
+        "g21": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g21.mp3"
+      }
+    },
+    "images": {
+      "questions": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/questions_gnh6cx.jpg"
+      },
+      "sheep": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/sheep_rk4hiw.jpg"
+      },
+      "blend_in": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/blend_in_jab31x.jpg"
+      },
+      "unique": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/unique_zseprf.png"
+      },
+      "banner": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/groupthink_banner_xl7kbq.png"
+      },
+      "sample": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/sample_puzzgrid_cdhi1n.png"
+      },
+      "one_category": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/one_category_lryik5.png"
+      },
+      "solved": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/solved_nnpsw9.png"
+      },
+      "background": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/group_u8ce9t.jpg"
+      },
+      "winner_1": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/winner_1_t1vntk.gif"
+      },
+      "winner_4": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/winner_4_s9kafz.gif"
+      },
+      "winner_5": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/winner_5_k14y8r.gif"
+      },
+      "winner_2": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/winner_2_og4zsj.gif"
+      },
+      "winner_6": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/winner_6_dxdisc.gif"
+      },
+      "winner_3": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/winner_3_gllz5k.gif"
+      },
+      "no_points": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/no_points_kgg5qn.gif"
+      },
+      "winner": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/winner_h5eyfr.gif"
+      }
+    }
+  },
+  "turnPlayerToSpectatorActions": [
+    {
+      "key": "emptyAction",
+      "saveValueInCache": [
+        {
+          "name": "players",
+          "value": {
+            "selector": "allPlayers"
+          }
+        }
+      ]
+    },
+    {
+      "key": "orderByTeam"
+    }
+  ],
+  "turnSpectatorToPlayerActions": [
+    {
+      "key": "emptyAction",
+      "saveValueInCache": [
+        {
+          "name": "newPlayer",
+          "value": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "waitingSpectator"
+              }
+            ]
+          }
+        },
+        {
+          "name": "players",
+          "value": {
+            "selector": "allPlayers"
+          }
+        }
+      ]
+    },
+    {
+      "key": "setRole",
+      "payload": {
+        "preset": {
+          "roleId": "player"
+        },
+        "cached": {
+          "playerId": "newPlayer"
+        }
+      }
+    },
+    {
+      "key": "updateScore",
+      "payload": {
+        "computed": {
+          "scores": {
+            "selector": "createItemList",
+            "params": [
+              {
+                "name": "length",
+                "type": "preset",
+                "value": 1
+              },
+              {
+                "name": "item",
+                "type": "computed",
+                "value": {
+                  "selector": "createDict",
+                  "params": [
+                    {
+                      "name": "keys",
+                      "type": "preset",
+                      "value": [
+                        "list",
+                        "score"
+                      ]
+                    },
+                    {
+                      "name": "values",
+                      "type": "computed",
+                      "value": {
+                        "selector": "createList",
+                        "params": [
+                          {
+                            "name": "arg1",
+                            "type": "computed",
+                            "value": {
+                              "selector": "createList",
+                              "params": [
+                                {
+                                  "name": "arg1",
+                                  "type": "cached",
+                                  "value": "newPlayer"
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name": "arg2",
+                            "type": "cached",
+                            "value": "currentMinScore"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "showScore",
+      "payload": {
+        "preset": {
+          "order": "highest"
+        },
+        "cached": {
+          "from": "players",
+          "to": "players"
+        }
+      }
+    },
+    {
+      "key": "orderByTeam"
+    }
+  ],
+  "beforeLoopActions": [
+    {
+      "key": "changeBackground",
+      "payload": {
+        "preset": {
+          "image": "background"
+        }
+      }
+    },
+    {
+      "key": "orderByTeam"
+    },
+    {
+      "key": "emptyAction",
+      "saveValueInCache": [
+        {
+          "name": "currentMinScore",
+          "value": 0
+        },
+        {
+          "name": "cursed",
+          "value": []
+        },
+        {
+          "name": "players",
+          "value": {
+            "selector": "allPlayers"
+          }
+        },
+        {
+          "name": "round",
+          "value": 1
+        },
+        {
+          "name": "N",
+          "value": {
+            "selector": "ifElse",
+            "params": [
+              {
+                "name": "condition",
+                "type": "computed",
+                "value": {
+                  "selector": "lessThan",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "computed",
+                      "value": {
+                        "selector": "listLength",
+                        "params": [
+                          {
+                            "name": "list",
+                            "type": "cached",
+                            "value": "players"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "arg2",
+                      "type": "preset",
+                      "value": 10
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "thenValue",
+                "type": "computed",
+                "value": {
+                  "selector": "listLength",
+                  "params": [
+                    {
+                      "name": "list",
+                      "type": "cached",
+                      "value": "players"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "elseValue",
+                "type": "preset",
+                "value": 5
+              }
+            ]
+          }
+        },
+        {
+          "name": "questions",
+          "value": [
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to accidentally become the mayor of a small town?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would make the best escape room partner?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would thrive most if stranded at an international airport for 24 hours?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to find a clever loophole in any rule?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would win a debate about something completely made up?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be last to realize they were accidentally in a TV commercial?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would make the best narrator for a nature documentary?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would most likely be mistaken for a local in a foreign country?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to quietly learn a new skill without telling anyone?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to know an obscure law that somehow helps in a specific situation?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would write the most compelling memoir?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to start the most chaotic group chat?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to break a world record in the most niche category possible?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would make the best late-night talk show host?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would most likely have a fan club they don't know about?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to discover a secret underground tunnel?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would turn a simple camping trip into a fully catered glamping experience?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would win an argument against a computer?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would most likely befriend the villain in a movie?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be the hardest to beat at Monopoly?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would walk through a haunted house without flinching?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to be recognized by a stranger as someone vaguely famous?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be the best getaway driver for an extremely minor crime?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to become a beloved local legend for something very specific?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be best at navigating an unfamiliar city with no phone?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would most likely turn a five-minute task into a two-hour project?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to appear in a documentary — and why would it be fascinating?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be best at improvising a meal from whatever happens to be in the fridge?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would win a game of chess against a grandmaster through sheer bluffing?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to accidentally spoil a surprise party?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would thrive most if they suddenly had to host a dinner party for 20 strangers tonight?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to have a perfectly organised pantry?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to keep a very detailed spreadsheet about something no one else cares about?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would most likely befriend a celebrity by accident?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be first to successfully open a restaurant?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would win a stare-down with their own boss?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be best at keeping a poker face during a lie detector test?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to win a cooking competition using only ingredients from a vending machine?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to accidentally become someone's life coach?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to have a very elaborate and detailed morning routine?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would survive best if they had to live inside an IKEA for a week?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to make friends with every single person at a party?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to write a strongly worded letter to a local council?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to have a second, secret hobby that surprises everyone?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to successfully negotiate a free upgrade?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be best at improvising a speech with two minutes of notice?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to start a neighbourhood initiative that accidentally gets national media coverage?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to calmly handle a complete logistical disaster?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to have an extremely strong opinion about something most people don't think about?"
+            },
+            {
+              "type": "point",
+              "question": "Which of these people would be most likely to find a $20 bill in every single jacket they own?"
+            },
+            {
+              "type": "input",
+              "question": "Name a vegetable that children always refuse to eat."
+            },
+            {
+              "type": "input",
+              "question": "Name a food that's best eaten cold the next day."
+            },
+            {
+              "type": "input",
+              "question": "Name something that always runs out at the worst possible time."
+            },
+            {
+              "type": "input",
+              "question": "Name a food that sounds made-up but isn't."
+            },
+            {
+              "type": "input",
+              "question": "Name a job that sounds fun but is probably exhausting."
+            },
+            {
+              "type": "input",
+              "question": "Name something you always find at the bottom of your bag."
+            },
+            {
+              "type": "input",
+              "question": "Name a food that polarises people — you either love it or hate it."
+            },
+            {
+              "type": "input",
+              "question": "Name something you see at every party, no matter what kind."
+            },
+            {
+              "type": "input",
+              "question": "Name a country most people can't easily find on a map."
+            },
+            {
+              "type": "input",
+              "question": "Name a sport that requires absolutely no running."
+            },
+            {
+              "type": "input",
+              "question": "Name something that's more complicated than it really needs to be."
+            },
+            {
+              "type": "input",
+              "question": "Name something in your home that's probably broken but you still use anyway."
+            },
+            {
+              "type": "input",
+              "question": "Name a vegetable beginning with the letter A."
+            },
+            {
+              "type": "input",
+              "question": "Name a country in Africa."
+            },
+            {
+              "type": "input",
+              "question": "Name a famous fictional robot."
+            },
+            {
+              "type": "input",
+              "question": "Name something that makes a hotel feel luxurious."
+            },
+            {
+              "type": "input",
+              "question": "Name a word that sounds rude but isn't."
+            },
+            {
+              "type": "input",
+              "question": "Name a job that didn't exist 20 years ago."
+            },
+            {
+              "type": "input",
+              "question": "Name something you see every single day but never really think about."
+            },
+            {
+              "type": "input",
+              "question": "Name a food that polarises people at a dinner table."
+            },
+            {
+              "type": "input",
+              "question": "Name a famous fictional villain."
+            },
+            {
+              "type": "input",
+              "question": "Name something that's never quite as good as the original."
+            },
+            {
+              "type": "input",
+              "question": "Name a famous fictional spaceship."
+            },
+            {
+              "type": "input",
+              "question": "Name something you always mean to throw away but never do."
+            },
+            {
+              "type": "input",
+              "question": "Name an animal that's surprisingly dangerous."
+            },
+            {
+              "type": "input",
+              "question": "Name a country with a particularly long name."
+            },
+            {
+              "type": "input",
+              "question": "Name a food people pretend to enjoy at fancy restaurants."
+            },
+            {
+              "type": "input",
+              "question": "Name something that immediately makes you feel calmer."
+            },
+            {
+              "type": "input",
+              "question": "Name a sport whose rules take years to fully understand."
+            },
+            {
+              "type": "input",
+              "question": "Name something you do completely automatically, without thinking."
+            },
+            {
+              "type": "input",
+              "question": "Name an app that nearly everyone has downloaded but rarely opens."
+            },
+            {
+              "type": "input",
+              "question": "Name something found in almost every kitchen that rarely gets cleaned."
+            },
+            {
+              "type": "input",
+              "question": "Name a gift that people always claim to love but often never use."
+            },
+            {
+              "type": "input",
+              "question": "Name a place where silence is technically required but never happens."
+            },
+            {
+              "type": "input",
+              "question": "Name a food that seems healthy but probably isn't."
+            },
+            {
+              "type": "input",
+              "question": "Name a city that's famous for its food."
+            },
+            {
+              "type": "input",
+              "question": "Name a sound that would wake almost anyone up instantly."
+            },
+            {
+              "type": "input",
+              "question": "Name an excuse people use to avoid going to the gym."
+            },
+            {
+              "type": "input",
+              "question": "Name something you'd be genuinely surprised to find in someone's fridge."
+            },
+            {
+              "type": "input",
+              "question": "Name a food that almost everyone has eaten at a birthday party."
+            },
+            {
+              "type": "input",
+              "question": "Name a skill that's impressive at age 10 but strange at age 40."
+            },
+            {
+              "type": "input",
+              "question": "Name something that costs too much given how rarely you actually use it."
+            },
+            {
+              "type": "input",
+              "question": "Name a movie sequel that should never have been made."
+            },
+            {
+              "type": "input",
+              "question": "Name a phrase everyone says but nobody really means."
+            },
+            {
+              "type": "input",
+              "question": "Name something that always runs out when you need it most."
+            },
+            {
+              "type": "input",
+              "question": "Name a famous fictional castle."
+            },
+            {
+              "type": "input",
+              "question": "Name an animal that moves faster than most people would expect."
+            },
+            {
+              "type": "input",
+              "question": "Name a reason someone might be late to their own birthday party."
+            },
+            {
+              "type": "input",
+              "question": "Name something you'd be embarrassed to Google but have."
+            },
+            {
+              "type": "input",
+              "question": "Name a type of person you always seem to meet at airports."
+            }
+          ]
+        },
+        {
+          "name": "practiceQuestions",
+          "value": [
+            {
+              "question": "Name your favorite holiday!",
+              "type": "input"
+            }
+          ]
+        },
+        {
+          "name": "unusedPlayers",
+          "value": {
+            "selector": "allPlayers"
+          }
+        },
+        {
+          "name": "unusedQuestions",
+          "value": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "questions"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "emptyAction",
+      "saveValueInCache": [
+        {
+          "name": "host",
+          "value": {
+            "selector": "ifElse",
+            "params": [
+              {
+                "name": "condition",
+                "type": "computed",
+                "value": {
+                  "selector": "contains",
+                  "params": [
+                    {
+                      "name": "list",
+                      "type": "computed",
+                      "value": {
+                        "selector": "allPlayers"
+                      }
+                    },
+                    {
+                      "name": "element",
+                      "type": "computed",
+                      "value": {
+                        "selector": "getHostPlayerId"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "thenValue",
+                "type": "computed",
+                "value": {
+                  "selector": "createList",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "computed",
+                      "value": {
+                        "selector": "getHostPlayerId"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "elseValue",
+                "type": "computed",
+                "value": {
+                  "selector": "createList",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "computed",
+                      "value": {
+                        "selector": "selectElement",
+                        "params": [
+                          {
+                            "name": "list",
+                            "type": "computed",
+                            "value": {
+                              "selector": "allPlayers"
+                            }
+                          },
+                          {
+                            "name": "index",
+                            "type": "preset",
+                            "value": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "createNotification",
+      "payload": {
+        "preset": {
+          "header": "Welcome to Groupthink!",
+          "image": "banner",
+          "duration": 8,
+          "backgroundColor": "#FFFFE4",
+          "borderColor": "black"
+        },
+        "computed": {
+          "to": {
+            "selector": "allPlayers"
+          },
+          "text": {
+            "selector": "formatString",
+            "params": [
+              {
+                "name": "format",
+                "type": "preset",
+                "value": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!"
+              },
+              {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                  "selector": "listToString",
+                  "params": [
+                    {
+                      "name": "list",
+                      "type": "computed",
+                      "value": {
+                        "selector": "getPlayerNamesByIds",
+                        "params": [
+                          {
+                            "name": "ids",
+                            "type": "cached",
+                            "value": "host"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "createVote",
+      "payload": {
+        "preset": {
+          "title": "Tutorial Mode",
+          "type": "target_poll",
+          "terminationCondition": "get_all_votes",
+          "showResultInRealTime": true,
+          "showResultDuration": 2,
+          "showResult": true,
+          "allowRevoting": false,
+          "targets": [
+            "Yes Please!",
+            "No Thanks"
+          ],
+          "pollVoteTargetsOptions": {
+            "Yes Please!": {
+              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+              "backgroundColor": "#D3D3D3",
+              "boxIconColor": "#D3D3D3",
+              "textColor": "black",
+              "widgetIconColor": "green"
+            },
+            "No Thanks": {
+              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+              "backgroundColor": "#D3D3D3",
+              "boxIconColor": "#D3D3D3",
+              "textColor": "black",
+              "widgetIconColor": "red"
+            }
+          }
+        },
+        "computed": {
+          "question": {
+            "selector": "formatString",
+            "params": [
+              {
+                "name": "format",
+                "type": "preset",
+                "value": "($1), do you want Ludio to teach your group how to play this game?"
+              },
+              {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                  "selector": "listToString",
+                  "params": [
+                    {
+                      "name": "list",
+                      "type": "computed",
+                      "value": {
+                        "selector": "getPlayerNamesByIds",
+                        "params": [
+                          {
+                            "name": "ids",
+                            "type": "cached",
+                            "value": "host"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "cached": {
+          "actors": "host"
+        }
+      },
+      "saveValueInCache": [
+        {
+          "name": "tutorial",
+          "value": {
+            "selector": "isTargetGotMajority",
+            "params": [
+              {
+                "name": "voteResult",
+                "type": "cached",
+                "value": "lastActionResult"
+              },
+              {
+                "name": "target",
+                "type": "preset",
+                "value": "Yes Please!"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "showScore",
+      "payload": {
+        "preset": {
+          "order": "highest"
+        },
+        "cached": {
+          "from": "players",
+          "to": "players"
+        }
+      }
+    }
+  ],
+  "gameLoop": [
+    {
+      "name": "Tutorial Part 1",
+      "skipCondition": [
+        {
+          "selector": "logicalNOT",
+          "params": [
+            {
+              "name": "arg",
+              "type": "cached",
+              "value": "tutorial"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "key": "createConfirmation",
+          "payload": {
+            "preset": {
+              "header": "Are you ready for the tutorial?",
+              "text": "Once enough people click Ready, the tutorial will start!",
+              "passCriterion": "majority",
+              "backgroundColor": "#FFFFE4",
+              "borderColor": "black"
+            },
+            "computed": {
+              "actors": {
+                "selector": "allPlayers"
+              }
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "unusedQuestions",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "practiceQuestions"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "sounds.waitForSoundEnd": true,
+              "sounds.list": [
+                "voices.g1",
+                "voices.g2",
+                "delay.1000",
+                "voices.g3",
+                "voices.g4",
+                "delay.1000",
+                "voices.g5",
+                "voices.g6",
+                "delay.1000",
+                "voices.g7",
+                "voices.g8",
+                "delay.1000",
+                "voices.g9",
+                "voices.g10",
+                "delay.1000",
+                "voices.g11"
+              ]
+            },
+            "computed": {
+              "playList.0": {
+                "selector": "allUsers"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tutorial Part 2",
+      "turnSpectatorsToPlayers": true,
+      "turnPlayersToSpectators": true,
+      "skipCondition": [
+        {
+          "selector": "logicalNOT",
+          "params": [
+            {
+              "name": "arg",
+              "type": "cached",
+              "value": "tutorial"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "delay": 1
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "header": "A recap on how points work",
+              "images": [
+                "blend_in",
+                "unique"
+              ],
+              "duration": 12,
+              "text": "If you submit the <b>uniquely most popular answer</b>, you <b>win</b> 10 points!<br/>If you submit the <b>uniquely least popular answer</b>, you <b>lose</b> 5 points!<br/><br/>Otherwise, your score doesn't change.",
+              "backgroundColor": "#FFFFE4",
+              "borderColor": "black"
+            },
+            "computed": {
+              "to": {
+                "selector": "allPlayers"
+              }
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "sounds.waitForSoundEnd": true,
+              "sounds.list": [
+                "voices.g12",
+                "voices.g13"
+              ]
+            },
+            "computed": {
+              "playList.0": {
+                "selector": "allUsers"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Show question",
+      "turnSpectatorsToPlayers": true,
+      "turnPlayersToSpectators": true,
+      "actions": [
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "answerDictionary",
+              "value": {}
+            },
+            {
+              "name": "uniqueAnswers",
+              "value": []
+            },
+            {
+              "name": "unusedPlayers",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "computed",
+                    "value": {
+                      "selector": "greaterThan",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "cached",
+                          "value": "N"
+                        },
+                        {
+                          "name": "arg2",
+                          "type": "computed",
+                          "value": {
+                            "selector": "listLength",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "unusedPlayers"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "concat",
+                      "params": [
+                        {
+                          "name": "list1",
+                          "type": "cached",
+                          "value": "unusedPlayers"
+                        },
+                        {
+                          "name": "list2",
+                          "type": "computed",
+                          "value": {
+                            "selector": "randomElementsList",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "listsSubtract",
+                                  "params": [
+                                    {
+                                      "name": "list1",
+                                      "type": "cached",
+                                      "value": "players"
+                                    },
+                                    {
+                                      "name": "list2",
+                                      "type": "cached",
+                                      "value": "unusedPlayers"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "length",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "subtract",
+                                  "params": [
+                                    {
+                                      "name": "arg1",
+                                      "type": "cached",
+                                      "value": "N"
+                                    },
+                                    {
+                                      "name": "arg2",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "listLength",
+                                        "params": [
+                                          {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "unusedPlayers"
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "cached",
+                    "value": "unusedPlayers"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "nPlayers",
+              "value": {
+                "selector": "randomElementsList",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "cached",
+                    "value": "unusedPlayers"
+                  },
+                  {
+                    "name": "length",
+                    "type": "cached",
+                    "value": "N"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "randomIndex",
+              "value": {
+                "selector": "randomNumber",
+                "params": [
+                  {
+                    "name": "max",
+                    "type": "computed",
+                    "value": {
+                      "selector": "listLength",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "unusedQuestions"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "currentQuestion",
+              "value": {
+                "selector": "selectElement",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "cached",
+                    "value": "unusedQuestions"
+                  },
+                  {
+                    "name": "index",
+                    "type": "cached",
+                    "value": "randomIndex"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "unusedQuestions",
+              "value": {
+                "selector": "concat",
+                "params": [
+                  {
+                    "name": "list1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "sublist",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "unusedQuestions"
+                        },
+                        {
+                          "name": "start",
+                          "type": "preset",
+                          "value": 0
+                        },
+                        {
+                          "name": "end",
+                          "type": "cached",
+                          "value": "randomIndex"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "list2",
+                    "type": "computed",
+                    "value": {
+                      "selector": "sublist",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "unusedQuestions"
+                        },
+                        {
+                          "name": "start",
+                          "type": "computed",
+                          "value": {
+                            "selector": "add",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "cached",
+                                "value": "randomIndex"
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "end",
+                          "type": "computed",
+                          "value": {
+                            "selector": "listLength",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "unusedQuestions"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ask for answers",
+      "actions": [
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "contains",
+            "params": [
+              {
+                "name": "element",
+                "type": "cached",
+                "value": "currentQuestion.type"
+              },
+              {
+                "name": "list",
+                "type": "preset",
+                "value": [
+                  "input",
+                  "poll"
+                ]
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "unusedPlayers",
+              "value": {
+                "selector": "listsSubtract",
+                "params": [
+                  {
+                    "name": "list1",
+                    "type": "cached",
+                    "value": "unusedPlayers"
+                  },
+                  {
+                    "name": "list2",
+                    "type": "cached",
+                    "value": "nPlayers"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "changeLayout",
+          "skipCondition": {
+            "selector": "contains",
+            "params": [
+              {
+                "name": "element",
+                "type": "cached",
+                "value": "currentQuestion.type"
+              },
+              {
+                "name": "list",
+                "type": "preset",
+                "value": [
+                  "input"
+                ]
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "type": "HIGHLIGHT",
+              "direction": "VERTICAL"
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "sounds.waitForSoundEnd": false,
+              "sounds.list": [
+                "soundboard.music_1"
+              ]
+            },
+            "cached": {
+              "playList.0": "players"
+            }
+          }
+        },
+        {
+          "key": "createInput",
+          "skipCondition": {
+            "selector": "notEqual",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "currentQuestion.type"
+              },
+              {
+                "name": "arg2",
+                "type": "preset",
+                "value": "input"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "title": "Submit input",
+              "type": "text",
+              "duration": 45,
+              "scope": "player",
+              "lowerCase": true,
+              "terminationCondition": "get_all_values"
+            },
+            "cached": {
+              "question": "currentQuestion.question",
+              "actors": "players"
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "answers",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "lastActionResult"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "createVote",
+          "skipCondition": {
+            "selector": "notEqual",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "currentQuestion.type"
+              },
+              {
+                "name": "arg2",
+                "type": "preset",
+                "value": "poll"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "title": "Submit vote",
+              "type": "target_poll",
+              "terminationCondition": "get_all_votes",
+              "showResultInRealTime": false,
+              "showResultDuration": 0,
+              "duration": 45,
+              "vertical": true
+            },
+            "cached": {
+              "actors": "players",
+              "question": "currentQuestion.question",
+              "targets": "currentQuestion.options",
+              "image": "currentQuestion.image"
+            },
+            "computed": {
+              "pollVoteTargetsOptions": {
+                "selector": "createDict",
+                "params": [
+                  {
+                    "name": "keys",
+                    "type": "cached",
+                    "value": "currentQuestion.options"
+                  },
+                  {
+                    "name": "values",
+                    "type": "computed",
+                    "value": {
+                      "selector": "sublist",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "preset",
+                          "value": [
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/one.svg",
+                              "backgroundColor": "#ebc3a5",
+                              "boxIconColor": "#ebc3a5",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/two.svg",
+                              "backgroundColor": "#d9d9d9",
+                              "boxIconColor": "#d9d9d9",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/three.svg",
+                              "backgroundColor": "#f9cb9c",
+                              "boxIconColor": "#f9cb9c",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/four.svg",
+                              "backgroundColor": "#b6d7a8",
+                              "boxIconColor": "#b6d7a8",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/five.svg",
+                              "backgroundColor": "#ffe599",
+                              "boxIconColor": "#ffe599",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/six.svg",
+                              "backgroundColor": "#ead1dc",
+                              "boxIconColor": "#ead1dc",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/seven.svg",
+                              "backgroundColor": "#fce5cd",
+                              "boxIconColor": "#fce5cd",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/eight.svg",
+                              "backgroundColor": "#d9d2e9",
+                              "boxIconColor": "#d9d2e9",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/nine.svg",
+                              "backgroundColor": "#d9ead3",
+                              "boxIconColor": "#d9ead3",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/ten.svg",
+                              "backgroundColor": "#cfe2f3",
+                              "boxIconColor": "#cfe2f3",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "start",
+                          "type": "preset",
+                          "value": 0
+                        },
+                        {
+                          "name": "end",
+                          "type": "computed",
+                          "value": {
+                            "selector": "listLength",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "currentQuestion.options"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "voteAnswers",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "lastActionResult.voices"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "uniqueAnswers",
+              "value": {
+                "selector": "getObjectKeysWithPositiveValue",
+                "params": [
+                  {
+                    "name": "data",
+                    "type": "cached",
+                    "value": "lastActionResult.answersCount"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "answerDictionary",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "lastActionResult.answersVoters"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "createVote",
+          "skipCondition": {
+            "selector": "notEqual",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "currentQuestion.type"
+              },
+              {
+                "name": "arg2",
+                "type": "preset",
+                "value": "point"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "title": "Submit vote",
+              "type": "target_poll",
+              "terminationCondition": "get_all_votes",
+              "showResultInRealTime": false,
+              "showResultDuration": 0,
+              "duration": 45,
+              "oneClick": true,
+              "vertical": true
+            },
+            "cached": {
+              "actors": "players",
+              "question": "currentQuestion.question",
+              "image": "currentQuestion.image"
+            },
+            "computed": {
+              "targets": {
+                "selector": "getPlayerNamesByIds",
+                "params": [
+                  {
+                    "name": "ids",
+                    "type": "cached",
+                    "value": "nPlayers"
+                  }
+                ]
+              },
+              "pollVoteTargetsOptions": {
+                "selector": "createDict",
+                "params": [
+                  {
+                    "name": "keys",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNamesByIds",
+                      "params": [
+                        {
+                          "name": "ids",
+                          "type": "cached",
+                          "value": "nPlayers"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "values",
+                    "type": "computed",
+                    "value": {
+                      "selector": "sublist",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "preset",
+                          "value": [
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/one.svg",
+                              "backgroundColor": "#ebc3a5",
+                              "boxIconColor": "#ebc3a5",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/two.svg",
+                              "backgroundColor": "#d9d9d9",
+                              "boxIconColor": "#d9d9d9",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/three.svg",
+                              "backgroundColor": "#f9cb9c",
+                              "boxIconColor": "#f9cb9c",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/four.svg",
+                              "backgroundColor": "#b6d7a8",
+                              "boxIconColor": "#b6d7a8",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/five.svg",
+                              "backgroundColor": "#ffe599",
+                              "boxIconColor": "#ffe599",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/six.svg",
+                              "backgroundColor": "#ead1dc",
+                              "boxIconColor": "#ead1dc",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/seven.svg",
+                              "backgroundColor": "#fce5cd",
+                              "boxIconColor": "#fce5cd",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/eight.svg",
+                              "backgroundColor": "#d9d2e9",
+                              "boxIconColor": "#d9d2e9",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/nine.svg",
+                              "backgroundColor": "#d9ead3",
+                              "boxIconColor": "#d9ead3",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            },
+                            {
+                              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/ten.svg",
+                              "backgroundColor": "#cfe2f3",
+                              "boxIconColor": "#cfe2f3",
+                              "textColor": "black",
+                              "widgetIconColor": "black"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "start",
+                          "type": "preset",
+                          "value": 0
+                        },
+                        {
+                          "name": "end",
+                          "type": "cached",
+                          "value": {
+                            "selector": "listLength",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "getPlayerNamesByIds",
+                                  "params": [
+                                    {
+                                      "name": "ids",
+                                      "type": "cached",
+                                      "value": "nPlayers"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "voteAnswers",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "lastActionResult.voices"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "uniqueAnswers",
+              "value": {
+                "selector": "getObjectKeysWithPositiveValue",
+                "params": [
+                  {
+                    "name": "data",
+                    "type": "cached",
+                    "value": "lastActionResult.answersCount"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "answerDictionary",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "lastActionResult.answersVoters"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "changeLayout",
+          "payload": {
+            "preset": {
+              "type": "ANNULUS"
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "sounds.waitForSoundEnd": true,
+              "sounds.list": [
+                "soundboard.bubbles"
+              ]
+            },
+            "cached": {
+              "playList.0": "players"
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "delay": 2
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tutorial Part 3",
+      "skipCondition": [
+        {
+          "selector": "logicalNOT",
+          "params": [
+            {
+              "name": "arg",
+              "type": "cached",
+              "value": "tutorial"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "delay": 1
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "sounds.waitForSoundEnd": true,
+              "sounds.list": [
+                "voices.g14",
+                "delay.1000"
+              ]
+            },
+            "computed": {
+              "playList.0": {
+                "selector": "allUsers"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Start clip",
+      "actions": [
+        {
+          "key": "startClip",
+          "payload": {
+            "computed": {
+              "title": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "Groupthink, Question #($1)"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "round"
+                  }
+                ]
+              }
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "round",
+              "value": {
+                "selector": "inc",
+                "params": [
+                  {
+                    "name": "arg",
+                    "type": "cached",
+                    "value": "round"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reveal answers (input)",
+      "repeat": {
+        "qnt": {
+          "selector": "listLength",
+          "params": [
+            {
+              "name": "list",
+              "type": "cached",
+              "value": "players"
+            }
+          ]
+        }
+      },
+      "skipCondition": [
+        {
+          "selector": "contains",
+          "params": [
+            {
+              "name": "element",
+              "type": "cached",
+              "value": "currentQuestion.type"
+            },
+            {
+              "name": "list",
+              "type": "preset",
+              "value": [
+                "point",
+                "poll"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "key": "createMessage",
+          "payload": {
+            "computed": {
+              "text": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "answers"
+                  },
+                  {
+                    "name": "value",
+                    "type": "computed",
+                    "value": {
+                      "selector": "selectElement",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "players"
+                        },
+                        {
+                          "name": "index",
+                          "type": "cached",
+                          "value": "repeatIndex"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "defaultValue",
+                    "type": "preset",
+                    "value": "(Did not submit)"
+                  }
+                ]
+              },
+              "sender": {
+                "selector": "selectElement",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "cached",
+                    "value": "players"
+                  },
+                  {
+                    "name": "index",
+                    "type": "cached",
+                    "value": "repeatIndex"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "delay": 0.3
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "uniqueAnswers",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "computed",
+                    "value": {
+                      "selector": "contains",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "uniqueAnswers"
+                        },
+                        {
+                          "name": "element",
+                          "type": "computed",
+                          "value": {
+                            "selector": "getCachedObjectValue",
+                            "params": [
+                              {
+                                "name": "objectName",
+                                "type": "preset",
+                                "value": "answers"
+                              },
+                              {
+                                "name": "value",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "selectElement",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "cached",
+                                      "value": "players"
+                                    },
+                                    {
+                                      "name": "index",
+                                      "type": "cached",
+                                      "value": "repeatIndex"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "defaultValue",
+                                "type": "preset",
+                                "value": "(Did not submit)"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "cached",
+                    "value": "uniqueAnswers"
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "append",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "uniqueAnswers"
+                        },
+                        {
+                          "name": "element",
+                          "type": "computed",
+                          "value": {
+                            "selector": "getCachedObjectValue",
+                            "params": [
+                              {
+                                "name": "objectName",
+                                "type": "preset",
+                                "value": "answers"
+                              },
+                              {
+                                "name": "value",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "selectElement",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "cached",
+                                      "value": "players"
+                                    },
+                                    {
+                                      "name": "index",
+                                      "type": "cached",
+                                      "value": "repeatIndex"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "defaultValue",
+                                "type": "preset",
+                                "value": "(Did not submit)"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "answerDictionary",
+              "value": {
+                "selector": "setCachedObjectFieldValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "answerDictionary"
+                  },
+                  {
+                    "name": "fieldName",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getCachedObjectValue",
+                      "params": [
+                        {
+                          "name": "objectName",
+                          "type": "preset",
+                          "value": "answers"
+                        },
+                        {
+                          "name": "value",
+                          "type": "computed",
+                          "value": {
+                            "selector": "selectElement",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                              },
+                              {
+                                "name": "index",
+                                "type": "cached",
+                                "value": "repeatIndex"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "defaultValue",
+                          "type": "preset",
+                          "value": "(Did not submit)"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "value",
+                    "type": "computed",
+                    "value": {
+                      "selector": "append",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "computed",
+                          "value": {
+                            "selector": "getCachedObjectValue",
+                            "params": [
+                              {
+                                "name": "objectName",
+                                "type": "preset",
+                                "value": "answerDictionary"
+                              },
+                              {
+                                "name": "value",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "getCachedObjectValue",
+                                  "params": [
+                                    {
+                                      "name": "objectName",
+                                      "type": "preset",
+                                      "value": "answers"
+                                    },
+                                    {
+                                      "name": "value",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "selectElement",
+                                        "params": [
+                                          {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "players"
+                                          },
+                                          {
+                                            "name": "index",
+                                            "type": "cached",
+                                            "value": "repeatIndex"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "name": "defaultValue",
+                                      "type": "preset",
+                                      "value": "(Did not submit)"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "defaultValue",
+                                "type": "preset",
+                                "value": []
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "element",
+                          "type": "computed",
+                          "value": {
+                            "selector": "selectElement",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                              },
+                              {
+                                "name": "index",
+                                "type": "cached",
+                                "value": "repeatIndex"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reveal answers (votes)",
+      "repeat": {
+        "qnt": {
+          "selector": "listLength",
+          "params": [
+            {
+              "name": "list",
+              "type": "cached",
+              "value": "players"
+            }
+          ]
+        }
+      },
+      "skipCondition": [
+        {
+          "selector": "contains",
+          "params": [
+            {
+              "name": "element",
+              "type": "cached",
+              "value": "currentQuestion.type"
+            },
+            {
+              "name": "list",
+              "type": "preset",
+              "value": [
+                "input"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "key": "createMessage",
+          "payload": {
+            "computed": {
+              "text": {
+                "selector": "listToString",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getCachedObjectValue",
+                      "params": [
+                        {
+                          "name": "objectName",
+                          "type": "preset",
+                          "value": "voteAnswers"
+                        },
+                        {
+                          "name": "value",
+                          "type": "computed",
+                          "value": {
+                            "selector": "selectElement",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                              },
+                              {
+                                "name": "index",
+                                "type": "cached",
+                                "value": "repeatIndex"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "defaultValue",
+                          "type": "preset",
+                          "value": "(Did not submit)"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "sender": {
+                "selector": "selectElement",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "cached",
+                    "value": "players"
+                  },
+                  {
+                    "name": "index",
+                    "type": "cached",
+                    "value": "repeatIndex"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "delay": 0.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Computation step",
+      "actions": [
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "maxAnswer",
+              "value": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg",
+                    "type": "computed",
+                    "value": {
+                      "selector": "selectElement",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "uniqueAnswers"
+                        },
+                        {
+                          "name": "index",
+                          "type": "preset",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "minAnswer",
+              "value": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg",
+                    "type": "computed",
+                    "value": {
+                      "selector": "selectElement",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "uniqueAnswers"
+                        },
+                        {
+                          "name": "index",
+                          "type": "preset",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Compute min/max answers",
+      "repeat": {
+        "qnt": {
+          "selector": "subtract",
+          "params": [
+            {
+              "name": "arg1",
+              "type": "computed",
+              "value": {
+                "selector": "listLength",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "cached",
+                    "value": "uniqueAnswers"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "arg2",
+              "type": "preset",
+              "value": 1
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "minAnswer",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "computed",
+                    "value": {
+                      "selector": "logicalAND",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "computed",
+                          "value": {
+                            "selector": "notEqual",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "selectElement",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "cached",
+                                      "value": "uniqueAnswers"
+                                    },
+                                    {
+                                      "name": "index",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "add",
+                                        "params": [
+                                          {
+                                            "name": "arg1",
+                                            "type": "cached",
+                                            "value": "repeatIndex"
+                                          },
+                                          {
+                                            "name": "arg2",
+                                            "type": "preset",
+                                            "value": 1
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": "(Did not submit)"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "arg2",
+                          "type": "computed",
+                          "value": {
+                            "selector": "lessThan",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "listLength",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "getCachedObjectValue",
+                                        "params": [
+                                          {
+                                            "name": "objectName",
+                                            "type": "preset",
+                                            "value": "answerDictionary"
+                                          },
+                                          {
+                                            "name": "value",
+                                            "type": "computed",
+                                            "value": {
+                                              "selector": "selectElement",
+                                              "params": [
+                                                {
+                                                  "name": "list",
+                                                  "type": "cached",
+                                                  "value": "uniqueAnswers"
+                                                },
+                                                {
+                                                  "name": "index",
+                                                  "type": "computed",
+                                                  "value": {
+                                                    "selector": "add",
+                                                    "params": [
+                                                      {
+                                                        "name": "arg1",
+                                                        "type": "cached",
+                                                        "value": "repeatIndex"
+                                                      },
+                                                      {
+                                                        "name": "arg2",
+                                                        "type": "preset",
+                                                        "value": 1
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "name": "defaultValue",
+                                            "type": "preset",
+                                            "value": []
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "listLength",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "getCachedObjectValue",
+                                        "params": [
+                                          {
+                                            "name": "objectName",
+                                            "type": "preset",
+                                            "value": "answerDictionary"
+                                          },
+                                          {
+                                            "name": "value",
+                                            "type": "computed",
+                                            "value": {
+                                              "selector": "selectElement",
+                                              "params": [
+                                                {
+                                                  "name": "list",
+                                                  "type": "cached",
+                                                  "value": "minAnswer"
+                                                },
+                                                {
+                                                  "name": "index",
+                                                  "type": "preset",
+                                                  "value": 0
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "name": "defaultValue",
+                                            "type": "preset",
+                                            "value": []
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "createList",
+                      "params": [
+                        {
+                          "name": "arg",
+                          "type": "computed",
+                          "value": {
+                            "selector": "selectElement",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "uniqueAnswers"
+                              },
+                              {
+                                "name": "index",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "add",
+                                  "params": [
+                                    {
+                                      "name": "arg1",
+                                      "type": "cached",
+                                      "value": "repeatIndex"
+                                    },
+                                    {
+                                      "name": "arg2",
+                                      "type": "preset",
+                                      "value": 1
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "ifElse",
+                      "params": [
+                        {
+                          "name": "condition",
+                          "type": "computed",
+                          "value": {
+                            "selector": "logicalAND",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "notEqual",
+                                  "params": [
+                                    {
+                                      "name": "arg1",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "selectElement",
+                                        "params": [
+                                          {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "uniqueAnswers"
+                                          },
+                                          {
+                                            "name": "index",
+                                            "type": "computed",
+                                            "value": {
+                                              "selector": "add",
+                                              "params": [
+                                                {
+                                                  "name": "arg1",
+                                                  "type": "cached",
+                                                  "value": "repeatIndex"
+                                                },
+                                                {
+                                                  "name": "arg2",
+                                                  "type": "preset",
+                                                  "value": 1
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "name": "arg2",
+                                      "type": "preset",
+                                      "value": "(Did not submit)"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "equals",
+                                  "params": [
+                                    {
+                                      "name": "arg1",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "listLength",
+                                        "params": [
+                                          {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                              "selector": "getCachedObjectValue",
+                                              "params": [
+                                                {
+                                                  "name": "objectName",
+                                                  "type": "preset",
+                                                  "value": "answerDictionary"
+                                                },
+                                                {
+                                                  "name": "value",
+                                                  "type": "computed",
+                                                  "value": {
+                                                    "selector": "selectElement",
+                                                    "params": [
+                                                      {
+                                                        "name": "list",
+                                                        "type": "cached",
+                                                        "value": "uniqueAnswers"
+                                                      },
+                                                      {
+                                                        "name": "index",
+                                                        "type": "computed",
+                                                        "value": {
+                                                          "selector": "add",
+                                                          "params": [
+                                                            {
+                                                              "name": "arg1",
+                                                              "type": "cached",
+                                                              "value": "repeatIndex"
+                                                            },
+                                                            {
+                                                              "name": "arg2",
+                                                              "type": "preset",
+                                                              "value": 1
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "name": "defaultValue",
+                                                  "type": "preset",
+                                                  "value": []
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "name": "arg2",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "listLength",
+                                        "params": [
+                                          {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                              "selector": "getCachedObjectValue",
+                                              "params": [
+                                                {
+                                                  "name": "objectName",
+                                                  "type": "preset",
+                                                  "value": "answerDictionary"
+                                                },
+                                                {
+                                                  "name": "value",
+                                                  "type": "computed",
+                                                  "value": {
+                                                    "selector": "selectElement",
+                                                    "params": [
+                                                      {
+                                                        "name": "list",
+                                                        "type": "cached",
+                                                        "value": "minAnswer"
+                                                      },
+                                                      {
+                                                        "name": "index",
+                                                        "type": "preset",
+                                                        "value": 0
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "name": "defaultValue",
+                                                  "type": "preset",
+                                                  "value": []
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "thenValue",
+                          "type": "computed",
+                          "value": {
+                            "selector": "append",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "minAnswer"
+                              },
+                              {
+                                "name": "element",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "selectElement",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "cached",
+                                      "value": "uniqueAnswers"
+                                    },
+                                    {
+                                      "name": "index",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "add",
+                                        "params": [
+                                          {
+                                            "name": "arg1",
+                                            "type": "cached",
+                                            "value": "repeatIndex"
+                                          },
+                                          {
+                                            "name": "arg2",
+                                            "type": "preset",
+                                            "value": 1
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "elseValue",
+                          "type": "cached",
+                          "value": "minAnswer"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "maxAnswer",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "computed",
+                    "value": {
+                      "selector": "logicalAND",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "computed",
+                          "value": {
+                            "selector": "notEqual",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "selectElement",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "cached",
+                                      "value": "uniqueAnswers"
+                                    },
+                                    {
+                                      "name": "index",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "add",
+                                        "params": [
+                                          {
+                                            "name": "arg1",
+                                            "type": "cached",
+                                            "value": "repeatIndex"
+                                          },
+                                          {
+                                            "name": "arg2",
+                                            "type": "preset",
+                                            "value": 1
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": "(Did not submit)"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "arg2",
+                          "type": "computed",
+                          "value": {
+                            "selector": "greaterThan",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "listLength",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "getCachedObjectValue",
+                                        "params": [
+                                          {
+                                            "name": "objectName",
+                                            "type": "preset",
+                                            "value": "answerDictionary"
+                                          },
+                                          {
+                                            "name": "value",
+                                            "type": "computed",
+                                            "value": {
+                                              "selector": "selectElement",
+                                              "params": [
+                                                {
+                                                  "name": "list",
+                                                  "type": "cached",
+                                                  "value": "uniqueAnswers"
+                                                },
+                                                {
+                                                  "name": "index",
+                                                  "type": "computed",
+                                                  "value": {
+                                                    "selector": "add",
+                                                    "params": [
+                                                      {
+                                                        "name": "arg1",
+                                                        "type": "cached",
+                                                        "value": "repeatIndex"
+                                                      },
+                                                      {
+                                                        "name": "arg2",
+                                                        "type": "preset",
+                                                        "value": 1
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "name": "defaultValue",
+                                            "type": "preset",
+                                            "value": []
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "listLength",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "getCachedObjectValue",
+                                        "params": [
+                                          {
+                                            "name": "objectName",
+                                            "type": "preset",
+                                            "value": "answerDictionary"
+                                          },
+                                          {
+                                            "name": "value",
+                                            "type": "computed",
+                                            "value": {
+                                              "selector": "selectElement",
+                                              "params": [
+                                                {
+                                                  "name": "list",
+                                                  "type": "cached",
+                                                  "value": "maxAnswer"
+                                                },
+                                                {
+                                                  "name": "index",
+                                                  "type": "preset",
+                                                  "value": 0
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          {
+                                            "name": "defaultValue",
+                                            "type": "preset",
+                                            "value": []
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "createList",
+                      "params": [
+                        {
+                          "name": "arg",
+                          "type": "computed",
+                          "value": {
+                            "selector": "selectElement",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "uniqueAnswers"
+                              },
+                              {
+                                "name": "index",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "add",
+                                  "params": [
+                                    {
+                                      "name": "arg1",
+                                      "type": "cached",
+                                      "value": "repeatIndex"
+                                    },
+                                    {
+                                      "name": "arg2",
+                                      "type": "preset",
+                                      "value": 1
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "ifElse",
+                      "params": [
+                        {
+                          "name": "condition",
+                          "type": "computed",
+                          "value": {
+                            "selector": "logicalAND",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "notEqual",
+                                  "params": [
+                                    {
+                                      "name": "arg1",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "selectElement",
+                                        "params": [
+                                          {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "uniqueAnswers"
+                                          },
+                                          {
+                                            "name": "index",
+                                            "type": "computed",
+                                            "value": {
+                                              "selector": "add",
+                                              "params": [
+                                                {
+                                                  "name": "arg1",
+                                                  "type": "cached",
+                                                  "value": "repeatIndex"
+                                                },
+                                                {
+                                                  "name": "arg2",
+                                                  "type": "preset",
+                                                  "value": 1
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "name": "arg2",
+                                      "type": "preset",
+                                      "value": "(Did not submit)"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "equals",
+                                  "params": [
+                                    {
+                                      "name": "arg1",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "listLength",
+                                        "params": [
+                                          {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                              "selector": "getCachedObjectValue",
+                                              "params": [
+                                                {
+                                                  "name": "objectName",
+                                                  "type": "preset",
+                                                  "value": "answerDictionary"
+                                                },
+                                                {
+                                                  "name": "value",
+                                                  "type": "computed",
+                                                  "value": {
+                                                    "selector": "selectElement",
+                                                    "params": [
+                                                      {
+                                                        "name": "list",
+                                                        "type": "cached",
+                                                        "value": "uniqueAnswers"
+                                                      },
+                                                      {
+                                                        "name": "index",
+                                                        "type": "computed",
+                                                        "value": {
+                                                          "selector": "add",
+                                                          "params": [
+                                                            {
+                                                              "name": "arg1",
+                                                              "type": "cached",
+                                                              "value": "repeatIndex"
+                                                            },
+                                                            {
+                                                              "name": "arg2",
+                                                              "type": "preset",
+                                                              "value": 1
+                                                            }
+                                                          ]
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "name": "defaultValue",
+                                                  "type": "preset",
+                                                  "value": []
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "name": "arg2",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "listLength",
+                                        "params": [
+                                          {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                              "selector": "getCachedObjectValue",
+                                              "params": [
+                                                {
+                                                  "name": "objectName",
+                                                  "type": "preset",
+                                                  "value": "answerDictionary"
+                                                },
+                                                {
+                                                  "name": "value",
+                                                  "type": "computed",
+                                                  "value": {
+                                                    "selector": "selectElement",
+                                                    "params": [
+                                                      {
+                                                        "name": "list",
+                                                        "type": "cached",
+                                                        "value": "maxAnswer"
+                                                      },
+                                                      {
+                                                        "name": "index",
+                                                        "type": "preset",
+                                                        "value": 0
+                                                      }
+                                                    ]
+                                                  }
+                                                },
+                                                {
+                                                  "name": "defaultValue",
+                                                  "type": "preset",
+                                                  "value": []
+                                                }
+                                              ]
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "thenValue",
+                          "type": "computed",
+                          "value": {
+                            "selector": "append",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "maxAnswer"
+                              },
+                              {
+                                "name": "element",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "selectElement",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "cached",
+                                      "value": "uniqueAnswers"
+                                    },
+                                    {
+                                      "name": "index",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "add",
+                                        "params": [
+                                          {
+                                            "name": "arg1",
+                                            "type": "cached",
+                                            "value": "repeatIndex"
+                                          },
+                                          {
+                                            "name": "arg2",
+                                            "type": "preset",
+                                            "value": 1
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "elseValue",
+                          "type": "cached",
+                          "value": "maxAnswer"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tutorial Part 4",
+      "skipCondition": [
+        {
+          "selector": "logicalNOT",
+          "params": [
+            {
+              "name": "arg",
+              "type": "cached",
+              "value": "tutorial"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "delay": 1
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "sounds.waitForSoundEnd": true,
+              "sounds.list": [
+                "delay.1000",
+                "voices.g15",
+                "delay.1000"
+              ]
+            },
+            "computed": {
+              "playList.0": {
+                "selector": "allUsers"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Update scores",
+      "actions": [
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "minAnswer",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "computed",
+                    "value": {
+                      "selector": "equals",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "computed",
+                          "value": {
+                            "selector": "listLength",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "uniqueAnswers"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "arg2",
+                          "type": "preset",
+                          "value": 1
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "preset",
+                    "value": [
+                      "(Did not submit)"
+                    ]
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "cached",
+                    "value": "minAnswer"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "cursed",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "computed",
+                    "value": {
+                      "selector": "logicalAND",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "computed",
+                          "value": {
+                            "selector": "notEqual",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "selectElement",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "cached",
+                                      "value": "minAnswer"
+                                    },
+                                    {
+                                      "name": "index",
+                                      "type": "preset",
+                                      "value": 0
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": "(Did not submit)"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "arg2",
+                          "type": "computed",
+                          "value": {
+                            "selector": "equals",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "listLength",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "cached",
+                                      "value": "minAnswer"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getCachedObjectValue",
+                      "params": [
+                        {
+                          "name": "objectName",
+                          "type": "preset",
+                          "value": "answerDictionary"
+                        },
+                        {
+                          "name": "value",
+                          "type": "computed",
+                          "value": {
+                            "selector": "selectElement",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "minAnswer"
+                              },
+                              {
+                                "name": "index",
+                                "type": "preset",
+                                "value": 0
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "defaultValue",
+                          "type": "preset",
+                          "value": []
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "preset",
+                    "value": []
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "delay": 1
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                  "selector": "equals",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "computed",
+                      "value": {
+                        "selector": "selectElement",
+                        "params": [
+                          {
+                            "name": "list",
+                            "type": "cached",
+                            "value": "maxAnswer"
+                          },
+                          {
+                            "name": "index",
+                            "type": "preset",
+                            "value": 0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "arg2",
+                      "type": "preset",
+                      "value": "(Did not submit)"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "notEqual",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "computed",
+                      "value": {
+                        "selector": "listLength",
+                        "params": [
+                          {
+                            "name": "list",
+                            "type": "cached",
+                            "value": "maxAnswer"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "arg2",
+                      "type": "preset",
+                      "value": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "duration": 6,
+              "backgroundColor": "#FFFFE4",
+              "borderColor": "black",
+              "sounds.waitForSoundEnd": true,
+              "sounds.list": [
+                "soundboard.success"
+              ]
+            },
+            "cached": {
+              "to": "players",
+              "playList.0": "players"
+            },
+            "computed": {
+              "image": {
+                "selector": "randomElement",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "preset",
+                    "value": [
+                      "winner_1",
+                      "winner_2",
+                      "winner_3",
+                      "winner_4",
+                      "winner_5",
+                      "winner_6"
+                    ]
+                  }
+                ]
+              },
+              "text": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "... you win 10 points!($1)"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "ifElse",
+                      "params": [
+                        {
+                          "name": "condition",
+                          "type": "computed",
+                          "value": {
+                            "selector": "greaterThan",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "listLength",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "cached",
+                                      "value": "cursed"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 0
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "thenValue",
+                          "type": "computed",
+                          "value": {
+                            "selector": "formatString",
+                            "params": [
+                              {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "<br/><br/>If you answered <b>($1)</b>, you lose 5 points!"
+                              },
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "selectElement",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "cached",
+                                      "value": "minAnswer"
+                                    },
+                                    {
+                                      "name": "index",
+                                      "type": "preset",
+                                      "value": 0
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "elseValue",
+                          "type": "preset",
+                          "value": ""
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "header": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "If you answered '($1)' ..."
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "selectElement",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "maxAnswer"
+                        },
+                        {
+                          "name": "index",
+                          "type": "preset",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "updateScore",
+          "skipCondition": {
+            "selector": "isPrevActionSkipped"
+          },
+          "payload": {
+            "computed": {
+              "scores": {
+                "selector": "createItemList",
+                "params": [
+                  {
+                    "name": "length",
+                    "type": "preset",
+                    "value": 1
+                  },
+                  {
+                    "name": "item",
+                    "type": "computed",
+                    "value": {
+                      "selector": "createDict",
+                      "params": [
+                        {
+                          "name": "keys",
+                          "type": "preset",
+                          "value": [
+                            "list",
+                            "delta"
+                          ]
+                        },
+                        {
+                          "name": "values",
+                          "type": "computed",
+                          "value": {
+                            "selector": "createList",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "getCachedObjectValue",
+                                  "params": [
+                                    {
+                                      "name": "objectName",
+                                      "type": "preset",
+                                      "value": "answerDictionary"
+                                    },
+                                    {
+                                      "name": "value",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "selectElement",
+                                        "params": [
+                                          {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "maxAnswer"
+                                          },
+                                          {
+                                            "name": "index",
+                                            "type": "preset",
+                                            "value": 0
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "name": "defaultValue",
+                                      "type": "preset",
+                                      "value": []
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 10
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "animateBox",
+          "skipCondition": {
+            "selector": "isPrevActionSkipped"
+          },
+          "payload": {
+            "preset": {
+              "animation": "winner"
+            },
+            "computed": {
+              "userIds": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "answerDictionary"
+                  },
+                  {
+                    "name": "value",
+                    "type": "computed",
+                    "value": {
+                      "selector": "selectElement",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "maxAnswer"
+                        },
+                        {
+                          "name": "index",
+                          "type": "preset",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "defaultValue",
+                    "type": "preset",
+                    "value": []
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "updateScore",
+          "skipCondition": {
+            "selector": "equals",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                  "selector": "listLength",
+                  "params": [
+                    {
+                      "name": "list",
+                      "type": "cached",
+                      "value": "cursed"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "arg2",
+                "type": "preset",
+                "value": 0
+              }
+            ]
+          },
+          "payload": {
+            "computed": {
+              "scores": {
+                "selector": "createItemList",
+                "params": [
+                  {
+                    "name": "length",
+                    "type": "preset",
+                    "value": 1
+                  },
+                  {
+                    "name": "item",
+                    "type": "computed",
+                    "value": {
+                      "selector": "createDict",
+                      "params": [
+                        {
+                          "name": "keys",
+                          "type": "preset",
+                          "value": [
+                            "list",
+                            "delta"
+                          ]
+                        },
+                        {
+                          "name": "values",
+                          "type": "computed",
+                          "value": {
+                            "selector": "createList",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "cached",
+                                "value": "cursed"
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": -5
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "skipCondition": {
+            "selector": "logicalAND",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                  "selector": "notEqual",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "computed",
+                      "value": {
+                        "selector": "selectElement",
+                        "params": [
+                          {
+                            "name": "list",
+                            "type": "cached",
+                            "value": "maxAnswer"
+                          },
+                          {
+                            "name": "index",
+                            "type": "preset",
+                            "value": 0
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "arg2",
+                      "type": "preset",
+                      "value": "(Did not submit)"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "equals",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "computed",
+                      "value": {
+                        "selector": "listLength",
+                        "params": [
+                          {
+                            "name": "list",
+                            "type": "cached",
+                            "value": "maxAnswer"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "arg2",
+                      "type": "preset",
+                      "value": 1
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "header": "Looks like there was no winning answer!",
+              "duration": 6,
+              "image": "no_points",
+              "backgroundColor": "#FFFFE4",
+              "borderColor": "black",
+              "sounds.waitForSoundEnd": true,
+              "sounds.list": [
+                "soundboard.failure"
+              ]
+            },
+            "cached": {
+              "to": "players",
+              "playList.0": "players"
+            },
+            "computed": {
+              "text": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "($1)"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "ifElse",
+                      "params": [
+                        {
+                          "name": "condition",
+                          "type": "computed",
+                          "value": {
+                            "selector": "greaterThan",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "listLength",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "cached",
+                                      "value": "cursed"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 0
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "thenValue",
+                          "type": "computed",
+                          "value": {
+                            "selector": "formatString",
+                            "params": [
+                              {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "<br/><br/>If you answered <b>($1)</b>, you lose 5 points!"
+                              },
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "selectElement",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "cached",
+                                      "value": "minAnswer"
+                                    },
+                                    {
+                                      "name": "index",
+                                      "type": "preset",
+                                      "value": 0
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "elseValue",
+                          "type": "preset",
+                          "value": ""
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "delay": 1
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "currentMinScore",
+              "value": {
+                "selector": "maxValue",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "computed",
+                    "value": {
+                      "selector": "createList",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "preset",
+                          "value": 0
+                        },
+                        {
+                          "name": "arg2",
+                          "type": "computed",
+                          "value": {
+                            "selector": "getPlayerScore",
+                            "params": [
+                              {
+                                "name": "playerId",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "randomElement",
+                                  "params": [
+                                    {
+                                      "name": "list",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "getPlayersWithMinScore"
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tutorial Part 5",
+      "skipCondition": [
+        {
+          "selector": "logicalNOT",
+          "params": [
+            {
+              "name": "arg",
+              "type": "cached",
+              "value": "tutorial"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "sounds.waitForSoundEnd": true,
+              "sounds.list": [
+                "delay.1000",
+                "voices.g16",
+                "voices.g17",
+                "voices.g18",
+                "delay.1000",
+                "voices.g19",
+                "voices.g20",
+                "delay.1000"
+              ]
+            },
+            "computed": {
+              "playList.0": {
+                "selector": "allUsers"
+              }
+            }
+          }
+        },
+        {
+          "key": "updateScore",
+          "payload": {
+            "computed": {
+              "scores": {
+                "selector": "createItemList",
+                "params": [
+                  {
+                    "name": "length",
+                    "type": "preset",
+                    "value": 1
+                  },
+                  {
+                    "name": "item",
+                    "type": "computed",
+                    "value": {
+                      "selector": "createDict",
+                      "params": [
+                        {
+                          "name": "keys",
+                          "type": "preset",
+                          "value": [
+                            "list",
+                            "score"
+                          ]
+                        },
+                        {
+                          "name": "values",
+                          "type": "computed",
+                          "value": {
+                            "selector": "createList",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "allPlayers"
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 0
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "sounds.waitForSoundEnd": true,
+              "sounds.list": [
+                "delay.1000",
+                "voices.g21"
+              ]
+            },
+            "computed": {
+              "playList.0": {
+                "selector": "allUsers"
+              }
+            }
+          }
+        },
+        {
+          "key": "createConfirmation",
+          "payload": {
+            "preset": {
+              "header": "Are you ready to start the game?",
+              "text": "Once enough people click Ready, the real game will start!",
+              "passCriterion": "majority",
+              "backgroundColor": "#FFFFE4",
+              "borderColor": "black"
+            },
+            "computed": {
+              "actors": {
+                "selector": "allPlayers"
+              }
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "delay": 1
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "header": "Just a heads up...",
+              "duration": 10,
+              "text": "If you have to type in your answer, capitalization doesn't matter, but <b>spelling does</b> 😔<br/><br/>Agree on some conventions as a group, such as 'singular nouns only' - this is part of the game!",
+              "backgroundColor": "#FFFFE4",
+              "borderColor": "black"
+            },
+            "computed": {
+              "to": {
+                "selector": "allPlayers"
+              }
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "tutorial",
+              "value": false
+            },
+            {
+              "name": "unusedQuestions",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "questions"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Check win condition",
+      "actions": [],
+      "checkWinCondition": true
+    },
+    {
+      "name": "End clip",
+      "actions": [
+        {
+          "key": "endClip"
+        }
+      ]
+    }
+  ],
+  "playersWinCondition": {
+    "gameOverCondition": {
+      "selector": "logicalOR",
+      "params": [
+        {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+            "selector": "equals",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                  "selector": "listLength",
+                  "params": [
+                    {
+                      "name": "list",
+                      "type": "cached",
+                      "value": "unusedQuestions"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "arg2",
+                "type": "preset",
+                "value": 0
+              }
+            ]
+          }
+        },
+        {
+          "name": "arg2",
+          "type": "computed",
+          "value": {
+            "selector": "greaterThanOrEqual",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                  "selector": "getMaxCurrentScore"
+                }
+              },
+              {
+                "name": "arg2",
+                "type": "preset",
+                "value": 70
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "winners": {
+      "selector": "getPlayerNamesByIds",
+      "params": [
+        {
+          "name": "ids",
+          "type": "computed",
+          "value": {
+            "selector": "getPlayersWithMaxScore"
+          }
+        }
+      ]
+    }
+  },
+  "postGameActions": [
+    {
+      "key": "createNotification",
+      "payload": {
+        "preset": {
+          "image": "winner",
+          "backgroundColor": "#FFFFE4",
+          "borderColor": "black"
+        },
+        "cached": {
+          "to": "players"
+        },
+        "computed": {
+          "header": {
+            "selector": "formatString",
+            "params": [
+              {
+                "name": "format",
+                "type": "preset",
+                "value": "($1) ($2)!"
+              },
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "winner"
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "ifElse",
+                  "params": [
+                    {
+                      "name": "condition",
+                      "type": "computed",
+                      "value": {
+                        "selector": "equals",
+                        "params": [
+                          {
+                            "name": "arg1",
+                            "type": "computed",
+                            "value": {
+                              "selector": "listLength",
+                              "params": [
+                                {
+                                  "name": "list",
+                                  "type": "computed",
+                                  "value": {
+                                    "selector": "getPlayersWithMaxScore"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "thenValue",
+                      "type": "preset",
+                      "value": "wins"
+                    },
+                    {
+                      "name": "elseValue",
+                      "type": "preset",
+                      "value": "share the win"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "endClip"
+    }
+  ]
+}

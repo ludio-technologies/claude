@@ -1,0 +1,3611 @@
+{
+    "name": "buffalo",
+    "cards": [
+        {
+            "name": "orange_1",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_1.png",
+            "label": "Orange 1",
+            "type": "orange",
+            "rank": 1,
+            "weight": 1
+        },
+        {
+            "name": "orange_2",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_2.png",
+            "label": "Orange 2",
+            "type": "orange",
+            "rank": 2,
+            "weight": 2
+        },
+        {
+            "name": "orange_3",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_3.png",
+            "label": "Orange 3",
+            "type": "orange",
+            "rank": 3,
+            "weight": 3
+        },
+        {
+            "name": "orange_4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_4.png",
+            "label": "Orange 4",
+            "type": "orange",
+            "rank": 4,
+            "weight": 4
+        },
+        {
+            "name": "orange_5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_5.png",
+            "label": "Orange 5",
+            "type": "orange",
+            "rank": 5,
+            "weight": 5
+        },
+        {
+            "name": "orange_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_6.png",
+            "label": "Orange 6",
+            "type": "orange",
+            "rank": 6,
+            "weight": 6
+        },
+        {
+            "name": "orange_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_7.png",
+            "label": "Orange 7",
+            "type": "orange",
+            "rank": 7,
+            "weight": 7
+        },
+        {
+            "name": "orange_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_8.png",
+            "label": "Orange 8",
+            "type": "orange",
+            "rank": 8,
+            "weight": 8
+        },
+        {
+            "name": "orange_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_9.png",
+            "label": "Orange 9",
+            "type": "orange",
+            "rank": 9,
+            "weight": 9
+        },
+        {
+            "name": "orange_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_10.png",
+            "label": "Orange 10",
+            "type": "orange",
+            "rank": 10,
+            "weight": 10
+        },
+        {
+            "name": "orange_11",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_11.png",
+            "label": "Orange 11",
+            "type": "orange",
+            "rank": 11,
+            "weight": 11
+        },
+        {
+            "name": "orange_12",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_12.png",
+            "label": "Orange 12",
+            "type": "orange",
+            "rank": 12,
+            "weight": 12
+        },
+        {
+            "name": "orange_13",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_13.png",
+            "label": "Orange 13",
+            "type": "orange",
+            "rank": 13,
+            "weight": 13
+        },
+        {
+            "name": "orange_14",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_14.png",
+            "label": "Orange 14",
+            "type": "orange",
+            "rank": 14,
+            "weight": 14
+        },
+        {
+            "name": "orange_15",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_15.png",
+            "label": "Orange 15",
+            "type": "orange",
+            "rank": 15,
+            "weight": 15
+        },
+        {
+            "name": "orange_16",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_16.png",
+            "label": "Orange 16",
+            "type": "orange",
+            "rank": 16,
+            "weight": 16
+        },
+        {
+            "name": "orange_17",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_17.png",
+            "label": "Orange 17",
+            "type": "orange",
+            "rank": 17,
+            "weight": 17
+        },
+        {
+            "name": "orange_18",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_18.png",
+            "label": "Orange 18",
+            "type": "orange",
+            "rank": 18,
+            "weight": 18
+        },
+        {
+            "name": "orange_19",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_19.png",
+            "label": "Orange 19",
+            "type": "orange",
+            "rank": 19,
+            "weight": 19
+        },
+        {
+            "name": "orange_20",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_20.png",
+            "label": "Orange 20",
+            "type": "orange",
+            "rank": 20,
+            "weight": 20
+        },
+        {
+            "name": "orange_21",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_21.png",
+            "label": "Orange 21",
+            "type": "orange",
+            "rank": 21,
+            "weight": 21
+        },
+        {
+            "name": "orange_22",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_22.png",
+            "label": "Orange 22",
+            "type": "orange",
+            "rank": 22,
+            "weight": 22
+        },
+        {
+            "name": "orange_23",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_23.png",
+            "label": "Orange 23",
+            "type": "orange",
+            "rank": 23,
+            "weight": 23
+        },
+        {
+            "name": "orange_24",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_24.png",
+            "label": "Orange 24",
+            "type": "orange",
+            "rank": 24,
+            "weight": 24
+        },
+        {
+            "name": "orange_25",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_25.png",
+            "label": "Orange 25",
+            "type": "orange",
+            "rank": 25,
+            "weight": 25
+        },
+        {
+            "name": "orange_26",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_26.png",
+            "label": "Orange 26",
+            "type": "orange",
+            "rank": 26,
+            "weight": 26
+        },
+        {
+            "name": "orange_27",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_27.png",
+            "label": "Orange 27",
+            "type": "orange",
+            "rank": 27,
+            "weight": 27
+        },
+        {
+            "name": "orange_28",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_28.png",
+            "label": "Orange 28",
+            "type": "orange",
+            "rank": 28,
+            "weight": 28
+        },
+        {
+            "name": "orange_29",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_29.png",
+            "label": "Orange 29",
+            "type": "orange",
+            "rank": 29,
+            "weight": 29
+        },
+        {
+            "name": "orange_30",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_30.png",
+            "label": "Orange 30",
+            "type": "orange",
+            "rank": 30,
+            "weight": 30
+        },
+        {
+            "name": "orange_31",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_31.png",
+            "label": "Orange 31",
+            "type": "orange",
+            "rank": 31,
+            "weight": 31
+        },
+        {
+            "name": "orange_32",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_32.png",
+            "label": "Orange 32",
+            "type": "orange",
+            "rank": 32,
+            "weight": 32
+        },
+        {
+            "name": "orange_33",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_33.png",
+            "label": "Orange 33",
+            "type": "orange",
+            "rank": 33,
+            "weight": 33
+        },
+        {
+            "name": "orange_34",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_34.png",
+            "label": "Orange 34",
+            "type": "orange",
+            "rank": 34,
+            "weight": 34
+        },
+        {
+            "name": "orange_35",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_35.png",
+            "label": "Orange 35",
+            "type": "orange",
+            "rank": 35,
+            "weight": 35
+        },
+        {
+            "name": "orange_36",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_36.png",
+            "label": "Orange 36",
+            "type": "orange",
+            "rank": 36,
+            "weight": 36
+        },
+        {
+            "name": "orange_37",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_37.png",
+            "label": "Orange 37",
+            "type": "orange",
+            "rank": 37,
+            "weight": 37
+        },
+        {
+            "name": "orange_38",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_38.png",
+            "label": "Orange 38",
+            "type": "orange",
+            "rank": 38,
+            "weight": 38
+        },
+        {
+            "name": "orange_39",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_39.png",
+            "label": "Orange 39",
+            "type": "orange",
+            "rank": 39,
+            "weight": 39
+        },
+        {
+            "name": "orange_40",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_40.png",
+            "label": "Orange 40",
+            "type": "orange",
+            "rank": 40,
+            "weight": 40
+        },
+        {
+            "name": "orange_41",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_41.png",
+            "label": "Orange 41",
+            "type": "orange",
+            "rank": 41,
+            "weight": 41
+        },
+        {
+            "name": "orange_42",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_42.png",
+            "label": "Orange 42",
+            "type": "orange",
+            "rank": 42,
+            "weight": 42
+        },
+        {
+            "name": "orange_43",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_43.png",
+            "label": "Orange 43",
+            "type": "orange",
+            "rank": 43,
+            "weight": 43
+        },
+        {
+            "name": "orange_44",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_44.png",
+            "label": "Orange 44",
+            "type": "orange",
+            "rank": 44,
+            "weight": 44
+        },
+        {
+            "name": "orange_45",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_45.png",
+            "label": "Orange 45",
+            "type": "orange",
+            "rank": 45,
+            "weight": 45
+        },
+        {
+            "name": "orange_46",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_46.png",
+            "label": "Orange 46",
+            "type": "orange",
+            "rank": 46,
+            "weight": 46
+        },
+        {
+            "name": "orange_47",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_47.png",
+            "label": "Orange 47",
+            "type": "orange",
+            "rank": 47,
+            "weight": 47
+        },
+        {
+            "name": "orange_48",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_48.png",
+            "label": "Orange 48",
+            "type": "orange",
+            "rank": 48,
+            "weight": 48
+        },
+        {
+            "name": "orange_49",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_49.png",
+            "label": "Orange 49",
+            "type": "orange",
+            "rank": 49,
+            "weight": 49
+        },
+        {
+            "name": "orange_50",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_50.png",
+            "label": "Orange 50",
+            "type": "orange",
+            "rank": 50,
+            "weight": 50
+        },
+        {
+            "name": "orange_51",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_51.png",
+            "label": "Orange 51",
+            "type": "orange",
+            "rank": 51,
+            "weight": 51
+        },
+        {
+            "name": "orange_52",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_52.png",
+            "label": "Orange 52",
+            "type": "orange",
+            "rank": 52,
+            "weight": 52
+        },
+        {
+            "name": "orange_53",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_53.png",
+            "label": "Orange 53",
+            "type": "orange",
+            "rank": 53,
+            "weight": 53
+        },
+        {
+            "name": "orange_54",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_54.png",
+            "label": "Orange 54",
+            "type": "orange",
+            "rank": 54,
+            "weight": 54
+        },
+        {
+            "name": "orange_55",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_55.png",
+            "label": "Orange 55",
+            "type": "orange",
+            "rank": 55,
+            "weight": 55
+        },
+        {
+            "name": "orange_56",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_56.png",
+            "label": "Orange 56",
+            "type": "orange",
+            "rank": 56,
+            "weight": 56
+        },
+        {
+            "name": "orange_57",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_57.png",
+            "label": "Orange 57",
+            "type": "orange",
+            "rank": 57,
+            "weight": 57
+        },
+        {
+            "name": "orange_58",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_58.png",
+            "label": "Orange 58",
+            "type": "orange",
+            "rank": 58,
+            "weight": 58
+        },
+        {
+            "name": "orange_59",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_59.png",
+            "label": "Orange 59",
+            "type": "orange",
+            "rank": 59,
+            "weight": 59
+        },
+        {
+            "name": "orange_60",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_60.png",
+            "label": "Orange 60",
+            "type": "orange",
+            "rank": 60,
+            "weight": 60
+        },
+        {
+            "name": "orange_61",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_61.png",
+            "label": "Orange 61",
+            "type": "orange",
+            "rank": 61,
+            "weight": 61
+        },
+        {
+            "name": "orange_62",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_62.png",
+            "label": "Orange 62",
+            "type": "orange",
+            "rank": 62,
+            "weight": 62
+        },
+        {
+            "name": "orange_63",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_63.png",
+            "label": "Orange 63",
+            "type": "orange",
+            "rank": 63,
+            "weight": 63
+        },
+        {
+            "name": "orange_64",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_64.png",
+            "label": "Orange 64",
+            "type": "orange",
+            "rank": 64,
+            "weight": 64
+        },
+        {
+            "name": "orange_65",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_65.png",
+            "label": "Orange 65",
+            "type": "orange",
+            "rank": 65,
+            "weight": 65
+        },
+        {
+            "name": "orange_66",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_66.png",
+            "label": "Orange 66",
+            "type": "orange",
+            "rank": 66,
+            "weight": 66
+        },
+        {
+            "name": "orange_67",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_67.png",
+            "label": "Orange 67",
+            "type": "orange",
+            "rank": 67,
+            "weight": 67
+        },
+        {
+            "name": "orange_68",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_68.png",
+            "label": "Orange 68",
+            "type": "orange",
+            "rank": 68,
+            "weight": 68
+        },
+        {
+            "name": "orange_69",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_69.png",
+            "label": "Orange 69",
+            "type": "orange",
+            "rank": 69,
+            "weight": 69
+        },
+        {
+            "name": "orange_70",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_70.png",
+            "label": "Orange 70",
+            "type": "orange",
+            "rank": 70,
+            "weight": 70
+        },
+        {
+            "name": "orange_71",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_71.png",
+            "label": "Orange 71",
+            "type": "orange",
+            "rank": 71,
+            "weight": 71
+        },
+        {
+            "name": "orange_72",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_72.png",
+            "label": "Orange 72",
+            "type": "orange",
+            "rank": 72,
+            "weight": 72
+        },
+        {
+            "name": "orange_73",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_73.png",
+            "label": "Orange 73",
+            "type": "orange",
+            "rank": 73,
+            "weight": 73
+        },
+        {
+            "name": "orange_74",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_74.png",
+            "label": "Orange 74",
+            "type": "orange",
+            "rank": 74,
+            "weight": 74
+        },
+        {
+            "name": "orange_75",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_75.png",
+            "label": "Orange 75",
+            "type": "orange",
+            "rank": 75,
+            "weight": 75
+        },
+        {
+            "name": "orange_76",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_76.png",
+            "label": "Orange 76",
+            "type": "orange",
+            "rank": 76,
+            "weight": 76
+        },
+        {
+            "name": "orange_77",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_77.png",
+            "label": "Orange 77",
+            "type": "orange",
+            "rank": 77,
+            "weight": 77
+        },
+        {
+            "name": "orange_78",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_78.png",
+            "label": "Orange 78",
+            "type": "orange",
+            "rank": 78,
+            "weight": 78
+        },
+        {
+            "name": "orange_79",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_79.png",
+            "label": "Orange 79",
+            "type": "orange",
+            "rank": 79,
+            "weight": 79
+        },
+        {
+            "name": "orange_80",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_80.png",
+            "label": "Orange 80",
+            "type": "orange",
+            "rank": 80,
+            "weight": 80
+        },
+        {
+            "name": "orange_81",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_81.png",
+            "label": "Orange 81",
+            "type": "orange",
+            "rank": 81,
+            "weight": 81
+        },
+        {
+            "name": "orange_82",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_82.png",
+            "label": "Orange 82",
+            "type": "orange",
+            "rank": 82,
+            "weight": 82
+        },
+        {
+            "name": "orange_83",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_83.png",
+            "label": "Orange 83",
+            "type": "orange",
+            "rank": 83,
+            "weight": 83
+        },
+        {
+            "name": "orange_84",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_84.png",
+            "label": "Orange 84",
+            "type": "orange",
+            "rank": 84,
+            "weight": 84
+        },
+        {
+            "name": "orange_85",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_85.png",
+            "label": "Orange 85",
+            "type": "orange",
+            "rank": 85,
+            "weight": 85
+        },
+        {
+            "name": "orange_86",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_86.png",
+            "label": "Orange 86",
+            "type": "orange",
+            "rank": 86,
+            "weight": 86
+        },
+        {
+            "name": "orange_87",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_87.png",
+            "label": "Orange 87",
+            "type": "orange",
+            "rank": 87,
+            "weight": 87
+        },
+        {
+            "name": "orange_88",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_88.png",
+            "label": "Orange 88",
+            "type": "orange",
+            "rank": 88,
+            "weight": 88
+        },
+        {
+            "name": "orange_89",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_89.png",
+            "label": "Orange 89",
+            "type": "orange",
+            "rank": 89,
+            "weight": 89
+        },
+        {
+            "name": "orange_90",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_90.png",
+            "label": "Orange 90",
+            "type": "orange",
+            "rank": 90,
+            "weight": 90
+        },
+        {
+            "name": "orange_91",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_91.png",
+            "label": "Orange 91",
+            "type": "orange",
+            "rank": 91,
+            "weight": 91
+        },
+        {
+            "name": "orange_92",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_92.png",
+            "label": "Orange 92",
+            "type": "orange",
+            "rank": 92,
+            "weight": 92
+        },
+        {
+            "name": "orange_93",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_93.png",
+            "label": "Orange 93",
+            "type": "orange",
+            "rank": 93,
+            "weight": 93
+        },
+        {
+            "name": "orange_94",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_94.png",
+            "label": "Orange 94",
+            "type": "orange",
+            "rank": 94,
+            "weight": 94
+        },
+        {
+            "name": "orange_95",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_95.png",
+            "label": "Orange 95",
+            "type": "orange",
+            "rank": 95,
+            "weight": 95
+        },
+        {
+            "name": "orange_96",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_96.png",
+            "label": "Orange 96",
+            "type": "orange",
+            "rank": 96,
+            "weight": 96
+        },
+        {
+            "name": "orange_97",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_97.png",
+            "label": "Orange 97",
+            "type": "orange",
+            "rank": 97,
+            "weight": 97
+        },
+        {
+            "name": "orange_98",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_98.png",
+            "label": "Orange 98",
+            "type": "orange",
+            "rank": 98,
+            "weight": 98
+        },
+        {
+            "name": "orange_99",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_99.png",
+            "label": "Orange 99",
+            "type": "orange",
+            "rank": 99,
+            "weight": 99
+        },
+        {
+            "name": "orange_100",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_100.png",
+            "label": "Orange 100",
+            "type": "orange",
+            "rank": 100,
+            "weight": 100
+        },
+        {
+            "name": "orange_101",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_101.png",
+            "label": "Orange 101",
+            "type": "orange",
+            "rank": 101,
+            "weight": 101
+        },
+        {
+            "name": "orange_102",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_102.png",
+            "label": "Orange 102",
+            "type": "orange",
+            "rank": 102,
+            "weight": 102
+        },
+        {
+            "name": "orange_103",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_103.png",
+            "label": "Orange 103",
+            "type": "orange",
+            "rank": 103,
+            "weight": 103
+        },
+        {
+            "name": "orange_104",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_104.png",
+            "label": "Orange 104",
+            "type": "orange",
+            "rank": 104,
+            "weight": 104
+        },
+        {
+            "name": "orange_105",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_105.png",
+            "label": "Orange 105",
+            "type": "orange",
+            "rank": 105,
+            "weight": 105
+        },
+        {
+            "name": "orange_106",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_106.png",
+            "label": "Orange 106",
+            "type": "orange",
+            "rank": 106,
+            "weight": 106
+        },
+        {
+            "name": "orange_107",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_107.png",
+            "label": "Orange 107",
+            "type": "orange",
+            "rank": 107,
+            "weight": 107
+        },
+        {
+            "name": "orange_108",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_108.png",
+            "label": "Orange 108",
+            "type": "orange",
+            "rank": 108,
+            "weight": 108
+        },
+        {
+            "name": "orange_109",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_109.png",
+            "label": "Orange 109",
+            "type": "orange",
+            "rank": 109,
+            "weight": 109
+        },
+        {
+            "name": "orange_110",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_110.png",
+            "label": "Orange 110",
+            "type": "orange",
+            "rank": 110,
+            "weight": 110
+        },
+        {
+            "name": "orange_111",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_111.png",
+            "label": "Orange 111",
+            "type": "orange",
+            "rank": 111,
+            "weight": 111
+        },
+        {
+            "name": "orange_112",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_112.png",
+            "label": "Orange 112",
+            "type": "orange",
+            "rank": 112,
+            "weight": 112
+        },
+        {
+            "name": "orange_113",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_113.png",
+            "label": "Orange 113",
+            "type": "orange",
+            "rank": 113,
+            "weight": 113
+        },
+        {
+            "name": "orange_114",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_114.png",
+            "label": "Orange 114",
+            "type": "orange",
+            "rank": 114,
+            "weight": 114
+        },
+        {
+            "name": "orange_115",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_115.png",
+            "label": "Orange 115",
+            "type": "orange",
+            "rank": 115,
+            "weight": 115
+        },
+        {
+            "name": "orange_116",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_116.png",
+            "label": "Orange 116",
+            "type": "orange",
+            "rank": 116,
+            "weight": 116
+        },
+        {
+            "name": "orange_117",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_117.png",
+            "label": "Orange 117",
+            "type": "orange",
+            "rank": 117,
+            "weight": 117
+        },
+        {
+            "name": "orange_118",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_118.png",
+            "label": "Orange 118",
+            "type": "orange",
+            "rank": 118,
+            "weight": 118
+        },
+        {
+            "name": "orange_119",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_119.png",
+            "label": "Orange 119",
+            "type": "orange",
+            "rank": 119,
+            "weight": 119
+        },
+        {
+            "name": "orange_120",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_120.png",
+            "label": "Orange 120",
+            "type": "orange",
+            "rank": 120,
+            "weight": 120
+        },
+        {
+            "name": "orange_121",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_121.png",
+            "label": "Orange 121",
+            "type": "orange",
+            "rank": 121,
+            "weight": 121
+        },
+        {
+            "name": "orange_122",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_122.png",
+            "label": "Orange 122",
+            "type": "orange",
+            "rank": 122,
+            "weight": 122
+        },
+        {
+            "name": "orange_123",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_123.png",
+            "label": "Orange 123",
+            "type": "orange",
+            "rank": 123,
+            "weight": 123
+        },
+        {
+            "name": "orange_124",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_124.png",
+            "label": "Orange 124",
+            "type": "orange",
+            "rank": 124,
+            "weight": 124
+        },
+        {
+            "name": "orange_125",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_125.png",
+            "label": "Orange 125",
+            "type": "orange",
+            "rank": 125,
+            "weight": 125
+        },
+        {
+            "name": "orange_126",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_126.png",
+            "label": "Orange 126",
+            "type": "orange",
+            "rank": 126,
+            "weight": 126
+        },
+        {
+            "name": "orange_127",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_127.png",
+            "label": "Orange 127",
+            "type": "orange",
+            "rank": 127,
+            "weight": 127
+        },
+        {
+            "name": "orange_128",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_128.png",
+            "label": "Orange 128",
+            "type": "orange",
+            "rank": 128,
+            "weight": 128
+        },
+        {
+            "name": "orange_129",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_129.png",
+            "label": "Orange 129",
+            "type": "orange",
+            "rank": 129,
+            "weight": 129
+        },
+        {
+            "name": "orange_130",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_130.png",
+            "label": "Orange 130",
+            "type": "orange",
+            "rank": 130,
+            "weight": 130
+        },
+        {
+            "name": "orange_131",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_131.png",
+            "label": "Orange 131",
+            "type": "orange",
+            "rank": 131,
+            "weight": 131
+        },
+        {
+            "name": "orange_132",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_132.png",
+            "label": "Orange 132",
+            "type": "orange",
+            "rank": 132,
+            "weight": 132
+        },
+        {
+            "name": "orange_133",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_133.png",
+            "label": "Orange 133",
+            "type": "orange",
+            "rank": 133,
+            "weight": 133
+        },
+        {
+            "name": "orange_134",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_134.png",
+            "label": "Orange 134",
+            "type": "orange",
+            "rank": 134,
+            "weight": 134
+        },
+        {
+            "name": "orange_135",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_135.png",
+            "label": "Orange 135",
+            "type": "orange",
+            "rank": 135,
+            "weight": 135
+        },
+        {
+            "name": "orange_136",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_136.png",
+            "label": "Orange 136",
+            "type": "orange",
+            "rank": 136,
+            "weight": 136
+        },
+        {
+            "name": "orange_137",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_137.png",
+            "label": "Orange 137",
+            "type": "orange",
+            "rank": 137,
+            "weight": 137
+        },
+        {
+            "name": "orange_138",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_138.png",
+            "label": "Orange 138",
+            "type": "orange",
+            "rank": 138,
+            "weight": 138
+        },
+        {
+            "name": "orange_139",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_139.png",
+            "label": "Orange 139",
+            "type": "orange",
+            "rank": 139,
+            "weight": 139
+        },
+        {
+            "name": "orange_140",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_140.png",
+            "label": "Orange 140",
+            "type": "orange",
+            "rank": 140,
+            "weight": 140
+        },
+        {
+            "name": "orange_141",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_141.png",
+            "label": "Orange 141",
+            "type": "orange",
+            "rank": 141,
+            "weight": 141
+        },
+        {
+            "name": "orange_142",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_142.png",
+            "label": "Orange 142",
+            "type": "orange",
+            "rank": 142,
+            "weight": 142
+        },
+        {
+            "name": "orange_143",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_143.png",
+            "label": "Orange 143",
+            "type": "orange",
+            "rank": 143,
+            "weight": 143
+        },
+        {
+            "name": "orange_144",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_144.png",
+            "label": "Orange 144",
+            "type": "orange",
+            "rank": 144,
+            "weight": 144
+        },
+        {
+            "name": "orange_145",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_145.png",
+            "label": "Orange 145",
+            "type": "orange",
+            "rank": 145,
+            "weight": 145
+        },
+        {
+            "name": "orange_146",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_146.png",
+            "label": "Orange 146",
+            "type": "orange",
+            "rank": 146,
+            "weight": 146
+        },
+        {
+            "name": "orange_147",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_147.png",
+            "label": "Orange 147",
+            "type": "orange",
+            "rank": 147,
+            "weight": 147
+        },
+        {
+            "name": "orange_148",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_148.png",
+            "label": "Orange 148",
+            "type": "orange",
+            "rank": 148,
+            "weight": 148
+        },
+        {
+            "name": "orange_149",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_149.png",
+            "label": "Orange 149",
+            "type": "orange",
+            "rank": 149,
+            "weight": 149
+        },
+        {
+            "name": "orange_150",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_150.png",
+            "label": "Orange 150",
+            "type": "orange",
+            "rank": 150,
+            "weight": 150
+        },
+        {
+            "name": "orange_151",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_151.png",
+            "label": "Orange 151",
+            "type": "orange",
+            "rank": 151,
+            "weight": 151
+        },
+        {
+            "name": "orange_152",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_152.png",
+            "label": "Orange 152",
+            "type": "orange",
+            "rank": 152,
+            "weight": 152
+        },
+        {
+            "name": "orange_153",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_153.png",
+            "label": "Orange 153",
+            "type": "orange",
+            "rank": 153,
+            "weight": 153
+        },
+        {
+            "name": "orange_154",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_154.png",
+            "label": "Orange 154",
+            "type": "orange",
+            "rank": 154,
+            "weight": 154
+        },
+        {
+            "name": "orange_155",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_155.png",
+            "label": "Orange 155",
+            "type": "orange",
+            "rank": 155,
+            "weight": 155
+        },
+        {
+            "name": "orange_156",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_156.png",
+            "label": "Orange 156",
+            "type": "orange",
+            "rank": 156,
+            "weight": 156
+        },
+        {
+            "name": "orange_157",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_157.png",
+            "label": "Orange 157",
+            "type": "orange",
+            "rank": 157,
+            "weight": 157
+        },
+        {
+            "name": "orange_158",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_158.png",
+            "label": "Orange 158",
+            "type": "orange",
+            "rank": 158,
+            "weight": 158
+        },
+        {
+            "name": "orange_159",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_159.png",
+            "label": "Orange 159",
+            "type": "orange",
+            "rank": 159,
+            "weight": 159
+        },
+        {
+            "name": "orange_160",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_160.png",
+            "label": "Orange 160",
+            "type": "orange",
+            "rank": 160,
+            "weight": 160
+        },
+        {
+            "name": "orange_161",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_161.png",
+            "label": "Orange 161",
+            "type": "orange",
+            "rank": 161,
+            "weight": 161
+        },
+        {
+            "name": "orange_162",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_162.png",
+            "label": "Orange 162",
+            "type": "orange",
+            "rank": 162,
+            "weight": 162
+        },
+        {
+            "name": "orange_163",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_163.png",
+            "label": "Orange 163",
+            "type": "orange",
+            "rank": 163,
+            "weight": 163
+        },
+        {
+            "name": "orange_164",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_164.png",
+            "label": "Orange 164",
+            "type": "orange",
+            "rank": 164,
+            "weight": 164
+        },
+        {
+            "name": "orange_165",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_165.png",
+            "label": "Orange 165",
+            "type": "orange",
+            "rank": 165,
+            "weight": 165
+        },
+        {
+            "name": "orange_166",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_166.png",
+            "label": "Orange 166",
+            "type": "orange",
+            "rank": 166,
+            "weight": 166
+        },
+        {
+            "name": "orange_167",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_167.png",
+            "label": "Orange 167",
+            "type": "orange",
+            "rank": 167,
+            "weight": 167
+        },
+        {
+            "name": "orange_168",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_168.png",
+            "label": "Orange 168",
+            "type": "orange",
+            "rank": 168,
+            "weight": 168
+        },
+        {
+            "name": "orange_169",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_169.png",
+            "label": "Orange 169",
+            "type": "orange",
+            "rank": 169,
+            "weight": 169
+        },
+        {
+            "name": "orange_170",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_170.png",
+            "label": "Orange 170",
+            "type": "orange",
+            "rank": 170,
+            "weight": 170
+        },
+        {
+            "name": "orange_171",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_171.png",
+            "label": "Orange 171",
+            "type": "orange",
+            "rank": 171,
+            "weight": 171
+        },
+        {
+            "name": "orange_172",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_172.png",
+            "label": "Orange 172",
+            "type": "orange",
+            "rank": 172,
+            "weight": 172
+        },
+        {
+            "name": "orange_173",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_173.png",
+            "label": "Orange 173",
+            "type": "orange",
+            "rank": 173,
+            "weight": 173
+        },
+        {
+            "name": "orange_174",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_174.png",
+            "label": "Orange 174",
+            "type": "orange",
+            "rank": 174,
+            "weight": 174
+        },
+        {
+            "name": "orange_175",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_175.png",
+            "label": "Orange 175",
+            "type": "orange",
+            "rank": 175,
+            "weight": 175
+        },
+        {
+            "name": "orange_176",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_176.png",
+            "label": "Orange 176",
+            "type": "orange",
+            "rank": 176,
+            "weight": 176
+        },
+        {
+            "name": "orange_177",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_177.png",
+            "label": "Orange 177",
+            "type": "orange",
+            "rank": 177,
+            "weight": 177
+        },
+        {
+            "name": "orange_178",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_178.png",
+            "label": "Orange 178",
+            "type": "orange",
+            "rank": 178,
+            "weight": 178
+        },
+        {
+            "name": "orange_179",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_179.png",
+            "label": "Orange 179",
+            "type": "orange",
+            "rank": 179,
+            "weight": 179
+        },
+        {
+            "name": "orange_180",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_180.png",
+            "label": "Orange 180",
+            "type": "orange",
+            "rank": 180,
+            "weight": 180
+        },
+        {
+            "name": "orange_181",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_181.png",
+            "label": "Orange 181",
+            "type": "orange",
+            "rank": 181,
+            "weight": 181
+        },
+        {
+            "name": "orange_182",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_182.png",
+            "label": "Orange 182",
+            "type": "orange",
+            "rank": 182,
+            "weight": 182
+        },
+        {
+            "name": "orange_183",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_183.png",
+            "label": "Orange 183",
+            "type": "orange",
+            "rank": 183,
+            "weight": 183
+        },
+        {
+            "name": "orange_184",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_184.png",
+            "label": "Orange 184",
+            "type": "orange",
+            "rank": 184,
+            "weight": 184
+        },
+        {
+            "name": "orange_185",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_185.png",
+            "label": "Orange 185",
+            "type": "orange",
+            "rank": 185,
+            "weight": 185
+        },
+        {
+            "name": "orange_186",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_186.png",
+            "label": "Orange 186",
+            "type": "orange",
+            "rank": 186,
+            "weight": 186
+        },
+        {
+            "name": "orange_187",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_187.png",
+            "label": "Orange 187",
+            "type": "orange",
+            "rank": 187,
+            "weight": 187
+        },
+        {
+            "name": "orange_188",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_188.png",
+            "label": "Orange 188",
+            "type": "orange",
+            "rank": 188,
+            "weight": 188
+        },
+        {
+            "name": "orange_189",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_189.png",
+            "label": "Orange 189",
+            "type": "orange",
+            "rank": 189,
+            "weight": 189
+        },
+        {
+            "name": "orange_190",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_190.png",
+            "label": "Orange 190",
+            "type": "orange",
+            "rank": 190,
+            "weight": 190
+        },
+        {
+            "name": "orange_191",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_191.png",
+            "label": "Orange 191",
+            "type": "orange",
+            "rank": 191,
+            "weight": 191
+        },
+        {
+            "name": "orange_192",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_192.png",
+            "label": "Orange 192",
+            "type": "orange",
+            "rank": 192,
+            "weight": 192
+        },
+        {
+            "name": "orange_193",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_193.png",
+            "label": "Orange 193",
+            "type": "orange",
+            "rank": 193,
+            "weight": 193
+        },
+        {
+            "name": "orange_194",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_194.png",
+            "label": "Orange 194",
+            "type": "orange",
+            "rank": 194,
+            "weight": 194
+        },
+        {
+            "name": "orange_195",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_195.png",
+            "label": "Orange 195",
+            "type": "orange",
+            "rank": 195,
+            "weight": 195
+        },
+        {
+            "name": "orange_196",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_196.png",
+            "label": "Orange 196",
+            "type": "orange",
+            "rank": 196,
+            "weight": 196
+        },
+        {
+            "name": "orange_197",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_197.png",
+            "label": "Orange 197",
+            "type": "orange",
+            "rank": 197,
+            "weight": 197
+        },
+        {
+            "name": "orange_198",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_198.png",
+            "label": "Orange 198",
+            "type": "orange",
+            "rank": 198,
+            "weight": 198
+        },
+        {
+            "name": "orange_199",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_199.png",
+            "label": "Orange 199",
+            "type": "orange",
+            "rank": 199,
+            "weight": 199
+        },
+        {
+            "name": "orange_200",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_200.png",
+            "label": "Orange 200",
+            "type": "orange",
+            "rank": 200,
+            "weight": 200
+        },
+        {
+            "name": "blue_1",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_1.png",
+            "label": "Blue 1",
+            "type": "blue",
+            "rank": 1,
+            "weight": 1
+        },
+        {
+            "name": "blue_2",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_2.png",
+            "label": "Blue 2",
+            "type": "blue",
+            "rank": 2,
+            "weight": 2
+        },
+        {
+            "name": "blue_3",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_3.png",
+            "label": "Blue 3",
+            "type": "blue",
+            "rank": 3,
+            "weight": 3
+        },
+        {
+            "name": "blue_4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_4.png",
+            "label": "Blue 4",
+            "type": "blue",
+            "rank": 4,
+            "weight": 4
+        },
+        {
+            "name": "blue_5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_5.png",
+            "label": "Blue 5",
+            "type": "blue",
+            "rank": 5,
+            "weight": 5
+        },
+        {
+            "name": "blue_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_6.png",
+            "label": "Blue 6",
+            "type": "blue",
+            "rank": 6,
+            "weight": 6
+        },
+        {
+            "name": "blue_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_7.png",
+            "label": "Blue 7",
+            "type": "blue",
+            "rank": 7,
+            "weight": 7
+        },
+        {
+            "name": "blue_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_8.png",
+            "label": "Blue 8",
+            "type": "blue",
+            "rank": 8,
+            "weight": 8
+        },
+        {
+            "name": "blue_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_9.png",
+            "label": "Blue 9",
+            "type": "blue",
+            "rank": 9,
+            "weight": 9
+        },
+        {
+            "name": "blue_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_10.png",
+            "label": "Blue 10",
+            "type": "blue",
+            "rank": 10,
+            "weight": 10
+        },
+        {
+            "name": "blue_11",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_11.png",
+            "label": "Blue 11",
+            "type": "blue",
+            "rank": 11,
+            "weight": 11
+        },
+        {
+            "name": "blue_12",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_12.png",
+            "label": "Blue 12",
+            "type": "blue",
+            "rank": 12,
+            "weight": 12
+        },
+        {
+            "name": "blue_13",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_13.png",
+            "label": "Blue 13",
+            "type": "blue",
+            "rank": 13,
+            "weight": 13
+        },
+        {
+            "name": "blue_14",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_14.png",
+            "label": "Blue 14",
+            "type": "blue",
+            "rank": 14,
+            "weight": 14
+        },
+        {
+            "name": "blue_15",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_15.png",
+            "label": "Blue 15",
+            "type": "blue",
+            "rank": 15,
+            "weight": 15
+        },
+        {
+            "name": "blue_16",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_16.png",
+            "label": "Blue 16",
+            "type": "blue",
+            "rank": 16,
+            "weight": 16
+        },
+        {
+            "name": "blue_17",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_17.png",
+            "label": "Blue 17",
+            "type": "blue",
+            "rank": 17,
+            "weight": 17
+        },
+        {
+            "name": "blue_18",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_18.png",
+            "label": "Blue 18",
+            "type": "blue",
+            "rank": 18,
+            "weight": 18
+        },
+        {
+            "name": "blue_19",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_19.png",
+            "label": "Blue 19",
+            "type": "blue",
+            "rank": 19,
+            "weight": 19
+        },
+        {
+            "name": "blue_20",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_20.png",
+            "label": "Blue 20",
+            "type": "blue",
+            "rank": 20,
+            "weight": 20
+        },
+        {
+            "name": "blue_21",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_21.png",
+            "label": "Blue 21",
+            "type": "blue",
+            "rank": 21,
+            "weight": 21
+        },
+        {
+            "name": "blue_22",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_22.png",
+            "label": "Blue 22",
+            "type": "blue",
+            "rank": 22,
+            "weight": 22
+        },
+        {
+            "name": "blue_23",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_23.png",
+            "label": "Blue 23",
+            "type": "blue",
+            "rank": 23,
+            "weight": 23
+        },
+        {
+            "name": "blue_24",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_24.png",
+            "label": "Blue 24",
+            "type": "blue",
+            "rank": 24,
+            "weight": 24
+        },
+        {
+            "name": "blue_25",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_25.png",
+            "label": "Blue 25",
+            "type": "blue",
+            "rank": 25,
+            "weight": 25
+        },
+        {
+            "name": "blue_26",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_26.png",
+            "label": "Blue 26",
+            "type": "blue",
+            "rank": 26,
+            "weight": 26
+        },
+        {
+            "name": "blue_27",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_27.png",
+            "label": "Blue 27",
+            "type": "blue",
+            "rank": 27,
+            "weight": 27
+        },
+        {
+            "name": "blue_28",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_28.png",
+            "label": "Blue 28",
+            "type": "blue",
+            "rank": 28,
+            "weight": 28
+        },
+        {
+            "name": "blue_29",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_29.png",
+            "label": "Blue 29",
+            "type": "blue",
+            "rank": 29,
+            "weight": 29
+        },
+        {
+            "name": "blue_30",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_30.png",
+            "label": "Blue 30",
+            "type": "blue",
+            "rank": 30,
+            "weight": 30
+        },
+        {
+            "name": "blue_31",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_31.png",
+            "label": "Blue 31",
+            "type": "blue",
+            "rank": 31,
+            "weight": 31
+        },
+        {
+            "name": "blue_32",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_32.png",
+            "label": "Blue 32",
+            "type": "blue",
+            "rank": 32,
+            "weight": 32
+        },
+        {
+            "name": "blue_33",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_33.png",
+            "label": "Blue 33",
+            "type": "blue",
+            "rank": 33,
+            "weight": 33
+        },
+        {
+            "name": "blue_34",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_34.png",
+            "label": "Blue 34",
+            "type": "blue",
+            "rank": 34,
+            "weight": 34
+        },
+        {
+            "name": "blue_35",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_35.png",
+            "label": "Blue 35",
+            "type": "blue",
+            "rank": 35,
+            "weight": 35
+        },
+        {
+            "name": "blue_36",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_36.png",
+            "label": "Blue 36",
+            "type": "blue",
+            "rank": 36,
+            "weight": 36
+        },
+        {
+            "name": "blue_37",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_37.png",
+            "label": "Blue 37",
+            "type": "blue",
+            "rank": 37,
+            "weight": 37
+        },
+        {
+            "name": "blue_38",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_38.png",
+            "label": "Blue 38",
+            "type": "blue",
+            "rank": 38,
+            "weight": 38
+        },
+        {
+            "name": "blue_39",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_39.png",
+            "label": "Blue 39",
+            "type": "blue",
+            "rank": 39,
+            "weight": 39
+        },
+        {
+            "name": "blue_40",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_40.png",
+            "label": "Blue 40",
+            "type": "blue",
+            "rank": 40,
+            "weight": 40
+        },
+        {
+            "name": "blue_41",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_41.png",
+            "label": "Blue 41",
+            "type": "blue",
+            "rank": 41,
+            "weight": 41
+        },
+        {
+            "name": "blue_42",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_42.png",
+            "label": "Blue 42",
+            "type": "blue",
+            "rank": 42,
+            "weight": 42
+        },
+        {
+            "name": "blue_43",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_43.png",
+            "label": "Blue 43",
+            "type": "blue",
+            "rank": 43,
+            "weight": 43
+        },
+        {
+            "name": "blue_44",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_44.png",
+            "label": "Blue 44",
+            "type": "blue",
+            "rank": 44,
+            "weight": 44
+        },
+        {
+            "name": "blue_45",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_45.png",
+            "label": "Blue 45",
+            "type": "blue",
+            "rank": 45,
+            "weight": 45
+        },
+        {
+            "name": "blue_46",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_46.png",
+            "label": "Blue 46",
+            "type": "blue",
+            "rank": 46,
+            "weight": 46
+        },
+        {
+            "name": "blue_47",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_47.png",
+            "label": "Blue 47",
+            "type": "blue",
+            "rank": 47,
+            "weight": 47
+        },
+        {
+            "name": "blue_48",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_48.png",
+            "label": "Blue 48",
+            "type": "blue",
+            "rank": 48,
+            "weight": 48
+        },
+        {
+            "name": "blue_49",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_49.png",
+            "label": "Blue 49",
+            "type": "blue",
+            "rank": 49,
+            "weight": 49
+        },
+        {
+            "name": "blue_50",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_50.png",
+            "label": "Blue 50",
+            "type": "blue",
+            "rank": 50,
+            "weight": 50
+        },
+        {
+            "name": "blue_51",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_51.png",
+            "label": "Blue 51",
+            "type": "blue",
+            "rank": 51,
+            "weight": 51
+        },
+        {
+            "name": "blue_52",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_52.png",
+            "label": "Blue 52",
+            "type": "blue",
+            "rank": 52,
+            "weight": 52
+        },
+        {
+            "name": "blue_53",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_53.png",
+            "label": "Blue 53",
+            "type": "blue",
+            "rank": 53,
+            "weight": 53
+        },
+        {
+            "name": "blue_54",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_54.png",
+            "label": "Blue 54",
+            "type": "blue",
+            "rank": 54,
+            "weight": 54
+        },
+        {
+            "name": "blue_55",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_55.png",
+            "label": "Blue 55",
+            "type": "blue",
+            "rank": 55,
+            "weight": 55
+        },
+        {
+            "name": "blue_56",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_56.png",
+            "label": "Blue 56",
+            "type": "blue",
+            "rank": 56,
+            "weight": 56
+        },
+        {
+            "name": "blue_57",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_57.png",
+            "label": "Blue 57",
+            "type": "blue",
+            "rank": 57,
+            "weight": 57
+        },
+        {
+            "name": "blue_58",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_58.png",
+            "label": "Blue 58",
+            "type": "blue",
+            "rank": 58,
+            "weight": 58
+        },
+        {
+            "name": "blue_59",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_59.png",
+            "label": "Blue 59",
+            "type": "blue",
+            "rank": 59,
+            "weight": 59
+        },
+        {
+            "name": "blue_60",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_60.png",
+            "label": "Blue 60",
+            "type": "blue",
+            "rank": 60,
+            "weight": 60
+        },
+        {
+            "name": "blue_61",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_61.png",
+            "label": "Blue 61",
+            "type": "blue",
+            "rank": 61,
+            "weight": 61
+        },
+        {
+            "name": "blue_62",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_62.png",
+            "label": "Blue 62",
+            "type": "blue",
+            "rank": 62,
+            "weight": 62
+        },
+        {
+            "name": "blue_63",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_63.png",
+            "label": "Blue 63",
+            "type": "blue",
+            "rank": 63,
+            "weight": 63
+        },
+        {
+            "name": "blue_64",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_64.png",
+            "label": "Blue 64",
+            "type": "blue",
+            "rank": 64,
+            "weight": 64
+        },
+        {
+            "name": "blue_65",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_65.png",
+            "label": "Blue 65",
+            "type": "blue",
+            "rank": 65,
+            "weight": 65
+        },
+        {
+            "name": "blue_66",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_66.png",
+            "label": "Blue 66",
+            "type": "blue",
+            "rank": 66,
+            "weight": 66
+        },
+        {
+            "name": "blue_67",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_67.png",
+            "label": "Blue 67",
+            "type": "blue",
+            "rank": 67,
+            "weight": 67
+        },
+        {
+            "name": "blue_68",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_68.png",
+            "label": "Blue 68",
+            "type": "blue",
+            "rank": 68,
+            "weight": 68
+        },
+        {
+            "name": "blue_69",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_69.png",
+            "label": "Blue 69",
+            "type": "blue",
+            "rank": 69,
+            "weight": 69
+        },
+        {
+            "name": "blue_70",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_70.png",
+            "label": "Blue 70",
+            "type": "blue",
+            "rank": 70,
+            "weight": 70
+        },
+        {
+            "name": "blue_71",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_71.png",
+            "label": "Blue 71",
+            "type": "blue",
+            "rank": 71,
+            "weight": 71
+        },
+        {
+            "name": "blue_72",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_72.png",
+            "label": "Blue 72",
+            "type": "blue",
+            "rank": 72,
+            "weight": 72
+        },
+        {
+            "name": "blue_73",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_73.png",
+            "label": "Blue 73",
+            "type": "blue",
+            "rank": 73,
+            "weight": 73
+        },
+        {
+            "name": "blue_74",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_74.png",
+            "label": "Blue 74",
+            "type": "blue",
+            "rank": 74,
+            "weight": 74
+        },
+        {
+            "name": "blue_75",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_75.png",
+            "label": "Blue 75",
+            "type": "blue",
+            "rank": 75,
+            "weight": 75
+        },
+        {
+            "name": "blue_76",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_76.png",
+            "label": "Blue 76",
+            "type": "blue",
+            "rank": 76,
+            "weight": 76
+        },
+        {
+            "name": "blue_77",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_77.png",
+            "label": "Blue 77",
+            "type": "blue",
+            "rank": 77,
+            "weight": 77
+        },
+        {
+            "name": "blue_78",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_78.png",
+            "label": "Blue 78",
+            "type": "blue",
+            "rank": 78,
+            "weight": 78
+        },
+        {
+            "name": "blue_79",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_79.png",
+            "label": "Blue 79",
+            "type": "blue",
+            "rank": 79,
+            "weight": 79
+        },
+        {
+            "name": "blue_80",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_80.png",
+            "label": "Blue 80",
+            "type": "blue",
+            "rank": 80,
+            "weight": 80
+        },
+        {
+            "name": "blue_81",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_81.png",
+            "label": "Blue 81",
+            "type": "blue",
+            "rank": 81,
+            "weight": 81
+        },
+        {
+            "name": "blue_82",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_82.png",
+            "label": "Blue 82",
+            "type": "blue",
+            "rank": 82,
+            "weight": 82
+        },
+        {
+            "name": "blue_83",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_83.png",
+            "label": "Blue 83",
+            "type": "blue",
+            "rank": 83,
+            "weight": 83
+        },
+        {
+            "name": "blue_84",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_84.png",
+            "label": "Blue 84",
+            "type": "blue",
+            "rank": 84,
+            "weight": 84
+        },
+        {
+            "name": "blue_85",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_85.png",
+            "label": "Blue 85",
+            "type": "blue",
+            "rank": 85,
+            "weight": 85
+        },
+        {
+            "name": "blue_86",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_86.png",
+            "label": "Blue 86",
+            "type": "blue",
+            "rank": 86,
+            "weight": 86
+        },
+        {
+            "name": "blue_87",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_87.png",
+            "label": "Blue 87",
+            "type": "blue",
+            "rank": 87,
+            "weight": 87
+        },
+        {
+            "name": "blue_88",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_88.png",
+            "label": "Blue 88",
+            "type": "blue",
+            "rank": 88,
+            "weight": 88
+        },
+        {
+            "name": "blue_89",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_89.png",
+            "label": "Blue 89",
+            "type": "blue",
+            "rank": 89,
+            "weight": 89
+        },
+        {
+            "name": "blue_90",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_90.png",
+            "label": "Blue 90",
+            "type": "blue",
+            "rank": 90,
+            "weight": 90
+        },
+        {
+            "name": "blue_91",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_91.png",
+            "label": "Blue 91",
+            "type": "blue",
+            "rank": 91,
+            "weight": 91
+        },
+        {
+            "name": "blue_92",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_92.png",
+            "label": "Blue 92",
+            "type": "blue",
+            "rank": 92,
+            "weight": 92
+        },
+        {
+            "name": "blue_93",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_93.png",
+            "label": "Blue 93",
+            "type": "blue",
+            "rank": 93,
+            "weight": 93
+        },
+        {
+            "name": "blue_94",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_94.png",
+            "label": "Blue 94",
+            "type": "blue",
+            "rank": 94,
+            "weight": 94
+        },
+        {
+            "name": "blue_95",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_95.png",
+            "label": "Blue 95",
+            "type": "blue",
+            "rank": 95,
+            "weight": 95
+        },
+        {
+            "name": "blue_96",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_96.png",
+            "label": "Blue 96",
+            "type": "blue",
+            "rank": 96,
+            "weight": 96
+        },
+        {
+            "name": "blue_97",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_97.png",
+            "label": "Blue 97",
+            "type": "blue",
+            "rank": 97,
+            "weight": 97
+        },
+        {
+            "name": "blue_98",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_98.png",
+            "label": "Blue 98",
+            "type": "blue",
+            "rank": 98,
+            "weight": 98
+        },
+        {
+            "name": "blue_99",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_99.png",
+            "label": "Blue 99",
+            "type": "blue",
+            "rank": 99,
+            "weight": 99
+        },
+        {
+            "name": "blue_100",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_100.png",
+            "label": "Blue 100",
+            "type": "blue",
+            "rank": 100,
+            "weight": 100
+        },
+        {
+            "name": "blue_101",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_101.png",
+            "label": "Blue 101",
+            "type": "blue",
+            "rank": 101,
+            "weight": 101
+        },
+        {
+            "name": "blue_102",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_102.png",
+            "label": "Blue 102",
+            "type": "blue",
+            "rank": 102,
+            "weight": 102
+        },
+        {
+            "name": "blue_103",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_103.png",
+            "label": "Blue 103",
+            "type": "blue",
+            "rank": 103,
+            "weight": 103
+        },
+        {
+            "name": "blue_104",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_104.png",
+            "label": "Blue 104",
+            "type": "blue",
+            "rank": 104,
+            "weight": 104
+        },
+        {
+            "name": "blue_105",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_105.png",
+            "label": "Blue 105",
+            "type": "blue",
+            "rank": 105,
+            "weight": 105
+        },
+        {
+            "name": "blue_106",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_106.png",
+            "label": "Blue 106",
+            "type": "blue",
+            "rank": 106,
+            "weight": 106
+        },
+        {
+            "name": "blue_107",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_107.png",
+            "label": "Blue 107",
+            "type": "blue",
+            "rank": 107,
+            "weight": 107
+        },
+        {
+            "name": "blue_108",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_108.png",
+            "label": "Blue 108",
+            "type": "blue",
+            "rank": 108,
+            "weight": 108
+        },
+        {
+            "name": "blue_109",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_109.png",
+            "label": "Blue 109",
+            "type": "blue",
+            "rank": 109,
+            "weight": 109
+        },
+        {
+            "name": "blue_110",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_110.png",
+            "label": "Blue 110",
+            "type": "blue",
+            "rank": 110,
+            "weight": 110
+        },
+        {
+            "name": "blue_111",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_111.png",
+            "label": "Blue 111",
+            "type": "blue",
+            "rank": 111,
+            "weight": 111
+        },
+        {
+            "name": "blue_112",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_112.png",
+            "label": "Blue 112",
+            "type": "blue",
+            "rank": 112,
+            "weight": 112
+        },
+        {
+            "name": "blue_113",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_113.png",
+            "label": "Blue 113",
+            "type": "blue",
+            "rank": 113,
+            "weight": 113
+        },
+        {
+            "name": "blue_114",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_114.png",
+            "label": "Blue 114",
+            "type": "blue",
+            "rank": 114,
+            "weight": 114
+        },
+        {
+            "name": "blue_115",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_115.png",
+            "label": "Blue 115",
+            "type": "blue",
+            "rank": 115,
+            "weight": 115
+        },
+        {
+            "name": "blue_116",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_116.png",
+            "label": "Blue 116",
+            "type": "blue",
+            "rank": 116,
+            "weight": 116
+        },
+        {
+            "name": "blue_117",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_117.png",
+            "label": "Blue 117",
+            "type": "blue",
+            "rank": 117,
+            "weight": 117
+        },
+        {
+            "name": "blue_118",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_118.png",
+            "label": "Blue 118",
+            "type": "blue",
+            "rank": 118,
+            "weight": 118
+        },
+        {
+            "name": "blue_119",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_119.png",
+            "label": "Blue 119",
+            "type": "blue",
+            "rank": 119,
+            "weight": 119
+        },
+        {
+            "name": "blue_120",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_120.png",
+            "label": "Blue 120",
+            "type": "blue",
+            "rank": 120,
+            "weight": 120
+        },
+        {
+            "name": "blue_121",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_121.png",
+            "label": "Blue 121",
+            "type": "blue",
+            "rank": 121,
+            "weight": 121
+        },
+        {
+            "name": "blue_122",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_122.png",
+            "label": "Blue 122",
+            "type": "blue",
+            "rank": 122,
+            "weight": 122
+        },
+        {
+            "name": "blue_123",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_123.png",
+            "label": "Blue 123",
+            "type": "blue",
+            "rank": 123,
+            "weight": 123
+        },
+        {
+            "name": "blue_124",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_124.png",
+            "label": "Blue 124",
+            "type": "blue",
+            "rank": 124,
+            "weight": 124
+        },
+        {
+            "name": "blue_125",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_125.png",
+            "label": "Blue 125",
+            "type": "blue",
+            "rank": 125,
+            "weight": 125
+        },
+        {
+            "name": "blue_126",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_126.png",
+            "label": "Blue 126",
+            "type": "blue",
+            "rank": 126,
+            "weight": 126
+        },
+        {
+            "name": "blue_127",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_127.png",
+            "label": "Blue 127",
+            "type": "blue",
+            "rank": 127,
+            "weight": 127
+        },
+        {
+            "name": "blue_128",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_128.png",
+            "label": "Blue 128",
+            "type": "blue",
+            "rank": 128,
+            "weight": 128
+        },
+        {
+            "name": "blue_129",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_129.png",
+            "label": "Blue 129",
+            "type": "blue",
+            "rank": 129,
+            "weight": 129
+        },
+        {
+            "name": "blue_130",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_130.png",
+            "label": "Blue 130",
+            "type": "blue",
+            "rank": 130,
+            "weight": 130
+        },
+        {
+            "name": "blue_131",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_131.png",
+            "label": "Blue 131",
+            "type": "blue",
+            "rank": 131,
+            "weight": 131
+        },
+        {
+            "name": "blue_132",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_132.png",
+            "label": "Blue 132",
+            "type": "blue",
+            "rank": 132,
+            "weight": 132
+        },
+        {
+            "name": "blue_133",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_133.png",
+            "label": "Blue 133",
+            "type": "blue",
+            "rank": 133,
+            "weight": 133
+        },
+        {
+            "name": "blue_134",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_134.png",
+            "label": "Blue 134",
+            "type": "blue",
+            "rank": 134,
+            "weight": 134
+        },
+        {
+            "name": "blue_135",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_135.png",
+            "label": "Blue 135",
+            "type": "blue",
+            "rank": 135,
+            "weight": 135
+        },
+        {
+            "name": "blue_136",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_136.png",
+            "label": "Blue 136",
+            "type": "blue",
+            "rank": 136,
+            "weight": 136
+        },
+        {
+            "name": "blue_137",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_137.png",
+            "label": "Blue 137",
+            "type": "blue",
+            "rank": 137,
+            "weight": 137
+        },
+        {
+            "name": "blue_138",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_138.png",
+            "label": "Blue 138",
+            "type": "blue",
+            "rank": 138,
+            "weight": 138
+        },
+        {
+            "name": "blue_139",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_139.png",
+            "label": "Blue 139",
+            "type": "blue",
+            "rank": 139,
+            "weight": 139
+        },
+        {
+            "name": "blue_140",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_140.png",
+            "label": "Blue 140",
+            "type": "blue",
+            "rank": 140,
+            "weight": 140
+        },
+        {
+            "name": "blue_141",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_141.png",
+            "label": "Blue 141",
+            "type": "blue",
+            "rank": 141,
+            "weight": 141
+        },
+        {
+            "name": "blue_142",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_142.png",
+            "label": "Blue 142",
+            "type": "blue",
+            "rank": 142,
+            "weight": 142
+        },
+        {
+            "name": "blue_143",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_143.png",
+            "label": "Blue 143",
+            "type": "blue",
+            "rank": 143,
+            "weight": 143
+        },
+        {
+            "name": "blue_144",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_144.png",
+            "label": "Blue 144",
+            "type": "blue",
+            "rank": 144,
+            "weight": 144
+        },
+        {
+            "name": "blue_145",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_145.png",
+            "label": "Blue 145",
+            "type": "blue",
+            "rank": 145,
+            "weight": 145
+        },
+        {
+            "name": "blue_146",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_146.png",
+            "label": "Blue 146",
+            "type": "blue",
+            "rank": 146,
+            "weight": 146
+        },
+        {
+            "name": "blue_147",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_147.png",
+            "label": "Blue 147",
+            "type": "blue",
+            "rank": 147,
+            "weight": 147
+        },
+        {
+            "name": "blue_148",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_148.png",
+            "label": "Blue 148",
+            "type": "blue",
+            "rank": 148,
+            "weight": 148
+        },
+        {
+            "name": "blue_149",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_149.png",
+            "label": "Blue 149",
+            "type": "blue",
+            "rank": 149,
+            "weight": 149
+        },
+        {
+            "name": "blue_150",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_150.png",
+            "label": "Blue 150",
+            "type": "blue",
+            "rank": 150,
+            "weight": 150
+        },
+        {
+            "name": "blue_151",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_151.png",
+            "label": "Blue 151",
+            "type": "blue",
+            "rank": 151,
+            "weight": 151
+        },
+        {
+            "name": "blue_152",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_152.png",
+            "label": "Blue 152",
+            "type": "blue",
+            "rank": 152,
+            "weight": 152
+        },
+        {
+            "name": "blue_153",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_153.png",
+            "label": "Blue 153",
+            "type": "blue",
+            "rank": 153,
+            "weight": 153
+        },
+        {
+            "name": "blue_154",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_154.png",
+            "label": "Blue 154",
+            "type": "blue",
+            "rank": 154,
+            "weight": 154
+        },
+        {
+            "name": "blue_155",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_155.png",
+            "label": "Blue 155",
+            "type": "blue",
+            "rank": 155,
+            "weight": 155
+        },
+        {
+            "name": "blue_156",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_156.png",
+            "label": "Blue 156",
+            "type": "blue",
+            "rank": 156,
+            "weight": 156
+        },
+        {
+            "name": "blue_157",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_157.png",
+            "label": "Blue 157",
+            "type": "blue",
+            "rank": 157,
+            "weight": 157
+        },
+        {
+            "name": "blue_158",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_158.png",
+            "label": "Blue 158",
+            "type": "blue",
+            "rank": 158,
+            "weight": 158
+        },
+        {
+            "name": "blue_159",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_159.png",
+            "label": "Blue 159",
+            "type": "blue",
+            "rank": 159,
+            "weight": 159
+        },
+        {
+            "name": "blue_160",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_160.png",
+            "label": "Blue 160",
+            "type": "blue",
+            "rank": 160,
+            "weight": 160
+        },
+        {
+            "name": "blue_161",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_161.png",
+            "label": "Blue 161",
+            "type": "blue",
+            "rank": 161,
+            "weight": 161
+        },
+        {
+            "name": "blue_162",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_162.png",
+            "label": "Blue 162",
+            "type": "blue",
+            "rank": 162,
+            "weight": 162
+        },
+        {
+            "name": "blue_163",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_163.png",
+            "label": "Blue 163",
+            "type": "blue",
+            "rank": 163,
+            "weight": 163
+        },
+        {
+            "name": "blue_164",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_164.png",
+            "label": "Blue 164",
+            "type": "blue",
+            "rank": 164,
+            "weight": 164
+        },
+        {
+            "name": "blue_165",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_165.png",
+            "label": "Blue 165",
+            "type": "blue",
+            "rank": 165,
+            "weight": 165
+        },
+        {
+            "name": "blue_166",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_166.png",
+            "label": "Blue 166",
+            "type": "blue",
+            "rank": 166,
+            "weight": 166
+        },
+        {
+            "name": "blue_167",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_167.png",
+            "label": "Blue 167",
+            "type": "blue",
+            "rank": 167,
+            "weight": 167
+        },
+        {
+            "name": "blue_168",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_168.png",
+            "label": "Blue 168",
+            "type": "blue",
+            "rank": 168,
+            "weight": 168
+        },
+        {
+            "name": "blue_169",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_169.png",
+            "label": "Blue 169",
+            "type": "blue",
+            "rank": 169,
+            "weight": 169
+        },
+        {
+            "name": "blue_170",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_170.png",
+            "label": "Blue 170",
+            "type": "blue",
+            "rank": 170,
+            "weight": 170
+        },
+        {
+            "name": "blue_171",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_171.png",
+            "label": "Blue 171",
+            "type": "blue",
+            "rank": 171,
+            "weight": 171
+        },
+        {
+            "name": "blue_172",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_172.png",
+            "label": "Blue 172",
+            "type": "blue",
+            "rank": 172,
+            "weight": 172
+        },
+        {
+            "name": "blue_173",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_173.png",
+            "label": "Blue 173",
+            "type": "blue",
+            "rank": 173,
+            "weight": 173
+        },
+        {
+            "name": "blue_174",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_174.png",
+            "label": "Blue 174",
+            "type": "blue",
+            "rank": 174,
+            "weight": 174
+        },
+        {
+            "name": "blue_175",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_175.png",
+            "label": "Blue 175",
+            "type": "blue",
+            "rank": 175,
+            "weight": 175
+        },
+        {
+            "name": "blue_176",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_176.png",
+            "label": "Blue 176",
+            "type": "blue",
+            "rank": 176,
+            "weight": 176
+        },
+        {
+            "name": "blue_177",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_177.png",
+            "label": "Blue 177",
+            "type": "blue",
+            "rank": 177,
+            "weight": 177
+        },
+        {
+            "name": "blue_178",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_178.png",
+            "label": "Blue 178",
+            "type": "blue",
+            "rank": 178,
+            "weight": 178
+        },
+        {
+            "name": "blue_179",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_179.png",
+            "label": "Blue 179",
+            "type": "blue",
+            "rank": 179,
+            "weight": 179
+        },
+        {
+            "name": "blue_180",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_180.png",
+            "label": "Blue 180",
+            "type": "blue",
+            "rank": 180,
+            "weight": 180
+        },
+        {
+            "name": "blue_181",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_181.png",
+            "label": "Blue 181",
+            "type": "blue",
+            "rank": 181,
+            "weight": 181
+        },
+        {
+            "name": "blue_182",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_182.png",
+            "label": "Blue 182",
+            "type": "blue",
+            "rank": 182,
+            "weight": 182
+        },
+        {
+            "name": "blue_183",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_183.png",
+            "label": "Blue 183",
+            "type": "blue",
+            "rank": 183,
+            "weight": 183
+        },
+        {
+            "name": "blue_184",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_184.png",
+            "label": "Blue 184",
+            "type": "blue",
+            "rank": 184,
+            "weight": 184
+        },
+        {
+            "name": "blue_185",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_185.png",
+            "label": "Blue 185",
+            "type": "blue",
+            "rank": 185,
+            "weight": 185
+        },
+        {
+            "name": "blue_186",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_186.png",
+            "label": "Blue 186",
+            "type": "blue",
+            "rank": 186,
+            "weight": 186
+        },
+        {
+            "name": "blue_187",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_187.png",
+            "label": "Blue 187",
+            "type": "blue",
+            "rank": 187,
+            "weight": 187
+        },
+        {
+            "name": "blue_188",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_188.png",
+            "label": "Blue 188",
+            "type": "blue",
+            "rank": 188,
+            "weight": 188
+        },
+        {
+            "name": "blue_189",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_189.png",
+            "label": "Blue 189",
+            "type": "blue",
+            "rank": 189,
+            "weight": 189
+        },
+        {
+            "name": "blue_190",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_190.png",
+            "label": "Blue 190",
+            "type": "blue",
+            "rank": 190,
+            "weight": 190
+        },
+        {
+            "name": "blue_191",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_191.png",
+            "label": "Blue 191",
+            "type": "blue",
+            "rank": 191,
+            "weight": 191
+        },
+        {
+            "name": "blue_192",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_192.png",
+            "label": "Blue 192",
+            "type": "blue",
+            "rank": 192,
+            "weight": 192
+        },
+        {
+            "name": "blue_193",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_193.png",
+            "label": "Blue 193",
+            "type": "blue",
+            "rank": 193,
+            "weight": 193
+        },
+        {
+            "name": "blue_194",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_194.png",
+            "label": "Blue 194",
+            "type": "blue",
+            "rank": 194,
+            "weight": 194
+        },
+        {
+            "name": "blue_195",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_195.png",
+            "label": "Blue 195",
+            "type": "blue",
+            "rank": 195,
+            "weight": 195
+        },
+        {
+            "name": "blue_196",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_196.png",
+            "label": "Blue 196",
+            "type": "blue",
+            "rank": 196,
+            "weight": 196
+        },
+        {
+            "name": "blue_197",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_197.png",
+            "label": "Blue 197",
+            "type": "blue",
+            "rank": 197,
+            "weight": 197
+        },
+        {
+            "name": "blue_198",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_198.png",
+            "label": "Blue 198",
+            "type": "blue",
+            "rank": 198,
+            "weight": 198
+        },
+        {
+            "name": "blue_199",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_199.png",
+            "label": "Blue 199",
+            "type": "blue",
+            "rank": 199,
+            "weight": 199
+        },
+        {
+            "name": "blue_200",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_200.png",
+            "label": "Blue 200",
+            "type": "blue",
+            "rank": 200,
+            "weight": 200
+        }
+    ],
+    "sets": {
+        "orange": {
+            "orange_1": 1,
+            "orange_2": 1,
+            "orange_3": 1,
+            "orange_4": 1,
+            "orange_5": 1,
+            "orange_6": 1,
+            "orange_7": 1,
+            "orange_8": 1,
+            "orange_9": 1,
+            "orange_10": 1,
+            "orange_11": 1,
+            "orange_12": 1,
+            "orange_13": 1,
+            "orange_14": 1,
+            "orange_15": 1,
+            "orange_16": 1,
+            "orange_17": 1,
+            "orange_18": 1,
+            "orange_19": 1,
+            "orange_20": 1,
+            "orange_21": 1,
+            "orange_22": 1,
+            "orange_23": 1,
+            "orange_24": 1,
+            "orange_25": 1,
+            "orange_26": 1,
+            "orange_27": 1,
+            "orange_28": 1,
+            "orange_29": 1,
+            "orange_30": 1,
+            "orange_31": 1,
+            "orange_32": 1,
+            "orange_33": 1,
+            "orange_34": 1,
+            "orange_35": 1,
+            "orange_36": 1,
+            "orange_37": 1,
+            "orange_38": 1,
+            "orange_39": 1,
+            "orange_40": 1,
+            "orange_41": 1,
+            "orange_42": 1,
+            "orange_43": 1,
+            "orange_44": 1,
+            "orange_45": 1,
+            "orange_46": 1,
+            "orange_47": 1,
+            "orange_48": 1,
+            "orange_49": 1,
+            "orange_50": 1,
+            "orange_51": 1,
+            "orange_52": 1,
+            "orange_53": 1,
+            "orange_54": 1,
+            "orange_55": 1,
+            "orange_56": 1,
+            "orange_57": 1,
+            "orange_58": 1,
+            "orange_59": 1,
+            "orange_60": 1,
+            "orange_61": 1,
+            "orange_62": 1,
+            "orange_63": 1,
+            "orange_64": 1,
+            "orange_65": 1,
+            "orange_66": 1,
+            "orange_67": 1,
+            "orange_68": 1,
+            "orange_69": 1,
+            "orange_70": 1,
+            "orange_71": 1,
+            "orange_72": 1,
+            "orange_73": 1,
+            "orange_74": 1,
+            "orange_75": 1,
+            "orange_76": 1,
+            "orange_77": 1,
+            "orange_78": 1,
+            "orange_79": 1,
+            "orange_80": 1,
+            "orange_81": 1,
+            "orange_82": 1,
+            "orange_83": 1,
+            "orange_84": 1,
+            "orange_85": 1,
+            "orange_86": 1,
+            "orange_87": 1,
+            "orange_88": 1,
+            "orange_89": 1,
+            "orange_90": 1,
+            "orange_91": 1,
+            "orange_92": 1,
+            "orange_93": 1,
+            "orange_94": 1,
+            "orange_95": 1,
+            "orange_96": 1,
+            "orange_97": 1,
+            "orange_98": 1,
+            "orange_99": 1,
+            "orange_100": 1,
+            "orange_101": 1,
+            "orange_102": 1,
+            "orange_103": 1,
+            "orange_104": 1,
+            "orange_105": 1,
+            "orange_106": 1,
+            "orange_107": 1,
+            "orange_108": 1,
+            "orange_109": 1,
+            "orange_110": 1,
+            "orange_111": 1,
+            "orange_112": 1,
+            "orange_113": 1,
+            "orange_114": 1,
+            "orange_115": 1,
+            "orange_116": 1,
+            "orange_117": 1,
+            "orange_118": 1,
+            "orange_119": 1,
+            "orange_120": 1,
+            "orange_121": 1,
+            "orange_122": 1,
+            "orange_123": 1,
+            "orange_124": 1,
+            "orange_125": 1,
+            "orange_126": 1,
+            "orange_127": 1,
+            "orange_128": 1,
+            "orange_129": 1,
+            "orange_130": 1,
+            "orange_131": 1,
+            "orange_132": 1,
+            "orange_133": 1,
+            "orange_134": 1,
+            "orange_135": 1,
+            "orange_136": 1,
+            "orange_137": 1,
+            "orange_138": 1,
+            "orange_139": 1,
+            "orange_140": 1,
+            "orange_141": 1,
+            "orange_142": 1,
+            "orange_143": 1,
+            "orange_144": 1,
+            "orange_145": 1,
+            "orange_146": 1,
+            "orange_147": 1,
+            "orange_148": 1,
+            "orange_149": 1,
+            "orange_150": 1,
+            "orange_151": 1,
+            "orange_152": 1,
+            "orange_153": 1,
+            "orange_154": 1,
+            "orange_155": 1,
+            "orange_156": 1,
+            "orange_157": 1,
+            "orange_158": 1,
+            "orange_159": 1,
+            "orange_160": 1,
+            "orange_161": 1,
+            "orange_162": 1,
+            "orange_163": 1,
+            "orange_164": 1,
+            "orange_165": 1,
+            "orange_166": 1,
+            "orange_167": 1,
+            "orange_168": 1,
+            "orange_169": 1,
+            "orange_170": 1,
+            "orange_171": 1,
+            "orange_172": 1,
+            "orange_173": 1,
+            "orange_174": 1,
+            "orange_175": 1,
+            "orange_176": 1,
+            "orange_177": 1,
+            "orange_178": 1,
+            "orange_179": 1,
+            "orange_180": 1,
+            "orange_181": 1,
+            "orange_182": 1,
+            "orange_183": 1,
+            "orange_184": 1,
+            "orange_185": 1,
+            "orange_186": 1,
+            "orange_187": 1,
+            "orange_188": 1,
+            "orange_189": 1,
+            "orange_190": 1,
+            "orange_191": 1,
+            "orange_192": 1,
+            "orange_193": 1,
+            "orange_194": 1,
+            "orange_195": 1,
+            "orange_196": 1,
+            "orange_197": 1,
+            "orange_198": 1,
+            "orange_199": 1,
+            "orange_200": 1
+        },
+        "blue": {
+            "blue_1": 1,
+            "blue_2": 1,
+            "blue_3": 1,
+            "blue_4": 1,
+            "blue_5": 1,
+            "blue_6": 1,
+            "blue_7": 1,
+            "blue_8": 1,
+            "blue_9": 1,
+            "blue_10": 1,
+            "blue_11": 1,
+            "blue_12": 1,
+            "blue_13": 1,
+            "blue_14": 1,
+            "blue_15": 1,
+            "blue_16": 1,
+            "blue_17": 1,
+            "blue_18": 1,
+            "blue_19": 1,
+            "blue_20": 1,
+            "blue_21": 1,
+            "blue_22": 1,
+            "blue_23": 1,
+            "blue_24": 1,
+            "blue_25": 1,
+            "blue_26": 1,
+            "blue_27": 1,
+            "blue_28": 1,
+            "blue_29": 1,
+            "blue_30": 1,
+            "blue_31": 1,
+            "blue_32": 1,
+            "blue_33": 1,
+            "blue_34": 1,
+            "blue_35": 1,
+            "blue_36": 1,
+            "blue_37": 1,
+            "blue_38": 1,
+            "blue_39": 1,
+            "blue_40": 1,
+            "blue_41": 1,
+            "blue_42": 1,
+            "blue_43": 1,
+            "blue_44": 1,
+            "blue_45": 1,
+            "blue_46": 1,
+            "blue_47": 1,
+            "blue_48": 1,
+            "blue_49": 1,
+            "blue_50": 1,
+            "blue_51": 1,
+            "blue_52": 1,
+            "blue_53": 1,
+            "blue_54": 1,
+            "blue_55": 1,
+            "blue_56": 1,
+            "blue_57": 1,
+            "blue_58": 1,
+            "blue_59": 1,
+            "blue_60": 1,
+            "blue_61": 1,
+            "blue_62": 1,
+            "blue_63": 1,
+            "blue_64": 1,
+            "blue_65": 1,
+            "blue_66": 1,
+            "blue_67": 1,
+            "blue_68": 1,
+            "blue_69": 1,
+            "blue_70": 1,
+            "blue_71": 1,
+            "blue_72": 1,
+            "blue_73": 1,
+            "blue_74": 1,
+            "blue_75": 1,
+            "blue_76": 1,
+            "blue_77": 1,
+            "blue_78": 1,
+            "blue_79": 1,
+            "blue_80": 1,
+            "blue_81": 1,
+            "blue_82": 1,
+            "blue_83": 1,
+            "blue_84": 1,
+            "blue_85": 1,
+            "blue_86": 1,
+            "blue_87": 1,
+            "blue_88": 1,
+            "blue_89": 1,
+            "blue_90": 1,
+            "blue_91": 1,
+            "blue_92": 1,
+            "blue_93": 1,
+            "blue_94": 1,
+            "blue_95": 1,
+            "blue_96": 1,
+            "blue_97": 1,
+            "blue_98": 1,
+            "blue_99": 1,
+            "blue_100": 1,
+            "blue_101": 1,
+            "blue_102": 1,
+            "blue_103": 1,
+            "blue_104": 1,
+            "blue_105": 1,
+            "blue_106": 1,
+            "blue_107": 1,
+            "blue_108": 1,
+            "blue_109": 1,
+            "blue_110": 1,
+            "blue_111": 1,
+            "blue_112": 1,
+            "blue_113": 1,
+            "blue_114": 1,
+            "blue_115": 1,
+            "blue_116": 1,
+            "blue_117": 1,
+            "blue_118": 1,
+            "blue_119": 1,
+            "blue_120": 1,
+            "blue_121": 1,
+            "blue_122": 1,
+            "blue_123": 1,
+            "blue_124": 1,
+            "blue_125": 1,
+            "blue_126": 1,
+            "blue_127": 1,
+            "blue_128": 1,
+            "blue_129": 1,
+            "blue_130": 1,
+            "blue_131": 1,
+            "blue_132": 1,
+            "blue_133": 1,
+            "blue_134": 1,
+            "blue_135": 1,
+            "blue_136": 1,
+            "blue_137": 1,
+            "blue_138": 1,
+            "blue_139": 1,
+            "blue_140": 1,
+            "blue_141": 1,
+            "blue_142": 1,
+            "blue_143": 1,
+            "blue_144": 1,
+            "blue_145": 1,
+            "blue_146": 1,
+            "blue_147": 1,
+            "blue_148": 1,
+            "blue_149": 1,
+            "blue_150": 1,
+            "blue_151": 1,
+            "blue_152": 1,
+            "blue_153": 1,
+            "blue_154": 1,
+            "blue_155": 1,
+            "blue_156": 1,
+            "blue_157": 1,
+            "blue_158": 1,
+            "blue_159": 1,
+            "blue_160": 1,
+            "blue_161": 1,
+            "blue_162": 1,
+            "blue_163": 1,
+            "blue_164": 1,
+            "blue_165": 1,
+            "blue_166": 1,
+            "blue_167": 1,
+            "blue_168": 1,
+            "blue_169": 1,
+            "blue_170": 1,
+            "blue_171": 1,
+            "blue_172": 1,
+            "blue_173": 1,
+            "blue_174": 1,
+            "blue_175": 1,
+            "blue_176": 1,
+            "blue_177": 1,
+            "blue_178": 1,
+            "blue_179": 1,
+            "blue_180": 1,
+            "blue_181": 1,
+            "blue_182": 1,
+            "blue_183": 1,
+            "blue_184": 1,
+            "blue_185": 1,
+            "blue_186": 1,
+            "blue_187": 1,
+            "blue_188": 1,
+            "blue_189": 1,
+            "blue_190": 1,
+            "blue_191": 1,
+            "blue_192": 1,
+            "blue_193": 1,
+            "blue_194": 1,
+            "blue_195": 1,
+            "blue_196": 1,
+            "blue_197": 1,
+            "blue_198": 1,
+            "blue_199": 1,
+            "blue_200": 1
+        }
+    }
+}

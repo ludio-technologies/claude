@@ -1,0 +1,1562 @@
+{
+    "name": "anger_management",
+    "cards": [
+        {
+            "name": "red_0",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_0.png",
+            "label": "Red 0",
+            "type": "playing",
+            "suit": "red",
+            "rank": 0,
+            "weight": 0
+        },
+        {
+            "name": "red_1",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_1.png",
+            "label": "Red 1",
+            "type": "playing",
+            "suit": "red",
+            "rank": 1,
+            "weight": 1
+        },
+        {
+            "name": "red_2",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_2.png",
+            "label": "Red 2",
+            "type": "playing",
+            "suit": "red",
+            "rank": 2,
+            "weight": 2
+        },
+        {
+            "name": "red_3",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_3.png",
+            "label": "Red 3",
+            "type": "playing",
+            "suit": "red",
+            "rank": 3,
+            "weight": 3
+        },
+        {
+            "name": "red_4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_4.png",
+            "label": "Red 4",
+            "type": "playing",
+            "suit": "red",
+            "rank": 4,
+            "weight": 4
+        },
+        {
+            "name": "red_5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_5.png",
+            "label": "Red 5",
+            "type": "playing",
+            "suit": "red",
+            "rank": 5,
+            "weight": 5
+        },
+        {
+            "name": "red_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_6.png",
+            "label": "Red 6",
+            "type": "playing",
+            "suit": "red",
+            "rank": 6,
+            "weight": 6
+        },
+        {
+            "name": "red_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_7.png",
+            "label": "Red 7",
+            "type": "playing",
+            "suit": "red",
+            "rank": 7,
+            "weight": 7
+        },
+        {
+            "name": "red_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_8.png",
+            "label": "Red 8",
+            "type": "playing",
+            "suit": "red",
+            "rank": 8,
+            "weight": 8
+        },
+        {
+            "name": "red_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_9.png",
+            "label": "Red 9",
+            "type": "playing",
+            "suit": "red",
+            "rank": 9,
+            "weight": 9
+        },
+        {
+            "name": "red_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_10.png",
+            "label": "Red 10",
+            "type": "playing",
+            "suit": "red",
+            "rank": 10,
+            "weight": 10
+        },
+        {
+            "name": "red_11",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_11.png",
+            "label": "Red 11",
+            "type": "playing",
+            "suit": "red",
+            "rank": 11,
+            "weight": 11
+        },
+        {
+            "name": "red_12",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_12.png",
+            "label": "Red 12",
+            "type": "playing",
+            "suit": "red",
+            "rank": 12,
+            "weight": 12
+        },
+        {
+            "name": "red_13",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_13.png",
+            "label": "Red 13",
+            "type": "playing",
+            "suit": "red",
+            "rank": 13,
+            "weight": 13
+        },
+        {
+            "name": "red_14",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_14.png",
+            "label": "Red 14",
+            "type": "playing",
+            "suit": "red",
+            "rank": 14,
+            "weight": 14
+        },
+        {
+            "name": "red_15",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/red_15.png",
+            "label": "Red 15",
+            "type": "playing",
+            "suit": "red",
+            "rank": 15,
+            "weight": 15
+        },
+        {
+            "name": "orange_0",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_0.png",
+            "label": "Orange 0",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 0,
+            "weight": 16
+        },
+        {
+            "name": "orange_1",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_1.png",
+            "label": "Orange 1",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 1,
+            "weight": 17
+        },
+        {
+            "name": "orange_2",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_2.png",
+            "label": "Orange 2",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 2,
+            "weight": 18
+        },
+        {
+            "name": "orange_3",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_3.png",
+            "label": "Orange 3",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 3,
+            "weight": 19
+        },
+        {
+            "name": "orange_4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_4.png",
+            "label": "Orange 4",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 4,
+            "weight": 20
+        },
+        {
+            "name": "orange_5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_5.png",
+            "label": "Orange 5",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 5,
+            "weight": 21
+        },
+        {
+            "name": "orange_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_6.png",
+            "label": "Orange 6",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 6,
+            "weight": 22
+        },
+        {
+            "name": "orange_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_7.png",
+            "label": "Orange 7",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 7,
+            "weight": 23
+        },
+        {
+            "name": "orange_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_8.png",
+            "label": "Orange 8",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 8,
+            "weight": 24
+        },
+        {
+            "name": "orange_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_9.png",
+            "label": "Orange 9",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 9,
+            "weight": 25
+        },
+        {
+            "name": "orange_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_10.png",
+            "label": "Orange 10",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 10,
+            "weight": 26
+        },
+        {
+            "name": "orange_11",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_11.png",
+            "label": "Orange 11",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 11,
+            "weight": 27
+        },
+        {
+            "name": "orange_12",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_12.png",
+            "label": "Orange 12",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 12,
+            "weight": 28
+        },
+        {
+            "name": "orange_13",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_13.png",
+            "label": "Orange 13",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 13,
+            "weight": 29
+        },
+        {
+            "name": "orange_14",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_14.png",
+            "label": "Orange 14",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 14,
+            "weight": 30
+        },
+        {
+            "name": "orange_15",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/orange_15.png",
+            "label": "Orange 15",
+            "type": "playing",
+            "suit": "orange",
+            "rank": 15,
+            "weight": 31
+        },
+        {
+            "name": "yellow_0",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_0.png",
+            "label": "Yellow 0",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 0,
+            "weight": 32
+        },
+        {
+            "name": "yellow_1",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_1.png",
+            "label": "Yellow 1",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 1,
+            "weight": 33
+        },
+        {
+            "name": "yellow_2",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_2.png",
+            "label": "Yellow 2",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 2,
+            "weight": 34
+        },
+        {
+            "name": "yellow_3",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_3.png",
+            "label": "Yellow 3",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 3,
+            "weight": 35
+        },
+        {
+            "name": "yellow_4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_4.png",
+            "label": "Yellow 4",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 4,
+            "weight": 36
+        },
+        {
+            "name": "yellow_5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_5.png",
+            "label": "Yellow 5",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 5,
+            "weight": 37
+        },
+        {
+            "name": "yellow_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_6.png",
+            "label": "Yellow 6",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 6,
+            "weight": 38
+        },
+        {
+            "name": "yellow_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_7.png",
+            "label": "Yellow 7",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 7,
+            "weight": 39
+        },
+        {
+            "name": "yellow_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_8.png",
+            "label": "Yellow 8",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 8,
+            "weight": 40
+        },
+        {
+            "name": "yellow_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_9.png",
+            "label": "Yellow 9",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 9,
+            "weight": 41
+        },
+        {
+            "name": "yellow_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_10.png",
+            "label": "Yellow 10",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 10,
+            "weight": 42
+        },
+        {
+            "name": "yellow_11",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_11.png",
+            "label": "Yellow 11",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 11,
+            "weight": 43
+        },
+        {
+            "name": "yellow_12",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_12.png",
+            "label": "Yellow 12",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 12,
+            "weight": 44
+        },
+        {
+            "name": "yellow_13",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_13.png",
+            "label": "Yellow 13",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 13,
+            "weight": 45
+        },
+        {
+            "name": "yellow_14",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_14.png",
+            "label": "Yellow 14",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 14,
+            "weight": 46
+        },
+        {
+            "name": "yellow_15",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/yellow_15.png",
+            "label": "Yellow 15",
+            "type": "playing",
+            "suit": "yellow",
+            "rank": 15,
+            "weight": 47
+        },
+        {
+            "name": "green_0",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_0.png",
+            "label": "Green 0",
+            "type": "playing",
+            "suit": "green",
+            "rank": 0,
+            "weight": 48
+        },
+        {
+            "name": "green_1",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_1.png",
+            "label": "Green 1",
+            "type": "playing",
+            "suit": "green",
+            "rank": 1,
+            "weight": 49
+        },
+        {
+            "name": "green_2",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_2.png",
+            "label": "Green 2",
+            "type": "playing",
+            "suit": "green",
+            "rank": 2,
+            "weight": 50
+        },
+        {
+            "name": "green_3",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_3.png",
+            "label": "Green 3",
+            "type": "playing",
+            "suit": "green",
+            "rank": 3,
+            "weight": 51
+        },
+        {
+            "name": "green_4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_4.png",
+            "label": "Green 4",
+            "type": "playing",
+            "suit": "green",
+            "rank": 4,
+            "weight": 52
+        },
+        {
+            "name": "green_5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_5.png",
+            "label": "Green 5",
+            "type": "playing",
+            "suit": "green",
+            "rank": 5,
+            "weight": 53
+        },
+        {
+            "name": "green_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_6.png",
+            "label": "Green 6",
+            "type": "playing",
+            "suit": "green",
+            "rank": 6,
+            "weight": 54
+        },
+        {
+            "name": "green_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_7.png",
+            "label": "Green 7",
+            "type": "playing",
+            "suit": "green",
+            "rank": 7,
+            "weight": 55
+        },
+        {
+            "name": "green_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_8.png",
+            "label": "Green 8",
+            "type": "playing",
+            "suit": "green",
+            "rank": 8,
+            "weight": 56
+        },
+        {
+            "name": "green_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_9.png",
+            "label": "Green 9",
+            "type": "playing",
+            "suit": "green",
+            "rank": 9,
+            "weight": 57
+        },
+        {
+            "name": "green_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_10.png",
+            "label": "Green 10",
+            "type": "playing",
+            "suit": "green",
+            "rank": 10,
+            "weight": 58
+        },
+        {
+            "name": "green_11",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_11.png",
+            "label": "Green 11",
+            "type": "playing",
+            "suit": "green",
+            "rank": 11,
+            "weight": 59
+        },
+        {
+            "name": "green_12",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_12.png",
+            "label": "Green 12",
+            "type": "playing",
+            "suit": "green",
+            "rank": 12,
+            "weight": 60
+        },
+        {
+            "name": "green_13",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_13.png",
+            "label": "Green 13",
+            "type": "playing",
+            "suit": "green",
+            "rank": 13,
+            "weight": 61
+        },
+        {
+            "name": "green_14",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_14.png",
+            "label": "Green 14",
+            "type": "playing",
+            "suit": "green",
+            "rank": 14,
+            "weight": 62
+        },
+        {
+            "name": "green_15",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/green_15.png",
+            "label": "Green 15",
+            "type": "playing",
+            "suit": "green",
+            "rank": 15,
+            "weight": 63
+        },
+        {
+            "name": "blue_0",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_0.png",
+            "label": "Blue 0",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 0,
+            "weight": 64
+        },
+        {
+            "name": "blue_1",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_1.png",
+            "label": "Blue 1",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 1,
+            "weight": 65
+        },
+        {
+            "name": "blue_2",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_2.png",
+            "label": "Blue 2",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 2,
+            "weight": 66
+        },
+        {
+            "name": "blue_3",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_3.png",
+            "label": "Blue 3",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 3,
+            "weight": 67
+        },
+        {
+            "name": "blue_4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_4.png",
+            "label": "Blue 4",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 4,
+            "weight": 68
+        },
+        {
+            "name": "blue_5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_5.png",
+            "label": "Blue 5",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 5,
+            "weight": 69
+        },
+        {
+            "name": "blue_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_6.png",
+            "label": "Blue 6",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 6,
+            "weight": 70
+        },
+        {
+            "name": "blue_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_7.png",
+            "label": "Blue 7",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 7,
+            "weight": 71
+        },
+        {
+            "name": "blue_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_8.png",
+            "label": "Blue 8",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 8,
+            "weight": 72
+        },
+        {
+            "name": "blue_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_9.png",
+            "label": "Blue 9",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 9,
+            "weight": 73
+        },
+        {
+            "name": "blue_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_10.png",
+            "label": "Blue 10",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 10,
+            "weight": 74
+        },
+        {
+            "name": "blue_11",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_11.png",
+            "label": "Blue 11",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 11,
+            "weight": 75
+        },
+        {
+            "name": "blue_12",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_12.png",
+            "label": "Blue 12",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 12,
+            "weight": 76
+        },
+        {
+            "name": "blue_13",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_13.png",
+            "label": "Blue 13",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 13,
+            "weight": 77
+        },
+        {
+            "name": "blue_14",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_14.png",
+            "label": "Blue 14",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 14,
+            "weight": 78
+        },
+        {
+            "name": "blue_15",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/blue_15.png",
+            "label": "Blue 15",
+            "type": "playing",
+            "suit": "blue",
+            "rank": 15,
+            "weight": 79
+        },
+        {
+            "name": "purple_0",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_0.png",
+            "label": "Purple 0",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 0,
+            "weight": 80
+        },
+        {
+            "name": "purple_1",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_1.png",
+            "label": "Purple 1",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 1,
+            "weight": 81
+        },
+        {
+            "name": "purple_2",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_2.png",
+            "label": "Purple 2",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 2,
+            "weight": 82
+        },
+        {
+            "name": "purple_3",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_3.png",
+            "label": "Purple 3",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 3,
+            "weight": 83
+        },
+        {
+            "name": "purple_4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_4.png",
+            "label": "Purple 4",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 4,
+            "weight": 84
+        },
+        {
+            "name": "purple_5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_5.png",
+            "label": "Purple 5",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 5,
+            "weight": 85
+        },
+        {
+            "name": "purple_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_6.png",
+            "label": "Purple 6",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 6,
+            "weight": 86
+        },
+        {
+            "name": "purple_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_7.png",
+            "label": "Purple 7",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 7,
+            "weight": 87
+        },
+        {
+            "name": "purple_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_8.png",
+            "label": "Purple 8",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 8,
+            "weight": 88
+        },
+        {
+            "name": "purple_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_9.png",
+            "label": "Purple 9",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 9,
+            "weight": 89
+        },
+        {
+            "name": "purple_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_10.png",
+            "label": "Purple 10",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 10,
+            "weight": 90
+        },
+        {
+            "name": "purple_11",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_11.png",
+            "label": "Purple 11",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 11,
+            "weight": 91
+        },
+        {
+            "name": "purple_12",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_12.png",
+            "label": "Purple 12",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 12,
+            "weight": 92
+        },
+        {
+            "name": "purple_13",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_13.png",
+            "label": "Purple 13",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 13,
+            "weight": 93
+        },
+        {
+            "name": "purple_14",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_14.png",
+            "label": "Purple 14",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 14,
+            "weight": 94
+        },
+        {
+            "name": "purple_15",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/purple_15.png",
+            "label": "Purple 15",
+            "type": "playing",
+            "suit": "purple",
+            "rank": 15,
+            "weight": 95
+        },
+        {
+            "name": "action_wild",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/action_wild.png",
+            "label": "Blind Anger",
+            "type": "action",
+            "suit": "action",
+            "rank": 16,
+            "weight": 96,
+            "enlargeOnHover": true
+        },
+        {
+            "name": "action_change_trump",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/action_change_trump.png",
+            "label": "Change Trump",
+            "type": "action",
+            "suit": "action",
+            "rank": 16,
+            "weight": 97,
+            "enlargeOnHover": true
+        },
+        {
+            "name": "action_no_trump",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/action_no_trump.png",
+            "label": "No Trump",
+            "type": "action",
+            "suit": "action",
+            "rank": 16,
+            "weight": 98,
+            "enlargeOnHover": true
+        },
+        {
+            "name": "action_bonus",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/action_bonus.png",
+            "label": "Bonus (+5)",
+            "type": "action",
+            "suit": "action",
+            "rank": 16,
+            "weight": 99,
+            "enlargeOnHover": true
+        },
+        {
+            "name": "action_mad",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/action_mad.png",
+            "label": "Mad (-5)",
+            "type": "action",
+            "suit": "action",
+            "rank": 16,
+            "weight": 100,
+            "enlargeOnHover": true
+        },
+        {
+            "name": "0_0",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/0_0.png",
+            "label": "0_0",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "0_1",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/0_1.png",
+            "label": "0_1",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "1_1",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/1_1.png",
+            "label": "1_1",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "0_2",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/0_2.png",
+            "label": "0_2",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "1_2",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/1_2.png",
+            "label": "1_2",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "2_2",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/2_2.png",
+            "label": "2_2",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "0_3",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/0_3.png",
+            "label": "0_3",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "1_3",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/1_3.png",
+            "label": "1_3",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "2_3",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/2_3.png",
+            "label": "2_3",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "3_3",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/3_3.png",
+            "label": "3_3",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "0_4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/0_4.png",
+            "label": "0_4",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "1_4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/1_4.png",
+            "label": "1_4",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "2_4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/2_4.png",
+            "label": "2_4",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "3_4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/3_4.png",
+            "label": "3_4",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "4_4",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/4_4.png",
+            "label": "4_4",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "0_5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/0_5.png",
+            "label": "0_5",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "1_5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/1_5.png",
+            "label": "1_5",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "2_5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/2_5.png",
+            "label": "2_5",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "3_5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/3_5.png",
+            "label": "3_5",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "4_5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/4_5.png",
+            "label": "4_5",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "5_5",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/5_5.png",
+            "label": "5_5",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "0_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/0_6.png",
+            "label": "0_6",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "1_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/1_6.png",
+            "label": "1_6",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "2_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/2_6.png",
+            "label": "2_6",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "3_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/3_6.png",
+            "label": "3_6",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "4_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/4_6.png",
+            "label": "4_6",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "5_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/5_6.png",
+            "label": "5_6",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "6_6",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/6_6.png",
+            "label": "6_6",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "0_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/0_7.png",
+            "label": "0_7",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "1_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/1_7.png",
+            "label": "1_7",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "2_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/2_7.png",
+            "label": "2_7",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "3_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/3_7.png",
+            "label": "3_7",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "4_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/4_7.png",
+            "label": "4_7",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "5_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/5_7.png",
+            "label": "5_7",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "6_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/6_7.png",
+            "label": "6_7",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "7_7",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/7_7.png",
+            "label": "7_7",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "0_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/0_8.png",
+            "label": "0_8",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "1_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/1_8.png",
+            "label": "1_8",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "2_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/2_8.png",
+            "label": "2_8",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "3_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/3_8.png",
+            "label": "3_8",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "4_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/4_8.png",
+            "label": "4_8",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "5_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/5_8.png",
+            "label": "5_8",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "6_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/6_8.png",
+            "label": "6_8",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "7_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/7_8.png",
+            "label": "7_8",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "8_8",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/8_8.png",
+            "label": "8_8",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "0_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/0_9.png",
+            "label": "0_9",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "1_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/1_9.png",
+            "label": "1_9",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "2_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/2_9.png",
+            "label": "2_9",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "3_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/3_9.png",
+            "label": "3_9",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "4_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/4_9.png",
+            "label": "4_9",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "5_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/5_9.png",
+            "label": "5_9",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "6_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/6_9.png",
+            "label": "6_9",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "7_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/7_9.png",
+            "label": "7_9",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "8_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/8_9.png",
+            "label": "8_9",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "9_9",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/9_9.png",
+            "label": "9_9",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "0_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/0_10.png",
+            "label": "0_10",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "1_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/1_10.png",
+            "label": "1_10",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "2_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/2_10.png",
+            "label": "2_10",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "3_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/3_10.png",
+            "label": "3_10",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "4_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/4_10.png",
+            "label": "4_10",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "5_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/5_10.png",
+            "label": "5_10",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "6_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/6_10.png",
+            "label": "6_10",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "7_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/7_10.png",
+            "label": "7_10",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "8_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/8_10.png",
+            "label": "8_10",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "9_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/9_10.png",
+            "label": "9_10",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "10_10",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/10_10.png",
+            "label": "10_10",
+            "type": "bid",
+            "suit": "bid"
+        },
+        {
+            "name": "overflow",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/anger_management/overflow.png",
+            "label": "overflow",
+            "type": "bid",
+            "suit": "bid"
+        }
+    ],
+    "sets": {
+        "anger_management": {
+            "red_0": 1,
+            "red_1": 1,
+            "red_2": 1,
+            "red_3": 1,
+            "red_4": 1,
+            "red_5": 1,
+            "red_6": 1,
+            "red_7": 1,
+            "red_8": 1,
+            "red_9": 1,
+            "red_10": 1,
+            "red_11": 1,
+            "red_12": 1,
+            "red_13": 1,
+            "red_14": 1,
+            "red_15": 1,
+            "orange_0": 1,
+            "orange_1": 1,
+            "orange_2": 1,
+            "orange_3": 1,
+            "orange_4": 1,
+            "orange_5": 1,
+            "orange_6": 1,
+            "orange_7": 1,
+            "orange_8": 1,
+            "orange_9": 1,
+            "orange_10": 1,
+            "orange_11": 1,
+            "orange_12": 1,
+            "orange_13": 1,
+            "orange_14": 1,
+            "orange_15": 1,
+            "yellow_0": 1,
+            "yellow_1": 1,
+            "yellow_2": 1,
+            "yellow_3": 1,
+            "yellow_4": 1,
+            "yellow_5": 1,
+            "yellow_6": 1,
+            "yellow_7": 1,
+            "yellow_8": 1,
+            "yellow_9": 1,
+            "yellow_10": 1,
+            "yellow_11": 1,
+            "yellow_12": 1,
+            "yellow_13": 1,
+            "yellow_14": 1,
+            "yellow_15": 1,
+            "green_0": 1,
+            "green_1": 1,
+            "green_2": 1,
+            "green_3": 1,
+            "green_4": 1,
+            "green_5": 1,
+            "green_6": 1,
+            "green_7": 1,
+            "green_8": 1,
+            "green_9": 1,
+            "green_10": 1,
+            "green_11": 1,
+            "green_12": 1,
+            "green_13": 1,
+            "green_14": 1,
+            "green_15": 1,
+            "blue_0": 1,
+            "blue_1": 1,
+            "blue_2": 1,
+            "blue_3": 1,
+            "blue_4": 1,
+            "blue_5": 1,
+            "blue_6": 1,
+            "blue_7": 1,
+            "blue_8": 1,
+            "blue_9": 1,
+            "blue_10": 1,
+            "blue_11": 1,
+            "blue_12": 1,
+            "blue_13": 1,
+            "blue_14": 1,
+            "blue_15": 1,
+            "purple_0": 1,
+            "purple_1": 1,
+            "purple_2": 1,
+            "purple_3": 1,
+            "purple_4": 1,
+            "purple_5": 1,
+            "purple_6": 1,
+            "purple_7": 1,
+            "purple_8": 1,
+            "purple_9": 1,
+            "purple_10": 1,
+            "purple_11": 1,
+            "purple_12": 1,
+            "purple_13": 1,
+            "purple_14": 1,
+            "purple_15": 1,
+            "action_wild": 4,
+            "action_change_trump": 4,
+            "action_no_trump": 4,
+            "action_bonus": 4,
+            "action_mad": 4
+        },
+        "bids": {
+            "0_0": 10,
+            "0_1": 10,
+            "1_1": 10,
+            "0_2": 10,
+            "1_2": 10,
+            "2_2": 10,
+            "0_3": 10,
+            "1_3": 10,
+            "2_3": 10,
+            "3_3": 10,
+            "0_4": 10,
+            "1_4": 10,
+            "2_4": 10,
+            "3_4": 10,
+            "4_4": 10,
+            "0_5": 10,
+            "1_5": 10,
+            "2_5": 10,
+            "3_5": 10,
+            "4_5": 10,
+            "5_5": 10,
+            "0_6": 10,
+            "1_6": 10,
+            "2_6": 10,
+            "3_6": 10,
+            "4_6": 10,
+            "5_6": 10,
+            "6_6": 10,
+            "0_7": 10,
+            "1_7": 10,
+            "2_7": 10,
+            "3_7": 10,
+            "4_7": 10,
+            "5_7": 10,
+            "6_7": 10,
+            "7_7": 10,
+            "0_8": 10,
+            "1_8": 10,
+            "2_8": 10,
+            "3_8": 10,
+            "4_8": 10,
+            "5_8": 10,
+            "6_8": 10,
+            "7_8": 10,
+            "8_8": 10,
+            "0_9": 10,
+            "1_9": 10,
+            "2_9": 10,
+            "3_9": 10,
+            "4_9": 10,
+            "5_9": 10,
+            "6_9": 10,
+            "7_9": 10,
+            "8_9": 10,
+            "9_9": 10,
+            "0_10": 10,
+            "1_10": 10,
+            "2_10": 10,
+            "3_10": 10,
+            "4_10": 10,
+            "5_10": 10,
+            "6_10": 10,
+            "7_10": 10,
+            "8_10": 10,
+            "9_10": 10,
+            "10_10": 10,
+            "overflow": 10
+        }
+    }
+}

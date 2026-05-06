@@ -1,0 +1,15 @@
+Buffalo is a party game from Resonym Games. There are two piles of cards: orange cards, which contain descriptors; and blue cards, which contains categories of people.
+
+The 200 orange card images are of the format https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__orange_[X].png, where [X] ranges from 1 to 200. Note that for low X values you don’t need padding zeros when referencing the image.
+
+The 200 blue card images are of the format https://res.cloudinary.com/liars-club/image/upload/images/buffalo/buffalo__blue_[X].png, where [X] ranges from 1 to 200. Note that for low X values you don’t need padding zeros when referencing the image.
+
+You will need those image urls when constructing the cards json for this game.
+
+The logic for the game json is simple. Import the two decks (orange and blue) into the game and shuffle them. There will be two piles of cards (let’s call them orange_card and blue_card) displayed publicly to all players in the central widget. There will also be two discard piles (let’s call them orange_discard and blue_discard) that are not publicly displayed. Each round, one card from the orange deck gets placed face in the orange_card pile, and similarly for blue. 
+
+Players must then shout out the name of a person or character who meets both criteria. Create a selectCentralWidgetDeck action where either deck in the middle is clickable - the first player to click the deck gets 1 point (you can find this pattern in the BS json). This action should be timed to 30 seconds. When the action is completed, the two cards in the middle are moved to their respective discard piles and a new orange/blue card are put in the middle. 
+
+If the orange and blue decks run out, move the discard piles back into the original decks and reshuffle.
+
+Every 10 rounds, ask the players if they want to play again. If yes, the game continues. If no, the game ends and the player(s) wit the most points win. You can find this pattern in a number of games like Blank in 4 Words.
