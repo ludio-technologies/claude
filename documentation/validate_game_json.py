@@ -319,19 +319,76 @@ ACTIONS: Dict[str, dict] = {
 
 VALID_PARAM_TYPES = {"preset", "cached", "computed"}
 
+# Ludio variables always available in cache without explicit saveValueInCache
+BUILTIN_CACHE_VARS = {
+    "gameLoopIndex",     # current game-loop iteration index (0-based)
+    "lastActionResult",  # result object from the previous action (.voteResult, .selectedDecks, etc.)
+    "repeatIndex",       # current index inside a repeat{} block
+    "spaIndex",          # current index inside a parallel{} block
+    "oldPlayer",         # injected by the engine in turnPlayerToSpectatorActions
+    "newPlayer",         # injected by the engine in turnSpectatorToPlayerActions
+    "winner",            # injected by the engine when checkWinCondition fires
+    "lastActionId",      # ID of the last action executed (engine-provided)
+}
+
 # ─── Validator ────────────────────────────────────────────────────────────────
 
 class Validator:
     def __init__(self, data: Any):
         self.data = data
         self.errors: List[Tuple[str, str]] = []
+        self.cache_vars: set = set()
 
     def err(self, path: str, msg: str):
         self.errors.append((path, msg))
 
     def run(self) -> List[Tuple[str, str]]:
+        # Pre-pass: collect every variable name ever written to cache so we can
+        # validate cached references in the main walk.
+        self.cache_vars = self._collect_cache_names(self.data) | BUILTIN_CACHE_VARS
         self._walk(self.data, "")
         return self.errors
+
+    # ── Helpers for the new type-consistency checks ───────────────────────────
+
+    @staticmethod
+    def _is_preset_value(v: Any) -> bool:
+        """True if v is a valid preset value: scalar, or a list/dict built from scalars.
+        A dict that contains a 'selector' key is a computed/selector object, not a preset."""
+        if isinstance(v, (str, int, float, bool)) or v is None:
+            return True
+        if isinstance(v, dict):
+            if "selector" in v:
+                return False  # this is a selector/computed object
+            return all(Validator._is_preset_value(val) for val in v.values())
+        if isinstance(v, list):
+            return all(Validator._is_preset_value(item) for item in v)
+        return False
+
+    def _collect_cache_names(self, obj: Any) -> set:
+        """Walk the whole document and collect every name saved via saveValueInCache."""
+        names: set = set()
+        if isinstance(obj, dict):
+            svc = obj.get("saveValueInCache")
+            if isinstance(svc, list):
+                for entry in svc:
+                    if isinstance(entry, dict) and isinstance(entry.get("name"), str):
+                        # Store the root name (e.g. "players" from "players.0")
+                        names.add(entry["name"].split(".")[0])
+            for v in obj.values():
+                names.update(self._collect_cache_names(v))
+        elif isinstance(obj, list):
+            for item in obj:
+                names.update(self._collect_cache_names(item))
+        return names
+
+    def _check_cached_ref(self, ref: str, path: str):
+        """Verify that the root variable of a cache reference was actually saved to cache."""
+        root = ref.split(".")[0].split("[")[0]
+        if root not in self.cache_vars:
+            self.err(path, f"Cached reference '{ref}' uses root variable '{root}' which was never "
+                           f"saved to cache and is not a built-in Ludio variable. "
+                           f"Check for a typo or a missing saveValueInCache entry.")
 
     def _walk(self, obj: Any, path: str):
         if isinstance(obj, dict):
@@ -356,12 +413,42 @@ class Validator:
                 self.err(pp, "Param must be a JSON object"); continue
             if "name" not in p:
                 self.err(pp, "Param missing 'name' field"); continue
+
+            ptype = p.get("type")
+            pval  = p.get("value")
+            pname = p["name"]
+
             if "type" not in p:
                 self.err(pp, "Param missing 'type' field")
-            elif p["type"] not in VALID_PARAM_TYPES:
-                self.err(pp, f"Param type '{p['type']}' is invalid — must be preset, cached, or computed")
+            elif ptype not in VALID_PARAM_TYPES:
+                self.err(pp, f"Param type '{ptype}' is invalid — must be preset, cached, or computed")
+
             if "value" not in p:
                 self.err(pp, "Param missing 'value' field")
+
+            # ── Type-value consistency ────────────────────────────────────────
+            if ptype in VALID_PARAM_TYPES and "value" in p:
+                if ptype == "preset":
+                    if not self._is_preset_value(pval):
+                        self.err(pp, f"Param '{pname}' has type='preset' but value is not a preset value "
+                                     f"(got {repr(pval)[:80]}). Preset values are strings, numbers, booleans, "
+                                     f"lists, or dicts — not selector objects. "
+                                     f"Did you mean type='computed'?")
+                elif ptype == "cached":
+                    if not isinstance(pval, str):
+                        self.err(pp, f"Param '{pname}' has type='cached' but value is not a string "
+                                     f"(got {repr(pval)[:80]}). Cached values must be cache-key strings "
+                                     f"like 'players' or 'host.0'. "
+                                     f"Did you mean type='computed' (selector) or type='preset' (literal)?")
+                    else:
+                        self._check_cached_ref(pval, pp)
+                elif ptype == "computed":
+                    if not (isinstance(pval, dict) and "selector" in pval):
+                        self.err(pp, f"Param '{pname}' has type='computed' but value is not a selector object "
+                                     f"(got {repr(pval)[:80]}). Computed values must be "
+                                     f'{{\"selector\": \"...\", \"params\": [...]}}. '
+                                     f"Did you mean type='preset' (literal) or type='cached' (cache key)?")
+
             names.append(p["name"])
         return names
 
@@ -435,10 +522,54 @@ class Validator:
             if req not in fields:
                 self.err(path, f"Action '{key}' missing required payload field '{req}' (present: {sorted(fields)})")
 
+        # sounds.list entries must use "soundboard.<name>" prefix
+        preset = payload.get("preset", {}) if isinstance(payload, dict) else {}
+        sounds_list = preset.get("sounds.list") if isinstance(preset, dict) else None
+        if isinstance(sounds_list, list):
+            for entry in sounds_list:
+                if isinstance(entry, str) and entry and not entry.startswith("soundboard."):
+                    self.err(path, f"sounds.list entry '{entry}' is missing the 'soundboard.' prefix — use 'soundboard.{entry}'")
+
         # One-of constraints
         for group in spec.get("one_of", []):
             if not any(f in fields for f in group):
                 self.err(path, f"Action '{key}' requires at least one of {group} in payload")
+
+        # Payload section type consistency
+        self._check_payload_types(payload, path)
+
+    def _check_payload_types(self, payload: Any, path: str):
+        """Check that values in preset/cached/computed payload sections have appropriate types."""
+        if not isinstance(payload, dict):
+            return
+
+        preset   = payload.get("preset",   {})
+        cached   = payload.get("cached",   {})
+        computed = payload.get("computed", {})
+
+        if isinstance(preset, dict):
+            for field, value in preset.items():
+                if not self._is_preset_value(value):
+                    self.err(path, f"payload.preset['{field}'] = {repr(value)[:80]} is not a preset value. "
+                                   f"Preset values are strings, numbers, booleans, lists, or dicts — "
+                                   f"not selector objects. Did you mean to put this in 'computed'?")
+
+        if isinstance(cached, dict):
+            for field, value in cached.items():
+                if not isinstance(value, str):
+                    self.err(path, f"payload.cached['{field}'] = {repr(value)[:80]} is not a string. "
+                                   f"Cached section values must be cache-key strings like 'players' or 'host.0'. "
+                                   f"Did you mean to put this in 'computed' (selector) or 'preset' (literal)?")
+                else:
+                    self._check_cached_ref(value, f"{path}.payload.cached['{field}']")
+
+        if isinstance(computed, dict):
+            for field, value in computed.items():
+                if not (isinstance(value, dict) and "selector" in value):
+                    self.err(path, f"payload.computed['{field}'] = {repr(value)[:80]} is not a selector object. "
+                                   f"Computed section values must be selector objects "
+                                   f'{{\"selector\": \"...\", \"params\": [...]}}. '
+                                   f"Did you mean to put this in 'preset' (literal) or 'cached' (cache key)?")
 
     def _check_action_group(self, obj: dict, path: str):
         allowed = {"name", "repeat", "parallel", "skipCondition", "actions", "checkWinCondition",
@@ -446,6 +577,41 @@ class Validator:
         for k in obj.keys():
             if k not in allowed:
                 self.err(path, f"Action group '{obj['name']}' has unexpected field '{k}' (allowed: {sorted(allowed)})")
+
+        # Validate repeat block structure
+        if "repeat" in obj:
+            r = obj["repeat"]
+            if not isinstance(r, dict):
+                self.err(path, "repeat block must be an object")
+            else:
+                extra = [k for k in r if k != "qnt"]
+                if extra:
+                    self.err(path, f"repeat block has unexpected fields {extra} — only 'qnt' is allowed. "
+                             "'repeatIndex' is provided for free inside the group and must not be declared.")
+                if "qnt" in r:
+                    q = r["qnt"]
+                    if isinstance(q, dict) and "type" in q and "selector" not in q:
+                        self.err(path, f"repeat.qnt uses parameter syntax {{\"type\": \"{q.get('type')}\", ...}} "
+                                 "which is invalid here — qnt must be a literal integer or a computed selector object "
+                                 "{{\"selector\": ..., \"params\": [...]}}")
+
+        # Validate parallel block structure
+        if "parallel" in obj:
+            p = obj["parallel"]
+            if not isinstance(p, dict):
+                self.err(path, "parallel block must be an object")
+            else:
+                allowed_parallel = {"type", "qnt"}
+                extra = [k for k in p if k not in allowed_parallel]
+                if extra:
+                    self.err(path, f"parallel block has unexpected fields {extra} — only 'type' and 'qnt' are allowed. "
+                             "'spaIndex' is provided for free inside the group and must not be declared.")
+                if "qnt" in p:
+                    q = p["qnt"]
+                    if isinstance(q, dict) and "type" in q and "selector" not in q:
+                        self.err(path, f"parallel.qnt uses parameter syntax {{\"type\": \"{q.get('type')}\", ...}} "
+                                 "which is invalid here — qnt must be a literal integer or a computed selector object "
+                                 "{{\"selector\": ..., \"params\": [...]}}")
 
     def _check_structural(self, obj: dict, path: str):
         # repeat/parallel must not appear directly on an action object (one with a 'key')
