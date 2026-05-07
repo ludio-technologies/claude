@@ -325,10 +325,13 @@ BUILTIN_CACHE_VARS = {
     "lastActionResult",  # result object from the previous action (.voteResult, .selectedDecks, etc.)
     "repeatIndex",       # current index inside a repeat{} block
     "spaIndex",          # current index inside a parallel{} block
-    "oldPlayer",         # injected by the engine in turnPlayerToSpectatorActions
-    "newPlayer",         # injected by the engine in turnSpectatorToPlayerActions
-    "winner",            # injected by the engine when checkWinCondition fires
-    "lastActionId",      # ID of the last action executed (engine-provided)
+    "oldPlayer",          # injected in turnPlayerToSpectatorActions (the departing player)
+    "waitingSpectator",   # injected in turnSpectatorToPlayerActions (the arriving spectator)
+                          # games often immediately rename it: saveValueInCache [{name:"newPlayer",...}]
+    "lastActionId",       # ID of the last action executed (engine-provided)
+    # NOTE: "winner" is NOT a global built-in. It is set by the win-condition mechanism
+    # (the winning key name from winCondition, or the winners list from playersWinCondition)
+    # and is only accessible inside postGameActions. It is handled specially in _check_cached_ref.
 }
 
 # ─── Validator ────────────────────────────────────────────────────────────────
@@ -385,10 +388,14 @@ class Validator:
     def _check_cached_ref(self, ref: str, path: str):
         """Verify that the root variable of a cache reference was actually saved to cache."""
         root = ref.split(".")[0].split("[")[0]
-        if root not in self.cache_vars:
-            self.err(path, f"Cached reference '{ref}' uses root variable '{root}' which was never "
-                           f"saved to cache and is not a built-in Ludio variable. "
-                           f"Check for a typo or a missing saveValueInCache entry.")
+        if root in self.cache_vars:
+            return
+        # 'winner' is set by winCondition / playersWinCondition and is only valid in postGameActions
+        if root == "winner" and path.startswith("postGameActions"):
+            return
+        self.err(path, f"Cached reference '{ref}' uses root variable '{root}' which was never "
+                       f"saved to cache and is not a built-in Ludio variable. "
+                       f"Check for a typo or a missing saveValueInCache entry.")
 
     def _walk(self, obj: Any, path: str):
         if isinstance(obj, dict):
