@@ -1,0 +1,201 @@
+{
+  "name": "euchre_cards",
+  "cards": [
+    {
+      "name": "nine_of_hearts",
+      "suit": "hearts",
+      "rank": "9",
+      "weight": 109,
+      "image": "https://deckofcardsapi.com/static/img/9H.png"
+    },
+    {
+      "name": "ten_of_hearts",
+      "suit": "hearts",
+      "rank": "10",
+      "weight": 110,
+      "image": "https://deckofcardsapi.com/static/img/0H.png"
+    },
+    {
+      "name": "jack_of_hearts",
+      "suit": "hearts",
+      "rank": "J",
+      "weight": 111,
+      "image": "https://deckofcardsapi.com/static/img/JH.png"
+    },
+    {
+      "name": "queen_of_hearts",
+      "suit": "hearts",
+      "rank": "Q",
+      "weight": 112,
+      "image": "https://deckofcardsapi.com/static/img/QH.png"
+    },
+    {
+      "name": "king_of_hearts",
+      "suit": "hearts",
+      "rank": "K",
+      "weight": 113,
+      "image": "https://deckofcardsapi.com/static/img/KH.png"
+    },
+    {
+      "name": "ace_of_hearts",
+      "suit": "hearts",
+      "rank": "A",
+      "weight": 114,
+      "image": "https://deckofcardsapi.com/static/img/AH.png"
+    },
+    {
+      "name": "nine_of_diamonds",
+      "suit": "diamonds",
+      "rank": "9",
+      "weight": 209,
+      "image": "https://deckofcardsapi.com/static/img/9D.png"
+    },
+    {
+      "name": "ten_of_diamonds",
+      "suit": "diamonds",
+      "rank": "10",
+      "weight": 210,
+      "image": "https://deckofcardsapi.com/static/img/0D.png"
+    },
+    {
+      "name": "jack_of_diamonds",
+      "suit": "diamonds",
+      "rank": "J",
+      "weight": 211,
+      "image": "https://deckofcardsapi.com/static/img/JD.png"
+    },
+    {
+      "name": "queen_of_diamonds",
+      "suit": "diamonds",
+      "rank": "Q",
+      "weight": 212,
+      "image": "https://deckofcardsapi.com/static/img/QD.png"
+    },
+    {
+      "name": "king_of_diamonds",
+      "suit": "diamonds",
+      "rank": "K",
+      "weight": 213,
+      "image": "https://deckofcardsapi.com/static/img/KD.png"
+    },
+    {
+      "name": "ace_of_diamonds",
+      "suit": "diamonds",
+      "rank": "A",
+      "weight": 214,
+      "image": "https://deckofcardsapi.com/static/img/AD.png"
+    },
+    {
+      "name": "nine_of_clubs",
+      "suit": "clubs",
+      "rank": "9",
+      "weight": 309,
+      "image": "https://deckofcardsapi.com/static/img/9C.png"
+    },
+    {
+      "name": "ten_of_clubs",
+      "suit": "clubs",
+      "rank": "10",
+      "weight": 310,
+      "image": "https://deckofcardsapi.com/static/img/0C.png"
+    },
+    {
+      "name": "jack_of_clubs",
+      "suit": "clubs",
+      "rank": "J",
+      "weight": 311,
+      "image": "https://deckofcardsapi.com/static/img/JC.png"
+    },
+    {
+      "name": "queen_of_clubs",
+      "suit": "clubs",
+      "rank": "Q",
+      "weight": 312,
+      "image": "https://deckofcardsapi.com/static/img/QC.png"
+    },
+    {
+      "name": "king_of_clubs",
+      "suit": "clubs",
+      "rank": "K",
+      "weight": 313,
+      "image": "https://deckofcardsapi.com/static/img/KC.png"
+    },
+    {
+      "name": "ace_of_clubs",
+      "suit": "clubs",
+      "rank": "A",
+      "weight": 314,
+      "image": "https://deckofcardsapi.com/static/img/AC.png"
+    },
+    {
+      "name": "nine_of_spades",
+      "suit": "spades",
+      "rank": "9",
+      "weight": 409,
+      "image": "https://deckofcardsapi.com/static/img/9S.png"
+    },
+    {
+      "name": "ten_of_spades",
+      "suit": "spades",
+      "rank": "10",
+      "weight": 410,
+      "image": "https://deckofcardsapi.com/static/img/0S.png"
+    },
+    {
+      "name": "jack_of_spades",
+      "suit": "spades",
+      "rank": "J",
+      "weight": 411,
+      "image": "https://deckofcardsapi.com/static/img/JS.png"
+    },
+    {
+      "name": "queen_of_spades",
+      "suit": "spades",
+      "rank": "Q",
+      "weight": 412,
+      "image": "https://deckofcardsapi.com/static/img/QS.png"
+    },
+    {
+      "name": "king_of_spades",
+      "suit": "spades",
+      "rank": "K",
+      "weight": 413,
+      "image": "https://deckofcardsapi.com/static/img/KS.png"
+    },
+    {
+      "name": "ace_of_spades",
+      "suit": "spades",
+      "rank": "A",
+      "weight": 414,
+      "image": "https://deckofcardsapi.com/static/img/AS.png"
+    }
+  ],
+  "sets": {
+    "euchre": {
+      "nine_of_hearts": 1,
+      "ten_of_hearts": 1,
+      "jack_of_hearts": 1,
+      "queen_of_hearts": 1,
+      "king_of_hearts": 1,
+      "ace_of_hearts": 1,
+      "nine_of_diamonds": 1,
+      "ten_of_diamonds": 1,
+      "jack_of_diamonds": 1,
+      "queen_of_diamonds": 1,
+      "king_of_diamonds": 1,
+      "ace_of_diamonds": 1,
+      "nine_of_clubs": 1,
+      "ten_of_clubs": 1,
+      "jack_of_clubs": 1,
+      "queen_of_clubs": 1,
+      "king_of_clubs": 1,
+      "ace_of_clubs": 1,
+      "nine_of_spades": 1,
+      "ten_of_spades": 1,
+      "jack_of_spades": 1,
+      "queen_of_spades": 1,
+      "king_of_spades": 1,
+      "ace_of_spades": 1
+    }
+  }
+}
