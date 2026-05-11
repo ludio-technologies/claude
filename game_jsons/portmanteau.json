@@ -1,0 +1,3677 @@
+{
+    "gameInitOptions": {
+        "allowRecorder": true,
+        "allowSpectatorBecomePlayer": true,
+        "allowPlayerBecomeSpectator": true,
+        "useDefaultRoles": true,
+        "roleConfirmation": false,
+        "minPlayers": 2,
+        "maxPlayers": 12,
+        "time": 25,
+        "notChangeLayoutAfterGame": true,
+        "preferredPlayersQnt": [
+            6,
+            7,
+            8
+        ],
+        "teams": {
+            "all": {
+                "id": "all",
+                "name": "All",
+                "description": "Just a group of funny friends...",
+                "color": "#297a4d",
+                "roles": [
+                    "player",
+                    "judge",
+                    "thinker"
+                ]
+            },
+            "judge": {
+                "id": "judge",
+                "name": "Speaker",
+                "description": "You know what's funny and what's not.",
+                "color": "red",
+                "roles": [
+                    "judge"
+                ]
+            }
+        },
+        "roles": [
+            {
+                "roleInfo": {
+                    "id": "player",
+                    "name": "Player",
+                    "description": "You love earning points, and you always play to win 😎",
+                    "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
+                    "team": "all",
+                    "prefix": "a "
+                },
+                "isDefaultRole": true,
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "judge",
+                    "name": "Speaker",
+                    "description": "",
+                    "avatar": "",
+                    "team": "judge",
+                    "prefix": "a "
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "thinker",
+                    "name": "Player",
+                    "description": "",
+                    "avatar": "",
+                    "team": "all",
+                    "prefix": "a "
+                },
+                "isRequired": false
+            }
+        ],
+        "rolesPreset": {},
+        "soundboard": {
+            "default": {
+                "reminder": "https://res.cloudinary.com/liars-club/video/upload/audio/reminder.mp4",
+                "success": "https://res.cloudinary.com/liars-club/video/upload/audio/avalon/sounds/success.mp3",
+                "hammer": "https://res.cloudinary.com/liars-club/video/upload/audio/avalon/sounds/gavel.mp3",
+                "bubbles": "https://res.cloudinary.com/liars-club/video/upload/audio/bubbles.mp3",
+                "music_1": "https://res.cloudinary.com/liars-club/video/upload/audio/soft_indie.mp3",
+                "failure": "https://res.cloudinary.com/liars-club/video/upload/audio/avalon/sounds/failure.mp3",
+                "reveal": "https://res.cloudinary.com/liars-club/video/upload/audio/forsee.mp3",
+                "guess": "https://res.cloudinary.com/liars-club/video/upload/audio/other/swap.mp3"
+            }
+        },
+        "voices": {
+            "default": {
+                "port1": "https://res.cloudinary.com/liars-club/video/upload/audio/portmanteau/port1.mp3",
+                "port2": "https://res.cloudinary.com/liars-club/video/upload/audio/portmanteau/port2.mp3",
+                "port3": "https://res.cloudinary.com/liars-club/video/upload/audio/portmanteau/port3.mp3",
+                "port4": "https://res.cloudinary.com/liars-club/video/upload/audio/portmanteau/port4.mp3",
+                "port5": "https://res.cloudinary.com/liars-club/video/upload/audio/portmanteau/port5.mp3",
+                "port6": "https://res.cloudinary.com/liars-club/video/upload/audio/portmanteau/port6.mp3"
+            }
+        },
+        "images": {
+            "3": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/3.png"
+            },
+            "4": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/4.png"
+            },
+            "5": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/5.png"
+            },
+            "6": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/6.png"
+            },
+            "7": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/7.png"
+            },
+            "8": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/8.png"
+            },
+            "two_images": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/two_images.png"
+            },
+            "kitten": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/kitten.png"
+            },
+            "cupcake": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/cupcake.png"
+            },
+            "3R": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/3R.png"
+            },
+            "4R": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/4R.png"
+            },
+            "5R": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/5R.png"
+            },
+            "6R": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/6R.png"
+            },
+            "7R": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/7R.png"
+            },
+            "8R": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/8R.png"
+            },
+            "checkmark": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/checkmark.jpg"
+            },
+            "kitcake": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/kitcake.png"
+            },
+            "banner": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/portmanteau/Thumbnail1.png"
+            },
+            "fun_wallpaper": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/fun_background_rsgkhl.png"
+            },
+            "winner": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/winner_h5eyfr.gif"
+            },
+            "loser": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/unlucky_hldc39.gif"
+            },
+            "yellow_background": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/yellow_background_gxts9c.jpg"
+            },
+            "failure": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/mission_failed_jhdh6p.jpg"
+            },
+            "success": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/sunglasses_r3rwu6.jpg"
+            }
+        },
+        "animations": {
+            "mindblowing": "https://lottie.host/ac12870d-e9cb-4b03-a63b-c8a09db978f9/Cv5aMHJhlE.json",
+            "judge": "https://assets4.lottiefiles.com/private_files/lf30_oswogjiv.json",
+            "winner": "https://lottie.host/3cba778c-312b-410c-8240-c9fdc0c4f5ef/Iu7CfEX2Va.json",
+            "loser": "https://assets5.lottiefiles.com/packages/lf20_oAByvh2C1K.json"
+        }
+    },
+    "turnPlayerToSpectatorActions": [
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {
+                    "name": "players",
+                    "value": {
+                        "selector": "listsSubtract",
+                        "params": [
+                            {
+                                "name": "list1",
+                                "type": "cached",
+                                "value": "players"
+                            },
+                            {
+                                "name": "list2",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "cached",
+                                            "value": "oldPlayer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "numPlayers",
+                    "value": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "guessers",
+                    "value": {
+                        "selector": "listsSubtract",
+                        "params": [
+                            {
+                                "name": "list1",
+                                "type": "cached",
+                                "value": "guessers"
+                            },
+                            {
+                                "name": "list2",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "cached",
+                                            "value": "oldPlayer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "numGuessers",
+                    "value": {
+                        "selector": "minValue",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "preset",
+                                            "value": 2
+                                        },
+                                        {
+                                            "name": "arg2",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "dec",
+                                                "params": [
+                                                    {
+                                                        "name": "arg",
+                                                        "type": "cached",
+                                                        "value": "numPlayers"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "turnSpectatorToPlayerActions": [
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {
+                    "name": "newPlayer",
+                    "value": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "waitingSpectator"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "players",
+                    "value": {
+                        "selector": "append",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            },
+                            {
+                                "name": "element",
+                                "type": "cached",
+                                "value": "newPlayer"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "guessers",
+                    "value": {
+                        "selector": "append",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "guessers"
+                            },
+                            {
+                                "name": "element",
+                                "type": "cached",
+                                "value": "newPlayer"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "numPlayers",
+                    "value": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "numGuessers",
+                    "value": {
+                        "selector": "minValue",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "preset",
+                                            "value": 2
+                                        },
+                                        {
+                                            "name": "arg2",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "dec",
+                                                "params": [
+                                                    {
+                                                        "name": "arg",
+                                                        "type": "cached",
+                                                        "value": "numPlayers"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "setRole",
+            "payload": {
+                "preset": {
+                    "roleId": "player"
+                },
+                "cached": {
+                    "playerId": "newPlayer"
+                }
+            }
+        },
+        {
+            "key": "showRole",
+            "payload": {
+                "cached": {
+                    "from": "players",
+                    "to": "players"
+                }
+            }
+        }
+    ],
+    "beforeLoopActions": [
+        {
+            "key": "changeBackground",
+            "payload": {
+                "preset": {
+                    "image": "fun_wallpaper"
+                }
+            }
+        },
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {
+                    "name": "host",
+                    "value": {
+                        "selector": "ifElse",
+                        "params": [
+                            {
+                                "name": "condition",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "contains",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "allPlayers"
+                                            }
+                                        },
+                                        {
+                                            "name": "element",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getHostPlayerId"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "thenValue",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getHostPlayerId"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "elseValue",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "selectElement",
+                                                "params": [
+                                                    {
+                                                        "name": "list",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "allPlayers"
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "index",
+                                                        "type": "preset",
+                                                        "value": 0
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "createNotification",
+            "payload": {
+                "preset": {
+                    "header": "Welcome to Portmanteau!",
+                    "image": "banner",
+                    "duration": 8,
+                    "backgroundColor": "#fee893",
+                    "borderColor": "black"
+                },
+                "computed": {
+                    "to": {
+                        "selector": "allPlayers"
+                    },
+                    "text": {
+                        "selector": "formatString",
+                        "params": [
+                            {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!"
+                            },
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "listToString",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getPlayerNamesByIds",
+                                                "params": [
+                                                    {
+                                                        "name": "ids",
+                                                        "type": "cached",
+                                                        "value": "host"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "createVote",
+            "payload": {
+                "preset": {
+                    "title": "Tutorial Mode",
+                    "type": "target_poll",
+                    "terminationCondition": "get_all_votes",
+                    "showResultInRealTime": true,
+                    "showResultDuration": 2,
+                    "showResult": true,
+                    "allowRevoting": false,
+                    "targets": [
+                        "Yes Please!",
+                        "No Thanks"
+                    ],
+                    "pollVoteTargetsOptions": {
+                        "Yes Please!": {
+                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                            "backgroundColor": "#D3D3D3",
+                            "boxIconColor": "#D3D3D3",
+                            "textColor": "black",
+                            "widgetIconColor": "green"
+                        },
+                        "No Thanks": {
+                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+                            "backgroundColor": "#D3D3D3",
+                            "boxIconColor": "#D3D3D3",
+                            "textColor": "black",
+                            "widgetIconColor": "red"
+                        }
+                    },
+                    "backgroundColor": "#fee893",
+                    "borderColor": "black"
+                },
+                "computed": {
+                    "question": {
+                        "selector": "formatString",
+                        "params": [
+                            {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "($1), do you want Ludio to teach your group how to play this game?"
+                            },
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "listToString",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getPlayerNamesByIds",
+                                                "params": [
+                                                    {
+                                                        "name": "ids",
+                                                        "type": "cached",
+                                                        "value": "host"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                "cached": {
+                    "actors": "host"
+                }
+            },
+            "saveValueInCache": [
+                {
+                    "name": "tutorial",
+                    "value": {
+                        "selector": "isTargetGotMajority",
+                        "params": [
+                            {
+                                "name": "voteResult",
+                                "type": "cached",
+                                "value": "lastActionResult"
+                            },
+                            {
+                                "name": "target",
+                                "type": "preset",
+                                "value": "Yes Please!"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "changeLayout",
+            "payload": {
+                "preset": {
+                    "type": "HIGHLIGHT",
+                    "direction": "VERTICAL",
+                    "percent": 40
+                }
+            }
+        },
+        {
+            "key": "createDeck",
+            "payload": {
+                "preset": {
+                    "name": "portmanteau",
+                    "set": "icons"
+                }
+            }
+        },
+        {
+            "key": "createDeck",
+            "payload": {
+                "preset": {
+                    "name": "portmanteau",
+                    "set": "numbers",
+                    "customName": "num"
+                }
+            }
+        },
+        {
+            "key": "createCustomDeck",
+            "payload": {
+                "preset": {
+                    "name": "icons"
+                }
+            }
+        },
+        {
+            "key": "createCustomDeck",
+            "payload": {
+                "preset": {
+                    "name": "numbers"
+                }
+            }
+        },
+        {
+            "key": "createCustomDeck",
+            "payload": {
+                "preset": {
+                    "name": "trash"
+                }
+            }
+        },
+        {
+            "key": "createCustomDeck",
+            "payload": {
+                "preset": {
+                    "name": "temp"
+                }
+            }
+        },
+        {
+            "key": "moveCards",
+            "payload": {
+                "preset": {
+                    "type": "deck",
+                    "from": "portmanteau",
+                    "to": "icons"
+                }
+            }
+        },
+        {
+            "key": "moveCards",
+            "payload": {
+                "preset": {
+                    "type": "deck",
+                    "from": "num",
+                    "to": "numbers"
+                }
+            }
+        },
+        {
+            "key": "shuffleDeck",
+            "payload": {
+                "preset": {
+                    "deck": "icons"
+                }
+            }
+        },
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {
+                    "name": "turn",
+                    "value": 1
+                },
+                {
+                    "name": "players",
+                    "value": {
+                        "selector": "allPlayers"
+                    }
+                },
+                {
+                    "name": "numPlayers",
+                    "value": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "judge",
+                    "value": {
+                        "selector": "selectElement",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            },
+                            {
+                                "name": "index",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "dec",
+                                    "params": [
+                                        {
+                                            "name": "arg",
+                                            "type": "cached",
+                                            "value": "numPlayers"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "guessers",
+                    "value": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "players"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "numGuessers",
+                    "value": {
+                        "selector": "minValue",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "preset",
+                                            "value": 2
+                                        },
+                                        {
+                                            "name": "arg2",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "dec",
+                                                "params": [
+                                                    {
+                                                        "name": "arg",
+                                                        "type": "cached",
+                                                        "value": "numPlayers"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "roundNumber",
+                    "value": 0
+                },
+                {
+                    "name": "iconDecks",
+                    "value": [
+                        "icon_0",
+                        "icon_1",
+                        "icon_2",
+                        "icon_3",
+                        "icon_4",
+                        "icon_5",
+                        "icon_6",
+                        "icon_7",
+                        "icon_8"
+                    ]
+                },
+                {
+                    "name": "lengths",
+                    "value": [
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8"
+                    ]
+                },
+                {
+                    "name": "allLengths",
+                    "value": [
+                        1,
+                        2,
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16,
+                        17,
+                        18,
+                        19,
+                        20
+                    ]
+                },
+                {
+                    "name": "stringToInt",
+                    "value": {
+                        "3": 3,
+                        "4": 4,
+                        "5": 5,
+                        "6": 6,
+                        "7": 7,
+                        "8": 8
+                    }
+                },
+                {
+                    "name": "imageRow",
+                    "value": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "lengths"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "validLengths",
+                    "value": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "lengths"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "messedUp",
+                    "value": []
+                },
+                {
+                    "name": "centralDecks",
+                    "value": {
+                        "selector": "concat",
+                        "params": [
+                            {
+                                "name": "list1",
+                                "type": "preset",
+                                "value": []
+                            },
+                            {
+                                "name": "list2",
+                                "type": "cached",
+                                "value": "iconDecks"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "showRole",
+            "payload": {
+                "cached": {
+                    "from": "players",
+                    "to": "players"
+                }
+            }
+        },
+        {
+            "key": "setImagesRow",
+            "payload": {
+                "preset": {
+                    "maxHeight": 100
+                },
+                "cached": {
+                    "images": "imageRow"
+                }
+            }
+        }
+    ],
+    "gameLoop": [
+        {
+            "name": "Tutorial Part 1",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createConfirmation",
+                    "payload": {
+                        "preset": {
+                            "header": "Are you ready for the tutorial?",
+                            "text": "Once enough people click Ready, the tutorial will start!",
+                            "passCriterion": "majority",
+                            "backgroundColor": "#fee893",
+                            "borderColor": "black"
+                        },
+                        "computed": {
+                            "actors": {
+                                "selector": "allPlayers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "voices.port1"
+                            ]
+                        },
+                        "computed": {
+                            "playList.1": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Create custom decks",
+            "repeat": {
+                "qnt": {
+                    "selector": "listLength",
+                    "params": [
+                        {
+                            "name": "list",
+                            "type": "cached",
+                            "value": "centralDecks"
+                        }
+                    ]
+                }
+            },
+            "skipCondition": [
+                {
+                    "selector": "notEqual",
+                    "params": [
+                        {
+                            "name": "arg1",
+                            "type": "cached",
+                            "value": "gameLoopIndex"
+                        },
+                        {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 0
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createCustomDeck",
+                    "payload": {
+                        "preset": {
+                            "public": true,
+                            "facedown": false,
+                            "cardback": "cardback",
+                            "enlargeOnHover": true,
+                            "emptyImage": "kitcake"
+                        },
+                        "computed": {
+                            "label": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "#($1)"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "inc",
+                                            "params": [
+                                                {
+                                                    "name": "arg",
+                                                    "type": "cached",
+                                                    "value": "repeatIndex"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "name": {
+                                "selector": "selectElement",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "cached",
+                                        "value": "centralDecks"
+                                    },
+                                    {
+                                        "name": "index",
+                                        "type": "cached",
+                                        "value": "repeatIndex"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Create central widget",
+            "skipCondition": [
+                {
+                    "selector": "notEqual",
+                    "params": [
+                        {
+                            "name": "arg1",
+                            "type": "cached",
+                            "value": "gameLoopIndex"
+                        },
+                        {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 0
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createGenericCardWidget",
+                    "payload": {
+                        "preset": {
+                            "ratio": "1",
+                            "backgroundImage": "yellow_background",
+                            "dimensions": [
+                                3,
+                                3
+                            ]
+                        },
+                        "cached": {
+                            "decks": "centralDecks"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Populate icons",
+            "repeat": {
+                "qnt": 9
+            },
+            "actions": [
+                {
+                    "key": "moveCards",
+                    "payload": {
+                        "preset": {
+                            "type": "deck",
+                            "from": "icons",
+                            "qnt": 1
+                        },
+                        "computed": {
+                            "to": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "icon_($1)"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "repeatIndex"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Tutorial Part 2",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "delay.3000",
+                                "voices.port2",
+                                "delay.1000"
+                            ]
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Select new judge",
+            "turnSpectatorsToPlayers": true,
+            "turnPlayersToSpectators": true,
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "judge",
+                            "value": {
+                                "selector": "nextPlayer",
+                                "params": [
+                                    {
+                                        "name": "playersList",
+                                        "type": "cached",
+                                        "value": "players"
+                                    },
+                                    {
+                                        "name": "playerId",
+                                        "type": "cached",
+                                        "value": "judge"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "thinkers",
+                            "value": {
+                                "selector": "listsSubtract",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "cached",
+                                        "value": "players"
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createList",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "judge"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "guessers",
+                            "value": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "lessThan",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "listLength",
+                                                        "params": [
+                                                            {
+                                                                "name": "list",
+                                                                "type": "cached",
+                                                                "value": "guessers"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "arg2",
+                                                    "type": "cached",
+                                                    "value": "numGuessers"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "cached",
+                                        "value": "thinkers"
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "cached",
+                                        "value": "guessers"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "guesser",
+                            "value": {
+                                "selector": "randomElementsList",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listsSubtract",
+                                            "params": [
+                                                {
+                                                    "name": "list1",
+                                                    "type": "cached",
+                                                    "value": "guessers"
+                                                },
+                                                {
+                                                    "name": "list2",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "createList",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "cached",
+                                                                "value": "judge"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "length",
+                                        "type": "cached",
+                                        "value": "numGuessers"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "guessers",
+                            "value": {
+                                "selector": "listsSubtract",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "cached",
+                                        "value": "guessers"
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createList",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "guesser"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "setRole",
+                    "payload": {
+                        "cached": {
+                            "playerId": "judge"
+                        },
+                        "preset": {
+                            "roleId": "judge"
+                        }
+                    }
+                },
+                {
+                    "key": "setRole",
+                    "payload": {
+                        "cached": {
+                            "playerId": "thinkers"
+                        },
+                        "preset": {
+                            "roleId": "thinker"
+                        }
+                    }
+                },
+                {
+                    "key": "highlightPlayers",
+                    "payload": {
+                        "preset": {
+                            "color": "red"
+                        },
+                        "computed": {
+                            "listOfPlayers": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "judge"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "animateBox",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": false,
+                            "sounds.list": [
+                                "soundboard.hammer"
+                            ],
+                            "animation": "judge"
+                        },
+                        "cached": {
+                            "playList.1": "players"
+                        },
+                        "computed": {
+                            "userIds": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "judge"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Tutorial Part 3",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "header": "2 of the images...",
+                            "text": "... are secretly highlighted for the Speaker.",
+                            "image": "two_images",
+                            "duration": 19,
+                            "backgroundColor": "#fee893",
+                            "borderColor": "black",
+                            "sounds.list": [
+                                "voices.port3"
+                            ],
+                            "sounds.waitForSoundEnd": true
+                        },
+                        "cached": {
+                            "to": "players"
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": false,
+                            "sounds.list": [
+                                "voices.port4"
+                            ]
+                        },
+                        "computed": {
+                            "playList.1": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 15
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "header": "The Speaker might see these 2 images...",
+                            "text": "... and come up with a clue of <b>KITCAKE</b> (combining <b>KIT</b>ten + cup<b>CAKE</b>).",
+                            "images": [
+                                "kitten",
+                                "cupcake"
+                            ],
+                            "duration": 25,
+                            "backgroundColor": "#fee893",
+                            "borderColor": "black"
+                        },
+                        "cached": {
+                            "to": "players"
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "header": "The rest of the group...",
+                            "text": "... must decide which 2 images they think the Speaker is referring to with their clue.<br><br><b>2 players</b> (or 1 player, in a 2-player game) will be nominated to click on the 2 images before a timer runs out. They must agree on each choice, otherwise one of their selections will be taken at random.",
+                            "duration": 22,
+                            "backgroundColor": "#fee893",
+                            "borderColor": "black"
+                        },
+                        "cached": {
+                            "to": "players"
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "imageRow",
+                            "value": {
+                                "selector": "concat",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "sublist",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "imageRow"
+                                                },
+                                                {
+                                                    "name": "start",
+                                                    "type": "preset",
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "name": "end",
+                                                    "type": "preset",
+                                                    "value": 4
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createList",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "preset",
+                                                    "value": "checkmark"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "list3",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "sublist",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "imageRow"
+                                                },
+                                                {
+                                                    "name": "start",
+                                                    "type": "preset",
+                                                    "value": 5
+                                                },
+                                                {
+                                                    "name": "end",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "listLength",
+                                                        "params": [
+                                                            {
+                                                                "name": "list",
+                                                                "type": "cached",
+                                                                "value": "imageRow"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 1
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": false,
+                            "sounds.list": [
+                                "voices.port5"
+                            ]
+                        },
+                        "computed": {
+                            "playList.1": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 36
+                        }
+                    }
+                },
+                {
+                    "key": "setImagesRow",
+                    "payload": {
+                        "preset": {
+                            "maxHeight": 100
+                        },
+                        "cached": {
+                            "images": "imageRow"
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "imageRow",
+                            "value": {
+                                "selector": "concat",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "sublist",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "imageRow"
+                                                },
+                                                {
+                                                    "name": "start",
+                                                    "type": "preset",
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "name": "end",
+                                                    "type": "preset",
+                                                    "value": 3
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createList",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "preset",
+                                                    "value": "6R"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "list3",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "sublist",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "imageRow"
+                                                },
+                                                {
+                                                    "name": "start",
+                                                    "type": "preset",
+                                                    "value": 4
+                                                },
+                                                {
+                                                    "name": "end",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "listLength",
+                                                        "params": [
+                                                            {
+                                                                "name": "list",
+                                                                "type": "cached",
+                                                                "value": "imageRow"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 8
+                        }
+                    }
+                },
+                {
+                    "key": "setImagesRow",
+                    "payload": {
+                        "preset": {
+                            "maxHeight": 100
+                        },
+                        "cached": {
+                            "images": "imageRow"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 5
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "imageRow",
+                            "value": {
+                                "selector": "getCachedValue",
+                                "params": [
+                                    {
+                                        "name": "name",
+                                        "type": "preset",
+                                        "value": "lengths"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "setImagesRow",
+                    "payload": {
+                        "preset": {
+                            "maxHeight": 100
+                        },
+                        "cached": {
+                            "images": "imageRow"
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "header": "To win the game...",
+                            "text": "... you must check off every clue length from 3 to 8.<br/><br/>If you fail at a clue length <b>twice</b>, the game is over and everyone loses!",
+                            "images": [
+                                "checkmark",
+                                "checkmark",
+                                "checkmark",
+                                "checkmark",
+                                "checkmark",
+                                "checkmark"
+                            ],
+                            "duration": 16,
+                            "backgroundColor": "#fee893",
+                            "borderColor": "black"
+                        },
+                        "cached": {
+                            "to": "players"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "delay.1000",
+                                "voices.port6"
+                            ]
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "createConfirmation",
+                    "payload": {
+                        "preset": {
+                            "header": "Are you ready to start the game?",
+                            "text": "Once enough people click Ready, the game will continue!",
+                            "passCriterion": "majority",
+                            "backgroundColor": "#fee893",
+                            "borderColor": "black"
+                        },
+                        "computed": {
+                            "actors": {
+                                "selector": "allPlayers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 1
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "tutorial",
+                            "value": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Select 2 icons",
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "secret",
+                            "value": {
+                                "selector": "randomElementsList",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "cached",
+                                        "value": "iconDecks"
+                                    },
+                                    {
+                                        "name": "length",
+                                        "type": "preset",
+                                        "value": 2
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "secretImages",
+                            "value": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getObjectField",
+                                            "params": [
+                                                {
+                                                    "name": "obj",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "selectElement",
+                                                        "params": [
+                                                            {
+                                                                "name": "list",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "getDeckCards",
+                                                                    "params": [
+                                                                        {
+                                                                            "name": "deck",
+                                                                            "type": "cached",
+                                                                            "value": "secret.0"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "index",
+                                                                "type": "preset",
+                                                                "value": 0
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "field",
+                                                    "type": "preset",
+                                                    "value": "image"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getObjectField",
+                                            "params": [
+                                                {
+                                                    "name": "obj",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "selectElement",
+                                                        "params": [
+                                                            {
+                                                                "name": "list",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "getDeckCards",
+                                                                    "params": [
+                                                                        {
+                                                                            "name": "deck",
+                                                                            "type": "cached",
+                                                                            "value": "secret.1"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "index",
+                                                                "type": "preset",
+                                                                "value": 0
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "field",
+                                                    "type": "preset",
+                                                    "value": "image"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Thinker notification",
+            "actions": [
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "duration": 5,
+                            "backgroundColor": "#fee893",
+                            "borderColor": "black",
+                            "text": "... and come up with a Portmanteau clue!"
+                        },
+                        "cached": {
+                            "to": "players"
+                        },
+                        "computed": {
+                            "header": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "($1) will see the 2 secret icons..."
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getPlayerNameById",
+                                            "params": [
+                                                {
+                                                    "name": "id",
+                                                    "type": "cached",
+                                                    "value": "judge"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Speaker sees secret, gives clue",
+            "actions": [
+                {
+                    "key": "selectCentralWidgetDeck",
+                    "payload": {
+                        "preset": {
+                            "duration": 120,
+                            "sounds.waitForSoundEnd": false,
+                            "sounds.list": [
+                                "soundboard.reminder",
+                                "soundboard.music_1"
+                            ],
+                            "privatePrompt": true,
+                            "pulse": true
+                        },
+                        "cached": {
+                            "decks": "secret",
+                            "playList.2": "players"
+                        },
+                        "computed": {
+                            "playList.1": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "judge"
+                                    }
+                                ]
+                            },
+                            "actors": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "judge"
+                                    }
+                                ]
+                            },
+                            "question": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "($1), here are the 2 icons! When you're ready to give your clue, click one of the 2 icons."
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getPlayerNameById",
+                                            "params": [
+                                                {
+                                                    "name": "id",
+                                                    "type": "cached",
+                                                    "value": "judge"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "inc",
+                                            "params": [
+                                                {
+                                                    "name": "arg",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "indexOf",
+                                                        "params": [
+                                                            {
+                                                                "name": "list",
+                                                                "type": "cached",
+                                                                "value": "iconDecks"
+                                                            },
+                                                            {
+                                                                "name": "element",
+                                                                "type": "cached",
+                                                                "value": "secret.0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "removeWidget",
+                    "payload": {
+                        "preset": {
+                            "id": "GenericCardWidget"
+                        }
+                    }
+                },
+                {
+                    "key": "createInput",
+                    "payload": {
+                        "preset": {
+                            "type": "text",
+                            "title": "Submit clue",
+                            "terminationCondition": "get_all_values",
+                            "scope": "player",
+                            "private": true,
+                            "lowerCase": true,
+                            "vertical": true
+                        },
+                        "cached": {
+                            "image": "secretImages"
+                        },
+                        "computed": {
+                            "options.restrictedLengths": {
+                                "selector": "listsSubtract",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "cached",
+                                        "value": "allLengths"
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listByDictionary",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "validLengths"
+                                                },
+                                                {
+                                                    "name": "dict",
+                                                    "type": "cached",
+                                                    "value": "stringToInt"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "actors": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "judge"
+                                    }
+                                ]
+                            },
+                            "question": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "($1), type your Portmanteau!"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getPlayerNameById",
+                                            "params": [
+                                                {
+                                                    "name": "id",
+                                                    "type": "cached",
+                                                    "value": "judge"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "responses",
+                            "value": {
+                                "selector": "getCachedValue",
+                                "params": [
+                                    {
+                                        "name": "name",
+                                        "type": "preset",
+                                        "value": "lastActionResult"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "clue",
+                            "value": {
+                                "selector": "selectElement",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "unique",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "listsSubtract",
+                                                        "params": [
+                                                            {
+                                                                "name": "list1",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "getObjectValues",
+                                                                    "params": [
+                                                                        {
+                                                                            "name": "obj",
+                                                                            "type": "cached",
+                                                                            "value": "responses"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "list2",
+                                                                "type": "preset",
+                                                                "value": [
+                                                                    ""
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "index",
+                                        "type": "preset",
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "secretLength",
+                            "value": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "contains",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "validLengths"
+                                                },
+                                                {
+                                                    "name": "element",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "formatString",
+                                                        "params": [
+                                                            {
+                                                                "name": "format",
+                                                                "type": "preset",
+                                                                "value": "($1)"
+                                                            },
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "stringLength",
+                                                                    "params": [
+                                                                        {
+                                                                            "name": "text",
+                                                                            "type": "cached",
+                                                                            "value": "clue"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "stringLength",
+                                            "params": [
+                                                {
+                                                    "name": "text",
+                                                    "type": "cached",
+                                                    "value": "clue"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "maxValue",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "validLengths"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "restoreWidget",
+                    "payload": {
+                        "preset": {
+                            "id": "GenericCardWidget"
+                        }
+                    }
+                },
+                {
+                    "key": "startClip",
+                    "payload": {
+                        "computed": {
+                            "title": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "Portmanteau, Turn ($1)"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "turn"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "turn",
+                            "value": {
+                                "selector": "inc",
+                                "params": [
+                                    {
+                                        "name": "arg",
+                                        "type": "cached",
+                                        "value": "turn"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "duration": 7,
+                            "backgroundColor": "#fee893",
+                            "borderColor": "black"
+                        },
+                        "cached": {
+                            "to": "players"
+                        },
+                        "computed": {
+                            "text": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "Say your <b>($1)-letter</b> Portmanteau out loud!<br/><br/><b>($2)</b> will make the final guess!"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "secretLength"
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listToString",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "getPlayerNamesByIds",
+                                                        "params": [
+                                                            {
+                                                                "name": "ids",
+                                                                "type": "cached",
+                                                                "value": "guesser"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "readable",
+                                                    "type": "preset",
+                                                    "value": true
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "header": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "($1), it's time!"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getPlayerNameById",
+                                            "params": [
+                                                {
+                                                    "name": "id",
+                                                    "type": "cached",
+                                                    "value": "judge"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "duration": 3,
+                            "backgroundColor": "#fee893",
+                            "borderColor": "black",
+                            "isAnnounceOnly": true
+                        },
+                        "computed": {
+                            "to": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "judge"
+                                    }
+                                ]
+                            },
+                            "header": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "<b>($1)</b> (#($2), #($3))"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "clue"
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "inc",
+                                            "params": [
+                                                {
+                                                    "name": "arg",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "indexOf",
+                                                        "params": [
+                                                            {
+                                                                "name": "list",
+                                                                "type": "cached",
+                                                                "value": "iconDecks"
+                                                            },
+                                                            {
+                                                                "name": "element",
+                                                                "type": "cached",
+                                                                "value": "secret.0"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "arg3",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "inc",
+                                            "params": [
+                                                {
+                                                    "name": "arg",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "indexOf",
+                                                        "params": [
+                                                            {
+                                                                "name": "list",
+                                                                "type": "cached",
+                                                                "value": "iconDecks"
+                                                            },
+                                                            {
+                                                                "name": "element",
+                                                                "type": "cached",
+                                                                "value": "secret.1"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Thinkers guess secret",
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 1
+                        }
+                    }
+                },
+                {
+                    "key": "highlightPlayers",
+                    "payload": {
+                        "preset": {
+                            "color": "blue"
+                        },
+                        "cached": {
+                            "listOfPlayers": "guesser"
+                        }
+                    }
+                },
+                {
+                    "key": "selectCentralWidgetDeck",
+                    "payload": {
+                        "preset": {
+                            "duration": 120,
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "soundboard.bubbles",
+                                "soundboard.reminder"
+                            ]
+                        },
+                        "cached": {
+                            "decks": "iconDecks",
+                            "actors": "guesser",
+                            "playList.1": "players",
+                            "playList.2": "guesser"
+                        },
+                        "computed": {
+                            "question": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "It's time to guess the secret icons! ($1), what is the group's first guess?"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listToString",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "getPlayerNamesByIds",
+                                                        "params": [
+                                                            {
+                                                                "name": "ids",
+                                                                "type": "cached",
+                                                                "value": "guesser"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "readable",
+                                                    "type": "preset",
+                                                    "value": true
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "defaultSelect": {
+                                "selector": "randomElement",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "cached",
+                                        "value": "iconDecks"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "firstGuess",
+                            "value": {
+                                "selector": "selectElement",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getObjectValues",
+                                            "params": [
+                                                {
+                                                    "name": "obj",
+                                                    "type": "cached",
+                                                    "value": "lastActionResult"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "index",
+                                        "type": "preset",
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "firstGuessCorrect",
+                            "value": {
+                                "selector": "contains",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "cached",
+                                        "value": "secret"
+                                    },
+                                    {
+                                        "name": "element",
+                                        "type": "cached",
+                                        "value": "firstGuess"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "correct",
+                            "value": false
+                        },
+                        {
+                            "name": "newOptions",
+                            "value": {
+                                "selector": "listsSubtract",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "cached",
+                                        "value": "iconDecks"
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createList",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "firstGuess"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "highlightDecks",
+                    "payload": {
+                        "preset": {
+                            "color": "#FFBF00"
+                        },
+                        "computed": {
+                            "decks": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "firstGuess"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "selectCentralWidgetDeck",
+                    "skipCondition": {
+                        "selector": "logicalNOT",
+                        "params": [
+                            {
+                                "name": "arg",
+                                "type": "cached",
+                                "value": "firstGuessCorrect"
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "duration": 120,
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "soundboard.guess",
+                                "soundboard.reminder"
+                            ]
+                        },
+                        "cached": {
+                            "decks": "newOptions",
+                            "actors": "guesser",
+                            "playList.1": "players",
+                            "playList.2": "guesser"
+                        },
+                        "computed": {
+                            "question": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "($1), what is the group's second guess?"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listToString",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "getPlayerNamesByIds",
+                                                        "params": [
+                                                            {
+                                                                "name": "ids",
+                                                                "type": "cached",
+                                                                "value": "guesser"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "readable",
+                                                    "type": "preset",
+                                                    "value": true
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "defaultSelect": {
+                                "selector": "randomElement",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "cached",
+                                        "value": "newOptions"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "secondGuess",
+                            "value": {
+                                "selector": "selectElement",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "getObjectValues",
+                                            "params": [
+                                                {
+                                                    "name": "obj",
+                                                    "type": "cached",
+                                                    "value": "lastActionResult"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "index",
+                                        "type": "preset",
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "secondGuessCorrect",
+                            "value": {
+                                "selector": "contains",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "cached",
+                                        "value": "secret"
+                                    },
+                                    {
+                                        "name": "element",
+                                        "type": "cached",
+                                        "value": "secondGuess"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "correct",
+                            "value": {
+                                "selector": "logicalAND",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "firstGuessCorrect"
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "cached",
+                                        "value": "secondGuessCorrect"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "emptyAction",
+                    "skipCondition": {
+                        "selector": "isPrevActionSkipped"
+                    },
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "soundboard.guess"
+                            ]
+                        },
+                        "cached": {
+                            "playList.0": "players"
+                        }
+                    }
+                },
+                {
+                    "key": "highlightDecks",
+                    "skipCondition": {
+                        "selector": "isPrevActionSkipped"
+                    },
+                    "payload": {
+                        "preset": {
+                            "color": "#FFBF00"
+                        },
+                        "computed": {
+                            "decks": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "secondGuess"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "skipCondition": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "correct"
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "header": "Not quite!",
+                            "duration": 3,
+                            "backgroundColor": "#fee893",
+                            "borderColor": "black",
+                            "sounds.list": [
+                                "soundboard.failure"
+                            ],
+                            "sounds.waitForSoundEnd": true,
+                            "image": "failure"
+                        },
+                        "cached": {
+                            "to": "players",
+                            "playList.0": "players"
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "skipCondition": {
+                        "selector": "logicalNOT",
+                        "params": [
+                            {
+                                "name": "arg",
+                                "type": "cached",
+                                "value": "correct"
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "header": "Well done!",
+                            "duration": 3,
+                            "backgroundColor": "#fee893",
+                            "borderColor": "black",
+                            "sounds.list": [
+                                "soundboard.success"
+                            ],
+                            "sounds.waitForSoundEnd": true,
+                            "image": "success"
+                        },
+                        "cached": {
+                            "to": "players",
+                            "playList.0": "players"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "skipCondition": {
+                        "selector": "logicalNOT",
+                        "params": [
+                            {
+                                "name": "arg",
+                                "type": "cached",
+                                "value": "correct"
+                            }
+                        ]
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "validLengths",
+                            "value": {
+                                "selector": "listsSubtract",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "cached",
+                                        "value": "validLengths"
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createList",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "formatString",
+                                                        "params": [
+                                                            {
+                                                                "name": "format",
+                                                                "type": "preset",
+                                                                "value": "($1)"
+                                                            },
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "cached",
+                                                                "value": "secretLength"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "messedUp",
+                            "value": {
+                                "selector": "listsSubtract",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "cached",
+                                        "value": "messedUp"
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createList",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "formatString",
+                                                        "params": [
+                                                            {
+                                                                "name": "format",
+                                                                "type": "preset",
+                                                                "value": "($1)"
+                                                            },
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "cached",
+                                                                "value": "secretLength"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "emptyAction",
+                    "skipCondition": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "correct"
+                            }
+                        ]
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "messedUp",
+                            "value": {
+                                "selector": "append",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "cached",
+                                        "value": "messedUp"
+                                    },
+                                    {
+                                        "name": "element",
+                                        "type": "cached",
+                                        "value": "secretLength"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Put new image in image row",
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "newImage",
+                            "value": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "correct"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "preset",
+                                        "value": "checkmark"
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "formatString",
+                                            "params": [
+                                                {
+                                                    "name": "format",
+                                                    "type": "preset",
+                                                    "value": "($1)R"
+                                                },
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "secretLength"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "imageRow",
+                            "value": {
+                                "selector": "concat",
+                                "params": [
+                                    {
+                                        "name": "list1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "sublist",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "imageRow"
+                                                },
+                                                {
+                                                    "name": "start",
+                                                    "type": "preset",
+                                                    "value": 0
+                                                },
+                                                {
+                                                    "name": "end",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "subtract",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "cached",
+                                                                "value": "secretLength"
+                                                            },
+                                                            {
+                                                                "name": "arg2",
+                                                                "type": "preset",
+                                                                "value": 3
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "list2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createList",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "newImage"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "list3",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "sublist",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "imageRow"
+                                                },
+                                                {
+                                                    "name": "start",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "subtract",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "cached",
+                                                                "value": "secretLength"
+                                                            },
+                                                            {
+                                                                "name": "arg2",
+                                                                "type": "preset",
+                                                                "value": 2
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "end",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "listLength",
+                                                        "params": [
+                                                            {
+                                                                "name": "list",
+                                                                "type": "cached",
+                                                                "value": "imageRow"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "setImagesRow",
+                    "payload": {
+                        "preset": {
+                            "maxHeight": 100
+                        },
+                        "cached": {
+                            "images": "imageRow"
+                        }
+                    }
+                },
+                {
+                    "key": "animateBox",
+                    "payload": {
+                        "cached": {
+                            "userIds": "thinkers"
+                        },
+                        "computed": {
+                            "animation": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "correct"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "preset",
+                                        "value": "winner"
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "preset",
+                                        "value": "loser"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "checkWinCondition": true
+        },
+        {
+            "name": "End of round",
+            "actions": [
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "duration": 4,
+                            "backgroundColor": "#fee893",
+                            "borderColor": "black"
+                        },
+                        "cached": {
+                            "to": "players"
+                        },
+                        "computed": {
+                            "header": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "The clue was ($1)!"
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "clue"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "selectCentralWidgetDeck",
+                    "payload": {
+                        "preset": {
+                            "duration": 15,
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "soundboard.reveal"
+                            ],
+                            "pulse": true
+                        },
+                        "cached": {
+                            "decks": "secret",
+                            "actors": "players",
+                            "playList.0": "players"
+                        },
+                        "computed": {
+                            "question": {
+                                "selector": "formatString",
+                                "params": [
+                                    {
+                                        "name": "format",
+                                        "type": "preset",
+                                        "value": "Here is the correct pair for the clue ($1)! Click either icon to move on."
+                                    },
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "toUpperCase",
+                                            "params": [
+                                                {
+                                                    "name": "text",
+                                                    "type": "cached",
+                                                    "value": "clue"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "endClip"
+                },
+                {
+                    "key": "removeHighlightDecks",
+                    "payload": {
+                        "computed": {
+                            "decks": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "firstGuess"
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "cached",
+                                        "value": "secondGuess"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "moveCards",
+                    "payload": {
+                        "preset": {
+                            "type": "deck",
+                            "to": "icons"
+                        },
+                        "cached": {
+                            "from": "iconDecks"
+                        }
+                    }
+                },
+                {
+                    "key": "shuffleDeck",
+                    "payload": {
+                        "preset": {
+                            "deck": "icons"
+                        }
+                    }
+                },
+                {
+                    "key": "removeAllHighlights"
+                }
+            ]
+        }
+    ],
+    "winCondition": {
+        "Everyone wins!": {
+            "selector": "equals",
+            "params": [
+                {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "validLengths"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "arg2",
+                    "type": "preset",
+                    "value": 0
+                }
+            ]
+        },
+        "Everyone loses!": {
+            "selector": "notEqual",
+            "params": [
+                {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "messedUp"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "arg2",
+                    "type": "computed",
+                    "value": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "unique",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "messedUp"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "postGameActions": [
+        {
+            "key": "createNotification",
+            "payload": {
+                "preset": {
+                    "duration": 1,
+                    "isAnnounceOnly": true
+                },
+                "cached": {
+                    "to": "players"
+                },
+                "computed": {
+                    "header": {
+                        "selector": "formatString",
+                        "params": [
+                            {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "The final clue was <b>($1)</b>!"
+                            },
+                            {
+                                "name": "arg1",
+                                "type": "cached",
+                                "value": "clue"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "createNotification",
+            "payload": {
+                "preset": {
+                    "backgroundColor": "#fee893",
+                    "borderColor": "black"
+                },
+                "cached": {
+                    "to": "players"
+                },
+                "computed": {
+                    "image": {
+                        "selector": "ifElse",
+                        "params": [
+                            {
+                                "name": "condition",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "equals",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "cached",
+                                            "value": "winner"
+                                        },
+                                        {
+                                            "name": "arg2",
+                                            "type": "preset",
+                                            "value": "Everyone wins!"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "thenValue",
+                                "type": "preset",
+                                "value": "winner"
+                            },
+                            {
+                                "name": "elseValue",
+                                "type": "preset",
+                                "value": "loser"
+                            }
+                        ]
+                    },
+                    "header": {
+                        "selector": "formatString",
+                        "params": [
+                            {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "($1)"
+                            },
+                            {
+                                "name": "arg1",
+                                "type": "cached",
+                                "value": "winner"
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "endClip"
+        }
+    ]
+}

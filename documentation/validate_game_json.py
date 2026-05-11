@@ -447,6 +447,17 @@ class Validator:
         return obj
 
     @staticmethod
+    def _refs_vote_result(obj: Any) -> bool:
+        """Return True if obj contains any string starting with 'lastActionResult.voteResult'."""
+        if isinstance(obj, str):
+            return obj.startswith("lastActionResult.voteResult")
+        if isinstance(obj, dict):
+            return any(Validator._refs_vote_result(v) for v in obj.values())
+        if isinstance(obj, list):
+            return any(Validator._refs_vote_result(v) for v in obj)
+        return False
+
+    @staticmethod
     def _comparable_action(action: dict) -> dict:
         """Extract only payload + saveValueInCache for reference comparisons.
         Top-level fields like skipCondition can legitimately vary per game."""
@@ -505,6 +516,7 @@ class Validator:
         self._check_end_of_round_vote()
         self._check_post_game_notification()
         self._check_host_snippet()
+        self._check_widget_visibility()
 
     def _find_entries_named(self, obj: Any, target_name: str, path: str = "") -> list:
         """Recursively find all saveValueInCache entries with the given name."""
@@ -531,6 +543,52 @@ class Validator:
                          "ifElse(contains(players, getHostPlayerId()), "
                          "createList(getHostPlayerId()), createList(players[0])). "
                          "Copy it verbatim from Things to remember.md.")
+
+    def _check_widget_visibility(self):
+        """
+        Walk actions in document/execution order and track the central card widget's
+        visibility state. Error if playCards or selectCentralWidgetDeck fires when the
+        widget has never been created or is currently hidden (removeWidget without restoreWidget).
+        """
+        state = {"visible": None}  # None=never created, False=hidden, True=visible
+
+        def visit(action, path):
+            key = action.get("key") if isinstance(action, dict) else None
+            if key == "createGenericCardWidget":
+                state["visible"] = True
+            elif key == "removeWidget" and state["visible"] is True:
+                state["visible"] = False
+            elif key == "restoreWidget":
+                state["visible"] = True
+            elif key in ("playCards", "selectCentralWidgetDeck"):
+                if state["visible"] is None:
+                    self.err(path, f"'{key}' fires but createGenericCardWidget was never called before "
+                             "this point. Create the central widget before using playCards or selectCentralWidgetDeck.")
+                elif not state["visible"]:
+                    self.err(path, f"'{key}' fires but the central widget is currently hidden — "
+                             "removeWidget was called without a subsequent restoreWidget. "
+                             "Call restoreWidget before this action.")
+
+        def visit_flat(actions, base_path):
+            if not isinstance(actions, list):
+                return
+            for i, item in enumerate(actions):
+                if isinstance(item, dict):
+                    visit(item, f"{base_path}[{i}]")
+
+        def visit_groups(groups, base_path):
+            if not isinstance(groups, list):
+                return
+            for i, group in enumerate(groups):
+                gp = f"{base_path}[{i}]"
+                if isinstance(group, dict):
+                    visit_flat(group.get("actions", []), f"{gp}.actions")
+                elif isinstance(group, list):
+                    visit_groups(group, gp)
+
+        visit_flat(self.data.get("beforeLoopActions", []), "beforeLoopActions")
+        visit_groups(self.data.get("gameLoop", []), "gameLoop")
+        visit_flat(self.data.get("postGameActions", []), "postGameActions")
 
     def _check_timing_fields(self):
         init = self.data.get("gameInitOptions")
@@ -941,6 +999,23 @@ class Validator:
                          "Spectators receive notifications automatically — use "
                          "cached: {{\"to\": \"players\"}} instead.")
 
+        # createVote/createMixVote postHandler checks
+        post_handler = obj.get("postHandler")
+        if key in ("createVote", "createMixVote") and post_handler:
+            svc = obj.get("saveValueInCache", [])
+            if isinstance(svc, list):
+                for i, entry in enumerate(svc):
+                    if isinstance(entry, dict) and self._refs_vote_result(entry.get("value")):
+                        self.err(f"{path}.saveValueInCache[{i}]",
+                                 f"'{key}' has postHandler '{post_handler}', so lastActionResult IS the "
+                                 "list of winners directly — there is no .voteResult field. "
+                                 "Use 'lastActionResult' (not 'lastActionResult.voteResult') when reading results.")
+            if post_handler == "randomSelectNeededVoters":
+                all_fields = self._payload_fields(payload)
+                if "neededVoters" not in all_fields:
+                    self.err(path, f"'{key}' uses postHandler 'randomSelectNeededVoters' but 'neededVoters' "
+                             "is missing from the payload. Add it (e.g. preset: {{\"neededVoters\": N}}) "
+                             "to specify how many random targets to select.")
 
         # createGenericCardWidget: dimensions[0] * dimensions[1] must be >= len(decks)
         if key == "createGenericCardWidget":

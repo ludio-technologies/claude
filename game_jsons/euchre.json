@@ -11,19 +11,19 @@
         "maxExtraRoles": 0,
         "timePerRound": 10,
         "teams": {
-            "ns": {
-                "id": "ns",
-                "name": "N/S",
-                "description": "North-South team",
+            "red": {
+                "id": "red",
+                "name": "Red",
+                "description": "The Red team",
                 "color": "#D83232",
-                "roles": ["ns"]
+                "roles": ["red"]
             },
-            "ew": {
-                "id": "ew",
-                "name": "E/W",
-                "description": "East-West team",
+            "blue": {
+                "id": "blue",
+                "name": "Blue",
+                "description": "The Blue team",
                 "color": "#4EC1D0",
-                "roles": ["ew"]
+                "roles": ["blue"]
             },
             "winning": {
                 "id": "winning",
@@ -54,22 +54,22 @@
             },
             {
                 "roleInfo": {
-                    "id": "ns",
-                    "name": "N/S",
-                    "description": "You are on the North-South team!",
+                    "id": "red",
+                    "name": "Red",
+                    "description": "You are on the Red team!",
                     "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
-                    "team": "ns",
+                    "team": "red",
                     "prefix": "on "
                 },
                 "isRequired": false
             },
             {
                 "roleInfo": {
-                    "id": "ew",
-                    "name": "E/W",
-                    "description": "You are on the East-West team!",
+                    "id": "blue",
+                    "name": "Blue",
+                    "description": "You are on the Blue team!",
                     "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
-                    "team": "ew",
+                    "team": "blue",
                     "prefix": "on "
                 },
                 "isRequired": false
@@ -105,10 +105,10 @@
                 "url": "https://res.cloudinary.com/liars-club/image/upload/transparent_sbx4wv.png"
             },
             "wallpaper": {
-                "url": "https://res.cloudinary.com/liars-club/image/upload/wood_qbegm0.jpg"
+                "url": "https://res.cloudinary.com/liars-club/image/upload/midwest_jdammx.jpg"
             },
             "banner": {
-                "url": "https://res.cloudinary.com/liars-club/image/upload/transparent_sbx4wv.png"
+                "url": "https://res.cloudinary.com/liars-club/image/upload/cowboy_hat_l2p6iy.jpg"
             },
             "cardback": {
                 "url": "https://res.cloudinary.com/liars-club/image/upload/v1694482260/pirate_cardback_cii39m.png"
@@ -118,7 +118,8 @@
             }
         },
         "animations": {
-            "winner": "https://lottie.host/ae7f6864-0454-4f5b-9d5d-598a8234f4b4/P4YrwOR8gd.json"
+            "winner": "https://lottie.host/ae7f6864-0454-4f5b-9d5d-598a8234f4b4/P4YrwOR8gd.json",
+            "trick_winner": "https://lottie.host/ea2afd95-9c1c-4517-8b62-3f6f4f909b75/jMGMFghnpN.json"
         },
         "soundboard": {
             "default": {
@@ -170,8 +171,8 @@
                 }},
                 {"name": "dealerIndex", "value": 0},
                 {"name": "trump", "value": ""},
-                {"name": "nsScore", "value": 0},
-                {"name": "ewScore", "value": 0},
+                {"name": "redScore", "value": 0},
+                {"name": "blueScore", "value": 0},
                 {"name": "playAgain", "value": true},
                 {"name": "reset", "value": false},
                 {"name": "handNum", "value": 0}
@@ -228,47 +229,8 @@
                             }
                         ]
                     }
-                },
-                {
-                    "name": "nsRepList",
-                    "value": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "players.0"}]}
-                },
-                {
-                    "name": "ewRepList",
-                    "value": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "players.1"}]}
                 }
             ]
-        },
-        {
-            "key": "setRole",
-            "payload": {
-                "preset": {"roleId": "ns"},
-                "computed": {"playerId": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "players.0"}, {"name": "arg2", "type": "cached", "value": "players.2"}]}}
-            }
-        },
-        {
-            "key": "setRole",
-            "payload": {
-                "preset": {"roleId": "ew"},
-                "computed": {"playerId": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "players.1"}, {"name": "arg2", "type": "cached", "value": "players.3"}]}}
-            }
-        },
-        {
-            "key": "removeAllHighlights"
-        },
-        {
-            "key": "highlightPlayers",
-            "payload": {
-                "preset": {"color": "#D83232"},
-                "computed": {"listOfPlayers": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "players.0"}, {"name": "arg2", "type": "cached", "value": "players.2"}]}}
-            }
-        },
-        {
-            "key": "highlightPlayers",
-            "payload": {
-                "preset": {"color": "#4EC1D0"},
-                "computed": {"listOfPlayers": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "players.1"}, {"name": "arg2", "type": "cached", "value": "players.3"}]}}
-            }
         },
         {
             "key": "createNotification",
@@ -277,9 +239,8 @@
                     "header": "Welcome to Euchre!",
                     "image": "banner",
                     "duration": 8,
-                    "backgroundColor": "#1a472a",
-                    "borderColor": "#d4af37",
-                    "textColor": "white"
+                    "backgroundColor": "#EDC6A0",
+                    "borderColor": "black"
                 },
                 "cached": {"to": "players"},
                 "computed": {
@@ -325,8 +286,8 @@
                         }
                     },
                     "poll.terminationCondition": "get_all_votes",
-                    "backgroundColor": "#1a472a",
-                    "borderColor": "#d4af37"
+                    "backgroundColor": "#EDC6A0",
+                    "borderColor": "black"
                 },
                 "cached": {
                     "actors": "host",
@@ -379,6 +340,74 @@
             ]
         },
         {
+            "key": "createVote",
+            "payload": {
+                "preset": {
+                    "title": "Pick the Red team",
+                    "type": "target_point",
+                    "terminationCondition": "get_all_votes",
+                    "showResultInRealTime": true,
+                    "showResultDuration": 2,
+                    "showResultDelay": 0,
+                    "oneClick": true,
+                    "allowRevoting": true,
+                    "answersQuantity": 2,
+                    "allowFewerAnswers": true,
+                    "backgroundColor": "#EDC6A0",
+                    "borderColor": "black"
+                },
+                "cached": {"actors": "host", "targets": "players"},
+                "computed": {
+                    "question": {"selector": "formatString", "params": [{"name": "format", "type": "preset", "value": "($1), pick 2 players to form the Red team. The other 2 will be on the Blue team."}, {"name": "arg1", "type": "computed", "value": {"selector": "getPlayerNameById", "params": [{"name": "id", "type": "cached", "value": "host.0"}]}}]}
+                }
+            },
+            "saveValueInCache": [
+                {"name": "redTeamRaw", "value": {"selector": "getCachedValue", "params": [{"name": "name", "type": "preset", "value": "lastActionResult.voteResult"}]}}
+            ]
+        },
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {"name": "redTeam", "value": {"selector": "sublist", "params": [{"name": "list", "type": "computed", "value": {"selector": "concat", "params": [{"name": "arg1", "type": "cached", "value": "redTeamRaw"}, {"name": "arg2", "type": "computed", "value": {"selector": "shuffleList", "params": [{"name": "list", "type": "computed", "value": {"selector": "listsSubtract", "params": [{"name": "list1", "type": "cached", "value": "players"}, {"name": "list2", "type": "cached", "value": "redTeamRaw"}]}}]}}]}}, {"name": "start", "type": "preset", "value": 0}, {"name": "end", "type": "preset", "value": 2}]}},
+                {"name": "blueTeam", "value": {"selector": "listsSubtract", "params": [{"name": "list1", "type": "cached", "value": "players"}, {"name": "list2", "type": "cached", "value": "redTeam"}]}}
+            ]
+        },
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {"name": "players", "value": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "redTeam.0"}, {"name": "arg2", "type": "cached", "value": "blueTeam.0"}, {"name": "arg3", "type": "cached", "value": "redTeam.1"}, {"name": "arg4", "type": "cached", "value": "blueTeam.1"}]}}
+            ]
+        },
+        {
+            "key": "setRole",
+            "payload": {
+                "preset": {"roleId": "red"},
+                "cached": {"playerId": "redTeam"}
+            }
+        },
+        {
+            "key": "setRole",
+            "payload": {
+                "preset": {"roleId": "blue"},
+                "cached": {"playerId": "blueTeam"}
+            }
+        },
+        {"key": "removeAllHighlights"},
+        {
+            "key": "highlightPlayers",
+            "payload": {
+                "preset": {"color": "#D83232"},
+                "cached": {"listOfPlayers": "redTeam"}
+            }
+        },
+        {
+            "key": "highlightPlayers",
+            "payload": {
+                "preset": {"color": "#4EC1D0"},
+                "cached": {"listOfPlayers": "blueTeam"}
+            }
+        },
+        {
             "key": "createDeck",
             "payload": {
                 "preset": {"name": "euchre_cards", "set": "euchre"}
@@ -393,15 +422,15 @@
         {
             "key": "showScore",
             "payload": {
-                "preset": {"format": "N/S: ($1)"},
-                "cached": {"from": "nsRepList", "to": "players"}
+                "preset": {"order": "highest"},
+                "cached": {"from": "players", "to": "players"}
             }
         },
         {
             "key": "showScore",
             "payload": {
-                "preset": {"secondScore": true, "format": "E/W: ($1)"},
-                "cached": {"from": "ewRepList", "to": "players"}
+                "preset": {"secondScore": true, "format": "($1)🃏", "order": "highest"},
+                "cached": {"from": "players", "to": "players"}
             }
         },
         {
@@ -422,28 +451,28 @@
                 {
                     "key": "createNotification",
                     "payload": {
-                        "preset": {"duration": 12, "backgroundColor": "#1a472a", "borderColor": "#d4af37", "textColor": "white", "header": "Euchre Basics", "text": "4 players, 2 teams of 2. Partners sit across from each other.<br/><b>N/S</b>: players 1 & 3. <b>E/W</b>: players 2 & 4.<br/>Use the 24-card deck (9 through Ace). First team to <b>10 points</b> wins!"},
+                        "preset": {"duration": 12, "backgroundColor": "#EDC6A0", "borderColor": "black", "header": "Euchre Basics", "text": "4 players in 2 teams (<b>Red</b> & <b>Blue</b>). Partners help each other win tricks.<br/>Uses a 24-card deck (9 through Ace). Each hand is 5 tricks. First team to <b>10 points</b> wins!"},
                         "cached": {"to": "learners"}
                     }
                 },
                 {
                     "key": "createNotification",
                     "payload": {
-                        "preset": {"duration": 14, "backgroundColor": "#1a472a", "borderColor": "#d4af37", "textColor": "white", "header": "Trump & Bowers", "text": "Each hand, players bid to name a <b>trump suit</b>.<br/><b>Right Bower</b>: Jack of trump — highest card!<br/><b>Left Bower</b>: Jack of same-color suit — second highest!<br/>All trump cards beat non-trump cards."},
+                        "preset": {"duration": 14, "backgroundColor": "#EDC6A0", "borderColor": "black", "header": "Trump & Bowers", "text": "Each hand, players bid to name a <b>trump suit</b>.<br/><b>Right Bower</b>: Jack of trump — highest card!<br/><b>Left Bower</b>: Jack of same-color suit — second highest!<br/>All trump cards beat non-trump cards."},
                         "cached": {"to": "learners"}
                     }
                 },
                 {
                     "key": "createNotification",
                     "payload": {
-                        "preset": {"duration": 14, "backgroundColor": "#1a472a", "borderColor": "#d4af37", "textColor": "white", "header": "Bidding & Scoring", "text": "Each player bids to accept or name trump. The team that bids (makers) must win 3+ tricks.<br/>Win 3-4 tricks: <b>1 point</b>. Win all 5 (march): <b>2 points</b>.<br/>Win fewer than 3 (euchred): opponents get <b>2 points</b>!"},
+                        "preset": {"duration": 14, "backgroundColor": "#EDC6A0", "borderColor": "black", "header": "Bidding & Scoring", "text": "Each player bids to accept or name trump. The team that bids (makers) must win 3+ tricks.<br/>Win 3-4 tricks: <b>1 point</b>. Win all 5 (march): <b>2 points</b>.<br/>Win fewer than 3 (euchred): opponents get <b>2 points</b>!"},
                         "cached": {"to": "learners"}
                     }
                 },
                 {
                     "key": "createNotification",
                     "payload": {
-                        "preset": {"duration": 10, "backgroundColor": "#1a472a", "borderColor": "#d4af37", "textColor": "white", "header": "Play Rules", "text": "You must follow the lead suit if able — Ludio will only let you play legal cards.<br/>Remember: the Left Bower acts as trump, not its printed suit.<br/>The dealer picks up the flipped card if someone orders up in Round 1 — then discards 1 card."},
+                        "preset": {"duration": 10, "backgroundColor": "#EDC6A0", "borderColor": "black", "header": "Play Rules", "text": "You must follow the lead suit if able — Ludio will only let you play legal cards.<br/>Remember: the Left Bower acts as trump, not its printed suit.<br/>The dealer picks up the flipped card if someone orders up in Round 1 — then discards 1 card."},
                         "cached": {"to": "learners"}
                     }
                 },
@@ -490,6 +519,10 @@
                             "cardback": "cardback"
                         }
                     }
+                },
+                {
+                    "key": "removeWidget",
+                    "payload": {"preset": {"id": "GenericCardWidget"}}
                 }
             ]
         },
@@ -510,8 +543,8 @@
                         {"name": "makerPlayerIndex", "value": -1},
                         {"name": "makerTeamId", "value": ""},
                         {"name": "leftBowerSuit", "value": ""},
-                        {"name": "teamNSTricks", "value": 0},
-                        {"name": "teamEWTricks", "value": 0},
+                        {"name": "teamRedTricks", "value": 0},
+                        {"name": "teamBlueTricks", "value": 0},
                         {"name": "tricksPlayed", "value": 0},
                         {"name": "trickLeader", "value": ""},
                         {"name": "leaderIndex", "value": 0},
@@ -602,7 +635,7 @@
                     "key": "emptyAction",
                     "saveValueInCache": [
                         {
-                            "name": "flippedCardId",
+                            "name": "flippedCard",
                             "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "getDeckCards", "params": [{"name": "deck", "type": "preset", "value": "kitty"}]}}, {"name": "index", "type": "preset", "value": 0}]}
                         }
                     ]
@@ -612,23 +645,26 @@
                     "saveValueInCache": [
                         {
                             "name": "flippedSuit",
-                            "value": {"selector": "getCardField", "params": [{"name": "cardId", "type": "cached", "value": "flippedCardId"}, {"name": "field", "type": "preset", "value": "suit"}]}
+                            "value": {"selector": "getObjectField", "params": [{"name": "obj", "type": "cached", "value": "flippedCard"}, {"name": "field", "type": "preset", "value": "suit"}]}
                         },
                         {
                             "name": "flippedRank",
-                            "value": {"selector": "getCardField", "params": [{"name": "cardId", "type": "cached", "value": "flippedCardId"}, {"name": "field", "type": "preset", "value": "rank"}]}
+                            "value": {"selector": "getObjectField", "params": [{"name": "obj", "type": "cached", "value": "flippedCard"}, {"name": "field", "type": "preset", "value": "rank"}]}
+                        },
+                        {
+                            "name": "flippedImage",
+                            "value": {"selector": "getObjectField", "params": [{"name": "obj", "type": "cached", "value": "flippedCard"}, {"name": "field", "type": "preset", "value": "image"}]}
                         }
                     ]
                 },
                 {
                     "key": "createNotification",
                     "payload": {
-                        "preset": {"duration": 6, "backgroundColor": "#1a472a", "borderColor": "#d4af37", "textColor": "white"},
-                        "cached": {"to": "players"},
+                        "preset": {"duration": 6, "backgroundColor": "#EDC6A0", "borderColor": "black"},
+                        "cached": {"to": "players", "image": "flippedImage"},
                         "computed": {
                             "header": {"selector": "formatString", "params": [{"name": "format", "type": "preset", "value": "Trump offer: ($1)!"}, {"name": "arg1", "type": "cached", "value": "flippedSuit"}]},
-                            "text": {"selector": "formatString", "params": [{"name": "format", "type": "preset", "value": "Dealer: ($1). Bidding starts left of dealer — order up or pass?"}, {"name": "arg1", "type": "computed", "value": {"selector": "getPlayerNameById", "params": [{"name": "id", "type": "cached", "value": "dealerPlayer"}]}}]},
-                            "image": {"selector": "getCardField", "params": [{"name": "cardId", "type": "cached", "value": "flippedCardId"}, {"name": "field", "type": "preset", "value": "image"}]}
+                            "text": {"selector": "formatString", "params": [{"name": "format", "type": "preset", "value": "Dealer: ($1). Bidding starts left of dealer — order up or pass?"}, {"name": "arg1", "type": "computed", "value": {"selector": "getPlayerNameById", "params": [{"name": "id", "type": "cached", "value": "dealerPlayer"}]}}]}
                         }
                     }
                 }
@@ -648,11 +684,15 @@
                             "showResultInRealTime": true,
                             "showResultDuration": 1,
                             "showResultDelay": 0,
-                            "targets": ["Order up!", "Pass"],
+                            "targets": ["Order Up", "Pass"],
+                            "pollVoteTargetsOptions": {
+                                "Order Up": {"icon": "https://res.cloudinary.com/liars-club/image/upload/icons/up.svg", "backgroundColor": "#D3D3D3", "boxIconColor": "#D3D3D3", "textColor": "black", "widgetIconColor": "green"},
+                                "Pass": {"icon": "https://res.cloudinary.com/liars-club/image/upload/icons/fail-svgrepo-com.svg", "backgroundColor": "#D3D3D3", "boxIconColor": "#D3D3D3", "textColor": "black", "widgetIconColor": "blue"}
+                            },
                             "oneClick": true,
                             "allowRevoting": false,
-                            "backgroundColor": "#1a472a",
-                            "borderColor": "#d4af37"
+                            "backgroundColor": "#EDC6A0",
+                            "borderColor": "black"
                         },
                         "cached": {"actors": "bid1Player"},
                         "computed": {
@@ -676,7 +716,7 @@
                     },
                     "postHandler": "randomSelectForOneAnswerTargetVote",
                     "saveValueInCache": [
-                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult.voteResult"}, {"name": "element", "type": "preset", "value": "Pass"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
+                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult"}, {"name": "element", "type": "preset", "value": "Pass"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
                         {"name": "biddingDone", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "preset", "value": true}, {"name": "elseValue", "type": "cached", "value": "biddingDone"}]}},
                         {"name": "trump", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "cached", "value": "flippedSuit"}, {"name": "elseValue", "type": "cached", "value": "trump"}]}},
                         {"name": "makerPlayerIndex", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "cached", "value": "bid1PlayerIndex"}, {"name": "elseValue", "type": "cached", "value": "makerPlayerIndex"}]}}
@@ -698,11 +738,15 @@
                             "showResultInRealTime": true,
                             "showResultDuration": 1,
                             "showResultDelay": 0,
-                            "targets": ["Order up!", "Pass"],
+                            "targets": ["Order Up", "Pass"],
+                            "pollVoteTargetsOptions": {
+                                "Order Up": {"icon": "https://res.cloudinary.com/liars-club/image/upload/icons/up.svg", "backgroundColor": "#D3D3D3", "boxIconColor": "#D3D3D3", "textColor": "black", "widgetIconColor": "green"},
+                                "Pass": {"icon": "https://res.cloudinary.com/liars-club/image/upload/icons/fail-svgrepo-com.svg", "backgroundColor": "#D3D3D3", "boxIconColor": "#D3D3D3", "textColor": "black", "widgetIconColor": "blue"}
+                            },
                             "oneClick": true,
                             "allowRevoting": false,
-                            "backgroundColor": "#1a472a",
-                            "borderColor": "#d4af37"
+                            "backgroundColor": "#EDC6A0",
+                            "borderColor": "black"
                         },
                         "cached": {"actors": "bid2Player"},
                         "computed": {
@@ -726,7 +770,7 @@
                     },
                     "postHandler": "randomSelectForOneAnswerTargetVote",
                     "saveValueInCache": [
-                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult.voteResult"}, {"name": "element", "type": "preset", "value": "Pass"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
+                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult"}, {"name": "element", "type": "preset", "value": "Pass"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
                         {"name": "biddingDone", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "preset", "value": true}, {"name": "elseValue", "type": "cached", "value": "biddingDone"}]}},
                         {"name": "trump", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "cached", "value": "flippedSuit"}, {"name": "elseValue", "type": "cached", "value": "trump"}]}},
                         {"name": "makerPlayerIndex", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "cached", "value": "bid2PlayerIndex"}, {"name": "elseValue", "type": "cached", "value": "makerPlayerIndex"}]}}
@@ -748,11 +792,15 @@
                             "showResultInRealTime": true,
                             "showResultDuration": 1,
                             "showResultDelay": 0,
-                            "targets": ["Order up!", "Pass"],
+                            "targets": ["Order Up", "Pass"],
+                            "pollVoteTargetsOptions": {
+                                "Order Up": {"icon": "https://res.cloudinary.com/liars-club/image/upload/icons/up.svg", "backgroundColor": "#D3D3D3", "boxIconColor": "#D3D3D3", "textColor": "black", "widgetIconColor": "green"},
+                                "Pass": {"icon": "https://res.cloudinary.com/liars-club/image/upload/icons/fail-svgrepo-com.svg", "backgroundColor": "#D3D3D3", "boxIconColor": "#D3D3D3", "textColor": "black", "widgetIconColor": "blue"}
+                            },
                             "oneClick": true,
                             "allowRevoting": false,
-                            "backgroundColor": "#1a472a",
-                            "borderColor": "#d4af37"
+                            "backgroundColor": "#EDC6A0",
+                            "borderColor": "black"
                         },
                         "cached": {"actors": "bid3Player"},
                         "computed": {
@@ -776,7 +824,7 @@
                     },
                     "postHandler": "randomSelectForOneAnswerTargetVote",
                     "saveValueInCache": [
-                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult.voteResult"}, {"name": "element", "type": "preset", "value": "Pass"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
+                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult"}, {"name": "element", "type": "preset", "value": "Pass"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
                         {"name": "biddingDone", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "preset", "value": true}, {"name": "elseValue", "type": "cached", "value": "biddingDone"}]}},
                         {"name": "trump", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "cached", "value": "flippedSuit"}, {"name": "elseValue", "type": "cached", "value": "trump"}]}},
                         {"name": "makerPlayerIndex", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "cached", "value": "bid3PlayerIndex"}, {"name": "elseValue", "type": "cached", "value": "makerPlayerIndex"}]}}
@@ -798,11 +846,15 @@
                             "showResultInRealTime": true,
                             "showResultDuration": 1,
                             "showResultDelay": 0,
-                            "targets": ["Order up!", "Pass"],
+                            "targets": ["Order Up", "Pass"],
+                            "pollVoteTargetsOptions": {
+                                "Order Up": {"icon": "https://res.cloudinary.com/liars-club/image/upload/icons/up.svg", "backgroundColor": "#D3D3D3", "boxIconColor": "#D3D3D3", "textColor": "black", "widgetIconColor": "green"},
+                                "Pass": {"icon": "https://res.cloudinary.com/liars-club/image/upload/icons/fail-svgrepo-com.svg", "backgroundColor": "#D3D3D3", "boxIconColor": "#D3D3D3", "textColor": "black", "widgetIconColor": "blue"}
+                            },
                             "oneClick": true,
                             "allowRevoting": false,
-                            "backgroundColor": "#1a472a",
-                            "borderColor": "#d4af37"
+                            "backgroundColor": "#EDC6A0",
+                            "borderColor": "black"
                         },
                         "cached": {"actors": "dealerList"},
                         "computed": {
@@ -826,7 +878,7 @@
                     },
                     "postHandler": "randomSelectForOneAnswerTargetVote",
                     "saveValueInCache": [
-                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult.voteResult"}, {"name": "element", "type": "preset", "value": "Pass"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
+                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult"}, {"name": "element", "type": "preset", "value": "Pass"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
                         {"name": "biddingDone", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "preset", "value": true}, {"name": "elseValue", "type": "cached", "value": "biddingDone"}]}},
                         {"name": "trump", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "cached", "value": "flippedSuit"}, {"name": "elseValue", "type": "cached", "value": "trump"}]}},
                         {"name": "makerPlayerIndex", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "cached", "value": "dealerIndex"}, {"name": "elseValue", "type": "cached", "value": "makerPlayerIndex"}]}}
@@ -857,6 +909,10 @@
                     }
                 },
                 {
+                    "key": "restoreWidget",
+                    "payload": {"preset": {"id": "GenericCardWidget"}}
+                },
+                {
                     "key": "playCards",
                     "payload": {
                         "preset": {
@@ -873,6 +929,10 @@
                         }
                     },
                     "postHandler": "playOneRandomCard"
+                },
+                {
+                    "key": "removeWidget",
+                    "payload": {"preset": {"id": "GenericCardWidget"}}
                 }
             ]
         },
@@ -893,8 +953,8 @@
                             "targets": ["Hearts", "Diamonds", "Clubs", "Spades", "Pass"],
                             "oneClick": true,
                             "allowRevoting": false,
-                            "backgroundColor": "#1a472a",
-                            "borderColor": "#d4af37"
+                            "backgroundColor": "#EDC6A0",
+                            "borderColor": "black"
                         },
                         "cached": {"actors": "bid1Player"},
                         "computed": {
@@ -904,7 +964,7 @@
                     },
                     "postHandler": "randomSelectForOneAnswerTargetVote",
                     "saveValueInCache": [
-                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult.voteResult"}, {"name": "element", "type": "preset", "value": "Pass"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
+                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult"}, {"name": "element", "type": "preset", "value": "Pass"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
                         {"name": "biddingDone", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "preset", "value": true}, {"name": "elseValue", "type": "cached", "value": "biddingDone"}]}},
                         {"name": "trump", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "computed", "value": {"selector": "getCachedObjectValue", "params": [{"name": "objectName", "type": "preset", "value": "suitNormalizer"}, {"name": "value", "type": "cached", "value": "voteChoice"}, {"name": "defaultValue", "type": "cached", "value": "trump"}]}}, {"name": "elseValue", "type": "cached", "value": "trump"}]}},
                         {"name": "makerPlayerIndex", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "cached", "value": "bid1PlayerIndex"}, {"name": "elseValue", "type": "cached", "value": "makerPlayerIndex"}]}}
@@ -929,8 +989,8 @@
                             "targets": ["Hearts", "Diamonds", "Clubs", "Spades", "Pass"],
                             "oneClick": true,
                             "allowRevoting": false,
-                            "backgroundColor": "#1a472a",
-                            "borderColor": "#d4af37"
+                            "backgroundColor": "#EDC6A0",
+                            "borderColor": "black"
                         },
                         "cached": {"actors": "bid2Player"},
                         "computed": {
@@ -940,7 +1000,7 @@
                     },
                     "postHandler": "randomSelectForOneAnswerTargetVote",
                     "saveValueInCache": [
-                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult.voteResult"}, {"name": "element", "type": "preset", "value": "Pass"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
+                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult"}, {"name": "element", "type": "preset", "value": "Pass"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
                         {"name": "biddingDone", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "preset", "value": true}, {"name": "elseValue", "type": "cached", "value": "biddingDone"}]}},
                         {"name": "trump", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "computed", "value": {"selector": "getCachedObjectValue", "params": [{"name": "objectName", "type": "preset", "value": "suitNormalizer"}, {"name": "value", "type": "cached", "value": "voteChoice"}, {"name": "defaultValue", "type": "cached", "value": "trump"}]}}, {"name": "elseValue", "type": "cached", "value": "trump"}]}},
                         {"name": "makerPlayerIndex", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "cached", "value": "bid2PlayerIndex"}, {"name": "elseValue", "type": "cached", "value": "makerPlayerIndex"}]}}
@@ -965,8 +1025,8 @@
                             "targets": ["Hearts", "Diamonds", "Clubs", "Spades", "Pass"],
                             "oneClick": true,
                             "allowRevoting": false,
-                            "backgroundColor": "#1a472a",
-                            "borderColor": "#d4af37"
+                            "backgroundColor": "#EDC6A0",
+                            "borderColor": "black"
                         },
                         "cached": {"actors": "bid3Player"},
                         "computed": {
@@ -976,7 +1036,7 @@
                     },
                     "postHandler": "randomSelectForOneAnswerTargetVote",
                     "saveValueInCache": [
-                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult.voteResult"}, {"name": "element", "type": "preset", "value": "Pass"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
+                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult"}, {"name": "element", "type": "preset", "value": "Pass"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
                         {"name": "biddingDone", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "preset", "value": true}, {"name": "elseValue", "type": "cached", "value": "biddingDone"}]}},
                         {"name": "trump", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "computed", "value": {"selector": "getCachedObjectValue", "params": [{"name": "objectName", "type": "preset", "value": "suitNormalizer"}, {"name": "value", "type": "cached", "value": "voteChoice"}, {"name": "defaultValue", "type": "cached", "value": "trump"}]}}, {"name": "elseValue", "type": "cached", "value": "trump"}]}},
                         {"name": "makerPlayerIndex", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "voteChoice"}, {"name": "arg2", "type": "preset", "value": "Pass"}]}}]}}, {"name": "thenValue", "type": "cached", "value": "bid3PlayerIndex"}, {"name": "elseValue", "type": "cached", "value": "makerPlayerIndex"}]}}
@@ -1001,8 +1061,8 @@
                             "targets": ["Hearts", "Diamonds", "Clubs", "Spades"],
                             "oneClick": true,
                             "allowRevoting": false,
-                            "backgroundColor": "#1a472a",
-                            "borderColor": "#d4af37"
+                            "backgroundColor": "#EDC6A0",
+                            "borderColor": "black"
                         },
                         "cached": {"actors": "dealerList"},
                         "computed": {
@@ -1012,7 +1072,7 @@
                     },
                     "postHandler": "randomSelectForOneAnswerTargetVote",
                     "saveValueInCache": [
-                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult.voteResult"}, {"name": "element", "type": "preset", "value": "Hearts"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
+                        {"name": "voteChoice", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "computed", "value": {"selector": "append", "params": [{"name": "list", "type": "cached", "value": "lastActionResult"}, {"name": "element", "type": "preset", "value": "Hearts"}]}}, {"name": "index", "type": "preset", "value": 0}]}},
                         {"name": "biddingDone", "value": true},
                         {"name": "trump", "value": {"selector": "getCachedObjectValue", "params": [{"name": "objectName", "type": "preset", "value": "suitNormalizer"}, {"name": "value", "type": "cached", "value": "voteChoice"}, {"name": "defaultValue", "type": "preset", "value": "hearts"}]}},
                         {"name": "makerPlayerIndex", "value": {"selector": "getCachedValue", "params": [{"name": "name", "type": "preset", "value": "dealerIndex"}]}}
@@ -1027,19 +1087,29 @@
                     "key": "emptyAction",
                     "saveValueInCache": [
                         {"name": "leftBowerSuit", "value": {"selector": "getCachedObjectValue", "params": [{"name": "objectName", "type": "preset", "value": "sameColorSuits"}, {"name": "value", "type": "cached", "value": "trump"}, {"name": "defaultValue", "type": "preset", "value": ""}]}},
-                        {"name": "makerTeamId", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "remainder", "params": [{"name": "arg1", "type": "cached", "value": "makerPlayerIndex"}, {"name": "arg2", "type": "preset", "value": 2}]}}]}}, {"name": "thenValue", "type": "preset", "value": "ns"}, {"name": "elseValue", "type": "preset", "value": "ew"}]}}
+                        {"name": "makerPlayer", "value": {"selector": "selectElement", "params": [{"name": "list", "type": "cached", "value": "players"}, {"name": "index", "type": "cached", "value": "makerPlayerIndex"}]}},
+                        {"name": "makerTeamId", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "contains", "params": [{"name": "list", "type": "cached", "value": "redTeam"}, {"name": "element", "type": "cached", "value": "makerPlayer"}]}}, {"name": "thenValue", "type": "preset", "value": "red"}, {"name": "elseValue", "type": "preset", "value": "blue"}]}}
                     ]
                 },
                 {
                     "key": "createNotification",
                     "payload": {
-                        "preset": {"duration": 5, "backgroundColor": "#1a472a", "borderColor": "#d4af37", "textColor": "white"},
+                        "preset": {"duration": 5, "backgroundColor": "#EDC6A0", "borderColor": "black"},
                         "cached": {"to": "players"},
                         "computed": {
                             "header": {"selector": "formatString", "params": [{"name": "format", "type": "preset", "value": "Trump is ($1)!"}, {"name": "arg1", "type": "cached", "value": "trump"}]},
-                            "text": {"selector": "formatString", "params": [{"name": "format", "type": "preset", "value": "($1) are the makers — they must win 3+ tricks. Right Bower (J of trump) is highest; Left Bower (J of ($2)) is second."}, {"name": "arg1", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "makerTeamId"}, {"name": "arg2", "type": "preset", "value": "ns"}]}}, {"name": "thenValue", "type": "preset", "value": "N/S"}, {"name": "elseValue", "type": "preset", "value": "E/W"}]}}, {"name": "arg2", "type": "cached", "value": "leftBowerSuit"}]}
+                            "text": {"selector": "formatString", "params": [{"name": "format", "type": "preset", "value": "($1) are the makers — they must win 3+ tricks. Right Bower (J of trump) is highest; Left Bower (J of ($2)) is second."}, {"name": "arg1", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "makerTeamId"}, {"name": "arg2", "type": "preset", "value": "red"}]}}, {"name": "thenValue", "type": "preset", "value": "Red"}, {"name": "elseValue", "type": "preset", "value": "Blue"}]}}, {"name": "arg2", "type": "cached", "value": "leftBowerSuit"}]}
                         }
                     }
+                }
+            ]
+        },
+        {
+            "name": "Show widget for tricks",
+            "actions": [
+                {
+                    "key": "restoreWidget",
+                    "payload": {"preset": {"id": "GenericCardWidget"}}
                 }
             ]
         },
@@ -1119,14 +1189,6 @@
                             {"name": "playableCardNames", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "isFirstCardOfTrick"}, {"name": "thenValue", "type": "cached", "value": "allCardNames"}, {"name": "elseValue", "type": "computed", "value": {"selector": "getCachedObjectValue", "params": [{"name": "objectName", "type": "preset", "value": "effectiveSuitCards"}, {"name": "value", "type": "computed", "value": {"selector": "formatString", "params": [{"name": "format", "type": "preset", "value": "($1)_($2)"}, {"name": "arg1", "type": "cached", "value": "trump"}, {"name": "arg2", "type": "cached", "value": "leadSuit"}]}}, {"name": "defaultValue", "type": "cached", "value": "allCardNames"}]}}]}}
                         ]
                     },
-                    {"key": "removeAllHighlights"},
-                    {
-                        "key": "highlightPlayers",
-                        "payload": {
-                            "preset": {"color": "#f0c040"},
-                            "computed": {"listOfPlayers": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "currentTrickPlayer"}]}}
-                        }
-                    },
                     {
                         "key": "playCards",
                         "payload": {
@@ -1204,42 +1266,42 @@
                     {
                         "key": "emptyAction",
                         "saveValueInCache": [
-                            {"name": "winnerIndex", "value": {"selector": "indexOf", "params": [{"name": "list", "type": "cached", "value": "players"}, {"name": "element", "type": "cached", "value": "currentWinner"}]}},
-                            {"name": "isCurrentWinnerNS", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "remainder", "params": [{"name": "arg1", "type": "cached", "value": "winnerIndex"}, {"name": "arg2", "type": "preset", "value": 2}]}}]}},
-                            {"name": "teamNSTricks", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "isCurrentWinnerNS"}, {"name": "thenValue", "type": "computed", "value": {"selector": "inc", "params": [{"name": "arg", "type": "cached", "value": "teamNSTricks"}]}}, {"name": "elseValue", "type": "cached", "value": "teamNSTricks"}]}},
-                            {"name": "teamEWTricks", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "isCurrentWinnerNS"}, {"name": "thenValue", "type": "cached", "value": "teamEWTricks"}, {"name": "elseValue", "type": "computed", "value": {"selector": "inc", "params": [{"name": "arg", "type": "cached", "value": "teamEWTricks"}]}}]}},
+                            {"name": "isCurrentWinnerRed", "value": {"selector": "contains", "params": [{"name": "list", "type": "cached", "value": "redTeam"}, {"name": "element", "type": "cached", "value": "currentWinner"}]}},
+                            {"name": "teamRedTricks", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "isCurrentWinnerRed"}, {"name": "thenValue", "type": "computed", "value": {"selector": "inc", "params": [{"name": "arg", "type": "cached", "value": "teamRedTricks"}]}}, {"name": "elseValue", "type": "cached", "value": "teamRedTricks"}]}},
+                            {"name": "teamBlueTricks", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "isCurrentWinnerRed"}, {"name": "thenValue", "type": "cached", "value": "teamBlueTricks"}, {"name": "elseValue", "type": "computed", "value": {"selector": "inc", "params": [{"name": "arg", "type": "cached", "value": "teamBlueTricks"}]}}]}},
                             {"name": "tricksPlayed", "value": {"selector": "inc", "params": [{"name": "arg", "type": "cached", "value": "tricksPlayed"}]}},
                             {"name": "trickLeader", "value": {"selector": "getCachedValue", "params": [{"name": "name", "type": "preset", "value": "currentWinner"}]}}
                         ]
+                    },
+                    {
+                        "key": "updateScore",
+                        "payload": {
+                            "computed": {
+                                "scores": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {"name": "arg1", "type": "computed", "value": {"selector": "createDict", "params": [{"name": "keys", "type": "preset", "value": ["list", "delta", "secondScore"]}, {"name": "values", "type": "computed", "value": {"selector": "createList", "params": [{"name": "arg1", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "isCurrentWinnerRed"}, {"name": "thenValue", "type": "cached", "value": "redTeam"}, {"name": "elseValue", "type": "cached", "value": "blueTeam"}]}}, {"name": "arg2", "type": "preset", "value": 1}, {"name": "arg3", "type": "preset", "value": true}]}}]}}
+                                    ]
+                                }
+                            }
+                        }
                     }
                 ]
             },
             {
                 "name": "Announce trick winner",
                 "actions": [
-                    {"key": "removeAllHighlights"},
-                    {
-                        "key": "highlightPlayers",
-                        "payload": {
-                            "preset": {"color": "#FFD700"},
-                            "computed": {"listOfPlayers": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "currentWinner"}]}}
-                        }
-                    },
                     {
                         "key": "emptyAction",
                         "payload": {
-                            "preset": {
-                                "sounds.list": ["soundboard.clap"]
-                            },
-                            "computed": {
-                                "playList.0": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "currentWinner"}]}
-                            }
+                            "preset": {"sounds.list": ["soundboard.clap"]},
+                            "cached": {"playList.0": "players"}
                         }
                     },
                     {
                         "key": "animateBox",
                         "payload": {
-                            "preset": {"animation": "winner", "duration": 3},
+                            "preset": {"animation": "trick_winner", "duration": 3},
                             "computed": {"userIds": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "currentWinner"}]}}
                         }
                     }
@@ -1265,20 +1327,20 @@
                 {
                     "key": "emptyAction",
                     "saveValueInCache": [
-                        {"name": "makerIsNS", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "makerTeamId"}, {"name": "arg2", "type": "preset", "value": "ns"}]}},
-                        {"name": "makerTricks", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "makerTeamId"}, {"name": "arg2", "type": "preset", "value": "ns"}]}}, {"name": "thenValue", "type": "cached", "value": "teamNSTricks"}, {"name": "elseValue", "type": "cached", "value": "teamEWTricks"}]}},
+                        {"name": "makerIsRed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "makerTeamId"}, {"name": "arg2", "type": "preset", "value": "red"}]}},
+                        {"name": "makerTricks", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "makerTeamId"}, {"name": "arg2", "type": "preset", "value": "red"}]}}, {"name": "thenValue", "type": "cached", "value": "teamRedTricks"}, {"name": "elseValue", "type": "cached", "value": "teamBlueTricks"}]}},
                         {"name": "makerWon", "value": {"selector": "greaterThanOrEqual", "params": [{"name": "arg1", "type": "cached", "value": "makerTricks"}, {"name": "arg2", "type": "preset", "value": 3}]}},
                         {"name": "makerMarched", "value": {"selector": "equals", "params": [{"name": "arg1", "type": "cached", "value": "makerTricks"}, {"name": "arg2", "type": "preset", "value": 5}]}},
                         {"name": "makerEuchred", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "cached", "value": "makerWon"}]}},
-                        {"name": "nsHandPoints", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerIsNS"}, {"name": "thenValue", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerMarched"}, {"name": "thenValue", "type": "preset", "value": 2}, {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerWon"}, {"name": "thenValue", "type": "preset", "value": 1}, {"name": "elseValue", "type": "preset", "value": 0}]}}]}}, {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerEuchred"}, {"name": "thenValue", "type": "preset", "value": 2}, {"name": "elseValue", "type": "preset", "value": 0}]}}]}},
-                        {"name": "ewHandPoints", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "cached", "value": "makerIsNS"}]}}, {"name": "thenValue", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerMarched"}, {"name": "thenValue", "type": "preset", "value": 2}, {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerWon"}, {"name": "thenValue", "type": "preset", "value": 1}, {"name": "elseValue", "type": "preset", "value": 0}]}}]}}, {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerEuchred"}, {"name": "thenValue", "type": "preset", "value": 2}, {"name": "elseValue", "type": "preset", "value": 0}]}}]}}
+                        {"name": "redHandPoints", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerIsRed"}, {"name": "thenValue", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerMarched"}, {"name": "thenValue", "type": "preset", "value": 2}, {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerWon"}, {"name": "thenValue", "type": "preset", "value": 1}, {"name": "elseValue", "type": "preset", "value": 0}]}}]}}, {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerEuchred"}, {"name": "thenValue", "type": "preset", "value": 2}, {"name": "elseValue", "type": "preset", "value": 0}]}}]}},
+                        {"name": "blueHandPoints", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "computed", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "cached", "value": "makerIsRed"}]}}, {"name": "thenValue", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerMarched"}, {"name": "thenValue", "type": "preset", "value": 2}, {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerWon"}, {"name": "thenValue", "type": "preset", "value": 1}, {"name": "elseValue", "type": "preset", "value": 0}]}}]}}, {"name": "elseValue", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerEuchred"}, {"name": "thenValue", "type": "preset", "value": 2}, {"name": "elseValue", "type": "preset", "value": 0}]}}]}}
                     ]
                 },
                 {
                     "key": "emptyAction",
                     "saveValueInCache": [
-                        {"name": "nsScore", "value": {"selector": "add", "params": [{"name": "arg1", "type": "cached", "value": "nsScore"}, {"name": "arg2", "type": "cached", "value": "nsHandPoints"}]}},
-                        {"name": "ewScore", "value": {"selector": "add", "params": [{"name": "arg1", "type": "cached", "value": "ewScore"}, {"name": "arg2", "type": "cached", "value": "ewHandPoints"}]}}
+                        {"name": "redScore", "value": {"selector": "add", "params": [{"name": "arg1", "type": "cached", "value": "redScore"}, {"name": "arg2", "type": "cached", "value": "redHandPoints"}]}},
+                        {"name": "blueScore", "value": {"selector": "add", "params": [{"name": "arg1", "type": "cached", "value": "blueScore"}, {"name": "arg2", "type": "cached", "value": "blueHandPoints"}]}}
                     ]
                 },
                 {
@@ -1288,8 +1350,8 @@
                             "scores": {
                                 "selector": "createList",
                                 "params": [
-                                    {"name": "arg1", "type": "computed", "value": {"selector": "createDict", "params": [{"name": "keys", "type": "preset", "value": ["list", "delta"]}, {"name": "values", "type": "computed", "value": {"selector": "createList", "params": [{"name": "arg1", "type": "computed", "value": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "players.0"}, {"name": "arg2", "type": "cached", "value": "players.2"}]}}, {"name": "arg2", "type": "cached", "value": "nsHandPoints"}]}}]}},
-                                    {"name": "arg2", "type": "computed", "value": {"selector": "createDict", "params": [{"name": "keys", "type": "preset", "value": ["list", "delta"]}, {"name": "values", "type": "computed", "value": {"selector": "createList", "params": [{"name": "arg1", "type": "computed", "value": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "players.1"}, {"name": "arg2", "type": "cached", "value": "players.3"}]}}, {"name": "arg2", "type": "cached", "value": "ewHandPoints"}]}}]}}
+                                    {"name": "arg1", "type": "computed", "value": {"selector": "createDict", "params": [{"name": "keys", "type": "preset", "value": ["list", "delta"]}, {"name": "values", "type": "computed", "value": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "redTeam"}, {"name": "arg2", "type": "cached", "value": "redHandPoints"}]}}]}},
+                                    {"name": "arg2", "type": "computed", "value": {"selector": "createDict", "params": [{"name": "keys", "type": "preset", "value": ["list", "delta"]}, {"name": "values", "type": "computed", "value": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "blueTeam"}, {"name": "arg2", "type": "cached", "value": "blueHandPoints"}]}}]}}
                                 ]
                             }
                         }
@@ -1298,13 +1360,17 @@
                 {
                     "key": "createNotification",
                     "payload": {
-                        "preset": {"duration": 6, "backgroundColor": "#1a472a", "borderColor": "#d4af37", "textColor": "white"},
+                        "preset": {"duration": 6, "backgroundColor": "#EDC6A0", "borderColor": "black"},
                         "cached": {"to": "players"},
                         "computed": {
-                            "header": {"selector": "formatString", "params": [{"name": "format", "type": "preset", "value": "Hand result: ($1) won ($2) tricks"}, {"name": "arg1", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerIsNS"}, {"name": "thenValue", "type": "preset", "value": "N/S (makers)"}, {"name": "elseValue", "type": "preset", "value": "E/W (makers)"}]}}, {"name": "arg2", "type": "cached", "value": "makerTricks"}]},
-                            "text": {"selector": "formatString", "params": [{"name": "format", "type": "preset", "value": "N/S: +($1) pt | E/W: +($2) pt → Score: N/S ($3) - E/W ($4)"}, {"name": "arg1", "type": "cached", "value": "nsHandPoints"}, {"name": "arg2", "type": "cached", "value": "ewHandPoints"}, {"name": "arg3", "type": "cached", "value": "nsScore"}, {"name": "arg4", "type": "cached", "value": "ewScore"}]}
+                            "header": {"selector": "formatString", "params": [{"name": "format", "type": "preset", "value": "Hand result: ($1) won ($2) tricks"}, {"name": "arg1", "type": "computed", "value": {"selector": "ifElse", "params": [{"name": "condition", "type": "cached", "value": "makerIsRed"}, {"name": "thenValue", "type": "preset", "value": "Red (makers)"}, {"name": "elseValue", "type": "preset", "value": "Blue (makers)"}]}}, {"name": "arg2", "type": "cached", "value": "makerTricks"}]},
+                            "text": {"selector": "formatString", "params": [{"name": "format", "type": "preset", "value": "Red: +($1) pt | Blue: +($2) pt → Score: Red ($3) - Blue ($4)"}, {"name": "arg1", "type": "cached", "value": "redHandPoints"}, {"name": "arg2", "type": "cached", "value": "blueHandPoints"}, {"name": "arg3", "type": "cached", "value": "redScore"}, {"name": "arg4", "type": "cached", "value": "blueScore"}]}
                         }
                     }
+                },
+                {
+                    "key": "removeWidget",
+                    "payload": {"preset": {"id": "GenericCardWidget"}}
                 }
             ]
         },
@@ -1315,13 +1381,8 @@
                 {
                     "key": "emptyAction",
                     "saveValueInCache": [
-                        {"name": "gameOver", "value": {"selector": "logicalOR", "params": [{"name": "arg1", "type": "computed", "value": {"selector": "greaterThanOrEqual", "params": [{"name": "arg1", "type": "cached", "value": "nsScore"}, {"name": "arg2", "type": "preset", "value": 10}]}}, {"name": "arg2", "type": "computed", "value": {"selector": "greaterThanOrEqual", "params": [{"name": "arg1", "type": "cached", "value": "ewScore"}, {"name": "arg2", "type": "preset", "value": 10}]}}]}}
+                        {"name": "gameOver", "value": {"selector": "logicalOR", "params": [{"name": "arg1", "type": "computed", "value": {"selector": "greaterThanOrEqual", "params": [{"name": "arg1", "type": "cached", "value": "redScore"}, {"name": "arg2", "type": "preset", "value": 10}]}}, {"name": "arg2", "type": "computed", "value": {"selector": "greaterThanOrEqual", "params": [{"name": "arg1", "type": "cached", "value": "blueScore"}, {"name": "arg2", "type": "preset", "value": 10}]}}]}}
                     ]
-                },
-                {
-                    "key": "removeWidget",
-                    "skipCondition": [{"selector": "getCachedValue", "params": [{"name": "name", "type": "preset", "value": "gameOver"}]}],
-                    "payload": {"preset": {"id": "GenericCardWidget"}}
                 },
                 {
                     "key": "createVote",
@@ -1342,8 +1403,8 @@
                             },
                             "question": "Keep playing? (First team to 10 points wins!)",
                             "allowRevoting": true,
-                            "backgroundColor": "#1a472a",
-                            "borderColor": "#d4af37"
+                            "backgroundColor": "#EDC6A0",
+                            "borderColor": "black"
                         },
                         "cached": {"actors": "host"},
                         "computed": {
@@ -1354,11 +1415,6 @@
                         {"name": "playAgain", "value": {"selector": "logicalNOT", "params": [{"name": "arg", "type": "computed", "value": {"selector": "isTargetGotMajority", "params": [{"name": "voteResult", "type": "cached", "value": "lastActionResult"}, {"name": "target", "type": "preset", "value": "I'M SO DONE"}]}}]}},
                         {"name": "reset", "value": {"selector": "isTargetGotMajority", "params": [{"name": "voteResult", "type": "cached", "value": "lastActionResult"}, {"name": "target", "type": "preset", "value": "Reset scores"}]}}
                     ]
-                },
-                {
-                    "key": "restoreWidget",
-                    "skipCondition": [{"selector": "getCachedValue", "params": [{"name": "name", "type": "preset", "value": "gameOver"}]}],
-                    "payload": {"preset": {"id": "GenericCardWidget"}}
                 },
                 {
                     "key": "emptyAction",
@@ -1390,8 +1446,8 @@
                 {
                     "key": "emptyAction",
                     "saveValueInCache": [
-                        {"name": "nsScore", "value": 0},
-                        {"name": "ewScore", "value": 0}
+                        {"name": "redScore", "value": 0},
+                        {"name": "blueScore", "value": 0}
                     ]
                 }
             ]
@@ -1399,6 +1455,19 @@
         {
             "name": "End round",
             "actions": [
+                {
+                    "key": "updateScore",
+                    "payload": {
+                        "computed": {
+                            "scores": {
+                                "selector": "createList",
+                                "params": [
+                                    {"name": "arg1", "type": "computed", "value": {"selector": "createDict", "params": [{"name": "keys", "type": "preset", "value": ["list", "score", "secondScore"]}, {"name": "values", "type": "computed", "value": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "players"}, {"name": "arg2", "type": "preset", "value": 0}, {"name": "arg3", "type": "preset", "value": true}]}}]}}
+                                ]
+                            }
+                        }
+                    }
+                },
                 {
                     "key": "recallCards",
                     "payload": {
@@ -1438,8 +1507,8 @@
             "payload": {
                 "preset": {
                     "image": "winner",
-                    "backgroundColor": "#1a472a",
-                    "borderColor": "#d4af37"
+                    "backgroundColor": "#EDC6A0",
+                    "borderColor": "black"
                 },
                 "cached": {"to": "players"},
                 "computed": {
@@ -1472,9 +1541,9 @@
             "params": [{"name": "ids", "type": "computed", "value": {
                 "selector": "ifElse",
                 "params": [
-                    {"name": "condition", "type": "computed", "value": {"selector": "greaterThanOrEqual", "params": [{"name": "arg1", "type": "cached", "value": "nsScore"}, {"name": "arg2", "type": "preset", "value": 10}]}},
-                    {"name": "thenValue", "type": "computed", "value": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "players.0"}, {"name": "arg2", "type": "cached", "value": "players.2"}]}},
-                    {"name": "elseValue", "type": "computed", "value": {"selector": "createList", "params": [{"name": "arg1", "type": "cached", "value": "players.1"}, {"name": "arg2", "type": "cached", "value": "players.3"}]}}
+                    {"name": "condition", "type": "computed", "value": {"selector": "greaterThanOrEqual", "params": [{"name": "arg1", "type": "cached", "value": "redScore"}, {"name": "arg2", "type": "preset", "value": 10}]}},
+                    {"name": "thenValue", "type": "cached", "value": "redTeam"},
+                    {"name": "elseValue", "type": "cached", "value": "blueTeam"}
                 ]
             }}]
         }

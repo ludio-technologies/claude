@@ -31,3 +31,9 @@ The Card Actions PDF uses the heading `createVideoBoxDecks` (capital B) but docu
 
 ### `getAllPlayers`
 `getAllPlayers` appeared in `caption_contraption.json` as an apparent alias for `allPlayers`. It is not in any documentation PDF and is a bug — it has been replaced with `allPlayers`.
+
+### `createDrawing` and `startClip`
+Both are in the validator (`validate_game_json.py`) but absent from the documentation PDFs. See **Section 8** of `Things to remember.md` for full usage patterns derived from `caption_contraption.json`.
+
+### `flipOverTopCard`
+In the validator (`validate_game_json.py`, line 300) and used in `rat_in_the_kitchen.json`. Not in the documentation PDFs. See **Section 3** of `Things to remember.md` for usage notes.

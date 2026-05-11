@@ -6,168 +6,192 @@
       "suit": "hearts",
       "rank": "9",
       "weight": 109,
-      "image": "https://deckofcardsapi.com/static/img/9H.png"
+      "image": "https://deckofcardsapi.com/static/img/9H.png",
+      "label": "Nine of Hearts"
     },
     {
       "name": "ten_of_hearts",
       "suit": "hearts",
       "rank": "10",
       "weight": 110,
-      "image": "https://deckofcardsapi.com/static/img/0H.png"
+      "image": "https://deckofcardsapi.com/static/img/0H.png",
+      "label": "Ten of Hearts"
     },
     {
       "name": "jack_of_hearts",
       "suit": "hearts",
       "rank": "J",
       "weight": 111,
-      "image": "https://deckofcardsapi.com/static/img/JH.png"
+      "image": "https://deckofcardsapi.com/static/img/JH.png",
+      "label": "Jack of Hearts"
     },
     {
       "name": "queen_of_hearts",
       "suit": "hearts",
       "rank": "Q",
       "weight": 112,
-      "image": "https://deckofcardsapi.com/static/img/QH.png"
+      "image": "https://deckofcardsapi.com/static/img/QH.png",
+      "label": "Queen of Hearts"
     },
     {
       "name": "king_of_hearts",
       "suit": "hearts",
       "rank": "K",
       "weight": 113,
-      "image": "https://deckofcardsapi.com/static/img/KH.png"
+      "image": "https://deckofcardsapi.com/static/img/KH.png",
+      "label": "King of Hearts"
     },
     {
       "name": "ace_of_hearts",
       "suit": "hearts",
       "rank": "A",
       "weight": 114,
-      "image": "https://deckofcardsapi.com/static/img/AH.png"
+      "image": "https://deckofcardsapi.com/static/img/AH.png",
+      "label": "Ace of Hearts"
     },
     {
       "name": "nine_of_diamonds",
       "suit": "diamonds",
       "rank": "9",
       "weight": 209,
-      "image": "https://deckofcardsapi.com/static/img/9D.png"
+      "image": "https://deckofcardsapi.com/static/img/9D.png",
+      "label": "Nine of Diamonds"
     },
     {
       "name": "ten_of_diamonds",
       "suit": "diamonds",
       "rank": "10",
       "weight": 210,
-      "image": "https://deckofcardsapi.com/static/img/0D.png"
+      "image": "https://deckofcardsapi.com/static/img/0D.png",
+      "label": "Ten of Diamonds"
     },
     {
       "name": "jack_of_diamonds",
       "suit": "diamonds",
       "rank": "J",
       "weight": 211,
-      "image": "https://deckofcardsapi.com/static/img/JD.png"
+      "image": "https://deckofcardsapi.com/static/img/JD.png",
+      "label": "Jack of Diamonds"
     },
     {
       "name": "queen_of_diamonds",
       "suit": "diamonds",
       "rank": "Q",
       "weight": 212,
-      "image": "https://deckofcardsapi.com/static/img/QD.png"
+      "image": "https://deckofcardsapi.com/static/img/QD.png",
+      "label": "Queen of Diamonds"
     },
     {
       "name": "king_of_diamonds",
       "suit": "diamonds",
       "rank": "K",
       "weight": 213,
-      "image": "https://deckofcardsapi.com/static/img/KD.png"
+      "image": "https://deckofcardsapi.com/static/img/KD.png",
+      "label": "King of Diamonds"
     },
     {
       "name": "ace_of_diamonds",
       "suit": "diamonds",
       "rank": "A",
       "weight": 214,
-      "image": "https://deckofcardsapi.com/static/img/AD.png"
+      "image": "https://deckofcardsapi.com/static/img/AD.png",
+      "label": "Ace of Diamonds"
     },
     {
       "name": "nine_of_clubs",
       "suit": "clubs",
       "rank": "9",
       "weight": 309,
-      "image": "https://deckofcardsapi.com/static/img/9C.png"
+      "image": "https://deckofcardsapi.com/static/img/9C.png",
+      "label": "Nine of Clubs"
     },
     {
       "name": "ten_of_clubs",
       "suit": "clubs",
       "rank": "10",
       "weight": 310,
-      "image": "https://deckofcardsapi.com/static/img/0C.png"
+      "image": "https://deckofcardsapi.com/static/img/0C.png",
+      "label": "Ten of Clubs"
     },
     {
       "name": "jack_of_clubs",
       "suit": "clubs",
       "rank": "J",
       "weight": 311,
-      "image": "https://deckofcardsapi.com/static/img/JC.png"
+      "image": "https://deckofcardsapi.com/static/img/JC.png",
+      "label": "Jack of Clubs"
     },
     {
       "name": "queen_of_clubs",
       "suit": "clubs",
       "rank": "Q",
       "weight": 312,
-      "image": "https://deckofcardsapi.com/static/img/QC.png"
+      "image": "https://deckofcardsapi.com/static/img/QC.png",
+      "label": "Queen of Clubs"
     },
     {
       "name": "king_of_clubs",
       "suit": "clubs",
       "rank": "K",
       "weight": 313,
-      "image": "https://deckofcardsapi.com/static/img/KC.png"
+      "image": "https://deckofcardsapi.com/static/img/KC.png",
+      "label": "King of Clubs"
     },
     {
       "name": "ace_of_clubs",
       "suit": "clubs",
       "rank": "A",
       "weight": 314,
-      "image": "https://deckofcardsapi.com/static/img/AC.png"
+      "image": "https://deckofcardsapi.com/static/img/AC.png",
+      "label": "Ace of Clubs"
     },
     {
       "name": "nine_of_spades",
       "suit": "spades",
       "rank": "9",
       "weight": 409,
-      "image": "https://deckofcardsapi.com/static/img/9S.png"
+      "image": "https://deckofcardsapi.com/static/img/9S.png",
+      "label": "Nine of Spades"
     },
     {
       "name": "ten_of_spades",
       "suit": "spades",
       "rank": "10",
       "weight": 410,
-      "image": "https://deckofcardsapi.com/static/img/0S.png"
+      "image": "https://deckofcardsapi.com/static/img/0S.png",
+      "label": "Ten of Spades"
     },
     {
       "name": "jack_of_spades",
       "suit": "spades",
       "rank": "J",
       "weight": 411,
-      "image": "https://deckofcardsapi.com/static/img/JS.png"
+      "image": "https://deckofcardsapi.com/static/img/JS.png",
+      "label": "Jack of Spades"
     },
     {
       "name": "queen_of_spades",
       "suit": "spades",
       "rank": "Q",
       "weight": 412,
-      "image": "https://deckofcardsapi.com/static/img/QS.png"
+      "image": "https://deckofcardsapi.com/static/img/QS.png",
+      "label": "Queen of Spades"
     },
     {
       "name": "king_of_spades",
       "suit": "spades",
       "rank": "K",
       "weight": 413,
-      "image": "https://deckofcardsapi.com/static/img/KS.png"
+      "image": "https://deckofcardsapi.com/static/img/KS.png",
+      "label": "King of Spades"
     },
     {
       "name": "ace_of_spades",
       "suit": "spades",
       "rank": "A",
       "weight": 414,
-      "image": "https://deckofcardsapi.com/static/img/AS.png"
+      "image": "https://deckofcardsapi.com/static/img/AS.png",
+      "label": "Ace of Spades"
     }
   ],
   "sets": {

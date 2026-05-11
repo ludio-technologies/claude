@@ -43,7 +43,7 @@
                 "id": "all",
                 "name": "All",
                 "description": "All teams",
-                "color": "",
+                "color": "#297a4d",
                 "roles": [
                     "player"
                 ]
@@ -138,10 +138,10 @@
                 "url": "https://res.cloudinary.com/liars-club/image/upload/images/pitfall/pitfall_blue.png"
             },
             "wallpaper": {
-                "url": "https://res.cloudinary.com/liars-club/image/upload/v1777870867/enigma/wallpaper.jpg"
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/enigma/wallpaper.jpg"
             },
             "banner": {
-                "url": "https://res.cloudinary.com/liars-club/image/upload/v1777870867/enigma/banner.jpg"
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/enigma/banner.jpg"
             },
             "cardback": {
                 "url": "https://res.cloudinary.com/liars-club/image/upload/images/spycraft/cardback.png"
@@ -415,6 +415,94 @@
                             }
                         ]
                     }
+                }
+            }
+        },
+        {
+            "key": "setLabelInspectors",
+            "payload": {
+                "preset": {
+                    "deck": "red_1"
+                },
+                "cached": {
+                    "labelInspectors": "redTeam"
+                }
+            }
+        },
+        {
+            "key": "setLabelInspectors",
+            "payload": {
+                "preset": {
+                    "deck": "red_2"
+                },
+                "cached": {
+                    "labelInspectors": "redTeam"
+                }
+            }
+        },
+        {
+            "key": "setLabelInspectors",
+            "payload": {
+                "preset": {
+                    "deck": "red_3"
+                },
+                "cached": {
+                    "labelInspectors": "redTeam"
+                }
+            }
+        },
+        {
+            "key": "setLabelInspectors",
+            "payload": {
+                "preset": {
+                    "deck": "red_4"
+                },
+                "cached": {
+                    "labelInspectors": "redTeam"
+                }
+            }
+        },
+        {
+            "key": "setLabelInspectors",
+            "payload": {
+                "preset": {
+                    "deck": "blue_1"
+                },
+                "cached": {
+                    "labelInspectors": "blueTeam"
+                }
+            }
+        },
+        {
+            "key": "setLabelInspectors",
+            "payload": {
+                "preset": {
+                    "deck": "blue_2"
+                },
+                "cached": {
+                    "labelInspectors": "blueTeam"
+                }
+            }
+        },
+        {
+            "key": "setLabelInspectors",
+            "payload": {
+                "preset": {
+                    "deck": "blue_3"
+                },
+                "cached": {
+                    "labelInspectors": "blueTeam"
+                }
+            }
+        },
+        {
+            "key": "setLabelInspectors",
+            "payload": {
+                "preset": {
+                    "deck": "blue_4"
+                },
+                "cached": {
+                    "labelInspectors": "blueTeam"
                 }
             }
         }
@@ -3536,7 +3624,7 @@
                             "deck": "red_clues",
                             "background": "#D83232",
                             "textColor": "white",
-                            "fontHeightPercentage": 7,
+                            "fontHeightPercentage": 6,
                             "facedown": false
                         },
                         "computed": {
@@ -4162,243 +4250,9 @@
                 },
                 {
                     "key": "destroyConversationGroups"
-                }
-            ]
-        },
-        {
-            "name": "GL-7a Result",
-            "skipCondition": [
-                {
-                    "selector": "equals",
-                    "params": [
-                        {
-                            "name": "arg1",
-                            "type": "cached",
-                            "value": "gameLoopIndex"
-                        },
-                        {
-                            "name": "arg2",
-                            "type": "preset",
-                            "value": 0
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "emptyAction",
-                    "saveValueInCache": [
-                        {
-                            "name": "blueInterceptionCorrect",
-                            "value": {
-                                "selector": "equals",
-                                "params": [
-                                    {
-                                        "name": "arg1",
-                                        "type": "computed",
-                                        "value": {
-                                            "selector": "listToString",
-                                            "params": [
-                                                {
-                                                    "name": "list",
-                                                    "type": "computed",
-                                                    "value": {
-                                                        "selector": "createList",
-                                                        "params": [
-                                                            {
-                                                                "name": "arg1",
-                                                                "type": "cached",
-                                                                "value": "big1"
-                                                            },
-                                                            {
-                                                                "name": "arg2",
-                                                                "type": "cached",
-                                                                "value": "big2"
-                                                            },
-                                                            {
-                                                                "name": "arg3",
-                                                                "type": "cached",
-                                                                "value": "big3"
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "name": "arg2",
-                                        "type": "computed",
-                                        "value": {
-                                            "selector": "listToString",
-                                            "params": [
-                                                {
-                                                    "name": "list",
-                                                    "type": "computed",
-                                                    "value": {
-                                                        "selector": "createList",
-                                                        "params": [
-                                                            {
-                                                                "name": "arg1",
-                                                                "type": "cached",
-                                                                "value": "redCodeDigit1"
-                                                            },
-                                                            {
-                                                                "name": "arg2",
-                                                                "type": "cached",
-                                                                "value": "redCodeDigit2"
-                                                            },
-                                                            {
-                                                                "name": "arg3",
-                                                                "type": "cached",
-                                                                "value": "redCodeDigit3"
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "key": "createNotification",
-                    "payload": {
-                        "preset": {
-                            "duration": 6,
-                            "backgroundColor": "#4EC1D0",
-                            "borderColor": "white",
-                            "textColor": "white"
-                        },
-                        "computed": {
-                            "sounds.list": {
-                                "selector": "ifElse",
-                                "params": [
-                                    {
-                                        "name": "condition",
-                                        "type": "cached",
-                                        "value": "blueInterceptionCorrect"
-                                    },
-                                    {
-                                        "name": "thenValue",
-                                        "type": "preset",
-                                        "value": [
-                                            "soundboard.success"
-                                        ]
-                                    },
-                                    {
-                                        "name": "elseValue",
-                                        "type": "preset",
-                                        "value": [
-                                            "soundboard.failure"
-                                        ]
-                                    }
-                                ]
-                            },
-                            "image": {
-                                "selector": "ifElse",
-                                "params": [
-                                    {
-                                        "name": "condition",
-                                        "type": "cached",
-                                        "value": "blueInterceptionCorrect"
-                                    },
-                                    {
-                                        "name": "thenValue",
-                                        "type": "preset",
-                                        "value": "accepted"
-                                    },
-                                    {
-                                        "name": "elseValue",
-                                        "type": "preset",
-                                        "value": "rejected"
-                                    }
-                                ]
-                            },
-                            "header": {
-                                "selector": "ifElse",
-                                "params": [
-                                    {
-                                        "name": "condition",
-                                        "type": "cached",
-                                        "value": "blueInterceptionCorrect"
-                                    },
-                                    {
-                                        "name": "thenValue",
-                                        "type": "preset",
-                                        "value": "Blue broke Red's code!"
-                                    },
-                                    {
-                                        "name": "elseValue",
-                                        "type": "preset",
-                                        "value": "Blue failed to break Red's code!"
-                                    }
-                                ]
-                            }
-                        },
-                        "cached": {
-                            "to": "players",
-                            "playList.0": "players"
-                        }
-                    }
                 },
                 {
                     "key": "removeAllHighlightDecks"
-                }
-            ]
-        },
-        {
-            "name": "GL-8c Blue Breaks Red",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "blueInterceptionCorrect"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "emptyAction",
-                    "saveValueInCache": [
-                        {
-                            "name": "blueBreaks",
-                            "value": {
-                                "selector": "add",
-                                "params": [
-                                    {
-                                        "name": "arg1",
-                                        "type": "cached",
-                                        "value": "blueBreaks"
-                                    },
-                                    {
-                                        "name": "arg2",
-                                        "type": "preset",
-                                        "value": 1
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "key": "animateBox",
-                    "payload": {
-                        "preset": {
-                            "animation": "break",
-                            "delay": 2
-                        },
-                        "cached": {
-                            "userIds": "blueTeam"
-                        }
-                    }
                 }
             ]
         },
@@ -5240,6 +5094,240 @@
             ]
         },
         {
+            "name": "GL-7a Result",
+            "skipCondition": [
+                {
+                    "selector": "equals",
+                    "params": [
+                        {
+                            "name": "arg1",
+                            "type": "cached",
+                            "value": "gameLoopIndex"
+                        },
+                        {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 0
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "blueInterceptionCorrect",
+                            "value": {
+                                "selector": "equals",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listToString",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "createList",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "cached",
+                                                                "value": "big1"
+                                                            },
+                                                            {
+                                                                "name": "arg2",
+                                                                "type": "cached",
+                                                                "value": "big2"
+                                                            },
+                                                            {
+                                                                "name": "arg3",
+                                                                "type": "cached",
+                                                                "value": "big3"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listToString",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "createList",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "cached",
+                                                                "value": "redCodeDigit1"
+                                                            },
+                                                            {
+                                                                "name": "arg2",
+                                                                "type": "cached",
+                                                                "value": "redCodeDigit2"
+                                                            },
+                                                            {
+                                                                "name": "arg3",
+                                                                "type": "cached",
+                                                                "value": "redCodeDigit3"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "duration": 6,
+                            "backgroundColor": "#4EC1D0",
+                            "borderColor": "white",
+                            "textColor": "white"
+                        },
+                        "computed": {
+                            "sounds.list": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "blueInterceptionCorrect"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "preset",
+                                        "value": [
+                                            "soundboard.success"
+                                        ]
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "preset",
+                                        "value": [
+                                            "soundboard.failure"
+                                        ]
+                                    }
+                                ]
+                            },
+                            "image": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "blueInterceptionCorrect"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "preset",
+                                        "value": "accepted"
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "preset",
+                                        "value": "rejected"
+                                    }
+                                ]
+                            },
+                            "header": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "blueInterceptionCorrect"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "preset",
+                                        "value": "Blue broke Red's code!"
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "preset",
+                                        "value": "Blue failed to break Red's code!"
+                                    }
+                                ]
+                            }
+                        },
+                        "cached": {
+                            "to": "players",
+                            "playList.0": "players"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GL-8c Blue Breaks Red",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "blueInterceptionCorrect"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "blueBreaks",
+                            "value": {
+                                "selector": "add",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "blueBreaks"
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "preset",
+                                        "value": 1
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "animateBox",
+                    "payload": {
+                        "preset": {
+                            "animation": "break",
+                            "delay": 2
+                        },
+                        "cached": {
+                            "userIds": "blueTeam"
+                        }
+                    }
+                }
+            ]
+        },
+        {
             "name": "GL-3b Notify Blue Encryptor",
             "actions": [
                 {
@@ -5861,7 +5949,7 @@
                             "deck": "blue_clues",
                             "background": "#4EC1D0",
                             "textColor": "white",
-                            "fontHeightPercentage": 7,
+                            "fontHeightPercentage": 6,
                             "facedown": false
                         },
                         "computed": {
@@ -6487,243 +6575,9 @@
                 },
                 {
                     "key": "destroyConversationGroups"
-                }
-            ]
-        },
-        {
-            "name": "GL-7b Result",
-            "skipCondition": [
-                {
-                    "selector": "equals",
-                    "params": [
-                        {
-                            "name": "arg1",
-                            "type": "cached",
-                            "value": "gameLoopIndex"
-                        },
-                        {
-                            "name": "arg2",
-                            "type": "preset",
-                            "value": 0
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "emptyAction",
-                    "saveValueInCache": [
-                        {
-                            "name": "redInterceptionCorrect",
-                            "value": {
-                                "selector": "equals",
-                                "params": [
-                                    {
-                                        "name": "arg1",
-                                        "type": "computed",
-                                        "value": {
-                                            "selector": "listToString",
-                                            "params": [
-                                                {
-                                                    "name": "list",
-                                                    "type": "computed",
-                                                    "value": {
-                                                        "selector": "createList",
-                                                        "params": [
-                                                            {
-                                                                "name": "arg1",
-                                                                "type": "cached",
-                                                                "value": "rig1"
-                                                            },
-                                                            {
-                                                                "name": "arg2",
-                                                                "type": "cached",
-                                                                "value": "rig2"
-                                                            },
-                                                            {
-                                                                "name": "arg3",
-                                                                "type": "cached",
-                                                                "value": "rig3"
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "name": "arg2",
-                                        "type": "computed",
-                                        "value": {
-                                            "selector": "listToString",
-                                            "params": [
-                                                {
-                                                    "name": "list",
-                                                    "type": "computed",
-                                                    "value": {
-                                                        "selector": "createList",
-                                                        "params": [
-                                                            {
-                                                                "name": "arg1",
-                                                                "type": "cached",
-                                                                "value": "blueCodeDigit1"
-                                                            },
-                                                            {
-                                                                "name": "arg2",
-                                                                "type": "cached",
-                                                                "value": "blueCodeDigit2"
-                                                            },
-                                                            {
-                                                                "name": "arg3",
-                                                                "type": "cached",
-                                                                "value": "blueCodeDigit3"
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "key": "createNotification",
-                    "payload": {
-                        "preset": {
-                            "duration": 6,
-                            "backgroundColor": "#D83232",
-                            "borderColor": "white",
-                            "textColor": "white"
-                        },
-                        "computed": {
-                            "sounds.list": {
-                                "selector": "ifElse",
-                                "params": [
-                                    {
-                                        "name": "condition",
-                                        "type": "cached",
-                                        "value": "blueInterceptionCorrect"
-                                    },
-                                    {
-                                        "name": "thenValue",
-                                        "type": "preset",
-                                        "value": [
-                                            "soundboard.success"
-                                        ]
-                                    },
-                                    {
-                                        "name": "elseValue",
-                                        "type": "preset",
-                                        "value": [
-                                            "soundboard.failure"
-                                        ]
-                                    }
-                                ]
-                            },
-                            "image": {
-                                "selector": "ifElse",
-                                "params": [
-                                    {
-                                        "name": "condition",
-                                        "type": "cached",
-                                        "value": "redInterceptionCorrect"
-                                    },
-                                    {
-                                        "name": "thenValue",
-                                        "type": "preset",
-                                        "value": "accepted"
-                                    },
-                                    {
-                                        "name": "elseValue",
-                                        "type": "preset",
-                                        "value": "rejected"
-                                    }
-                                ]
-                            },
-                            "header": {
-                                "selector": "ifElse",
-                                "params": [
-                                    {
-                                        "name": "condition",
-                                        "type": "cached",
-                                        "value": "redInterceptionCorrect"
-                                    },
-                                    {
-                                        "name": "thenValue",
-                                        "type": "preset",
-                                        "value": "Red broke Blue's code!"
-                                    },
-                                    {
-                                        "name": "elseValue",
-                                        "type": "preset",
-                                        "value": "Red failed to break Blue's code!"
-                                    }
-                                ]
-                            }
-                        },
-                        "cached": {
-                            "to": "players",
-                            "playList.0": "players"
-                        }
-                    }
                 },
                 {
                     "key": "removeAllHighlightDecks"
-                }
-            ]
-        },
-        {
-            "name": "GL-8d Red Breaks Blue",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "redInterceptionCorrect"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "emptyAction",
-                    "saveValueInCache": [
-                        {
-                            "name": "redBreaks",
-                            "value": {
-                                "selector": "add",
-                                "params": [
-                                    {
-                                        "name": "arg1",
-                                        "type": "cached",
-                                        "value": "redBreaks"
-                                    },
-                                    {
-                                        "name": "arg2",
-                                        "type": "preset",
-                                        "value": 1
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                {
-                    "key": "animateBox",
-                    "payload": {
-                        "preset": {
-                            "animation": "break",
-                            "delay": 2
-                        },
-                        "cached": {
-                            "userIds": "redTeam"
-                        }
-                    }
                 }
             ]
         },
@@ -7550,6 +7404,240 @@
             ]
         },
         {
+            "name": "GL-7b Result",
+            "skipCondition": [
+                {
+                    "selector": "equals",
+                    "params": [
+                        {
+                            "name": "arg1",
+                            "type": "cached",
+                            "value": "gameLoopIndex"
+                        },
+                        {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 0
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "redInterceptionCorrect",
+                            "value": {
+                                "selector": "equals",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listToString",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "createList",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "cached",
+                                                                "value": "rig1"
+                                                            },
+                                                            {
+                                                                "name": "arg2",
+                                                                "type": "cached",
+                                                                "value": "rig2"
+                                                            },
+                                                            {
+                                                                "name": "arg3",
+                                                                "type": "cached",
+                                                                "value": "rig3"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "listToString",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "createList",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "cached",
+                                                                "value": "blueCodeDigit1"
+                                                            },
+                                                            {
+                                                                "name": "arg2",
+                                                                "type": "cached",
+                                                                "value": "blueCodeDigit2"
+                                                            },
+                                                            {
+                                                                "name": "arg3",
+                                                                "type": "cached",
+                                                                "value": "blueCodeDigit3"
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "duration": 6,
+                            "backgroundColor": "#D83232",
+                            "borderColor": "white",
+                            "textColor": "white"
+                        },
+                        "computed": {
+                            "sounds.list": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "redInterceptionCorrect"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "preset",
+                                        "value": [
+                                            "soundboard.success"
+                                        ]
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "preset",
+                                        "value": [
+                                            "soundboard.failure"
+                                        ]
+                                    }
+                                ]
+                            },
+                            "image": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "redInterceptionCorrect"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "preset",
+                                        "value": "accepted"
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "preset",
+                                        "value": "rejected"
+                                    }
+                                ]
+                            },
+                            "header": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "redInterceptionCorrect"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "preset",
+                                        "value": "Red broke Blue's code!"
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "preset",
+                                        "value": "Red failed to break Blue's code!"
+                                    }
+                                ]
+                            }
+                        },
+                        "cached": {
+                            "to": "players",
+                            "playList.0": "players"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "GL-8d Red Breaks Blue",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "redInterceptionCorrect"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "redBreaks",
+                            "value": {
+                                "selector": "add",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "redBreaks"
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "preset",
+                                        "value": 1
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "animateBox",
+                    "payload": {
+                        "preset": {
+                            "animation": "break",
+                            "delay": 2
+                        },
+                        "cached": {
+                            "userIds": "redTeam"
+                        }
+                    }
+                }
+            ]
+        },
+        {
             "name": "GL-9 Round End",
             "actions": [
                 {
@@ -7791,7 +7879,7 @@
                                                                                                 {
                                                                                                     "name": "arg2",
                                                                                                     "type": "preset",
-                                                                                                    "value": 8
+                                                                                                    "value": 4
                                                                                                 }
                                                                                             ]
                                                                                         }
@@ -7819,7 +7907,7 @@
                         "preset": {
                             "background": "#D83232",
                             "textColor": "white",
-                            "fontHeightPercentage": 13,
+                            "fontHeightPercentage": 10,
                             "facedown": false
                         },
                         "cached": {
@@ -7850,7 +7938,7 @@
                         "preset": {
                             "background": "#D83232",
                             "textColor": "white",
-                            "fontHeightPercentage": 13,
+                            "fontHeightPercentage": 10,
                             "facedown": false
                         },
                         "cached": {
@@ -7881,7 +7969,7 @@
                         "preset": {
                             "background": "#D83232",
                             "textColor": "white",
-                            "fontHeightPercentage": 13,
+                            "fontHeightPercentage": 10,
                             "facedown": false
                         },
                         "cached": {
@@ -7912,7 +8000,7 @@
                         "preset": {
                             "background": "#4EC1D0",
                             "textColor": "white",
-                            "fontHeightPercentage": 13,
+                            "fontHeightPercentage": 10,
                             "facedown": false
                         },
                         "cached": {
@@ -7943,7 +8031,7 @@
                         "preset": {
                             "background": "#4EC1D0",
                             "textColor": "white",
-                            "fontHeightPercentage": 13,
+                            "fontHeightPercentage": 10,
                             "facedown": false
                         },
                         "cached": {
@@ -7974,7 +8062,7 @@
                         "preset": {
                             "background": "#4EC1D0",
                             "textColor": "white",
-                            "fontHeightPercentage": 13,
+                            "fontHeightPercentage": 10,
                             "facedown": false
                         },
                         "cached": {
