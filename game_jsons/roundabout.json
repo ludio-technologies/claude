@@ -347,6 +347,15 @@
             }
         },
         {
+            "key": "createCustomDeck",
+            "payload": {
+                "preset": {
+                    "name": "discard_summary",
+                    "public": false
+                }
+            }
+        },
+        {
             "key": "createDeck",
             "payload": {
                 "preset": {
@@ -1574,7 +1583,7 @@
                     "payload": {
                         "preset": {
                             "type": "deck",
-                            "to": "discard"
+                            "to": "discard_summary"
                         },
                         "computed": {
                             "from": {
@@ -2640,6 +2649,29 @@
                 }
             ]
         },
+        {
+            "name": "Init Trick Leader",
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "trickLeader",
+                            "value": {
+                                "selector": "getCachedValue",
+                                "params": [
+                                    {
+                                        "name": "name",
+                                        "type": "preset",
+                                        "value": "leader"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
         [
             {
                 "name": "Trick Start",
@@ -2647,19 +2679,6 @@
                     {
                         "key": "emptyAction",
                         "saveValueInCache": [
-                            {
-                                "name": "trickLeader",
-                                "value": {
-                                    "selector": "getCachedValue",
-                                    "params": [
-                                        {
-                                            "name": "name",
-                                            "type": "preset",
-                                            "value": "leader"
-                                        }
-                                    ]
-                                }
-                            },
                             {
                                 "name": "trickPlayers",
                                 "value": []
@@ -4815,7 +4834,7 @@
                         "key": "emptyAction",
                         "saveValueInCache": [
                             {
-                                "name": "leader",
+                                "name": "trickLeader",
                                 "value": {
                                     "selector": "getCachedValue",
                                     "params": [
@@ -5582,7 +5601,7 @@
                         "payload": {
                             "preset": {
                                 "type": "deck",
-                                "to": "discard"
+                                "to": "discard_summary"
                             },
                             "computed": {
                                 "from": {
@@ -7201,7 +7220,7 @@
             "payload": {
                 "preset": {
                     "type": "deck",
-                    "to": "discard"
+                    "to": "discard_summary"
                 },
                 "computed": {
                     "from": {

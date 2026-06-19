@@ -293,7 +293,7 @@
                 "url": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia.png"
             },
             "banner": {
-                "url": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/ankit_plant_fun.jpg"
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/trivia_nights/zee.png"
             },
             "casino_background": {
                 "url": "https://res.cloudinary.com/liars-club/image/upload/bluury_g2d8fc.jpg"
@@ -819,7 +819,7 @@
             "key": "createNotification",
             "payload": {
                 "preset": {
-                    "header": "Welcome to Ankit's Trivia Night!",
+                    "header": "Welcome to Zee's Trivia Night!",
                     "image": "banner",
                     "duration": 8,
                     "backgroundColor": "#ddf0c7",
@@ -934,7 +934,7 @@
                             {
                                 "name": "arg2",
                                 "type": "preset",
-                                "value": "scandals"
+                                "value": "zoolander"
                             }
                         ]
                     }
@@ -1063,11 +1063,11 @@
                 {
                     "name": "categoryMapping",
                     "value": {
-                        "Aerial shots": "round1Questions",
-                        "Which came first?": "round2Questions",
-                        "Tip of the iceberg": "round3Questions",
-                        "Here comes the sun": "round4Questions",
-                        "Masterpiece details": "round5Questions"
+                        "Talk Diner to Me": "round1Questions",
+                        "Sketchy at best": "round2Questions",
+                        "I have 41 popsicles and 27 highlighters": "round3Questions",
+                        "Wordle answers": "round4Questions",
+                        "Wildcard": "round5Questions"
                     }
                 },
                 {
@@ -1138,57 +1138,37 @@
                     }
                 },
                 {
-                    "name": "round1Questions",
+                    "name": "round5Questions",
                     "value": [
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "Eiffel Tower (Paris)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/eiffel.jpg"
+                            "q": "Which country has 60% of the Amazon Rainforest?"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "Pyramids of Giza (Egypt)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/giza.jpg"
+                            "q": "According to Lizzo in her song ‘Truth Hurts’ which NFL team does her new man play for?"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "Sydney Opera House (Australia)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/opera.jpg"
+                            "q": "How many bones are in the human body? (+-4)"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "The Colosseum (Rome)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/colosseum.jpg"
+                            "q": "What movie won Best Picture at the 2024 Oscars?"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "Taj Mahal (Agra, India)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/taj.png"
+                            "q": "On Jeopardy, who holds the record for the most consecutive wins?"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "The Pentagon (Washington, D.C.)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/pentagon.jpg"
+                            "q": "In Chappell Roan’s hit ‘Pink Pony Club’ what state does she refer to as her home?"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "St. Peter's Square (Vatican City)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/stpeters.jpg"
+                            "q": "If someone from Gen Z called something ‘buns’ what does that mean?"
                         },
                         {
-                            "q": "What famous landmark sits at the center of this 12-avenue star?",
-                            "answer": "Arc de Triomphe (Paris)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/arc.jpg"
+                            "q": "What is Rihanna’s real first name?"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "The Forbidden City (Beijing)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/forbidden.jpg"
+                            "q": "What is the only U.S. state with a one-syllable name?"
                         },
                         {
-                            "q": "What ancient monument is this a (1928) aerial view of?",
-                            "answer": "Stonehenge (England)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/stonehenge.jpg"
+                            "q": "A pizza is cut into 12 slices. You eat 1/3 and your friend eats 1/4 (of the original 12). How many slices are left?"
                         }
                     ]
                 },
@@ -1196,44 +1176,44 @@
                     "name": "round2Questions",
                     "value": [
                         {
-                            "q": "Sharks or trees?",
-                            "answer": "Sharks (450mya vs. 385mya)"
+                            "q": "Name the movie.",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_114/Q1.Stetchy.jpg"
                         },
                         {
-                            "q": "Stegosaurus or Tyrannosaurus rex?",
-                            "answer": "Stegosaurus (150mya vs. 68mya)"
+                            "q": "Name the movie.",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_114/Q2.Stetchy.jpg"
                         },
                         {
-                            "q": "The Great Pyramid of Giza or the last woolly mammoths dying out?",
-                            "answer": "The Great Pyramid (2560BCE vs. 1650BCE)"
+                            "q": "Name the movie.",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_114/Q3.Stetchy.jpg"
                         },
                         {
-                            "q": "The University of Oxford or the Aztec capital Tenochtitlan?",
-                            "answer": "Oxford (1096 vs. 1325)"
+                            "q": "Name the movie.",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_114/Q4.Stetchy.jpg"
                         },
                         {
-                            "q": "The fax machine or the American Civil War?",
-                            "answer": "Fax machine (1843 vs. 1861)"
+                            "q": "Name the movie.",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_114/Q5.Stetchy.jpg"
                         },
                         {
-                            "q": "Nintendo or the Jack the Ripper murders?",
-                            "answer": "Jack the Ripper (1888 vs. 1889)"
+                            "q": "Name the movie.",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_114/Q6.Stetchy.jpg"
                         },
                         {
-                            "q": "Harvard University or calculus?",
-                            "answer": "Harvard (1636 vs. 1660s)"
+                            "q": "Name the movie.",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_114/Q7.Stetchy.jpg"
                         },
                         {
-                            "q": "The Eiffel Tower or the first Ferris wheel?",
-                            "answer": "Eiffel Tower (1889 vs. 1893)"
+                            "q": "Name the movie.",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_114/Q8.Stetchy.jpg"
                         },
                         {
-                            "q": "The fall of the Roman Empire or the completion of Stonehenge?",
-                            "answer": "Stonehenge (2500BCE vs. 476BCE)"
+                            "q": "Name the movie.",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_114/Q9.Stetchy.jpg"
                         },
                         {
-                            "q": "The first email or the Rubik's Cube?",
-                            "answer": "First email (1971 vs. 1974)"
+                            "q": "Name the movie.",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_114/Q10.Stetchy.jpg"
                         }
                     ]
                 },
@@ -1241,44 +1221,34 @@
                     "name": "round3Questions",
                     "value": [
                         {
-                            "q": "Invented in 1886 by an Atlanta pharmacist as a 'brain tonic,' its exact recipe is one of the most closely guarded trade secrets in the world.",
-                            "answer": "Coca-Cola"
+                            "q": "You bought 5 dozen donuts. You accidentally sit on 8 donuts, and then eat half of what’s left. How many donuts do you have left?"
                         },
                         {
-                            "q": "Charles Dickens wrote it in just six weeks in 1843 to clear his debts, self-publishing it with gilt edges and hand-colored illustrations; despite selling out almost instantly, the lavish printing left him with little profit.",
-                            "answer": "A Christmas Carol"
+                            "q": "You have 60 highlighters. 20% dry out, and then you lose 6. How many working highlighters do you have left?"
                         },
                         {
-                            "q": "Founded in a California garage in 1976, its very first product was a hand-built circuit board priced at $666.66.",
-                            "answer": "Apple"
+                            "q": "You have 48 cheese curds to snack on during trivia. You eat 1/4 during the first round, then eat 1/3 of during the second round and save the rest for later. How many cheese curds do you have to snack on later?"
                         },
                         {
-                            "q": "An 1886 gift from France, its formal name is 'Liberty Enlightening the World,' and for years it doubled as a working lighthouse.",
-                            "answer": "The Statue of Liberty"
+                            "q": "You bring 18 deviled eggs to a party. Someone eats 2/3 of them before guests arrive. Of the remaining eggs, you eat half out of spite. How many are left?"
                         },
                         {
-                            "q": "The priciest film ever made at the time, its director personally dove about 3,800 m to the real wreck to shoot footage for it.",
-                            "answer": "Titanic (1997)"
+                            "q": "You own 3 cats. Each cat knocks 4 glasses off the table. You replace every broken glass with 2 new ones. How many glasses do you end up with?"
                         },
                         {
-                            "q": "Originally purple and white, the now-familiar orange variety was reportedly cultivated by 17th-century Dutch growers.",
-                            "answer": "Carrots"
+                            "q": "You have 30 minutes to get ready for trivia. You spend 10 minutes scrolling, 8 minutes getting dressed, and the rest brushing your teeth. How many minutes do you brush your teeth?"
                         },
                         {
-                            "q": "Patented in the 1930s, it was adapted from an earlier game, 'The Landlord's Game,' created to demonstrate the unfairness of concentrated land ownership.",
-                            "answer": "Monopoly"
+                            "q": "You have 16 trivia questions left to write. You finish 1/4 of them, procrastinate for 10 minutes, then finish 1/2 of the remaining. How many questions are still unwritten?"
                         },
                         {
-                            "q": "An 18-year-old wrote it after a ghost-story contest during a stormy 1816 summer at Lake Geneva.",
-                            "answer": "Frankenstein"
+                            "q": "You take 3 Ubers in one night. Each ride costs $14. You tip $3 per ride. How much did you spend total on Ubers?"
                         },
                         {
-                            "q": "Its working title was 'First Impressions,' and it opens on a single man in possession of a good fortune being in want of a wife.",
-                            "answer": "Pride and Prejudice"
+                            "q": "You have 27 alarms set on your phone. You turn off 14, and set 4 new alarms. How many alarms are set now?"
                         },
                         {
-                            "q": "Atomic number 79, its symbol comes from the Latin 'aurum'; all of it ever mined would fit in about four Olympic swimming pools.",
-                            "answer": "Gold"
+                            "q": "You start a show with 5 seasons of 10 episodes each. You watch 18 episodes, then rewatch 2 by accident. How many episodes have you NOT watched yet?"
                         }
                     ]
                 },
@@ -1286,99 +1256,69 @@
                     "name": "round4Questions",
                     "value": [
                         {
-                            "q": "About how long does sunlight take to reach Earth? +1 minute",
-                            "answer": "8 minutes"
+                            "q": "What type of bird lends its name to the term for a group called a \"gaggle\"?"
                         },
                         {
-                            "q": "What process/reaction powers the Sun?",
-                            "answer": "Nuclear fusion (H -> He)"
+                            "q": "What bread is cooked in water before going into the oven?"
                         },
                         {
-                            "q": "What's the Sun's faint outer atmosphere, visible only during a total eclipse, called?",
-                            "answer": "The corona"
+                            "q": "What dish gets its name from a West African word for okra?"
                         },
                         {
-                            "q": "The Egyptian sun god Ra is most often depicted as a man with the head of which bird, crowned by a sun disk?",
-                            "answer": "Falcon (hawk)"
+                            "q": "Pawnee and Eagleton, Batman and Joker, Obi-Wan Kenobi and Anakin Skywalker.. They would all consider the other their… "
                         },
                         {
-                            "q": "Icarus flew too close to the Sun on wax-and-feather wings. Who was his father - the master craftsman who built the wings and also designed the Labyrinth?",
-                            "answer": "Daedalus"
+                            "q": "What is the name of the curved outer rim of the human ear?"
                         },
                         {
-                            "q": "In Andy Weir's novel Project Hail Mary, adapted into the 2026 film with Ryan Gosling, what microscopic organism is feeding on the Sun's energy and dimming stars across the galaxy?",
-                            "answer": "Astrophage"
+                            "q": "In X-Men, which mutant can absorb powers and memories through touch?"
                         },
                         {
-                            "q": "In Danny Boyle's 2007 film Sunshine, what is the crew's mission aboard the ship Icarus II?",
-                            "answer": "Reignite the dying sun (stellar bomb)"
+                            "q": "What vocal range is between alto and baritone?"
                         },
                         {
-                            "q": "What color is the Sun actually, seen from space?",
-                            "answer": "White"
+                            "q": "What is the first name of a rapper and most of the name of a famous dog?"
                         },
                         {
-                            "q": "In ~5 billion years, what kind of star will the Sun swell into?",
-                            "answer": "Red giant"
+                            "q": "What part of the eye changes size to regulate how much light enters?"
                         },
                         {
-                            "q": "What are the dark, cooler patches on the Sun's surface called?",
-                            "answer": "Sunspots"
+                            "q": "Earlier this year, Timothée Chalamet sparked controversy over saying ‘no one cares about ____ and ballet anymore’. What art form was he talking about? (fill in the blank)"
                         }
                     ]
                 },
                 {
-                    "name": "round5Questions",
+                    "name": "round1Questions",
                     "value": [
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "The Starry Night (Van Gogh)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/starry.jpg"
+                            "q": "There are 4 main things/ingredients that make up an eggs benedict - name all 4 of them. (including how the egg is prepared)"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "Mona Lisa (da Vinci)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/mona.jpg"
+                            "q": "What breakfast food is traditionally served with lox?"
                         },
                         {
-                            "q": "Which famous artwork is this a detail of?",
-                            "answer": "The Creation of Adam (Michelangelo)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/adam.jpg"
+                            "q": "What is the other term for a bunch of bananas (bananas grouped together on one stem)?"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "The Scream (Munch)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/scream.jpg"
+                            "q": "What is the main grain used to make grits?"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "Girl with a Pearl Earring (Vermeer)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/pearl.jpg"
+                            "q": "What year did Frosted Flakes launch as a Kellogg's cereal? (+- 6 years)"
                         },
                         {
-                            "q": "Which famous artwork is this a detail of?",
-                            "answer": "The Great Wave off Kanagawa (Hokusai)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/wave.jpg"
+                            "q": "If someone ordered “Idaho cakes” at a diner - what is being ordered?"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "The Birth of Venus (Botticelli)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/venus.jpg"
+                            "q": "If someone ordered “blonde with sand” at a diner - what is being ordered?"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "The Last Supper (da Vinci)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/supper.jpg"
+                            "q": "If someone ordered “cowboy with spurs” at a diner - what  is being ordered?"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "The Kiss (Klimt)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/kiss.jpg"
+                            "q": "If someone ordered “checkerboard” at a diner - what is being ordered?"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "Water Lilies (Monet)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/lilies.jpg"
+                            "q": "Per the Guinness Book of World Records, how big (in ft) is the world's largest pancake? (+- 5 ft)"
                         }
                     ]
                 },
@@ -3276,210 +3216,6 @@
                                         }
                                     ]
                                 }
-                            },
-                            {
-                                "name": "currentOptions",
-                                "value": {
-                                    "selector": "getCachedObjectValue",
-                                    "params": [
-                                        {
-                                            "name": "objectName",
-                                            "type": "preset",
-                                            "value": "currentItem"
-                                        },
-                                        {
-                                            "name": "value",
-                                            "type": "preset",
-                                            "value": "m"
-                                        },
-                                        {
-                                            "name": "defaultValue",
-                                            "type": "preset",
-                                            "value": []
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "name": "currentAudio",
-                                "value": {
-                                    "selector": "getCachedObjectValue",
-                                    "params": [
-                                        {
-                                            "name": "objectName",
-                                            "type": "preset",
-                                            "value": "currentItem"
-                                        },
-                                        {
-                                            "name": "value",
-                                            "type": "preset",
-                                            "value": "a"
-                                        },
-                                        {
-                                            "name": "defaultValue",
-                                            "type": "preset",
-                                            "value": "soundboard.reminder"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "name": "hasOptions",
-                                "value": {
-                                    "selector": "greaterThan",
-                                    "params": [
-                                        {
-                                            "name": "arg1",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "listLength",
-                                                "params": [
-                                                    {
-                                                        "name": "list",
-                                                        "type": "cached",
-                                                        "value": "currentOptions"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "name": "arg2",
-                                            "type": "preset",
-                                            "value": 0
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "name": "optionAppearances",
-                                "value": {
-                                    "selector": "createDict",
-                                    "params": [
-                                        {
-                                            "name": "keys",
-                                            "type": "cached",
-                                            "value": "currentOptions"
-                                        },
-                                        {
-                                            "name": "values",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "sublist",
-                                                "params": [
-                                                    {
-                                                        "name": "list",
-                                                        "type": "preset",
-                                                        "value": [
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/one.svg",
-                                                                "backgroundColor": "#ebc3a5",
-                                                                "boxIconColor": "#ebc3a5",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/two.svg",
-                                                                "backgroundColor": "#d9d9d9",
-                                                                "boxIconColor": "#d9d9d9",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/three.svg",
-                                                                "backgroundColor": "#f9cb9c",
-                                                                "boxIconColor": "#f9cb9c",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/four.svg",
-                                                                "backgroundColor": "#b6d7a8",
-                                                                "boxIconColor": "#b6d7a8",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/five.svg",
-                                                                "backgroundColor": "#ffe599",
-                                                                "boxIconColor": "#ffe599",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/six.svg",
-                                                                "backgroundColor": "#ead1dc",
-                                                                "boxIconColor": "#ead1dc",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/seven.svg",
-                                                                "backgroundColor": "#fce5cd",
-                                                                "boxIconColor": "#fce5cd",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/eight.svg",
-                                                                "backgroundColor": "#d9d2e9",
-                                                                "boxIconColor": "#d9d2e9",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/nine.svg",
-                                                                "backgroundColor": "#d9ead3",
-                                                                "boxIconColor": "#d9ead3",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/ten.svg",
-                                                                "backgroundColor": "#cfe2f3",
-                                                                "boxIconColor": "#cfe2f3",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/paper_clip.svg",
-                                                                "backgroundColor": "#cfe2f3",
-                                                                "boxIconColor": "#cfe2f3",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/paper_clip.svg",
-                                                                "backgroundColor": "#cfe2f3",
-                                                                "boxIconColor": "#cfe2f3",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            }
-                                                        ]
-                                                    },
-                                                    {
-                                                        "name": "start",
-                                                        "type": "preset",
-                                                        "value": 0
-                                                    },
-                                                    {
-                                                        "name": "end",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "listLength",
-                                                            "params": [
-                                                                {
-                                                                    "name": "list",
-                                                                    "type": "cached",
-                                                                    "value": "currentOptions"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
                             }
                         ]
                     },
@@ -3500,11 +3236,11 @@
                             "preset": {
                                 "title": "Host reads the question",
                                 "type": "target_poll",
-                                "terminationCondition": "get_needed_votes",
-                                "neededVotes": 1,
+                                "terminationCondition": "get_all_votes",
                                 "showResultInRealTime": true,
                                 "showResultDuration": 0,
                                 "vertical": true,
+                                "private": true,
                                 "pollVoteTargetsOptions": {
                                     "CONTINUE": {
                                         "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/next-svgrepo-com.svg",
@@ -3519,10 +3255,7 @@
                                     "soundboard.reminder"
                                 ],
                                 "backgroundColor": "#ddf0c7",
-                                "borderColor": "black",
-                                "targets": [
-                                    "CONTINUE"
-                                ]
+                                "borderColor": "black"
                             },
                             "cached": {
                                 "actors": "host",
@@ -3530,6 +3263,21 @@
                                 "image": "currentImage"
                             },
                             "computed": {
+                                "targets": {
+                                    "selector": "append",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "teams"
+                                        },
+                                        {
+                                            "name": "element",
+                                            "type": "preset",
+                                            "value": "CONTINUE"
+                                        }
+                                    ]
+                                },
                                 "private": {
                                     "selector": "equals",
                                     "params": [
@@ -3551,7 +3299,7 @@
                                         {
                                             "name": "format",
                                             "type": "preset",
-                                            "value": "($1).($2)) ($3)($4)"
+                                            "value": "($1).($2)) ($3)"
                                         },
                                         {
                                             "name": "arg1",
@@ -3576,53 +3324,6 @@
                                             "name": "arg3",
                                             "type": "cached",
                                             "value": "currentQuestion"
-                                        },
-                                        {
-                                            "name": "arg4",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "ifElse",
-                                                "params": [
-                                                    {
-                                                        "name": "condition",
-                                                        "type": "cached",
-                                                        "value": "hasOptions"
-                                                    },
-                                                    {
-                                                        "name": "thenValue",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "formatString",
-                                                            "params": [
-                                                                {
-                                                                    "name": "format",
-                                                                    "type": "preset",
-                                                                    "value": " Your options are: ($1)"
-                                                                },
-                                                                {
-                                                                    "name": "arg1",
-                                                                    "type": "computed",
-                                                                    "value": {
-                                                                        "selector": "listToString",
-                                                                        "params": [
-                                                                            {
-                                                                                "name": "list",
-                                                                                "type": "cached",
-                                                                                "value": "currentOptions"
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                }
-                                                            ]
-                                                        }
-                                                    },
-                                                    {
-                                                        "name": "elseValue",
-                                                        "type": "preset",
-                                                        "value": ""
-                                                    }
-                                                ]
-                                            }
                                         }
                                     ]
                                 }
@@ -3713,48 +3414,44 @@
                         "key": "restoreMuteStatus"
                     },
                     {
-                        "key": "createVote",
-                        "skipCondition": {
-                            "selector": "logicalNOT",
-                            "params": [
-                                {
-                                    "name": "arg",
-                                    "type": "cached",
-                                    "value": "hasOptions"
-                                }
-                            ]
-                        },
+                        "key": "createInput",
                         "payload": {
                             "preset": {
-                                "title": "Submit multiple-choice answer",
-                                "type": "target_poll",
-                                "terminationCondition": "get_all_votes",
-                                "showResultInRealTime": false,
-                                "showResultDuration": 0,
-                                "showResult": false,
-                                "allowRevoting": true,
-                                "sounds.waitForSoundEnd": false,
-                                "backgroundColor": "#ddf0c7",
-                                "borderColor": "black",
+                                "title": "Answer the question",
+                                "type": "text",
+                                "duration": 60,
                                 "scope": "team",
                                 "vertical": true,
-                                "duration": 60
+                                "sounds.waitForSoundEnd": true,
+                                "sounds.list": [
+                                    "soundboard.reminder"
+                                ],
+                                "backgroundColor": "#ddf0c7",
+                                "borderColor": "black"
                             },
                             "cached": {
                                 "playList.0": "players",
                                 "actors": "teams",
-                                "image": "currentImage",
-                                "targets": "currentOptions",
-                                "pollVoteTargetsOptions": "optionAppearances"
+                                "image": "currentImage"
                             },
                             "computed": {
-                                "sounds.list": {
-                                    "selector": "createList",
+                                "terminationCondition": {
+                                    "selector": "ifElse",
                                     "params": [
                                         {
-                                            "name": "arg1",
+                                            "name": "condition",
                                             "type": "cached",
-                                            "value": "currentAudio"
+                                            "value": "isContinue"
+                                        },
+                                        {
+                                            "name": "thenValue",
+                                            "type": "preset",
+                                            "value": "get_all_values"
+                                        },
+                                        {
+                                            "name": "elseValue",
+                                            "type": "preset",
+                                            "value": "time"
                                         }
                                     ]
                                 },
@@ -3803,373 +3500,11 @@
                                         {
                                             "name": "name",
                                             "type": "preset",
-                                            "value": "lastActionResult.voices"
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "key": "createNotification",
-                        "skipCondition": {
-                            "selector": "logicalNOT",
-                            "params": [
-                                {
-                                    "name": "arg",
-                                    "type": "cached",
-                                    "value": "hasOptions"
-                                }
-                            ]
-                        },
-                        "payload": {
-                            "preset": {
-                                "duration": 5,
-                                "backgroundColor": "#ddf0c7",
-                                "borderColor": "black",
-                                "header": "DEBUGGING"
-                            },
-                            "computed": {
-                                "to": {
-                                    "selector": "allPlayers"
-                                },
-                                "text": {
-                                    "selector": "formatString",
-                                    "params": [
-                                        {
-                                            "name": "format",
-                                            "type": "preset",
-                                            "value": "Keys: ($1)<br/>Values: ($2)"
-                                        },
-                                        {
-                                            "name": "arg1",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "listToString",
-                                                "params": [
-                                                    {
-                                                        "name": "list",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "getObjectKeys",
-                                                            "params": [
-                                                                {
-                                                                    "name": "obj",
-                                                                    "type": "cached",
-                                                                    "value": "teamToAnswer"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "name": "arg2",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "listToString",
-                                                "params": [
-                                                    {
-                                                        "name": "list",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "getObjectValues",
-                                                            "params": [
-                                                                {
-                                                                    "name": "obj",
-                                                                    "type": "cached",
-                                                                    "value": "teamToAnswer"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "Fix result",
-                "skipCondition": [
-                    {
-                        "selector": "logicalNOT",
-                        "params": [
-                            {
-                                "name": "arg",
-                                "type": "cached",
-                                "value": "hasOptions"
-                            }
-                        ]
-                    }
-                ],
-                "repeat": {
-                    "qnt": {
-                        "selector": "getCachedValue",
-                        "params": [
-                            {
-                                "name": "name",
-                                "type": "preset",
-                                "value": "numTeams"
-                            }
-                        ]
-                    }
-                },
-                "actions": [
-                    {
-                        "key": "emptyAction",
-                        "saveValueInCache": [
-                            {
-                                "name": "thisTeam",
-                                "value": {
-                                    "selector": "selectElement",
-                                    "params": [
-                                        {
-                                            "name": "list",
-                                            "type": "cached",
-                                            "value": "teams"
-                                        },
-                                        {
-                                            "name": "index",
-                                            "type": "cached",
-                                            "value": "repeatIndex"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "name": "answerList",
-                                "value": {
-                                    "selector": "getCachedObjectValue",
-                                    "params": [
-                                        {
-                                            "name": "objectName",
-                                            "type": "preset",
-                                            "value": "teamToAnswer"
-                                        },
-                                        {
-                                            "name": "value",
-                                            "type": "cached",
-                                            "value": "thisTeam"
-                                        },
-                                        {
-                                            "name": "defaultValue",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "randomElementsList",
-                                                "params": [
-                                                    {
-                                                        "name": "list",
-                                                        "type": "cached",
-                                                        "value": "currentOptions"
-                                                    },
-                                                    {
-                                                        "name": "length",
-                                                        "type": "preset",
-                                                        "value": 1
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "name": "teamToAnswer",
-                                "value": {
-                                    "selector": "setCachedObjectFieldValue",
-                                    "params": [
-                                        {
-                                            "name": "objectName",
-                                            "type": "preset",
-                                            "value": "teamToAnswer"
-                                        },
-                                        {
-                                            "name": "fieldName",
-                                            "type": "cached",
-                                            "value": "thisTeam"
-                                        },
-                                        {
-                                            "name": "value",
-                                            "type": "cached",
-                                            "value": "answerList.0"
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Answer question",
-                "actions": [
-                    {
-                        "key": "createInput",
-                        "skipCondition": {
-                            "selector": "getCachedValue",
-                            "params": [
-                                {
-                                    "name": "name",
-                                    "type": "preset",
-                                    "value": "hasOptions"
-                                }
-                            ]
-                        },
-                        "payload": {
-                            "preset": {
-                                "title": "Answer the question",
-                                "type": "text",
-                                "duration": 60,
-                                "scope": "team",
-                                "vertical": true,
-                                "sounds.waitForSoundEnd": false,
-                                "backgroundColor": "#ddf0c7",
-                                "borderColor": "black"
-                            },
-                            "cached": {
-                                "playList.0": "players",
-                                "actors": "teams",
-                                "image": "currentImage"
-                            },
-                            "computed": {
-                                "sounds.list": {
-                                    "selector": "createList",
-                                    "params": [
-                                        {
-                                            "name": "arg1",
-                                            "type": "cached",
-                                            "value": "currentAudio"
-                                        }
-                                    ]
-                                },
-                                "terminationCondition": {
-                                    "selector": "ifElse",
-                                    "params": [
-                                        {
-                                            "name": "condition",
-                                            "type": "cached",
-                                            "value": "isContinue"
-                                        },
-                                        {
-                                            "name": "thenValue",
-                                            "type": "preset",
-                                            "value": "get_all_values"
-                                        },
-                                        {
-                                            "name": "elseValue",
-                                            "type": "preset",
-                                            "value": "time"
-                                        }
-                                    ]
-                                },
-                                "question": {
-                                    "selector": "formatString",
-                                    "params": [
-                                        {
-                                            "name": "format",
-                                            "type": "preset",
-                                            "value": "($1).($2)) ($3)($4)"
-                                        },
-                                        {
-                                            "name": "arg1",
-                                            "type": "cached",
-                                            "value": "round"
-                                        },
-                                        {
-                                            "name": "arg2",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "inc",
-                                                "params": [
-                                                    {
-                                                        "name": "arg",
-                                                        "type": "cached",
-                                                        "value": "loopIndex"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "name": "arg3",
-                                            "type": "cached",
-                                            "value": "currentQuestion"
-                                        },
-                                        {
-                                            "name": "arg4",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "ifElse",
-                                                "params": [
-                                                    {
-                                                        "name": "condition",
-                                                        "type": "cached",
-                                                        "value": "hasOptions"
-                                                    },
-                                                    {
-                                                        "name": "thenValue",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "formatString",
-                                                            "params": [
-                                                                {
-                                                                    "name": "format",
-                                                                    "type": "preset",
-                                                                    "value": " Your options are: ($1)"
-                                                                },
-                                                                {
-                                                                    "name": "arg1",
-                                                                    "type": "computed",
-                                                                    "value": {
-                                                                        "selector": "listToString",
-                                                                        "params": [
-                                                                            {
-                                                                                "name": "list",
-                                                                                "type": "cached",
-                                                                                "value": "currentOptions"
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                }
-                                                            ]
-                                                        }
-                                                    },
-                                                    {
-                                                        "name": "elseValue",
-                                                        "type": "preset",
-                                                        "value": ""
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        "saveValueInCache": [
-                            {
-                                "name": "teamToAnswer",
-                                "value": {
-                                    "selector": "getCachedValue",
-                                    "params": [
-                                        {
-                                            "name": "name",
-                                            "type": "preset",
                                             "value": "lastActionResult"
                                         }
                                     ]
                                 }
-                            }
-                        ]
-                    },
-                    {
-                        "key": "emptyAction",
-                        "saveValueInCache": [
+                            },
                             {
                                 "name": "roundAnswers",
                                 "value": {
@@ -4331,29 +3666,6 @@
                                             "name": "defaultValue",
                                             "type": "preset",
                                             "value": "https://res.cloudinary.com/liars-club/image/upload/questions_gnh6cx.jpg"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "name": "currentAnswer",
-                                "value": {
-                                    "selector": "getCachedObjectValue",
-                                    "params": [
-                                        {
-                                            "name": "objectName",
-                                            "type": "preset",
-                                            "value": "currentItem"
-                                        },
-                                        {
-                                            "name": "value",
-                                            "type": "preset",
-                                            "value": "answer"
-                                        },
-                                        {
-                                            "name": "defaultValue",
-                                            "type": "preset",
-                                            "value": ""
                                         }
                                     ]
                                 }
@@ -4619,17 +3931,12 @@
                                         {
                                             "name": "format",
                                             "type": "preset",
-                                            "value": "($1) — Answer: ($2)"
+                                            "value": "($1)"
                                         },
                                         {
                                             "name": "arg1",
                                             "type": "cached",
                                             "value": "currentQuestion"
-                                        },
-                                        {
-                                            "name": "arg2",
-                                            "type": "cached",
-                                            "value": "currentAnswer"
                                         }
                                     ]
                                 }
@@ -5336,14 +4643,7 @@
                                                                 "name": "ids",
                                                                 "type": "computed",
                                                                 "value": {
-                                                                    "selector": "getPlayersWithMaxScore",
-                                                                    "params": [
-                                                                        {
-                                                                            "name": "players",
-                                                                            "type": "cached",
-                                                                            "value": "players"
-                                                                        }
-                                                                    ]
+                                                                    "selector": "getPlayersWithMaxScore"
                                                                 }
                                                             }
                                                         ]
@@ -6030,14 +5330,7 @@
                                                         "name": "ids",
                                                         "type": "computed",
                                                         "value": {
-                                                            "selector": "getPlayersWithMaxScore",
-                                                            "params": [
-                                                                {
-                                                                    "name": "players",
-                                                                    "type": "cached",
-                                                                    "value": "players"
-                                                                }
-                                                            ]
+                                                            "selector": "getPlayersWithMaxScore"
                                                         }
                                                     }
                                                 ]

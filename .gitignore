@@ -1,4 +1,6 @@
 output_enigma_cards/
+scripts/aerial_candidates/
+scripts/painting_candidates/
 __pycache__/
 *.pyc
 .DS_Store

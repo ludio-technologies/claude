@@ -1,0 +1,233 @@
+{
+    "name": "nothing_but_net",
+    "cards": [
+        {
+            "name": "crowd",
+            "label": "Crowd",
+            "type": "crowd",
+            "weight": 0,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/crowd-cards2.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "off_shoot",
+            "label": "Shoot",
+            "type": "offense",
+            "weight": 1,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/offensive-cards7.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "off_rebound",
+            "label": "Rebound",
+            "type": "offense",
+            "weight": 2,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/offensive-cards6.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "off_dunk",
+            "label": "Dunk",
+            "type": "offense",
+            "weight": 3,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/offensive-cards4.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "off_crossover",
+            "label": "Crossover",
+            "type": "offense",
+            "weight": 4,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/offensive-cards2.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "off_pass",
+            "label": "Pass",
+            "type": "offense",
+            "weight": 5,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/offensive-cards5.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "off_drive",
+            "label": "Drive",
+            "type": "offense",
+            "weight": 6,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/offensive-cards3.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "off_and1",
+            "label": "And1",
+            "type": "offense",
+            "weight": 7,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/offensive-cards.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "def_block",
+            "label": "Block",
+            "type": "defense",
+            "weight": 10,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/defensive-cards.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "def_deflect",
+            "label": "Deflect",
+            "type": "defense",
+            "weight": 11,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/defensive-cards2.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "def_foul",
+            "label": "Foul",
+            "type": "defense",
+            "weight": 12,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/defensive-cards3.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "def_steal",
+            "label": "Steal",
+            "type": "defense",
+            "weight": 13,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/defensive-cards4.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "def_trash_talk",
+            "label": "Trash Talk",
+            "type": "defense",
+            "weight": 14,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/defensive-cards5.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "trick_4_bouncer",
+            "label": "4 Bouncer",
+            "type": "trick",
+            "weight": 20,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/special-cards2.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "trick_alley_oop",
+            "label": "Alley Oop",
+            "type": "trick",
+            "weight": 21,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/special-cards3.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "trick_ankle_breaker",
+            "label": "Ankle Breaker",
+            "type": "trick",
+            "weight": 22,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/special-cards4.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "trick_behind_the_back",
+            "label": "Behind the Back",
+            "type": "trick",
+            "weight": 23,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/special-cards5.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "trick_charge",
+            "label": "Charge",
+            "type": "trick",
+            "weight": 24,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/special-cards6.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "trick_choke",
+            "label": "Choke",
+            "type": "trick",
+            "weight": 25,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/special-cards7.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "trick_hook_shot",
+            "label": "Hook Shot",
+            "type": "trick",
+            "weight": 26,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/special-cards9.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "trick_on_fire",
+            "label": "On Fire",
+            "type": "trick",
+            "weight": 27,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/special-cards10.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "trick_pump_fake",
+            "label": "Pump Fake",
+            "type": "trick",
+            "weight": 28,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/special-cards11.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "util_end_turn",
+            "label": "End Turn",
+            "type": "util",
+            "weight": 100,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/end_turn.png",
+            "enlargeOnHover": true
+        },
+        {
+            "name": "util_crowd",
+            "label": "Crowd",
+            "type": "util",
+            "weight": 101,
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/crowd-cards.png",
+            "enlargeOnHover": true
+        }
+    ],
+    "sets": {
+        "crowd": {
+            "crowd": 4
+        },
+        "offense": {
+            "off_shoot": 10,
+            "off_rebound": 3,
+            "off_dunk": 5,
+            "off_crossover": 4,
+            "off_pass": 5,
+            "off_drive": 5,
+            "off_and1": 3
+        },
+        "defense": {
+            "def_block": 6,
+            "def_deflect": 5,
+            "def_foul": 4,
+            "def_steal": 4,
+            "def_trash_talk": 6
+        },
+        "tricks": {
+            "trick_4_bouncer": 1,
+            "trick_alley_oop": 1,
+            "trick_ankle_breaker": 1,
+            "trick_behind_the_back": 1,
+            "trick_charge": 1,
+            "trick_choke": 1,
+            "trick_hook_shot": 1,
+            "trick_on_fire": 1,
+            "trick_pump_fake": 1
+        },
+        "utils": {
+            "util_end_turn": 2,
+            "util_crowd": 2
+        }
+    }
+}

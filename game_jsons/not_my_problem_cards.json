@@ -1,0 +1,110 @@
+{
+  "name": "not_my_problem",
+  "cards": [
+    {
+      "name": "monday_meeting",
+      "label": "Monday Meeting",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/monday_meeting.png",
+      "type": "problem",
+      "problem": "monday_meeting",
+      "weight": 1
+    },
+    {
+      "name": "expense_report",
+      "label": "Expense Report",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/expense_report.png",
+      "type": "problem",
+      "problem": "expense_report",
+      "weight": 2
+    },
+    {
+      "name": "it_ticket",
+      "label": "IT Ticket",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/it_ticket.png",
+      "type": "problem",
+      "problem": "it_ticket",
+      "weight": 3
+    },
+    {
+      "name": "jury_duty",
+      "label": "Jury Duty",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/jury_duty.png",
+      "type": "problem",
+      "problem": "jury_duty",
+      "weight": 4
+    },
+    {
+      "name": "reply_all",
+      "label": "Reply-All Thread",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/reply_all.png",
+      "type": "problem",
+      "problem": "reply_all",
+      "weight": 5
+    },
+    {
+      "name": "printer_jam",
+      "label": "Printer Jam",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/printer_jam.png",
+      "type": "problem",
+      "problem": "printer_jam",
+      "weight": 6
+    },
+    {
+      "name": "perf_review",
+      "label": "Performance Review",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/perf_review.png",
+      "type": "problem",
+      "problem": "perf_review",
+      "weight": 7
+    },
+    {
+      "name": "onboarding_doc",
+      "label": "Onboarding Doc",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/onboarding_doc.png",
+      "type": "problem",
+      "problem": "onboarding_doc",
+      "weight": 8
+    },
+    {
+      "name": "action_true",
+      "label": "True",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/action_true.png",
+      "type": "action",
+      "problem": "none",
+      "weight": 0
+    },
+    {
+      "name": "action_false",
+      "label": "Bluff",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/action_false.png",
+      "type": "action",
+      "problem": "none",
+      "weight": 0
+    },
+    {
+      "name": "action_peek",
+      "label": "Peek & Pass",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/action_peek.png",
+      "type": "action",
+      "problem": "none",
+      "weight": 0
+    }
+  ],
+  "sets": {
+    "all": {
+      "monday_meeting": 8,
+      "expense_report": 8,
+      "it_ticket": 8,
+      "jury_duty": 8,
+      "reply_all": 8,
+      "printer_jam": 8,
+      "perf_review": 8,
+      "onboarding_doc": 8
+    },
+    "actions": {
+      "action_true": 1,
+      "action_false": 1,
+      "action_peek": 1
+    }
+  }
+}

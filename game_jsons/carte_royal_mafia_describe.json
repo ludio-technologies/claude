@@ -1,0 +1,61 @@
+{
+    "name": "Carte Royal Mafia",
+    "demo": false,
+    "parallel": false,
+    "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+    "banner": "https://res.cloudinary.com/liars-club/image/upload/images/carte_royal_mafia/banner.jpg",
+    "description": {
+        "summary": "A trick-taking card game with hidden Mafia roles. Each round the deal redistributes who's Town, Mafia, and Warlock — capture the right icons and avoid the wrong cards to score for your team.",
+        "description_title": "Carte Royal Mafia Overview",
+        "# Players": "3-5",
+        "players": "3-5",
+        "Duration": "15 mins/round"
+    },
+    "rules": [
+        {
+            "name": "Basic Rules",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "The deck",
+                    "text": "36 cards: 15 Gold (ranked 1-15), 15 Townsperson (ranked 1-15), and 6 special cards (2 Mafia, 1 Warlock, 1 Police Officer, 2 Daggers). Each numbered card shows 0-5 icons — those icons are what you score when you capture the card.<br><br>At 3 players the deck shrinks to 28 cards (Gold/Townsperson 13-15, 1 Mafia, and the Police Officer are removed)."
+                },
+                {
+                    "title": "Hidden roles from your hand",
+                    "text": "Each round you're dealt 9 cards (7 at 5 players). Your role is derived from your hand:<br>— Hold a Mafia card → you are <i>Mafia</i>.<br>— No Mafia card but you hold the Warlock → you are <i>Warlock</i> (secretly on Team Mafia).<br>— Otherwise → you are <i>Townsperson</i>.<br><br>Your role stays secret until your team is revealed at round's end (or a Mafia card is played, which reveals that player immediately)."
+                },
+                {
+                    "title": "The trick (per turn)",
+                    "text": "The dealer leads the first trick. Going clockwise, each player plays one card — there is no follow-suit restriction.<br><br>The first numbered card played in the trick sets the LEAD suit. The OTHER suit becomes TRUMP. Any card of the trump suit beats any card of the lead suit. Within the same suit, higher rank wins. Ties go to the LATER card played.<br><br>The trick winner takes every card played and leads the next trick. Watch the LEAD and TRUMP indicator cards in the center to track which suit is currently winning."
+                },
+                {
+                    "title": "Special card behaviors",
+                    "text": "Mafia: A trump 16 if led; otherwise the same suit as the previous card with rank +1. Playing this card publicly reveals you as Mafia.<br><br>Warlock: A 16 of the LEAD suit.<br><br>Police Officer: A trump 16 — UNLESS a Mafia card is in the same trick, in which case the Police Officer becomes a 0 of the LEAD suit.<br><br>Dagger: A trump 0 (usually loses)."
+                },
+                {
+                    "title": "End of round",
+                    "text": "Once all cards have been played, every role is revealed. The host then votes to keep scores, reset scores, or end the game. Roles re-deal at the start of every new round, so you may be Town this round and Mafia next."
+                }
+            ]
+        },
+        {
+            "name": "Win Conditions",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Scoring per round",
+                    "text": "Each player's round score is the sum of icons on the cards they captured this round, with these rules per role:<br>— Townsperson and Warlock score the GOLD icons in their pile.<br>— Mafia scores the TOWNSPERSON icons in their pile.<br><br>Special cards (Mafia, Warlock, Police Officer, Dagger) themselves carry zero icons — they only matter for their trick-taking effect and for halving."
+                },
+                {
+                    "title": "The halving rule",
+                    "text": "If a Townsperson or Warlock ends up with even one Mafia card in their captured pile, their Gold score for the round is HALVED.<br><br>If a Mafia player ends up with even one Dagger in their captured pile, their Townsperson score for the round is HALVED.<br><br>Each player's per-round contribution is shown next to their score as the round progresses."
+                },
+                {
+                    "title": "Round winner vs game winner",
+                    "text": "At round end, every player's contribution is summed by team — the team with the higher total wins the round (announced for fun). The cumulative score across all rounds is individual: each player's contribution is added to their personal running total.<br><br>The game continues until the host votes to end it. Whoever has the highest individual total then wins. Ties share the win."
+                }
+            ]
+        }
+    ],
+    "tags": ["card game", "social deduction", "strategic"]
+}

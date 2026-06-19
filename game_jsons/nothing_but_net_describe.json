@@ -1,0 +1,75 @@
+{
+    "name": "Nothing but Net",
+    "demo": false,
+    "parallel": false,
+    "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+    "banner": "https://res.cloudinary.com/liars-club/image/upload/images/nothing_but_net/bdb1aae1-cropped.png",
+    "description": {
+        "summary": "A fast, head-to-head game of pickup basketball. Take possession, chain offense cards to set up your shot, and let the dice decide if it drops — while your opponent races to block, steal, or foul. First to the target score wins.",
+        "description_title": "Nothing but Net Overview",
+        "# Players": "2",
+        "players": "2",
+        "Duration": "15 mins"
+    },
+    "rules": [
+        {
+            "name": "Basic Rules",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "The matchup",
+                    "text": "Nothing but Net is 1-on-1 pickup basketball. At any moment one player has the ball (offense) and the other is guarding (defense). You trade possession back and forth, scoring on made shots, until someone reaches the target score."
+                },
+                {
+                    "title": "Draft your bag of tricks",
+                    "text": "Before tip-off, players take turns drafting special Trick cards from a shared pool into their personal deck. Tricks are one-time game-changers — things like Pump Fake, Alley Oop, Ankle Breaker, and On Fire — that bend the normal rules in your favor."
+                },
+                {
+                    "title": "Taking your turn",
+                    "text": "On offense you play cards one at a time from your hand. Setup cards like Pass and Drive build the play; you finish by playing a Shoot or Dunk to take the shot. Play End Turn at any point to hand possession to your opponent."
+                },
+                {
+                    "title": "Choosing game length",
+                    "text": "At the start, the host picks how long the game runs: Short (first to 11), Medium (first to 15), or Full (first to 21)."
+                }
+            ]
+        },
+        {
+            "name": "Mechanics",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Taking a shot",
+                    "text": "When you shoot, the dice roll to decide the result. A made Shoot is worth 2. Setting it up with a Pass first turns it into a tougher 3-point attempt. A Dunk always goes in for 2 and can't be blocked."
+                },
+                {
+                    "title": "Playing defense",
+                    "text": "When your opponent makes a move, you get a short window to react with one defense card. Block cancels a Shoot, Steal takes the ball off a Pass, Deflect counters a Drive or Crossover, and Charge stops a Drive and flips possession. Foul sends the shooter to the free-throw line, and Trash Talk rattles them so they need both dice to make it."
+                },
+                {
+                    "title": "Offense combos",
+                    "text": "Crossover makes your next few plays unblockable. Drive lets you score if either die hits. Rebound after a miss keeps the ball in your hands. And1 after a make earns a bonus free throw, and a Crowd card gives you an extra throw after a shot."
+                },
+                {
+                    "title": "Catch-up drafts",
+                    "text": "Whenever the player on offense pushes their score past a multiple of three, the trailing player gets to draft a fresh card — a face-up offense or defense card, or one of their own tricks — to help them claw back into the game."
+                }
+            ]
+        },
+        {
+            "name": "Win Conditions",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Reaching the target",
+                    "text": "The first player to reach the target score the host chose at the start — 11, 15, or 21 points — wins the game immediately."
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "card game",
+        "two player",
+        "strategic"
+    ]
+}

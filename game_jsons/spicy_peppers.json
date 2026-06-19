@@ -1,0 +1,3609 @@
+{
+    "gameInitOptions": {
+        "allowRecorder": true,
+        "allowSpectatorBecomePlayer": true,
+        "allowPlayerBecomeSpectator": true,
+        "roleConfirmation": false,
+        "useDefaultRoles": true,
+        "minPlayers": 3,
+        "maxPlayers": 8,
+        "minExtraRoles": 0,
+        "maxExtraRoles": 0,
+        "time": 15,
+        "teams": {
+            "all": {
+                "id": "all",
+                "name": "All",
+                "description": "Just a group of sophisticated card-playing friends...",
+                "color": "#297a4d",
+                "roles": [
+                    "player"
+                ]
+            },
+            "1st": {
+                "id": "1st",
+                "name": "1st",
+                "color": "#297a4d",
+                "roles": [
+                    "1st"
+                ]
+            },
+            "2nd": {
+                "id": "2nd",
+                "name": "2nd",
+                "color": "#297a4d",
+                "roles": [
+                    "2nd"
+                ]
+            },
+            "3rd": {
+                "id": "3rd",
+                "name": "3rd",
+                "color": "#297a4d",
+                "roles": [
+                    "3rd"
+                ]
+            },
+            "4th": {
+                "id": "4th",
+                "name": "4th",
+                "color": "#297a4d",
+                "roles": [
+                    "4th"
+                ]
+            },
+            "5th": {
+                "id": "5th",
+                "name": "5th",
+                "color": "#297a4d",
+                "roles": [
+                    "5gh"
+                ]
+            },
+            "6th": {
+                "id": "6th",
+                "name": "6th",
+                "color": "#297a4d",
+                "roles": [
+                    "6th"
+                ]
+            },
+            "7th": {
+                "id": "7th",
+                "name": "7th",
+                "color": "#297a4d",
+                "roles": [
+                    "7th"
+                ]
+            },
+            "8th": {
+                "id": "8th",
+                "name": "8th",
+                "color": "#297a4d",
+                "roles": [
+                    "8th"
+                ]
+            },
+            "9th": {
+                "id": "9th",
+                "name": "9th",
+                "color": "#297a4d",
+                "roles": [
+                    "9th"
+                ]
+            },
+            "10th": {
+                "id": "10th",
+                "name": "10th",
+                "color": "#297a4d",
+                "roles": [
+                    "10th"
+                ]
+            },
+            "11th": {
+                "id": "11th",
+                "name": "11th",
+                "color": "#297a4d",
+                "roles": [
+                    "11th"
+                ]
+            }
+        },
+        "roles": [
+            {
+                "roleInfo": {
+                    "id": "player",
+                    "name": "Player",
+                    "description": "You hate taking points, and you always play to win 😎",
+                    "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
+                    "team": "all",
+                    "prefix": "a "
+                },
+                "isDefaultRole": true,
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "1st",
+                    "name": "1st",
+                    "team": "1st"
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "2nd",
+                    "name": "2nd",
+                    "team": "2nd"
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "3rd",
+                    "name": "3rd",
+                    "team": "3rd"
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "4th",
+                    "name": "4th",
+                    "team": "4th"
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "5th",
+                    "name": "5th",
+                    "team": "5th"
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "6th",
+                    "name": "6th",
+                    "team": "6th"
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "7th",
+                    "name": "7th",
+                    "team": "7th"
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "8th",
+                    "name": "8th",
+                    "team": "8th"
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "9th",
+                    "name": "9th",
+                    "team": "9th"
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "10th",
+                    "name": "10th",
+                    "team": "10th"
+                },
+                "isRequired": false
+            },
+            {
+                "roleInfo": {
+                    "id": "11th",
+                    "name": "11th",
+                    "team": "11th"
+                },
+                "isRequired": false
+            }
+        ],
+        "rolesPreset": {},
+        "images": {
+            "transparent": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/transparent_sbx4wv.png"
+            },
+            "farm_wallpaper": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/farmland_scrane.jpg"
+            },
+            "cardback": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/no_thanks/spicy_peppers_cardback.jpg"
+            },
+            "banner": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/spicy_peppers_h8e3mp.png"
+            },
+            "eleven": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/no_thanks/11.png"
+            },
+            "sixteen": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/no_thanks/16.png"
+            },
+            "seventeen": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/no_thanks/17.png"
+            },
+            "eighteen": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/no_thanks/18.png"
+            },
+            "no_thanks": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/no_thanks/no_thanks.png"
+            },
+            "yes_please": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/no_thanks/yes_please.png"
+            },
+            "play_card_example": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/spicy_peppers_play_wrqnzg.png"
+            },
+            "example": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/spicy_peppers_hover_hfdpcj.png"
+            },
+            "bidding": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/bidding_byrnrs.png"
+            },
+            "winner": {
+                "url": "https://res.cloudinary.com/liars-club/image/upload/winner_h5eyfr.gif"
+            }
+        },
+        "animations": {
+            "no_1": "https://assets7.lottiefiles.com/packages/lf20_MetBbE.json",
+            "no_2": "https://assets7.lottiefiles.com/packages/lf20_dejwz2eo.json",
+            "no_3": "https://assets7.lottiefiles.com/private_files/lf30_17bvu2tk.json",
+            "no_4": "https://assets7.lottiefiles.com/private_files/lf30_tn9xtxsa.json",
+            "no_5": "https://assets7.lottiefiles.com/packages/lf20_qv7z0gx15x.json",
+            "no_6": "https://assets7.lottiefiles.com/packages/lf20_jkbuwuhk.json",
+            "no_7": "https://assets7.lottiefiles.com/packages/lf20_Sssqs7.json",
+            "no_8": "https://assets7.lottiefiles.com/private_files/lf30_jq4i7W.json",
+            "no_9": "https://assets8.lottiefiles.com/packages/lf20_mrtm111x.json",
+            "yes_please": "https://lottie.host/5e3021e0-dc78-4c3c-bb4c-24fc8e66dd2c/rITqOlwOaU.json",
+            "first": "https://lottie.host/13d79bfa-b8a7-4b4a-94ae-ceba2ed3fb75/vyD9OJDBJT.json"
+        },
+        "soundboard": {
+            "default": {
+                "reminder": "https://res.cloudinary.com/liars-club/video/upload/audio/reminder.mp4",
+                "easy": "https://res.cloudinary.com/liars-club/video/upload/audio/eating_easy.mp3",
+                "medium": "https://res.cloudinary.com/liars-club/video/upload/audio/eating_medium.mp3",
+                "hard": "https://res.cloudinary.com/liars-club/video/upload/audio/eating_hard.mp3"
+            }
+        },
+        "voices": {
+            "default": {
+                "s1": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s1.mp3",
+                "s2": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s2.mp3",
+                "s3": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s3.mp3",
+                "s4": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s4.mp3",
+                "s5": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s5.mp3",
+                "s6": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s6.mp3",
+                "s7": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s7.mp3",
+                "s8": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s8.mp3",
+                "s9": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s9.mp3",
+                "s10": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s10.mp3",
+                "s11": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s11.mp3",
+                "s12": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s12.mp3",
+                "s13": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s13.mp3",
+                "s14": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s14.mp3",
+                "s15": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s15.mp3",
+                "s16": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s16.mp3",
+                "s17": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s17.mp3",
+                "s18": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s18.mp3",
+                "s19": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s19.mp3",
+                "s20": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s20.mp3",
+                "s21": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s21.mp3",
+                "s22": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s22.mp3",
+                "s23": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s23.mp3",
+                "s24": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s24.mp3",
+                "s25": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s25.mp3",
+                "s26": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s26.mp3",
+                "s27": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s27.mp3",
+                "s28": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s28.mp3",
+                "s29": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s29.mp3",
+                "s30": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s30.mp3",
+                "s31": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s31.mp3",
+                "s32": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s32.mp3",
+                "s33": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s33.mp3",
+                "s34": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s34.mp3",
+                "s35": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s35.mp3",
+                "s36": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s36.mp3",
+                "s37": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s37.mp3",
+                "s38": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s38.mp3",
+                "s39": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s39.mp3",
+                "s40": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s40.mp3",
+                "s41": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s41.mp3",
+                "s42": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s42.mp3",
+                "s43": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s43.mp3",
+                "s44": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s44.mp3",
+                "s45": "https://res.cloudinary.com/liars-club/video/upload/audio/spicy_peppers/s45.mp3"
+            }
+        }
+    },
+    "visualSettings": {
+        "cardHandBackgroundImage": "https://res.cloudinary.com/liars-club/image/upload/light_green_background_z6g9ah.png",
+        "showImageRowOnSmallScreen": false
+    },
+    "turnPlayerToSpectatorActions": [
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {
+                    "name": "players",
+                    "value": {
+                        "selector": "allPlayers"
+                    }
+                },
+                {
+                    "name": "numPlayers",
+                    "value": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "turnSpectatorToPlayerActions": [
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {
+                    "name": "newPlayer",
+                    "value": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "waitingSpectator"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "players",
+                    "value": {
+                        "selector": "allPlayers"
+                    }
+                },
+                {
+                    "name": "numPlayers",
+                    "value": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "createDeck",
+            "payload": {
+                "preset": {
+                    "name": "spicy_peppers",
+                    "set": "no",
+                    "customName": "no_thanks"
+                }
+            }
+        },
+        {
+            "key": "dealDeck",
+            "skipCondition": {
+                "selector": "equals",
+                "params": [
+                    {
+                        "name": "arg1",
+                        "type": "cached",
+                        "value": "minCards"
+                    },
+                    {
+                        "name": "arg2",
+                        "type": "preset",
+                        "value": 0
+                    }
+                ]
+            },
+            "payload": {
+                "preset": {
+                    "deck": "no_thanks",
+                    "sortBy": "points",
+                    "order": "desc"
+                },
+                "cached": {
+                    "targets": "newPlayer",
+                    "qnt": "minCards"
+                }
+            }
+        },
+        {
+            "key": "dealDeck",
+            "payload": {
+                "cached": {
+                    "targets": "newPlayer"
+                },
+                "preset": {
+                    "deck": "yes_please",
+                    "qnt": 1
+                }
+            }
+        },
+        {
+            "key": "updateScore",
+            "payload": {
+                "computed": {
+                    "scores": {
+                        "selector": "createList",
+                        "params": [
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "createDict",
+                                    "params": [
+                                        {
+                                            "name": "keys",
+                                            "type": "preset",
+                                            "value": [
+                                                "list",
+                                                "score"
+                                            ]
+                                        },
+                                        {
+                                            "name": "values",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "createList",
+                                                "params": [
+                                                    {
+                                                        "name": "arg1",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "createList",
+                                                            "params": [
+                                                                {
+                                                                    "name": "arg1",
+                                                                    "type": "cached",
+                                                                    "value": "newPlayer"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "arg2",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "getNoThanksCardsScore",
+                                                            "params": [
+                                                                {
+                                                                    "name": "hand",
+                                                                    "type": "cached",
+                                                                    "value": "newPlayer"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "showScore",
+            "payload": {
+                "preset": {
+                    "order": "lowest"
+                },
+                "cached": {
+                    "from": "players",
+                    "to": "players"
+                }
+            }
+        },
+        {
+            "key": "createVideoboxDecks",
+            "payload": {
+                "preset": {
+                    "facedown": true,
+                    "cardback": "cardback"
+                },
+                "cached": {
+                    "players": "players"
+                }
+            }
+        },
+        {
+            "key": "showHand",
+            "payload": {
+                "cached": {
+                    "from": "players",
+                    "to": "players"
+                }
+            }
+        },
+        {
+            "key": "showHand",
+            "payload": {
+                "preset": {
+                    "to": "spectators"
+                },
+                "cached": {
+                    "from": "players"
+                }
+            }
+        }
+    ],
+    "beforeLoopActions": [
+        {
+            "key": "setCardsPile",
+            "payload": {
+                "preset": {
+                    "name": "no_thanks",
+                    "color": "red",
+                    "fontSize": 25
+                }
+            }
+        },
+        {
+            "key": "changeBackground",
+            "payload": {
+                "preset": {
+                    "image": "farm_wallpaper"
+                }
+            }
+        },
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {
+                    "name": "ordinal",
+                    "value": {
+                        "0": "1st",
+                        "1": "2nd",
+                        "2": "3rd",
+                        "3": "4th",
+                        "4": "5th",
+                        "5": "6th",
+                        "6": "7th",
+                        "7": "8th",
+                        "8": "9th",
+                        "9": "10th",
+                        "10": "11th"
+                    }
+                },
+                {
+                    "name": "players",
+                    "value": {
+                        "selector": "allPlayers"
+                    }
+                },
+                {
+                    "name": "numPlayers",
+                    "value": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "numNoThanks",
+                    "value": {
+                        "selector": "ifElse",
+                        "params": [
+                            {
+                                "name": "condition",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "lessThan",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "cached",
+                                            "value": "numPlayers"
+                                        },
+                                        {
+                                            "name": "arg2",
+                                            "type": "preset",
+                                            "value": 6
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "thenValue",
+                                "type": "preset",
+                                "value": 11
+                            },
+                            {
+                                "name": "elseValue",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "integerDivide",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "preset",
+                                            "value": 55
+                                        },
+                                        {
+                                            "name": "arg2",
+                                            "type": "cached",
+                                            "value": "numPlayers"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "emptyAction",
+            "saveValueInCache": [
+                {
+                    "name": "host",
+                    "value": {
+                        "selector": "ifElse",
+                        "params": [
+                            {
+                                "name": "condition",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "contains",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "players"
+                                        },
+                                        {
+                                            "name": "element",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getHostPlayerId"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "thenValue",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getHostPlayerId"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "elseValue",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "selectElement",
+                                                "params": [
+                                                    {
+                                                        "name": "list",
+                                                        "type": "cached",
+                                                        "value": "players"
+                                                    },
+                                                    {
+                                                        "name": "index",
+                                                        "type": "preset",
+                                                        "value": 0
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "createNotification",
+            "payload": {
+                "preset": {
+                    "header": "Welcome to Spicy Peppers!",
+                    "image": "banner",
+                    "duration": 8,
+                    "backgroundColor": "#d2e7bc",
+                    "borderColor": "black"
+                },
+                "computed": {
+                    "to": {
+                        "selector": "allPlayers"
+                    },
+                    "text": {
+                        "selector": "formatString",
+                        "params": [
+                            {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!"
+                            },
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "listToString",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getPlayerNamesByIds",
+                                                "params": [
+                                                    {
+                                                        "name": "ids",
+                                                        "type": "cached",
+                                                        "value": "host"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "createVote",
+            "payload": {
+                "preset": {
+                    "title": "Tutorial Mode",
+                    "type": "target_poll",
+                    "terminationCondition": "get_all_votes",
+                    "showResultInRealTime": true,
+                    "showResultDuration": 2,
+                    "showResult": true,
+                    "allowRevoting": false,
+                    "targets": [
+                        "Yes Please!",
+                        "No Thanks"
+                    ],
+                    "pollVoteTargetsOptions": {
+                        "Yes Please!": {
+                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                            "backgroundColor": "#D3D3D3",
+                            "boxIconColor": "#D3D3D3",
+                            "textColor": "black",
+                            "widgetIconColor": "green"
+                        },
+                        "No Thanks": {
+                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+                            "backgroundColor": "#D3D3D3",
+                            "boxIconColor": "#D3D3D3",
+                            "textColor": "black",
+                            "widgetIconColor": "red"
+                        }
+                    },
+                    "backgroundColor": "#d2e7bc",
+                    "borderColor": "black"
+                },
+                "computed": {
+                    "question": {
+                        "selector": "formatString",
+                        "params": [
+                            {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "($1), do you want Ludio to teach your group how to play this game?"
+                            },
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "listToString",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getPlayerNamesByIds",
+                                                "params": [
+                                                    {
+                                                        "name": "ids",
+                                                        "type": "cached",
+                                                        "value": "host"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                "cached": {
+                    "actors": "host"
+                }
+            },
+            "saveValueInCache": [
+                {
+                    "name": "tutorial",
+                    "value": {
+                        "selector": "isTargetGotMajority",
+                        "params": [
+                            {
+                                "name": "voteResult",
+                                "type": "cached",
+                                "value": "lastActionResult"
+                            },
+                            {
+                                "name": "target",
+                                "type": "preset",
+                                "value": "Yes Please!"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "createVote",
+            "payload": {
+                "preset": {
+                    "title": "Game Mode",
+                    "type": "target_poll",
+                    "terminationCondition": "get_majority",
+                    "duration": 30,
+                    "showResultInRealTime": true,
+                    "showResultDuration": 2,
+                    "showResult": true,
+                    "allowRevoting": true,
+                    "targets": [
+                        "Nice",
+                        "Naughty"
+                    ],
+                    "pollVoteTargetsOptions": {
+                        "Nice": {
+                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/angel-svgrepo-com.svg",
+                            "backgroundColor": "#D3D3D3",
+                            "boxIconColor": "#D3D3D3",
+                            "textColor": "black",
+                            "widgetIconColor": "green"
+                        },
+                        "Naughty": {
+                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/devil-svgrepo-com.svg",
+                            "backgroundColor": "#D3D3D3",
+                            "boxIconColor": "#D3D3D3",
+                            "textColor": "black",
+                            "widgetIconColor": "blue"
+                        }
+                    },
+                    "backgroundColor": "#d2e7bc",
+                    "borderColor": "black"
+                },
+                "cached": {
+                    "actors": "host"
+                },
+                "computed": {
+                    "question": {
+                        "selector": "formatString",
+                        "params": [
+                            {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "What game mode do you want to play?"
+                            }
+                        ]
+                    }
+                }
+            },
+            "saveValueInCache": [
+                {
+                    "name": "naughty",
+                    "value": {
+                        "selector": "isTargetGotMajority",
+                        "params": [
+                            {
+                                "name": "voteResult",
+                                "type": "cached",
+                                "value": "lastActionResult"
+                            },
+                            {
+                                "name": "target",
+                                "type": "preset",
+                                "value": "Naughty"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "createDeck",
+            "payload": {
+                "preset": {
+                    "name": "spicy_peppers",
+                    "set": "33",
+                    "customName": "spicy_peppers"
+                }
+            }
+        },
+        {
+            "key": "createDeck",
+            "payload": {
+                "preset": {
+                    "name": "spicy_peppers",
+                    "set": "yes",
+                    "customName": "yes_please"
+                }
+            }
+        },
+        {
+            "key": "createDeck",
+            "payload": {
+                "preset": {
+                    "name": "spicy_peppers",
+                    "set": "no",
+                    "customName": "no_thanks"
+                }
+            }
+        },
+        {
+            "key": "shuffleDeck",
+            "payload": {
+                "preset": {
+                    "deck": "spicy_peppers"
+                }
+            }
+        },
+        {
+            "key": "createCustomDeck",
+            "payload": {
+                "preset": {
+                    "name": "playing_deck",
+                    "counter": true,
+                    "facedown": true,
+                    "public": true,
+                    "label": "Deck"
+                }
+            }
+        },
+        {
+            "key": "moveCards",
+            "payload": {
+                "preset": {
+                    "type": "deck",
+                    "from": "spicy_peppers",
+                    "to": "playing_deck",
+                    "qnt": 24
+                }
+            }
+        },
+        {
+            "key": "dealDeck",
+            "payload": {
+                "cached": {
+                    "targets": "players",
+                    "qnt": "numNoThanks"
+                },
+                "preset": {
+                    "deck": "no_thanks",
+                    "sortBy": "points",
+                    "order": "desc"
+                }
+            }
+        },
+        {
+            "key": "dealDeck",
+            "payload": {
+                "cached": {
+                    "targets": "players"
+                },
+                "preset": {
+                    "deck": "yes_please",
+                    "qnt": 1
+                }
+            }
+        },
+        {
+            "key": "showScore",
+            "payload": {
+                "preset": {
+                    "order": "lowest"
+                },
+                "cached": {
+                    "from": "players",
+                    "to": "players"
+                }
+            },
+            "saveValueInCache": [
+                {
+                    "name": "currentPlayer",
+                    "value": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "players.0"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "showHand",
+            "payload": {
+                "cached": {
+                    "from": "players",
+                    "to": "players"
+                }
+            }
+        },
+        {
+            "key": "showHand",
+            "payload": {
+                "preset": {
+                    "to": "spectators"
+                },
+                "cached": {
+                    "from": "players"
+                }
+            }
+        },
+        {
+            "key": "createCustomDeck",
+            "payload": {
+                "preset": {
+                    "name": "current_card",
+                    "public": true,
+                    "label": "Spicy Pepper"
+                }
+            }
+        },
+        {
+            "key": "createCustomDeck",
+            "payload": {
+                "preset": {
+                    "name": "no_thanks_committed",
+                    "public": true,
+                    "counter": true,
+                    "label": "Cards Played"
+                }
+            }
+        },
+        {
+            "key": "createCustomDeck",
+            "payload": {
+                "preset": {
+                    "name": "pepper",
+                    "public": true
+                }
+            }
+        },
+        {
+            "key": "createCustomDeck",
+            "payload": {
+                "preset": {
+                    "name": "cards_played",
+                    "public": true
+                }
+            }
+        },
+        {
+            "key": "createCustomDeck",
+            "payload": {
+                "preset": {
+                    "name": "deck",
+                    "public": true
+                }
+            }
+        },
+        {
+            "key": "createVideoboxDecks",
+            "payload": {
+                "preset": {
+                    "facedown": true,
+                    "cardback": "cardback"
+                },
+                "cached": {
+                    "players": "players"
+                }
+            }
+        }
+    ],
+    "gameLoop": [
+        {
+            "name": "Tutorial Part 1",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "createConfirmation",
+                    "payload": {
+                        "preset": {
+                            "header": "Are you ready for the tutorial?",
+                            "text": "Once enough people click Ready, the tutorial will start!",
+                            "passCriterion": "majority",
+                            "backgroundColor": "#d2e7bc",
+                            "borderColor": "black"
+                        },
+                        "cached": {
+                            "actors": "players"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "voices.s1",
+                                "voices.s2",
+                                "delay.1000",
+                                "voices.s3",
+                                "voices.s4",
+                                "voices.s5",
+                                "delay.1000"
+                            ]
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "header": "Pepper cards look like this:",
+                            "image": "eleven",
+                            "duration": 10,
+                            "text": "There are <b>33 spicy pepper cards</b> in the game, numbered 3 to 35. Each card is worth that many points, e.g. the 11 card is worth 11 points.",
+                            "backgroundColor": "#d2e7bc",
+                            "borderColor": "black"
+                        },
+                        "computed": {
+                            "to": {
+                                "selector": "allPlayers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "delay.1000",
+                                "voices.s6",
+                                "voices.s7",
+                                "delay.1000",
+                                "voices.s8",
+                                "voices.s9",
+                                "delay.1000"
+                            ]
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Change layout",
+            "skipCondition": [
+                {
+                    "selector": "getCachedValue",
+                    "params": [
+                        {
+                            "name": "name",
+                            "type": "preset",
+                            "value": "skipStartActionGroup"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "changeLayout",
+                    "payload": {
+                        "preset": {
+                            "type": "HIGHLIGHT",
+                            "direction": "VERTICAL"
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "skipStartActionGroup",
+                            "value": true
+                        }
+                    ]
+                },
+                {
+                    "key": "setImagesRow",
+                    "payload": {
+                        "preset": {
+                            "maxHeight": 140,
+                            "images": [
+                                "transparent"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "key": "createGenericCardWidget",
+                    "payload": {
+                        "preset": {
+                            "ratio": "0.77",
+                            "dimensions": [
+                                1,
+                                3
+                            ],
+                            "decks": [
+                                "current_card",
+                                "no_thanks_committed",
+                                "playing_deck"
+                            ],
+                            "cardback": "cardback",
+                            "backgroundImage": "https://res.cloudinary.com/liars-club/image/upload/light_green_background_z6g9ah.png"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 3
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Tutorial Part 2",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "voices.s10",
+                                "voices.s11",
+                                "delay.1000"
+                            ]
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Initialize min",
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "minCards",
+                            "value": 100
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Compute fewest Don't Eat cards",
+            "repeat": {
+                "qnt": {
+                    "selector": "listLength",
+                    "params": [
+                        {
+                            "name": "list",
+                            "type": "cached",
+                            "value": "players"
+                        }
+                    ]
+                }
+            },
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "thisPlayer",
+                            "value": {
+                                "selector": "selectElement",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "cached",
+                                        "value": "players"
+                                    },
+                                    {
+                                        "name": "index",
+                                        "type": "cached",
+                                        "value": "repeatIndex"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "numCards",
+                            "value": {
+                                "selector": "listLength",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "intersect",
+                                            "params": [
+                                                {
+                                                    "name": "list1",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "fetchHandField",
+                                                        "params": [
+                                                            {
+                                                                "name": "playerId",
+                                                                "type": "cached",
+                                                                "value": "thisPlayer"
+                                                            },
+                                                            {
+                                                                "name": "field",
+                                                                "type": "preset",
+                                                                "value": "name"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "list2",
+                                                    "type": "preset",
+                                                    "value": [
+                                                        "no_thanks"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "minCards",
+                            "value": {
+                                "selector": "minValue",
+                                "params": [
+                                    {
+                                        "name": "list",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createList",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "minCards"
+                                                },
+                                                {
+                                                    "name": "arg2",
+                                                    "type": "cached",
+                                                    "value": "numCards"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Play top card",
+            "turnSpectatorsToPlayers": true,
+            "turnPlayersToSpectators": true,
+            "actions": [
+                {
+                    "key": "moveCards",
+                    "payload": {
+                        "preset": {
+                            "type": "deck",
+                            "from": "playing_deck",
+                            "to": "current_card",
+                            "qnt": 1
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "lastCard",
+                            "value": {
+                                "selector": "getCardsScore",
+                                "params": [
+                                    {
+                                        "name": "deck",
+                                        "type": "preset",
+                                        "value": "current_card"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tutorial Part 3",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 4
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "voices.s12",
+                                "voices.s13"
+                            ]
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "animateBox",
+                    "payload": {
+                        "preset": {
+                            "animation": "first"
+                        },
+                        "computed": {
+                            "userIds": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "currentPlayer"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Show Order",
+            "parallel": {
+                "type": "smart",
+                "qnt": {
+                    "selector": "getCachedValue",
+                    "params": [
+                        {
+                            "name": "name",
+                            "type": "preset",
+                            "value": "numPlayers"
+                        }
+                    ]
+                }
+            },
+            "actions": [
+                {
+                    "key": "showFakeRole",
+                    "payload": {
+                        "cached": {
+                            "to": "players"
+                        },
+                        "computed": {
+                            "roleId": {
+                                "selector": "getCachedObjectValue",
+                                "params": [
+                                    {
+                                        "name": "objectName",
+                                        "type": "preset",
+                                        "value": "ordinal"
+                                    },
+                                    {
+                                        "name": "value",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "remainder",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "add",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "cached",
+                                                                "value": "numPlayers"
+                                                            },
+                                                            {
+                                                                "name": "arg2",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "subtract",
+                                                                    "params": [
+                                                                        {
+                                                                            "name": "arg1",
+                                                                            "type": "cached",
+                                                                            "value": "spaIndex"
+                                                                        },
+                                                                        {
+                                                                            "name": "arg2",
+                                                                            "type": "computed",
+                                                                            "value": {
+                                                                                "selector": "indexOf",
+                                                                                "params": [
+                                                                                    {
+                                                                                        "name": "list",
+                                                                                        "type": "cached",
+                                                                                        "value": "players"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "element",
+                                                                                        "type": "cached",
+                                                                                        "value": "currentPlayer"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "arg2",
+                                                    "type": "cached",
+                                                    "value": "numPlayers"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "from": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "selectElement",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "players"
+                                                },
+                                                {
+                                                    "name": "index",
+                                                    "type": "cached",
+                                                    "value": "spaIndex"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "showFakeTeam",
+                    "payload": {
+                        "cached": {
+                            "to": "players"
+                        },
+                        "computed": {
+                            "teamId": {
+                                "selector": "getCachedObjectValue",
+                                "params": [
+                                    {
+                                        "name": "objectName",
+                                        "type": "preset",
+                                        "value": "ordinal"
+                                    },
+                                    {
+                                        "name": "value",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "remainder",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "add",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "cached",
+                                                                "value": "numPlayers"
+                                                            },
+                                                            {
+                                                                "name": "arg2",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "subtract",
+                                                                    "params": [
+                                                                        {
+                                                                            "name": "arg1",
+                                                                            "type": "cached",
+                                                                            "value": "spaIndex"
+                                                                        },
+                                                                        {
+                                                                            "name": "arg2",
+                                                                            "type": "computed",
+                                                                            "value": {
+                                                                                "selector": "indexOf",
+                                                                                "params": [
+                                                                                    {
+                                                                                        "name": "list",
+                                                                                        "type": "cached",
+                                                                                        "value": "players"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "element",
+                                                                                        "type": "cached",
+                                                                                        "value": "currentPlayer"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "arg2",
+                                                    "type": "cached",
+                                                    "value": "numPlayers"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            },
+                            "from": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "selectElement",
+                                            "params": [
+                                                {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "players"
+                                                },
+                                                {
+                                                    "name": "index",
+                                                    "type": "cached",
+                                                    "value": "spaIndex"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Tutorial Part 4",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 2
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "voices.s14",
+                                "delay.1000",
+                                "voices.s15",
+                                "voices.s16"
+                            ]
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "showAllPlayersHands"
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 3
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "voices.s17",
+                                "voices.s18",
+                                "delay.1000"
+                            ]
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Update scores",
+            "repeat": {
+                "qnt": {
+                    "selector": "listLength",
+                    "params": [
+                        {
+                            "name": "list",
+                            "type": "cached",
+                            "value": "players"
+                        }
+                    ]
+                }
+            },
+            "actions": [
+                {
+                    "key": "updateScore",
+                    "payload": {
+                        "computed": {
+                            "scores": {
+                                "selector": "createItemList",
+                                "params": [
+                                    {
+                                        "name": "length",
+                                        "type": "preset",
+                                        "value": 1
+                                    },
+                                    {
+                                        "name": "item",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createDict",
+                                            "params": [
+                                                {
+                                                    "name": "keys",
+                                                    "type": "preset",
+                                                    "value": [
+                                                        "list",
+                                                        "score"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "values",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "createList",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "selectElement",
+                                                                    "params": [
+                                                                        {
+                                                                            "name": "list",
+                                                                            "type": "cached",
+                                                                            "value": "players"
+                                                                        },
+                                                                        {
+                                                                            "name": "index",
+                                                                            "type": "cached",
+                                                                            "value": "repeatIndex"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "arg2",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "getNoThanksCardsScore",
+                                                                    "params": [
+                                                                        {
+                                                                            "name": "hand",
+                                                                            "type": "computed",
+                                                                            "value": {
+                                                                                "selector": "selectElement",
+                                                                                "params": [
+                                                                                    {
+                                                                                        "name": "list",
+                                                                                        "type": "cached",
+                                                                                        "value": "players"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "index",
+                                                                                        "type": "cached",
+                                                                                        "value": "repeatIndex"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ],
+            "nextGroupNonStop": true
+        },
+        {
+            "name": "Tutorial Part 5",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "delay.1000",
+                                "voices.s19",
+                                "voices.s20",
+                                "voices.s21",
+                                "delay.1000",
+                                "voices.s22",
+                                "voices.s23",
+                                "voices.s24",
+                                "voices.s25",
+                                "delay.1000",
+                                "voices.s26",
+                                "voices.s27",
+                                "voices.s28"
+                            ]
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        [
+            {
+                "name": "Start clip",
+                "skipCondition": [
+                    {
+                        "selector": "greaterThan",
+                        "params": [
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "listLength",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getDeckCards",
+                                                "params": [
+                                                    {
+                                                        "name": "deck",
+                                                        "type": "preset",
+                                                        "value": "playing_deck"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 4
+                            }
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "key": "startClip",
+                        "payload": {
+                            "computed": {
+                                "title": {
+                                    "selector": "formatString",
+                                    "params": [
+                                        {
+                                            "name": "format",
+                                            "type": "preset",
+                                            "value": "Spicy Peppers, #($1) card(s) left"
+                                        },
+                                        {
+                                            "name": "arg1",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "listLength",
+                                                "params": [
+                                                    {
+                                                        "name": "list",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "getDeckCards",
+                                                            "params": [
+                                                                {
+                                                                    "name": "deck",
+                                                                    "type": "preset",
+                                                                    "value": "playing_deck"
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Start Round",
+                "actions": [
+                    {
+                        "key": "highlightPlayers",
+                        "payload": {
+                            "preset": {
+                                "color": "blue"
+                            },
+                            "computed": {
+                                "listOfPlayers": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "cached",
+                                            "value": "currentPlayer"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "saveValueInCache": [
+                            {
+                                "name": "highlightId",
+                                "value": {
+                                    "selector": "getCachedValue",
+                                    "params": [
+                                        {
+                                            "name": "name",
+                                            "type": "preset",
+                                            "value": "lastActionId"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "nextGroupNonStop": true
+            },
+            {
+                "name": "No Thanks?",
+                "parallel": {
+                    "type": "smart",
+                    "qnt": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
+                                "type": "preset",
+                                "value": "numPlayers"
+                            }
+                        ]
+                    }
+                },
+                "actions": [
+                    {
+                        "key": "playCards",
+                        "postHandler": "playOneNoThanksCard",
+                        "payload": {
+                            "preset": {
+                                "minCards": 1,
+                                "maxCards": 1,
+                                "duration": 20,
+                                "oneClick": true,
+                                "playable": "availableCards",
+                                "playableInclude": {
+                                    "cards": [
+                                        "yes_please",
+                                        "no_thanks"
+                                    ]
+                                },
+                                "sounds.waitForSoundEnd": true,
+                                "sounds.list": [
+                                    "soundboard.reminder"
+                                ]
+                            },
+                            "computed": {
+                                "playList.1": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "selectElement",
+                                                "params": [
+                                                    {
+                                                        "name": "list",
+                                                        "type": "cached",
+                                                        "value": "players"
+                                                    },
+                                                    {
+                                                        "name": "index",
+                                                        "type": "cached",
+                                                        "value": "spaIndex"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                },
+                                "notification": {
+                                    "selector": "formatString",
+                                    "params": [
+                                        {
+                                            "name": "format",
+                                            "type": "preset",
+                                            "value": "Play an Eat! or Don't Eat! card."
+                                        }
+                                    ]
+                                },
+                                "actor": {
+                                    "selector": "selectElement",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "players"
+                                        },
+                                        {
+                                            "name": "index",
+                                            "type": "cached",
+                                            "value": "spaIndex"
+                                        }
+                                    ]
+                                },
+                                "target": {
+                                    "selector": "formatString",
+                                    "params": [
+                                        {
+                                            "name": "format",
+                                            "type": "preset",
+                                            "value": "videobox_($1)"
+                                        },
+                                        {
+                                            "name": "arg1",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "selectElement",
+                                                "params": [
+                                                    {
+                                                        "name": "list",
+                                                        "type": "cached",
+                                                        "value": "players"
+                                                    },
+                                                    {
+                                                        "name": "index",
+                                                        "type": "cached",
+                                                        "value": "spaIndex"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Initialize variable",
+                "actions": [
+                    {
+                        "key": "emptyAction",
+                        "saveValueInCache": [
+                            {
+                                "name": "claimed",
+                                "value": false
+                            },
+                            {
+                                "name": "cardWinner",
+                                "value": "NONE"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Flip cards",
+                "repeat": {
+                    "qnt": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            }
+                        ]
+                    }
+                },
+                "actions": [
+                    {
+                        "key": "emptyAction",
+                        "saveValueInCache": [
+                            {
+                                "name": "thisPlayer",
+                                "value": {
+                                    "selector": "selectElement",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "players"
+                                        },
+                                        {
+                                            "name": "index",
+                                            "type": "cached",
+                                            "value": "repeatIndex"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "thisVideobox",
+                                "value": {
+                                    "selector": "formatString",
+                                    "params": [
+                                        {
+                                            "name": "format",
+                                            "type": "preset",
+                                            "value": "videobox_($1)"
+                                        },
+                                        {
+                                            "name": "arg1",
+                                            "type": "cached",
+                                            "value": "thisPlayer"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "flipOverTopCard",
+                        "payload": {
+                            "cached": {
+                                "deck": "thisVideobox"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Delay",
+                "actions": [
+                    {
+                        "key": "emptyAction",
+                        "payload": {
+                            "preset": {
+                                "delay": 1
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Place cards",
+                "repeat": {
+                    "qnt": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            }
+                        ]
+                    }
+                },
+                "actions": [
+                    {
+                        "key": "emptyAction",
+                        "payload": {
+                            "preset": {
+                                "delay": 0.5
+                            }
+                        },
+                        "saveValueInCache": [
+                            {
+                                "name": "thisPlayer",
+                                "value": {
+                                    "selector": "getCachedValue",
+                                    "params": [
+                                        {
+                                            "name": "name",
+                                            "type": "preset",
+                                            "value": "currentPlayer"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "thisVideobox",
+                                "value": {
+                                    "selector": "formatString",
+                                    "params": [
+                                        {
+                                            "name": "format",
+                                            "type": "preset",
+                                            "value": "videobox_($1)"
+                                        },
+                                        {
+                                            "name": "arg1",
+                                            "type": "cached",
+                                            "value": "thisPlayer"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "thisCard",
+                                "value": {
+                                    "selector": "getObjectField",
+                                    "params": [
+                                        {
+                                            "name": "obj",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "selectElement",
+                                                "params": [
+                                                    {
+                                                        "name": "list",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "getDeckCards",
+                                                            "params": [
+                                                                {
+                                                                    "name": "deck",
+                                                                    "type": "cached",
+                                                                    "value": "thisVideobox"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "index",
+                                                        "type": "preset",
+                                                        "value": 0
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "field",
+                                            "type": "preset",
+                                            "value": "name"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "yesPlease",
+                                "value": {
+                                    "selector": "equals",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "cached",
+                                            "value": "thisCard"
+                                        },
+                                        {
+                                            "name": "arg2",
+                                            "type": "preset",
+                                            "value": "yes_please"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "justClaimed",
+                                "value": {
+                                    "selector": "logicalAND",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "cached",
+                                            "value": "yesPlease"
+                                        },
+                                        {
+                                            "name": "arg2",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "equals",
+                                                "params": [
+                                                    {
+                                                        "name": "arg1",
+                                                        "type": "cached",
+                                                        "value": "cardWinner"
+                                                    },
+                                                    {
+                                                        "name": "arg2",
+                                                        "type": "preset",
+                                                        "value": "NONE"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "cardWinner",
+                                "value": {
+                                    "selector": "ifElse",
+                                    "params": [
+                                        {
+                                            "name": "condition",
+                                            "type": "cached",
+                                            "value": "justClaimed"
+                                        },
+                                        {
+                                            "name": "thenValue",
+                                            "type": "cached",
+                                            "value": "thisPlayer"
+                                        },
+                                        {
+                                            "name": "elseValue",
+                                            "type": "cached",
+                                            "value": "cardWinner"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "giveTheCardBack",
+                                "value": {
+                                    "selector": "logicalNOT",
+                                    "params": [
+                                        {
+                                            "name": "arg",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "logicalAND",
+                                                "params": [
+                                                    {
+                                                        "name": "arg1",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "logicalNOT",
+                                                            "params": [
+                                                                {
+                                                                    "name": "arg",
+                                                                    "type": "cached",
+                                                                    "value": "yesPlease"
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "arg2",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "logicalOR",
+                                                            "params": [
+                                                                {
+                                                                    "name": "arg1",
+                                                                    "type": "cached",
+                                                                    "value": "naughty"
+                                                                },
+                                                                {
+                                                                    "name": "arg2",
+                                                                    "type": "computed",
+                                                                    "value": {
+                                                                        "selector": "logicalNOT",
+                                                                        "params": [
+                                                                            {
+                                                                                "name": "arg",
+                                                                                "type": "cached",
+                                                                                "value": "claimed"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "key": "moveCards",
+                        "skipCondition": {
+                            "selector": "getCachedValue",
+                            "params": [
+                                {
+                                    "name": "name",
+                                    "type": "preset",
+                                    "value": "giveTheCardBack"
+                                }
+                            ]
+                        },
+                        "payload": {
+                            "preset": {
+                                "type": "deck",
+                                "to": "no_thanks_committed"
+                            },
+                            "cached": {
+                                "from": "thisVideobox"
+                            }
+                        }
+                    },
+                    {
+                        "key": "dealDeck",
+                        "skipCondition": {
+                            "selector": "logicalNOT",
+                            "params": [
+                                {
+                                    "name": "arg",
+                                    "type": "cached",
+                                    "value": "giveTheCardBack"
+                                }
+                            ]
+                        },
+                        "payload": {
+                            "preset": {
+                                "sortBy": "points",
+                                "order": "desc"
+                            },
+                            "cached": {
+                                "deck": "thisVideobox",
+                                "targets": "thisPlayer"
+                            }
+                        }
+                    },
+                    {
+                        "key": "dealDeck",
+                        "skipCondition": {
+                            "selector": "logicalNOT",
+                            "params": [
+                                {
+                                    "name": "arg",
+                                    "type": "cached",
+                                    "value": "justClaimed"
+                                }
+                            ]
+                        },
+                        "payload": {
+                            "preset": {
+                                "deck": "current_card",
+                                "sortBy": "points",
+                                "order": "desc"
+                            },
+                            "cached": {
+                                "targets": "thisPlayer"
+                            }
+                        }
+                    },
+                    {
+                        "key": "emptyAction",
+                        "saveValueInCache": [
+                            {
+                                "name": "currentPlayer",
+                                "value": {
+                                    "selector": "nextPlayer",
+                                    "params": [
+                                        {
+                                            "name": "playersList",
+                                            "type": "cached",
+                                            "value": "players"
+                                        },
+                                        {
+                                            "name": "playerId",
+                                            "type": "cached",
+                                            "value": "currentPlayer"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "claimed",
+                                "value": {
+                                    "selector": "logicalOR",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "cached",
+                                            "value": "claimed"
+                                        },
+                                        {
+                                            "name": "arg2",
+                                            "type": "cached",
+                                            "value": "yesPlease"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Update scores",
+                "repeat": {
+                    "qnt": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "players"
+                            }
+                        ]
+                    }
+                },
+                "actions": [
+                    {
+                        "key": "updateScore",
+                        "payload": {
+                            "computed": {
+                                "scores": {
+                                    "selector": "createItemList",
+                                    "params": [
+                                        {
+                                            "name": "length",
+                                            "type": "preset",
+                                            "value": 1
+                                        },
+                                        {
+                                            "name": "item",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "createDict",
+                                                "params": [
+                                                    {
+                                                        "name": "keys",
+                                                        "type": "preset",
+                                                        "value": [
+                                                            "list",
+                                                            "score"
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "values",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "createList",
+                                                            "params": [
+                                                                {
+                                                                    "name": "arg1",
+                                                                    "type": "computed",
+                                                                    "value": {
+                                                                        "selector": "selectElement",
+                                                                        "params": [
+                                                                            {
+                                                                                "name": "list",
+                                                                                "type": "cached",
+                                                                                "value": "players"
+                                                                            },
+                                                                            {
+                                                                                "name": "index",
+                                                                                "type": "cached",
+                                                                                "value": "repeatIndex"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "arg2",
+                                                                    "type": "computed",
+                                                                    "value": {
+                                                                        "selector": "getNoThanksCardsScore",
+                                                                        "params": [
+                                                                            {
+                                                                                "name": "hand",
+                                                                                "type": "computed",
+                                                                                "value": {
+                                                                                    "selector": "selectElement",
+                                                                                    "params": [
+                                                                                        {
+                                                                                            "name": "list",
+                                                                                            "type": "cached",
+                                                                                            "value": "players"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "index",
+                                                                                            "type": "cached",
+                                                                                            "value": "repeatIndex"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ],
+                "nextGroupNonStop": true
+            },
+            {
+                "name": "End Round",
+                "actions": [
+                    {
+                        "key": "removeAllHighlights"
+                    },
+                    {
+                        "key": "emptyAction",
+                        "saveValueInCache": [
+                            {
+                                "name": "isActionLoop",
+                                "value": {
+                                    "selector": "logicalNOT",
+                                    "params": [
+                                        {
+                                            "name": "arg",
+                                            "type": "cached",
+                                            "value": "claimed"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "nextGroupNonStop": true
+            }
+        ],
+        {
+            "name": "Move No Thanks cards",
+            "actions": [
+                {
+                    "key": "dealDeck",
+                    "skipCondition": {
+                        "selector": "equals",
+                        "params": [
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "listLength",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getDeckCards",
+                                                "params": [
+                                                    {
+                                                        "name": "deck",
+                                                        "type": "preset",
+                                                        "value": "no_thanks_committed"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    "payload": {
+                        "preset": {
+                            "deck": "no_thanks_committed",
+                            "sortBy": "points",
+                            "order": "desc"
+                        },
+                        "cached": {
+                            "targets": "cardWinner"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Update scores",
+            "repeat": {
+                "qnt": {
+                    "selector": "listLength",
+                    "params": [
+                        {
+                            "name": "list",
+                            "type": "cached",
+                            "value": "players"
+                        }
+                    ]
+                }
+            },
+            "actions": [
+                {
+                    "key": "updateScore",
+                    "payload": {
+                        "computed": {
+                            "scores": {
+                                "selector": "createItemList",
+                                "params": [
+                                    {
+                                        "name": "length",
+                                        "type": "preset",
+                                        "value": 1
+                                    },
+                                    {
+                                        "name": "item",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createDict",
+                                            "params": [
+                                                {
+                                                    "name": "keys",
+                                                    "type": "preset",
+                                                    "value": [
+                                                        "list",
+                                                        "score"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "values",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "createList",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "selectElement",
+                                                                    "params": [
+                                                                        {
+                                                                            "name": "list",
+                                                                            "type": "cached",
+                                                                            "value": "players"
+                                                                        },
+                                                                        {
+                                                                            "name": "index",
+                                                                            "type": "cached",
+                                                                            "value": "repeatIndex"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "arg2",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "getNoThanksCardsScore",
+                                                                    "params": [
+                                                                        {
+                                                                            "name": "hand",
+                                                                            "type": "computed",
+                                                                            "value": {
+                                                                                "selector": "selectElement",
+                                                                                "params": [
+                                                                                    {
+                                                                                        "name": "list",
+                                                                                        "type": "cached",
+                                                                                        "value": "players"
+                                                                                    },
+                                                                                    {
+                                                                                        "name": "index",
+                                                                                        "type": "cached",
+                                                                                        "value": "repeatIndex"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Process Yes Please",
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": false
+                        },
+                        "cached": {
+                            "playList.1": "players"
+                        },
+                        "computed": {
+                            "sounds.list": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "lessThan",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "lastCard"
+                                                },
+                                                {
+                                                    "name": "arg2",
+                                                    "type": "preset",
+                                                    "value": 14
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "preset",
+                                        "value": [
+                                            "soundboard.easy"
+                                        ]
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "ifElse",
+                                            "params": [
+                                                {
+                                                    "name": "condition",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "lessThan",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "cached",
+                                                                "value": "lastCard"
+                                                            },
+                                                            {
+                                                                "name": "arg2",
+                                                                "type": "preset",
+                                                                "value": 33
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "thenValue",
+                                                    "type": "preset",
+                                                    "value": [
+                                                        "soundboard.medium"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "elseValue",
+                                                    "type": "preset",
+                                                    "value": [
+                                                        "soundboard.hard"
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "animateBox",
+                    "payload": {
+                        "preset": {
+                            "animation": "yes_please"
+                        },
+                        "computed": {
+                            "userIds": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "cardWinner"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 3
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "currentPlayer",
+                            "value": {
+                                "selector": "getCachedValue",
+                                "params": [
+                                    {
+                                        "name": "name",
+                                        "type": "preset",
+                                        "value": "cardWinner"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "nextGroupNonStop": true
+        },
+        {
+            "name": "Tutorial Part 6",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "delay.1000",
+                                "voices.s29",
+                                "voices.s30",
+                                "voices.s31",
+                                "delay.1000"
+                            ]
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Tutorial Part 7",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "delay.1000",
+                                "voices.s32",
+                                "voices.s33",
+                                "delay.1000",
+                                "voices.s34",
+                                "voices.s35",
+                                "voices.s36",
+                                "delay.1000",
+                                "voices.s37",
+                                "voices.s38",
+                                "delay.1000"
+                            ]
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "header": "A quirk with scoring",
+                            "duration": 10,
+                            "images": [
+                                "sixteen",
+                                "seventeen",
+                                "eighteen"
+                            ],
+                            "text": "If you have a <b>sequence of consecutive numbers</b>, only the lowest card in that sequence counts for points. So if you have the 16, 17, and 18, you only receive 16 points!",
+                            "backgroundColor": "#d2e7bc",
+                            "borderColor": "black"
+                        },
+                        "computed": {
+                            "to": {
+                                "selector": "allPlayers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "delay.1000",
+                                "voices.s39",
+                                "voices.s40",
+                                "voices.s41",
+                                "delay.1000",
+                                "voices.s42",
+                                "voices.s43",
+                                "delay.1000"
+                            ]
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "header": "Cards are public information",
+                            "image": "example",
+                            "duration": 8,
+                            "text": "Hover over a player's score in their video box to see what's in their hand!",
+                            "backgroundColor": "#d2e7bc",
+                            "borderColor": "black"
+                        },
+                        "computed": {
+                            "to": {
+                                "selector": "allPlayers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "sounds.waitForSoundEnd": true,
+                            "sounds.list": [
+                                "delay.1000",
+                                "voices.s44",
+                                "delay.1000",
+                                "voices.s45"
+                            ]
+                        },
+                        "computed": {
+                            "playList.0": {
+                                "selector": "allUsers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "createConfirmation",
+                    "payload": {
+                        "preset": {
+                            "header": "Are you ready to start the game?",
+                            "text": "Once enough people click Ready, the real game will start!",
+                            "passCriterion": "majority",
+                            "backgroundColor": "#d2e7bc",
+                            "borderColor": "black"
+                        },
+                        "computed": {
+                            "actors": {
+                                "selector": "allPlayers"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Tutorial Part 8",
+            "skipCondition": [
+                {
+                    "selector": "logicalNOT",
+                    "params": [
+                        {
+                            "name": "arg",
+                            "type": "cached",
+                            "value": "tutorial"
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "key": "updateScore",
+                    "payload": {
+                        "computed": {
+                            "scores": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "createDict",
+                                            "params": [
+                                                {
+                                                    "name": "keys",
+                                                    "type": "preset",
+                                                    "value": [
+                                                        "list",
+                                                        "score"
+                                                    ]
+                                                },
+                                                {
+                                                    "name": "values",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "createList",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "computed",
+                                                                "value": {
+                                                                    "selector": "allPlayers"
+                                                                }
+                                                            },
+                                                            {
+                                                                "name": "arg2",
+                                                                "type": "preset",
+                                                                "value": 0
+                                                            }
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "recallCards",
+                    "payload": {
+                        "preset": {
+                            "deck": "playing_deck",
+                            "type": "number"
+                        },
+                        "computed": {
+                            "targets": {
+                                "selector": "allPlayers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "recallCards",
+                    "payload": {
+                        "preset": {
+                            "deck": "no_thanks",
+                            "type": "no_thanks"
+                        },
+                        "computed": {
+                            "targets": {
+                                "selector": "allPlayers"
+                            }
+                        }
+                    }
+                },
+                {
+                    "key": "shuffleDeck",
+                    "payload": {
+                        "preset": {
+                            "deck": "playing_deck"
+                        }
+                    }
+                },
+                {
+                    "key": "dealDeck",
+                    "payload": {
+                        "cached": {
+                            "targets": "players",
+                            "qnt": "numNoThanks"
+                        },
+                        "preset": {
+                            "deck": "no_thanks",
+                            "sortBy": "points",
+                            "order": "desc"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "payload": {
+                        "preset": {
+                            "delay": 1
+                        }
+                    },
+                    "saveValueInCache": [
+                        {
+                            "name": "tutorial",
+                            "value": false
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "No cards left?",
+            "actions": [
+                {
+                    "key": "emptyAction"
+                }
+            ],
+            "checkWinCondition": true
+        },
+        {
+            "name": "End clip",
+            "actions": [
+                {
+                    "key": "endClip"
+                }
+            ]
+        }
+    ],
+    "winCondition": {},
+    "postGameActions": [
+        {
+            "key": "createNotification",
+            "payload": {
+                "preset": {
+                    "image": "winner",
+                    "backgroundColor": "#d2e7bc",
+                    "borderColor": "black"
+                },
+                "cached": {
+                    "to": "players"
+                },
+                "computed": {
+                    "header": {
+                        "selector": "formatString",
+                        "params": [
+                            {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "($1) ($2)!"
+                            },
+                            {
+                                "name": "arg1",
+                                "type": "cached",
+                                "value": "winner"
+                            },
+                            {
+                                "name": "arg2",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "ifElse",
+                                    "params": [
+                                        {
+                                            "name": "condition",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "equals",
+                                                "params": [
+                                                    {
+                                                        "name": "arg1",
+                                                        "type": "computed",
+                                                        "value": {
+                                                            "selector": "listLength",
+                                                            "params": [
+                                                                {
+                                                                    "name": "list",
+                                                                    "type": "computed",
+                                                                    "value": {
+                                                                        "selector": "getPlayersWithMinScore"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    },
+                                                    {
+                                                        "name": "arg2",
+                                                        "type": "preset",
+                                                        "value": 1
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "thenValue",
+                                            "type": "preset",
+                                            "value": "wins"
+                                        },
+                                        {
+                                            "name": "elseValue",
+                                            "type": "preset",
+                                            "value": "share the win"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "key": "endClip"
+        }
+    ],
+    "playersWinCondition": {
+        "gameOverCondition": {
+            "selector": "equals",
+            "params": [
+                {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                        "selector": "listLength",
+                        "params": [
+                            {
+                                "name": "list",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "getDeckCards",
+                                    "params": [
+                                        {
+                                            "name": "deck",
+                                            "type": "preset",
+                                            "value": "playing_deck"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "arg2",
+                    "type": "preset",
+                    "value": 0
+                }
+            ]
+        },
+        "winners": {
+            "selector": "getPlayerNamesByIds",
+            "params": [
+                {
+                    "name": "ids",
+                    "type": "computed",
+                    "value": {
+                        "selector": "getPlayersWithMinScore"
+                    }
+                }
+            ]
+        }
+    }
+}

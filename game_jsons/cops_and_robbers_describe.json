@@ -1,0 +1,72 @@
+{
+    "name": "Cops and Robbers",
+    "demo": false,
+    "parallel": false,
+    "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+    "banner": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/banner.png",
+    "description": {
+        "summary": "A hidden-movement deduction game. Robbers hide loot at secret stash points; Cops hunt them through the city before they finish the heist.",
+        "description_title": "Cops and Robbers Overview",
+        "# Players": "3-8",
+        "players": "3-8",
+        "Duration": "45 mins"
+    },
+    "rules": [
+        {
+            "name": "Basic Rules",
+            "content": [
+                {
+                    "title": "Teams",
+                    "text": "Players split into Robbers (1-3 depending on player count) and Cops (the rest). Robbers know each other's positions and plans; Cops coordinate openly."
+                },
+                {
+                    "title": "Stash points",
+                    "text": "Each Robber is secretly assigned 4 stash cells, one in each quadrant of the city grid. They pick one to start at (revealed); the other 3 are hidden targets."
+                },
+                {
+                    "title": "Cop deployment",
+                    "text": "After Robbers reveal their starting cells, each Cop picks a starting square in the central deployment zone."
+                }
+            ]
+        },
+        {
+            "name": "Mechanics",
+            "content": [
+                {
+                    "title": "Robber moves",
+                    "text": "Each Robber moves to one of the 8 adjacent cells. They can also play a Special Movement card: Getaway Car (up to 2 cells in any direction), Backstreet (teleport within a house block), or Speedboat (enter an adjacent water cell). Robbers cannot enter water cells except by playing Speedboat."
+                },
+                {
+                    "title": "Cop moves",
+                    "text": "Each Cop moves up to 2 cells in the 4 orthogonal directions. Cops cannot enter water cells."
+                },
+                {
+                    "title": "Cop actions",
+                    "text": "After moving, each Cop plays either Investigate (probe an adjacent cell; if any Robber visited it this round a snapshot card with that Robber's color is dropped on the cell) or Bust (pick an adjacent cell; if a Robber is currently there, that Robber is busted)."
+                },
+                {
+                    "title": "Stash trail",
+                    "text": "Cell labels track which Robbers have visited each cell during the current round. Only Robbers can hover-inspect these labels. When a Robber reaches a new stash, their trail resets and a stash card is placed publicly on that cell."
+                }
+            ]
+        },
+        {
+            "name": "Win Conditions",
+            "content": [
+                {
+                    "title": "Robbers win",
+                    "text": "Robbers win if any one Robber successfully drops loot at all 4 stash points."
+                },
+                {
+                    "title": "Cops win",
+                    "text": "Cops win if every Robber is busted, OR if every Robber exhausts their 15-move budget before reaching their next stash."
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "social deduction",
+        "strategic",
+        "played in teams"
+    ]
+}

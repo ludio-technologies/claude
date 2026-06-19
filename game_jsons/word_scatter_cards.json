@@ -1,0 +1,891 @@
+{
+    "name": "word_scatter",
+    "cards": [
+        {
+            "name": "letter_a_1",
+            "label": "A",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/a.png",
+            "type": "letter",
+            "rank": 1
+        },
+        {
+            "name": "letter_a_2",
+            "label": "A",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/a.png",
+            "type": "letter",
+            "rank": 2
+        },
+        {
+            "name": "letter_a_3",
+            "label": "A",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/a.png",
+            "type": "letter",
+            "rank": 3
+        },
+        {
+            "name": "letter_a_4",
+            "label": "A",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/a.png",
+            "type": "letter",
+            "rank": 4
+        },
+        {
+            "name": "letter_b_1",
+            "label": "B",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/b.png",
+            "type": "letter",
+            "rank": 5
+        },
+        {
+            "name": "letter_b_2",
+            "label": "B",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/b.png",
+            "type": "letter",
+            "rank": 6
+        },
+        {
+            "name": "letter_b_3",
+            "label": "B",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/b.png",
+            "type": "letter",
+            "rank": 7
+        },
+        {
+            "name": "letter_b_4",
+            "label": "B",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/b.png",
+            "type": "letter",
+            "rank": 8
+        },
+        {
+            "name": "letter_c_1",
+            "label": "C",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/c.png",
+            "type": "letter",
+            "rank": 9
+        },
+        {
+            "name": "letter_c_2",
+            "label": "C",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/c.png",
+            "type": "letter",
+            "rank": 10
+        },
+        {
+            "name": "letter_c_3",
+            "label": "C",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/c.png",
+            "type": "letter",
+            "rank": 11
+        },
+        {
+            "name": "letter_c_4",
+            "label": "C",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/c.png",
+            "type": "letter",
+            "rank": 12
+        },
+        {
+            "name": "letter_d_1",
+            "label": "D",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/d.png",
+            "type": "letter",
+            "rank": 13
+        },
+        {
+            "name": "letter_d_2",
+            "label": "D",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/d.png",
+            "type": "letter",
+            "rank": 14
+        },
+        {
+            "name": "letter_d_3",
+            "label": "D",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/d.png",
+            "type": "letter",
+            "rank": 15
+        },
+        {
+            "name": "letter_d_4",
+            "label": "D",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/d.png",
+            "type": "letter",
+            "rank": 16
+        },
+        {
+            "name": "letter_e_1",
+            "label": "E",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/e.png",
+            "type": "letter",
+            "rank": 17
+        },
+        {
+            "name": "letter_e_2",
+            "label": "E",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/e.png",
+            "type": "letter",
+            "rank": 18
+        },
+        {
+            "name": "letter_e_3",
+            "label": "E",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/e.png",
+            "type": "letter",
+            "rank": 19
+        },
+        {
+            "name": "letter_e_4",
+            "label": "E",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/e.png",
+            "type": "letter",
+            "rank": 20
+        },
+        {
+            "name": "letter_f_1",
+            "label": "F",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/f.png",
+            "type": "letter",
+            "rank": 21
+        },
+        {
+            "name": "letter_f_2",
+            "label": "F",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/f.png",
+            "type": "letter",
+            "rank": 22
+        },
+        {
+            "name": "letter_f_3",
+            "label": "F",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/f.png",
+            "type": "letter",
+            "rank": 23
+        },
+        {
+            "name": "letter_f_4",
+            "label": "F",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/f.png",
+            "type": "letter",
+            "rank": 24
+        },
+        {
+            "name": "letter_g_1",
+            "label": "G",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/g.png",
+            "type": "letter",
+            "rank": 25
+        },
+        {
+            "name": "letter_g_2",
+            "label": "G",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/g.png",
+            "type": "letter",
+            "rank": 26
+        },
+        {
+            "name": "letter_g_3",
+            "label": "G",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/g.png",
+            "type": "letter",
+            "rank": 27
+        },
+        {
+            "name": "letter_g_4",
+            "label": "G",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/g.png",
+            "type": "letter",
+            "rank": 28
+        },
+        {
+            "name": "letter_h_1",
+            "label": "H",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/h.png",
+            "type": "letter",
+            "rank": 29
+        },
+        {
+            "name": "letter_h_2",
+            "label": "H",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/h.png",
+            "type": "letter",
+            "rank": 30
+        },
+        {
+            "name": "letter_h_3",
+            "label": "H",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/h.png",
+            "type": "letter",
+            "rank": 31
+        },
+        {
+            "name": "letter_h_4",
+            "label": "H",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/h.png",
+            "type": "letter",
+            "rank": 32
+        },
+        {
+            "name": "letter_i_1",
+            "label": "I",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/i.png",
+            "type": "letter",
+            "rank": 33
+        },
+        {
+            "name": "letter_i_2",
+            "label": "I",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/i.png",
+            "type": "letter",
+            "rank": 34
+        },
+        {
+            "name": "letter_i_3",
+            "label": "I",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/i.png",
+            "type": "letter",
+            "rank": 35
+        },
+        {
+            "name": "letter_i_4",
+            "label": "I",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/i.png",
+            "type": "letter",
+            "rank": 36
+        },
+        {
+            "name": "letter_j_1",
+            "label": "J",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/j.png",
+            "type": "letter",
+            "rank": 37
+        },
+        {
+            "name": "letter_j_2",
+            "label": "J",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/j.png",
+            "type": "letter",
+            "rank": 38
+        },
+        {
+            "name": "letter_j_3",
+            "label": "J",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/j.png",
+            "type": "letter",
+            "rank": 39
+        },
+        {
+            "name": "letter_j_4",
+            "label": "J",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/j.png",
+            "type": "letter",
+            "rank": 40
+        },
+        {
+            "name": "letter_k_1",
+            "label": "K",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/k.png",
+            "type": "letter",
+            "rank": 41
+        },
+        {
+            "name": "letter_k_2",
+            "label": "K",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/k.png",
+            "type": "letter",
+            "rank": 42
+        },
+        {
+            "name": "letter_k_3",
+            "label": "K",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/k.png",
+            "type": "letter",
+            "rank": 43
+        },
+        {
+            "name": "letter_k_4",
+            "label": "K",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/k.png",
+            "type": "letter",
+            "rank": 44
+        },
+        {
+            "name": "letter_l_1",
+            "label": "L",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/l.png",
+            "type": "letter",
+            "rank": 45
+        },
+        {
+            "name": "letter_l_2",
+            "label": "L",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/l.png",
+            "type": "letter",
+            "rank": 46
+        },
+        {
+            "name": "letter_l_3",
+            "label": "L",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/l.png",
+            "type": "letter",
+            "rank": 47
+        },
+        {
+            "name": "letter_l_4",
+            "label": "L",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/l.png",
+            "type": "letter",
+            "rank": 48
+        },
+        {
+            "name": "letter_m_1",
+            "label": "M",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/m.png",
+            "type": "letter",
+            "rank": 49
+        },
+        {
+            "name": "letter_m_2",
+            "label": "M",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/m.png",
+            "type": "letter",
+            "rank": 50
+        },
+        {
+            "name": "letter_m_3",
+            "label": "M",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/m.png",
+            "type": "letter",
+            "rank": 51
+        },
+        {
+            "name": "letter_m_4",
+            "label": "M",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/m.png",
+            "type": "letter",
+            "rank": 52
+        },
+        {
+            "name": "letter_n_1",
+            "label": "N",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/n.png",
+            "type": "letter",
+            "rank": 53
+        },
+        {
+            "name": "letter_n_2",
+            "label": "N",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/n.png",
+            "type": "letter",
+            "rank": 54
+        },
+        {
+            "name": "letter_n_3",
+            "label": "N",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/n.png",
+            "type": "letter",
+            "rank": 55
+        },
+        {
+            "name": "letter_n_4",
+            "label": "N",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/n.png",
+            "type": "letter",
+            "rank": 56
+        },
+        {
+            "name": "letter_o_1",
+            "label": "O",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/o.png",
+            "type": "letter",
+            "rank": 57
+        },
+        {
+            "name": "letter_o_2",
+            "label": "O",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/o.png",
+            "type": "letter",
+            "rank": 58
+        },
+        {
+            "name": "letter_o_3",
+            "label": "O",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/o.png",
+            "type": "letter",
+            "rank": 59
+        },
+        {
+            "name": "letter_o_4",
+            "label": "O",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/o.png",
+            "type": "letter",
+            "rank": 60
+        },
+        {
+            "name": "letter_p_1",
+            "label": "P",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/p.png",
+            "type": "letter",
+            "rank": 61
+        },
+        {
+            "name": "letter_p_2",
+            "label": "P",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/p.png",
+            "type": "letter",
+            "rank": 62
+        },
+        {
+            "name": "letter_p_3",
+            "label": "P",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/p.png",
+            "type": "letter",
+            "rank": 63
+        },
+        {
+            "name": "letter_p_4",
+            "label": "P",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/p.png",
+            "type": "letter",
+            "rank": 64
+        },
+        {
+            "name": "letter_q_1",
+            "label": "Q",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/q.png",
+            "type": "letter",
+            "rank": 65
+        },
+        {
+            "name": "letter_q_2",
+            "label": "Q",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/q.png",
+            "type": "letter",
+            "rank": 66
+        },
+        {
+            "name": "letter_q_3",
+            "label": "Q",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/q.png",
+            "type": "letter",
+            "rank": 67
+        },
+        {
+            "name": "letter_q_4",
+            "label": "Q",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/q.png",
+            "type": "letter",
+            "rank": 68
+        },
+        {
+            "name": "letter_r_1",
+            "label": "R",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/r.png",
+            "type": "letter",
+            "rank": 69
+        },
+        {
+            "name": "letter_r_2",
+            "label": "R",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/r.png",
+            "type": "letter",
+            "rank": 70
+        },
+        {
+            "name": "letter_r_3",
+            "label": "R",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/r.png",
+            "type": "letter",
+            "rank": 71
+        },
+        {
+            "name": "letter_r_4",
+            "label": "R",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/r.png",
+            "type": "letter",
+            "rank": 72
+        },
+        {
+            "name": "letter_s_1",
+            "label": "S",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/s.png",
+            "type": "letter",
+            "rank": 73
+        },
+        {
+            "name": "letter_s_2",
+            "label": "S",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/s.png",
+            "type": "letter",
+            "rank": 74
+        },
+        {
+            "name": "letter_s_3",
+            "label": "S",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/s.png",
+            "type": "letter",
+            "rank": 75
+        },
+        {
+            "name": "letter_s_4",
+            "label": "S",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/s.png",
+            "type": "letter",
+            "rank": 76
+        },
+        {
+            "name": "letter_t_1",
+            "label": "T",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/t.png",
+            "type": "letter",
+            "rank": 77
+        },
+        {
+            "name": "letter_t_2",
+            "label": "T",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/t.png",
+            "type": "letter",
+            "rank": 78
+        },
+        {
+            "name": "letter_t_3",
+            "label": "T",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/t.png",
+            "type": "letter",
+            "rank": 79
+        },
+        {
+            "name": "letter_t_4",
+            "label": "T",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/t.png",
+            "type": "letter",
+            "rank": 80
+        },
+        {
+            "name": "letter_u_1",
+            "label": "U",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/u.png",
+            "type": "letter",
+            "rank": 81
+        },
+        {
+            "name": "letter_u_2",
+            "label": "U",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/u.png",
+            "type": "letter",
+            "rank": 82
+        },
+        {
+            "name": "letter_u_3",
+            "label": "U",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/u.png",
+            "type": "letter",
+            "rank": 83
+        },
+        {
+            "name": "letter_u_4",
+            "label": "U",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/u.png",
+            "type": "letter",
+            "rank": 84
+        },
+        {
+            "name": "letter_v_1",
+            "label": "V",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/v.png",
+            "type": "letter",
+            "rank": 85
+        },
+        {
+            "name": "letter_v_2",
+            "label": "V",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/v.png",
+            "type": "letter",
+            "rank": 86
+        },
+        {
+            "name": "letter_v_3",
+            "label": "V",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/v.png",
+            "type": "letter",
+            "rank": 87
+        },
+        {
+            "name": "letter_v_4",
+            "label": "V",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/v.png",
+            "type": "letter",
+            "rank": 88
+        },
+        {
+            "name": "letter_w_1",
+            "label": "W",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/w.png",
+            "type": "letter",
+            "rank": 89
+        },
+        {
+            "name": "letter_w_2",
+            "label": "W",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/w.png",
+            "type": "letter",
+            "rank": 90
+        },
+        {
+            "name": "letter_w_3",
+            "label": "W",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/w.png",
+            "type": "letter",
+            "rank": 91
+        },
+        {
+            "name": "letter_w_4",
+            "label": "W",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/w.png",
+            "type": "letter",
+            "rank": 92
+        },
+        {
+            "name": "letter_x_1",
+            "label": "X",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/x.png",
+            "type": "letter",
+            "rank": 93
+        },
+        {
+            "name": "letter_x_2",
+            "label": "X",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/x.png",
+            "type": "letter",
+            "rank": 94
+        },
+        {
+            "name": "letter_x_3",
+            "label": "X",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/x.png",
+            "type": "letter",
+            "rank": 95
+        },
+        {
+            "name": "letter_x_4",
+            "label": "X",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/x.png",
+            "type": "letter",
+            "rank": 96
+        },
+        {
+            "name": "letter_y_1",
+            "label": "Y",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/y.png",
+            "type": "letter",
+            "rank": 97
+        },
+        {
+            "name": "letter_y_2",
+            "label": "Y",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/y.png",
+            "type": "letter",
+            "rank": 98
+        },
+        {
+            "name": "letter_y_3",
+            "label": "Y",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/y.png",
+            "type": "letter",
+            "rank": 99
+        },
+        {
+            "name": "letter_y_4",
+            "label": "Y",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/y.png",
+            "type": "letter",
+            "rank": 100
+        },
+        {
+            "name": "letter_z_1",
+            "label": "Z",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/z.png",
+            "type": "letter",
+            "rank": 101
+        },
+        {
+            "name": "letter_z_2",
+            "label": "Z",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/z.png",
+            "type": "letter",
+            "rank": 102
+        },
+        {
+            "name": "letter_z_3",
+            "label": "Z",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/z.png",
+            "type": "letter",
+            "rank": 103
+        },
+        {
+            "name": "letter_z_4",
+            "label": "Z",
+            "image": "https://res.cloudinary.com/liars-club/image/upload/images/is_it_a_word/z.png",
+            "type": "letter",
+            "rank": 104
+        }
+    ],
+    "sets": {
+        "letters_a": {
+            "letter_a_1": 1,
+            "letter_a_2": 1,
+            "letter_a_3": 1,
+            "letter_a_4": 1
+        },
+        "letters_b": {
+            "letter_b_1": 1,
+            "letter_b_2": 1,
+            "letter_b_3": 1,
+            "letter_b_4": 1
+        },
+        "letters_c": {
+            "letter_c_1": 1,
+            "letter_c_2": 1,
+            "letter_c_3": 1,
+            "letter_c_4": 1
+        },
+        "letters_d": {
+            "letter_d_1": 1,
+            "letter_d_2": 1,
+            "letter_d_3": 1,
+            "letter_d_4": 1
+        },
+        "letters_e": {
+            "letter_e_1": 1,
+            "letter_e_2": 1,
+            "letter_e_3": 1,
+            "letter_e_4": 1
+        },
+        "letters_f": {
+            "letter_f_1": 1,
+            "letter_f_2": 1,
+            "letter_f_3": 1,
+            "letter_f_4": 1
+        },
+        "letters_g": {
+            "letter_g_1": 1,
+            "letter_g_2": 1,
+            "letter_g_3": 1,
+            "letter_g_4": 1
+        },
+        "letters_h": {
+            "letter_h_1": 1,
+            "letter_h_2": 1,
+            "letter_h_3": 1,
+            "letter_h_4": 1
+        },
+        "letters_i": {
+            "letter_i_1": 1,
+            "letter_i_2": 1,
+            "letter_i_3": 1,
+            "letter_i_4": 1
+        },
+        "letters_j": {
+            "letter_j_1": 1,
+            "letter_j_2": 1,
+            "letter_j_3": 1,
+            "letter_j_4": 1
+        },
+        "letters_k": {
+            "letter_k_1": 1,
+            "letter_k_2": 1,
+            "letter_k_3": 1,
+            "letter_k_4": 1
+        },
+        "letters_l": {
+            "letter_l_1": 1,
+            "letter_l_2": 1,
+            "letter_l_3": 1,
+            "letter_l_4": 1
+        },
+        "letters_m": {
+            "letter_m_1": 1,
+            "letter_m_2": 1,
+            "letter_m_3": 1,
+            "letter_m_4": 1
+        },
+        "letters_n": {
+            "letter_n_1": 1,
+            "letter_n_2": 1,
+            "letter_n_3": 1,
+            "letter_n_4": 1
+        },
+        "letters_o": {
+            "letter_o_1": 1,
+            "letter_o_2": 1,
+            "letter_o_3": 1,
+            "letter_o_4": 1
+        },
+        "letters_p": {
+            "letter_p_1": 1,
+            "letter_p_2": 1,
+            "letter_p_3": 1,
+            "letter_p_4": 1
+        },
+        "letters_q": {
+            "letter_q_1": 1,
+            "letter_q_2": 1,
+            "letter_q_3": 1,
+            "letter_q_4": 1
+        },
+        "letters_r": {
+            "letter_r_1": 1,
+            "letter_r_2": 1,
+            "letter_r_3": 1,
+            "letter_r_4": 1
+        },
+        "letters_s": {
+            "letter_s_1": 1,
+            "letter_s_2": 1,
+            "letter_s_3": 1,
+            "letter_s_4": 1
+        },
+        "letters_t": {
+            "letter_t_1": 1,
+            "letter_t_2": 1,
+            "letter_t_3": 1,
+            "letter_t_4": 1
+        },
+        "letters_u": {
+            "letter_u_1": 1,
+            "letter_u_2": 1,
+            "letter_u_3": 1,
+            "letter_u_4": 1
+        },
+        "letters_v": {
+            "letter_v_1": 1,
+            "letter_v_2": 1,
+            "letter_v_3": 1,
+            "letter_v_4": 1
+        },
+        "letters_w": {
+            "letter_w_1": 1,
+            "letter_w_2": 1,
+            "letter_w_3": 1,
+            "letter_w_4": 1
+        },
+        "letters_x": {
+            "letter_x_1": 1,
+            "letter_x_2": 1,
+            "letter_x_3": 1,
+            "letter_x_4": 1
+        },
+        "letters_y": {
+            "letter_y_1": 1,
+            "letter_y_2": 1,
+            "letter_y_3": 1,
+            "letter_y_4": 1
+        },
+        "letters_z": {
+            "letter_z_1": 1,
+            "letter_z_2": 1,
+            "letter_z_3": 1,
+            "letter_z_4": 1
+        }
+    }
+}

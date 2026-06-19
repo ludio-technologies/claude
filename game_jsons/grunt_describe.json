@@ -1,0 +1,39 @@
+{
+    "name": "Grunt!",
+    "demo": false,
+    "parallel": false,
+    "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+    "banner": "https://res.cloudinary.com/liars-club/image/upload/images/grunt/banner.png",
+    "description": {
+        "summary": "Two clans take turns. The Bard describes the word on each card using ONLY one-syllable words — speak small, win big.",
+        "description_title": "Grunt! Overview",
+        "# Players": "4-12",
+        "players": "4-12",
+        "Duration": "3 mins/round"
+    },
+    "rules": [
+        {
+            "name": "Basic Rules",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Overview",
+                    "text": "At the start of the game, players are randomly split into Red Clan and Blue Clan.<br><br>Each turn, one player on the active clan volunteers as the Bard. The Bard sees a card and must describe the word or phrase to their teammates using only one-syllable words. Their clan shouts out guesses.<br><br>When the clan guesses correctly, the Bard taps the card to score points (1pt for easy cards, 3pts for hard cards). Stuck? Tap PASS for a –1 penalty and move on.<br><br>The Bard has 90 seconds to burn through as many cards as possible. After both clans take a turn, the host decides whether to keep playing, reset scores, or end the game."
+                },
+                {
+                    "title": "Allowed and not allowed",
+                    "text": "Allowed:<br>• Words with one syllable only<br>• Any word already said aloud by a teammate<br>• Any word that's been guessed already this turn<br><br>Not allowed:<br>• Multi-syllable words<br>• Gestures, miming, or charades<br>• Sound effects or impressions<br>• Saying \"sounds like\" or \"rhymes with\"<br>• Initials, abbreviations, or spelling out letters<br>• Other languages<br>• Any part of the word or phrase on the card<br><br>The honor system applies. If the other clan hears a multi-syllable word, they yell \"BAD!\" — and the Bard should pass that card for the –1 penalty."
+                },
+                {
+                    "title": "Scoring",
+                    "text": "Each card is worth 1 point (easy) or 3 points (hard) — the value is shown on the card.<br><br>Pass = –1 point. Don't pass too quickly!<br><br>At the end of the game, the clan with the highest combined score wins."
+                },
+                {
+                    "title": "End of round",
+                    "text": "After both clans have taken a turn, all the cards from that round become inspectable. Click the eye icons on the decks to browse what came up — perfect for table-talk and ribbing.<br><br>When everyone's done, the host clicks any deck to advance, then votes: Keep scores, Reset scores, or End game."
+                }
+            ]
+        }
+    ],
+    "tags": ["played in teams", "word game", "filler", "icebreaker"]
+}

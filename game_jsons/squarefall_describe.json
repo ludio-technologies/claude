@@ -1,0 +1,44 @@
+{
+    "name": "Squarefall",
+    "demo": false,
+    "parallel": false,
+    "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+    "banner": "https://res.cloudinary.com/liars-club/image/upload/images/squarefall/banner.png",
+    "description": {
+        "summary": "Cooperative word-puzzle. One player writes 4 single-word clues — everyone else rotates and swaps cards to reconstruct the original grid.",
+        "description_title": "Squarefall Overview",
+        "# Players": "2-12",
+        "players": "2-12",
+        "Duration": "3 mins/round"
+    },
+    "rules": [
+        {
+            "name": "Basic Rules",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Overview",
+                    "text": "Squarefall is a cooperative twist on word association. Each round, one player is the Guide. They privately receive 4 square cards — each card has 4 words, one in each diagonal quadrant (top, right, bottom, left).<br><br>The Guide writes 4 single-word clues, one for each pair of adjacent cards. Each clue links the two words that face each other across the gap between two cards."
+                },
+                {
+                    "title": "Writing clues",
+                    "text": "You'll get 4 clue prompts in a row, untimed. Each prompt shows the two specific words you need to link. Your clue should evoke BOTH words.<br><br>Rules for clue words:<br>• Must be a single word (compound words OK).<br>• Cannot be any of the 16 words on the 4 cards.<br>• No translations, no rhymes, no abbreviations."
+                },
+                {
+                    "title": "Solving",
+                    "text": "After clues are written, the 4 cards are shuffled into the central 2x2 grid and randomly rotated. The 4 clues appear around the edges in fixed positions.<br><br>The rest of the team uses the controls on the right (ROTATE CW, ROTATE CCW, SWAP, END ROUND) to put the cards back in their original positions and rotations. Any player can tap a control."
+                },
+                {
+                    "title": "Scoring",
+                    "text": "Hit END ROUND when you're ready — a majority of non-writers must confirm within 20 seconds.<br><br>The grid is then revealed and each card is highlighted:<br>• Green = correct position AND correct rotation<br>• Blue = correct position but wrong rotation<br>• Red = wrong position<br><br>You earn +1 grid solved if all 4 are perfectly green. The game ends when the host calls it — you'll see how many grids you solved out of the rounds played."
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "collaborative",
+        "word game",
+        "strategic",
+        "card game"
+    ]
+}

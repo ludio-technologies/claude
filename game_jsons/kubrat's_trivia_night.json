@@ -293,7 +293,7 @@
                 "url": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia.png"
             },
             "banner": {
-                "url": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/ankit_plant_fun.jpg"
+                "url": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/kubrat2.png"
             },
             "casino_background": {
                 "url": "https://res.cloudinary.com/liars-club/image/upload/bluury_g2d8fc.jpg"
@@ -819,7 +819,7 @@
             "key": "createNotification",
             "payload": {
                 "preset": {
-                    "header": "Welcome to Ankit's Trivia Night!",
+                    "header": "Welcome to Kubrat's Trivia Night!",
                     "image": "banner",
                     "duration": 8,
                     "backgroundColor": "#ddf0c7",
@@ -1063,11 +1063,11 @@
                 {
                     "name": "categoryMapping",
                     "value": {
-                        "Aerial shots": "round1Questions",
-                        "Which came first?": "round2Questions",
-                        "Tip of the iceberg": "round3Questions",
-                        "Here comes the sun": "round4Questions",
-                        "Masterpiece details": "round5Questions"
+                        "Famous beards and mustaches": "round1Questions",
+                        "Eponyms": "round2Questions",
+                        "Famous fictional foods": "round3Questions",
+                        "Real names behind stage names": "round4Questions",
+                        "Iconic photographs": "round5Questions"
                     }
                 },
                 {
@@ -1141,54 +1141,54 @@
                     "name": "round1Questions",
                     "value": [
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "Eiffel Tower (Paris)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/eiffel.jpg"
+                            "q": "Whose iconic facial hair is this?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_121/1.jpg",
+                            "answer": "Abraham Lincoln"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "Pyramids of Giza (Egypt)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/giza.jpg"
+                            "q": "Whose iconic facial hair is this?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_121/2.jpg",
+                            "answer": "Salvador Dalí"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "Sydney Opera House (Australia)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/opera.jpg"
+                            "q": "Whose iconic facial hair is this?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_121/3.jpg",
+                            "answer": "Freddie Mercury"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "The Colosseum (Rome)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/colosseum.jpg"
+                            "q": "Whose iconic facial hair is this?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_121/4.jpg",
+                            "answer": "Charlie Chaplin"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "Taj Mahal (Agra, India)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/taj.png"
+                            "q": "Whose iconic facial hair is this?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_121/5.jpg",
+                            "answer": "Hulk Hogan"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "The Pentagon (Washington, D.C.)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/pentagon.jpg"
+                            "q": "Whose iconic facial hair is this?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_121/6.png",
+                            "answer": "Tom Selleck"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "St. Peter's Square (Vatican City)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/stpeters.jpg"
+                            "q": "Whose iconic facial hair is this?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_121/7.jpg",
+                            "answer": "Albert Einstein"
                         },
                         {
-                            "q": "What famous landmark sits at the center of this 12-avenue star?",
-                            "answer": "Arc de Triomphe (Paris)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/arc.jpg"
+                            "q": "Whose iconic facial hair is this?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_121/8.jpg",
+                            "answer": "Mr. T"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "The Forbidden City (Beijing)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/forbidden.jpg"
+                            "q": "Whose iconic facial hair is this?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_121/9.png",
+                            "answer": "Karl Marx"
                         },
                         {
-                            "q": "What ancient monument is this a (1928) aerial view of?",
-                            "answer": "Stonehenge (England)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/stonehenge.jpg"
+                            "q": "Whose iconic facial hair is this?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_121/10.jpg",
+                            "answer": "Frederick Douglass"
                         }
                     ]
                 },
@@ -1196,44 +1196,44 @@
                     "name": "round2Questions",
                     "value": [
                         {
-                            "q": "Sharks or trees?",
-                            "answer": "Sharks (450mya vs. 385mya)"
+                            "q": "An 18th-century English earl, an avid card player, is said to have asked his servants to bring him meat tucked between two slices of bread so he wouldn't have to leave the gambling table. The food is now named after him. What is it?",
+                            "answer": "Sandwich (after John Montagu, 4th Earl of Sandwich)"
                         },
                         {
-                            "q": "Stegosaurus or Tyrannosaurus rex?",
-                            "answer": "Stegosaurus (150mya vs. 68mya)"
+                            "q": "Charles ___, a 19th-century Irish land agent, was so unpopular with tenants that they collectively refused to do any business with him. His surname became the verb for that exact tactic. What's the word?",
+                            "answer": "Boycott (after Charles Boycott)"
                         },
                         {
-                            "q": "The Great Pyramid of Giza or the last woolly mammoths dying out?",
-                            "answer": "The Great Pyramid (2560BCE vs. 1650BCE)"
+                            "q": "This curved brass instrument was invented in the 1840s by a Belgian named Adolphe. The first three letters of its name are his surname. Name the instrument.",
+                            "answer": "Saxophone (after Adolphe Sax)"
                         },
                         {
-                            "q": "The University of Oxford or the Aztec capital Tenochtitlan?",
-                            "answer": "Oxford (1096 vs. 1325)"
+                            "q": "These cheek-side strips of facial hair are named after a Civil War general whose extravagant whiskers framed his face the same way. What do we call them?",
+                            "answer": "Sideburns (after General Ambrose Burnside)"
                         },
                         {
-                            "q": "The fax machine or the American Civil War?",
-                            "answer": "Fax machine (1843 vs. 1861)"
+                            "q": "This meringue-and-cream dessert, claimed by both Australia and New Zealand, was created in honor of a touring Russian ballerina in the 1920s. Name the dessert.",
+                            "answer": "Pavlova (after Anna Pavlova)"
                         },
                         {
-                            "q": "Nintendo or the Jack the Ripper murders?",
-                            "answer": "Jack the Ripper (1888 vs. 1889)"
+                            "q": "A French doctor proposed this device during the Revolution as a swift, 'humane' method of execution. He didn't invent it, but his surname became its name. What is it?",
+                            "answer": "Guillotine (after Dr. Joseph-Ignace Guillotin)"
                         },
                         {
-                            "q": "Harvard University or calculus?",
-                            "answer": "Harvard (1636 vs. 1660s)"
+                            "q": "This verb, meaning 'to hold someone's complete attention' or 'to fascinate utterly,' comes from the surname of an 18th-century German physician who promoted a theory of 'animal magnetism' and put patients into trance-like states. What's the word?",
+                            "answer": "Mesmerize (after Franz Mesmer)"
                         },
                         {
-                            "q": "The Eiffel Tower or the first Ferris wheel?",
-                            "answer": "Eiffel Tower (1889 vs. 1893)"
+                            "q": "This computer-science term for a step-by-step procedure comes from the Latinized name of a 9th-century Persian mathematician (who also gave us the word 'algebra'). What's the modern word?",
+                            "answer": "Algorithm (after Al-Khwarizmi)"
                         },
                         {
-                            "q": "The fall of the Roman Empire or the completion of Stonehenge?",
-                            "answer": "Stonehenge (2500BCE vs. 476BCE)"
+                            "q": "This word for a grand, freestanding tomb comes from the name of a 4th-century BC king of Caria, whose own elaborate tomb was one of the Seven Wonders of the Ancient World. What's the word?",
+                            "answer": "Mausoleum (after King Mausolus of Caria)"
                         },
                         {
-                            "q": "The first email or the Rubik's Cube?",
-                            "answer": "First email (1971 vs. 1974)"
+                            "q": "This giant rotating amusement ride was designed by an American bridge engineer for the 1893 Chicago World's Fair to rival the Eiffel Tower. His surname became the ride's name. What is it?",
+                            "answer": "Ferris Wheel (after George Washington Gale Ferris Jr.)"
                         }
                     ]
                 },
@@ -1241,44 +1241,54 @@
                     "name": "round3Questions",
                     "value": [
                         {
-                            "q": "Invented in 1886 by an Atlanta pharmacist as a 'brain tonic,' its exact recipe is one of the most closely guarded trade secrets in the world.",
-                            "answer": "Coca-Cola"
+                            "q": "Name this famous fictional food (and bonus points for the source media).",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_120/1.jpg",
+                            "answer": "Butterbeer (Harry Potter)"
                         },
                         {
-                            "q": "Charles Dickens wrote it in just six weeks in 1843 to clear his debts, self-publishing it with gilt edges and hand-colored illustrations; despite selling out almost instantly, the lavish printing left him with little profit.",
-                            "answer": "A Christmas Carol"
+                            "q": "Name this famous fictional food (and bonus points for the source media).",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_120/2.png",
+                            "answer": "Krabby Patty (SpongeBob SquarePants)"
                         },
                         {
-                            "q": "Founded in a California garage in 1976, its very first product was a hand-built circuit board priced at $666.66.",
-                            "answer": "Apple"
+                            "q": "Name this famous fictional food (and bonus points for the source media).",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_120/3.jpg",
+                            "answer": "Lembas bread (The Lord of the Rings)"
                         },
                         {
-                            "q": "An 1886 gift from France, its formal name is 'Liberty Enlightening the World,' and for years it doubled as a working lighthouse.",
-                            "answer": "The Statue of Liberty"
+                            "q": "Name this famous fictional food (and bonus points for the source media).",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_120/4.jpg",
+                            "answer": "Blue Milk (Star Wars)"
                         },
                         {
-                            "q": "The priciest film ever made at the time, its director personally dove about 3,800 m to the real wreck to shoot footage for it.",
-                            "answer": "Titanic (1997)"
+                            "q": "Name this famous fictional food (and bonus points for the source media).",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_120/5.jpg",
+                            "answer": "Soylent Green (Soylent Green, 1973)"
                         },
                         {
-                            "q": "Originally purple and white, the now-familiar orange variety was reportedly cultivated by 17th-century Dutch growers.",
-                            "answer": "Carrots"
+                            "q": "Name this famous fictional food (and bonus points for the source media).",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_120/6.jpg",
+                            "answer": "Slurm (Futurama)"
                         },
                         {
-                            "q": "Patented in the 1930s, it was adapted from an earlier game, 'The Landlord's Game,' created to demonstrate the unfairness of concentrated land ownership.",
-                            "answer": "Monopoly"
+                            "q": "Name this famous fictional food (and bonus points for the source media).",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_120/7.jpg",
+                            "answer": "Wonka Bar (Charlie and the Chocolate Factory)"
                         },
                         {
-                            "q": "An 18-year-old wrote it after a ghost-story contest during a stormy 1816 summer at Lake Geneva.",
-                            "answer": "Frankenstein"
+                            "q": "Name this famous fictional food (and bonus points for the source media).",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_120/8.jpg",
+                            "answer": "Turkish Delight (The Lion, the Witch and the Wardrobe)"
                         },
                         {
-                            "q": "Its working title was 'First Impressions,' and it opens on a single man in possession of a good fortune being in want of a wife.",
-                            "answer": "Pride and Prejudice"
+                            "q": "Name this famous fictional food (and bonus points for the source media).",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_120/9.jpg",
+                            "answer": "Duff Beer (The Simpsons)"
                         },
                         {
-                            "q": "Atomic number 79, its symbol comes from the Latin 'aurum'; all of it ever mined would fit in about four Olympic swimming pools.",
-                            "answer": "Gold"
+                            "q": "Name this famous fictional food (and bonus points for the source media).",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_120/10.jpg",
+                            "answer": "Scooby Snacks (Scooby-Doo)"
                         }
                     ]
                 },
@@ -1286,44 +1296,44 @@
                     "name": "round4Questions",
                     "value": [
                         {
-                            "q": "About how long does sunlight take to reach Earth? +1 minute",
-                            "answer": "8 minutes"
+                            "q": "This pop singer was born Stefani Joanne Angelina Germanotta in New York in 1986 and starred opposite Bradley Cooper in the 2018 film 'A Star is Born.' What's her stage name?",
+                            "answer": "Lady Gaga"
                         },
                         {
-                            "q": "What process/reaction powers the Sun?",
-                            "answer": "Nuclear fusion (H -> He)"
+                            "q": "This British singer-songwriter and pianist was born Reginald Kenneth Dwight in 1947 and is behind hits like 'Tiny Dancer' and 'Your Song.' What's his stage name?",
+                            "answer": "Elton John"
                         },
                         {
-                            "q": "What's the Sun's faint outer atmosphere, visible only during a total eclipse, called?",
-                            "answer": "The corona"
+                            "q": "This Detroit rapper was born Marshall Bruce Mathers III in 1972 and starred in the semi-autobiographical film '8 Mile.' What's his stage name?",
+                            "answer": "Eminem"
                         },
                         {
-                            "q": "The Egyptian sun god Ra is most often depicted as a man with the head of which bird, crowned by a sun disk?",
-                            "answer": "Falcon (hawk)"
+                            "q": "This British author was born Eric Arthur Blair in 1903 and wrote 'Animal Farm' under his pen name. What was the pen name?",
+                            "answer": "George Orwell"
                         },
                         {
-                            "q": "Icarus flew too close to the Sun on wax-and-feather wings. Who was his father - the master craftsman who built the wings and also designed the Labyrinth?",
-                            "answer": "Daedalus"
+                            "q": "This Hollywood icon was born Norma Jeane Mortenson in 1926 and remains the defining sex symbol of the 1950s. What's her stage name?",
+                            "answer": "Marilyn Monroe"
                         },
                         {
-                            "q": "In Andy Weir's novel Project Hail Mary, adapted into the 2026 film with Ryan Gosling, what microscopic organism is feeding on the Sun's energy and dimming stars across the galaxy?",
-                            "answer": "Astrophage"
+                            "q": "This American folk singer was born Robert Allen Zimmerman in Minnesota in 1941 and won the Nobel Prize in Literature in 2016. What's his stage name?",
+                            "answer": "Bob Dylan"
                         },
                         {
-                            "q": "In Danny Boyle's 2007 film Sunshine, what is the crew's mission aboard the ship Icarus II?",
-                            "answer": "Reignite the dying sun (stellar bomb)"
+                            "q": "This British actor was born Maurice Joseph Micklewhite Jr. in London in 1933 and starred in 'The Italian Job' and 'Alfie.' What's his stage name?",
+                            "answer": "Michael Caine"
                         },
                         {
-                            "q": "What color is the Sun actually, seen from space?",
-                            "answer": "White"
+                            "q": "This pop singer was born Peter Gene Hernandez in Honolulu in 1985 and is known for hits like '24K Magic' and 'Just the Way You Are.' What's his stage name?",
+                            "answer": "Bruno Mars"
                         },
                         {
-                            "q": "In ~5 billion years, what kind of star will the Sun swell into?",
-                            "answer": "Red giant"
+                            "q": "This Long Beach rapper was born Calvin Cordozar Broadus Jr. in 1971 and broke through under Dr. Dre's wing with 'Doggystyle.' What's his stage name?",
+                            "answer": "Snoop Dogg"
                         },
                         {
-                            "q": "What are the dark, cooler patches on the Sun's surface called?",
-                            "answer": "Sunspots"
+                            "q": "This American actress and TV host was born Caryn Elaine Johnson in NYC in 1955 and starred as a nun-in-hiding in the 1992 comedy 'Sister Act.' What's her stage name?",
+                            "answer": "Whoopi Goldberg"
                         }
                     ]
                 },
@@ -1331,54 +1341,54 @@
                     "name": "round5Questions",
                     "value": [
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "The Starry Night (Van Gogh)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/starry.jpg"
+                            "q": "Who, what, or where is significant about this picture?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_122/1.jpg",
+                            "answer": "Tank Man — unknown protester blocking a column of tanks during the Tiananmen Square protests, Beijing, 1989"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "Mona Lisa (da Vinci)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/mona.jpg"
+                            "q": "Who, what, or where is significant about this picture?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_122/2.jpg",
+                            "answer": "V-J Day in Times Square — sailor kissing a nurse celebrating Japan's surrender, New York, 1945 (Alfred Eisenstaedt)"
                         },
                         {
-                            "q": "Which famous artwork is this a detail of?",
-                            "answer": "The Creation of Adam (Michelangelo)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/adam.jpg"
+                            "q": "Who, what, or where is significant about this picture?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_122/3.jpg",
+                            "answer": "Marilyn Monroe over the subway grate, from 'The Seven Year Itch,' 1954"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "The Scream (Munch)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/scream.jpg"
+                            "q": "Who, what, or where is significant about this picture?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_122/4.jpg",
+                            "answer": "Afghan Girl (Sharbat Gula) — Steve McCurry, National Geographic cover, 1985"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "Girl with a Pearl Earring (Vermeer)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/pearl.jpg"
+                            "q": "Who, what, or where is significant about this picture?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_122/5.jpg",
+                            "answer": "Pillars of Creation — Eagle Nebula, photographed by the Hubble Space Telescope, 1995"
                         },
                         {
-                            "q": "Which famous artwork is this a detail of?",
-                            "answer": "The Great Wave off Kanagawa (Hokusai)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/wave.jpg"
+                            "q": "Who, what, or where is significant about this picture?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_122/6.jpg",
+                            "answer": "Muhammad Ali standing over Sonny Liston after a first-round knockout, Lewiston, Maine, 1965 (Neil Leifer)"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "The Birth of Venus (Botticelli)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/venus.jpg"
+                            "q": "Who, what, or where is significant about this picture?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_122/7.jpg",
+                            "answer": "Raising the Flag on Iwo Jima — Joe Rosenthal, 1945"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "The Last Supper (da Vinci)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/supper.jpg"
+                            "q": "Who, what, or where is significant about this picture?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_122/8.jpg",
+                            "answer": "Albert Einstein sticking out his tongue on his 72nd birthday, 1951 (Arthur Sasse)"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "The Kiss (Klimt)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/kiss.jpg"
+                            "q": "Who, what, or where is significant about this picture?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_122/9.png",
+                            "answer": "George W. Bush ducking shoes thrown by Iraqi journalist Muntadhar al-Zaidi at a Baghdad press conference, 2008"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "Water Lilies (Monet)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/lilies.jpg"
+                            "q": "Who, what, or where is significant about this picture?",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_122/10.jpg",
+                            "answer": "Guerrillero Heroico — Che Guevara, photographed by Alberto Korda, 1960"
                         }
                     ]
                 },
@@ -3200,7 +3210,7 @@
                                     {
                                         "name": "format",
                                         "type": "preset",
-                                        "value": "Ankit's Trivia Night, Round ($1)"
+                                        "value": "Kubrat's Trivia Night, Round ($1)"
                                     },
                                     {
                                         "name": "arg1",
@@ -3276,210 +3286,6 @@
                                         }
                                     ]
                                 }
-                            },
-                            {
-                                "name": "currentOptions",
-                                "value": {
-                                    "selector": "getCachedObjectValue",
-                                    "params": [
-                                        {
-                                            "name": "objectName",
-                                            "type": "preset",
-                                            "value": "currentItem"
-                                        },
-                                        {
-                                            "name": "value",
-                                            "type": "preset",
-                                            "value": "m"
-                                        },
-                                        {
-                                            "name": "defaultValue",
-                                            "type": "preset",
-                                            "value": []
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "name": "currentAudio",
-                                "value": {
-                                    "selector": "getCachedObjectValue",
-                                    "params": [
-                                        {
-                                            "name": "objectName",
-                                            "type": "preset",
-                                            "value": "currentItem"
-                                        },
-                                        {
-                                            "name": "value",
-                                            "type": "preset",
-                                            "value": "a"
-                                        },
-                                        {
-                                            "name": "defaultValue",
-                                            "type": "preset",
-                                            "value": "soundboard.reminder"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "name": "hasOptions",
-                                "value": {
-                                    "selector": "greaterThan",
-                                    "params": [
-                                        {
-                                            "name": "arg1",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "listLength",
-                                                "params": [
-                                                    {
-                                                        "name": "list",
-                                                        "type": "cached",
-                                                        "value": "currentOptions"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "name": "arg2",
-                                            "type": "preset",
-                                            "value": 0
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "name": "optionAppearances",
-                                "value": {
-                                    "selector": "createDict",
-                                    "params": [
-                                        {
-                                            "name": "keys",
-                                            "type": "cached",
-                                            "value": "currentOptions"
-                                        },
-                                        {
-                                            "name": "values",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "sublist",
-                                                "params": [
-                                                    {
-                                                        "name": "list",
-                                                        "type": "preset",
-                                                        "value": [
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/one.svg",
-                                                                "backgroundColor": "#ebc3a5",
-                                                                "boxIconColor": "#ebc3a5",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/two.svg",
-                                                                "backgroundColor": "#d9d9d9",
-                                                                "boxIconColor": "#d9d9d9",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/three.svg",
-                                                                "backgroundColor": "#f9cb9c",
-                                                                "boxIconColor": "#f9cb9c",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/four.svg",
-                                                                "backgroundColor": "#b6d7a8",
-                                                                "boxIconColor": "#b6d7a8",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/five.svg",
-                                                                "backgroundColor": "#ffe599",
-                                                                "boxIconColor": "#ffe599",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/six.svg",
-                                                                "backgroundColor": "#ead1dc",
-                                                                "boxIconColor": "#ead1dc",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/seven.svg",
-                                                                "backgroundColor": "#fce5cd",
-                                                                "boxIconColor": "#fce5cd",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/eight.svg",
-                                                                "backgroundColor": "#d9d2e9",
-                                                                "boxIconColor": "#d9d2e9",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/nine.svg",
-                                                                "backgroundColor": "#d9ead3",
-                                                                "boxIconColor": "#d9ead3",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/ten.svg",
-                                                                "backgroundColor": "#cfe2f3",
-                                                                "boxIconColor": "#cfe2f3",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/paper_clip.svg",
-                                                                "backgroundColor": "#cfe2f3",
-                                                                "boxIconColor": "#cfe2f3",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            },
-                                                            {
-                                                                "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/paper_clip.svg",
-                                                                "backgroundColor": "#cfe2f3",
-                                                                "boxIconColor": "#cfe2f3",
-                                                                "textColor": "black",
-                                                                "widgetIconColor": "black"
-                                                            }
-                                                        ]
-                                                    },
-                                                    {
-                                                        "name": "start",
-                                                        "type": "preset",
-                                                        "value": 0
-                                                    },
-                                                    {
-                                                        "name": "end",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "listLength",
-                                                            "params": [
-                                                                {
-                                                                    "name": "list",
-                                                                    "type": "cached",
-                                                                    "value": "currentOptions"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
                             }
                         ]
                     },
@@ -3500,11 +3306,11 @@
                             "preset": {
                                 "title": "Host reads the question",
                                 "type": "target_poll",
-                                "terminationCondition": "get_needed_votes",
-                                "neededVotes": 1,
+                                "terminationCondition": "get_all_votes",
                                 "showResultInRealTime": true,
                                 "showResultDuration": 0,
                                 "vertical": true,
+                                "private": true,
                                 "pollVoteTargetsOptions": {
                                     "CONTINUE": {
                                         "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/next-svgrepo-com.svg",
@@ -3519,10 +3325,7 @@
                                     "soundboard.reminder"
                                 ],
                                 "backgroundColor": "#ddf0c7",
-                                "borderColor": "black",
-                                "targets": [
-                                    "CONTINUE"
-                                ]
+                                "borderColor": "black"
                             },
                             "cached": {
                                 "actors": "host",
@@ -3530,6 +3333,21 @@
                                 "image": "currentImage"
                             },
                             "computed": {
+                                "targets": {
+                                    "selector": "append",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "teams"
+                                        },
+                                        {
+                                            "name": "element",
+                                            "type": "preset",
+                                            "value": "CONTINUE"
+                                        }
+                                    ]
+                                },
                                 "private": {
                                     "selector": "equals",
                                     "params": [
@@ -3551,7 +3369,7 @@
                                         {
                                             "name": "format",
                                             "type": "preset",
-                                            "value": "($1).($2)) ($3)($4)"
+                                            "value": "($1).($2)) ($3)"
                                         },
                                         {
                                             "name": "arg1",
@@ -3576,53 +3394,6 @@
                                             "name": "arg3",
                                             "type": "cached",
                                             "value": "currentQuestion"
-                                        },
-                                        {
-                                            "name": "arg4",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "ifElse",
-                                                "params": [
-                                                    {
-                                                        "name": "condition",
-                                                        "type": "cached",
-                                                        "value": "hasOptions"
-                                                    },
-                                                    {
-                                                        "name": "thenValue",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "formatString",
-                                                            "params": [
-                                                                {
-                                                                    "name": "format",
-                                                                    "type": "preset",
-                                                                    "value": " Your options are: ($1)"
-                                                                },
-                                                                {
-                                                                    "name": "arg1",
-                                                                    "type": "computed",
-                                                                    "value": {
-                                                                        "selector": "listToString",
-                                                                        "params": [
-                                                                            {
-                                                                                "name": "list",
-                                                                                "type": "cached",
-                                                                                "value": "currentOptions"
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                }
-                                                            ]
-                                                        }
-                                                    },
-                                                    {
-                                                        "name": "elseValue",
-                                                        "type": "preset",
-                                                        "value": ""
-                                                    }
-                                                ]
-                                            }
                                         }
                                     ]
                                 }
@@ -3713,48 +3484,44 @@
                         "key": "restoreMuteStatus"
                     },
                     {
-                        "key": "createVote",
-                        "skipCondition": {
-                            "selector": "logicalNOT",
-                            "params": [
-                                {
-                                    "name": "arg",
-                                    "type": "cached",
-                                    "value": "hasOptions"
-                                }
-                            ]
-                        },
+                        "key": "createInput",
                         "payload": {
                             "preset": {
-                                "title": "Submit multiple-choice answer",
-                                "type": "target_poll",
-                                "terminationCondition": "get_all_votes",
-                                "showResultInRealTime": false,
-                                "showResultDuration": 0,
-                                "showResult": false,
-                                "allowRevoting": true,
-                                "sounds.waitForSoundEnd": false,
-                                "backgroundColor": "#ddf0c7",
-                                "borderColor": "black",
+                                "title": "Answer the question",
+                                "type": "text",
+                                "duration": 60,
                                 "scope": "team",
                                 "vertical": true,
-                                "duration": 60
+                                "sounds.waitForSoundEnd": true,
+                                "sounds.list": [
+                                    "soundboard.reminder"
+                                ],
+                                "backgroundColor": "#ddf0c7",
+                                "borderColor": "black"
                             },
                             "cached": {
                                 "playList.0": "players",
                                 "actors": "teams",
-                                "image": "currentImage",
-                                "targets": "currentOptions",
-                                "pollVoteTargetsOptions": "optionAppearances"
+                                "image": "currentImage"
                             },
                             "computed": {
-                                "sounds.list": {
-                                    "selector": "createList",
+                                "terminationCondition": {
+                                    "selector": "ifElse",
                                     "params": [
                                         {
-                                            "name": "arg1",
+                                            "name": "condition",
                                             "type": "cached",
-                                            "value": "currentAudio"
+                                            "value": "isContinue"
+                                        },
+                                        {
+                                            "name": "thenValue",
+                                            "type": "preset",
+                                            "value": "get_all_values"
+                                        },
+                                        {
+                                            "name": "elseValue",
+                                            "type": "preset",
+                                            "value": "time"
                                         }
                                     ]
                                 },
@@ -3803,373 +3570,11 @@
                                         {
                                             "name": "name",
                                             "type": "preset",
-                                            "value": "lastActionResult.voices"
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "key": "createNotification",
-                        "skipCondition": {
-                            "selector": "logicalNOT",
-                            "params": [
-                                {
-                                    "name": "arg",
-                                    "type": "cached",
-                                    "value": "hasOptions"
-                                }
-                            ]
-                        },
-                        "payload": {
-                            "preset": {
-                                "duration": 5,
-                                "backgroundColor": "#ddf0c7",
-                                "borderColor": "black",
-                                "header": "DEBUGGING"
-                            },
-                            "computed": {
-                                "to": {
-                                    "selector": "allPlayers"
-                                },
-                                "text": {
-                                    "selector": "formatString",
-                                    "params": [
-                                        {
-                                            "name": "format",
-                                            "type": "preset",
-                                            "value": "Keys: ($1)<br/>Values: ($2)"
-                                        },
-                                        {
-                                            "name": "arg1",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "listToString",
-                                                "params": [
-                                                    {
-                                                        "name": "list",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "getObjectKeys",
-                                                            "params": [
-                                                                {
-                                                                    "name": "obj",
-                                                                    "type": "cached",
-                                                                    "value": "teamToAnswer"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "name": "arg2",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "listToString",
-                                                "params": [
-                                                    {
-                                                        "name": "list",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "getObjectValues",
-                                                            "params": [
-                                                                {
-                                                                    "name": "obj",
-                                                                    "type": "cached",
-                                                                    "value": "teamToAnswer"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                ]
-            },
-            {
-                "name": "Fix result",
-                "skipCondition": [
-                    {
-                        "selector": "logicalNOT",
-                        "params": [
-                            {
-                                "name": "arg",
-                                "type": "cached",
-                                "value": "hasOptions"
-                            }
-                        ]
-                    }
-                ],
-                "repeat": {
-                    "qnt": {
-                        "selector": "getCachedValue",
-                        "params": [
-                            {
-                                "name": "name",
-                                "type": "preset",
-                                "value": "numTeams"
-                            }
-                        ]
-                    }
-                },
-                "actions": [
-                    {
-                        "key": "emptyAction",
-                        "saveValueInCache": [
-                            {
-                                "name": "thisTeam",
-                                "value": {
-                                    "selector": "selectElement",
-                                    "params": [
-                                        {
-                                            "name": "list",
-                                            "type": "cached",
-                                            "value": "teams"
-                                        },
-                                        {
-                                            "name": "index",
-                                            "type": "cached",
-                                            "value": "repeatIndex"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "name": "answerList",
-                                "value": {
-                                    "selector": "getCachedObjectValue",
-                                    "params": [
-                                        {
-                                            "name": "objectName",
-                                            "type": "preset",
-                                            "value": "teamToAnswer"
-                                        },
-                                        {
-                                            "name": "value",
-                                            "type": "cached",
-                                            "value": "thisTeam"
-                                        },
-                                        {
-                                            "name": "defaultValue",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "randomElementsList",
-                                                "params": [
-                                                    {
-                                                        "name": "list",
-                                                        "type": "cached",
-                                                        "value": "currentOptions"
-                                                    },
-                                                    {
-                                                        "name": "length",
-                                                        "type": "preset",
-                                                        "value": 1
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "name": "teamToAnswer",
-                                "value": {
-                                    "selector": "setCachedObjectFieldValue",
-                                    "params": [
-                                        {
-                                            "name": "objectName",
-                                            "type": "preset",
-                                            "value": "teamToAnswer"
-                                        },
-                                        {
-                                            "name": "fieldName",
-                                            "type": "cached",
-                                            "value": "thisTeam"
-                                        },
-                                        {
-                                            "name": "value",
-                                            "type": "cached",
-                                            "value": "answerList.0"
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "name": "Answer question",
-                "actions": [
-                    {
-                        "key": "createInput",
-                        "skipCondition": {
-                            "selector": "getCachedValue",
-                            "params": [
-                                {
-                                    "name": "name",
-                                    "type": "preset",
-                                    "value": "hasOptions"
-                                }
-                            ]
-                        },
-                        "payload": {
-                            "preset": {
-                                "title": "Answer the question",
-                                "type": "text",
-                                "duration": 60,
-                                "scope": "team",
-                                "vertical": true,
-                                "sounds.waitForSoundEnd": false,
-                                "backgroundColor": "#ddf0c7",
-                                "borderColor": "black"
-                            },
-                            "cached": {
-                                "playList.0": "players",
-                                "actors": "teams",
-                                "image": "currentImage"
-                            },
-                            "computed": {
-                                "sounds.list": {
-                                    "selector": "createList",
-                                    "params": [
-                                        {
-                                            "name": "arg1",
-                                            "type": "cached",
-                                            "value": "currentAudio"
-                                        }
-                                    ]
-                                },
-                                "terminationCondition": {
-                                    "selector": "ifElse",
-                                    "params": [
-                                        {
-                                            "name": "condition",
-                                            "type": "cached",
-                                            "value": "isContinue"
-                                        },
-                                        {
-                                            "name": "thenValue",
-                                            "type": "preset",
-                                            "value": "get_all_values"
-                                        },
-                                        {
-                                            "name": "elseValue",
-                                            "type": "preset",
-                                            "value": "time"
-                                        }
-                                    ]
-                                },
-                                "question": {
-                                    "selector": "formatString",
-                                    "params": [
-                                        {
-                                            "name": "format",
-                                            "type": "preset",
-                                            "value": "($1).($2)) ($3)($4)"
-                                        },
-                                        {
-                                            "name": "arg1",
-                                            "type": "cached",
-                                            "value": "round"
-                                        },
-                                        {
-                                            "name": "arg2",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "inc",
-                                                "params": [
-                                                    {
-                                                        "name": "arg",
-                                                        "type": "cached",
-                                                        "value": "loopIndex"
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "name": "arg3",
-                                            "type": "cached",
-                                            "value": "currentQuestion"
-                                        },
-                                        {
-                                            "name": "arg4",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "ifElse",
-                                                "params": [
-                                                    {
-                                                        "name": "condition",
-                                                        "type": "cached",
-                                                        "value": "hasOptions"
-                                                    },
-                                                    {
-                                                        "name": "thenValue",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "formatString",
-                                                            "params": [
-                                                                {
-                                                                    "name": "format",
-                                                                    "type": "preset",
-                                                                    "value": " Your options are: ($1)"
-                                                                },
-                                                                {
-                                                                    "name": "arg1",
-                                                                    "type": "computed",
-                                                                    "value": {
-                                                                        "selector": "listToString",
-                                                                        "params": [
-                                                                            {
-                                                                                "name": "list",
-                                                                                "type": "cached",
-                                                                                "value": "currentOptions"
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                }
-                                                            ]
-                                                        }
-                                                    },
-                                                    {
-                                                        "name": "elseValue",
-                                                        "type": "preset",
-                                                        "value": ""
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        "saveValueInCache": [
-                            {
-                                "name": "teamToAnswer",
-                                "value": {
-                                    "selector": "getCachedValue",
-                                    "params": [
-                                        {
-                                            "name": "name",
-                                            "type": "preset",
                                             "value": "lastActionResult"
                                         }
                                     ]
                                 }
-                            }
-                        ]
-                    },
-                    {
-                        "key": "emptyAction",
-                        "saveValueInCache": [
+                            },
                             {
                                 "name": "roundAnswers",
                                 "value": {
@@ -4619,7 +4024,7 @@
                                         {
                                             "name": "format",
                                             "type": "preset",
-                                            "value": "($1) — Answer: ($2)"
+                                            "value": "($1)\n\nAnswer: ($2)"
                                         },
                                         {
                                             "name": "arg1",
@@ -5336,14 +4741,7 @@
                                                                 "name": "ids",
                                                                 "type": "computed",
                                                                 "value": {
-                                                                    "selector": "getPlayersWithMaxScore",
-                                                                    "params": [
-                                                                        {
-                                                                            "name": "players",
-                                                                            "type": "cached",
-                                                                            "value": "players"
-                                                                        }
-                                                                    ]
+                                                                    "selector": "getPlayersWithMaxScore"
                                                                 }
                                                             }
                                                         ]
@@ -6030,14 +5428,7 @@
                                                         "name": "ids",
                                                         "type": "computed",
                                                         "value": {
-                                                            "selector": "getPlayersWithMaxScore",
-                                                            "params": [
-                                                                {
-                                                                    "name": "players",
-                                                                    "type": "cached",
-                                                                    "value": "players"
-                                                                }
-                                                            ]
+                                                            "selector": "getPlayersWithMaxScore"
                                                         }
                                                     }
                                                 ]

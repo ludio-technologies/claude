@@ -1,0 +1,42 @@
+{
+    "name": "Word Scatter",
+    "demo": false,
+    "parallel": false,
+    "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+    "banner": "https://res.cloudinary.com/liars-club/image/upload/images/word_scatter/banner.jpg",
+    "description": {
+        "summary": "A cooperative word-spelling game by YouTube creator Vaseline Noodles. A secret word is dealt out one letter at a time across the table — talk it out, hint at what you're holding, and spell it together without ever saying your letters out loud.",
+        "description_title": "Word Scatter Overview",
+        "# Players": "2-6",
+        "players": "2-6",
+        "Duration": "10 mins/round"
+    },
+    "rules": [
+        {
+            "name": "Basic Rules",
+            "content": [
+                {
+                    "title": "Goal",
+                    "text": "Each round a secret word is chosen and its letters are dealt out across all of you. Talk to your team, drop hints about which letters you hold, and place them on the board IN ORDER to spell the word together."
+                },
+                {
+                    "title": "Placing letters",
+                    "text": "The board starts with one empty deck. After the first letter is placed, you can only add to the LEFTMOST or RIGHTMOST end of the row — extending the word in either direction."
+                },
+                {
+                    "title": "Don't break the word",
+                    "text": "After every placement, the letters on the board must still form a valid substring of the secret word. Place a letter that breaks the pattern and the round ends — nobody scores."
+                },
+                {
+                    "title": "Win the round",
+                    "text": "Spell the entire word and the group banks one point. Your score badge shows how many letters are still in your hand; the second badge shows how many of those are vowels."
+                },
+                {
+                    "title": "After the round",
+                    "text": "The host picks whether to play again with a fresh word or end the game. At the end you'll see how many words your group got right out of how many you attempted."
+                }
+            ]
+        }
+    ],
+    "tags": ["word game", "collaborative", "filler"]
+}

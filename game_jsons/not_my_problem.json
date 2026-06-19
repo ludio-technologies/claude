@@ -1,0 +1,4045 @@
+{
+  "gameInitOptions": {
+    "allowRecorder": true,
+    "useDefaultRoles": true,
+    "roleConfirmation": false,
+    "minPlayers": 3,
+    "maxPlayers": 6,
+    "time": 20,
+    "teams": {
+      "all": {
+        "id": "all",
+        "name": "All",
+        "description": "Pass the buck. Don't get buried.",
+        "color": "#3b6ea5",
+        "roles": [
+          "player"
+        ]
+      }
+    },
+    "roles": [
+      {
+        "roleInfo": {
+          "id": "player",
+          "name": "Employee",
+          "description": "Delegate dreaded tasks. Don't end up with 4 of any one on your desk!",
+          "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
+          "team": "all",
+          "prefix": "an "
+        },
+        "isDefaultRole": true,
+        "isRequired": false
+      }
+    ],
+    "rolesPreset": {},
+    "images": {
+      "cardback": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/llama_party/forest_cardback.webp"
+      },
+      "banner": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/banner.png"
+      },
+      "wallpaper": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/wallpaper.png"
+      },
+      "transparent": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/transparent_sbx4wv.png"
+      },
+      "winner": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/winner_h5eyfr.gif"
+      },
+      "monday_meeting": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/monday_meeting.png"
+      },
+      "expense_report": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/expense_report.png"
+      },
+      "it_ticket": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/it_ticket.png"
+      },
+      "jury_duty": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/jury_duty.png"
+      },
+      "reply_all": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/reply_all.png"
+      },
+      "printer_jam": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/printer_jam.png"
+      },
+      "perf_review": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/perf_review.png"
+      },
+      "onboarding_doc": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/onboarding_doc.png"
+      }
+    },
+    "soundboard": {
+      "default": {
+        "reminder": "https://res.cloudinary.com/liars-club/video/upload/audio/reminder.mp4",
+        "flip": "https://res.cloudinary.com/liars-club/video/upload/audio/other/swap.mp3",
+        "truth": "https://res.cloudinary.com/liars-club/video/upload/audio/avalon/sounds/success.mp3",
+        "lie": "https://res.cloudinary.com/liars-club/video/upload/audio/avalon/sounds/failure.mp3"
+      }
+    },
+    "animations": {
+      "monday_meeting": "https://res.cloudinary.com/liars-club/raw/upload/animations/not_my_problem/monday_meeting.json",
+      "expense_report": "https://res.cloudinary.com/liars-club/raw/upload/animations/not_my_problem/expense_report.json",
+      "it_ticket": "https://res.cloudinary.com/liars-club/raw/upload/animations/not_my_problem/it_ticket.json",
+      "jury_duty": "https://res.cloudinary.com/liars-club/raw/upload/animations/not_my_problem/jury_duty.json",
+      "reply_all": "https://res.cloudinary.com/liars-club/raw/upload/animations/not_my_problem/reply_all.json",
+      "printer_jam": "https://res.cloudinary.com/liars-club/raw/upload/animations/not_my_problem/printer_jam.json",
+      "perf_review": "https://res.cloudinary.com/liars-club/raw/upload/animations/not_my_problem/perf_review.json",
+      "onboarding_doc": "https://res.cloudinary.com/liars-club/raw/upload/animations/not_my_problem/onboarding_doc.json",
+      "buried": "https://assets5.lottiefiles.com/packages/lf20_oAByvh2C1K.json"
+    }
+  },
+  "visualSettings": {
+    "increaseHandHeight": true,
+    "isCardAnimationsOff": true,
+    "cardHandBackgroundImage": "https://res.cloudinary.com/liars-club/image/upload/wood_qbegm0.jpg",
+    "backgroundColor": "#10233b",
+    "textColor": "#ffffff",
+    "borderColor": "#f5c542"
+  },
+  "beforeLoopActions": [
+    {
+      "key": "changeBackground",
+      "payload": {
+        "preset": {
+          "image": "wallpaper"
+        }
+      }
+    },
+    {
+      "key": "emptyAction",
+      "saveValueInCache": [
+        {
+          "name": "players",
+          "value": {
+            "selector": "allPlayers"
+          }
+        },
+        {
+          "name": "numPlayers",
+          "value": {
+            "selector": "listLength",
+            "params": [
+              {
+                "name": "list",
+                "type": "cached",
+                "value": "players"
+              }
+            ]
+          }
+        },
+        {
+          "name": "giverIndex",
+          "value": 0
+        },
+        {
+          "name": "resolved",
+          "value": false
+        },
+        {
+          "name": "counts",
+          "value": {
+            "selector": "createDict",
+            "params": [
+              {
+                "name": "keys",
+                "type": "preset",
+                "value": []
+              },
+              {
+                "name": "values",
+                "type": "preset",
+                "value": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "emptyAction",
+      "saveValueInCache": [
+        {
+          "name": "host",
+          "value": {
+            "selector": "ifElse",
+            "params": [
+              {
+                "name": "condition",
+                "type": "computed",
+                "value": {
+                  "selector": "contains",
+                  "params": [
+                    {
+                      "name": "list",
+                      "type": "cached",
+                      "value": "players"
+                    },
+                    {
+                      "name": "element",
+                      "type": "computed",
+                      "value": {
+                        "selector": "getHostPlayerId"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "thenValue",
+                "type": "computed",
+                "value": {
+                  "selector": "createList",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "computed",
+                      "value": {
+                        "selector": "getHostPlayerId"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "elseValue",
+                "type": "computed",
+                "value": {
+                  "selector": "createList",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "cached",
+                      "value": "players.0"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "createVideoboxDecks",
+      "payload": {
+        "preset": {
+          "cardback": "cardback"
+        },
+        "cached": {
+          "players": "players"
+        }
+      }
+    },
+    {
+      "key": "emptyAction",
+      "saveValueInCache": [
+        {
+          "name": "allDeskNames",
+          "value": {
+            "selector": "sublist",
+            "params": [
+              {
+                "name": "list",
+                "type": "preset",
+                "value": [
+                  "desk_0",
+                  "desk_1",
+                  "desk_2",
+                  "desk_3",
+                  "desk_4",
+                  "desk_5"
+                ]
+              },
+              {
+                "name": "start",
+                "type": "preset",
+                "value": 0
+              },
+              {
+                "name": "end",
+                "type": "cached",
+                "value": "numPlayers"
+              }
+            ]
+          }
+        },
+        {
+          "name": "problemKeyByDeck",
+          "value": {
+            "selector": "createDict",
+            "params": [
+              {
+                "name": "keys",
+                "type": "preset",
+                "value": [
+                  "problem_monday_meeting",
+                  "problem_expense_report",
+                  "problem_it_ticket",
+                  "problem_jury_duty",
+                  "problem_reply_all",
+                  "problem_printer_jam",
+                  "problem_perf_review",
+                  "problem_onboarding_doc"
+                ]
+              },
+              {
+                "name": "values",
+                "type": "preset",
+                "value": [
+                  "monday_meeting",
+                  "expense_report",
+                  "it_ticket",
+                  "jury_duty",
+                  "reply_all",
+                  "printer_jam",
+                  "perf_review",
+                  "onboarding_doc"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "problemLabelByKey",
+          "value": {
+            "selector": "createDict",
+            "params": [
+              {
+                "name": "keys",
+                "type": "preset",
+                "value": [
+                  "monday_meeting",
+                  "expense_report",
+                  "it_ticket",
+                  "jury_duty",
+                  "reply_all",
+                  "printer_jam",
+                  "perf_review",
+                  "onboarding_doc"
+                ]
+              },
+              {
+                "name": "values",
+                "type": "preset",
+                "value": [
+                  "Monday Meeting",
+                  "Expense Report",
+                  "IT Ticket",
+                  "Jury Duty",
+                  "Reply-All Thread",
+                  "Printer Jam",
+                  "Performance Review",
+                  "Onboarding Doc"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "emptyAction",
+      "saveValueInCache": [
+        {
+          "name": "playerByDeskName",
+          "value": {
+            "selector": "createDict",
+            "params": [
+              {
+                "name": "keys",
+                "type": "cached",
+                "value": "allDeskNames"
+              },
+              {
+                "name": "values",
+                "type": "cached",
+                "value": "players"
+              }
+            ]
+          }
+        },
+        {
+          "name": "deskByPlayer",
+          "value": {
+            "selector": "createDict",
+            "params": [
+              {
+                "name": "keys",
+                "type": "cached",
+                "value": "players"
+              },
+              {
+                "name": "values",
+                "type": "cached",
+                "value": "allDeskNames"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "updateScore",
+      "payload": {
+        "computed": {
+          "scores": {
+            "selector": "createList",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                  "selector": "createDict",
+                  "params": [
+                    {
+                      "name": "keys",
+                      "type": "preset",
+                      "value": [
+                        "list",
+                        "score"
+                      ]
+                    },
+                    {
+                      "name": "values",
+                      "type": "computed",
+                      "value": {
+                        "selector": "createList",
+                        "params": [
+                          {
+                            "name": "arg1",
+                            "type": "cached",
+                            "value": "players"
+                          },
+                          {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "createNotification",
+      "payload": {
+        "preset": {
+          "header": "Not My Problem",
+          "image": "banner",
+          "duration": 6,
+          "text": "Delegate dreaded tasks face-down and lie about what they are. Get stuck with 4 of the same task on your desk and you're BURIED. Last ones standing win!"
+        },
+        "cached": {
+          "to": "players"
+        }
+      }
+    },
+    {
+      "key": "createMixVote",
+      "payload": {
+        "preset": {
+          "title": "Tutorial mode",
+          "terminationCondition": "get_all_votes",
+          "showResultInRealTime": true,
+          "showResultDuration": 2,
+          "showResultDelay": 0,
+          "point.allowFewerAnswers": true,
+          "point.terminationCondition": "get_all_votes",
+          "poll.answersQuantity": 1,
+          "poll.targets": [
+            "Everybody!",
+            "Nobody!"
+          ],
+          "oneClick": true,
+          "allowRevoting": true,
+          "pollVoteTargetsOptions": {
+            "Everybody!": {
+              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+              "backgroundColor": "#D3D3D3",
+              "boxIconColor": "#D3D3D3",
+              "textColor": "black",
+              "widgetIconColor": "green"
+            },
+            "Nobody!": {
+              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+              "backgroundColor": "#D3D3D3",
+              "boxIconColor": "#D3D3D3",
+              "textColor": "black",
+              "widgetIconColor": "red"
+            }
+          },
+          "poll.terminationCondition": "get_all_votes",
+          "backgroundColor": "#D3FBEE",
+          "borderColor": "black"
+        },
+        "cached": {
+          "actors": "host",
+          "point.targets": "players",
+          "point.answersQuantity": "numPlayers"
+        },
+        "computed": {
+          "question": {
+            "selector": "formatString",
+            "params": [
+              {
+                "name": "format",
+                "type": "preset",
+                "value": "($1), who needs the tutorial? Click on the players or select from the middle."
+              },
+              {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                  "selector": "getPlayerNameById",
+                  "params": [
+                    {
+                      "name": "id",
+                      "type": "cached",
+                      "value": "host.0"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "saveValueInCache": [
+        {
+          "name": "voteResult",
+          "value": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "lastActionResult.voteResult"
+              }
+            ]
+          }
+        },
+        {
+          "name": "learners",
+          "value": {
+            "selector": "ifElse",
+            "params": [
+              {
+                "name": "condition",
+                "type": "computed",
+                "value": {
+                  "selector": "contains",
+                  "params": [
+                    {
+                      "name": "list",
+                      "type": "cached",
+                      "value": "players"
+                    },
+                    {
+                      "name": "element",
+                      "type": "cached",
+                      "value": "voteResult.0"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "thenValue",
+                "type": "cached",
+                "value": "voteResult"
+              },
+              {
+                "name": "elseValue",
+                "type": "computed",
+                "value": {
+                  "selector": "ifElse",
+                  "params": [
+                    {
+                      "name": "condition",
+                      "type": "computed",
+                      "value": {
+                        "selector": "contains",
+                        "params": [
+                          {
+                            "name": "list",
+                            "type": "cached",
+                            "value": "voteResult"
+                          },
+                          {
+                            "name": "element",
+                            "type": "preset",
+                            "value": "Everybody!"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "thenValue",
+                      "type": "cached",
+                      "value": "players"
+                    },
+                    {
+                      "name": "elseValue",
+                      "type": "preset",
+                      "value": []
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "tutorial",
+          "value": {
+            "selector": "greaterThan",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                  "selector": "listLength",
+                  "params": [
+                    {
+                      "name": "list",
+                      "type": "cached",
+                      "value": "learners"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "arg2",
+                "type": "preset",
+                "value": 0
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "gameLoop": [
+    {
+      "name": "Setup: decks",
+      "skipCondition": [
+        {
+          "selector": "greaterThan",
+          "params": [
+            {
+              "name": "arg1",
+              "type": "cached",
+              "value": "gameLoopIndex"
+            },
+            {
+              "name": "arg2",
+              "type": "preset",
+              "value": 0
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "key": "changeLayout",
+          "payload": {
+            "preset": {
+              "type": "HIGHLIGHT",
+              "direction": "VERTICAL",
+              "percent": 38
+            }
+          }
+        },
+        {
+          "key": "createDeck",
+          "payload": {
+            "preset": {
+              "name": "not_my_problem",
+              "customName": "task_deck",
+              "set": "all"
+            }
+          }
+        },
+        {
+          "key": "createDeck",
+          "payload": {
+            "preset": {
+              "name": "not_my_problem",
+              "customName": "action_source",
+              "set": "actions"
+            }
+          }
+        },
+        {
+          "key": "createCustomDeck",
+          "payload": {
+            "preset": {
+              "name": "problem_monday_meeting",
+              "public": true,
+              "label": "Monday Meeting",
+              "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/monday_meeting.png",
+              "enlargeOnHover": true
+            }
+          }
+        },
+        {
+          "key": "createCustomDeck",
+          "payload": {
+            "preset": {
+              "name": "problem_expense_report",
+              "public": true,
+              "label": "Expense Report",
+              "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/expense_report.png",
+              "enlargeOnHover": true
+            }
+          }
+        },
+        {
+          "key": "createCustomDeck",
+          "payload": {
+            "preset": {
+              "name": "problem_it_ticket",
+              "public": true,
+              "label": "IT Ticket",
+              "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/it_ticket.png",
+              "enlargeOnHover": true
+            }
+          }
+        },
+        {
+          "key": "createCustomDeck",
+          "payload": {
+            "preset": {
+              "name": "problem_jury_duty",
+              "public": true,
+              "label": "Jury Duty",
+              "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/jury_duty.png",
+              "enlargeOnHover": true
+            }
+          }
+        },
+        {
+          "key": "createCustomDeck",
+          "payload": {
+            "preset": {
+              "name": "problem_reply_all",
+              "public": true,
+              "label": "Reply-All Thread",
+              "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/reply_all.png",
+              "enlargeOnHover": true
+            }
+          }
+        },
+        {
+          "key": "createCustomDeck",
+          "payload": {
+            "preset": {
+              "name": "problem_printer_jam",
+              "public": true,
+              "label": "Printer Jam",
+              "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/printer_jam.png",
+              "enlargeOnHover": true
+            }
+          }
+        },
+        {
+          "key": "createCustomDeck",
+          "payload": {
+            "preset": {
+              "name": "problem_perf_review",
+              "public": true,
+              "label": "Performance Review",
+              "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/perf_review.png",
+              "enlargeOnHover": true
+            }
+          }
+        },
+        {
+          "key": "createCustomDeck",
+          "payload": {
+            "preset": {
+              "name": "problem_onboarding_doc",
+              "public": true,
+              "label": "Onboarding Doc",
+              "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/onboarding_doc.png",
+              "enlargeOnHover": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Setup: player desks",
+      "skipCondition": [
+        {
+          "selector": "greaterThan",
+          "params": [
+            {
+              "name": "arg1",
+              "type": "cached",
+              "value": "gameLoopIndex"
+            },
+            {
+              "name": "arg2",
+              "type": "preset",
+              "value": 0
+            }
+          ]
+        }
+      ],
+      "repeat": {
+        "qnt": {
+          "selector": "getCachedValue",
+          "params": [
+            {
+              "name": "name",
+              "type": "preset",
+              "value": "numPlayers"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "key": "createCustomDeck",
+          "payload": {
+            "preset": {
+              "public": true,
+              "counter": true,
+              "inspectDeck": true,
+              "enlargeOnHover": true
+            },
+            "computed": {
+              "name": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "desk_($1)"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "repeatIndex"
+                  }
+                ]
+              },
+              "label": {
+                "selector": "getPlayerNameById",
+                "params": [
+                  {
+                    "name": "id",
+                    "type": "computed",
+                    "value": {
+                      "selector": "selectElement",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "players"
+                        },
+                        {
+                          "name": "index",
+                          "type": "cached",
+                          "value": "repeatIndex"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Setup: board + deal",
+      "skipCondition": [
+        {
+          "selector": "greaterThan",
+          "params": [
+            {
+              "name": "arg1",
+              "type": "cached",
+              "value": "gameLoopIndex"
+            },
+            {
+              "name": "arg2",
+              "type": "preset",
+              "value": 0
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "key": "createGenericCardWidget",
+          "payload": {
+            "preset": {
+              "ratio": "0.77",
+              "cardback": "cardback",
+              "enlargeOnHover": true,
+              "dimensions": [
+                2,
+                8
+              ],
+              "backgroundImage": "https://res.cloudinary.com/liars-club/image/upload/wood_qbegm0.jpg"
+            },
+            "computed": {
+              "decks": {
+                "selector": "sublist",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "preset",
+                    "value": [
+                      "problem_monday_meeting",
+                      "problem_expense_report",
+                      "problem_it_ticket",
+                      "problem_jury_duty",
+                      "problem_reply_all",
+                      "problem_printer_jam",
+                      "problem_perf_review",
+                      "problem_onboarding_doc",
+                      "desk_0",
+                      "desk_1",
+                      "desk_2",
+                      "desk_3",
+                      "desk_4",
+                      "desk_5"
+                    ]
+                  },
+                  {
+                    "name": "start",
+                    "type": "preset",
+                    "value": 0
+                  },
+                  {
+                    "name": "end",
+                    "type": "computed",
+                    "value": {
+                      "selector": "add",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "cached",
+                          "value": "numPlayers"
+                        },
+                        {
+                          "name": "arg2",
+                          "type": "preset",
+                          "value": 8
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "setImagesRow",
+          "payload": {
+            "preset": {
+              "maxHeight": 230,
+              "images": [
+                "transparent"
+              ]
+            }
+          }
+        },
+        {
+          "key": "shuffleDeck",
+          "payload": {
+            "preset": {
+              "deck": "task_deck"
+            }
+          }
+        },
+        {
+          "key": "dealDeck",
+          "payload": {
+            "preset": {
+              "deck": "task_deck",
+              "sortBy": "weight"
+            },
+            "cached": {
+              "targets": "players"
+            },
+            "computed": {
+              "qnt": {
+                "selector": "integerDivide",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "preset",
+                    "value": 64
+                  },
+                  {
+                    "name": "arg2",
+                    "type": "cached",
+                    "value": "numPlayers"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Turn: setup + empty-hand",
+      "actions": [
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "currentGiver",
+              "value": {
+                "selector": "selectElement",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "cached",
+                    "value": "players"
+                  },
+                  {
+                    "name": "index",
+                    "type": "cached",
+                    "value": "giverIndex"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "resolved",
+              "value": false
+            }
+          ]
+        },
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "giverHasCards",
+              "value": {
+                "selector": "greaterThan",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "listLength",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "computed",
+                          "value": {
+                            "selector": "playerHand",
+                            "params": [
+                              {
+                                "name": "playerId",
+                                "type": "cached",
+                                "value": "currentGiver"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "arg2",
+                    "type": "preset",
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "seen",
+              "value": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentGiver"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "seenDesks",
+              "value": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getCachedObjectValue",
+                      "params": [
+                        {
+                          "name": "objectName",
+                          "type": "preset",
+                          "value": "deskByPlayer"
+                        },
+                        {
+                          "name": "value",
+                          "type": "cached",
+                          "value": "currentGiver"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "claimerId",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "currentGiver"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "giverHasCards"
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "resolved",
+              "value": true
+            }
+          ]
+        },
+        {
+          "key": "updateScore",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "giverHasCards"
+              }
+            ]
+          },
+          "payload": {
+            "computed": {
+              "scores": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "createDict",
+                      "params": [
+                        {
+                          "name": "keys",
+                          "type": "preset",
+                          "value": [
+                            "list",
+                            "score"
+                          ]
+                        },
+                        {
+                          "name": "values",
+                          "type": "computed",
+                          "value": {
+                            "selector": "createList",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "createList",
+                                  "params": [
+                                    {
+                                      "name": "arg1",
+                                      "type": "cached",
+                                      "value": "currentGiver"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "giverHasCards"
+              }
+            ]
+          },
+          "payload": {
+            "cached": {
+              "to": "players"
+            },
+            "computed": {
+              "header": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "($1) is stuck!"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNameById",
+                      "params": [
+                        {
+                          "name": "id",
+                          "type": "cached",
+                          "value": "currentGiver"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "text": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "($1) has nothing left to delegate. Everyone else wins!"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNameById",
+                      "params": [
+                        {
+                          "name": "id",
+                          "type": "cached",
+                          "value": "currentGiver"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Turn: giver delegates",
+      "actions": [
+        {
+          "key": "highlightPlayers",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "color": "red"
+            },
+            "computed": {
+              "listOfPlayers": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentGiver"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "playCards",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "minCards": 1,
+              "maxCards": 1,
+              "oneClick": true,
+              "facedown": true,
+              "duration": 25,
+              "playable": "availableCards",
+              "playableExclude": {
+                "cards": [
+                  "action_true",
+                  "action_false",
+                  "action_peek"
+                ]
+              },
+              "sounds.list": [
+                "soundboard.reminder"
+              ],
+              "sounds.waitForSoundEnd": false
+            },
+            "cached": {
+              "actor": "currentGiver"
+            },
+            "computed": {
+              "target": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "videobox_($1)"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentGiver"
+                  }
+                ]
+              },
+              "playList.0": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentGiver"
+                  }
+                ]
+              },
+              "notification": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "($1), pick a task to delegate (kept face-down)."
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNameById",
+                      "params": [
+                        {
+                          "name": "id",
+                          "type": "cached",
+                          "value": "currentGiver"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "postHandler": "playOneRandomCard",
+          "saveValueInCache": [
+            {
+              "name": "inflightCard",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "lastActionResult.cards.0"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "trueType",
+              "value": {
+                "selector": "getCardField",
+                "params": [
+                  {
+                    "name": "cardId",
+                    "type": "cached",
+                    "value": "lastActionResult.cards.0"
+                  },
+                  {
+                    "name": "field",
+                    "type": "preset",
+                    "value": "problem"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Turn: giver claim + hand-off",
+      "actions": [
+        {
+          "key": "selectCentralWidgetDeck",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "decks": [
+                "problem_monday_meeting",
+                "problem_expense_report",
+                "problem_it_ticket",
+                "problem_jury_duty",
+                "problem_reply_all",
+                "problem_printer_jam",
+                "problem_perf_review",
+                "problem_onboarding_doc"
+              ],
+              "duration": 20,
+              "forceConfirmation": true,
+              "defaultSelect": true,
+              "privatePrompt": true
+            },
+            "computed": {
+              "actors": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentGiver"
+                  }
+                ]
+              }
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "currentClaim",
+              "value": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "problemKeyByDeck"
+                  },
+                  {
+                    "name": "value",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getCachedObjectValue",
+                      "params": [
+                        {
+                          "name": "objectName",
+                          "type": "preset",
+                          "value": "lastActionResult"
+                        },
+                        {
+                          "name": "value",
+                          "type": "cached",
+                          "value": "currentGiver"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "claimLabel",
+              "value": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "problemLabelByKey"
+                  },
+                  {
+                    "name": "value",
+                    "type": "cached",
+                    "value": "currentClaim"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "claimerId",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "currentGiver"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "createNotification",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "text": "True, or a total bluff?"
+            },
+            "cached": {
+              "to": "players"
+            },
+            "computed": {
+              "image": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "currentClaim"
+                  }
+                ]
+              },
+              "header": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "($1) claims: ($2)"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNameById",
+                      "params": [
+                        {
+                          "name": "id",
+                          "type": "cached",
+                          "value": "currentGiver"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "arg2",
+                    "type": "cached",
+                    "value": "claimLabel"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "allowedDesks",
+              "value": {
+                "selector": "listsSubtract",
+                "params": [
+                  {
+                    "name": "list1",
+                    "type": "cached",
+                    "value": "allDeskNames"
+                  },
+                  {
+                    "name": "list2",
+                    "type": "cached",
+                    "value": "seenDesks"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "selectCentralWidgetDeck",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "duration": 20,
+              "forceConfirmation": true,
+              "defaultSelect": true,
+              "privatePrompt": true
+            },
+            "cached": {
+              "decks": "allowedDesks"
+            },
+            "computed": {
+              "actors": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentGiver"
+                  }
+                ]
+              }
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "chosenDesk",
+              "value": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "lastActionResult"
+                  },
+                  {
+                    "name": "value",
+                    "type": "cached",
+                    "value": "currentGiver"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "targetPlayer",
+              "value": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "playerByDeskName"
+                  },
+                  {
+                    "name": "value",
+                    "type": "cached",
+                    "value": "chosenDesk"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "moveCards",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "type": "deck",
+              "qnt": 1,
+              "facedown": true
+            },
+            "computed": {
+              "from": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "videobox_($1)"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentGiver"
+                  }
+                ]
+              },
+              "to": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "videobox_($1)"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "targetPlayer"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "seen",
+              "value": {
+                "selector": "append",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "cached",
+                    "value": "seen"
+                  },
+                  {
+                    "name": "element",
+                    "type": "cached",
+                    "value": "targetPlayer"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "seenDesks",
+              "value": {
+                "selector": "append",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "cached",
+                    "value": "seenDesks"
+                  },
+                  {
+                    "name": "element",
+                    "type": "cached",
+                    "value": "chosenDesk"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "currentHolder",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "targetPlayer"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "createNotification",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "header": "It's on your desk.",
+              "text": "Decide: True, Bluff, or Peek & Pass."
+            },
+            "computed": {
+              "to": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "targetPlayer"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Turn: pass / peek chain",
+      "repeat": {
+        "qnt": {
+          "selector": "dec",
+          "params": [
+            {
+              "name": "arg",
+              "type": "cached",
+              "value": "numPlayers"
+            }
+          ]
+        }
+      },
+      "actions": [
+        {
+          "key": "dealDeck",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "deck": "action_source",
+              "qnt": 3
+            },
+            "computed": {
+              "targets": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentHolder"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "playCards",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "minCards": 1,
+              "maxCards": 1,
+              "oneClick": true,
+              "duration": 20,
+              "playable": "availableCards",
+              "target": "action_source",
+              "sounds.list": [
+                "soundboard.reminder"
+              ],
+              "sounds.waitForSoundEnd": false
+            },
+            "cached": {
+              "actor": "currentHolder"
+            },
+            "computed": {
+              "playableInclude.cards": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "computed",
+                    "value": {
+                      "selector": "greaterThan",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "computed",
+                          "value": {
+                            "selector": "listLength",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "listsSubtract",
+                                  "params": [
+                                    {
+                                      "name": "list1",
+                                      "type": "cached",
+                                      "value": "players"
+                                    },
+                                    {
+                                      "name": "list2",
+                                      "type": "cached",
+                                      "value": "seen"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "arg2",
+                          "type": "preset",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "preset",
+                    "value": [
+                      "action_true",
+                      "action_false",
+                      "action_peek"
+                    ]
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "preset",
+                    "value": [
+                      "action_true",
+                      "action_false"
+                    ]
+                  }
+                ]
+              },
+              "playList.0": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentHolder"
+                  }
+                ]
+              },
+              "notification": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "computed",
+                    "value": {
+                      "selector": "greaterThan",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "computed",
+                          "value": {
+                            "selector": "listLength",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "listsSubtract",
+                                  "params": [
+                                    {
+                                      "name": "list1",
+                                      "type": "cached",
+                                      "value": "players"
+                                    },
+                                    {
+                                      "name": "list2",
+                                      "type": "cached",
+                                      "value": "seen"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "arg2",
+                          "type": "preset",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "formatString",
+                      "params": [
+                        {
+                          "name": "format",
+                          "type": "preset",
+                          "value": "($1): True, Bluff, or Peek & Pass?"
+                        },
+                        {
+                          "name": "arg1",
+                          "type": "computed",
+                          "value": {
+                            "selector": "getPlayerNameById",
+                            "params": [
+                              {
+                                "name": "id",
+                                "type": "cached",
+                                "value": "currentHolder"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "formatString",
+                      "params": [
+                        {
+                          "name": "format",
+                          "type": "preset",
+                          "value": "($1): everyone has seen it — True or Bluff?"
+                        },
+                        {
+                          "name": "arg1",
+                          "type": "computed",
+                          "value": {
+                            "selector": "getPlayerNameById",
+                            "params": [
+                              {
+                                "name": "id",
+                                "type": "cached",
+                                "value": "currentHolder"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "postHandler": "playOneRandomCard",
+          "saveValueInCache": [
+            {
+              "name": "decision",
+              "value": {
+                "selector": "getCardField",
+                "params": [
+                  {
+                    "name": "cardId",
+                    "type": "cached",
+                    "value": "lastActionResult.cards.0"
+                  },
+                  {
+                    "name": "field",
+                    "type": "preset",
+                    "value": "name"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "recallCards",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "deck": "action_source",
+              "cards": [
+                "action_true",
+                "action_false",
+                "action_peek"
+              ]
+            },
+            "computed": {
+              "targets": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentHolder"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "isPeek",
+              "value": {
+                "selector": "equals",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "decision"
+                  },
+                  {
+                    "name": "arg2",
+                    "type": "preset",
+                    "value": "action_peek"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "guessTrue",
+              "value": {
+                "selector": "equals",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "decision"
+                  },
+                  {
+                    "name": "arg2",
+                    "type": "preset",
+                    "value": "action_true"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "claimWasTrue",
+              "value": {
+                "selector": "equals",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "trueType"
+                  },
+                  {
+                    "name": "arg2",
+                    "type": "cached",
+                    "value": "currentClaim"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "holderCorrect",
+              "value": {
+                "selector": "equals",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "guessTrue"
+                  },
+                  {
+                    "name": "arg2",
+                    "type": "cached",
+                    "value": "claimWasTrue"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "keeper",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "cached",
+                    "value": "holderCorrect"
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "cached",
+                    "value": "claimerId"
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "cached",
+                    "value": "currentHolder"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "flipOverTopCard",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "cached",
+                "value": "isPeek"
+              }
+            ]
+          },
+          "payload": {
+            "computed": {
+              "deck": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "videobox_($1)"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentHolder"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "animateBox",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "cached",
+                "value": "isPeek"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "sounds.list": [
+                "soundboard.flip"
+              ],
+              "sounds.waitForSoundEnd": false
+            },
+            "cached": {
+              "userIds": "players",
+              "animation": "trueType",
+              "playList.0": "players"
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "cached",
+                "value": "isPeek"
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "trueLabel",
+              "value": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "problemLabelByKey"
+                  },
+                  {
+                    "name": "value",
+                    "type": "cached",
+                    "value": "trueType"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "moveCards",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "cached",
+                "value": "isPeek"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "type": "deck",
+              "qnt": 1,
+              "facedown": false
+            },
+            "computed": {
+              "from": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "videobox_($1)"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentHolder"
+                  }
+                ]
+              },
+              "to": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "deskByPlayer"
+                  },
+                  {
+                    "name": "value",
+                    "type": "cached",
+                    "value": "keeper"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "cached",
+                "value": "isPeek"
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "counts",
+              "value": {
+                "selector": "incObjectFieldValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "counts"
+                  },
+                  {
+                    "name": "ids",
+                    "type": "computed",
+                    "value": {
+                      "selector": "createList",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "computed",
+                          "value": {
+                            "selector": "formatString",
+                            "params": [
+                              {
+                                "name": "format",
+                                "type": "preset",
+                                "value": "($1)_($2)"
+                              },
+                              {
+                                "name": "arg1",
+                                "type": "cached",
+                                "value": "keeper"
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "cached",
+                                "value": "trueType"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "cached",
+                "value": "isPeek"
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "keeperCount",
+              "value": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "counts"
+                  },
+                  {
+                    "name": "value",
+                    "type": "computed",
+                    "value": {
+                      "selector": "formatString",
+                      "params": [
+                        {
+                          "name": "format",
+                          "type": "preset",
+                          "value": "($1)_($2)"
+                        },
+                        {
+                          "name": "arg1",
+                          "type": "cached",
+                          "value": "keeper"
+                        },
+                        {
+                          "name": "arg2",
+                          "type": "cached",
+                          "value": "trueType"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "defaultValue",
+                    "type": "preset",
+                    "value": 0
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "createNotification",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "cached",
+                "value": "isPeek"
+              }
+            ]
+          },
+          "payload": {
+            "cached": {
+              "to": "players"
+            },
+            "computed": {
+              "image": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "trueType"
+                  }
+                ]
+              },
+              "header": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "cached",
+                    "value": "holderCorrect"
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "formatString",
+                      "params": [
+                        {
+                          "name": "format",
+                          "type": "preset",
+                          "value": "($1) called it right!"
+                        },
+                        {
+                          "name": "arg1",
+                          "type": "computed",
+                          "value": {
+                            "selector": "getPlayerNameById",
+                            "params": [
+                              {
+                                "name": "id",
+                                "type": "cached",
+                                "value": "currentHolder"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "formatString",
+                      "params": [
+                        {
+                          "name": "format",
+                          "type": "preset",
+                          "value": "($1) guessed wrong!"
+                        },
+                        {
+                          "name": "arg1",
+                          "type": "computed",
+                          "value": {
+                            "selector": "getPlayerNameById",
+                            "params": [
+                              {
+                                "name": "id",
+                                "type": "cached",
+                                "value": "currentHolder"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "text": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "It was a ($1). ($2) takes it."
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "trueLabel"
+                  },
+                  {
+                    "name": "arg2",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNameById",
+                      "params": [
+                        {
+                          "name": "id",
+                          "type": "cached",
+                          "value": "keeper"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "setDeckLabel",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "cached",
+                "value": "isPeek"
+              }
+            ]
+          },
+          "payload": {
+            "computed": {
+              "deck": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "deskByPlayer"
+                  },
+                  {
+                    "name": "value",
+                    "type": "cached",
+                    "value": "keeper"
+                  }
+                ]
+              },
+              "label": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "computed",
+                    "value": {
+                      "selector": "greaterThanOrEqual",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "cached",
+                          "value": "keeperCount"
+                        },
+                        {
+                          "name": "arg2",
+                          "type": "preset",
+                          "value": 3
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "formatString",
+                      "params": [
+                        {
+                          "name": "format",
+                          "type": "preset",
+                          "value": "($1) ⚠️"
+                        },
+                        {
+                          "name": "arg1",
+                          "type": "computed",
+                          "value": {
+                            "selector": "getPlayerNameById",
+                            "params": [
+                              {
+                                "name": "id",
+                                "type": "cached",
+                                "value": "keeper"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNameById",
+                      "params": [
+                        {
+                          "name": "id",
+                          "type": "cached",
+                          "value": "keeper"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "updateScore",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalOR",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "cached",
+                      "value": "resolved"
+                    },
+                    {
+                      "name": "arg2",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "lessThan",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "cached",
+                      "value": "keeperCount"
+                    },
+                    {
+                      "name": "arg2",
+                      "type": "preset",
+                      "value": 4
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "payload": {
+            "computed": {
+              "scores": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "createDict",
+                      "params": [
+                        {
+                          "name": "keys",
+                          "type": "preset",
+                          "value": [
+                            "list",
+                            "score"
+                          ]
+                        },
+                        {
+                          "name": "values",
+                          "type": "computed",
+                          "value": {
+                            "selector": "createList",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "createList",
+                                  "params": [
+                                    {
+                                      "name": "arg1",
+                                      "type": "cached",
+                                      "value": "keeper"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "animateBox",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalOR",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "cached",
+                      "value": "resolved"
+                    },
+                    {
+                      "name": "arg2",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "lessThan",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "cached",
+                      "value": "keeperCount"
+                    },
+                    {
+                      "name": "arg2",
+                      "type": "preset",
+                      "value": 4
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "animation": "buried",
+              "sounds.list": [
+                "soundboard.lie"
+              ],
+              "sounds.waitForSoundEnd": false
+            },
+            "cached": {
+              "userIds": "players",
+              "playList.0": "players"
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalOR",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "cached",
+                      "value": "resolved"
+                    },
+                    {
+                      "name": "arg2",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "lessThan",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "cached",
+                      "value": "keeperCount"
+                    },
+                    {
+                      "name": "arg2",
+                      "type": "preset",
+                      "value": 4
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "payload": {
+            "cached": {
+              "to": "players"
+            },
+            "computed": {
+              "header": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "($1) is BURIED!"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNameById",
+                      "params": [
+                        {
+                          "name": "id",
+                          "type": "cached",
+                          "value": "keeper"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "text": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "Four ($1)s on one desk. Everyone else wins!"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "trueLabel"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "cached",
+                "value": "isPeek"
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "resolved",
+              "value": true
+            }
+          ]
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalNOT",
+                  "params": [
+                    {
+                      "name": "arg",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "trueLabel",
+              "value": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "problemLabelByKey"
+                  },
+                  {
+                    "name": "value",
+                    "type": "cached",
+                    "value": "trueType"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "createNotification",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalNOT",
+                  "params": [
+                    {
+                      "name": "arg",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "text": "Now claim what you like and dump it on someone new."
+            },
+            "computed": {
+              "to": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentHolder"
+                  }
+                ]
+              },
+              "image": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "trueType"
+                  }
+                ]
+              },
+              "header": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "Psst — it's really a ($1)."
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "trueLabel"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "selectCentralWidgetDeck",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalNOT",
+                  "params": [
+                    {
+                      "name": "arg",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "decks": [
+                "problem_monday_meeting",
+                "problem_expense_report",
+                "problem_it_ticket",
+                "problem_jury_duty",
+                "problem_reply_all",
+                "problem_printer_jam",
+                "problem_perf_review",
+                "problem_onboarding_doc"
+              ],
+              "duration": 20,
+              "forceConfirmation": true,
+              "defaultSelect": true,
+              "privatePrompt": true
+            },
+            "computed": {
+              "actors": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentHolder"
+                  }
+                ]
+              }
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "currentClaim",
+              "value": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "problemKeyByDeck"
+                  },
+                  {
+                    "name": "value",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getCachedObjectValue",
+                      "params": [
+                        {
+                          "name": "objectName",
+                          "type": "preset",
+                          "value": "lastActionResult"
+                        },
+                        {
+                          "name": "value",
+                          "type": "cached",
+                          "value": "currentHolder"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalNOT",
+                  "params": [
+                    {
+                      "name": "arg",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "claimLabel",
+              "value": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "problemLabelByKey"
+                  },
+                  {
+                    "name": "value",
+                    "type": "cached",
+                    "value": "currentClaim"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "claimerId",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "currentHolder"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "createNotification",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalNOT",
+                  "params": [
+                    {
+                      "name": "arg",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "text": "True, or a total bluff?"
+            },
+            "cached": {
+              "to": "players"
+            },
+            "computed": {
+              "image": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "currentClaim"
+                  }
+                ]
+              },
+              "header": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "($1) claims: ($2)"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNameById",
+                      "params": [
+                        {
+                          "name": "id",
+                          "type": "cached",
+                          "value": "currentHolder"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "arg2",
+                    "type": "cached",
+                    "value": "claimLabel"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalNOT",
+                  "params": [
+                    {
+                      "name": "arg",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "allowedDesks",
+              "value": {
+                "selector": "listsSubtract",
+                "params": [
+                  {
+                    "name": "list1",
+                    "type": "cached",
+                    "value": "allDeskNames"
+                  },
+                  {
+                    "name": "list2",
+                    "type": "cached",
+                    "value": "seenDesks"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "selectCentralWidgetDeck",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalNOT",
+                  "params": [
+                    {
+                      "name": "arg",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "duration": 20,
+              "forceConfirmation": true,
+              "defaultSelect": true,
+              "privatePrompt": true
+            },
+            "cached": {
+              "decks": "allowedDesks"
+            },
+            "computed": {
+              "actors": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentHolder"
+                  }
+                ]
+              }
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "chosenDesk",
+              "value": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "lastActionResult"
+                  },
+                  {
+                    "name": "value",
+                    "type": "cached",
+                    "value": "currentHolder"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalNOT",
+                  "params": [
+                    {
+                      "name": "arg",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "targetPlayer",
+              "value": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "playerByDeskName"
+                  },
+                  {
+                    "name": "value",
+                    "type": "cached",
+                    "value": "chosenDesk"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "moveCards",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalNOT",
+                  "params": [
+                    {
+                      "name": "arg",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "type": "deck",
+              "qnt": 1,
+              "facedown": true
+            },
+            "computed": {
+              "from": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "videobox_($1)"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentHolder"
+                  }
+                ]
+              },
+              "to": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "preset",
+                    "value": "videobox_($1)"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "targetPlayer"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalNOT",
+                  "params": [
+                    {
+                      "name": "arg",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "saveValueInCache": [
+            {
+              "name": "seen",
+              "value": {
+                "selector": "append",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "cached",
+                    "value": "seen"
+                  },
+                  {
+                    "name": "element",
+                    "type": "cached",
+                    "value": "targetPlayer"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "seenDesks",
+              "value": {
+                "selector": "append",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "cached",
+                    "value": "seenDesks"
+                  },
+                  {
+                    "name": "element",
+                    "type": "cached",
+                    "value": "chosenDesk"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "currentHolder",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "targetPlayer"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "createNotification",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalNOT",
+                  "params": [
+                    {
+                      "name": "arg",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "header": "It's on your desk.",
+              "text": "Decide: True, Bluff, or Peek & Pass."
+            },
+            "computed": {
+              "to": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "targetPlayer"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Turn: rotate",
+      "checkWinCondition": true,
+      "actions": [
+        {
+          "key": "removeAllHighlights"
+        },
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "giverIndex",
+              "value": {
+                "selector": "remainder",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "inc",
+                      "params": [
+                        {
+                          "name": "arg",
+                          "type": "cached",
+                          "value": "giverIndex"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "arg2",
+                    "type": "cached",
+                    "value": "numPlayers"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "playersWinCondition": {
+    "gameOverCondition": {
+      "selector": "greaterThan",
+      "params": [
+        {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+            "selector": "getMaxCurrentScore"
+          }
+        },
+        {
+          "name": "arg2",
+          "type": "preset",
+          "value": 0
+        }
+      ]
+    },
+    "winners": {
+      "selector": "getPlayerNamesByIds",
+      "params": [
+        {
+          "name": "ids",
+          "type": "computed",
+          "value": {
+            "selector": "getPlayersWithMinScore"
+          }
+        }
+      ]
+    }
+  },
+  "postGameActions": [
+    {
+      "key": "setImagesRow",
+      "payload": {
+        "preset": {
+          "maxHeight": 10,
+          "images": [
+            "transparent"
+          ]
+        }
+      }
+    },
+    {
+      "key": "emptyAction",
+      "saveValueInCache": [
+        {
+          "name": "winner",
+          "value": {
+            "selector": "listToString",
+            "params": [
+              {
+                "name": "list",
+                "type": "computed",
+                "value": {
+                  "selector": "getPlayerNamesByIds",
+                  "params": [
+                    {
+                      "name": "ids",
+                      "type": "computed",
+                      "value": {
+                        "selector": "getPlayersWithMinScore"
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "readable",
+                "type": "preset",
+                "value": true
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "createNotification",
+      "payload": {
+        "preset": {
+          "image": "winner",
+          "text": "The buck stopped with someone else."
+        },
+        "cached": {
+          "to": "players"
+        },
+        "computed": {
+          "header": {
+            "selector": "formatString",
+            "params": [
+              {
+                "name": "format",
+                "type": "preset",
+                "value": "($1) ($2)!"
+              },
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "winner"
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "ifElse",
+                  "params": [
+                    {
+                      "name": "condition",
+                      "type": "computed",
+                      "value": {
+                        "selector": "equals",
+                        "params": [
+                          {
+                            "name": "arg1",
+                            "type": "computed",
+                            "value": {
+                              "selector": "listLength",
+                              "params": [
+                                {
+                                  "name": "list",
+                                  "type": "computed",
+                                  "value": {
+                                    "selector": "getPlayersWithMinScore"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 1
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "thenValue",
+                      "type": "preset",
+                      "value": "wins"
+                    },
+                    {
+                      "name": "elseValue",
+                      "type": "preset",
+                      "value": "share the win"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

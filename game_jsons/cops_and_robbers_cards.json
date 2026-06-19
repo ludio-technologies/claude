@@ -1,0 +1,628 @@
+{
+  "name": "cnr_cards",
+  "cards": [
+    {
+      "name": "pass",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/special_pass.png",
+      "label": "Pass",
+      "enlargeOnHover": true,
+      "weight": 0
+    },
+    {
+      "name": "getaway",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/special_getaway.png",
+      "label": "Getaway Car",
+      "enlargeOnHover": true,
+      "weight": 200
+    },
+    {
+      "name": "backstreet",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/special_backstreet.png",
+      "label": "Backstreet",
+      "enlargeOnHover": true,
+      "weight": 201
+    },
+    {
+      "name": "speedboat",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/special_speedboat.png",
+      "label": "Speedboat",
+      "enlargeOnHover": true,
+      "weight": 202
+    },
+    {
+      "name": "investigate",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/action_investigate.png",
+      "label": "Investigate",
+      "enlargeOnHover": true,
+      "weight": 10
+    },
+    {
+      "name": "bust",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/action_bust.png",
+      "label": "Bust",
+      "enlargeOnHover": true,
+      "weight": 11
+    },
+    {
+      "name": "A1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_A1.png",
+      "label": "A1",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "A2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_A2.png",
+      "label": "A2",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "A3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_A3.png",
+      "label": "A3",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "A4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_A4.png",
+      "label": "A4",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "A5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_A5.png",
+      "label": "A5",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "A6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_A6.png",
+      "label": "A6",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "A7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_A7.png",
+      "label": "A7",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "B1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_B1.png",
+      "label": "B1",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "B2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_B2.png",
+      "label": "B2",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "B3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_B3.png",
+      "label": "B3",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "B4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_B4.png",
+      "label": "B4",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "B5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_B5.png",
+      "label": "B5",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "B6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_B6.png",
+      "label": "B6",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "B7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_B7.png",
+      "label": "B7",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "C1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_C1.png",
+      "label": "C1",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "C2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_C2.png",
+      "label": "C2",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "C3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_C3.png",
+      "label": "C3",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "C4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_C4.png",
+      "label": "C4",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "C5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_C5.png",
+      "label": "C5",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "C6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_C6.png",
+      "label": "C6",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "C7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_C7.png",
+      "label": "C7",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "D1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_D1.png",
+      "label": "D1",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "D2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_D2.png",
+      "label": "D2",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "D3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_D3.png",
+      "label": "D3",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "D4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_D4.png",
+      "label": "D4",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "D5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_D5.png",
+      "label": "D5",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "D6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_D6.png",
+      "label": "D6",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "D7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_D7.png",
+      "label": "D7",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "E1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_E1.png",
+      "label": "E1",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "E2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_E2.png",
+      "label": "E2",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "E3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_E3.png",
+      "label": "E3",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "E4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_E4.png",
+      "label": "E4",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "E5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_E5.png",
+      "label": "E5",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "E6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_E6.png",
+      "label": "E6",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "E7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_E7.png",
+      "label": "E7",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "F1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_F1.png",
+      "label": "F1",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "F2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_F2.png",
+      "label": "F2",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "F3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_F3.png",
+      "label": "F3",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "F4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_F4.png",
+      "label": "F4",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "F5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_F5.png",
+      "label": "F5",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "F6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_F6.png",
+      "label": "F6",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "F7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_F7.png",
+      "label": "F7",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "G1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_G1.png",
+      "label": "G1",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "G2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_G2.png",
+      "label": "G2",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "G3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_G3.png",
+      "label": "G3",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "G4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_G4.png",
+      "label": "G4",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "G5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_G5.png",
+      "label": "G5",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "G6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_G6.png",
+      "label": "G6",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "G7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_G7.png",
+      "label": "G7",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "H1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_H1.png",
+      "label": "H1",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "H2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_H2.png",
+      "label": "H2",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "H3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_H3.png",
+      "label": "H3",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "H4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_H4.png",
+      "label": "H4",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "H5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_H5.png",
+      "label": "H5",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "H6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_H6.png",
+      "label": "H6",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "H7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_H7.png",
+      "label": "H7",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "I1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_I1.png",
+      "label": "I1",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "I2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_I2.png",
+      "label": "I2",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "I3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_I3.png",
+      "label": "I3",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "I4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_I4.png",
+      "label": "I4",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "I5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_I5.png",
+      "label": "I5",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "I6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_I6.png",
+      "label": "I6",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "I7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_I7.png",
+      "label": "I7",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "J1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_J1.png",
+      "label": "J1",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "J2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_J2.png",
+      "label": "J2",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "J3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_J3.png",
+      "label": "J3",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "J4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_J4.png",
+      "label": "J4",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "J5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_J5.png",
+      "label": "J5",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "J6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_J6.png",
+      "label": "J6",
+      "enlargeOnHover": true,
+      "weight": 100
+    },
+    {
+      "name": "J7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/cnr/coord_J7.png",
+      "label": "J7",
+      "enlargeOnHover": true,
+      "weight": 100
+    }
+  ],
+  "sets": {
+    "specials_solo": {
+      "getaway": 2,
+      "backstreet": 2,
+      "speedboat": 2
+    },
+    "specials_each": {
+      "getaway": 1,
+      "backstreet": 1,
+      "speedboat": 1
+    },
+    "pass_card": {
+      "pass": 3
+    },
+    "cop_actions": {
+      "investigate": 1,
+      "bust": 1
+    },
+    "cells_3x": {
+      "A1": 3,
+      "A2": 3,
+      "A3": 3,
+      "A4": 3,
+      "A5": 3,
+      "A6": 3,
+      "A7": 3,
+      "B1": 3,
+      "B2": 3,
+      "B3": 3,
+      "B4": 3,
+      "B5": 3,
+      "B6": 3,
+      "B7": 3,
+      "C1": 3,
+      "C2": 3,
+      "C3": 3,
+      "C4": 3,
+      "C5": 3,
+      "C6": 3,
+      "C7": 3,
+      "D1": 3,
+      "D2": 3,
+      "D3": 3,
+      "D4": 3,
+      "D5": 3,
+      "D6": 3,
+      "D7": 3,
+      "E1": 3,
+      "E2": 3,
+      "E3": 3,
+      "E4": 3,
+      "E5": 3,
+      "E6": 3,
+      "E7": 3,
+      "F1": 3,
+      "F2": 3,
+      "F3": 3,
+      "F4": 3,
+      "F5": 3,
+      "F6": 3,
+      "F7": 3,
+      "G1": 3,
+      "G2": 3,
+      "G3": 3,
+      "G4": 3,
+      "G5": 3,
+      "G6": 3,
+      "G7": 3,
+      "H1": 3,
+      "H2": 3,
+      "H3": 3,
+      "H4": 3,
+      "H5": 3,
+      "H6": 3,
+      "H7": 3,
+      "I1": 3,
+      "I2": 3,
+      "I3": 3,
+      "I4": 3,
+      "I5": 3,
+      "I6": 3,
+      "I7": 3,
+      "J1": 3,
+      "J2": 3,
+      "J3": 3,
+      "J4": 3,
+      "J5": 3,
+      "J6": 3,
+      "J7": 3
+    }
+  }
+}

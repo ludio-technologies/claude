@@ -1610,10 +1610,8 @@
                                     "params": [
                                         {
                                             "name": "list",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "allPlayers"
-                                            }
+                                            "type": "cached",
+                                            "value": "players"
                                         },
                                         {
                                             "name": "element",
@@ -1655,10 +1653,8 @@
                                                 "params": [
                                                     {
                                                         "name": "list",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "allPlayers"
-                                                        }
+                                                        "type": "cached",
+                                                        "value": "players"
                                                     },
                                                     {
                                                         "name": "index",
@@ -1677,6 +1673,10 @@
                 {
                     "name": "round",
                     "value": 1
+                },
+                {
+                    "name": "reset",
+                    "value": true
                 }
             ]
         },
@@ -1916,173 +1916,6 @@
             ]
         },
         {
-            "key": "createVote",
-            "payload": {
-                "preset": {
-                    "title": "Game Mode",
-                    "type": "target_poll",
-                    "terminationCondition": "get_majority",
-                    "showResultInRealTime": true,
-                    "showResultDuration": 2,
-                    "showResult": true,
-                    "allowRevoting": true,
-                    "targets": [
-                        "Classic (3 rounds)",
-                        "Brawl (scores reset)"
-                    ],
-                    "pollVoteTargetsOptions": {
-                        "Classic (3 rounds)": {
-                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-                            "backgroundColor": "#D3D3D3",
-                            "boxIconColor": "#D3D3D3",
-                            "textColor": "black",
-                            "widgetIconColor": "green"
-                        },
-                        "Brawl (scores reset)": {
-                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/brawl.svg",
-                            "backgroundColor": "#D3D3D3",
-                            "boxIconColor": "#D3D3D3",
-                            "textColor": "black",
-                            "widgetIconColor": "blue"
-                        }
-                    },
-                    "backgroundColor": "#6082B6",
-                    "borderColor": "white",
-                    "textColor": "white"
-                },
-                "cached": {
-                    "actors": "host"
-                },
-                "computed": {
-                    "question": {
-                        "selector": "formatString",
-                        "params": [
-                            {
-                                "name": "format",
-                                "type": "preset",
-                                "value": "What game mode do you want to play?"
-                            }
-                        ]
-                    }
-                }
-            },
-            "saveValueInCache": [
-                {
-                    "name": "reset",
-                    "value": {
-                        "selector": "isTargetGotMajority",
-                        "params": [
-                            {
-                                "name": "voteResult",
-                                "type": "cached",
-                                "value": "lastActionResult"
-                            },
-                            {
-                                "name": "target",
-                                "type": "preset",
-                                "value": "Brawl (scores reset)"
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
-        {
-            "key": "createVote",
-            "payload": {
-                "preset": {
-                    "title": "Tutorial Mode",
-                    "type": "target_poll",
-                    "terminationCondition": "get_all_votes",
-                    "showResultInRealTime": true,
-                    "showResultDuration": 2,
-                    "showResult": true,
-                    "allowRevoting": false,
-                    "targets": [
-                        "Breakout Rooms!",
-                        "No Breakout Rooms"
-                    ],
-                    "pollVoteTargetsOptions": {
-                        "Breakout Rooms!": {
-                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-                            "backgroundColor": "#D3D3D3",
-                            "boxIconColor": "#D3D3D3",
-                            "textColor": "black",
-                            "widgetIconColor": "green"
-                        },
-                        "No Breakout Rooms": {
-                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
-                            "backgroundColor": "#D3D3D3",
-                            "boxIconColor": "#D3D3D3",
-                            "textColor": "black",
-                            "widgetIconColor": "red"
-                        }
-                    },
-                    "backgroundColor": "#6082B6",
-                    "borderColor": "white",
-                    "textColor": "white"
-                },
-                "computed": {
-                    "question": {
-                        "selector": "formatString",
-                        "params": [
-                            {
-                                "name": "format",
-                                "type": "preset",
-                                "value": "($1), do you want breakout rooms for each team?"
-                            },
-                            {
-                                "name": "arg1",
-                                "type": "computed",
-                                "value": {
-                                    "selector": "listToString",
-                                    "params": [
-                                        {
-                                            "name": "list",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "getPlayerNamesByIds",
-                                                "params": [
-                                                    {
-                                                        "name": "ids",
-                                                        "type": "cached",
-                                                        "value": "host"
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    }
-                },
-                "cached": {
-                    "actors": "host"
-                }
-            },
-            "saveValueInCache": [
-                {
-                    "name": "noBreakoutRooms",
-                    "value": {
-                        "selector": "isTargetGotMajority",
-                        "params": [
-                            {
-                                "name": "voteResult",
-                                "type": "cached",
-                                "value": "lastActionResult"
-                            },
-                            {
-                                "name": "target",
-                                "type": "preset",
-                                "value": "No Breakout Rooms"
-                            }
-                        ]
-                    }
-                }
-            ]
-        },
-        {
             "key": "createVideoboxDecks",
             "payload": {
                 "preset": {
@@ -2117,7 +1950,7 @@
     ],
     "gameLoop": [
         {
-            "name": "Tutorial Part 1",
+            "name": "Tutorial",
             "skipCondition": [
                 {
                     "selector": "logicalNOT",
@@ -2132,37 +1965,77 @@
             ],
             "actions": [
                 {
-                    "key": "createConversationGroup",
+                    "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "video": true,
-                            "audio": true,
-                            "private": false,
-                            "indicator": "💡",
-                            "isVideoForAll": false
+                            "duration": 14,
+                            "backgroundColor": "#6082B6",
+                            "borderColor": "white",
+                            "textColor": "white",
+                            "header": "How to play Interference",
+                            "text": "Two teams: <b>Sun</b> and <b>Moon</b>, each split into two subteams (Sun #1/#2, Moon #1/#2). Each subteam gets a secret word and must come up with <b>3 one-word clues</b> to help their counterpart subteam guess it."
                         },
                         "cached": {
-                            "members": "learners"
+                            "to": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "duration": 14,
+                            "backgroundColor": "#6082B6",
+                            "borderColor": "white",
+                            "textColor": "white",
+                            "header": "Interference",
+                            "text": "Before your clues reach your counterpart, an <b>opposing subteam</b> swaps one of them for any other word. The doctored clues are what your counterpart sees — they have a fixed time to yell out guesses for your secret word."
+                        },
+                        "cached": {
+                            "to": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "duration": 14,
+                            "backgroundColor": "#6082B6",
+                            "borderColor": "white",
+                            "textColor": "white",
+                            "header": "First-clue difficulty + scoring",
+                            "text": "Your <b>first clue</b> must start with a specific letter. You pick <b>Easy, Medium, Hard, or Fiendish</b> — if your counterpart guesses right, your team earns <b>1, 2, 3, or 4 points</b> respectively. If they miss, the other team earns 1 point."
+                        },
+                        "cached": {
+                            "to": "learners"
+                        }
+                    }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "duration": 12,
+                            "backgroundColor": "#6082B6",
+                            "borderColor": "white",
+                            "textColor": "white",
+                            "header": "Rules for your clues",
+                            "text": "All 3 clues must be <b>unique</b>, must <b>relate to</b> the secret word's meaning, and cannot be <b>too close</b> to the secret word itself. After each round, the host can reset scores, keep scores, or end the game."
+                        },
+                        "cached": {
+                            "to": "learners"
                         }
                     }
                 },
                 {
                     "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.i1",
-                                "voices.i2"
-                            ]
-                        },
-                        "cached": {
-                            "playList.0": "learners"
+                    "saveValueInCache": [
+                        {
+                            "name": "tutorial",
+                            "value": false
                         }
-                    }
-                },
-                {
-                    "key": "destroyConversationGroups"
+                    ]
                 }
             ]
         },
@@ -2198,37 +2071,38 @@
         },
         {
             "name": "Setting up",
+            "turnSpectatorsToPlayers": true,
             "skipCondition": [
                 {
-                    "selector": "logicalNOT",
+                    "selector": "logicalAND",
                     "params": [
                         {
-                            "name": "arg",
+                            "name": "arg1",
                             "type": "computed",
                             "value": {
-                                "selector": "logicalOR",
+                                "selector": "greaterThan",
                                 "params": [
                                     {
                                         "name": "arg1",
-                                        "type": "computed",
-                                        "value": {
-                                            "selector": "equals",
-                                            "params": [
-                                                {
-                                                    "name": "arg1",
-                                                    "type": "cached",
-                                                    "value": "gameLoopIndex"
-                                                },
-                                                {
-                                                    "name": "arg2",
-                                                    "type": "preset",
-                                                    "value": 0
-                                                }
-                                            ]
-                                        }
+                                        "type": "cached",
+                                        "value": "gameLoopIndex"
                                     },
                                     {
                                         "name": "arg2",
+                                        "type": "preset",
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "arg2",
+                            "type": "computed",
+                            "value": {
+                                "selector": "logicalNOT",
+                                "params": [
+                                    {
+                                        "name": "arg",
                                         "type": "cached",
                                         "value": "reset"
                                     }
@@ -2668,28 +2542,6 @@
         },
         {
             "name": "See your teammates",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "reset"
-                        }
-                    ]
-                },
-                {
-                    "selector": "getCachedValue",
-                    "params": [
-                        {
-                            "name": "name",
-                            "type": "preset",
-                            "value": "noBreakoutRooms"
-                        }
-                    ]
-                }
-            ],
             "actions": [
                 {
                     "key": "createConversationGroup",
@@ -2790,7 +2642,6 @@
         },
         {
             "name": "Initialize variables",
-            "turnSpectatorsToPlayers": true,
             "actions": [
                 {
                     "key": "changeLayout",
@@ -2981,55 +2832,6 @@
             ]
         },
         {
-            "name": "Tutorial Part 2",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "tutorial"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "createConversationGroup",
-                    "payload": {
-                        "preset": {
-                            "video": true,
-                            "audio": true,
-                            "private": false,
-                            "indicator": "💡",
-                            "isVideoForAll": false
-                        },
-                        "cached": {
-                            "members": "learners"
-                        }
-                    }
-                },
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.i3"
-                            ]
-                        },
-                        "cached": {
-                            "playList.0": "learners"
-                        }
-                    }
-                },
-                {
-                    "key": "destroyConversationGroups"
-                }
-            ]
-        },
-        {
             "name": "Announce Phase 1 words",
             "parallel": {
                 "type": "smart",
@@ -3127,68 +2929,7 @@
             ]
         },
         {
-            "name": "Tutorial Part 3",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "tutorial"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "createConversationGroup",
-                    "payload": {
-                        "preset": {
-                            "video": true,
-                            "audio": true,
-                            "private": false,
-                            "indicator": "💡",
-                            "isVideoForAll": false
-                        },
-                        "cached": {
-                            "members": "learners"
-                        }
-                    }
-                },
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.i4"
-                            ]
-                        },
-                        "cached": {
-                            "playList.0": "learners"
-                        }
-                    }
-                },
-                {
-                    "key": "destroyConversationGroups"
-                }
-            ]
-        },
-        {
             "name": "Breakout rooms",
-            "skipCondition": [
-                {
-                    "selector": "getCachedValue",
-                    "params": [
-                        {
-                            "name": "name",
-                            "type": "preset",
-                            "value": "noBreakoutRooms"
-                        }
-                    ]
-                }
-            ],
             "actions": [
                 {
                     "key": "createTeamsConversationGroups",
@@ -3588,113 +3329,6 @@
                     ]
                 },
                 {
-                    "key": "emptyAction",
-                    "skipCondition": {
-                        "selector": "logicalOR",
-                        "params": [
-                            {
-                                "name": "arg1",
-                                "type": "computed",
-                                "value": {
-                                    "selector": "logicalNOT",
-                                    "params": [
-                                        {
-                                            "name": "arg",
-                                            "type": "cached",
-                                            "value": "tutorial"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "name": "arg2",
-                                "type": "computed",
-                                "value": {
-                                    "selector": "equals",
-                                    "params": [
-                                        {
-                                            "name": "arg1",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "listLength",
-                                                "params": [
-                                                    {
-                                                        "name": "list",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "intersect",
-                                                            "params": [
-                                                                {
-                                                                    "name": "list1",
-                                                                    "type": "computed",
-                                                                    "value": {
-                                                                        "selector": "getCachedValue",
-                                                                        "params": [
-                                                                            {
-                                                                                "name": "name",
-                                                                                "type": "cached",
-                                                                                "value": "thisTeam"
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "name": "list2",
-                                                                    "type": "cached",
-                                                                    "value": "learners"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "name": "arg2",
-                                            "type": "preset",
-                                            "value": 0
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    },
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.i5"
-                            ]
-                        },
-                        "computed": {
-                            "playList.0": {
-                                "selector": "intersect",
-                                "params": [
-                                    {
-                                        "name": "list1",
-                                        "type": "computed",
-                                        "value": {
-                                            "selector": "getCachedValue",
-                                            "params": [
-                                                {
-                                                    "name": "name",
-                                                    "type": "cached",
-                                                    "value": "thisTeam"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "name": "list2",
-                                        "type": "cached",
-                                        "value": "learners"
-                                    }
-                                ]
-                            }
-                        }
-                    }
-                },
-                {
                     "key": "createInput",
                     "payload": {
                         "preset": {
@@ -3838,9 +3472,7 @@
                             "borderColor": "white",
                             "textColor": "white"
                         },
-                        "cached": {
-                            "playList.0": "players"
-                        },
+                        "cached": {},
                         "computed": {
                             "options.restrictedWords": {
                                 "selector": "createList",
@@ -4189,113 +3821,6 @@
                             }
                         }
                     ]
-                },
-                {
-                    "key": "emptyAction",
-                    "skipCondition": {
-                        "selector": "logicalOR",
-                        "params": [
-                            {
-                                "name": "arg1",
-                                "type": "computed",
-                                "value": {
-                                    "selector": "logicalNOT",
-                                    "params": [
-                                        {
-                                            "name": "arg",
-                                            "type": "cached",
-                                            "value": "tutorial"
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "name": "arg2",
-                                "type": "computed",
-                                "value": {
-                                    "selector": "equals",
-                                    "params": [
-                                        {
-                                            "name": "arg1",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "listLength",
-                                                "params": [
-                                                    {
-                                                        "name": "list",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "intersect",
-                                                            "params": [
-                                                                {
-                                                                    "name": "list1",
-                                                                    "type": "computed",
-                                                                    "value": {
-                                                                        "selector": "getCachedValue",
-                                                                        "params": [
-                                                                            {
-                                                                                "name": "name",
-                                                                                "type": "cached",
-                                                                                "value": "thisTeam"
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                },
-                                                                {
-                                                                    "name": "list2",
-                                                                    "type": "cached",
-                                                                    "value": "learners"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "name": "arg2",
-                                            "type": "preset",
-                                            "value": 0
-                                        }
-                                    ]
-                                }
-                            }
-                        ]
-                    },
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.i6"
-                            ]
-                        },
-                        "computed": {
-                            "playList.0": {
-                                "selector": "intersect",
-                                "params": [
-                                    {
-                                        "name": "list1",
-                                        "type": "computed",
-                                        "value": {
-                                            "selector": "getCachedValue",
-                                            "params": [
-                                                {
-                                                    "name": "name",
-                                                    "type": "cached",
-                                                    "value": "thisTeam"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "name": "list2",
-                                        "type": "cached",
-                                        "value": "learners"
-                                    }
-                                ]
-                            }
-                        }
-                    }
                 },
                 {
                     "key": "createVote",
@@ -4729,55 +4254,6 @@
                             }
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "name": "Tutorial Part 4",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "tutorial"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "createConversationGroup",
-                    "payload": {
-                        "preset": {
-                            "video": true,
-                            "audio": true,
-                            "private": false,
-                            "indicator": "💡",
-                            "isVideoForAll": false
-                        },
-                        "cached": {
-                            "members": "learners"
-                        }
-                    }
-                },
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.i7"
-                            ]
-                        },
-                        "cached": {
-                            "playList.0": "learners"
-                        }
-                    }
-                },
-                {
-                    "key": "destroyConversationGroups"
                 }
             ]
         },
@@ -5810,77 +5286,7 @@
             ]
         },
         {
-            "name": "Tutorial Part 5",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "tutorial"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "createConversationGroup",
-                    "payload": {
-                        "preset": {
-                            "video": true,
-                            "audio": true,
-                            "private": false,
-                            "indicator": "💡",
-                            "isVideoForAll": false
-                        },
-                        "cached": {
-                            "members": "learners"
-                        }
-                    }
-                },
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.i8"
-                            ]
-                        },
-                        "cached": {
-                            "playList.0": "learners"
-                        }
-                    }
-                },
-                {
-                    "key": "destroyConversationGroups"
-                },
-                {
-                    "key": "emptyAction",
-                    "saveValueInCache": [
-                        {
-                            "name": "tutorial",
-                            "value": false
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "name": "End game?",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "reset"
-                        }
-                    ]
-                }
-            ],
             "actions": [
                 {
                     "key": "emptyAction",
@@ -5903,22 +5309,30 @@
                     "payload": {
                         "preset": {
                             "title": "PLAY AGAIN?",
-                            "type": "binary",
+                            "type": "target_poll",
                             "terminationCondition": "get_majority",
                             "showResultInRealTime": true,
                             "showResultDuration": 1,
                             "showResultDelay": 0,
-                            "binaryAnswerAliases": [
-                                "HELL YEAH!",
+                            "targets": [
+                                "Reset scores, shuffle teams",
+                                "Keep scores, keep teams",
                                 "I'M SO DONE"
                             ],
                             "pollVoteTargetsOptions": {
-                                "HELL YEAH!": {
+                                "Keep scores, keep teams": {
                                     "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
                                     "backgroundColor": "#D3D3D3",
                                     "boxIconColor": "#D3D3D3",
                                     "textColor": "black",
                                     "widgetIconColor": "green"
+                                },
+                                "Reset scores, shuffle teams": {
+                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                                    "backgroundColor": "#D3D3D3",
+                                    "boxIconColor": "#D3D3D3",
+                                    "textColor": "black",
+                                    "widgetIconColor": "blue"
                                 },
                                 "I'M SO DONE": {
                                     "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
@@ -5936,12 +5350,39 @@
                             "textColor": "white"
                         },
                         "cached": {
-                            "actors": "players"
+                            "actors": "host"
                         }
                     },
                     "saveValueInCache": [
                         {
                             "name": "playAgain",
+                            "value": {
+                                "selector": "logicalNOT",
+                                "params": [
+                                    {
+                                        "name": "arg",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "isTargetGotMajority",
+                                            "params": [
+                                                {
+                                                    "name": "voteResult",
+                                                    "type": "cached",
+                                                    "value": "lastActionResult"
+                                                },
+                                                {
+                                                    "name": "target",
+                                                    "type": "preset",
+                                                    "value": "I'M SO DONE"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "reset",
                             "value": {
                                 "selector": "isTargetGotMajority",
                                 "params": [
@@ -5953,24 +5394,113 @@
                                     {
                                         "name": "target",
                                         "type": "preset",
-                                        "value": "HELL YEAH!"
+                                        "value": "Reset scores, shuffle teams"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "sunScore",
+                            "value": {
+                                "selector": "getPlayerScore",
+                                "params": [
+                                    {
+                                        "name": "playerId",
+                                        "type": "cached",
+                                        "value": "sunTeam.0"
                                     }
                                 ]
                             }
                         },
                         {
-                            "name": "round",
-                            "value": 1
+                            "name": "moonScore",
+                            "value": {
+                                "selector": "getPlayerScore",
+                                "params": [
+                                    {
+                                        "name": "playerId",
+                                        "type": "cached",
+                                        "value": "moonTeam.0"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "winnerName",
+                            "value": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "greaterThan",
+                                            "params": [
+                                                {
+                                                    "name": "arg1",
+                                                    "type": "cached",
+                                                    "value": "sunScore"
+                                                },
+                                                {
+                                                    "name": "arg2",
+                                                    "type": "cached",
+                                                    "value": "moonScore"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "preset",
+                                        "value": "Sun"
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "computed",
+                                        "value": {
+                                            "selector": "ifElse",
+                                            "params": [
+                                                {
+                                                    "name": "condition",
+                                                    "type": "computed",
+                                                    "value": {
+                                                        "selector": "greaterThan",
+                                                        "params": [
+                                                            {
+                                                                "name": "arg1",
+                                                                "type": "cached",
+                                                                "value": "moonScore"
+                                                            },
+                                                            {
+                                                                "name": "arg2",
+                                                                "type": "cached",
+                                                                "value": "sunScore"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "thenValue",
+                                                    "type": "preset",
+                                                    "value": "Moon"
+                                                },
+                                                {
+                                                    "name": "elseValue",
+                                                    "type": "preset",
+                                                    "value": "Tie"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
                         }
                     ]
-                },
-                {
-                    "key": "restoreWidget",
-                    "payload": {
-                        "preset": {
-                            "id": "GenericCardWidget"
-                        }
-                    }
                 }
             ],
             "checkWinCondition": true
@@ -5990,14 +5520,6 @@
                 }
             ],
             "actions": [
-                {
-                    "key": "removeWidget",
-                    "payload": {
-                        "preset": {
-                            "id": "GenericCardWidget"
-                        }
-                    }
-                },
                 {
                     "key": "removeAllHighlights"
                 },
@@ -6050,191 +5572,22 @@
                     }
                 }
             ]
-        },
-        {
-            "name": "Advance round",
-            "skipCondition": [
-                {
-                    "selector": "getCachedValue",
-                    "params": [
-                        {
-                            "name": "name",
-                            "type": "preset",
-                            "value": "reset"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "selectCentralWidgetDeck",
-                    "payload": {
-                        "preset": {
-                            "duration": 25,
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "soundboard.reveal"
-                            ],
-                            "question": "Click a word to continue to the next round!",
-                            "decks": [
-                                "sun1_0",
-                                "sun2_0",
-                                "moon1_0",
-                                "moon2_0"
-                            ]
-                        },
-                        "cached": {
-                            "actors": "host",
-                            "playList.0": "players"
-                        }
-                    }
-                },
-                {
-                    "key": "emptyAction",
-                    "saveValueInCache": [
-                        {
-                            "name": "startingTeam",
-                            "value": {
-                                "selector": "nextPlayer",
-                                "params": [
-                                    {
-                                        "name": "playersList",
-                                        "type": "cached",
-                                        "value": "allDecks"
-                                    },
-                                    {
-                                        "name": "playerId",
-                                        "type": "cached",
-                                        "value": "startingTeam"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "name": "round",
-                            "value": {
-                                "selector": "inc",
-                                "params": [
-                                    {
-                                        "name": "arg",
-                                        "type": "cached",
-                                        "value": "round"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "name": "playAgain",
-                            "value": true
-                        }
-                    ]
-                },
-                {
-                    "key": "moveCards",
-                    "payload": {
-                        "preset": {
-                            "type": "deck",
-                            "to": "discard"
-                        },
-                        "cached": {
-                            "from": "centralDecks"
-                        }
-                    }
-                },
-                {
-                    "key": "removeWidget",
-                    "payload": {
-                        "preset": {
-                            "id": "GenericCardWidget"
-                        }
-                    }
-                }
-            ]
         }
     ],
     "winCondition": {
         "Sun": {
-            "selector": "logicalOR",
+            "selector": "logicalAND",
             "params": [
                 {
                     "name": "arg1",
                     "type": "computed",
                     "value": {
-                        "selector": "logicalAND",
+                        "selector": "logicalNOT",
                         "params": [
                             {
-                                "name": "arg1",
-                                "type": "computed",
-                                "value": {
-                                    "selector": "greaterThanOrEqual",
-                                    "params": [
-                                        {
-                                            "name": "arg1",
-                                            "type": "cached",
-                                            "value": "round"
-                                        },
-                                        {
-                                            "name": "arg2",
-                                            "type": "preset",
-                                            "value": 3
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "name": "arg2",
-                                "type": "computed",
-                                "value": {
-                                    "selector": "greaterThan",
-                                    "params": [
-                                        {
-                                            "name": "arg1",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "getPlayerScore",
-                                                "params": [
-                                                    {
-                                                        "name": "playerId",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "randomElement",
-                                                            "params": [
-                                                                {
-                                                                    "name": "list",
-                                                                    "type": "cached",
-                                                                    "value": "sunTeam"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "name": "arg2",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "getPlayerScore",
-                                                "params": [
-                                                    {
-                                                        "name": "playerId",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "randomElement",
-                                                            "params": [
-                                                                {
-                                                                    "name": "list",
-                                                                    "type": "cached",
-                                                                    "value": "moonTeam"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
+                                "name": "arg",
+                                "type": "cached",
+                                "value": "playAgain"
                             }
                         ]
                     }
@@ -6243,76 +5596,17 @@
                     "name": "arg2",
                     "type": "computed",
                     "value": {
-                        "selector": "logicalAND",
+                        "selector": "equals",
                         "params": [
                             {
                                 "name": "arg1",
-                                "type": "computed",
-                                "value": {
-                                    "selector": "logicalNOT",
-                                    "params": [
-                                        {
-                                            "name": "arg",
-                                            "type": "cached",
-                                            "value": "playAgain"
-                                        }
-                                    ]
-                                }
+                                "type": "cached",
+                                "value": "winnerName"
                             },
                             {
                                 "name": "arg2",
-                                "type": "computed",
-                                "value": {
-                                    "selector": "greaterThan",
-                                    "params": [
-                                        {
-                                            "name": "arg1",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "getPlayerScore",
-                                                "params": [
-                                                    {
-                                                        "name": "playerId",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "randomElement",
-                                                            "params": [
-                                                                {
-                                                                    "name": "list",
-                                                                    "type": "cached",
-                                                                    "value": "sunTeam"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "name": "arg2",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "getPlayerScore",
-                                                "params": [
-                                                    {
-                                                        "name": "playerId",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "randomElement",
-                                                            "params": [
-                                                                {
-                                                                    "name": "list",
-                                                                    "type": "cached",
-                                                                    "value": "moonTeam"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
+                                "type": "preset",
+                                "value": "Sun"
                             }
                         ]
                     }
@@ -6320,87 +5614,18 @@
             ]
         },
         "Moon": {
-            "selector": "logicalOR",
+            "selector": "logicalAND",
             "params": [
                 {
                     "name": "arg1",
                     "type": "computed",
                     "value": {
-                        "selector": "logicalAND",
+                        "selector": "logicalNOT",
                         "params": [
                             {
-                                "name": "arg1",
-                                "type": "computed",
-                                "value": {
-                                    "selector": "greaterThanOrEqual",
-                                    "params": [
-                                        {
-                                            "name": "arg1",
-                                            "type": "cached",
-                                            "value": "round"
-                                        },
-                                        {
-                                            "name": "arg2",
-                                            "type": "preset",
-                                            "value": 3
-                                        }
-                                    ]
-                                }
-                            },
-                            {
-                                "name": "arg2",
-                                "type": "computed",
-                                "value": {
-                                    "selector": "greaterThan",
-                                    "params": [
-                                        {
-                                            "name": "arg1",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "getPlayerScore",
-                                                "params": [
-                                                    {
-                                                        "name": "playerId",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "randomElement",
-                                                            "params": [
-                                                                {
-                                                                    "name": "list",
-                                                                    "type": "cached",
-                                                                    "value": "moonTeam"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "name": "arg2",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "getPlayerScore",
-                                                "params": [
-                                                    {
-                                                        "name": "playerId",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "randomElement",
-                                                            "params": [
-                                                                {
-                                                                    "name": "list",
-                                                                    "type": "cached",
-                                                                    "value": "sunTeam"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
+                                "name": "arg",
+                                "type": "cached",
+                                "value": "playAgain"
                             }
                         ]
                     }
@@ -6409,76 +5634,17 @@
                     "name": "arg2",
                     "type": "computed",
                     "value": {
-                        "selector": "logicalAND",
+                        "selector": "equals",
                         "params": [
                             {
                                 "name": "arg1",
-                                "type": "computed",
-                                "value": {
-                                    "selector": "logicalNOT",
-                                    "params": [
-                                        {
-                                            "name": "arg",
-                                            "type": "cached",
-                                            "value": "playAgain"
-                                        }
-                                    ]
-                                }
+                                "type": "cached",
+                                "value": "winnerName"
                             },
                             {
                                 "name": "arg2",
-                                "type": "computed",
-                                "value": {
-                                    "selector": "greaterThan",
-                                    "params": [
-                                        {
-                                            "name": "arg1",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "getPlayerScore",
-                                                "params": [
-                                                    {
-                                                        "name": "playerId",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "randomElement",
-                                                            "params": [
-                                                                {
-                                                                    "name": "list",
-                                                                    "type": "cached",
-                                                                    "value": "moonTeam"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "name": "arg2",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "getPlayerScore",
-                                                "params": [
-                                                    {
-                                                        "name": "playerId",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "randomElement",
-                                                            "params": [
-                                                                {
-                                                                    "name": "list",
-                                                                    "type": "cached",
-                                                                    "value": "sunTeam"
-                                                                }
-                                                            ]
-                                                        }
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
+                                "type": "preset",
+                                "value": "Moon"
                             }
                         ]
                     }
@@ -6510,49 +5676,13 @@
                         "params": [
                             {
                                 "name": "arg1",
-                                "type": "computed",
-                                "value": {
-                                    "selector": "getPlayerScore",
-                                    "params": [
-                                        {
-                                            "name": "playerId",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "randomElement",
-                                                "params": [
-                                                    {
-                                                        "name": "list",
-                                                        "type": "cached",
-                                                        "value": "moonTeam"
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
+                                "type": "cached",
+                                "value": "winnerName"
                             },
                             {
                                 "name": "arg2",
-                                "type": "computed",
-                                "value": {
-                                    "selector": "getPlayerScore",
-                                    "params": [
-                                        {
-                                            "name": "playerId",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "randomElement",
-                                                "params": [
-                                                    {
-                                                        "name": "list",
-                                                        "type": "cached",
-                                                        "value": "sunTeam"
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
+                                "type": "preset",
+                                "value": "Tie"
                             }
                         ]
                     }
@@ -6561,6 +5691,14 @@
         }
     },
     "postGameActions": [
+        {
+            "key": "restoreWidget",
+            "payload": {
+                "preset": {
+                    "id": "GenericCardWidget"
+                }
+            }
+        },
         {
             "key": "createNotification",
             "payload": {

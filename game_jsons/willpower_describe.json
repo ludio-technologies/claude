@@ -1,0 +1,61 @@
+{
+    "name": "Willpower",
+    "demo": false,
+    "parallel": false,
+    "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+    "banner": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/banner.jpg",
+    "description": {
+        "summary": "A trick-taking game with a sweet, cruel twist: when you finally cave to temptation, you score points for every time the others caved before you. Wait too long and you get nothing.",
+        "description_title": "Willpower Overview",
+        "# Players": "3-6",
+        "players": "3-6",
+        "Duration": "20 mins/round"
+    },
+    "rules": [
+        {
+            "name": "Basic Rules",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "The deck",
+                    "text": "60 cards across 5 vices: Sweets, Scroll, Splurge, Lounge, and Sips. Each vice has 12 ranks (1-12) — the higher the rank, the more irresistible the temptation. Each round you get 12 cards (10 cards if 6 players are playing)."
+                },
+                {
+                    "title": "The trick (per turn)",
+                    "text": "The dealer leads the first trick of the round. Going clockwise, each player plays a card.<br><br>You MUST follow the lead suit if you have it. If you don't, you can play anything.<br><br>Whoever played the highest card in the lead suit wins the trick — UNLESS someone played a card of the trump suit, in which case the highest trump wins. The trick winner then leads the next trick."
+                },
+                {
+                    "title": "Trump (Round 2+)",
+                    "text": "Round 1 has no trump. From Round 2 onwards, the dealer looks at their hand and picks today's craving — one of the 5 vices becomes trump for that round. Trump beats any non-trump card. The dealer rotates each round."
+                },
+                {
+                    "title": "Breaking willpower (the twist)",
+                    "text": "There's a trick threshold: 4 tricks in a 3-player game, 3 tricks in a 4-5 player game, 2 tricks in a 6-player game (only 10 cards/hand, so the bar drops).<br><br>The moment you win that many tricks, your willpower BREAKS. You leave the round immediately and score schadenfreude points equal to the total tricks every OTHER player has won so far. The earlier you break, the fewer points you score.<br><br>Wait too long? The last person standing earns NOTHING — the punishment for too much restraint."
+                },
+                {
+                    "title": "End of round",
+                    "text": "The round ends when only one player is left in the round, or when the dealt hand has been fully played through (12 tricks, or 10 in a 6-player game) — whichever comes first. The host then votes to keep scores, reset scores, or end the game."
+                }
+            ]
+        },
+        {
+            "name": "Win Conditions",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Schadenfreude scoring",
+                    "text": "Points only come from breaking your willpower — when you hit your trick threshold, you score the total tricks every OTHER player has won so far. Players still in the round when it ends (or anyone left at the end of the dealt hand) score nothing for that round."
+                },
+                {
+                    "title": "Trick threshold by player count",
+                    "text": "3 players: 4 tricks to break.<br>4-5 players: 3 tricks to break.<br>6 players: 2 tricks to break.<br><br>The earlier in the round you break, the FEWER tricks the others have racked up — so the FEWER points you score. The later you break, the bigger the payoff. But if you outlast everyone, the round ends and you score zero."
+                },
+                {
+                    "title": "Game winner",
+                    "text": "The game continues until the host votes to end it (\"I'M SO DONE\" in the end-of-round vote). At that point, whoever has the highest total schadenfreude across all rounds wins. Ties share the win."
+                }
+            ]
+        }
+    ],
+    "tags": ["card game", "strategic", "filler"]
+}
