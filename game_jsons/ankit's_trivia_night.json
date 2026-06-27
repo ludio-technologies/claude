@@ -1063,11 +1063,11 @@
                 {
                     "name": "categoryMapping",
                     "value": {
-                        "Aerial shots": "round1Questions",
+                        "World Cup wonders": "round1Questions",
                         "Which came first?": "round2Questions",
-                        "Tip of the iceberg": "round3Questions",
+                        "Real or fake?": "round3Questions",
                         "Here comes the sun": "round4Questions",
-                        "Masterpiece details": "round5Questions"
+                        "Here's looking at you": "round5Questions"
                     }
                 },
                 {
@@ -1141,54 +1141,54 @@
                     "name": "round1Questions",
                     "value": [
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "Eiffel Tower (Paris)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/q1.jpg"
+                            "q": "Name this tournament's official emblem.",
+                            "answer": "2026 World Cup logo",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_1.jpg"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "Pyramids of Giza (Egypt)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/q2.jpg"
+                            "q": "Name the USA's official mascot for the 2026 World Cup.",
+                            "answer": "Clutch (bald eagle)",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_2.jpg"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "Sydney Opera House (Australia)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/q3.jpg"
+                            "q": "Name the official Adidas match ball of the 2026 World Cup.",
+                            "answer": "Trionda",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_3.jpg"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "The Colosseum (Rome)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/q4.jpg"
+                            "q": "Name this New Jersey stadium hosting the 2026 World Cup final.",
+                            "answer": "MetLife Stadium",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_4.jpg"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "Taj Mahal (Agra, India)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/q5.jpg"
+                            "q": "What national team are these players from?",
+                            "answer": "Croatia",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_5.jpg"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "The Pentagon (Washington, D.C.)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/q6.jpg"
+                            "q": "Name this player — captain of the defending champions.",
+                            "answer": "Lionel Messi",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_6.jpg"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "St. Peter's Square (Vatican City)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/q7.jpg"
+                            "q": "Name this USA captain and star.",
+                            "answer": "Christian Pulisic",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_7.jpg"
                         },
                         {
-                            "q": "What famous landmark sits at the center of this 12-avenue star?",
-                            "answer": "Arc de Triomphe (Paris)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/q8.jpg"
+                            "q": "Name this French superstar.",
+                            "answer": "Kylian Mbappé",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_8.jpg"
                         },
                         {
-                            "q": "What famous landmark is this an aerial view of?",
-                            "answer": "The Forbidden City (Beijing)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/q9.jpg"
+                            "q": "Name this World Cup nation from its flag. Fun fact: in 2026 it became the smallest country by population ever to qualify for a FIFA World Cup.",
+                            "answer": "Curaçao",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_9.jpg"
                         },
                         {
-                            "q": "What ancient monument is this a (1928) aerial view of?",
-                            "answer": "Stonehenge (England)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/aerial/q10.jpg"
+                            "q": "Name this hit soccer anime about 300 strikers competing to play for Japan.",
+                            "answer": "Blue Lock",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_10.jpg"
                         }
                     ]
                 },
@@ -1241,44 +1241,44 @@
                     "name": "round3Questions",
                     "value": [
                         {
-                            "q": "Invented in 1886 by an Atlanta pharmacist as a 'brain tonic,' its exact recipe is one of the most closely guarded trade secrets in the world.",
-                            "answer": "Coca-Cola"
+                            "q": "The pistol shrimp can snap its claw fast enough to briefly create a bubble hotter than the surface of the sun.",
+                            "answer": "REAL"
                         },
                         {
-                            "q": "Charles Dickens wrote it in just six weeks in 1843 to clear his debts, self-publishing it with gilt edges and hand-colored illustrations; despite selling out almost instantly, the lavish printing left him with little profit.",
-                            "answer": "A Christmas Carol"
+                            "q": "In Switzerland, it is illegal to own just one guinea pig, because they get lonely.",
+                            "answer": "REAL"
                         },
                         {
-                            "q": "Founded in a California garage in 1976, its very first product was a hand-built circuit board priced at $666.66.",
-                            "answer": "Apple"
+                            "q": "The 'Pacific Northwest Tree Octopus' is a real endangered species living in the forests of Washington state.",
+                            "answer": "FAKE (web hoax)"
                         },
                         {
-                            "q": "An 1886 gift from France, its formal name is 'Liberty Enlightening the World,' and for years it doubled as a working lighthouse.",
-                            "answer": "The Statue of Liberty"
+                            "q": "Wombats produce cube-shaped poop.",
+                            "answer": "REAL"
                         },
                         {
-                            "q": "The priciest film ever made at the time, its director personally dove about 3,800 m to the real wreck to shoot footage for it.",
-                            "answer": "Titanic (1997)"
+                            "q": "There is a tiny European country called 'Listenbourg' located between Spain and Portugal.",
+                            "answer": "FAKE (2022 meme)"
                         },
                         {
-                            "q": "Originally purple and white, the now-familiar orange variety was reportedly cultivated by 17th-century Dutch growers.",
-                            "answer": "Carrots"
+                            "q": "Honey discovered sealed inside 3,000-year-old Egyptian tombs was still safe to eat.",
+                            "answer": "REAL"
                         },
                         {
-                            "q": "Patented in the 1930s, it was adapted from an earlier game, 'The Landlord's Game,' created to demonstrate the unfairness of concentrated land ownership.",
-                            "answer": "Monopoly"
+                            "q": "In the UK, it is illegal to handle a salmon 'in suspicious circumstances.'",
+                            "answer": "REAL (Salmon Act 1986)"
                         },
                         {
-                            "q": "An 18-year-old wrote it after a ghost-story contest during a stormy 1816 summer at Lake Geneva.",
-                            "answer": "Frankenstein"
+                            "q": "In Queensland, Australia, it is illegal to eat a banana within 50 metres of a public swimming pool.",
+                            "answer": "FAKE"
                         },
                         {
-                            "q": "Its working title was 'First Impressions,' and it opens on a single man in possession of a good fortune being in want of a wife.",
-                            "answer": "Pride and Prejudice"
+                            "q": "The Norwegian town of Rjukan uses giant mountainside mirrors to reflect sunlight into its town square.",
+                            "answer": "REAL"
                         },
                         {
-                            "q": "Atomic number 79, its symbol comes from the Latin 'aurum'; all of it ever mined would fit in about four Olympic swimming pools.",
-                            "answer": "Gold"
+                            "q": "Bananas are radioactive enough that a full truckload can set off radiation sensors at border crossings.",
+                            "answer": "REAL"
                         }
                     ]
                 },
@@ -1331,54 +1331,54 @@
                     "name": "round5Questions",
                     "value": [
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "The Starry Night (Van Gogh)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/q1.jpg"
+                            "q": "Whose eyes are these? Name the cartoon character.",
+                            "answer": "SpongeBob SquarePants",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_1.jpg"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "Mona Lisa (da Vinci)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/q2.jpg"
+                            "q": "Whose eyes are these? Name the cartoon character.",
+                            "answer": "Mickey Mouse",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_2.jpg"
                         },
                         {
-                            "q": "Which famous artwork is this a detail of?",
-                            "answer": "The Creation of Adam (Michelangelo)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/q3.jpg"
+                            "q": "Whose eyes are these? Name the cartoon character.",
+                            "answer": "Pikachu",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_3.jpg"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "The Scream (Munch)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/q4.jpg"
+                            "q": "Whose eyes are these? Name the cartoon character.",
+                            "answer": "Bart Simpson",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_4.jpg"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "Girl with a Pearl Earring (Vermeer)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/q5.jpg"
+                            "q": "Whose eyes are these? Name the cartoon character.",
+                            "answer": "Shrek",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_5.jpg"
                         },
                         {
-                            "q": "Which famous artwork is this a detail of?",
-                            "answer": "The Great Wave off Kanagawa (Hokusai)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/q6.jpg"
+                            "q": "Whose eyes are these? Name the cartoon character.",
+                            "answer": "Mike Wazowski",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_6.jpg"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "The Birth of Venus (Botticelli)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/q7.jpg"
+                            "q": "Whose eyes are these? Name the cartoon character.",
+                            "answer": "Minion",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_7.jpg"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "The Last Supper (da Vinci)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/q8.jpg"
+                            "q": "Whose eyes are these? Name the cartoon character.",
+                            "answer": "Bugs Bunny",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_8.jpg"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "The Kiss (Klimt)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/q9.jpg"
+                            "q": "Whose eyes are these? Name the cartoon character.",
+                            "answer": "Sonic the Hedgehog",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_9.jpg"
                         },
                         {
-                            "q": "Which famous painting is this a detail of?",
-                            "answer": "Water Lilies (Monet)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/paintings/q10.jpg"
+                            "q": "Whose eyes are these? Name the cartoon character.",
+                            "answer": "Scooby-Doo",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_10.jpg"
                         }
                     ]
                 },
