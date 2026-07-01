@@ -1064,10 +1064,10 @@
                     "name": "categoryMapping",
                     "value": {
                         "World Cup wonders": "round1Questions",
-                        "Which came first?": "round2Questions",
-                        "Real or fake?": "round3Questions",
+                        "Emoji titles": "round2Questions",
+                        "Fictional Locations": "round3Questions",
                         "Here comes the sun": "round4Questions",
-                        "Here's looking at you": "round5Questions"
+                        "Who's on the money": "round5Questions"
                     }
                 },
                 {
@@ -1196,44 +1196,44 @@
                     "name": "round2Questions",
                     "value": [
                         {
-                            "q": "Sharks or trees?",
-                            "answer": "Sharks (450mya vs. 385mya)"
+                            "q": "🦁👑",
+                            "answer": "The Lion King"
                         },
                         {
-                            "q": "Stegosaurus or Tyrannosaurus rex?",
-                            "answer": "Stegosaurus (150mya vs. 68mya)"
+                            "q": "❄️👸",
+                            "answer": "Frozen"
                         },
                         {
-                            "q": "The Great Pyramid of Giza or the last woolly mammoths dying out?",
-                            "answer": "The Great Pyramid (2560BCE vs. 1650BCE)"
+                            "q": "🐠🔍",
+                            "answer": "Finding Nemo"
                         },
                         {
-                            "q": "The University of Oxford or the Aztec capital Tenochtitlan?",
-                            "answer": "Oxford (1096 vs. 1325)"
+                            "q": "🕷️🧑",
+                            "answer": "Spider-Man"
                         },
                         {
-                            "q": "The fax machine or the American Civil War?",
-                            "answer": "Fax machine (1843 vs. 1861)"
+                            "q": "🚢🧊💔",
+                            "answer": "Titanic"
                         },
                         {
-                            "q": "Nintendo or the Jack the Ripper murders?",
-                            "answer": "Jack the Ripper (1888 vs. 1889)"
+                            "q": "🐀👨‍🍳",
+                            "answer": "Ratatouille"
                         },
                         {
-                            "q": "Harvard University or calculus?",
-                            "answer": "Harvard (1636 vs. 1660s)"
+                            "q": "🧙💍🌋",
+                            "answer": "The Lord of the Rings"
                         },
                         {
-                            "q": "The Eiffel Tower or the first Ferris wheel?",
-                            "answer": "Eiffel Tower (1889 vs. 1893)"
+                            "q": "🦖🏞️",
+                            "answer": "Jurassic Park"
                         },
                         {
-                            "q": "The fall of the Roman Empire or the completion of Stonehenge?",
-                            "answer": "Stonehenge (2500BCE vs. 476BCE)"
+                            "q": "👠🎃🐭",
+                            "answer": "Cinderella"
                         },
                         {
-                            "q": "The first email or the Rubik's Cube?",
-                            "answer": "First email (1971 vs. 1974)"
+                            "q": "🤡🎈🚸",
+                            "answer": "It"
                         }
                     ]
                 },
@@ -1241,44 +1241,44 @@
                     "name": "round3Questions",
                     "value": [
                         {
-                            "q": "The pistol shrimp can snap its claw fast enough to briefly create a bubble hotter than the surface of the sun.",
-                            "answer": "REAL"
+                            "q": "A hidden Himalayan valley of eternal youth and peace, from the 1933 novel Lost Horizon.",
+                            "answer": "Shangri-La"
                         },
                         {
-                            "q": "In Switzerland, it is illegal to own just one guinea pig, because they get lonely.",
-                            "answer": "REAL"
+                            "q": "An art-deco city built on the ocean floor by Andrew Ryan — the setting of a 2007 video game.",
+                            "answer": "Rapture (BioShock)"
                         },
                         {
-                            "q": "The 'Pacific Northwest Tree Octopus' is a real endangered species living in the forests of Washington state.",
-                            "answer": "FAKE (web hoax)"
+                            "q": "Zion, the last underground human city, appears in which sci-fi film trilogy?",
+                            "answer": "The Matrix"
                         },
                         {
-                            "q": "Wombats produce cube-shaped poop.",
-                            "answer": "REAL"
+                            "q": "A hidden island of immortal Amazon warriors, home to Wonder Woman.",
+                            "answer": "Themyscira"
                         },
                         {
-                            "q": "There is a tiny European country called 'Listenbourg' located between Spain and Portugal.",
-                            "answer": "FAKE (2022 meme)"
+                            "q": "A dystopian nation of 13 districts ruled from the Capitol, home to a deadly televised game.",
+                            "answer": "Panem (The Hunger Games)"
                         },
                         {
-                            "q": "Honey discovered sealed inside 3,000-year-old Egyptian tombs was still safe to eat.",
-                            "answer": "REAL"
+                            "q": "A lush alien moon inhabited by the blue-skinned Na'vi.",
+                            "answer": "Pandora (Avatar)"
                         },
                         {
-                            "q": "In the UK, it is illegal to handle a salmon 'in suspicious circumstances.'",
-                            "answer": "REAL (Salmon Act 1986)"
+                            "q": "The snowbound Colorado hotel where Jack Torrance loses his mind.",
+                            "answer": "The Overlook Hotel (The Shining)"
                         },
                         {
-                            "q": "In Queensland, Australia, it is illegal to eat a banana within 50 metres of a public swimming pool.",
-                            "answer": "FAKE"
+                            "q": "A flat world resting on four elephants atop a giant turtle, from Terry Pratchett's novels.",
+                            "answer": "Discworld"
                         },
                         {
-                            "q": "The Norwegian town of Rjukan uses giant mountainside mirrors to reflect sunlight into its town square.",
-                            "answer": "REAL"
+                            "q": "The parallel dimension called 'the Upside Down' appears in which Netflix series?",
+                            "answer": "Stranger Things"
                         },
                         {
-                            "q": "Bananas are radioactive enough that a full truckload can set off radiation sensors at border crossings.",
-                            "answer": "REAL"
+                            "q": "The small European principality that Mia Thermopolis inherits appears in which movie?",
+                            "answer": "The Princess Diaries"
                         }
                     ]
                 },
@@ -1286,7 +1286,7 @@
                     "name": "round4Questions",
                     "value": [
                         {
-                            "q": "About how long does sunlight take to reach Earth? +1 minute",
+                            "q": "About how long does sunlight take to reach Earth? +-1 minute",
                             "answer": "8 minutes"
                         },
                         {
@@ -1314,7 +1314,7 @@
                             "answer": "Reignite the dying sun (stellar bomb)"
                         },
                         {
-                            "q": "What color is the Sun actually, seen from space?",
+                            "q": "What color is the Sun actually, as seen from space?",
                             "answer": "White"
                         },
                         {
@@ -1331,54 +1331,54 @@
                     "name": "round5Questions",
                     "value": [
                         {
-                            "q": "Whose eyes are these? Name the cartoon character.",
-                            "answer": "SpongeBob SquarePants",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_1.jpg"
+                            "q": "Who is this, featured on a banknote?",
+                            "answer": "Queen Elizabeth II",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_1.jpg"
                         },
                         {
-                            "q": "Whose eyes are these? Name the cartoon character.",
-                            "answer": "Mickey Mouse",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_2.jpg"
+                            "q": "Who is this, featured on a banknote?",
+                            "answer": "Abraham Lincoln",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_2.jpg"
                         },
                         {
-                            "q": "Whose eyes are these? Name the cartoon character.",
-                            "answer": "Pikachu",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_3.jpg"
+                            "q": "Who is this, featured on a banknote?",
+                            "answer": "Mahatma Gandhi",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_3.jpg"
                         },
                         {
-                            "q": "Whose eyes are these? Name the cartoon character.",
-                            "answer": "Bart Simpson",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_4.jpg"
+                            "q": "Who is this, featured on a banknote?",
+                            "answer": "Benjamin Franklin",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_4.jpg"
                         },
                         {
-                            "q": "Whose eyes are these? Name the cartoon character.",
-                            "answer": "Shrek",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_5.jpg"
+                            "q": "Who is this, featured on a banknote?",
+                            "answer": "Nelson Mandela",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_5.jpg"
                         },
                         {
-                            "q": "Whose eyes are these? Name the cartoon character.",
-                            "answer": "Mike Wazowski",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_6.jpg"
+                            "q": "Who is this, featured on a banknote?",
+                            "answer": "George Washington",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_6.jpg"
                         },
                         {
-                            "q": "Whose eyes are these? Name the cartoon character.",
-                            "answer": "Minion",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_7.jpg"
+                            "q": "Who is this, featured on a banknote?",
+                            "answer": "Mao Zedong",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_7.jpg"
                         },
                         {
-                            "q": "Whose eyes are these? Name the cartoon character.",
-                            "answer": "Bugs Bunny",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_8.jpg"
+                            "q": "Who is this, featured on a banknote?",
+                            "answer": "Ulysses S. Grant",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_8.jpg"
                         },
                         {
-                            "q": "Whose eyes are these? Name the cartoon character.",
-                            "answer": "Sonic the Hedgehog",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_9.jpg"
+                            "q": "Who is this, featured on a banknote?",
+                            "answer": "Frida Kahlo",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_9.jpg"
                         },
                         {
-                            "q": "Whose eyes are these? Name the cartoon character.",
-                            "answer": "Scooby-Doo",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/eyes_10.jpg"
+                            "q": "Who is this, featured on a banknote?",
+                            "answer": "Alexander Hamilton",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_10.jpg"
                         }
                     ]
                 },
