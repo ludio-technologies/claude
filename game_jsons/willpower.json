@@ -128,6 +128,12 @@
       },
       "tut_lounge_li": {
         "url": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/tut_lounge.png"
+      },
+      "wallpaper_li": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/wallpaper_li.png"
+      },
+      "banner_li": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/banner_li.png"
       }
     },
     "animations": {
@@ -172,7 +178,6 @@
         "schadenfreudePoints": "+($1) schadenfreude points",
         "roundOver": "Round ($1) over!",
         "theStrongestWillpowerEarned": "($1) ($2) the strongest willpower — earned 0.",
-        "playAgain": "PLAY AGAIN?",
         "wouldYouLikeTo": "Would you like to play another round?",
         "theSchadenfreudeCrown": "($1) ($2) the schadenfreude crown! 👑",
         "cardSet": "all",
@@ -230,7 +235,10 @@
         "tutSweetsImg": "tut_sweets",
         "tutScrollImg": "tut_scroll",
         "tutSipsImg": "tut_sips",
-        "tutLoungeImg": "tut_lounge"
+        "tutLoungeImg": "tut_lounge",
+        "playAgainTitle": "PLAY AGAIN?",
+        "wallpaperImg": "wallpaper",
+        "bannerImg": "banner"
       },
       "Love Island": {
         "welcomeToWillpower": "Welcome to Willpower: Love Island!",
@@ -244,22 +252,21 @@
         "theTrick35": "The trick (3/5)",
         "goingClockwiseEachPlayer": "Going clockwise, each player plays one card. You MUST follow the lead suit if you have one. The <b>highest</b> card in the lead suit wins the trick — unless someone plays trump.",
         "trump45": "Trump (4/5)",
-        "fromRound2On": "From round 2 on, the dealer picks one vice as today's craving — the <b>trump suit</b>. Trump beats any non-trump card. The dealer rotates each round.",
+        "fromRound2On": "From round 2 on, the dealer picks one vice as today's temptation — the <b>trump suit</b>. Trump beats any non-trump card. The dealer rotates each round.",
         "goingOut55": "Going out (5/5)",
         "hitYourTrickThreshold": "Hit your trick threshold and your willpower BREAKS — you leave the round and score points equal to <b>every other player's</b> tricks so far. Thresholds: 4 (3p), 3 (4-5p), 2 (6p). Break early → fewer points. Outlast everyone → ZERO points.",
         "round": "Round ($1)!",
-        "todaySCraving": "Today's craving?",
-        "pickTodaySCraving": "($1), pick today's craving — your trump suit.",
-        "todaySCraving2": "Today's craving: ($1)",
+        "todaySCraving": "Today's temptation?",
+        "pickTodaySCraving": "($1), pick today's temptation — your trump suit.",
+        "todaySCraving2": "Today's temptation: ($1)",
         "pickedTheTrumpFor": "($1) picked the trump for this round.",
         "playACard": "($1), play a card!",
         "caved": "($1) caved!",
         "tricks": "Tricks: ($1) / ($2)",
-        "brokeWillpower": "($1) BROKE willpower!",
+        "brokeWillpower": "($1) succumbed to temptation!",
         "schadenfreudePoints": "+($1) schadenfreude points",
         "roundOver": "Round ($1) over!",
-        "theStrongestWillpowerEarned": "($1) ($2) the strongest willpower — earned 0.",
-        "playAgain": "PLAY AGAIN?",
+        "theStrongestWillpowerEarned": "($1) never succumbed to temptation - and earned 0 points.",
         "wouldYouLikeTo": "Would you like to play another round?",
         "theSchadenfreudeCrown": "($1) ($2) the schadenfreude crown! 👑",
         "cardSet": "Love Island",
@@ -317,7 +324,10 @@
         "tutSweetsImg": "tut_sweets_li",
         "tutScrollImg": "tut_scroll_li",
         "tutSipsImg": "tut_sips_li",
-        "tutLoungeImg": "tut_lounge_li"
+        "tutLoungeImg": "tut_lounge_li",
+        "playAgainTitle": "PLAY AGAIN?",
+        "wallpaperImg": "wallpaper_li",
+        "bannerImg": "banner_li"
       }
     }
   },
@@ -333,8 +343,8 @@
     {
       "key": "changeBackground",
       "payload": {
-        "preset": {
-          "image": "wallpaper"
+        "cached": {
+          "image": "wallpaperImg"
         }
       }
     },
@@ -643,12 +653,12 @@
       "key": "createNotification",
       "payload": {
         "preset": {
-          "image": "banner",
           "duration": 8
         },
         "cached": {
           "to": "players",
-          "header": "welcomeToWillpower"
+          "header": "welcomeToWillpower",
+          "image": "bannerImg"
         },
         "computed": {
           "text": {
@@ -1028,13 +1038,13 @@
           "key": "createNotification",
           "payload": {
             "preset": {
-              "duration": 12,
-              "image": "banner"
+              "duration": 12
             },
             "cached": {
               "to": "learners",
               "header": "willpower15",
-              "text": "trickTakingWithA"
+              "text": "trickTakingWithA",
+              "image": "bannerImg"
             }
           }
         },
@@ -1112,11 +1122,11 @@
           "key": "createNotification",
           "payload": {
             "preset": {
-              "duration": 4,
-              "image": "banner"
+              "duration": 4
             },
             "cached": {
-              "to": "players"
+              "to": "players",
+              "image": "bannerImg"
             },
             "computed": {
               "header": {
@@ -3900,7 +3910,7 @@
             },
             "cached": {
               "actors": "host",
-              "title": "playAgain",
+              "title": "playAgainTitle",
               "question": "wouldYouLikeTo"
             }
           },
