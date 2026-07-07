@@ -1,203 +1,277 @@
 {
   "gameInitOptions": {
     "allowRecorder": true,
-    "allowSpectatorBecomePlayer": true,
     "roleConfirmation": false,
-    "useDefaultRoles": true,
+    "allowSpectatorBecomePlayer": true,
+    "allowPlayerBecomeSpectator": true,
     "minPlayers": 4,
-    "maxPlayers": 24,
+    "maxPlayers": 8,
     "preferredPlayersQnt": [
-      10,
-      12
+      4,
+      5,
+      6
     ],
-    "time": 20,
-    "configVariables": [
-      {
-        "name": "firstSetClueDuration",
-        "label": "Time for First Clue (seconds)",
-        "type": "number",
-        "default": 300
-      },
-      {
-        "name": "nextSetClueDuration",
-        "label": "Time for All Other Clues (seconds)",
-        "type": "number",
-        "default": 120
-      },
-      {
-        "name": "guessDuration",
-        "label": "Time per guess (seconds)",
-        "type": "number",
-        "default": 120
-      }
+    "lockedRoles": [
+      "master",
+      "insider"
     ],
-    "notChangeLayoutAfterGame": true,
+    "minExtraRoles": 0,
+    "maxExtraRoles": 0,
+    "timePerRound": 6,
     "teams": {
-      "red": {
-        "id": "red",
-        "name": "Red Team",
-        "description": "The Red team",
-        "color": "#D83232",
+      "commons": {
+        "id": "commons",
+        "name": "Commons",
+        "description": "Guess the Master's secret word correctly using yes/no questions, and identify the Con Artist!",
+        "color": "#297a4d",
         "roles": [
-          "red_player",
-          "red_codemaster",
-          "red"
+          "member"
         ]
       },
-      "redPlayer": {
-        "id": "redPlayer",
-        "name": "Red Team",
-        "description": "The Red team",
-        "color": "#D83232",
+      "insider": {
+        "id": "insider",
+        "name": "Con Artist",
+        "description": "Help the members of the Commons guess the Master's secret word without giving yourself away!",
+        "color": "#939799",
         "roles": [
-          "red"
+          "insider"
         ]
       },
-      "blue": {
-        "id": "blue",
-        "name": "Blue Team",
-        "description": "The Blue team",
-        "color": "#4EC1D0",
+      "master": {
+        "id": "master",
+        "name": "Master",
+        "description": "Answer yes/no questions to help the group guess your secret word, and identify the Con Artist!",
+        "color": "blue",
         "roles": [
-          "blue_player",
-          "blue_codemaster",
-          "blue"
+          "master"
         ]
       },
-      "bluePlayer": {
-        "id": "bluePlayer",
-        "name": "Blue Team",
-        "description": "The Blue team",
-        "color": "#4EC1D0",
-        "roles": [
-          "blue_player",
-          "blue_codemaster",
-          "blue"
-        ]
-      },
-      "all": {
-        "id": "all",
-        "name": "All",
-        "description": "All teams",
-        "color": "",
-        "roles": [
-          "player"
-        ]
+      "nobody": {
+        "id": "nobody",
+        "name": "Nobody",
+        "description": "Nobody wins!",
+        "color": "#939799",
+        "roles": []
       }
     },
     "roles": [
       {
         "roleInfo": {
-          "id": "player",
-          "name": "Player",
-          "description": "Word association blows your mind 😎",
-          "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
-          "team": "all",
-          "prefix": "a "
-        },
-        "isRequired": false,
-        "isDefaultRole": true
-      },
-      {
-        "roleInfo": {
-          "id": "red_player",
-          "name": "Clicker",
-          "description": "You're on team Red!",
-          "avatar": "https://res.cloudinary.com/liars-club/image/upload/red_owl_ansgnc.png",
-          "team": "red",
+          "id": "member",
+          "name": "Member",
+          "description": "You are a member of the Commons. Guess the Master's secret word correctly using yes/no questions, and identify the Con Artist!",
+          "avatar": "https://res.cloudinary.com/liars-club/image/upload/commons_i6osix.webp",
+          "team": "commons",
           "prefix": "a "
         },
         "isRequired": false
       },
       {
         "roleInfo": {
-          "id": "red",
-          "name": "Player",
-          "description": "You're on team Red!",
-          "avatar": "https://res.cloudinary.com/liars-club/image/upload/red_owl_ansgnc.png",
-          "team": "redPlayer",
-          "prefix": "a "
+          "id": "master",
+          "name": "Master",
+          "description": "You are told a secret word at the start of the round. All other players try to guess your secret word by asking yes/no questions. If the word is guessed correctly, identify the Con Artist!",
+          "avatar": "https://res.cloudinary.com/liars-club/image/upload/master_tabwxu.webp",
+          "team": "master",
+          "prefix": "the "
         },
-        "isRequired": false
+        "isRequired": true
       },
       {
         "roleInfo": {
-          "id": "blue_player",
-          "name": "Clicker",
-          "description": "You're on team Blue!",
-          "avatar": "https://res.cloudinary.com/liars-club/image/upload/blue_bat_pshd0l.png",
-          "team": "blue",
-          "prefix": "a "
+          "id": "insider",
+          "name": "Con Artist",
+          "description": "Help the members of the Commons guess the Master's secret word without giving yourself away!",
+          "avatar": "https://res.cloudinary.com/liars-club/image/upload/insider_mdtvh2.jpg",
+          "team": "insider",
+          "prefix": "the "
         },
-        "isRequired": false
-      },
-      {
-        "roleInfo": {
-          "id": "blue",
-          "name": "Player",
-          "description": "You're on team Blue!",
-          "avatar": "https://res.cloudinary.com/liars-club/image/upload/blue_bat_pshd0l.png",
-          "team": "bluePlayer",
-          "prefix": "a "
-        },
-        "isRequired": false
-      },
-      {
-        "roleInfo": {
-          "id": "red_codemaster",
-          "name": "Guide",
-          "description": "",
-          "avatar": "",
-          "team": "red",
-          "prefix": "a "
-        },
-        "isRequired": false
-      },
-      {
-        "roleInfo": {
-          "id": "blue_codemaster",
-          "name": "Guide",
-          "description": "",
-          "avatar": "",
-          "team": "blue",
-          "prefix": "a "
-        },
-        "isRequired": false
+        "isRequired": true
       }
     ],
-    "rolesPreset": {},
-    "cheatsheet": {
-      "label": "Cheatsheet",
-      "image": "https://res.cloudinary.com/liars-club/image/upload/images/pitfall/pitfall_cheatsheet.png"
+    "rolesPreset": {
+      "four": {
+        "qnt": 4,
+        "presets": [
+          {
+            "master": 1
+          },
+          {
+            "insider": 1
+          },
+          {
+            "member": 2
+          }
+        ]
+      },
+      "five": {
+        "qnt": 5,
+        "presets": [
+          {
+            "master": 1
+          },
+          {
+            "insider": 1
+          },
+          {
+            "member": 3
+          }
+        ]
+      },
+      "six": {
+        "qnt": 6,
+        "presets": [
+          {
+            "master": 1
+          },
+          {
+            "insider": 1
+          },
+          {
+            "member": 4
+          }
+        ]
+      },
+      "seven": {
+        "qnt": 7,
+        "presets": [
+          {
+            "master": 1
+          },
+          {
+            "insider": 1
+          },
+          {
+            "member": 5
+          }
+        ]
+      },
+      "eight": {
+        "qnt": 8,
+        "presets": [
+          {
+            "master": 1
+          },
+          {
+            "insider": 1
+          },
+          {
+            "member": 6
+          }
+        ]
+      },
+      "nine": {
+        "qnt": 9,
+        "presets": [
+          {
+            "master": 1
+          },
+          {
+            "insider": 1
+          },
+          {
+            "member": 7
+          }
+        ]
+      }
+    },
+    "soundboard": {
+      "default": {
+        "reminder": "https://res.cloudinary.com/liars-club/video/upload/audio/reminder.mp4",
+        "success": "https://res.cloudinary.com/liars-club/video/upload/audio/avalon/sounds/success.mp3",
+        "failure": "https://res.cloudinary.com/liars-club/video/upload/audio/avalon/sounds/failure.mp3",
+        "insider": "https://res.cloudinary.com/liars-club/video/upload/audio/avalon/sounds/evil_reveal.mp3"
+      }
+    },
+    "voices": {
+      "default": {
+        "l1": "https://res.cloudinary.com/liars-club/video/upload/audio/lexicon/l1.mp3",
+        "l2": "https://res.cloudinary.com/liars-club/video/upload/audio/lexicon/l2.mp3",
+        "l3": "https://res.cloudinary.com/liars-club/video/upload/audio/lexicon/l3.mp3",
+        "l4": "https://res.cloudinary.com/liars-club/video/upload/audio/lexicon/l4.mp3",
+        "l5": "https://res.cloudinary.com/liars-club/video/upload/audio/lexicon/l5.mp3",
+        "l6": "https://res.cloudinary.com/liars-club/video/upload/audio/lexicon/l6.mp3",
+        "l7": "https://res.cloudinary.com/liars-club/video/upload/audio/lexicon/l7.mp3",
+        "l8": "https://res.cloudinary.com/liars-club/video/upload/audio/lexicon/l8.mp3",
+        "l9": "https://res.cloudinary.com/liars-club/video/upload/audio/lexicon/l9.mp3"
+      }
+    },
+    "animations": {
+      "winner": "https://lottie.host/3cba778c-312b-410c-8240-c9fdc0c4f5ef/Iu7CfEX2Va.json",
+      "loser": "https://assets5.lottiefiles.com/packages/lf20_oAByvh2C1K.json",
+      "master": "https://lottie.host/54d054d7-8525-4ce1-b027-64b4da0e2acb/4hiFo6FLNm.json",
+      "members": "https://lottie.host/9aca1a71-c07b-4210-8a40-4603bec1cb51/QxsaI6xJEN.json"
+    },
+    "images": {
+      "banner": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/lexicon_banner_bobe40.png"
+      },
+      "insider": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/insider_mdtvh2.jpg"
+      },
+      "conArtist": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/insider_mdtvh2.jpg"
+      },
+      "commons": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/commons_i6osix.webp"
+      },
+      "spies_background": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/spies_background_y6rcht.webp"
+      },
+      "master": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/master_tabwxu.webp"
+      },
+      "three_words": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/three_words_jxrybf.png"
+      },
+      "banner_li": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/v1783119777/images/lexicon/lexicon_li_banner.png"
+      },
+      "background_li": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/v1783118346/images/pitfall/pitfall_li_background.png"
+      }
     },
     "strings": {
       "Default": {
-        "welcomeHeader": "Welcome to Pitfall!",
-        "guidesVoteTitle": "Vote for Guides",
-        "redClickerQuestion": "Who wants to be a Red Clicker? We need 2 of you!",
-        "blueClickerQuestion": "Who wants to be a Blue Clicker? We need 2 of you!",
-        "redGuessClipTitle": "Pitfall, Red guess",
-        "blueGuessClipTitle": "Pitfall, Blue guess",
-        "redGuessHeader": "Team Red, time to guess!",
-        "blueGuessHeader": "Team Blue, time to guess!",
-        "welcomeText": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!",
-        "chooseGuidesQuestion": "($1), choose 2 ($2)Guides!",
-        "chooseQuestion": "($1), choose ($2)!",
-        "clueHeader": "($1), time to give your team a clue!",
-        "clueRules": "A reminder that your clue must:<br/><li>Be <b>one word</b> long<br/><li><b>NOT</b> be a word in the grid<br/><li><b>NOT</b> be an acronym<br/><li>Relate to the <b>meaning</b> of the word<br/><li><b>NOT</b> share a root with the word<br/><li>Be in <b>English</b>",
-        "clickerText": "<b>($1)</b>, you will be clicking on the words!",
-        "winHeader": "Team ($1) wins!",
-        "tutorialTitle": "Tutorial mode",
-        "tutorialQuestion": "($1), who needs the tutorial? Click on the players or select from the middle.",
+        "welcomeToLexicon": "Welcome to Lexicon!",
+        "inAMomentTell": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!",
+        "tutorialMode": "Tutorial mode",
+        "whoNeedsTheTutorial": "($1), who needs the tutorial? Click on the players or select from the middle.",
+        "1Master1Con": "1 Master, 1 Con Artist:",
+        "everyoneElseIsA": "Everyone else is a Member of the Commons.",
+        "isTheNewMaster": "($1) is the new Master!",
+        "thisRoundYouAre": "This round, you are a Member!",
+        "shhhhMembersGetA": "Shhhh ... Members get a similar announcement telling them they're Members.",
+        "thisRoundYouAre2": "This round, you are the Con Artist!",
+        "chooseWord": "CHOOSE WORD",
+        "isPickingTheSecret": "($1) is picking the secret word!",
+        "isTypingAWord": "($1) is typing a word...",
+        "submitInput": "Submit input",
+        "typeAWord": "($1), type a word!",
+        "theWordIs": "The word is: ($1)",
+        "theMasterAndCon": "The Master and Con Artist...",
+        "areBeingShownThe": "... are being shown the word!",
+        "theGoalOfThe": "The goal of the Con Artist...",
+        "isToMakeSure": "... is to make sure the group guesses the word successfully.<br/><br/>However, after this happens, the Commons can still win by guessing who the Con Artist is.",
+        "forExample": "For example...",
+        "ifTheSecretWord": "... if the secret word is \"water\", the Con Artist wins if the group correctly guesses within 5 minutes that the word is \"water\" BUT fails to identify who the Con Artist is.",
+        "lexiconRound": "Lexicon, Round #($1)",
+        "clickTheGuessedButton": "Click the <b>GUESSED</b> button as soon as someone correctly guesses the secret word!",
+        "aReminder": "($1), a reminder...",
+        "guessWord": "GUESS WORD",
+        "theGroupHas5": "The group has 5 MINUTES to guess the word by asking the Master yes/no questions! If the word is not guessed, everyone loses.",
+        "youDidnTGuess": "You didn't guess the word in time!",
+        "everyoneLoses": "Everyone loses.",
+        "voteForConArtist": "VOTE FOR CON ARTIST",
+        "nowWhoDoYou": "Now, who do you think the Con Artist is? The vote ends when the majority of players vote at one player.",
+        "isTheConArtist": "($1) is ... ($2)the Con Artist!",
+        "isTheRealCon": "($1) is the real Con Artist!",
+        "playAgain": "PLAY AGAIN?",
+        "wouldYouLikeTo": "Would you like to play again?",
+        "str": "($1) ($2)!",
         "bannerImg": "banner",
-        "bgImg": "background",
-        "redBgImg": "red_background",
-        "blueBgImg": "blue_background",
-        "redImg": "Red",
-        "blueImg": "Blue",
-        "redSpyImg": "red_spy",
-        "blueSpyImg": "blue_spy",
-        "words": [
+        "bgImg": "spies_background",
+        "wordList": [
           "kraken",
           "access",
           "bonfire",
@@ -401,6 +475,7 @@
           "camera",
           "camp",
           "canada",
+          "cancer",
           "candle",
           "candyman",
           "cane",
@@ -1644,6 +1719,7 @@
           "weight",
           "well",
           "werewolf",
+          "wet",
           "whack",
           "whale",
           "wheel",
@@ -1653,6 +1729,7 @@
           "whistle",
           "white",
           "widow",
+          "wiener",
           "win",
           "wind",
           "window",
@@ -1710,12 +1787,14 @@
           "bamboo",
           "bandit",
           "banjo",
+          "banyan",
           "barber",
           "barn",
           "barrel",
           "barricade",
           "basement",
           "basil",
+          "bastion",
           "baton",
           "bazaar",
           "beacon",
@@ -1787,6 +1866,7 @@
           "cobweb",
           "cockpit",
           "coconut",
+          "codex",
           "colony",
           "column",
           "compass",
@@ -1810,6 +1890,7 @@
           "crowbar",
           "cruise",
           "crypt",
+          "culvert",
           "cupboard",
           "curator",
           "curtain",
@@ -1865,6 +1946,7 @@
           "filament",
           "filter",
           "fireplace",
+          "firmament",
           "fishery",
           "fjord",
           "flame",
@@ -1920,7 +2002,7 @@
           "hearth",
           "hedge",
           "hermit",
-          "hibernation",
+          "hibernate",
           "highway",
           "hive",
           "hobbit",
@@ -1975,6 +2057,7 @@
           "lair",
           "lamb",
           "lantern",
+          "larder",
           "lasso",
           "lava",
           "lawn",
@@ -1994,6 +2077,7 @@
           "logbook",
           "lollipop",
           "luggage",
+          "lumber",
           "lute",
           "lynx",
           "macaroon",
@@ -2034,7 +2118,7 @@
           "mugshot",
           "mulch",
           "mule",
-          "music box",
+          "musicbox",
           "mustache",
           "mute",
           "myth",
@@ -2068,36 +2152,163 @@
           "ostrich",
           "outback",
           "outlaw",
-          "outpost"
+          "outpost",
+          "hole",
+          "ice",
+          "firefighter",
+          "friend",
+          "singer",
+          "home",
+          "sanctuary",
+          "animal",
+          "shelter",
+          "chicken",
+          "goldfish",
+          "gorilla",
+          "sushi",
+          "hamburger",
+          "tacos",
+          "fish and chips",
+          "meat pie",
+          "cereal",
+          "baked beans",
+          "lasagna",
+          "spaghetti",
+          "sandwich",
+          "burrito",
+          "ramen noodles",
+          "bookstore",
+          "zoo",
+          "train station",
+          "supermarket",
+          "swimming pool",
+          "bus station",
+          "aquarium",
+          "Barrack Obama",
+          "Queen Elizabeth II",
+          "Elvis Presley",
+          "Martin Scorcese",
+          "Kanye West",
+          "Beyonce",
+          "Robert De Niro",
+          "Genghis Khan",
+          "Gandhi",
+          "Mozart",
+          "Martin Luther King Jr.",
+          "Julius Caesar",
+          "Billie Eilish",
+          "Winston Churchill",
+          "Rosa Parks",
+          "Leonardo da Vinci",
+          "Beethoven",
+          "Thomas Edison",
+          "Mark Twain",
+          "pencil case",
+          "cell phone",
+          "sofa",
+          "TV",
+          "speakers",
+          "frying pan",
+          "vacuum cleaner",
+          "tennis racket",
+          "light bulb",
+          "chopsticks",
+          "person",
+          "year",
+          "way",
+          "thing",
+          "man",
+          "world",
+          "child",
+          "woman",
+          "place",
+          "week",
+          "government",
+          "number",
+          "group",
+          "problem",
+          "fact",
+          "people/person",
+          "family",
+          "student",
+          "question",
+          "room",
+          "area",
+          "month",
+          "lot",
+          "right",
+          "study",
+          "word",
+          "issue",
+          "side",
+          "kind",
+          "father",
+          "hour",
+          "end",
+          "community",
+          "name",
+          "president",
+          "idea",
+          "information",
+          "parent",
+          "others",
+          "level",
+          "party",
+          "result",
+          "morning",
+          "reason",
+          "research",
+          "girl",
+          "guy",
+          "moment",
+          "tulip",
+          "paintbrush",
+          "iPad",
+          "xylophone",
+          "mockingbird",
+          "handstand"
         ]
       },
       "Love Island": {
-        "welcomeHeader": "Welcome to Pitfall: Love Island!",
-        "guidesVoteTitle": "Vote for Guides",
-        "redClickerQuestion": "Who wants to be a Red Clicker? We need 2 of you!",
-        "blueClickerQuestion": "Who wants to be a Blue Clicker? We need 2 of you!",
-        "redGuessClipTitle": "Pitfall: Love Island, Red guess",
-        "blueGuessClipTitle": "Pitfall: Love Island, Blue guess",
-        "redGuessHeader": "Team Red, time to guess!",
-        "blueGuessHeader": "Team Blue, time to guess!",
-        "welcomeText": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play Pitfall: Love Island!",
-        "chooseGuidesQuestion": "($1), choose 2 ($2)Guides!",
-        "chooseQuestion": "($1), choose ($2)!",
-        "clueHeader": "($1), time to give your team a clue!",
-        "clueRules": "A reminder that your clue must:<br/><li>Be <b>one word</b> long<br/><li><b>NOT</b> be a word in the grid<br/><li><b>NOT</b> be an acronym<br/><li>Relate to the <b>meaning</b> of the word<br/><li><b>NOT</b> share a root with the word<br/><li>Be in <b>English</b>",
-        "clickerText": "<b>($1)</b>, you will be clicking on the words!",
-        "winHeader": "Team ($1) wins the Villa!",
-        "tutorialTitle": "Tutorial mode",
-        "tutorialQuestion": "($1), who needs the tutorial? Click on the players or select from the middle.",
+        "welcomeToLexicon": "Welcome to Lexicon: Love Island!",
+        "inAMomentTell": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!",
+        "tutorialMode": "Tutorial mode",
+        "whoNeedsTheTutorial": "($1), who needs the tutorial? Click on the players or select from the middle.",
+        "1Master1Con": "1 Master, 1 Con Artist:",
+        "everyoneElseIsA": "Everyone else is a Member of the Commons.",
+        "isTheNewMaster": "($1) is the new Master!",
+        "thisRoundYouAre": "This round, you are a Member!",
+        "shhhhMembersGetA": "Shhhh ... Members get a similar announcement telling them they're Members.",
+        "thisRoundYouAre2": "This round, you are the Con Artist!",
+        "chooseWord": "CHOOSE WORD",
+        "isPickingTheSecret": "($1) is picking the secret word!",
+        "isTypingAWord": "($1) is typing a word...",
+        "submitInput": "Submit input",
+        "typeAWord": "($1), type a word!",
+        "theWordIs": "The word is: ($1)",
+        "theMasterAndCon": "The Master and Con Artist...",
+        "areBeingShownThe": "... are being shown the word!",
+        "theGoalOfThe": "The goal of the Con Artist...",
+        "isToMakeSure": "... is to make sure the group guesses the word successfully.<br/><br/>However, after this happens, the Commons can still win by guessing who the Con Artist is.",
+        "forExample": "For example...",
+        "ifTheSecretWord": "... if the secret word is \"water\", the Con Artist wins if the group correctly guesses within 5 minutes that the word is \"water\" BUT fails to identify who the Con Artist is.",
+        "lexiconRound": "Lexicon: Love Island, Round #($1)",
+        "clickTheGuessedButton": "Click the <b>GUESSED</b> button as soon as someone correctly guesses the secret word!",
+        "aReminder": "($1), a reminder...",
+        "guessWord": "GUESS WORD",
+        "theGroupHas5": "The group has 5 MINUTES to guess the word by asking the Master yes/no questions! If the word is not guessed, everyone loses.",
+        "youDidnTGuess": "You didn't guess the word in time!",
+        "everyoneLoses": "Everyone loses.",
+        "voteForConArtist": "VOTE FOR CON ARTIST",
+        "nowWhoDoYou": "Now, who do you think the Con Artist is? The vote ends when the majority of players vote at one player.",
+        "isTheConArtist": "($1) is ... ($2)the Con Artist!",
+        "isTheRealCon": "($1) is the real Con Artist!",
+        "playAgain": "PLAY AGAIN?",
+        "wouldYouLikeTo": "Would you like to play again?",
+        "str": "($1) ($2)!",
         "bannerImg": "banner_li",
         "bgImg": "background_li",
-        "redBgImg": "red_background_li",
-        "blueBgImg": "blue_background_li",
-        "redImg": "Red_li",
-        "blueImg": "Blue_li",
-        "redSpyImg": "red_spy_li",
-        "blueSpyImg": "blue_spy_li",
-        "words": [
+        "wordList": [
           "Villa",
           "Pool",
           "Firepit",
@@ -2291,94 +2502,189 @@
           "Ariana Madix"
         ]
       }
-    },
-    "voices": {
-      "default": {
-        "p1": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p1.mp3",
-        "p2": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p2.mp3",
-        "p3": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p3.mp3",
-        "p4": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p4.mp3",
-        "p5": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p5.mp3",
-        "p6": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p6.mp3",
-        "p7": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p7.mp3",
-        "p8": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p8.mp3",
-        "p9": "https://res.cloudinary.com/liars-club/video/upload/audio/pitfall/p9.mp3"
-      }
-    },
-    "soundboard": {
-      "default": {
-        "evil_laugh": "https://res.cloudinary.com/liars-club/video/upload/audio/evil_laugh.mp3",
-        "reminder": "https://res.cloudinary.com/liars-club/video/upload/audio/reminder.mp4",
-        "red_clue": "https://res.cloudinary.com/liars-club/video/upload/audio/classic_mafia/sounds/gong.mp3",
-        "blue_clue": "https://res.cloudinary.com/liars-club/video/upload/audio/classic_mafia/sounds/gong.mp3"
-      }
-    },
-    "images": {
-      "background": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/images/pitfall/pitfall_purple.jpg"
-      },
-      "red_background": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/images/pitfall/pitfall_red.png"
-      },
-      "blue_background": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/images/pitfall/pitfall_blue.png"
-      },
-      "banner": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/pitfall_banner_nzhaep.png"
-      },
-      "Red": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/red_owl_ansgnc.png"
-      },
-      "Blue": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/blue_bat_pshd0l.png"
-      },
-      "red_spy": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/red_owl_ansgnc.png"
-      },
-      "blue_spy": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/blue_bat_pshd0l.png"
-      },
-      "grid": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/grid_nhgvfd.png"
-      },
-      "give_clue": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/give_clue_z8uzcz.png"
-      },
-      "banner_li": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/v1783118343/images/pitfall/pitfall_li_banner.png"
-      },
-      "background_li": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/v1783118346/images/pitfall/pitfall_li_background.png"
-      },
-      "red_background_li": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/v1783118348/images/pitfall/pitfall_li_red_background.png"
-      },
-      "blue_background_li": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/v1783118349/images/pitfall/pitfall_li_blue_background.png"
-      },
-      "Red_li": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/v1783118351/images/pitfall/pitfall_li_red.png"
-      },
-      "Blue_li": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/v1783118353/images/pitfall/pitfall_li_blue.png"
-      },
-      "red_spy_li": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/v1783118354/images/pitfall/pitfall_li_red_spy.png"
-      },
-      "blue_spy_li": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/v1783118356/images/pitfall/pitfall_li_blue_spy.png"
-      }
-    },
-    "animations": {
-      "clue": "https://assets10.lottiefiles.com/packages/lf20_vvx2gjpt.json",
-      "guess": "https://assets6.lottiefiles.com/packages/lf20_lzhwcgzg.json",
-      "spymaster": "https://lottie.host/02b4eaac-8d75-47d0-8375-47ac7f6a046d/1mOPVEHu5C.json"
     }
   },
   "visualSettings": {
-    "backgroundColor": "#eed9c4",
-    "borderColor": "black"
+    "backgroundColor": "#6082B6",
+    "textColor": "white",
+    "borderColor": "white"
   },
+  "turnPlayerToSpectatorActions": [
+    {
+      "key": "emptyAction",
+      "saveValueInCache": [
+        {
+          "name": "master",
+          "value": {
+            "selector": "ifElse",
+            "params": [
+              {
+                "name": "condition",
+                "type": "computed",
+                "value": {
+                  "selector": "equals",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "cached",
+                      "value": "master.0"
+                    },
+                    {
+                      "name": "arg2",
+                      "type": "cached",
+                      "value": "oldPlayer"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "thenValue",
+                "type": "computed",
+                "value": {
+                  "selector": "createList",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "computed",
+                      "value": {
+                        "selector": "selectElement",
+                        "params": [
+                          {
+                            "name": "list",
+                            "type": "cached",
+                            "value": "players"
+                          },
+                          {
+                            "name": "index",
+                            "type": "computed",
+                            "value": {
+                              "selector": "remainder",
+                              "params": [
+                                {
+                                  "name": "arg1",
+                                  "type": "computed",
+                                  "value": {
+                                    "selector": "add",
+                                    "params": [
+                                      {
+                                        "name": "arg1",
+                                        "type": "computed",
+                                        "value": {
+                                          "selector": "indexOf",
+                                          "params": [
+                                            {
+                                              "name": "list",
+                                              "type": "cached",
+                                              "value": "players"
+                                            },
+                                            {
+                                              "name": "element",
+                                              "type": "cached",
+                                              "value": "master.0"
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      {
+                                        "name": "arg2",
+                                        "type": "computed",
+                                        "value": {
+                                          "selector": "dec",
+                                          "params": [
+                                            {
+                                              "name": "arg",
+                                              "type": "computed",
+                                              "value": {
+                                                "selector": "listLength",
+                                                "params": [
+                                                  {
+                                                    "name": "list",
+                                                    "type": "cached",
+                                                    "value": "players"
+                                                  }
+                                                ]
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "name": "arg2",
+                                  "type": "computed",
+                                  "value": {
+                                    "selector": "listLength",
+                                    "params": [
+                                      {
+                                        "name": "list",
+                                        "type": "cached",
+                                        "value": "players"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "elseValue",
+                "type": "cached",
+                "value": "master"
+              }
+            ]
+          }
+        },
+        {
+          "name": "players",
+          "value": {
+            "selector": "listsSubtract",
+            "params": [
+              {
+                "name": "list1",
+                "type": "cached",
+                "value": "players"
+              },
+              {
+                "name": "list2",
+                "type": "computed",
+                "value": {
+                  "selector": "createList",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "cached",
+                      "value": "oldPlayer"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "name": "numPlayers",
+          "value": {
+            "selector": "listLength",
+            "params": [
+              {
+                "name": "list",
+                "type": "cached",
+                "value": "players"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
   "turnSpectatorToPlayerActions": [
     {
       "key": "emptyAction",
@@ -2418,401 +2724,76 @@
       ]
     },
     {
-      "key": "setRole",
+      "key": "updateScore",
       "payload": {
         "computed": {
-          "roleId": {
-            "selector": "ifElse",
+          "scores": {
+            "selector": "createItemList",
             "params": [
               {
-                "name": "condition",
+                "name": "length",
+                "type": "preset",
+                "value": 1
+              },
+              {
+                "name": "item",
                 "type": "computed",
                 "value": {
-                  "selector": "lessThan",
+                  "selector": "createDict",
                   "params": [
                     {
-                      "name": "arg1",
-                      "type": "computed",
-                      "value": {
-                        "selector": "add",
-                        "params": [
-                          {
-                            "name": "arg1",
-                            "type": "computed",
-                            "value": {
-                              "selector": "listLength",
-                              "params": [
-                                {
-                                  "name": "list",
-                                  "type": "computed",
-                                  "value": {
-                                    "selector": "getPlayersFromTeam",
-                                    "params": [
-                                      {
-                                        "name": "teamId",
-                                        "type": "preset",
-                                        "value": "red"
-                                      }
-                                    ]
-                                  }
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "name": "arg2",
-                            "type": "computed",
-                            "value": {
-                              "selector": "listLength",
-                              "params": [
-                                {
-                                  "name": "list",
-                                  "type": "computed",
-                                  "value": {
-                                    "selector": "getPlayersFromTeam",
-                                    "params": [
-                                      {
-                                        "name": "teamId",
-                                        "type": "preset",
-                                        "value": "redPlayer"
-                                      }
-                                    ]
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        ]
-                      }
+                      "name": "keys",
+                      "type": "preset",
+                      "value": [
+                        "list",
+                        "score"
+                      ]
                     },
                     {
-                      "name": "arg2",
+                      "name": "values",
                       "type": "computed",
                       "value": {
-                        "selector": "add",
+                        "selector": "createList",
                         "params": [
                           {
                             "name": "arg1",
                             "type": "computed",
                             "value": {
-                              "selector": "listLength",
+                              "selector": "createList",
                               "params": [
                                 {
-                                  "name": "list",
-                                  "type": "computed",
-                                  "value": {
-                                    "selector": "getPlayersFromTeam",
-                                    "params": [
-                                      {
-                                        "name": "teamId",
-                                        "type": "preset",
-                                        "value": "blue"
-                                      }
-                                    ]
-                                  }
+                                  "name": "arg1",
+                                  "type": "cached",
+                                  "value": "newPlayer"
                                 }
                               ]
                             }
                           },
                           {
                             "name": "arg2",
-                            "type": "computed",
-                            "value": {
-                              "selector": "listLength",
-                              "params": [
-                                {
-                                  "name": "list",
-                                  "type": "computed",
-                                  "value": {
-                                    "selector": "getPlayersFromTeam",
-                                    "params": [
-                                      {
-                                        "name": "teamId",
-                                        "type": "preset",
-                                        "value": "bluePlayer"
-                                      }
-                                    ]
-                                  }
-                                }
-                              ]
-                            }
+                            "type": "cached",
+                            "value": "currentMinScore"
                           }
                         ]
                       }
                     }
                   ]
                 }
-              },
-              {
-                "name": "thenValue",
-                "type": "preset",
-                "value": "red"
-              },
-              {
-                "name": "elseValue",
-                "type": "preset",
-                "value": "blue"
               }
             ]
           }
-        },
-        "cached": {
-          "playerId": "newPlayer"
         }
       }
     },
     {
-      "key": "showTeam",
+      "key": "showScore",
       "payload": {
+        "preset": {
+          "order": "highest"
+        },
         "cached": {
           "from": "players",
           "to": "players"
-        }
-      }
-    },
-    {
-      "key": "showRole",
-      "payload": {
-        "cached": {
-          "to": "players"
-        },
-        "computed": {
-          "from": {
-            "selector": "getPlayersByRole",
-            "params": [
-              {
-                "name": "role",
-                "type": "preset",
-                "value": "red_codemaster"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "key": "showRole",
-      "payload": {
-        "cached": {
-          "to": "players"
-        },
-        "computed": {
-          "from": {
-            "selector": "getPlayersByRole",
-            "params": [
-              {
-                "name": "role",
-                "type": "preset",
-                "value": "red_player"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "key": "showRole",
-      "payload": {
-        "cached": {
-          "to": "players"
-        },
-        "computed": {
-          "from": {
-            "selector": "getPlayersByRole",
-            "params": [
-              {
-                "name": "role",
-                "type": "preset",
-                "value": "blue_codemaster"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "key": "showRole",
-      "payload": {
-        "cached": {
-          "to": "players"
-        },
-        "computed": {
-          "from": {
-            "selector": "getPlayersByRole",
-            "params": [
-              {
-                "name": "role",
-                "type": "preset",
-                "value": "blue_player"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "key": "removeAllHighlights"
-    },
-    {
-      "key": "highlightPlayers",
-      "payload": {
-        "preset": {
-          "color": "#D83232"
-        },
-        "computed": {
-          "listOfPlayers": {
-            "selector": "concat",
-            "params": [
-              {
-                "name": "list1",
-                "type": "computed",
-                "value": {
-                  "selector": "getPlayersFromTeam",
-                  "params": [
-                    {
-                      "name": "teamId",
-                      "type": "preset",
-                      "value": "red"
-                    }
-                  ]
-                }
-              },
-              {
-                "name": "list2",
-                "type": "computed",
-                "value": {
-                  "selector": "getPlayersFromTeam",
-                  "params": [
-                    {
-                      "name": "teamId",
-                      "type": "preset",
-                      "value": "redPlayer"
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "key": "highlightPlayers",
-      "payload": {
-        "preset": {
-          "color": "#4EC1D0"
-        },
-        "computed": {
-          "listOfPlayers": {
-            "selector": "concat",
-            "params": [
-              {
-                "name": "list1",
-                "type": "computed",
-                "value": {
-                  "selector": "getPlayersFromTeam",
-                  "params": [
-                    {
-                      "name": "teamId",
-                      "type": "preset",
-                      "value": "blue"
-                    }
-                  ]
-                }
-              },
-              {
-                "name": "list2",
-                "type": "computed",
-                "value": {
-                  "selector": "getPlayersFromTeam",
-                  "params": [
-                    {
-                      "name": "teamId",
-                      "type": "preset",
-                      "value": "bluePlayer"
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "key": "changeLayout",
-      "payload": {
-        "preset": {
-          "type": "HIGHLIGHT",
-          "direction": "VERTICAL"
-        },
-        "computed": {
-          "top": {
-            "selector": "concat",
-            "params": [
-              {
-                "name": "list1",
-                "type": "computed",
-                "value": {
-                  "selector": "getPlayersFromTeam",
-                  "params": [
-                    {
-                      "name": "teamId",
-                      "type": "preset",
-                      "value": "red"
-                    }
-                  ]
-                }
-              },
-              {
-                "name": "list2",
-                "type": "computed",
-                "value": {
-                  "selector": "getPlayersFromTeam",
-                  "params": [
-                    {
-                      "name": "teamId",
-                      "type": "preset",
-                      "value": "redPlayer"
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          "bottom": {
-            "selector": "concat",
-            "params": [
-              {
-                "name": "list1",
-                "type": "computed",
-                "value": {
-                  "selector": "getPlayersFromTeam",
-                  "params": [
-                    {
-                      "name": "teamId",
-                      "type": "preset",
-                      "value": "blue"
-                    }
-                  ]
-                }
-              },
-              {
-                "name": "list2",
-                "type": "computed",
-                "value": {
-                  "selector": "getPlayersFromTeam",
-                  "params": [
-                    {
-                      "name": "teamId",
-                      "type": "preset",
-                      "value": "bluePlayer"
-                    }
-                  ]
-                }
-              }
-            ]
-          }
         }
       }
     }
@@ -2829,6 +2810,14 @@
     {
       "key": "emptyAction",
       "saveValueInCache": [
+        {
+          "name": "currentMinScore",
+          "value": 0
+        },
+        {
+          "name": "roundNumber",
+          "value": 0
+        },
         {
           "name": "players",
           "value": {
@@ -2848,6 +2837,131 @@
             ]
           }
         },
+        {
+          "name": "playAgain",
+          "value": true
+        },
+        {
+          "name": "round",
+          "value": 1
+        },
+        {
+          "name": "master",
+          "value": {
+            "selector": "getPlayersByRole",
+            "params": [
+              {
+                "name": "role",
+                "type": "preset",
+                "value": "master"
+              }
+            ]
+          }
+        },
+        {
+          "name": "insider",
+          "value": {
+            "selector": "getPlayersByRole",
+            "params": [
+              {
+                "name": "role",
+                "type": "preset",
+                "value": "insider"
+              }
+            ]
+          }
+        },
+        {
+          "name": "members",
+          "value": {
+            "selector": "getPlayersByRole",
+            "params": [
+              {
+                "name": "role",
+                "type": "preset",
+                "value": "member"
+              }
+            ]
+          }
+        },
+        {
+          "name": "guessed",
+          "value": false
+        },
+        {
+          "name": "playerIsInsider",
+          "value": false
+        }
+      ]
+    },
+    {
+      "key": "updateScore",
+      "payload": {
+        "computed": {
+          "scores": {
+            "selector": "createItemList",
+            "params": [
+              {
+                "name": "length",
+                "type": "preset",
+                "value": 1
+              },
+              {
+                "name": "item",
+                "type": "computed",
+                "value": {
+                  "selector": "createDict",
+                  "params": [
+                    {
+                      "name": "keys",
+                      "type": "preset",
+                      "value": [
+                        "list",
+                        "score"
+                      ]
+                    },
+                    {
+                      "name": "values",
+                      "type": "computed",
+                      "value": {
+                        "selector": "createList",
+                        "params": [
+                          {
+                            "name": "arg1",
+                            "type": "cached",
+                            "value": "players"
+                          },
+                          {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 0
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "key": "showScore",
+      "payload": {
+        "preset": {
+          "order": "highest"
+        },
+        "cached": {
+          "from": "players",
+          "to": "players"
+        }
+      }
+    },
+    {
+      "key": "emptyAction",
+      "saveValueInCache": [
         {
           "name": "host",
           "value": {
@@ -2924,10 +3038,6 @@
               }
             ]
           }
-        },
-        {
-          "name": "firstRound",
-          "value": true
         }
       ]
     },
@@ -2938,7 +3048,7 @@
           "duration": 8
         },
         "cached": {
-          "header": "welcomeHeader",
+          "header": "welcomeToLexicon",
           "image": "bannerImg"
         },
         "computed": {
@@ -2951,7 +3061,7 @@
               {
                 "name": "format",
                 "type": "cached",
-                "value": "welcomeText"
+                "value": "inAMomentTell"
               },
               {
                 "name": "arg1",
@@ -3020,7 +3130,7 @@
           "actors": "host",
           "point.targets": "players",
           "point.answersQuantity": "numPlayers",
-          "title": "tutorialTitle"
+          "title": "tutorialMode"
         },
         "computed": {
           "question": {
@@ -3029,7 +3139,7 @@
               {
                 "name": "format",
                 "type": "cached",
-                "value": "tutorialQuestion"
+                "value": "whoNeedsTheTutorial"
               },
               {
                 "name": "arg1",
@@ -3159,14 +3269,6 @@
               }
             ]
           }
-        },
-        {
-          "name": "tutorialRedGuide",
-          "value": false
-        },
-        {
-          "name": "tutorialBlueGuide",
-          "value": false
         }
       ]
     }
@@ -3206,9 +3308,50 @@
           "key": "emptyAction",
           "payload": {
             "preset": {
+              "sounds.waitForSoundEnd": false,
+              "sounds.list": [
+                "voices.l1"
+              ]
+            },
+            "cached": {
+              "playList.0": "learners"
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "delay": 5
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "title": "MEMBER ANNOUNCEMENT",
+          "payload": {
+            "preset": {
+              "images": [
+                "master",
+                "conArtist"
+              ],
+              "duration": 7
+            },
+            "cached": {
+              "to": "learners",
+              "header": "1Master1Con",
+              "text": "everyoneElseIsA"
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
               "sounds.waitForSoundEnd": true,
               "sounds.list": [
-                "voices.p1"
+                "voices.l2",
+                "voices.l3"
               ]
             },
             "cached": {
@@ -3222,10 +3365,12 @@
       ]
     },
     {
-      "name": "Setting up",
+      "name": "RERAND",
+      "turnSpectatorsToPlayers": true,
+      "turnPlayersToSpectators": true,
       "skipCondition": [
         {
-          "selector": "greaterThan",
+          "selector": "equals",
           "params": [
             {
               "name": "arg1",
@@ -3245,1021 +3390,317 @@
           "key": "emptyAction",
           "saveValueInCache": [
             {
-              "name": "atLeast6",
+              "name": "master",
               "value": {
-                "selector": "greaterThanOrEqual",
+                "selector": "createList",
                 "params": [
-                  {
-                    "name": "arg1",
-                    "type": "cached",
-                    "value": "numPlayers"
-                  },
-                  {
-                    "name": "arg2",
-                    "type": "preset",
-                    "value": 6
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "key": "createVote",
-          "payload": {
-            "preset": {
-              "type": "target_point",
-              "terminationCondition": "get_all_votes",
-              "showResultInRealTime": true,
-              "showResultDuration": 2,
-              "oneClick": true,
-              "allowRevoting": true
-            },
-            "cached": {
-              "actors": "host",
-              "targets": "players",
-              "allowFewerAnswers": "atLeast6",
-              "title": "guidesVoteTitle"
-            },
-            "computed": {
-              "answersQuantity": {
-                "selector": "ifElse",
-                "params": [
-                  {
-                    "name": "condition",
-                    "type": "cached",
-                    "value": "atLeast6"
-                  },
-                  {
-                    "name": "thenValue",
-                    "type": "preset",
-                    "value": 4
-                  },
-                  {
-                    "name": "elseValue",
-                    "type": "preset",
-                    "value": 2
-                  }
-                ]
-              },
-              "question": {
-                "selector": "formatString",
-                "params": [
-                  {
-                    "name": "format",
-                    "type": "cached",
-                    "value": "chooseGuidesQuestion"
-                  },
                   {
                     "name": "arg1",
                     "type": "computed",
                     "value": {
-                      "selector": "getPlayerNameById",
+                      "selector": "nextPlayer",
                       "params": [
                         {
-                          "name": "id",
+                          "name": "playerId",
                           "type": "cached",
-                          "value": "host.0"
+                          "value": "master.0"
+                        },
+                        {
+                          "name": "playersList",
+                          "type": "cached",
+                          "value": "players"
                         }
                       ]
                     }
-                  },
-                  {
-                    "name": "arg2",
-                    "type": "computed",
-                    "value": {
-                      "selector": "ifElse",
-                      "params": [
-                        {
-                          "name": "condition",
-                          "type": "cached",
-                          "value": "atLeast6"
-                        },
-                        {
-                          "name": "thenValue",
-                          "type": "preset",
-                          "value": "to 4 "
-                        },
-                        {
-                          "name": "elseValue",
-                          "type": "preset",
-                          "value": ""
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "saveValueInCache": [
-            {
-              "name": "guides",
-              "value": {
-                "selector": "getCachedValue",
-                "params": [
-                  {
-                    "name": "name",
-                    "type": "preset",
-                    "value": "lastActionResult.voteResult"
                   }
                 ]
               }
             },
             {
-              "name": "underflow",
+              "name": "insider",
               "value": {
-                "selector": "lessThan",
+                "selector": "randomElementsList",
                 "params": [
                   {
-                    "name": "arg1",
+                    "name": "list",
                     "type": "computed",
                     "value": {
-                      "selector": "listLength",
+                      "selector": "listsSubtract",
                       "params": [
                         {
-                          "name": "list",
+                          "name": "list1",
                           "type": "cached",
-                          "value": "guides"
+                          "value": "players"
+                        },
+                        {
+                          "name": "list2",
+                          "type": "cached",
+                          "value": "master"
                         }
                       ]
                     }
                   },
                   {
-                    "name": "arg2",
-                    "type": "preset",
-                    "value": 2
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "key": "createVote",
-          "skipCondition": {
-            "selector": "logicalNOT",
-            "params": [
-              {
-                "name": "arg",
-                "type": "cached",
-                "value": "underflow"
-              }
-            ]
-          },
-          "payload": {
-            "preset": {
-              "type": "target_point",
-              "terminationCondition": "get_all_votes",
-              "showResultInRealTime": true,
-              "showResultDuration": 2,
-              "oneClick": true
-            },
-            "cached": {
-              "actors": "host",
-              "targets": "players",
-              "allowFewerAnswers": "atLeast6",
-              "title": "guidesVoteTitle"
-            },
-            "computed": {
-              "answersQuantity": {
-                "selector": "ifElse",
-                "params": [
-                  {
-                    "name": "condition",
-                    "type": "cached",
-                    "value": "atLeast6"
-                  },
-                  {
-                    "name": "thenValue",
-                    "type": "preset",
-                    "value": 3
-                  },
-                  {
-                    "name": "elseValue",
+                    "name": "length",
                     "type": "preset",
                     "value": 1
                   }
                 ]
-              },
-              "question": {
-                "selector": "formatString",
-                "params": [
-                  {
-                    "name": "format",
-                    "type": "cached",
-                    "value": "chooseQuestion"
-                  },
-                  {
-                    "name": "arg1",
-                    "type": "computed",
-                    "value": {
-                      "selector": "getPlayerNameById",
-                      "params": [
-                        {
-                          "name": "id",
-                          "type": "cached",
-                          "value": "host.0"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "name": "arg2",
-                    "type": "computed",
-                    "value": {
-                      "selector": "ifElse",
-                      "params": [
-                        {
-                          "name": "condition",
-                          "type": "cached",
-                          "value": "atLeast6"
-                        },
-                        {
-                          "name": "thenValue",
-                          "type": "preset",
-                          "value": "1 to 3 additional Guides"
-                        },
-                        {
-                          "name": "elseValue",
-                          "type": "preset",
-                          "value": "an additional Guide"
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "saveValueInCache": [
-            {
-              "name": "guides",
-              "value": {
-                "selector": "concat",
-                "params": [
-                  {
-                    "name": "list1",
-                    "type": "cached",
-                    "value": "guides"
-                  },
-                  {
-                    "name": "list2",
-                    "type": "cached",
-                    "value": "lastActionResult.voteResult"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "key": "emptyAction",
-          "saveValueInCache": [
-            {
-              "name": "redGuides",
-              "value": {
-                "selector": "sublist",
-                "params": [
-                  {
-                    "name": "list",
-                    "type": "cached",
-                    "value": "guides"
-                  },
-                  {
-                    "name": "start",
-                    "type": "preset",
-                    "value": 0
-                  },
-                  {
-                    "name": "end",
-                    "type": "computed",
-                    "value": {
-                      "selector": "integerDivide",
-                      "params": [
-                        {
-                          "name": "arg1",
-                          "type": "computed",
-                          "value": {
-                            "selector": "inc",
-                            "params": [
-                              {
-                                "name": "arg",
-                                "type": "computed",
-                                "value": {
-                                  "selector": "listLength",
-                                  "params": [
-                                    {
-                                      "name": "list",
-                                      "type": "cached",
-                                      "value": "guides"
-                                    }
-                                  ]
-                                }
-                              }
-                            ]
-                          }
-                        },
-                        {
-                          "name": "arg2",
-                          "type": "preset",
-                          "value": 2
-                        }
-                      ]
-                    }
-                  }
-                ]
               }
             },
             {
-              "name": "blueGuides",
+              "name": "members",
               "value": {
                 "selector": "listsSubtract",
                 "params": [
                   {
                     "name": "list1",
                     "type": "cached",
-                    "value": "guides"
+                    "value": "players"
                   },
                   {
                     "name": "list2",
+                    "type": "computed",
+                    "value": {
+                      "selector": "concat",
+                      "params": [
+                        {
+                          "name": "list1",
+                          "type": "cached",
+                          "value": "master"
+                        },
+                        {
+                          "name": "list2",
+                          "type": "cached",
+                          "value": "insider"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "REVEALS + WORD",
+      "actions": [
+        {
+          "key": "setRole",
+          "payload": {
+            "preset": {
+              "roleId": "member"
+            },
+            "cached": {
+              "playerId": "players"
+            }
+          }
+        },
+        {
+          "key": "setRole",
+          "payload": {
+            "preset": {
+              "roleId": "master"
+            },
+            "cached": {
+              "playerId": "master"
+            }
+          }
+        },
+        {
+          "key": "setRole",
+          "payload": {
+            "preset": {
+              "roleId": "insider"
+            },
+            "cached": {
+              "playerId": "insider"
+            }
+          }
+        },
+        {
+          "key": "showFakeRole",
+          "payload": {
+            "preset": {
+              "roleId": "member"
+            },
+            "cached": {
+              "to": "players",
+              "from": "players"
+            }
+          }
+        },
+        {
+          "key": "showFakeRole",
+          "payload": {
+            "preset": {
+              "roleId": "master"
+            },
+            "cached": {
+              "to": "players",
+              "from": "master"
+            }
+          }
+        },
+        {
+          "key": "showFakeRole",
+          "payload": {
+            "preset": {
+              "roleId": "insider"
+            },
+            "cached": {
+              "to": "insider",
+              "from": "insider"
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "title": "SHOW MASTER",
+          "payload": {
+            "preset": {
+              "image": "master"
+            },
+            "cached": {
+              "to": "players"
+            },
+            "computed": {
+              "header": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
                     "type": "cached",
-                    "value": "redGuides"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "key": "setRole",
-          "payload": {
-            "preset": {
-              "roleId": "red_codemaster"
-            },
-            "cached": {
-              "playerId": "redGuides"
-            }
-          },
-          "saveValueInCache": [
-            {
-              "name": "tutorialRedGuide",
-              "value": {
-                "selector": "greaterThan",
-                "params": [
+                    "value": "isTheNewMaster"
+                  },
                   {
                     "name": "arg1",
                     "type": "computed",
                     "value": {
-                      "selector": "listLength",
+                      "selector": "getPlayerNameById",
                       "params": [
                         {
-                          "name": "list",
+                          "name": "id",
                           "type": "computed",
                           "value": {
-                            "selector": "intersect",
+                            "selector": "selectElement",
                             "params": [
                               {
-                                "name": "list1",
+                                "name": "list",
                                 "type": "cached",
-                                "value": "learners"
+                                "value": "master"
                               },
                               {
-                                "name": "list2",
-                                "type": "cached",
-                                "value": "redGuides"
+                                "name": "index",
+                                "type": "preset",
+                                "value": 0
                               }
                             ]
                           }
                         }
                       ]
                     }
-                  },
-                  {
-                    "name": "arg2",
-                    "type": "preset",
-                    "value": 0
                   }
                 ]
               }
             }
-          ]
-        },
-        {
-          "key": "setRole",
-          "payload": {
-            "preset": {
-              "roleId": "blue_codemaster"
-            },
-            "cached": {
-              "playerId": "blueGuides"
-            }
-          },
-          "saveValueInCache": [
-            {
-              "name": "tutorialBlueGuide",
-              "value": {
-                "selector": "greaterThan",
-                "params": [
-                  {
-                    "name": "arg1",
-                    "type": "computed",
-                    "value": {
-                      "selector": "listLength",
-                      "params": [
-                        {
-                          "name": "list",
-                          "type": "computed",
-                          "value": {
-                            "selector": "intersect",
-                            "params": [
-                              {
-                                "name": "list1",
-                                "type": "cached",
-                                "value": "learners"
-                              },
-                              {
-                                "name": "list2",
-                                "type": "cached",
-                                "value": "blueGuides"
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "name": "arg2",
-                    "type": "preset",
-                    "value": 0
-                  }
-                ]
-              }
-            }
-          ]
+          }
         },
         {
           "key": "animateBox",
           "payload": {
             "preset": {
-              "animation": "spymaster",
-              "delay": 3
+              "animation": "master"
             },
             "cached": {
-              "userIds": "guides"
+              "userIds": "master"
             }
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "Member Reveal",
+      "parallel": {
+        "type": "independent"
+      },
+      "actions": [
         {
-          "key": "emptyAction",
-          "saveValueInCache": [
-            {
-              "name": "restPlayers",
-              "value": {
-                "selector": "shuffleList",
-                "params": [
-                  {
-                    "name": "list",
-                    "type": "computed",
-                    "value": {
-                      "selector": "getPlayersFromTeam",
-                      "params": [
-                        {
-                          "name": "teamId",
-                          "type": "preset",
-                          "value": "all"
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
+          "key": "createNotification",
+          "title": "SHOW MEMBERS",
+          "payload": {
+            "preset": {
+              "image": "commons"
             },
-            {
-              "name": "divideIndex",
-              "value": {
-                "selector": "integerDivide",
+            "cached": {
+              "header": "thisRoundYouAre"
+            },
+            "computed": {
+              "to": {
+                "selector": "listsSubtract",
                 "params": [
                   {
-                    "name": "arg1",
+                    "name": "list1",
+                    "type": "cached",
+                    "value": "players"
+                  },
+                  {
+                    "name": "list2",
                     "type": "computed",
                     "value": {
-                      "selector": "listLength",
+                      "selector": "concat",
                       "params": [
                         {
-                          "name": "list",
+                          "name": "list1",
                           "type": "cached",
-                          "value": "restPlayers"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "name": "arg2",
-                    "type": "preset",
-                    "value": 2
-                  }
-                ]
-              }
-            },
-            {
-              "name": "redTeam",
-              "value": {
-                "selector": "sublist",
-                "params": [
-                  {
-                    "name": "list",
-                    "type": "cached",
-                    "value": "restPlayers"
-                  },
-                  {
-                    "name": "start",
-                    "type": "preset",
-                    "value": 0
-                  },
-                  {
-                    "name": "end",
-                    "type": "cached",
-                    "value": "divideIndex"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "blueTeam",
-              "value": {
-                "selector": "sublist",
-                "params": [
-                  {
-                    "name": "list",
-                    "type": "cached",
-                    "value": "restPlayers"
-                  },
-                  {
-                    "name": "start",
-                    "type": "cached",
-                    "value": "divideIndex"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "key": "setRole",
-          "payload": {
-            "preset": {
-              "roleId": "red_player"
-            },
-            "cached": {
-              "playerId": "redTeam"
-            }
-          }
-        },
-        {
-          "key": "setRole",
-          "payload": {
-            "preset": {
-              "roleId": "blue_player"
-            },
-            "cached": {
-              "playerId": "blueTeam"
-            }
-          }
-        },
-        {
-          "key": "showTeam",
-          "payload": {
-            "cached": {
-              "from": "players",
-              "to": "players"
-            }
-          }
-        },
-        {
-          "key": "showRole",
-          "payload": {
-            "cached": {
-              "to": "players"
-            },
-            "computed": {
-              "from": {
-                "selector": "getPlayersByRole",
-                "params": [
-                  {
-                    "name": "role",
-                    "type": "preset",
-                    "value": "red_codemaster"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "showRole",
-          "payload": {
-            "cached": {
-              "to": "players"
-            },
-            "computed": {
-              "from": {
-                "selector": "getPlayersByRole",
-                "params": [
-                  {
-                    "name": "role",
-                    "type": "preset",
-                    "value": "blue_codemaster"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "showRole",
-          "payload": {
-            "preset": {
-              "to": "spectators"
-            },
-            "cached": {
-              "from": "players"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "Change layout, highlight players",
-      "skipCondition": [
-        {
-          "selector": "greaterThan",
-          "params": [
-            {
-              "name": "arg1",
-              "type": "cached",
-              "value": "gameLoopIndex"
-            },
-            {
-              "name": "arg2",
-              "type": "preset",
-              "value": 0
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "key": "changeLayout",
-          "payload": {
-            "preset": {
-              "type": "HIGHLIGHT",
-              "direction": "VERTICAL"
-            },
-            "computed": {
-              "top": {
-                "selector": "getPlayersFromTeam",
-                "params": [
-                  {
-                    "name": "teamId",
-                    "type": "preset",
-                    "value": "red"
-                  }
-                ]
-              },
-              "bottom": {
-                "selector": "getPlayersFromTeam",
-                "params": [
-                  {
-                    "name": "teamId",
-                    "type": "preset",
-                    "value": "blue"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "highlightPlayers",
-          "payload": {
-            "preset": {
-              "color": "#D83232"
-            },
-            "computed": {
-              "listOfPlayers": {
-                "selector": "getPlayersFromTeam",
-                "params": [
-                  {
-                    "name": "teamId",
-                    "type": "preset",
-                    "value": "red"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "highlightPlayers",
-          "payload": {
-            "preset": {
-              "color": "#4EC1D0"
-            },
-            "computed": {
-              "listOfPlayers": {
-                "selector": "getPlayersFromTeam",
-                "params": [
-                  {
-                    "name": "teamId",
-                    "type": "preset",
-                    "value": "blue"
-                  }
-                ]
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "Team Red chooses 2 clickers",
-      "skipCondition": [
-        {
-          "selector": "greaterThan",
-          "params": [
-            {
-              "name": "arg1",
-              "type": "cached",
-              "value": "gameLoopIndex"
-            },
-            {
-              "name": "arg2",
-              "type": "preset",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "selector": "lessThanOrEqual",
-          "params": [
-            {
-              "name": "arg1",
-              "type": "cached",
-              "value": "numPlayers"
-            },
-            {
-              "name": "arg2",
-              "type": "preset",
-              "value": 12
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "key": "createVote",
-          "payload": {
-            "preset": {
-              "type": "target_poll",
-              "terminationCondition": "get_needed_votes",
-              "neededVotes": 2,
-              "showResultInRealTime": true,
-              "showResultDuration": 3,
-              "duration": 60,
-              "targets": [
-                "ME!"
-              ],
-              "pollVoteTargetsOptions": {
-                "ME!": {
-                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-                  "backgroundColor": "#D3D3D3",
-                  "boxIconColor": "#D3D3D3",
-                  "textColor": "black",
-                  "widgetIconColor": "green"
-                }
-              }
-            },
-            "cached": {
-              "actors": "redTeam",
-              "title": "guidesVoteTitle",
-              "question": "redClickerQuestion"
-            }
-          },
-          "postHandler": "randomSelectNeededVoters",
-          "saveValueInCache": [
-            {
-              "name": "redTeam",
-              "value": {
-                "selector": "getCachedValue",
-                "params": [
-                  {
-                    "name": "name",
-                    "type": "preset",
-                    "value": "lastActionResult"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "key": "setRole",
-          "payload": {
-            "preset": {
-              "roleId": "red"
-            },
-            "computed": {
-              "playerId": {
-                "selector": "listsSubtract",
-                "params": [
-                  {
-                    "name": "list1",
-                    "type": "computed",
-                    "value": {
-                      "selector": "getPlayersByRole",
-                      "params": [
+                          "value": "insider"
+                        },
                         {
-                          "name": "role",
-                          "type": "preset",
-                          "value": "red_player"
+                          "name": "list2",
+                          "type": "cached",
+                          "value": "master"
                         }
                       ]
                     }
-                  },
-                  {
-                    "name": "list2",
-                    "type": "cached",
-                    "value": "redTeam"
                   }
                 ]
               }
-            }
-          }
-        },
-        {
-          "key": "showRole",
-          "payload": {
-            "cached": {
-              "from": "redTeam",
-              "to": "players"
             }
           }
         }
       ]
     },
     {
-      "name": "Team Blue chooses 2 clickers",
-      "skipCondition": [
-        {
-          "selector": "greaterThan",
-          "params": [
-            {
-              "name": "arg1",
-              "type": "cached",
-              "value": "gameLoopIndex"
-            },
-            {
-              "name": "arg2",
-              "type": "preset",
-              "value": 0
-            }
-          ]
-        },
-        {
-          "selector": "lessThanOrEqual",
-          "params": [
-            {
-              "name": "arg1",
-              "type": "cached",
-              "value": "numPlayers"
-            },
-            {
-              "name": "arg2",
-              "type": "preset",
-              "value": 12
-            }
-          ]
-        }
-      ],
+      "name": "Con Artist Reveal",
+      "parallel": {
+        "type": "independent",
+        "isLast": true
+      },
       "actions": [
         {
-          "key": "createVote",
+          "key": "createNotification",
+          "title": "SHOW CON ARTIST",
           "payload": {
             "preset": {
-              "type": "target_poll",
-              "terminationCondition": "get_needed_votes",
-              "neededVotes": 2,
-              "showResultInRealTime": true,
-              "showResultDuration": 3,
-              "duration": 60,
-              "targets": [
-                "ME!"
-              ],
-              "pollVoteTargetsOptions": {
-                "ME!": {
-                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-                  "backgroundColor": "#D3D3D3",
-                  "boxIconColor": "#D3D3D3",
-                  "textColor": "black",
-                  "widgetIconColor": "green"
-                }
-              }
+              "image": "insider"
             },
             "cached": {
-              "actors": "blueTeam",
-              "title": "guidesVoteTitle",
-              "question": "blueClickerQuestion"
-            }
-          },
-          "postHandler": "randomSelectNeededVoters",
-          "saveValueInCache": [
-            {
-              "name": "blueTeam",
-              "value": {
-                "selector": "getCachedValue",
-                "params": [
-                  {
-                    "name": "name",
-                    "type": "preset",
-                    "value": "lastActionResult"
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "key": "setRole",
-          "payload": {
-            "preset": {
-              "roleId": "blue"
+              "to": "insider",
+              "text": "shhhhMembersGetA"
             },
             "computed": {
-              "playerId": {
-                "selector": "listsSubtract",
+              "header": {
+                "selector": "formatString",
                 "params": [
                   {
-                    "name": "list1",
-                    "type": "computed",
-                    "value": {
-                      "selector": "getPlayersByRole",
-                      "params": [
-                        {
-                          "name": "role",
-                          "type": "preset",
-                          "value": "blue_player"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "name": "list2",
+                    "name": "format",
                     "type": "cached",
-                    "value": "blueTeam"
+                    "value": "thisRoundYouAre2"
                   }
                 ]
               }
-            }
-          }
-        },
-        {
-          "key": "showRole",
-          "payload": {
-            "cached": {
-              "from": "blueTeam",
-              "to": "players"
-            }
-          }
-        }
-      ]
-    },
-    {
-      "name": "Create grid",
-      "skipCondition": [
-        {
-          "selector": "greaterThan",
-          "params": [
-            {
-              "name": "arg1",
-              "type": "cached",
-              "value": "gameLoopIndex"
-            },
-            {
-              "name": "arg2",
-              "type": "preset",
-              "value": 0
-            }
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "key": "createCodenames",
-          "payload": {
-            "cached": {
-              "words": "words"
             }
           }
         }
@@ -4301,9 +3742,7 @@
             "preset": {
               "sounds.waitForSoundEnd": true,
               "sounds.list": [
-                "voices.p2",
-                "voices.p3",
-                "voices.p4"
+                "voices.l4"
               ]
             },
             "cached": {
@@ -4317,338 +3756,124 @@
       ]
     },
     {
-      "name": "Red Turn",
-      "turnSpectatorsToPlayers": true,
+      "name": "CHOOSE WORD",
       "actions": [
         {
-          "key": "endClip"
-        },
-        {
-          "key": "animateBox",
-          "payload": {
-            "preset": {
-              "animation": "clue",
-              "delay": 2
-            },
-            "computed": {
-              "userIds": {
-                "selector": "getPlayersByRole",
-                "params": [
-                  {
-                    "name": "role",
-                    "type": "preset",
-                    "value": "red_codemaster"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
           "key": "emptyAction",
-          "payload": {
-            "preset": {
-              "delay": 1
-            }
-          }
-        },
-        {
-          "key": "createNotification",
-          "payload": {
-            "preset": {
-              "duration": 8
-            },
-            "cached": {
-              "to": "players",
-              "image": "redSpyImg"
-            },
-            "computed": {
-              "text": {
-                "selector": "ifElse",
+          "saveValueInCache": [
+            {
+              "name": "threeWords",
+              "value": {
+                "selector": "append",
                 "params": [
                   {
-                    "name": "condition",
+                    "name": "list",
                     "type": "computed",
                     "value": {
-                      "selector": "equals",
-                      "params": [
-                        {
-                          "name": "arg1",
-                          "type": "cached",
-                          "value": "gameLoopIndex"
-                        },
-                        {
-                          "name": "arg2",
-                          "type": "preset",
-                          "value": 0
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "name": "thenValue",
-                    "type": "cached",
-                    "value": "clueRules"
-                  },
-                  {
-                    "name": "elseValue",
-                    "type": "preset",
-                    "value": ""
-                  }
-                ]
-              },
-              "header": {
-                "selector": "formatString",
-                "params": [
-                  {
-                    "name": "format",
-                    "type": "cached",
-                    "value": "clueHeader"
-                  },
-                  {
-                    "name": "arg1",
-                    "type": "computed",
-                    "value": {
-                      "selector": "listToString",
+                      "selector": "randomElementsList",
                       "params": [
                         {
                           "name": "list",
-                          "type": "computed",
-                          "value": {
-                            "selector": "getPlayerNamesByIds",
-                            "params": [
-                              {
-                                "name": "ids",
-                                "type": "computed",
-                                "value": {
-                                  "selector": "getPlayersByRole",
-                                  "params": [
-                                    {
-                                      "name": "role",
-                                      "type": "preset",
-                                      "value": "red_codemaster"
-                                    }
-                                  ]
-                                }
-                              }
-                            ]
-                          }
+                          "type": "cached",
+                          "value": "wordList"
+                        },
+                        {
+                          "name": "length",
+                          "type": "preset",
+                          "value": 3
                         }
                       ]
                     }
+                  },
+                  {
+                    "name": "element",
+                    "type": "preset",
+                    "value": "TYPE MY OWN WORD"
                   }
                 ]
               }
-            }
-          }
-        },
-        {
-          "key": "createConversationGroup",
-          "skipCondition": {
-            "selector": "logicalNOT",
-            "params": [
-              {
-                "name": "arg",
-                "type": "cached",
-                "value": "tutorialRedGuide"
-              }
-            ]
-          },
-          "payload": {
-            "preset": {
-              "video": true,
-              "audio": true,
-              "private": false,
-              "indicator": "💡",
-              "isVideoForAll": false
             },
-            "computed": {
-              "members": {
-                "selector": "getPlayersByRole",
+            {
+              "name": "optionAppearances",
+              "value": {
+                "selector": "createDict",
                 "params": [
                   {
-                    "name": "role",
-                    "type": "preset",
-                    "value": "red_codemaster"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "emptyAction",
-          "skipCondition": {
-            "selector": "isPrevActionSkipped"
-          },
-          "payload": {
-            "preset": {
-              "sounds.waitForSoundEnd": true,
-              "sounds.list": [
-                "voices.p5"
-              ]
-            },
-            "computed": {
-              "playList.0": {
-                "selector": "getPlayersByRole",
-                "params": [
+                    "name": "keys",
+                    "type": "cached",
+                    "value": "threeWords"
+                  },
                   {
-                    "name": "role",
+                    "name": "values",
                     "type": "preset",
-                    "value": "red_codemaster"
+                    "value": [
+                      {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/letter_a.svg",
+                        "backgroundColor": "#93c47d",
+                        "boxIconColor": "#93c47d",
+                        "textColor": "black",
+                        "widgetIconColor": "black"
+                      },
+                      {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/letter_b.svg",
+                        "backgroundColor": "#FFFFCC",
+                        "boxIconColor": "#FFFFCC",
+                        "textColor": "black",
+                        "widgetIconColor": "black"
+                      },
+                      {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/letter_c.svg",
+                        "backgroundColor": "#e1f2fb",
+                        "boxIconColor": "#e1f2fb",
+                        "textColor": "black",
+                        "widgetIconColor": "black"
+                      },
+                      {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/letter_d.svg",
+                        "backgroundColor": "#FFDB99",
+                        "boxIconColor": "#FFDB99",
+                        "textColor": "black",
+                        "widgetIconColor": "black"
+                      }
+                    ]
                   }
                 ]
               }
             }
-          }
+          ]
         },
         {
-          "key": "destroyConversationGroups",
-          "skipCondition": {
-            "selector": "isPrevActionSkipped"
-          }
-        },
-        {
-          "key": "changeBackground",
-          "payload": {
-            "cached": {
-              "image": "redBgImg"
-            }
-          }
-        },
-        {
-          "key": "createConversationGroup",
-          "skipCondition": {
-            "selector": "equals",
-            "params": [
-              {
-                "name": "arg1",
-                "type": "computed",
-                "value": {
-                  "selector": "listLength",
-                  "params": [
-                    {
-                      "name": "list",
-                      "type": "cached",
-                      "value": "redGuides"
-                    }
-                  ]
-                }
-              },
-              {
-                "name": "arg2",
-                "type": "preset",
-                "value": 1
-              }
-            ]
-          },
+          "key": "createVote",
           "payload": {
             "preset": {
-              "video": true,
-              "audio": true,
-              "isVideoForAll": false,
-              "indicator": "🔴"
-            },
-            "computed": {
-              "members": {
-                "selector": "getPlayersByRole",
-                "params": [
-                  {
-                    "name": "role",
-                    "type": "preset",
-                    "value": "red_codemaster"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "emptyAction",
-          "payload": {
-            "preset": {
+              "type": "target_poll",
+              "suppressHistory": true,
+              "hideOptionsFromNonActors": true,
+              "terminationCondition": "get_all_votes",
+              "showResultInRealTime": false,
+              "showResultDuration": 1,
+              "showResultDelay": 0,
+              "duration": 30,
               "sounds.list": [
                 "soundboard.reminder"
-              ],
-              "sounds.waitForSoundEnd": false
-            },
-            "computed": {
-              "playList.0": {
-                "selector": "getPlayersByRole",
-                "params": [
-                  {
-                    "name": "role",
-                    "type": "preset",
-                    "value": "red_codemaster"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "setMasterClue",
-          "payload": {
-            "preset": {
-              "team": "red"
-            },
-            "computed": {
-              "duration": {
-                "selector": "ifElse",
-                "params": [
-                  {
-                    "name": "condition",
-                    "type": "cached",
-                    "value": "firstRound"
-                  },
-                  {
-                    "name": "thenValue",
-                    "type": "cached",
-                    "value": "firstSetClueDuration"
-                  },
-                  {
-                    "name": "elseValue",
-                    "type": "cached",
-                    "value": "nextSetClueDuration"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "startClip",
-          "payload": {
-            "preset": {},
-            "cached": {
-              "title": "redGuessClipTitle"
-            }
-          }
-        },
-        {
-          "key": "createNotification",
-          "payload": {
-            "preset": {
-              "duration": 3,
-              "sounds.list": [
-                "soundboard.red_clue"
               ],
               "sounds.waitForSoundEnd": true
             },
             "cached": {
-              "to": "players",
-              "playList.0": "players",
-              "header": "redGuessHeader",
-              "image": "redImg"
+              "playList.1": "master",
+              "actors": "master",
+              "targets": "threeWords",
+              "pollVoteTargetsOptions": "optionAppearances",
+              "title": "chooseWord"
             },
             "computed": {
-              "text": {
+              "question": {
                 "selector": "formatString",
                 "params": [
                   {
                     "name": "format",
                     "type": "cached",
-                    "value": "clickerText"
+                    "value": "isPickingTheSecret"
                   },
                   {
                     "name": "arg1",
@@ -4665,15 +3890,10 @@
                               {
                                 "name": "ids",
                                 "type": "cached",
-                                "value": "redTeam"
+                                "value": "master"
                               }
                             ]
                           }
-                        },
-                        {
-                          "name": "readable",
-                          "type": "preset",
-                          "value": true
                         }
                       ]
                     }
@@ -4681,199 +3901,86 @@
                 ]
               }
             }
-          }
-        },
-        {
-          "key": "destroyConversationGroups"
-        },
-        {
-          "key": "emptyAction",
-          "payload": {
-            "preset": {
-              "delay": 2
-            }
-          }
-        },
-        {
-          "key": "createConversationGroup",
-          "skipCondition": {
-            "selector": "logicalNOT",
-            "params": [
-              {
-                "name": "arg",
-                "type": "cached",
-                "value": "tutorial"
+          },
+          "postHandler": "randomSelectForOneAnswerTargetVote",
+          "saveValueInCache": [
+            {
+              "name": "word",
+              "value": {
+                "selector": "selectElement",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getCachedValue",
+                      "params": [
+                        {
+                          "name": "name",
+                          "type": "preset",
+                          "value": "lastActionResult"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "index",
+                    "type": "preset",
+                    "value": 0
+                  }
+                ]
               }
-            ]
-          },
-          "payload": {
-            "preset": {
-              "video": true,
-              "audio": true,
-              "private": false,
-              "indicator": "💡",
-              "isVideoForAll": false
-            },
-            "cached": {
-              "members": "learners"
             }
-          }
-        },
-        {
-          "key": "emptyAction",
-          "skipCondition": {
-            "selector": "isPrevActionSkipped"
-          },
-          "payload": {
-            "preset": {
-              "sounds.waitForSoundEnd": true,
-              "sounds.list": [
-                "voices.p6",
-                "voices.p7"
-              ]
-            },
-            "cached": {
-              "playList.0": "learners"
-            }
-          }
-        },
-        {
-          "key": "destroyConversationGroups",
-          "skipCondition": {
-            "selector": "isPrevActionSkipped"
-          }
-        },
-        {
-          "key": "teamTurn",
-          "payload": {
-            "preset": {
-              "team": "red"
-            },
-            "cached": {
-              "duration": "guessDuration"
-            }
-          }
+          ]
         }
-      ],
-      "checkWinCondition": true
+      ]
     },
     {
-      "name": "Blue Turn",
-      "turnSpectatorsToPlayers": true,
+      "name": "Type my own word",
+      "skipCondition": {
+        "selector": "notEqual",
+        "params": [
+          {
+            "name": "arg1",
+            "type": "cached",
+            "value": "word"
+          },
+          {
+            "name": "arg2",
+            "type": "preset",
+            "value": "TYPE MY OWN WORD"
+          }
+        ]
+      },
       "actions": [
-        {
-          "key": "endClip"
-        },
-        {
-          "key": "animateBox",
-          "payload": {
-            "preset": {
-              "animation": "clue",
-              "delay": 2
-            },
-            "computed": {
-              "userIds": {
-                "selector": "getPlayersByRole",
-                "params": [
-                  {
-                    "name": "role",
-                    "type": "preset",
-                    "value": "blue_codemaster"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "emptyAction",
-          "payload": {
-            "preset": {
-              "delay": 1
-            }
-          }
-        },
         {
           "key": "createNotification",
           "payload": {
             "preset": {
-              "duration": 8
+              "duration": 4
             },
             "cached": {
-              "to": "players",
-              "image": "blueSpyImg"
+              "to": "players"
             },
             "computed": {
-              "text": {
-                "selector": "ifElse",
-                "params": [
-                  {
-                    "name": "condition",
-                    "type": "computed",
-                    "value": {
-                      "selector": "equals",
-                      "params": [
-                        {
-                          "name": "arg1",
-                          "type": "cached",
-                          "value": "gameLoopIndex"
-                        },
-                        {
-                          "name": "arg2",
-                          "type": "preset",
-                          "value": 0
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "name": "thenValue",
-                    "type": "cached",
-                    "value": "clueRules"
-                  },
-                  {
-                    "name": "elseValue",
-                    "type": "preset",
-                    "value": ""
-                  }
-                ]
-              },
               "header": {
                 "selector": "formatString",
                 "params": [
                   {
                     "name": "format",
                     "type": "cached",
-                    "value": "clueHeader"
+                    "value": "isTypingAWord"
                   },
                   {
                     "name": "arg1",
                     "type": "computed",
                     "value": {
-                      "selector": "listToString",
+                      "selector": "getPlayerNameById",
                       "params": [
                         {
-                          "name": "list",
-                          "type": "computed",
-                          "value": {
-                            "selector": "getPlayerNamesByIds",
-                            "params": [
-                              {
-                                "name": "ids",
-                                "type": "computed",
-                                "value": {
-                                  "selector": "getPlayersByRole",
-                                  "params": [
-                                    {
-                                      "name": "role",
-                                      "type": "preset",
-                                      "value": "blue_codemaster"
-                                    }
-                                  ]
-                                }
-                              }
-                            ]
-                          }
+                          "name": "id",
+                          "type": "cached",
+                          "value": "master.0"
                         }
                       ]
                     }
@@ -4884,276 +3991,78 @@
           }
         },
         {
-          "key": "createConversationGroup",
-          "skipCondition": {
-            "selector": "logicalNOT",
-            "params": [
-              {
-                "name": "arg",
-                "type": "cached",
-                "value": "tutorialBlueGuide"
-              }
-            ]
-          },
+          "key": "createInput",
           "payload": {
             "preset": {
-              "video": true,
-              "audio": true,
-              "private": false,
-              "indicator": "💡",
-              "isVideoForAll": false
-            },
-            "computed": {
-              "members": {
-                "selector": "getPlayersByRole",
-                "params": [
-                  {
-                    "name": "role",
-                    "type": "preset",
-                    "value": "blue_codemaster"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "emptyAction",
-          "skipCondition": {
-            "selector": "isPrevActionSkipped"
-          },
-          "payload": {
-            "preset": {
-              "sounds.waitForSoundEnd": true,
-              "sounds.list": [
-                "voices.p8"
-              ]
-            },
-            "computed": {
-              "playList.0": {
-                "selector": "getPlayersByRole",
-                "params": [
-                  {
-                    "name": "role",
-                    "type": "preset",
-                    "value": "blue_codemaster"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "destroyConversationGroups",
-          "skipCondition": {
-            "selector": "isPrevActionSkipped"
-          }
-        },
-        {
-          "key": "changeBackground",
-          "payload": {
-            "cached": {
-              "image": "blueBgImg"
-            }
-          }
-        },
-        {
-          "key": "createConversationGroup",
-          "skipCondition": {
-            "selector": "equals",
-            "params": [
-              {
-                "name": "arg1",
-                "type": "computed",
-                "value": {
-                  "selector": "listLength",
-                  "params": [
-                    {
-                      "name": "list",
-                      "type": "cached",
-                      "value": "blueGuides"
-                    }
-                  ]
-                }
-              },
-              {
-                "name": "arg2",
-                "type": "preset",
-                "value": 1
-              }
-            ]
-          },
-          "payload": {
-            "preset": {
-              "video": true,
-              "audio": true,
-              "isVideoForAll": false,
-              "indicator": "🔵"
-            },
-            "computed": {
-              "members": {
-                "selector": "getPlayersByRole",
-                "params": [
-                  {
-                    "name": "role",
-                    "type": "preset",
-                    "value": "blue_codemaster"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "emptyAction",
-          "payload": {
-            "preset": {
+              "type": "text",
+              "terminationCondition": "get_all_values",
+              "scope": "player",
+              "duration": 60,
+              "private": true,
               "sounds.list": [
                 "soundboard.reminder"
-              ],
-              "sounds.waitForSoundEnd": false
-            },
-            "computed": {
-              "playList.0": {
-                "selector": "getPlayersByRole",
-                "params": [
-                  {
-                    "name": "role",
-                    "type": "preset",
-                    "value": "blue_codemaster"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "setMasterClue",
-          "payload": {
-            "preset": {
-              "team": "blue"
-            },
-            "computed": {
-              "duration": {
-                "selector": "ifElse",
-                "params": [
-                  {
-                    "name": "condition",
-                    "type": "cached",
-                    "value": "firstRound"
-                  },
-                  {
-                    "name": "thenValue",
-                    "type": "cached",
-                    "value": "firstSetClueDuration"
-                  },
-                  {
-                    "name": "elseValue",
-                    "type": "cached",
-                    "value": "nextSetClueDuration"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "startClip",
-          "payload": {
-            "preset": {},
-            "cached": {
-              "title": "blueGuessClipTitle"
-            }
-          }
-        },
-        {
-          "key": "createNotification",
-          "payload": {
-            "preset": {
-              "duration": 3,
-              "sounds.list": [
-                "soundboard.blue_clue"
               ],
               "sounds.waitForSoundEnd": true
             },
             "cached": {
-              "to": "players",
-              "playList.0": "players",
-              "header": "blueGuessHeader",
-              "image": "blueImg"
+              "actors": "master",
+              "playList.1": "master",
+              "title": "submitInput"
             },
             "computed": {
-              "text": {
+              "question": {
                 "selector": "formatString",
                 "params": [
                   {
                     "name": "format",
                     "type": "cached",
-                    "value": "clickerText"
+                    "value": "typeAWord"
                   },
                   {
                     "name": "arg1",
                     "type": "computed",
                     "value": {
-                      "selector": "listToString",
+                      "selector": "getPlayerNameById",
                       "params": [
                         {
-                          "name": "list",
-                          "type": "computed",
-                          "value": {
-                            "selector": "getPlayerNamesByIds",
-                            "params": [
-                              {
-                                "name": "ids",
-                                "type": "cached",
-                                "value": "blueTeam"
-                              }
-                            ]
-                          }
-                        },
-                        {
-                          "name": "readable",
-                          "type": "preset",
-                          "value": true
+                          "name": "id",
+                          "type": "cached",
+                          "value": "master.0"
                         }
                       ]
                     }
                   }
                 ]
               }
-            }
-          }
-        },
-        {
-          "key": "destroyConversationGroups"
-        },
-        {
-          "key": "emptyAction",
-          "payload": {
-            "preset": {
-              "delay": 2
-            }
-          }
-        },
-        {
-          "key": "teamTurn",
-          "payload": {
-            "preset": {
-              "team": "blue"
-            },
-            "cached": {
-              "duration": "guessDuration"
             }
           },
           "saveValueInCache": [
             {
-              "name": "firstRound",
-              "value": false
+              "name": "word",
+              "value": {
+                "selector": "getObjectField",
+                "params": [
+                  {
+                    "name": "obj",
+                    "type": "cached",
+                    "value": "lastActionResult"
+                  },
+                  {
+                    "name": "field",
+                    "type": "cached",
+                    "value": "master.0"
+                  },
+                  {
+                    "name": "defaultValue",
+                    "type": "preset",
+                    "value": "spaceship"
+                  }
+                ]
+              }
             }
           ]
         }
-      ],
-      "checkWinCondition": true
+      ]
     },
     {
       "name": "Tutorial Part 3",
@@ -5191,7 +4100,7 @@
             "preset": {
               "sounds.waitForSoundEnd": true,
               "sounds.list": [
-                "voices.p9"
+                "voices.l5"
               ]
             },
             "cached": {
@@ -5201,6 +4110,1250 @@
         },
         {
           "key": "destroyConversationGroups"
+        }
+      ]
+    },
+    {
+      "name": "SHOW WORD",
+      "parallel": {
+        "type": "independent"
+      },
+      "actions": [
+        {
+          "key": "createNotification",
+          "title": "SHOW WORD",
+          "payload": {
+            "computed": {
+              "header": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "cached",
+                    "value": "theWordIs"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "word"
+                  }
+                ]
+              },
+              "to": {
+                "selector": "concat",
+                "params": [
+                  {
+                    "name": "list1",
+                    "type": "cached",
+                    "value": "master"
+                  },
+                  {
+                    "name": "list2",
+                    "type": "cached",
+                    "value": "insider"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "MEMBER ANNOUNCEMENT",
+      "parallel": {
+        "type": "independent",
+        "isLast": true
+      },
+      "actions": [
+        {
+          "key": "createNotification",
+          "title": "MEMBER ANNOUNCEMENT",
+          "payload": {
+            "preset": {
+              "images": [
+                "master",
+                "insider"
+              ]
+            },
+            "cached": {
+              "to": "members",
+              "header": "theMasterAndCon",
+              "text": "areBeingShownThe"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tutorial Part 4",
+      "skipCondition": [
+        {
+          "selector": "logicalNOT",
+          "params": [
+            {
+              "name": "arg",
+              "type": "cached",
+              "value": "tutorial"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "key": "createConversationGroup",
+          "payload": {
+            "preset": {
+              "video": true,
+              "audio": true,
+              "private": false,
+              "indicator": "💡",
+              "isVideoForAll": false
+            },
+            "cached": {
+              "members": "learners"
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "sounds.waitForSoundEnd": true,
+              "sounds.list": [
+                "voices.l6"
+              ]
+            },
+            "cached": {
+              "playList.0": "learners"
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "sounds.waitForSoundEnd": false,
+              "sounds.list": [
+                "voices.l7"
+              ]
+            },
+            "cached": {
+              "playList.0": "learners"
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "title": "MEMBER ANNOUNCEMENT",
+          "payload": {
+            "preset": {
+              "images": [
+                "conArtist"
+              ],
+              "duration": 11
+            },
+            "cached": {
+              "to": "learners",
+              "header": "theGoalOfThe",
+              "text": "isToMakeSure"
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "title": "MEMBER ANNOUNCEMENT",
+          "payload": {
+            "preset": {
+              "duration": 15
+            },
+            "cached": {
+              "to": "learners",
+              "header": "forExample",
+              "text": "ifTheSecretWord"
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "sounds.waitForSoundEnd": true,
+              "sounds.list": [
+                "voices.l8"
+              ]
+            },
+            "cached": {
+              "playList.0": "learners"
+            }
+          }
+        },
+        {
+          "key": "destroyConversationGroups"
+        }
+      ]
+    },
+    {
+      "name": "Start clip",
+      "actions": [
+        {
+          "key": "startClip",
+          "payload": {
+            "computed": {
+              "title": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "cached",
+                    "value": "lexiconRound"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "round"
+                  }
+                ]
+              }
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "round",
+              "value": {
+                "selector": "inc",
+                "params": [
+                  {
+                    "name": "arg",
+                    "type": "cached",
+                    "value": "round"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GUESS WORD",
+      "actions": [
+        {
+          "key": "createNotification",
+          "title": "MEMBER ANNOUNCEMENT",
+          "payload": {
+            "preset": {
+              "duration": 5
+            },
+            "cached": {
+              "to": "players",
+              "text": "clickTheGuessedButton"
+            },
+            "computed": {
+              "header": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "cached",
+                    "value": "aReminder"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "listToString",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "computed",
+                          "value": {
+                            "selector": "getPlayerNamesByIds",
+                            "params": [
+                              {
+                                "name": "ids",
+                                "type": "cached",
+                                "value": "master"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "createVote",
+          "payload": {
+            "preset": {
+              "type": "target_poll",
+              "terminationCondition": "get_all_votes",
+              "showResultInRealTime": true,
+              "showResultDuration": 1,
+              "showResultDelay": 0,
+              "targets": [
+                "GUESSED!"
+              ],
+              "pollVoteTargetsOptions": {
+                "GUESSED!": {
+                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                  "backgroundColor": "#D3D3D3",
+                  "boxIconColor": "#D3D3D3",
+                  "textColor": "black",
+                  "widgetIconColor": "green"
+                }
+              },
+              "duration": 300
+            },
+            "cached": {
+              "actors": "master",
+              "title": "guessWord",
+              "question": "theGroupHas5"
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "guessed",
+              "value": {
+                "selector": "isTargetGotMajority",
+                "params": [
+                  {
+                    "name": "voteResult",
+                    "type": "cached",
+                    "value": "lastActionResult"
+                  },
+                  {
+                    "name": "target",
+                    "type": "preset",
+                    "value": "GUESSED!"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "timeTaken",
+              "value": {
+                "selector": "getRemainingTimer",
+                "params": [
+                  {
+                    "name": "timerId",
+                    "type": "cached",
+                    "value": "lastActionId"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "createNotification",
+          "title": "SHOW WORD",
+          "payload": {
+            "preset": {
+              "sounds.waitForSoundEnd": false
+            },
+            "cached": {
+              "to": "players",
+              "playList.1": "players"
+            },
+            "computed": {
+              "sounds.list": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "cached",
+                    "value": "guessed"
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "preset",
+                    "value": [
+                      "soundboard.success"
+                    ]
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "preset",
+                    "value": [
+                      "soundboard.failure"
+                    ]
+                  }
+                ]
+              },
+              "header": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "cached",
+                    "value": "theWordIs"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "word"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "WORD NOT GUESSED",
+      "skipCondition": [
+        {
+          "selector": "getCachedValue",
+          "params": [
+            {
+              "name": "name",
+              "type": "preset",
+              "value": "guessed"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "key": "createNotification",
+          "title": "NOT GUESSED",
+          "payload": {
+            "cached": {
+              "to": "players",
+              "header": "youDidnTGuess",
+              "text": "everyoneLoses"
+            }
+          }
+        },
+        {
+          "key": "updateScore",
+          "payload": {
+            "computed": {
+              "scores": {
+                "selector": "createItemList",
+                "params": [
+                  {
+                    "name": "length",
+                    "type": "preset",
+                    "value": 1
+                  },
+                  {
+                    "name": "item",
+                    "type": "computed",
+                    "value": {
+                      "selector": "createDict",
+                      "params": [
+                        {
+                          "name": "keys",
+                          "type": "preset",
+                          "value": [
+                            "list",
+                            "delta"
+                          ]
+                        },
+                        {
+                          "name": "values",
+                          "type": "computed",
+                          "value": {
+                            "selector": "createList",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "cached",
+                                "value": "insider"
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": -1
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "animateBox",
+          "payload": {
+            "preset": {
+              "animation": "loser"
+            },
+            "cached": {
+              "userIds": "players"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tutorial Part 5",
+      "skipCondition": [
+        {
+          "selector": "logicalNOT",
+          "params": [
+            {
+              "name": "arg",
+              "type": "cached",
+              "value": "tutorial"
+            }
+          ]
+        },
+        {
+          "selector": "logicalNOT",
+          "params": [
+            {
+              "name": "arg",
+              "type": "cached",
+              "value": "guessed"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "key": "createConversationGroup",
+          "payload": {
+            "preset": {
+              "video": true,
+              "audio": true,
+              "private": false,
+              "indicator": "💡",
+              "isVideoForAll": false
+            },
+            "cached": {
+              "members": "learners"
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "payload": {
+            "preset": {
+              "sounds.waitForSoundEnd": true,
+              "sounds.list": [
+                "voices.l9"
+              ]
+            },
+            "cached": {
+              "playList.0": "learners"
+            }
+          }
+        },
+        {
+          "key": "destroyConversationGroups"
+        }
+      ]
+    },
+    {
+      "name": "WORD GUESSED",
+      "skipCondition": [
+        {
+          "selector": "logicalNOT",
+          "params": [
+            {
+              "name": "arg",
+              "type": "cached",
+              "value": "guessed"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "key": "updateScore",
+          "payload": {
+            "computed": {
+              "scores": {
+                "selector": "createItemList",
+                "params": [
+                  {
+                    "name": "length",
+                    "type": "preset",
+                    "value": 1
+                  },
+                  {
+                    "name": "item",
+                    "type": "computed",
+                    "value": {
+                      "selector": "createDict",
+                      "params": [
+                        {
+                          "name": "keys",
+                          "type": "preset",
+                          "value": [
+                            "list",
+                            "delta"
+                          ]
+                        },
+                        {
+                          "name": "values",
+                          "type": "computed",
+                          "value": {
+                            "selector": "createList",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "cached",
+                                "value": "players"
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "createVote",
+          "payload": {
+            "preset": {
+              "type": "target_point",
+              "terminationCondition": "get_majority",
+              "showResultInRealTime": true,
+              "showResultDuration": 1,
+              "allowRevoting": true,
+              "showResultDelay": 0,
+              "duration": 240
+            },
+            "cached": {
+              "actors": "players",
+              "title": "voteForConArtist",
+              "question": "nowWhoDoYou"
+            },
+            "computed": {
+              "targets": {
+                "selector": "listsSubtract",
+                "params": [
+                  {
+                    "name": "list1",
+                    "type": "cached",
+                    "value": "players"
+                  },
+                  {
+                    "name": "list2",
+                    "type": "cached",
+                    "value": "master"
+                  }
+                ]
+              }
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "playerIsInsider",
+              "value": {
+                "selector": "isTargetGotMajority",
+                "params": [
+                  {
+                    "name": "voteResult",
+                    "type": "cached",
+                    "value": "lastActionResult"
+                  },
+                  {
+                    "name": "target",
+                    "type": "computed",
+                    "value": {
+                      "selector": "selectElement",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "insider"
+                        },
+                        {
+                          "name": "index",
+                          "type": "preset",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "tempResult",
+              "value": {
+                "selector": "append",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getCachedValue",
+                      "params": [
+                        {
+                          "name": "name",
+                          "type": "preset",
+                          "value": "lastActionResult.voteResult"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "element",
+                    "type": "preset",
+                    "value": {
+                      "selector": "selectElement",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "master"
+                        },
+                        {
+                          "name": "index",
+                          "type": "preset",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "chosenPlayer",
+              "value": {
+                "selector": "selectElement",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "cached",
+                    "value": "tempResult"
+                  },
+                  {
+                    "name": "index",
+                    "type": "preset",
+                    "value": 0
+                  }
+                ]
+              }
+            },
+            {
+              "name": "chosenPlayerIsInsider",
+              "value": {
+                "selector": "contains",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "cached",
+                    "value": "insider"
+                  },
+                  {
+                    "name": "element",
+                    "type": "cached",
+                    "value": "chosenPlayer"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "key": "updateScore",
+          "payload": {
+            "computed": {
+              "scores": {
+                "selector": "createItemList",
+                "params": [
+                  {
+                    "name": "length",
+                    "type": "preset",
+                    "value": 1
+                  },
+                  {
+                    "name": "item",
+                    "type": "computed",
+                    "value": {
+                      "selector": "createDict",
+                      "params": [
+                        {
+                          "name": "keys",
+                          "type": "preset",
+                          "value": [
+                            "list",
+                            "delta"
+                          ]
+                        },
+                        {
+                          "name": "values",
+                          "type": "computed",
+                          "value": {
+                            "selector": "createList",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "getVotersByAnswer",
+                                  "params": [
+                                    {
+                                      "name": "voteResult",
+                                      "type": "cached",
+                                      "value": "lastActionResult"
+                                    },
+                                    {
+                                      "name": "answer",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "selectElement",
+                                        "params": [
+                                          {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "insider"
+                                          },
+                                          {
+                                            "name": "index",
+                                            "type": "preset",
+                                            "value": 0
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 1
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "title": "RESULT",
+          "payload": {
+            "preset": {
+              "sounds.waitForSoundEnd": false
+            },
+            "cached": {
+              "to": "players",
+              "playList.1": "players"
+            },
+            "computed": {
+              "sounds.list": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "cached",
+                    "value": "chosenPlayerIsInsider"
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "ifElse",
+                      "params": [
+                        {
+                          "name": "condition",
+                          "type": "cached",
+                          "value": "playerIsInsider"
+                        },
+                        {
+                          "name": "thenValue",
+                          "type": "preset",
+                          "value": [
+                            "soundboard.success"
+                          ]
+                        },
+                        {
+                          "name": "elseValue",
+                          "type": "preset",
+                          "value": [
+                            "soundboard.failure"
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "preset",
+                    "value": [
+                      "soundboard.failure"
+                    ]
+                  }
+                ]
+              },
+              "header": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "cached",
+                    "value": "isTheConArtist"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNameById",
+                      "params": [
+                        {
+                          "name": "id",
+                          "type": "cached",
+                          "value": "chosenPlayer"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "arg2",
+                    "type": "computed",
+                    "value": {
+                      "selector": "ifElse",
+                      "params": [
+                        {
+                          "name": "condition",
+                          "type": "cached",
+                          "value": "chosenPlayerIsInsider"
+                        },
+                        {
+                          "name": "thenValue",
+                          "type": "preset",
+                          "value": ""
+                        },
+                        {
+                          "name": "elseValue",
+                          "type": "preset",
+                          "value": "NOT "
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "text": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "cached",
+                    "value": "chosenPlayerIsInsider"
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "ifElse",
+                      "params": [
+                        {
+                          "name": "condition",
+                          "type": "cached",
+                          "value": "playerIsInsider"
+                        },
+                        {
+                          "name": "thenValue",
+                          "type": "preset",
+                          "value": " And the majority of you voted correctly! The Commons win!"
+                        },
+                        {
+                          "name": "elseValue",
+                          "type": "preset",
+                          "value": "But the majority of you did NOT vote correctly. The Con Artist wins!"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "preset",
+                    "value": "The Con Artist wins!"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "updateScore",
+          "payload": {
+            "computed": {
+              "scores": {
+                "selector": "createItemList",
+                "params": [
+                  {
+                    "name": "length",
+                    "type": "preset",
+                    "value": 1
+                  },
+                  {
+                    "name": "item",
+                    "type": "computed",
+                    "value": {
+                      "selector": "createDict",
+                      "params": [
+                        {
+                          "name": "keys",
+                          "type": "preset",
+                          "value": [
+                            "list",
+                            "delta"
+                          ]
+                        },
+                        {
+                          "name": "values",
+                          "type": "computed",
+                          "value": {
+                            "selector": "createList",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "ifElse",
+                                  "params": [
+                                    {
+                                      "name": "condition",
+                                      "type": "cached",
+                                      "value": "playerIsInsider"
+                                    },
+                                    {
+                                      "name": "thenValue",
+                                      "type": "computed",
+                                      "value": {
+                                        "selector": "concat",
+                                        "params": [
+                                          {
+                                            "name": "list1",
+                                            "type": "cached",
+                                            "value": "master"
+                                          },
+                                          {
+                                            "name": "list2",
+                                            "type": "cached",
+                                            "value": "members"
+                                          }
+                                        ]
+                                      }
+                                    },
+                                    {
+                                      "name": "elseValue",
+                                      "type": "cached",
+                                      "value": "insider"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "ifElse",
+                                  "params": [
+                                    {
+                                      "name": "condition",
+                                      "type": "cached",
+                                      "value": "playerIsInsider"
+                                    },
+                                    {
+                                      "name": "thenValue",
+                                      "type": "preset",
+                                      "value": 1
+                                    },
+                                    {
+                                      "name": "elseValue",
+                                      "type": "preset",
+                                      "value": 2
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "animateBox",
+          "payload": {
+            "preset": {
+              "animation": "winner"
+            },
+            "computed": {
+              "userIds": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "cached",
+                    "value": "playerIsInsider"
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "concat",
+                      "params": [
+                        {
+                          "name": "list1",
+                          "type": "cached",
+                          "value": "master"
+                        },
+                        {
+                          "name": "list2",
+                          "type": "cached",
+                          "value": "members"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "cached",
+                    "value": "insider"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "currentMinScore",
+              "value": {
+                "selector": "getPlayerScore",
+                "params": [
+                  {
+                    "name": "playerId",
+                    "type": "computed",
+                    "value": {
+                      "selector": "randomElement",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "computed",
+                          "value": {
+                            "selector": "getPlayersWithMinScore"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reveal Con Artist",
+      "actions": [
+        {
+          "key": "createNotification",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "playerIsInsider"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "image": "insider",
+              "sounds.waitForSoundEnd": false,
+              "sounds.list": [
+                "soundboard.insider"
+              ]
+            },
+            "cached": {
+              "to": "players",
+              "playList.1": "players"
+            },
+            "computed": {
+              "header": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "cached",
+                    "value": "isTheRealCon"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "listToString",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "computed",
+                          "value": {
+                            "selector": "getPlayerNamesByIds",
+                            "params": [
+                              {
+                                "name": "ids",
+                                "type": "cached",
+                                "value": "insider"
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "showFakeRole",
+          "payload": {
+            "preset": {
+              "roleId": "insider"
+            },
+            "cached": {
+              "to": "players",
+              "from": "insider"
+            }
+          }
         },
         {
           "key": "emptyAction",
@@ -5208,68 +5361,173 @@
             {
               "name": "tutorial",
               "value": false
-            },
-            {
-              "name": "tutorialRedGuide",
-              "value": false
-            },
-            {
-              "name": "tutorialBlueGuide",
-              "value": false
             }
           ]
         }
       ]
-    }
-  ],
-  "winCondition": {
-    "Red": {
-      "selector": "equals",
-      "params": [
+    },
+    {
+      "name": "PLAY AGAIN?",
+      "skipCondition": [
         {
-          "name": "arg1",
-          "type": "computed",
-          "value": {
-            "selector": "getCodenamesWinner"
-          }
-        },
+          "selector": "notEqual",
+          "params": [
+            {
+              "name": "arg1",
+              "type": "computed",
+              "value": {
+                "selector": "remainder",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "gameLoopIndex"
+                  },
+                  {
+                    "name": "arg2",
+                    "type": "cached",
+                    "value": "numPlayers"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "arg2",
+              "type": "computed",
+              "value": {
+                "selector": "dec",
+                "params": [
+                  {
+                    "name": "arg",
+                    "type": "cached",
+                    "value": "numPlayers"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "actions": [
         {
-          "name": "arg2",
-          "type": "preset",
-          "value": "red"
+          "key": "createVote",
+          "payload": {
+            "preset": {
+              "type": "binary",
+              "terminationCondition": "get_majority",
+              "showResultInRealTime": true,
+              "showResultDuration": 1,
+              "showResultDelay": 0,
+              "binaryAnswerAliases": [
+                "HELL YEAH!",
+                "I'M SO DONE"
+              ],
+              "pollVoteTargetsOptions": {
+                "HELL YEAH!": {
+                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                  "backgroundColor": "#D3D3D3",
+                  "boxIconColor": "#D3D3D3",
+                  "textColor": "black",
+                  "widgetIconColor": "green"
+                },
+                "I'M SO DONE": {
+                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+                  "backgroundColor": "#D3D3D3",
+                  "boxIconColor": "#D3D3D3",
+                  "textColor": "black",
+                  "widgetIconColor": "red"
+                }
+              },
+              "duration": 300,
+              "allowRevoting": true
+            },
+            "cached": {
+              "actors": "players",
+              "title": "playAgain",
+              "question": "wouldYouLikeTo"
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "playAgain",
+              "value": {
+                "selector": "isTargetGotMajority",
+                "params": [
+                  {
+                    "name": "voteResult",
+                    "type": "cached",
+                    "value": "lastActionResult"
+                  },
+                  {
+                    "name": "target",
+                    "type": "preset",
+                    "value": "HELL YEAH!"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "roundNumber",
+              "value": {
+                "selector": "inc",
+                "params": [
+                  {
+                    "name": "arg",
+                    "type": "cached",
+                    "value": "roundNumber"
+                  }
+                ]
+              }
+            }
+          ]
         }
       ]
     },
-    "Blue": {
-      "selector": "equals",
+    {
+      "name": "END GAME",
+      "actions": [],
+      "checkWinCondition": true
+    },
+    {
+      "name": "End Clip",
+      "actions": [
+        {
+          "key": "endClip"
+        }
+      ]
+    }
+  ],
+  "playersWinCondition": {
+    "gameOverCondition": {
+      "selector": "logicalNOT",
       "params": [
         {
-          "name": "arg1",
+          "name": "arg",
+          "type": "cached",
+          "value": "playAgain"
+        }
+      ]
+    },
+    "winners": {
+      "selector": "getPlayerNamesByIds",
+      "params": [
+        {
+          "name": "ids",
           "type": "computed",
           "value": {
-            "selector": "getCodenamesWinner"
+            "selector": "getPlayersWithMaxScore"
           }
-        },
-        {
-          "name": "arg2",
-          "type": "preset",
-          "value": "blue"
         }
       ]
     }
   },
   "postGameActions": [
     {
-      "key": "changeBackground",
-      "payload": {
-        "cached": {
-          "image": "bgImg"
-        }
-      }
-    },
-    {
       "key": "createNotification",
       "payload": {
+        "preset": {
+          "image": "insider"
+        },
         "cached": {
           "to": "players"
         },
@@ -5280,46 +5538,61 @@
               {
                 "name": "format",
                 "type": "cached",
-                "value": "winHeader"
+                "value": "str"
               },
               {
                 "name": "arg1",
                 "type": "cached",
                 "value": "winner"
-              }
-            ]
-          },
-          "image": {
-            "selector": "ifElse",
-            "params": [
+              },
               {
-                "name": "condition",
+                "name": "arg2",
                 "type": "computed",
                 "value": {
-                  "selector": "equals",
+                  "selector": "ifElse",
                   "params": [
                     {
-                      "name": "arg1",
-                      "type": "cached",
-                      "value": "winner"
+                      "name": "condition",
+                      "type": "computed",
+                      "value": {
+                        "selector": "equals",
+                        "params": [
+                          {
+                            "name": "arg1",
+                            "type": "computed",
+                            "value": {
+                              "selector": "listLength",
+                              "params": [
+                                {
+                                  "name": "list",
+                                  "type": "computed",
+                                  "value": {
+                                    "selector": "getPlayersWithMaxScore"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "name": "arg2",
+                            "type": "preset",
+                            "value": 1
+                          }
+                        ]
+                      }
                     },
                     {
-                      "name": "arg2",
+                      "name": "thenValue",
                       "type": "preset",
-                      "value": "Red"
+                      "value": "wins"
+                    },
+                    {
+                      "name": "elseValue",
+                      "type": "preset",
+                      "value": "share the win"
                     }
                   ]
                 }
-              },
-              {
-                "name": "thenValue",
-                "type": "cached",
-                "value": "redImg"
-              },
-              {
-                "name": "elseValue",
-                "type": "cached",
-                "value": "blueImg"
               }
             ]
           }

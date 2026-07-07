@@ -454,10 +454,22 @@ class Validator:
         # Pre-pass: collect every variable name ever written to cache so we can
         # validate cached references in the main walk.
         self.cache_vars = self._collect_cache_names(self.data) | BUILTIN_CACHE_VARS
+        # Also treat names the engine loads into cache from gameInitOptions
+        # BEFORE the game loop runs as valid cached references: configVariables
+        # (host config step) and strings variants (the chosen variant's variables
+        # are written to cache at game start). These never appear in a
+        # saveValueInCache entry but are legitimate cached references.
+        init_names, init_types = self._collect_gameinit_cache_names()
+        self.cache_vars |= init_names
         # Pre-pass: classify each cache name as 'list' / 'scalar' / 'unknown'
         # by inspecting the right-hand side of each saveValueInCache entry.
         self.cache_types: dict = {}
         self._collect_cache_types(self.data, self.cache_types)
+        for name, shape in init_types.items():
+            if name in self.cache_types and self.cache_types[name] != shape:
+                self.cache_types[name] = "unknown"
+            else:
+                self.cache_types.setdefault(name, shape)
         self._walk(self.data, "")
         self._check_toplevel_patterns()
         return self.errors, self.warnings
@@ -577,6 +589,35 @@ class Validator:
         if isinstance(obj, list):
             return [Validator._strip_cosmetic(i) for i in obj]
         return obj
+
+    @staticmethod
+    def _strip_tutorial_hoistable(payload: Any) -> Any:
+        """Normalize a tutorial createMixVote payload for reference comparison.
+
+        On top of stripping cosmetic colors, this neutralizes the two pieces of
+        user-facing copy that games are now allowed to hoist into
+        gameInitOptions.strings (see the strings/variants feature): the widget
+        `title` and the `question` formatString's `format` template. Whether a
+        game keeps them inline (preset/computed literals) or references a cached
+        strings var, both forms reduce to the same skeleton here — so the
+        MECHANICS of the tutorial vote are still compared verbatim against
+        emeralds while the copy is free to be themed per variant."""
+        p = Validator._strip_cosmetic(payload)
+        if not isinstance(p, dict):
+            return p
+        # 1. Drop `title` wherever it lives (preset when inline, cached when hoisted).
+        for sect in ("preset", "cached", "computed"):
+            if isinstance(p.get(sect), dict):
+                p[sect].pop("title", None)
+        # 2. Blank the question formatString's `format` param (its value AND type,
+        #    since hoisting flips it from preset literal to cached reference).
+        question = (p.get("computed") or {}).get("question")
+        if isinstance(question, dict) and question.get("selector") == "formatString":
+            for prm in question.get("params", []):
+                if isinstance(prm, dict) and prm.get("name") == "format":
+                    prm["type"] = "<hoistable>"
+                    prm["value"] = "<hoistable>"
+        return p
 
     @staticmethod
     def _refs_vote_result(obj: Any) -> bool:
@@ -2081,8 +2122,8 @@ class Validator:
         if ref_data:
             ref = self._find_tutorial_vote_in(ref_data)
             if ref is not None:
-                payload_ok = (self._strip_cosmetic(tutorial_vote.get("payload")) ==
-                              self._strip_cosmetic(ref.get("payload")))
+                payload_ok = (self._strip_tutorial_hoistable(tutorial_vote.get("payload")) ==
+                              self._strip_tutorial_hoistable(ref.get("payload")))
                 ref_svc = ref.get("saveValueInCache", [])
                 actual_svc = tutorial_vote.get("saveValueInCache", [])
                 svc_ok = actual_svc[:len(ref_svc)] == ref_svc
@@ -2239,6 +2280,46 @@ class Validator:
         if isinstance(v, list):
             return all(Validator._is_preset_value(item) for item in v)
         return False
+
+    def _collect_gameinit_cache_names(self) -> tuple:
+        """Names the engine writes into cache from gameInitOptions before the game
+        loop runs, so they are valid cached references without a saveValueInCache:
+          - configVariables[].name  → host-config values (scalars)
+          - strings[<variant>][<var>] → the chosen variant's strings (Android
+            strings.xml-style). At game start the host picks a variant and every
+            variable in strings[variant] is written to cache under its var name.
+        Returns (names:set, types:dict[name -> 'list'|'scalar'|'unknown'])."""
+        names: set = set()
+        types: dict = {}
+        if not isinstance(self.data, dict):
+            return names, types
+        gio = self.data.get("gameInitOptions")
+        if not isinstance(gio, dict):
+            return names, types
+        cfg = gio.get("configVariables")
+        if isinstance(cfg, list):
+            for entry in cfg:
+                if isinstance(entry, dict) and isinstance(entry.get("name"), str):
+                    root = entry["name"].split(".")[0]
+                    names.add(root)
+                    types[root] = "scalar"
+        strings = gio.get("strings")
+        if isinstance(strings, dict):
+            for variant, mapping in strings.items():
+                if not isinstance(mapping, dict):
+                    continue
+                for vname, val in mapping.items():
+                    if not isinstance(vname, str):
+                        continue
+                    root = vname.split(".")[0]
+                    names.add(root)
+                    shape = "list" if isinstance(val, list) else (
+                        "scalar" if isinstance(val, (str, int, float, bool)) else "unknown")
+                    if root in types and types[root] != shape:
+                        types[root] = "unknown"
+                    else:
+                        types.setdefault(root, shape)
+        return names, types
 
     def _collect_cache_names(self, obj: Any) -> set:
         """Walk the whole document and collect every name saved via saveValueInCache."""

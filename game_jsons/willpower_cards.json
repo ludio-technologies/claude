@@ -540,6 +540,546 @@
       "suit": "sips",
       "rank": 12,
       "weight": 412
+    },
+    {
+      "name": "li_sweets_1",
+      "label": "Grafting 1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sweets_1.png",
+      "type": "sweets",
+      "suit": "sweets",
+      "rank": 1,
+      "weight": 1
+    },
+    {
+      "name": "li_sweets_2",
+      "label": "Grafting 2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sweets_2.png",
+      "type": "sweets",
+      "suit": "sweets",
+      "rank": 2,
+      "weight": 2
+    },
+    {
+      "name": "li_sweets_3",
+      "label": "Grafting 3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sweets_3.png",
+      "type": "sweets",
+      "suit": "sweets",
+      "rank": 3,
+      "weight": 3
+    },
+    {
+      "name": "li_sweets_4",
+      "label": "Grafting 4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sweets_4.png",
+      "type": "sweets",
+      "suit": "sweets",
+      "rank": 4,
+      "weight": 4
+    },
+    {
+      "name": "li_sweets_5",
+      "label": "Grafting 5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sweets_5.png",
+      "type": "sweets",
+      "suit": "sweets",
+      "rank": 5,
+      "weight": 5
+    },
+    {
+      "name": "li_sweets_6",
+      "label": "Grafting 6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sweets_6.png",
+      "type": "sweets",
+      "suit": "sweets",
+      "rank": 6,
+      "weight": 6
+    },
+    {
+      "name": "li_sweets_7",
+      "label": "Grafting 7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sweets_7.png",
+      "type": "sweets",
+      "suit": "sweets",
+      "rank": 7,
+      "weight": 7
+    },
+    {
+      "name": "li_sweets_8",
+      "label": "Grafting 8",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sweets_8.png",
+      "type": "sweets",
+      "suit": "sweets",
+      "rank": 8,
+      "weight": 8
+    },
+    {
+      "name": "li_sweets_9",
+      "label": "Grafting 9",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sweets_9.png",
+      "type": "sweets",
+      "suit": "sweets",
+      "rank": 9,
+      "weight": 9
+    },
+    {
+      "name": "li_sweets_10",
+      "label": "Grafting 10",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sweets_10.png",
+      "type": "sweets",
+      "suit": "sweets",
+      "rank": 10,
+      "weight": 10
+    },
+    {
+      "name": "li_sweets_11",
+      "label": "Grafting 11",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sweets_11.png",
+      "type": "sweets",
+      "suit": "sweets",
+      "rank": 11,
+      "weight": 11
+    },
+    {
+      "name": "li_sweets_12",
+      "label": "Grafting 12",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sweets_12.png",
+      "type": "sweets",
+      "suit": "sweets",
+      "rank": 12,
+      "weight": 12
+    },
+    {
+      "name": "li_scroll_1",
+      "label": "Texting 1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/scroll_1.png",
+      "type": "scroll",
+      "suit": "scroll",
+      "rank": 1,
+      "weight": 101
+    },
+    {
+      "name": "li_scroll_2",
+      "label": "Texting 2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/scroll_2.png",
+      "type": "scroll",
+      "suit": "scroll",
+      "rank": 2,
+      "weight": 102
+    },
+    {
+      "name": "li_scroll_3",
+      "label": "Texting 3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/scroll_3.png",
+      "type": "scroll",
+      "suit": "scroll",
+      "rank": 3,
+      "weight": 103
+    },
+    {
+      "name": "li_scroll_4",
+      "label": "Texting 4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/scroll_4.png",
+      "type": "scroll",
+      "suit": "scroll",
+      "rank": 4,
+      "weight": 104
+    },
+    {
+      "name": "li_scroll_5",
+      "label": "Texting 5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/scroll_5.png",
+      "type": "scroll",
+      "suit": "scroll",
+      "rank": 5,
+      "weight": 105
+    },
+    {
+      "name": "li_scroll_6",
+      "label": "Texting 6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/scroll_6.png",
+      "type": "scroll",
+      "suit": "scroll",
+      "rank": 6,
+      "weight": 106
+    },
+    {
+      "name": "li_scroll_7",
+      "label": "Texting 7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/scroll_7.png",
+      "type": "scroll",
+      "suit": "scroll",
+      "rank": 7,
+      "weight": 107
+    },
+    {
+      "name": "li_scroll_8",
+      "label": "Texting 8",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/scroll_8.png",
+      "type": "scroll",
+      "suit": "scroll",
+      "rank": 8,
+      "weight": 108
+    },
+    {
+      "name": "li_scroll_9",
+      "label": "Texting 9",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/scroll_9.png",
+      "type": "scroll",
+      "suit": "scroll",
+      "rank": 9,
+      "weight": 109
+    },
+    {
+      "name": "li_scroll_10",
+      "label": "Texting 10",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/scroll_10.png",
+      "type": "scroll",
+      "suit": "scroll",
+      "rank": 10,
+      "weight": 110
+    },
+    {
+      "name": "li_scroll_11",
+      "label": "Texting 11",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/scroll_11.png",
+      "type": "scroll",
+      "suit": "scroll",
+      "rank": 11,
+      "weight": 111
+    },
+    {
+      "name": "li_scroll_12",
+      "label": "Texting 12",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/scroll_12.png",
+      "type": "scroll",
+      "suit": "scroll",
+      "rank": 12,
+      "weight": 112
+    },
+    {
+      "name": "li_splurge_1",
+      "label": "Bombshells 1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/splurge_1.png",
+      "type": "splurge",
+      "suit": "splurge",
+      "rank": 1,
+      "weight": 201
+    },
+    {
+      "name": "li_splurge_2",
+      "label": "Bombshells 2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/splurge_2.png",
+      "type": "splurge",
+      "suit": "splurge",
+      "rank": 2,
+      "weight": 202
+    },
+    {
+      "name": "li_splurge_3",
+      "label": "Bombshells 3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/splurge_3.png",
+      "type": "splurge",
+      "suit": "splurge",
+      "rank": 3,
+      "weight": 203
+    },
+    {
+      "name": "li_splurge_4",
+      "label": "Bombshells 4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/splurge_4.png",
+      "type": "splurge",
+      "suit": "splurge",
+      "rank": 4,
+      "weight": 204
+    },
+    {
+      "name": "li_splurge_5",
+      "label": "Bombshells 5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/splurge_5.png",
+      "type": "splurge",
+      "suit": "splurge",
+      "rank": 5,
+      "weight": 205
+    },
+    {
+      "name": "li_splurge_6",
+      "label": "Bombshells 6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/splurge_6.png",
+      "type": "splurge",
+      "suit": "splurge",
+      "rank": 6,
+      "weight": 206
+    },
+    {
+      "name": "li_splurge_7",
+      "label": "Bombshells 7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/splurge_7.png",
+      "type": "splurge",
+      "suit": "splurge",
+      "rank": 7,
+      "weight": 207
+    },
+    {
+      "name": "li_splurge_8",
+      "label": "Bombshells 8",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/splurge_8.png",
+      "type": "splurge",
+      "suit": "splurge",
+      "rank": 8,
+      "weight": 208
+    },
+    {
+      "name": "li_splurge_9",
+      "label": "Bombshells 9",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/splurge_9.png",
+      "type": "splurge",
+      "suit": "splurge",
+      "rank": 9,
+      "weight": 209
+    },
+    {
+      "name": "li_splurge_10",
+      "label": "Bombshells 10",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/splurge_10.png",
+      "type": "splurge",
+      "suit": "splurge",
+      "rank": 10,
+      "weight": 210
+    },
+    {
+      "name": "li_splurge_11",
+      "label": "Bombshells 11",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/splurge_11.png",
+      "type": "splurge",
+      "suit": "splurge",
+      "rank": 11,
+      "weight": 211
+    },
+    {
+      "name": "li_splurge_12",
+      "label": "Bombshells 12",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/splurge_12.png",
+      "type": "splurge",
+      "suit": "splurge",
+      "rank": 12,
+      "weight": 212
+    },
+    {
+      "name": "li_lounge_1",
+      "label": "Sunbathing 1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/lounge_1.png",
+      "type": "lounge",
+      "suit": "lounge",
+      "rank": 1,
+      "weight": 301
+    },
+    {
+      "name": "li_lounge_2",
+      "label": "Sunbathing 2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/lounge_2.png",
+      "type": "lounge",
+      "suit": "lounge",
+      "rank": 2,
+      "weight": 302
+    },
+    {
+      "name": "li_lounge_3",
+      "label": "Sunbathing 3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/lounge_3.png",
+      "type": "lounge",
+      "suit": "lounge",
+      "rank": 3,
+      "weight": 303
+    },
+    {
+      "name": "li_lounge_4",
+      "label": "Sunbathing 4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/lounge_4.png",
+      "type": "lounge",
+      "suit": "lounge",
+      "rank": 4,
+      "weight": 304
+    },
+    {
+      "name": "li_lounge_5",
+      "label": "Sunbathing 5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/lounge_5.png",
+      "type": "lounge",
+      "suit": "lounge",
+      "rank": 5,
+      "weight": 305
+    },
+    {
+      "name": "li_lounge_6",
+      "label": "Sunbathing 6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/lounge_6.png",
+      "type": "lounge",
+      "suit": "lounge",
+      "rank": 6,
+      "weight": 306
+    },
+    {
+      "name": "li_lounge_7",
+      "label": "Sunbathing 7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/lounge_7.png",
+      "type": "lounge",
+      "suit": "lounge",
+      "rank": 7,
+      "weight": 307
+    },
+    {
+      "name": "li_lounge_8",
+      "label": "Sunbathing 8",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/lounge_8.png",
+      "type": "lounge",
+      "suit": "lounge",
+      "rank": 8,
+      "weight": 308
+    },
+    {
+      "name": "li_lounge_9",
+      "label": "Sunbathing 9",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/lounge_9.png",
+      "type": "lounge",
+      "suit": "lounge",
+      "rank": 9,
+      "weight": 309
+    },
+    {
+      "name": "li_lounge_10",
+      "label": "Sunbathing 10",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/lounge_10.png",
+      "type": "lounge",
+      "suit": "lounge",
+      "rank": 10,
+      "weight": 310
+    },
+    {
+      "name": "li_lounge_11",
+      "label": "Sunbathing 11",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/lounge_11.png",
+      "type": "lounge",
+      "suit": "lounge",
+      "rank": 11,
+      "weight": 311
+    },
+    {
+      "name": "li_lounge_12",
+      "label": "Sunbathing 12",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/lounge_12.png",
+      "type": "lounge",
+      "suit": "lounge",
+      "rank": 12,
+      "weight": 312
+    },
+    {
+      "name": "li_sips_1",
+      "label": "Cocktails 1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sips_1.png",
+      "type": "sips",
+      "suit": "sips",
+      "rank": 1,
+      "weight": 401
+    },
+    {
+      "name": "li_sips_2",
+      "label": "Cocktails 2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sips_2.png",
+      "type": "sips",
+      "suit": "sips",
+      "rank": 2,
+      "weight": 402
+    },
+    {
+      "name": "li_sips_3",
+      "label": "Cocktails 3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sips_3.png",
+      "type": "sips",
+      "suit": "sips",
+      "rank": 3,
+      "weight": 403
+    },
+    {
+      "name": "li_sips_4",
+      "label": "Cocktails 4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sips_4.png",
+      "type": "sips",
+      "suit": "sips",
+      "rank": 4,
+      "weight": 404
+    },
+    {
+      "name": "li_sips_5",
+      "label": "Cocktails 5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sips_5.png",
+      "type": "sips",
+      "suit": "sips",
+      "rank": 5,
+      "weight": 405
+    },
+    {
+      "name": "li_sips_6",
+      "label": "Cocktails 6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sips_6.png",
+      "type": "sips",
+      "suit": "sips",
+      "rank": 6,
+      "weight": 406
+    },
+    {
+      "name": "li_sips_7",
+      "label": "Cocktails 7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sips_7.png",
+      "type": "sips",
+      "suit": "sips",
+      "rank": 7,
+      "weight": 407
+    },
+    {
+      "name": "li_sips_8",
+      "label": "Cocktails 8",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sips_8.png",
+      "type": "sips",
+      "suit": "sips",
+      "rank": 8,
+      "weight": 408
+    },
+    {
+      "name": "li_sips_9",
+      "label": "Cocktails 9",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sips_9.png",
+      "type": "sips",
+      "suit": "sips",
+      "rank": 9,
+      "weight": 409
+    },
+    {
+      "name": "li_sips_10",
+      "label": "Cocktails 10",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sips_10.png",
+      "type": "sips",
+      "suit": "sips",
+      "rank": 10,
+      "weight": 410
+    },
+    {
+      "name": "li_sips_11",
+      "label": "Cocktails 11",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sips_11.png",
+      "type": "sips",
+      "suit": "sips",
+      "rank": 11,
+      "weight": 411
+    },
+    {
+      "name": "li_sips_12",
+      "label": "Cocktails 12",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/willpower/love_island/sips_12.png",
+      "type": "sips",
+      "suit": "sips",
+      "rank": 12,
+      "weight": 412
     }
   ],
   "sets": {
@@ -604,6 +1144,68 @@
       "sips_10": 1,
       "sips_11": 1,
       "sips_12": 1
+    },
+    "Love Island": {
+      "li_sweets_1": 1,
+      "li_sweets_2": 1,
+      "li_sweets_3": 1,
+      "li_sweets_4": 1,
+      "li_sweets_5": 1,
+      "li_sweets_6": 1,
+      "li_sweets_7": 1,
+      "li_sweets_8": 1,
+      "li_sweets_9": 1,
+      "li_sweets_10": 1,
+      "li_sweets_11": 1,
+      "li_sweets_12": 1,
+      "li_scroll_1": 1,
+      "li_scroll_2": 1,
+      "li_scroll_3": 1,
+      "li_scroll_4": 1,
+      "li_scroll_5": 1,
+      "li_scroll_6": 1,
+      "li_scroll_7": 1,
+      "li_scroll_8": 1,
+      "li_scroll_9": 1,
+      "li_scroll_10": 1,
+      "li_scroll_11": 1,
+      "li_scroll_12": 1,
+      "li_splurge_1": 1,
+      "li_splurge_2": 1,
+      "li_splurge_3": 1,
+      "li_splurge_4": 1,
+      "li_splurge_5": 1,
+      "li_splurge_6": 1,
+      "li_splurge_7": 1,
+      "li_splurge_8": 1,
+      "li_splurge_9": 1,
+      "li_splurge_10": 1,
+      "li_splurge_11": 1,
+      "li_splurge_12": 1,
+      "li_lounge_1": 1,
+      "li_lounge_2": 1,
+      "li_lounge_3": 1,
+      "li_lounge_4": 1,
+      "li_lounge_5": 1,
+      "li_lounge_6": 1,
+      "li_lounge_7": 1,
+      "li_lounge_8": 1,
+      "li_lounge_9": 1,
+      "li_lounge_10": 1,
+      "li_lounge_11": 1,
+      "li_lounge_12": 1,
+      "li_sips_1": 1,
+      "li_sips_2": 1,
+      "li_sips_3": 1,
+      "li_sips_4": 1,
+      "li_sips_5": 1,
+      "li_sips_6": 1,
+      "li_sips_7": 1,
+      "li_sips_8": 1,
+      "li_sips_9": 1,
+      "li_sips_10": 1,
+      "li_sips_11": 1,
+      "li_sips_12": 1
     }
   }
 }
