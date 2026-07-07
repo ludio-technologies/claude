@@ -1063,11 +1063,11 @@
                 {
                     "name": "categoryMapping",
                     "value": {
-                        "World Cup wonders": "round1Questions",
-                        "Emoji titles": "round2Questions",
-                        "Fictional Locations": "round3Questions",
-                        "Here comes the sun": "round4Questions",
-                        "Who's on the money": "round5Questions"
+                        "James Bond": "round1Questions",
+                        "Cars on screen": "round2Questions",
+                        "Harry Potter": "round3Questions",
+                        "Pop music since 2000": "round4Questions",
+                        "Bean There Done That": "round5Questions"
                     }
                 },
                 {
@@ -1141,54 +1141,54 @@
                     "name": "round1Questions",
                     "value": [
                         {
-                            "q": "Name this tournament's official emblem.",
-                            "answer": "2026 World Cup logo",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_1.jpg"
+                            "q": "Name this Bond film — the very first in the series (1962).",
+                            "answer": "Dr. No",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/bond_1.jpg"
                         },
                         {
-                            "q": "Name the USA's official mascot for the 2026 World Cup.",
-                            "answer": "Clutch (bald eagle)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_2.jpg"
+                            "q": "Name this 1979 Bond film that sends 007 into outer space.",
+                            "answer": "Moonraker",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/bond_2.jpg"
                         },
                         {
-                            "q": "Name the official Adidas match ball of the 2026 World Cup.",
-                            "answer": "Trionda",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_3.jpg"
+                            "q": "Name this 1977 Roger Moore Bond film — its white Lotus turns into a submarine.",
+                            "answer": "The Spy Who Loved Me",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/bond_3.jpg"
                         },
                         {
-                            "q": "Name this New Jersey stadium hosting the 2026 World Cup final.",
-                            "answer": "MetLife Stadium",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_4.jpg"
+                            "q": "Name this 1995 film, Pierce Brosnan's debut as Bond (it opens with a huge dam bungee jump).",
+                            "answer": "GoldenEye",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/bond_4.jpg"
                         },
                         {
-                            "q": "What national team are these players from?",
-                            "answer": "Croatia",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_5.jpg"
+                            "q": "Name this 2012 Bond film set partly in the Scottish Highlands.",
+                            "answer": "Skyfall",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/bond_5.jpg"
                         },
                         {
-                            "q": "Name this player — captain of the defending champions.",
-                            "answer": "Lionel Messi",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_6.jpg"
+                            "q": "Name this 2006 film that rebooted the series with Daniel Craig.",
+                            "answer": "Casino Royale",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/bond_6.jpg"
                         },
                         {
-                            "q": "Name this USA captain and star.",
-                            "answer": "Christian Pulisic",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_7.jpg"
+                            "q": "Name this towering, metal-toothed Bond henchman.",
+                            "answer": "Jaws",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/bond_7.jpg"
                         },
                         {
-                            "q": "Name this French superstar.",
-                            "answer": "Kylian Mbappé",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_8.jpg"
+                            "q": "Name this Bond henchman, known for his deadly bowler hat.",
+                            "answer": "Oddjob",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/bond_8.jpg"
                         },
                         {
-                            "q": "Name this World Cup nation from its flag. Fun fact: in 2026 it became the smallest country by population ever to qualify for a FIFA World Cup.",
-                            "answer": "Curaçao",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_9.jpg"
+                            "q": "Name Bond's recurring nemesis, usually seen stroking a white cat.",
+                            "answer": "Blofeld",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/bond_9.jpg"
                         },
                         {
-                            "q": "Name this hit soccer anime about 300 strikers competing to play for Japan.",
-                            "answer": "Blue Lock",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_125/worldcup_10.jpg"
+                            "q": "This man played James Bond in just one film (On Her Majesty's Secret Service, 1969). Name him.",
+                            "answer": "George Lazenby",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/bond_10.jpg"
                         }
                     ]
                 },
@@ -1196,44 +1196,54 @@
                     "name": "round2Questions",
                     "value": [
                         {
-                            "q": "🦁👑",
-                            "answer": "The Lion King"
+                            "q": "Name the movie or TV show this vehicle is from.",
+                            "answer": "Back to the Future",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/cars_1.jpg"
                         },
                         {
-                            "q": "❄️👸",
-                            "answer": "Frozen"
+                            "q": "Name the movie or TV show this vehicle is from.",
+                            "answer": "Ghostbusters",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/cars_2.jpg"
                         },
                         {
-                            "q": "🐠🔍",
-                            "answer": "Finding Nemo"
+                            "q": "Name the movie or TV show this vehicle is from.",
+                            "answer": "Batman",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/cars_3.jpg"
                         },
                         {
-                            "q": "🕷️🧑",
-                            "answer": "Spider-Man"
+                            "q": "Name the movie or TV show this vehicle is from.",
+                            "answer": "Scooby-Doo",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/cars_4.jpg"
                         },
                         {
-                            "q": "🚢🧊💔",
-                            "answer": "Titanic"
+                            "q": "Name the movie or TV show this vehicle is from.",
+                            "answer": "Knight Rider",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/cars_5.jpg"
                         },
                         {
-                            "q": "🐀👨‍🍳",
-                            "answer": "Ratatouille"
+                            "q": "Name the movie or TV show this vehicle is from.",
+                            "answer": "The Love Bug (Herbie)",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/cars_6.jpg"
                         },
                         {
-                            "q": "🧙💍🌋",
-                            "answer": "The Lord of the Rings"
+                            "q": "Name the movie or TV show this vehicle is from.",
+                            "answer": "Mad Max",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/cars_7.jpg"
                         },
                         {
-                            "q": "🦖🏞️",
-                            "answer": "Jurassic Park"
+                            "q": "Name the movie or TV show this vehicle is from.",
+                            "answer": "Cars",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/cars_8.jpg"
                         },
                         {
-                            "q": "👠🎃🐭",
-                            "answer": "Cinderella"
+                            "q": "Name the movie or TV show this vehicle is from.",
+                            "answer": "The A-Team",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/cars_9.jpg"
                         },
                         {
-                            "q": "🤡🎈🚸",
-                            "answer": "It"
+                            "q": "Name the movie or TV show this vehicle is from.",
+                            "answer": "Transformers",
+                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_127/cars_10.jpg"
                         }
                     ]
                 },
@@ -1241,44 +1251,44 @@
                     "name": "round3Questions",
                     "value": [
                         {
-                            "q": "A hidden Himalayan valley of eternal youth and peace, from the 1933 novel Lost Horizon.",
-                            "answer": "Shangri-La"
+                            "q": "What is the core of Harry Potter's wand made of?",
+                            "answer": "A phoenix feather"
                         },
                         {
-                            "q": "An art-deco city built on the ocean floor by Andrew Ryan — the setting of a 2007 video game.",
-                            "answer": "Rapture (BioShock)"
+                            "q": "What position does Harry play on his Gryffindor Quidditch team?",
+                            "answer": "Seeker"
                         },
                         {
-                            "q": "Zion, the last underground human city, appears in which sci-fi film trilogy?",
-                            "answer": "The Matrix"
+                            "q": "In the first book, what is the name of the giant three-headed dog guarding the trapdoor?",
+                            "answer": "Fluffy"
                         },
                         {
-                            "q": "A hidden island of immortal Amazon warriors, home to Wonder Woman.",
-                            "answer": "Themyscira"
+                            "q": "What form does Hermione Granger's Patronus take?",
+                            "answer": "An otter"
                         },
                         {
-                            "q": "A dystopian nation of 13 districts ruled from the Capitol, home to a deadly televised game.",
-                            "answer": "Panem (The Hunger Games)"
+                            "q": "What is the name of Lord Voldemort's mother?",
+                            "answer": "Merope Gaunt"
                         },
                         {
-                            "q": "A lush alien moon inhabited by the blue-skinned Na'vi.",
-                            "answer": "Pandora (Avatar)"
+                            "q": "What incantation is used to conjure the Dark Mark in the sky?",
+                            "answer": "Morsmordre"
                         },
                         {
-                            "q": "The snowbound Colorado hotel where Jack Torrance loses his mind.",
-                            "answer": "The Overlook Hotel (The Shining)"
+                            "q": "According to Hogwarts: A History, how many staircases does Hogwarts have?",
+                            "answer": "142"
                         },
                         {
-                            "q": "A flat world resting on four elephants atop a giant turtle, from Terry Pratchett's novels.",
-                            "answer": "Discworld"
+                            "q": "What is the name of Albus Dumbledore's brother, who runs the Hog's Head inn?",
+                            "answer": "Aberforth"
                         },
                         {
-                            "q": "The parallel dimension called 'the Upside Down' appears in which Netflix series?",
-                            "answer": "Stranger Things"
+                            "q": "Tonks insists on going by her surname because she hates her first name — what is it?",
+                            "answer": "Nymphadora"
                         },
                         {
-                            "q": "The small European principality that Mia Thermopolis inherits appears in which movie?",
-                            "answer": "The Princess Diaries"
+                            "q": "What is the name of the house-elf who serves the Black family at 12 Grimmauld Place?",
+                            "answer": "Kreacher"
                         }
                     ]
                 },
@@ -1286,44 +1296,44 @@
                     "name": "round4Questions",
                     "value": [
                         {
-                            "q": "About how long does sunlight take to reach Earth? +-1 minute",
-                            "answer": "8 minutes"
+                            "q": "Before launching her solo career, Beyoncé was the lead singer of which girl group?",
+                            "answer": "Destiny's Child"
                         },
                         {
-                            "q": "What process/reaction powers the Sun?",
-                            "answer": "Nuclear fusion (H -> He)"
+                            "q": "Taylor Swift's re-recorded albums are released with what two-word subtitle in parentheses?",
+                            "answer": "(Taylor's Version)"
                         },
                         {
-                            "q": "What's the Sun's faint outer atmosphere, visible only during a total eclipse, called?",
-                            "answer": "The corona"
+                            "q": "What is the title of Sabrina Carpenter's 2024 breakout hit, named after a coffee drink?",
+                            "answer": "Espresso"
                         },
                         {
-                            "q": "The Egyptian sun god Ra is most often depicted as a man with the head of which bird, crowned by a sun disk?",
-                            "answer": "Falcon (hawk)"
+                            "q": "Chappell Roan's 2023 debut album is 'The Rise and Fall of a Midwest ___' — what's the missing word?",
+                            "answer": "Princess"
                         },
                         {
-                            "q": "Icarus flew too close to the Sun on wax-and-feather wings. Who was his father - the master craftsman who built the wings and also designed the Labyrinth?",
-                            "answer": "Daedalus"
+                            "q": "What was the name of Taylor Swift's record-breaking 2023-24 concert tour?",
+                            "answer": "The Eras Tour"
                         },
                         {
-                            "q": "In Andy Weir's novel Project Hail Mary, adapted into the 2026 film with Ryan Gosling, what microscopic organism is feeding on the Sun's energy and dimming stars across the galaxy?",
-                            "answer": "Astrophage"
+                            "q": "What is the title of Beyoncé's 2016 visual album?",
+                            "answer": "Lemonade"
                         },
                         {
-                            "q": "In Danny Boyle's 2007 film Sunshine, what is the crew's mission aboard the ship Icarus II?",
-                            "answer": "Reignite the dying sun (stellar bomb)"
+                            "q": "What is Lady Gaga's real birth name?",
+                            "answer": "Stefani Germanotta"
                         },
                         {
-                            "q": "What color is the Sun actually, as seen from space?",
-                            "answer": "White"
+                            "q": "Adele names her albums after her age; which one features 'Rolling in the Deep'?",
+                            "answer": "21"
                         },
                         {
-                            "q": "In ~5 billion years, what kind of star will the Sun swell into?",
-                            "answer": "Red giant"
+                            "q": "Which one-name Barbadian singer founded the makeup brand Fenty Beauty?",
+                            "answer": "Rihanna"
                         },
                         {
-                            "q": "What are the dark, cooler patches on the Sun's surface called?",
-                            "answer": "Sunspots"
+                            "q": "What is the title of Billie Eilish's debut album, which swept the 2020 Grammys?",
+                            "answer": "When We All Fall Asleep, Where Do We Go?"
                         }
                     ]
                 },
@@ -1331,54 +1341,44 @@
                     "name": "round5Questions",
                     "value": [
                         {
-                            "q": "Who is this, featured on a banknote?",
-                            "answer": "Queen Elizabeth II",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_1.jpg"
+                            "q": "Rowan Atkinson's nearly-silent character Mr. Bean drives a distinctive small car throughout the series — what make and colour is it?",
+                            "answer": "A lime-green Mini"
                         },
                         {
-                            "q": "Who is this, featured on a banknote?",
-                            "answer": "Abraham Lincoln",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_2.jpg"
+                            "q": "Chicago's Millennium Park has a giant mirrored sculpture nicknamed 'The Bean' — what is its official name?",
+                            "answer": "Cloud Gate"
                         },
                         {
-                            "q": "Who is this, featured on a banknote?",
-                            "answer": "Mahatma Gandhi",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_3.jpg"
+                            "q": "Which British actor, surname Bean, played Boromir in The Lord of the Rings and Ned Stark in Game of Thrones?",
+                            "answer": "Sean Bean"
                         },
                         {
-                            "q": "Who is this, featured on a banknote?",
-                            "answer": "Benjamin Franklin",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_4.jpg"
+                            "q": "Chocolate is made from the roasted beans of which plant?",
+                            "answer": "Cacao (cocoa)"
                         },
                         {
-                            "q": "Who is this, featured on a banknote?",
-                            "answer": "Nelson Mandela",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_5.jpg"
+                            "q": "In 'Jack and the Beanstalk,' what does Jack trade in exchange for the magic beans?",
+                            "answer": "The family cow"
                         },
                         {
-                            "q": "Who is this, featured on a banknote?",
-                            "answer": "George Washington",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_6.jpg"
+                            "q": "The advertising slogan 'Beanz Meanz ___' promoted which brand of baked beans?",
+                            "answer": "Heinz"
                         },
                         {
-                            "q": "Who is this, featured on a banknote?",
-                            "answer": "Mao Zedong",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_7.jpg"
+                            "q": "Chickpeas — also called garbanzo beans — are the main ingredient of which Middle Eastern dip?",
+                            "answer": "Hummus"
                         },
                         {
-                            "q": "Who is this, featured on a banknote?",
-                            "answer": "Ulysses S. Grant",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_8.jpg"
+                            "q": "In Harry Potter, which revolting Bertie Bott's Every Flavour Bean does Dumbledore unluckily taste at the end of the first story?",
+                            "answer": "Earwax"
                         },
                         {
-                            "q": "Who is this, featured on a banknote?",
-                            "answer": "Frida Kahlo",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_9.jpg"
+                            "q": "Mr. Bean's constant companion is a small teddy bear — what is it called?",
+                            "answer": "Teddy"
                         },
                         {
-                            "q": "Who is this, featured on a banknote?",
-                            "answer": "Alexander Hamilton",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_126/money_10.jpg"
+                            "q": "Which global coffee chain, named after a Moby-Dick character, sells its beans in thousands of stores worldwide?",
+                            "answer": "Starbucks"
                         }
                     ]
                 },
