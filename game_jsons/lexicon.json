@@ -266,7 +266,6 @@
         "nowWhoDoYou": "Now, who do you think the Con Artist is? The vote ends when the majority of players vote at one player.",
         "isTheConArtist": "($1) is ... ($2)the Con Artist!",
         "isTheRealCon": "($1) is the real Con Artist!",
-        "playAgain": "PLAY AGAIN?",
         "wouldYouLikeTo": "Would you like to play again?",
         "str": "($1) ($2)!",
         "bannerImg": "banner",
@@ -2267,7 +2266,8 @@
           "xylophone",
           "mockingbird",
           "handstand"
-        ]
+        ],
+        "playAgainTitle": "PLAY AGAIN?"
       },
       "Love Island": {
         "welcomeToLexicon": "Welcome to Lexicon: Love Island!",
@@ -2303,7 +2303,6 @@
         "nowWhoDoYou": "Now, who do you think the Con Artist is? The vote ends when the majority of players vote at one player.",
         "isTheConArtist": "($1) is ... ($2)the Con Artist!",
         "isTheRealCon": "($1) is the real Con Artist!",
-        "playAgain": "PLAY AGAIN?",
         "wouldYouLikeTo": "Would you like to play again?",
         "str": "($1) ($2)!",
         "bannerImg": "banner_li",
@@ -2500,7 +2499,8 @@
           "Sol Dean",
           "Carl",
           "Ariana Madix"
-        ]
+        ],
+        "playAgainTitle": "PLAY AGAIN?"
       }
     }
   },
@@ -5443,7 +5443,7 @@
             },
             "cached": {
               "actors": "players",
-              "title": "playAgain",
+              "title": "playAgainTitle",
               "question": "wouldYouLikeTo"
             }
           },
