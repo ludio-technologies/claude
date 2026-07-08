@@ -708,6 +708,7 @@ class Validator:
         self._check_post_game_actions_required()
         self._check_winners_returns_names()
         self._check_save_value_in_cache_shape()
+        self._check_strings_not_overwritten()
         self._check_no_nested_groups_in_repeat_parallel()
         self._check_cardback_resolves()
         self._check_move_cards_payload()
@@ -2337,6 +2338,40 @@ class Validator:
             for item in obj:
                 names.update(self._collect_cache_names(item))
         return names
+
+    def _check_strings_not_overwritten(self):
+        """Every variable defined in gameInitOptions.strings is loaded into cache
+        at game start (when the host picks a variant). If that same name is ALSO
+        written via saveValueInCache during play, the write CLOBBERS the strings
+        value — the classic 'playAgain' bug, where a strings copy key ("PLAY
+        AGAIN?") collided with a boolean `playAgain` saved during the round, so
+        the play-again vote's title rendered as `true`/`false`.
+
+        Rule: a strings variable name must never also be a saveValueInCache
+        target. Name strings copy keys so they can't collide with a gameplay
+        variable (e.g. `playAgainTitle` instead of `playAgain`)."""
+        gio = self.data.get("gameInitOptions")
+        if not isinstance(gio, dict):
+            return
+        strings = gio.get("strings")
+        if not isinstance(strings, dict):
+            return
+        # strings variable names (root) -> a variant that defines it (for the message)
+        strings_names: dict = {}
+        for variant, mapping in strings.items():
+            if isinstance(mapping, dict):
+                for k in mapping:
+                    if isinstance(k, str):
+                        strings_names.setdefault(k.split(".")[0], variant)
+        svc_names = self._collect_cache_names(self.data)
+        for name in sorted(strings_names):
+            if name in svc_names:
+                self.err("gameInitOptions.strings",
+                         f"strings variable '{name}' is also written via saveValueInCache during the "
+                         f"game, so its strings value (loaded at game start when the host picks a "
+                         f"variant) gets OVERWRITTEN — the 'playAgain' collision bug. Rename the "
+                         f"strings key (e.g. '{name}Title' or '{name}Text') so it can't collide with "
+                         f"a gameplay variable, and update the places that read it.")
 
     def _classify_cache_value(self, value: Any) -> str:
         """Return 'list', 'scalar', or 'unknown' for a saveValueInCache value."""
