@@ -69,6 +69,440 @@
         "g21": "https://res.cloudinary.com/liars-club/video/upload/audio/groupthink/g21.mp3"
       }
     },
+    "strings": {
+      "Default": {
+        "welcomeToGroupthink": "Welcome to Groupthink!",
+        "tutorialMode": "Tutorial Mode",
+        "areYouReadyFor": "Are you ready for the tutorial?",
+        "onceEnoughPeopleClick": "Once enough people click Ready, the tutorial will start!",
+        "aRecapOnHow": "A recap on how points work",
+        "ifYouSubmitThe": "If you submit the <b>uniquely most popular answer</b>, you <b>win</b> 10 points!<br/>If you submit the <b>uniquely least popular answer</b>, you <b>lose</b> 5 points!<br/><br/>Otherwise, your score doesn't change.",
+        "submitInput": "Submit input",
+        "submitVote": "Submit vote",
+        "looksLikeThereWas": "Looks like there was no winning answer!",
+        "areYouReadyTo": "Are you ready to start the game?",
+        "onceEnoughPeopleClickText": "Once enough people click Ready, the real game will start!",
+        "justAHeadsUp": "Just a heads up...",
+        "ifYouHaveTo": "If you have to type in your answer, capitalization doesn't matter, but <b>spelling does</b> \ud83d\ude14<br/><br/>Agree on some conventions as a group, such as 'singular nouns only' - this is part of the game!",
+        "questionsBank": [
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to accidentally become the mayor of a small town?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would make the best escape room partner?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would thrive most if stranded at an international airport for 24 hours?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to find a clever loophole in any rule?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would win a debate about something completely made up?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be last to realize they were accidentally in a TV commercial?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would make the best narrator for a nature documentary?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would most likely be mistaken for a local in a foreign country?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to quietly learn a new skill without telling anyone?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to know an obscure law that somehow helps in a specific situation?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would write the most compelling memoir?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to start the most chaotic group chat?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to break a world record in the most niche category possible?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would make the best late-night talk show host?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would most likely have a fan club they don't know about?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to discover a secret underground tunnel?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would turn a simple camping trip into a fully catered glamping experience?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would win an argument against a computer?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would most likely befriend the villain in a movie?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be the hardest to beat at Monopoly?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would walk through a haunted house without flinching?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to be recognized by a stranger as someone vaguely famous?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be the best getaway driver for an extremely minor crime?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to become a beloved local legend for something very specific?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be best at navigating an unfamiliar city with no phone?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would most likely turn a five-minute task into a two-hour project?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to appear in a documentary \u2014 and why would it be fascinating?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be best at improvising a meal from whatever happens to be in the fridge?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would win a game of chess against a grandmaster through sheer bluffing?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to accidentally spoil a surprise party?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would thrive most if they suddenly had to host a dinner party for 20 strangers tonight?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to have a perfectly organised pantry?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to keep a very detailed spreadsheet about something no one else cares about?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would most likely befriend a celebrity by accident?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be first to successfully open a restaurant?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would win a stare-down with their own boss?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be best at keeping a poker face during a lie detector test?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to win a cooking competition using only ingredients from a vending machine?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to accidentally become someone's life coach?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to have a very elaborate and detailed morning routine?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would survive best if they had to live inside an IKEA for a week?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to make friends with every single person at a party?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to write a strongly worded letter to a local council?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to have a second, secret hobby that surprises everyone?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to successfully negotiate a free upgrade?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be best at improvising a speech with two minutes of notice?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to start a neighbourhood initiative that accidentally gets national media coverage?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to calmly handle a complete logistical disaster?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to have an extremely strong opinion about something most people don't think about?"
+          },
+          {
+            "type": "point",
+            "question": "Which of these people would be most likely to find a $20 bill in every single jacket they own?"
+          },
+          {
+            "type": "input",
+            "question": "Name a vegetable that children always refuse to eat."
+          },
+          {
+            "type": "input",
+            "question": "Name a food that's best eaten cold the next day."
+          },
+          {
+            "type": "input",
+            "question": "Name something that always runs out at the worst possible time."
+          },
+          {
+            "type": "input",
+            "question": "Name a food that sounds made-up but isn't."
+          },
+          {
+            "type": "input",
+            "question": "Name a job that sounds fun but is probably exhausting."
+          },
+          {
+            "type": "input",
+            "question": "Name something you always find at the bottom of your bag."
+          },
+          {
+            "type": "input",
+            "question": "Name a food that polarises people \u2014 you either love it or hate it."
+          },
+          {
+            "type": "input",
+            "question": "Name something you see at every party, no matter what kind."
+          },
+          {
+            "type": "input",
+            "question": "Name a country most people can't easily find on a map."
+          },
+          {
+            "type": "input",
+            "question": "Name a sport that requires absolutely no running."
+          },
+          {
+            "type": "input",
+            "question": "Name something that's more complicated than it really needs to be."
+          },
+          {
+            "type": "input",
+            "question": "Name something in your home that's probably broken but you still use anyway."
+          },
+          {
+            "type": "input",
+            "question": "Name a vegetable beginning with the letter A."
+          },
+          {
+            "type": "input",
+            "question": "Name a country in Africa."
+          },
+          {
+            "type": "input",
+            "question": "Name a famous fictional robot."
+          },
+          {
+            "type": "input",
+            "question": "Name something that makes a hotel feel luxurious."
+          },
+          {
+            "type": "input",
+            "question": "Name a word that sounds rude but isn't."
+          },
+          {
+            "type": "input",
+            "question": "Name a job that didn't exist 20 years ago."
+          },
+          {
+            "type": "input",
+            "question": "Name something you see every single day but never really think about."
+          },
+          {
+            "type": "input",
+            "question": "Name a food that polarises people at a dinner table."
+          },
+          {
+            "type": "input",
+            "question": "Name a famous fictional villain."
+          },
+          {
+            "type": "input",
+            "question": "Name something that's never quite as good as the original."
+          },
+          {
+            "type": "input",
+            "question": "Name a famous fictional spaceship."
+          },
+          {
+            "type": "input",
+            "question": "Name something you always mean to throw away but never do."
+          },
+          {
+            "type": "input",
+            "question": "Name an animal that's surprisingly dangerous."
+          },
+          {
+            "type": "input",
+            "question": "Name a country with a particularly long name."
+          },
+          {
+            "type": "input",
+            "question": "Name a food people pretend to enjoy at fancy restaurants."
+          },
+          {
+            "type": "input",
+            "question": "Name something that immediately makes you feel calmer."
+          },
+          {
+            "type": "input",
+            "question": "Name a sport whose rules take years to fully understand."
+          },
+          {
+            "type": "input",
+            "question": "Name something you do completely automatically, without thinking."
+          },
+          {
+            "type": "input",
+            "question": "Name an app that nearly everyone has downloaded but rarely opens."
+          },
+          {
+            "type": "input",
+            "question": "Name something found in almost every kitchen that rarely gets cleaned."
+          },
+          {
+            "type": "input",
+            "question": "Name a gift that people always claim to love but often never use."
+          },
+          {
+            "type": "input",
+            "question": "Name a place where silence is technically required but never happens."
+          },
+          {
+            "type": "input",
+            "question": "Name a food that seems healthy but probably isn't."
+          },
+          {
+            "type": "input",
+            "question": "Name a city that's famous for its food."
+          },
+          {
+            "type": "input",
+            "question": "Name a sound that would wake almost anyone up instantly."
+          },
+          {
+            "type": "input",
+            "question": "Name an excuse people use to avoid going to the gym."
+          },
+          {
+            "type": "input",
+            "question": "Name something you'd be genuinely surprised to find in someone's fridge."
+          },
+          {
+            "type": "input",
+            "question": "Name a food that almost everyone has eaten at a birthday party."
+          },
+          {
+            "type": "input",
+            "question": "Name a skill that's impressive at age 10 but strange at age 40."
+          },
+          {
+            "type": "input",
+            "question": "Name something that costs too much given how rarely you actually use it."
+          },
+          {
+            "type": "input",
+            "question": "Name a movie sequel that should never have been made."
+          },
+          {
+            "type": "input",
+            "question": "Name a phrase everyone says but nobody really means."
+          },
+          {
+            "type": "input",
+            "question": "Name something that always runs out when you need it most."
+          },
+          {
+            "type": "input",
+            "question": "Name a famous fictional castle."
+          },
+          {
+            "type": "input",
+            "question": "Name an animal that moves faster than most people would expect."
+          },
+          {
+            "type": "input",
+            "question": "Name a reason someone might be late to their own birthday party."
+          },
+          {
+            "type": "input",
+            "question": "Name something you'd be embarrassed to Google but have."
+          },
+          {
+            "type": "input",
+            "question": "Name a type of person you always seem to meet at airports."
+          }
+        ],
+        "practiceQuestionsBank": [
+          {
+            "question": "Name your favorite holiday!",
+            "type": "input"
+          }
+        ],
+        "inAMomentTell": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!",
+        "doYouWantLudio": "($1), do you want Ludio to teach your group how to play this game?",
+        "groupthinkQuestion": "Groupthink, Question #($1)",
+        "youWin10Points": "... you win 10 points!($1)",
+        "ifYouAnsweredYou": "<br/><br/>If you answered <b>($1)</b>, you lose 5 points!",
+        "ifYouAnswered": "If you answered '($1)' ...",
+        "fmtLine1": "($1) ($2)!",
+        "bannerImg": "banner",
+        "bgImg": "background"
+      }
+    },
     "images": {
       "questions": {
         "url": "https://res.cloudinary.com/liars-club/image/upload/questions_gnh6cx.jpg"
@@ -122,6 +556,10 @@
         "url": "https://res.cloudinary.com/liars-club/image/upload/winner_h5eyfr.gif"
       }
     }
+  },
+  "visualSettings": {
+    "backgroundColor": "#FFFFE4",
+    "borderColor": "black"
   },
   "turnPlayerToSpectatorActions": [
     {
@@ -257,8 +695,8 @@
     {
       "key": "changeBackground",
       "payload": {
-        "preset": {
-          "image": "background"
+        "cached": {
+          "image": "bgImg"
         }
       }
     },
@@ -343,417 +781,29 @@
         },
         {
           "name": "questions",
-          "value": [
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to accidentally become the mayor of a small town?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would make the best escape room partner?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would thrive most if stranded at an international airport for 24 hours?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to find a clever loophole in any rule?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would win a debate about something completely made up?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be last to realize they were accidentally in a TV commercial?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would make the best narrator for a nature documentary?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would most likely be mistaken for a local in a foreign country?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to quietly learn a new skill without telling anyone?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to know an obscure law that somehow helps in a specific situation?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would write the most compelling memoir?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to start the most chaotic group chat?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to break a world record in the most niche category possible?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would make the best late-night talk show host?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would most likely have a fan club they don't know about?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to discover a secret underground tunnel?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would turn a simple camping trip into a fully catered glamping experience?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would win an argument against a computer?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would most likely befriend the villain in a movie?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be the hardest to beat at Monopoly?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would walk through a haunted house without flinching?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to be recognized by a stranger as someone vaguely famous?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be the best getaway driver for an extremely minor crime?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to become a beloved local legend for something very specific?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be best at navigating an unfamiliar city with no phone?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would most likely turn a five-minute task into a two-hour project?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to appear in a documentary — and why would it be fascinating?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be best at improvising a meal from whatever happens to be in the fridge?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would win a game of chess against a grandmaster through sheer bluffing?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to accidentally spoil a surprise party?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would thrive most if they suddenly had to host a dinner party for 20 strangers tonight?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to have a perfectly organised pantry?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to keep a very detailed spreadsheet about something no one else cares about?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would most likely befriend a celebrity by accident?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be first to successfully open a restaurant?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would win a stare-down with their own boss?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be best at keeping a poker face during a lie detector test?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to win a cooking competition using only ingredients from a vending machine?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to accidentally become someone's life coach?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to have a very elaborate and detailed morning routine?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would survive best if they had to live inside an IKEA for a week?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to make friends with every single person at a party?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to write a strongly worded letter to a local council?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to have a second, secret hobby that surprises everyone?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to successfully negotiate a free upgrade?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be best at improvising a speech with two minutes of notice?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to start a neighbourhood initiative that accidentally gets national media coverage?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to calmly handle a complete logistical disaster?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to have an extremely strong opinion about something most people don't think about?"
-            },
-            {
-              "type": "point",
-              "question": "Which of these people would be most likely to find a $20 bill in every single jacket they own?"
-            },
-            {
-              "type": "input",
-              "question": "Name a vegetable that children always refuse to eat."
-            },
-            {
-              "type": "input",
-              "question": "Name a food that's best eaten cold the next day."
-            },
-            {
-              "type": "input",
-              "question": "Name something that always runs out at the worst possible time."
-            },
-            {
-              "type": "input",
-              "question": "Name a food that sounds made-up but isn't."
-            },
-            {
-              "type": "input",
-              "question": "Name a job that sounds fun but is probably exhausting."
-            },
-            {
-              "type": "input",
-              "question": "Name something you always find at the bottom of your bag."
-            },
-            {
-              "type": "input",
-              "question": "Name a food that polarises people — you either love it or hate it."
-            },
-            {
-              "type": "input",
-              "question": "Name something you see at every party, no matter what kind."
-            },
-            {
-              "type": "input",
-              "question": "Name a country most people can't easily find on a map."
-            },
-            {
-              "type": "input",
-              "question": "Name a sport that requires absolutely no running."
-            },
-            {
-              "type": "input",
-              "question": "Name something that's more complicated than it really needs to be."
-            },
-            {
-              "type": "input",
-              "question": "Name something in your home that's probably broken but you still use anyway."
-            },
-            {
-              "type": "input",
-              "question": "Name a vegetable beginning with the letter A."
-            },
-            {
-              "type": "input",
-              "question": "Name a country in Africa."
-            },
-            {
-              "type": "input",
-              "question": "Name a famous fictional robot."
-            },
-            {
-              "type": "input",
-              "question": "Name something that makes a hotel feel luxurious."
-            },
-            {
-              "type": "input",
-              "question": "Name a word that sounds rude but isn't."
-            },
-            {
-              "type": "input",
-              "question": "Name a job that didn't exist 20 years ago."
-            },
-            {
-              "type": "input",
-              "question": "Name something you see every single day but never really think about."
-            },
-            {
-              "type": "input",
-              "question": "Name a food that polarises people at a dinner table."
-            },
-            {
-              "type": "input",
-              "question": "Name a famous fictional villain."
-            },
-            {
-              "type": "input",
-              "question": "Name something that's never quite as good as the original."
-            },
-            {
-              "type": "input",
-              "question": "Name a famous fictional spaceship."
-            },
-            {
-              "type": "input",
-              "question": "Name something you always mean to throw away but never do."
-            },
-            {
-              "type": "input",
-              "question": "Name an animal that's surprisingly dangerous."
-            },
-            {
-              "type": "input",
-              "question": "Name a country with a particularly long name."
-            },
-            {
-              "type": "input",
-              "question": "Name a food people pretend to enjoy at fancy restaurants."
-            },
-            {
-              "type": "input",
-              "question": "Name something that immediately makes you feel calmer."
-            },
-            {
-              "type": "input",
-              "question": "Name a sport whose rules take years to fully understand."
-            },
-            {
-              "type": "input",
-              "question": "Name something you do completely automatically, without thinking."
-            },
-            {
-              "type": "input",
-              "question": "Name an app that nearly everyone has downloaded but rarely opens."
-            },
-            {
-              "type": "input",
-              "question": "Name something found in almost every kitchen that rarely gets cleaned."
-            },
-            {
-              "type": "input",
-              "question": "Name a gift that people always claim to love but often never use."
-            },
-            {
-              "type": "input",
-              "question": "Name a place where silence is technically required but never happens."
-            },
-            {
-              "type": "input",
-              "question": "Name a food that seems healthy but probably isn't."
-            },
-            {
-              "type": "input",
-              "question": "Name a city that's famous for its food."
-            },
-            {
-              "type": "input",
-              "question": "Name a sound that would wake almost anyone up instantly."
-            },
-            {
-              "type": "input",
-              "question": "Name an excuse people use to avoid going to the gym."
-            },
-            {
-              "type": "input",
-              "question": "Name something you'd be genuinely surprised to find in someone's fridge."
-            },
-            {
-              "type": "input",
-              "question": "Name a food that almost everyone has eaten at a birthday party."
-            },
-            {
-              "type": "input",
-              "question": "Name a skill that's impressive at age 10 but strange at age 40."
-            },
-            {
-              "type": "input",
-              "question": "Name something that costs too much given how rarely you actually use it."
-            },
-            {
-              "type": "input",
-              "question": "Name a movie sequel that should never have been made."
-            },
-            {
-              "type": "input",
-              "question": "Name a phrase everyone says but nobody really means."
-            },
-            {
-              "type": "input",
-              "question": "Name something that always runs out when you need it most."
-            },
-            {
-              "type": "input",
-              "question": "Name a famous fictional castle."
-            },
-            {
-              "type": "input",
-              "question": "Name an animal that moves faster than most people would expect."
-            },
-            {
-              "type": "input",
-              "question": "Name a reason someone might be late to their own birthday party."
-            },
-            {
-              "type": "input",
-              "question": "Name something you'd be embarrassed to Google but have."
-            },
-            {
-              "type": "input",
-              "question": "Name a type of person you always seem to meet at airports."
-            }
-          ]
+          "value": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "questionsBank"
+              }
+            ]
+          }
         },
         {
           "name": "practiceQuestions",
-          "value": [
-            {
-              "question": "Name your favorite holiday!",
-              "type": "input"
-            }
-          ]
+          "value": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "practiceQuestionsBank"
+              }
+            ]
+          }
         },
         {
           "name": "unusedPlayers",
@@ -862,11 +912,11 @@
       "key": "createNotification",
       "payload": {
         "preset": {
-          "header": "Welcome to Groupthink!",
-          "image": "banner",
-          "duration": 8,
-          "backgroundColor": "#FFFFE4",
-          "borderColor": "black"
+          "duration": 8
+        },
+        "cached": {
+          "header": "welcomeToGroupthink",
+          "image": "bannerImg"
         },
         "computed": {
           "to": {
@@ -877,8 +927,8 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!"
+                "type": "cached",
+                "value": "inAMomentTell"
               },
               {
                 "name": "arg1",
@@ -912,7 +962,6 @@
       "key": "createVote",
       "payload": {
         "preset": {
-          "title": "Tutorial Mode",
           "type": "target_poll",
           "terminationCondition": "get_all_votes",
           "showResultInRealTime": true,
@@ -940,14 +989,18 @@
             }
           }
         },
+        "cached": {
+          "actors": "host",
+          "title": "tutorialMode"
+        },
         "computed": {
           "question": {
             "selector": "formatString",
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "($1), do you want Ludio to teach your group how to play this game?"
+                "type": "cached",
+                "value": "doYouWantLudio"
               },
               {
                 "name": "arg1",
@@ -974,9 +1027,6 @@
               }
             ]
           }
-        },
-        "cached": {
-          "actors": "host"
         }
       },
       "saveValueInCache": [
@@ -1033,11 +1083,11 @@
           "key": "createConfirmation",
           "payload": {
             "preset": {
-              "header": "Are you ready for the tutorial?",
-              "text": "Once enough people click Ready, the tutorial will start!",
-              "passCriterion": "majority",
-              "backgroundColor": "#FFFFE4",
-              "borderColor": "black"
+              "passCriterion": "majority"
+            },
+            "cached": {
+              "header": "areYouReadyFor",
+              "text": "onceEnoughPeopleClick"
             },
             "computed": {
               "actors": {
@@ -1123,15 +1173,15 @@
           "key": "createNotification",
           "payload": {
             "preset": {
-              "header": "A recap on how points work",
               "images": [
                 "blend_in",
                 "unique"
               ],
-              "duration": 12,
-              "text": "If you submit the <b>uniquely most popular answer</b>, you <b>win</b> 10 points!<br/>If you submit the <b>uniquely least popular answer</b>, you <b>lose</b> 5 points!<br/><br/>Otherwise, your score doesn't change.",
-              "backgroundColor": "#FFFFE4",
-              "borderColor": "black"
+              "duration": 12
+            },
+            "cached": {
+              "header": "aRecapOnHow",
+              "text": "ifYouSubmitThe"
             },
             "computed": {
               "to": {
@@ -1530,7 +1580,6 @@
           },
           "payload": {
             "preset": {
-              "title": "Submit input",
               "type": "text",
               "duration": 45,
               "scope": "player",
@@ -1539,7 +1588,8 @@
             },
             "cached": {
               "question": "currentQuestion.question",
-              "actors": "players"
+              "actors": "players",
+              "title": "submitInput"
             }
           },
           "saveValueInCache": [
@@ -1577,7 +1627,6 @@
           },
           "payload": {
             "preset": {
-              "title": "Submit vote",
               "type": "target_poll",
               "terminationCondition": "get_all_votes",
               "showResultInRealTime": false,
@@ -1589,7 +1638,8 @@
               "actors": "players",
               "question": "currentQuestion.question",
               "targets": "currentQuestion.options",
-              "image": "currentQuestion.image"
+              "image": "currentQuestion.image",
+              "title": "submitVote"
             },
             "computed": {
               "pollVoteTargetsOptions": {
@@ -1769,7 +1819,6 @@
           },
           "payload": {
             "preset": {
-              "title": "Submit vote",
               "type": "target_poll",
               "terminationCondition": "get_all_votes",
               "showResultInRealTime": false,
@@ -1781,7 +1830,8 @@
             "cached": {
               "actors": "players",
               "question": "currentQuestion.question",
-              "image": "currentQuestion.image"
+              "image": "currentQuestion.image",
+              "title": "submitVote"
             },
             "computed": {
               "targets": {
@@ -2056,8 +2106,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "Groupthink, Question #($1)"
+                    "type": "cached",
+                    "value": "groupthinkQuestion"
                   },
                   {
                     "name": "arg1",
@@ -3864,8 +3914,6 @@
           "payload": {
             "preset": {
               "duration": 6,
-              "backgroundColor": "#FFFFE4",
-              "borderColor": "black",
               "sounds.waitForSoundEnd": true,
               "sounds.list": [
                 "soundboard.success"
@@ -3898,8 +3946,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "... you win 10 points!($1)"
+                    "type": "cached",
+                    "value": "youWin10Points"
                   },
                   {
                     "name": "arg1",
@@ -3943,8 +3991,8 @@
                             "params": [
                               {
                                 "name": "format",
-                                "type": "preset",
-                                "value": "<br/><br/>If you answered <b>($1)</b>, you lose 5 points!"
+                                "type": "cached",
+                                "value": "ifYouAnsweredYou"
                               },
                               {
                                 "name": "arg1",
@@ -3983,8 +4031,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "If you answered '($1)' ..."
+                    "type": "cached",
+                    "value": "ifYouAnswered"
                   },
                   {
                     "name": "arg1",
@@ -4293,11 +4341,8 @@
           },
           "payload": {
             "preset": {
-              "header": "Looks like there was no winning answer!",
               "duration": 6,
               "image": "no_points",
-              "backgroundColor": "#FFFFE4",
-              "borderColor": "black",
               "sounds.waitForSoundEnd": true,
               "sounds.list": [
                 "soundboard.failure"
@@ -4305,7 +4350,8 @@
             },
             "cached": {
               "to": "players",
-              "playList.0": "players"
+              "playList.0": "players",
+              "header": "looksLikeThereWas"
             },
             "computed": {
               "text": {
@@ -4358,8 +4404,8 @@
                             "params": [
                               {
                                 "name": "format",
-                                "type": "preset",
-                                "value": "<br/><br/>If you answered <b>($1)</b>, you lose 5 points!"
+                                "type": "cached",
+                                "value": "ifYouAnsweredYou"
                               },
                               {
                                 "name": "arg1",
@@ -4572,11 +4618,11 @@
           "key": "createConfirmation",
           "payload": {
             "preset": {
-              "header": "Are you ready to start the game?",
-              "text": "Once enough people click Ready, the real game will start!",
-              "passCriterion": "majority",
-              "backgroundColor": "#FFFFE4",
-              "borderColor": "black"
+              "passCriterion": "majority"
+            },
+            "cached": {
+              "header": "areYouReadyTo",
+              "text": "onceEnoughPeopleClickText"
             },
             "computed": {
               "actors": {
@@ -4597,11 +4643,11 @@
           "key": "createNotification",
           "payload": {
             "preset": {
-              "header": "Just a heads up...",
-              "duration": 10,
-              "text": "If you have to type in your answer, capitalization doesn't matter, but <b>spelling does</b> 😔<br/><br/>Agree on some conventions as a group, such as 'singular nouns only' - this is part of the game!",
-              "backgroundColor": "#FFFFE4",
-              "borderColor": "black"
+              "duration": 10
+            },
+            "cached": {
+              "header": "justAHeadsUp",
+              "text": "ifYouHaveTo"
             },
             "computed": {
               "to": {
@@ -4721,9 +4767,7 @@
       "key": "createNotification",
       "payload": {
         "preset": {
-          "image": "winner",
-          "backgroundColor": "#FFFFE4",
-          "borderColor": "black"
+          "image": "winner"
         },
         "cached": {
           "to": "players"
@@ -4734,8 +4778,8 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "($1) ($2)!"
+                "type": "cached",
+                "value": "fmtLine1"
               },
               {
                 "name": "arg1",

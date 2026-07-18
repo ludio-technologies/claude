@@ -28,7 +28,7 @@
         "roleInfo": {
           "id": "player",
           "name": "Player",
-          "description": "You love earning points, and you always play to win 😎",
+          "description": "You love earning points, and you always play to win \ud83d\ude0e",
           "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
           "team": "all",
           "prefix": "a "
@@ -64,6 +64,227 @@
         "w3": "https://res.cloudinary.com/liars-club/video/upload/audio/wisecrack/w3.mp3"
       }
     },
+    "strings": {
+      "Default": {
+        "welcomeToWisecrack": "Welcome to Wisecrack!",
+        "tutorialMode": "Tutorial mode",
+        "thisGameIsNsfw": "This game is NSFW",
+        "maybeNotTheBest": "Maybe not the best game to play with your coworkers. Don't say we didn't warn you \ud83d\ude43",
+        "submitYourAnswer": "Submit your answer",
+        "sitTight": "Sit tight!",
+        "playAgainTitle": "PLAY AGAIN?",
+        "wouldYouLikeTo": "Would you like to play another round?",
+        "promptsBank": [
+          "The tagline for my reality TV show that nobody asked for",
+          "The skill I'd list on my r\u00e9sum\u00e9 that isn't really a skill",
+          "My strategy for looking busy when I'm absolutely not",
+          "What I'd say in a meeting that sounds profound but means nothing",
+          "My response to 'let's go around the room and share a fun fact about ourselves'",
+          "The reason my performance review would be legendary",
+          "My out-of-office reply if I were being completely honest",
+          "The business I'd start that has no viable business model",
+          "The thing I'd say in a meeting that would end my career",
+          "My most creative excuse for missing a deadline",
+          "The job title I'd give myself that no one could argue with",
+          "What I'd put in the office suggestion box that I'd immediately regret",
+          "My elevator pitch for an idea I haven't thought through at all",
+          "The work email I've composed but (thankfully) never sent",
+          "My technique for sounding like I've read a report I definitely haven't",
+          "What I'd put in my dating profile if I were completely honest",
+          "The red flag about me that I've convinced myself is actually endearing",
+          "My strategy for getting out of plans I already agreed to",
+          "What I'd say on a first date to guarantee there's no second one",
+          "The thing I do at parties that people politely pretend not to notice",
+          "My go-to conversation starter that never quite lands",
+          "The compliment I give that somehow always backfires",
+          "My signature move that clears a room",
+          "What I'd say if I had to give a toast completely unprepared",
+          "The reason my group project partner regrets knowing me",
+          "My most impressive lie I've told myself about my social skills",
+          "The reason I'm accidentally everyone's therapist",
+          "My strategy for surviving small talk at a networking event",
+          "The thing I do in public that I've fully convinced myself is normal",
+          "My most chaotic act of kindness",
+          "The reason I'm banned from self-checkout",
+          "My morning routine, presented as a nature documentary",
+          "What I'd title the TED Talk about my worst habit",
+          "My technique for parallel parking \u2014 the tragic version",
+          "The item I've bought multiple times because I keep losing it",
+          "What I do in elevators that I absolutely should not",
+          "My most impressive lie I've told to avoid an errand",
+          "The coping mechanism I invented that really shouldn't be copied",
+          "What I accidentally said at the worst possible moment",
+          "The reason I should never be put in charge of a group decision",
+          "My most creative workaround for a problem I caused",
+          "The task I've been putting off for so long it now has a nickname",
+          "My technique for dealing with a spider that everyone would find useless",
+          "What I'd call my autobiography's most embarrassing chapter",
+          "My most elaborate plan that fell apart at the first step",
+          "What I'd name a sandwich that represents my personality",
+          "The food I'd serve to subtly ruin a dinner party",
+          "What I'd add to Thanksgiving dinner to guarantee complete silence",
+          "What I'd name my cooking show if I only make failures",
+          "The item I'd add to every menu if I owned a restaurant",
+          "What I'd put on a charcuterie board to confuse and concern guests",
+          "My strategy for eating something I hate at someone else's house",
+          "The most chaotic thing I've ever done to a perfectly good meal",
+          "What I'd name a cocktail that captures my current emotional state",
+          "My review of the worst meal I've ever eaten \u2014 but generously",
+          "The dish I'd bring to a potluck to guarantee no one asks me again",
+          "What I'd order at a restaurant to seem more interesting than I am",
+          "The ingredient I'd add to everything if no one could stop me",
+          "My signature snack that no one else seems to understand",
+          "The food I'd ban from the office that would make me instantly unpopular",
+          "My justification for an absolutely unnecessary purchase",
+          "The worst thing I've ever bought that I'm somehow still proud of",
+          "What I'd spend a million dollars on in ways that wouldn't help me at all",
+          "My shopping strategy that makes no financial sense",
+          "The sale that lured me into buying something I'd never use",
+          "What I'd put in my cart at 1am that I'd regret by morning",
+          "My most creative excuse for an impulse purchase",
+          "The thing I've bought in bulk for absolutely no reason",
+          "What I'd invest in if I knew nothing about investing (and I don't)",
+          "The subscription I've been paying for but never used",
+          "The app I'd design that no one asked for but everyone would download",
+          "What I'd name my Wi-Fi to confuse and unsettle my neighbors",
+          "The voicemail greeting that would finally make people actually call back",
+          "What my autocorrect has convinced people I meant to say",
+          "My strategy for dealing with a laptop that's clearly judging me",
+          "The email subject line that would guarantee no one opens it",
+          "My plan for surviving without internet for a week \u2014 it wouldn't work",
+          "What I'd text back after accidentally sending a message to the wrong person",
+          "The password hint I'd write that would help absolutely nobody",
+          "My Zoom background that would end the meeting early",
+          "The sport I'd invent if I wanted everyone to be equally terrible at it",
+          "What I'd yell from the sidelines that would embarrass everyone",
+          "My strategy for winning at a game I've never played before",
+          "The worst possible name for my sports team",
+          "My pre-game ritual that definitely doesn't help",
+          "The board game I'd redesign so that I always win",
+          "My technique for winning an argument with a toddler",
+          "The excuse I'd give for losing at absolutely anything",
+          "What I'd say to the referee that would get me removed immediately",
+          "My most confident sporting prediction that aged terribly",
+          "The worst thing to pack for an international trip",
+          "My strategy for navigating a foreign city with no idea where I am",
+          "What I'd do if I accidentally ended up in the wrong country",
+          "The souvenir I'd buy that would confuse everyone at home",
+          "My technique for fitting everything into a carry-on (chaotic edition)",
+          "The reason I should not be trusted on a road trip",
+          "My emergency plan when the hotel looks nothing like the photos",
+          "What I'd do if I missed my flight and only had $20",
+          "My strategy for blending in somewhere I clearly don't belong",
+          "What I'd name the travel blog I'd start but never update",
+          "The item I'd add to my home that guests would never stop asking about",
+          "My strategy for fixing things around the house with no relevant skills",
+          "The reason my neighbors talk about me (probably)",
+          "What I'd put on a welcome mat to gently discourage visitors",
+          "The home renovation project I'd start but definitely not finish",
+          "What the previous owner of my home definitely left behind",
+          "My justification for the pile of things I refuse to throw away",
+          "What I'd name the room in my house that has no clear purpose",
+          "The thing in my home I've been meaning to deal with for over a year",
+          "My system for organizing things that makes perfect sense only to me",
+          "What I'd write on a test if I knew I was going to fail anyway",
+          "The excuse I'd give for not doing homework that is technically true",
+          "My strategy for bluffing through a presentation on a topic I don't know",
+          "The reason I'd be politely removed from every study group",
+          "What my report card would say if teachers could be brutally honest",
+          "My most confusingly smart moment",
+          "The subject I'd teach if I could only teach things I half-understand",
+          "My theory that sounds convincing until anyone actually thinks about it",
+          "The class I'd add to every school curriculum that no one wants",
+          "What I'd write in my textbook if I wrote a textbook",
+          "What my pet does when I leave that I'm probably better off not knowing",
+          "The most suspicious thing my pet has ever done",
+          "My strategy for convincing my cat to do literally anything",
+          "The look my pet gives me that I genuinely cannot explain",
+          "What I'd say in my defense at my pet's imaginary trial",
+          "My explanation for why my pet is objectively smarter than me",
+          "The thing my pet does that I've simply accepted as normal by now",
+          "What I'd name a pet I absolutely should not own",
+          "My instructions for pet-sitting that would concern any reasonable person",
+          "The reason my pet's vet sighs when they see my name on the schedule",
+          "My wellness routine, described by someone who definitely doesn't have one",
+          "What my doctor would say if they could roast me",
+          "The health trend I invented that definitely won't catch on",
+          "My gym routine if I'm being honest about what I'm really doing there",
+          "What I'd name a yoga pose that captures my actual flexibility",
+          "The diagnosis I'd give myself after five minutes on a medical website",
+          "My motivational quote for days when absolutely nothing is working",
+          "What I'd claim is a superfood based on no evidence whatsoever",
+          "My strategy for sleeping in any situation (it doesn't really work)",
+          "The thing I do instead of going to the gym that I've convinced myself is equivalent",
+          "My strategy for giving a gift to someone I don't know at all",
+          "The New Year's resolution I'd keep for exactly three days",
+          "What I'd write in a Valentine's card to someone I barely know",
+          "My Halloween costume that requires zero effort but maximum explanation",
+          "The toast I'd give at a retirement party for someone I've never met",
+          "What I'd name a holiday I invented purely for personal benefit",
+          "The carol I'd write that would ruin any holiday gathering",
+          "My approach to celebrating a holiday I don't fully understand",
+          "What I'd do if I accidentally double-booked my own birthday party",
+          "The gift I'd give that says 'I care, but also I did not think about this at all'",
+          "The reboot nobody is asking for, but I'm pitching anyway",
+          "My theme song if it had to honestly summarize my biggest flaw",
+          "The movie sequel that would ruin the original for everyone",
+          "What I'd name a band that only plays at funerals \u2014 voluntarily",
+          "My audition speech for a reality show I'd be eliminated from first",
+          "The TV show character I actually am, though I thought I was someone cooler",
+          "My review of the movie I fell asleep during but won't admit I missed",
+          "What I'd say on a talk show when asked 'so what are you working on?'",
+          "The podcast I'd start that would be cancelled after two episodes",
+          "My genre of music if my life were a movie soundtrack",
+          "My villain monologue, but it's about something incredibly petty",
+          "The world record I could realistically break \u2014 in the worst category",
+          "My battle cry if I were a very reluctant warrior",
+          "The award I'd create for myself that no one else could ever win",
+          "My plan for world domination, starting with my immediate neighborhood",
+          "The monument I'd build to honor my greatest mistake",
+          "What I'd say if I had to explain my worst decision in court",
+          "My legacy, as described by someone who barely knew me",
+          "The speech I'd give after accidentally winning an award I didn't enter",
+          "My strategy for becoming famous without doing anything impressive",
+          "The most chaotic element of my morning that I've fully normalized",
+          "My most elaborate plan that required no skill and still went wrong",
+          "The reason I should never be left unsupervised with a project",
+          "My most confident prediction that turned out to be completely wrong",
+          "The thing I've explained badly so many times I now believe my version",
+          "My most dramatic overreaction to something genuinely minor",
+          "The item I've kept for sentimental reasons that has no sentimentality whatsoever",
+          "My most impressive way to make a simple task much harder",
+          "The phrase I say that I think sounds casual but people always notice",
+          "My most questionable advice that someone actually followed",
+          "What I'd name my memoir if it had to be about a very specific bad week",
+          "The recurring nightmare I've made peace with",
+          "My most creative interpretation of the word 'clean'",
+          "The thing I'd bring to a deserted island to annoy everyone else there",
+          "My most suspiciously specific talent that has never come in useful",
+          "What I'd put on a warning label for my own personality",
+          "The fictional character I relate to that says a lot about me",
+          "My most chaotic grocery list item that needs no further explanation",
+          "The reason I'm always the last one to find out about things",
+          "What I'd name the documentary about my most questionable week",
+          "My least impressive party trick that I still insist on doing",
+          "The thing I've been 'about to start' for at least six months",
+          "My most creative excuse that I'm genuinely proud of",
+          "The way I'd describe my personality that is technically not wrong",
+          "What I'd title the sequel to my worst decision",
+          "My most baffling personality trait that I've never tried to explain",
+          "The reason I would make a terrible roommate, explained charitably",
+          "My most ambitious plan that required absolutely zero preparation",
+          "What I'd name the support group I'd accidentally start",
+          "The thing I've said with complete confidence that turned out to be wrong"
+        ],
+        "inAMomentTell": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!",
+        "whoNeedsTheTutorial": "($1), who needs the tutorial? Click on the players or select from the middle.",
+        "weGotYourSubmissions": "We got your submissions. Please wait while the other players finish typing!",
+        "clickOnYourFavorite": "Click on your favorite answer!",
+        "fmtLine1": "($1) ($2)!",
+        "bannerImg": "banner",
+        "wallpaperImg": "fun_wallpaper"
+      }
+    },
     "images": {
       "three_words": {
         "url": "https://res.cloudinary.com/liars-club/image/upload/three_words_b9vgpk.png"
@@ -87,6 +308,10 @@
     "animations": {
       "mindblowing": "https://lottie.host/ac12870d-e9cb-4b03-a63b-c8a09db978f9/Cv5aMHJhlE.json"
     }
+  },
+  "visualSettings": {
+    "backgroundColor": "#ffd0d7",
+    "borderColor": "black"
   },
   "turnPlayerToSpectatorActions": [
     {
@@ -254,8 +479,8 @@
     {
       "key": "changeBackground",
       "payload": {
-        "preset": {
-          "image": "fun_wallpaper"
+        "cached": {
+          "image": "wallpaperImg"
         }
       }
     },
@@ -381,208 +606,16 @@
         },
         {
           "name": "prompts",
-          "value": [
-            "The tagline for my reality TV show that nobody asked for",
-            "The skill I'd list on my résumé that isn't really a skill",
-            "My strategy for looking busy when I'm absolutely not",
-            "What I'd say in a meeting that sounds profound but means nothing",
-            "My response to 'let's go around the room and share a fun fact about ourselves'",
-            "The reason my performance review would be legendary",
-            "My out-of-office reply if I were being completely honest",
-            "The business I'd start that has no viable business model",
-            "The thing I'd say in a meeting that would end my career",
-            "My most creative excuse for missing a deadline",
-            "The job title I'd give myself that no one could argue with",
-            "What I'd put in the office suggestion box that I'd immediately regret",
-            "My elevator pitch for an idea I haven't thought through at all",
-            "The work email I've composed but (thankfully) never sent",
-            "My technique for sounding like I've read a report I definitely haven't",
-            "What I'd put in my dating profile if I were completely honest",
-            "The red flag about me that I've convinced myself is actually endearing",
-            "My strategy for getting out of plans I already agreed to",
-            "What I'd say on a first date to guarantee there's no second one",
-            "The thing I do at parties that people politely pretend not to notice",
-            "My go-to conversation starter that never quite lands",
-            "The compliment I give that somehow always backfires",
-            "My signature move that clears a room",
-            "What I'd say if I had to give a toast completely unprepared",
-            "The reason my group project partner regrets knowing me",
-            "My most impressive lie I've told myself about my social skills",
-            "The reason I'm accidentally everyone's therapist",
-            "My strategy for surviving small talk at a networking event",
-            "The thing I do in public that I've fully convinced myself is normal",
-            "My most chaotic act of kindness",
-            "The reason I'm banned from self-checkout",
-            "My morning routine, presented as a nature documentary",
-            "What I'd title the TED Talk about my worst habit",
-            "My technique for parallel parking — the tragic version",
-            "The item I've bought multiple times because I keep losing it",
-            "What I do in elevators that I absolutely should not",
-            "My most impressive lie I've told to avoid an errand",
-            "The coping mechanism I invented that really shouldn't be copied",
-            "What I accidentally said at the worst possible moment",
-            "The reason I should never be put in charge of a group decision",
-            "My most creative workaround for a problem I caused",
-            "The task I've been putting off for so long it now has a nickname",
-            "My technique for dealing with a spider that everyone would find useless",
-            "What I'd call my autobiography's most embarrassing chapter",
-            "My most elaborate plan that fell apart at the first step",
-            "What I'd name a sandwich that represents my personality",
-            "The food I'd serve to subtly ruin a dinner party",
-            "What I'd add to Thanksgiving dinner to guarantee complete silence",
-            "What I'd name my cooking show if I only make failures",
-            "The item I'd add to every menu if I owned a restaurant",
-            "What I'd put on a charcuterie board to confuse and concern guests",
-            "My strategy for eating something I hate at someone else's house",
-            "The most chaotic thing I've ever done to a perfectly good meal",
-            "What I'd name a cocktail that captures my current emotional state",
-            "My review of the worst meal I've ever eaten — but generously",
-            "The dish I'd bring to a potluck to guarantee no one asks me again",
-            "What I'd order at a restaurant to seem more interesting than I am",
-            "The ingredient I'd add to everything if no one could stop me",
-            "My signature snack that no one else seems to understand",
-            "The food I'd ban from the office that would make me instantly unpopular",
-            "My justification for an absolutely unnecessary purchase",
-            "The worst thing I've ever bought that I'm somehow still proud of",
-            "What I'd spend a million dollars on in ways that wouldn't help me at all",
-            "My shopping strategy that makes no financial sense",
-            "The sale that lured me into buying something I'd never use",
-            "What I'd put in my cart at 1am that I'd regret by morning",
-            "My most creative excuse for an impulse purchase",
-            "The thing I've bought in bulk for absolutely no reason",
-            "What I'd invest in if I knew nothing about investing (and I don't)",
-            "The subscription I've been paying for but never used",
-            "The app I'd design that no one asked for but everyone would download",
-            "What I'd name my Wi-Fi to confuse and unsettle my neighbors",
-            "The voicemail greeting that would finally make people actually call back",
-            "What my autocorrect has convinced people I meant to say",
-            "My strategy for dealing with a laptop that's clearly judging me",
-            "The email subject line that would guarantee no one opens it",
-            "My plan for surviving without internet for a week — it wouldn't work",
-            "What I'd text back after accidentally sending a message to the wrong person",
-            "The password hint I'd write that would help absolutely nobody",
-            "My Zoom background that would end the meeting early",
-            "The sport I'd invent if I wanted everyone to be equally terrible at it",
-            "What I'd yell from the sidelines that would embarrass everyone",
-            "My strategy for winning at a game I've never played before",
-            "The worst possible name for my sports team",
-            "My pre-game ritual that definitely doesn't help",
-            "The board game I'd redesign so that I always win",
-            "My technique for winning an argument with a toddler",
-            "The excuse I'd give for losing at absolutely anything",
-            "What I'd say to the referee that would get me removed immediately",
-            "My most confident sporting prediction that aged terribly",
-            "The worst thing to pack for an international trip",
-            "My strategy for navigating a foreign city with no idea where I am",
-            "What I'd do if I accidentally ended up in the wrong country",
-            "The souvenir I'd buy that would confuse everyone at home",
-            "My technique for fitting everything into a carry-on (chaotic edition)",
-            "The reason I should not be trusted on a road trip",
-            "My emergency plan when the hotel looks nothing like the photos",
-            "What I'd do if I missed my flight and only had $20",
-            "My strategy for blending in somewhere I clearly don't belong",
-            "What I'd name the travel blog I'd start but never update",
-            "The item I'd add to my home that guests would never stop asking about",
-            "My strategy for fixing things around the house with no relevant skills",
-            "The reason my neighbors talk about me (probably)",
-            "What I'd put on a welcome mat to gently discourage visitors",
-            "The home renovation project I'd start but definitely not finish",
-            "What the previous owner of my home definitely left behind",
-            "My justification for the pile of things I refuse to throw away",
-            "What I'd name the room in my house that has no clear purpose",
-            "The thing in my home I've been meaning to deal with for over a year",
-            "My system for organizing things that makes perfect sense only to me",
-            "What I'd write on a test if I knew I was going to fail anyway",
-            "The excuse I'd give for not doing homework that is technically true",
-            "My strategy for bluffing through a presentation on a topic I don't know",
-            "The reason I'd be politely removed from every study group",
-            "What my report card would say if teachers could be brutally honest",
-            "My most confusingly smart moment",
-            "The subject I'd teach if I could only teach things I half-understand",
-            "My theory that sounds convincing until anyone actually thinks about it",
-            "The class I'd add to every school curriculum that no one wants",
-            "What I'd write in my textbook if I wrote a textbook",
-            "What my pet does when I leave that I'm probably better off not knowing",
-            "The most suspicious thing my pet has ever done",
-            "My strategy for convincing my cat to do literally anything",
-            "The look my pet gives me that I genuinely cannot explain",
-            "What I'd say in my defense at my pet's imaginary trial",
-            "My explanation for why my pet is objectively smarter than me",
-            "The thing my pet does that I've simply accepted as normal by now",
-            "What I'd name a pet I absolutely should not own",
-            "My instructions for pet-sitting that would concern any reasonable person",
-            "The reason my pet's vet sighs when they see my name on the schedule",
-            "My wellness routine, described by someone who definitely doesn't have one",
-            "What my doctor would say if they could roast me",
-            "The health trend I invented that definitely won't catch on",
-            "My gym routine if I'm being honest about what I'm really doing there",
-            "What I'd name a yoga pose that captures my actual flexibility",
-            "The diagnosis I'd give myself after five minutes on a medical website",
-            "My motivational quote for days when absolutely nothing is working",
-            "What I'd claim is a superfood based on no evidence whatsoever",
-            "My strategy for sleeping in any situation (it doesn't really work)",
-            "The thing I do instead of going to the gym that I've convinced myself is equivalent",
-            "My strategy for giving a gift to someone I don't know at all",
-            "The New Year's resolution I'd keep for exactly three days",
-            "What I'd write in a Valentine's card to someone I barely know",
-            "My Halloween costume that requires zero effort but maximum explanation",
-            "The toast I'd give at a retirement party for someone I've never met",
-            "What I'd name a holiday I invented purely for personal benefit",
-            "The carol I'd write that would ruin any holiday gathering",
-            "My approach to celebrating a holiday I don't fully understand",
-            "What I'd do if I accidentally double-booked my own birthday party",
-            "The gift I'd give that says 'I care, but also I did not think about this at all'",
-            "The reboot nobody is asking for, but I'm pitching anyway",
-            "My theme song if it had to honestly summarize my biggest flaw",
-            "The movie sequel that would ruin the original for everyone",
-            "What I'd name a band that only plays at funerals — voluntarily",
-            "My audition speech for a reality show I'd be eliminated from first",
-            "The TV show character I actually am, though I thought I was someone cooler",
-            "My review of the movie I fell asleep during but won't admit I missed",
-            "What I'd say on a talk show when asked 'so what are you working on?'",
-            "The podcast I'd start that would be cancelled after two episodes",
-            "My genre of music if my life were a movie soundtrack",
-            "My villain monologue, but it's about something incredibly petty",
-            "The world record I could realistically break — in the worst category",
-            "My battle cry if I were a very reluctant warrior",
-            "The award I'd create for myself that no one else could ever win",
-            "My plan for world domination, starting with my immediate neighborhood",
-            "The monument I'd build to honor my greatest mistake",
-            "What I'd say if I had to explain my worst decision in court",
-            "My legacy, as described by someone who barely knew me",
-            "The speech I'd give after accidentally winning an award I didn't enter",
-            "My strategy for becoming famous without doing anything impressive",
-            "The most chaotic element of my morning that I've fully normalized",
-            "My most elaborate plan that required no skill and still went wrong",
-            "The reason I should never be left unsupervised with a project",
-            "My most confident prediction that turned out to be completely wrong",
-            "The thing I've explained badly so many times I now believe my version",
-            "My most dramatic overreaction to something genuinely minor",
-            "The item I've kept for sentimental reasons that has no sentimentality whatsoever",
-            "My most impressive way to make a simple task much harder",
-            "The phrase I say that I think sounds casual but people always notice",
-            "My most questionable advice that someone actually followed",
-            "What I'd name my memoir if it had to be about a very specific bad week",
-            "The recurring nightmare I've made peace with",
-            "My most creative interpretation of the word 'clean'",
-            "The thing I'd bring to a deserted island to annoy everyone else there",
-            "My most suspiciously specific talent that has never come in useful",
-            "What I'd put on a warning label for my own personality",
-            "The fictional character I relate to that says a lot about me",
-            "My most chaotic grocery list item that needs no further explanation",
-            "The reason I'm always the last one to find out about things",
-            "What I'd name the documentary about my most questionable week",
-            "My least impressive party trick that I still insist on doing",
-            "The thing I've been 'about to start' for at least six months",
-            "My most creative excuse that I'm genuinely proud of",
-            "The way I'd describe my personality that is technically not wrong",
-            "What I'd title the sequel to my worst decision",
-            "My most baffling personality trait that I've never tried to explain",
-            "The reason I would make a terrible roommate, explained charitably",
-            "My most ambitious plan that required absolutely zero preparation",
-            "What I'd name the support group I'd accidentally start",
-            "The thing I've said with complete confidence that turned out to be wrong"
-          ]
+          "value": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "promptsBank"
+              }
+            ]
+          }
         },
         {
           "name": "roundNumber",
@@ -647,11 +680,11 @@
       "key": "createNotification",
       "payload": {
         "preset": {
-          "header": "Welcome to Wisecrack!",
-          "image": "banner",
-          "duration": 8,
-          "backgroundColor": "#ffd0d7",
-          "borderColor": "black"
+          "duration": 8
+        },
+        "cached": {
+          "header": "welcomeToWisecrack",
+          "image": "bannerImg"
         },
         "computed": {
           "to": {
@@ -662,8 +695,8 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!"
+                "type": "cached",
+                "value": "inAMomentTell"
               },
               {
                 "name": "arg1",
@@ -697,7 +730,6 @@
       "key": "createMixVote",
       "payload": {
         "preset": {
-          "title": "Tutorial mode",
           "terminationCondition": "get_all_votes",
           "showResultInRealTime": true,
           "showResultDuration": 2,
@@ -727,14 +759,13 @@
               "widgetIconColor": "red"
             }
           },
-          "poll.terminationCondition": "get_all_votes",
-          "backgroundColor": "#ffd0d7",
-          "borderColor": "black"
+          "poll.terminationCondition": "get_all_votes"
         },
         "cached": {
           "actors": "host",
           "point.targets": "players",
-          "point.answersQuantity": "numPlayers"
+          "point.answersQuantity": "numPlayers",
+          "title": "tutorialMode"
         },
         "computed": {
           "question": {
@@ -742,8 +773,8 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "($1), who needs the tutorial? Click on the players or select from the middle."
+                "type": "cached",
+                "value": "whoNeedsTheTutorial"
               },
               {
                 "name": "arg1",
@@ -948,14 +979,12 @@
           "key": "createNotification",
           "payload": {
             "preset": {
-              "header": "This game is NSFW",
-              "duration": 8,
-              "backgroundColor": "#ffd0d7",
-              "borderColor": "black",
-              "text": "Maybe not the best game to play with your coworkers. Don't say we didn't warn you 🙃"
+              "duration": 8
             },
             "cached": {
-              "to": "players"
+              "to": "players",
+              "header": "thisGameIsNsfw",
+              "text": "maybeNotTheBest"
             }
           }
         }
@@ -983,7 +1012,7 @@
               "video": true,
               "audio": true,
               "private": false,
-              "indicator": "💡",
+              "indicator": "\ud83d\udca1",
               "isVideoForAll": false
             },
             "cached": {
@@ -1322,7 +1351,7 @@
               "video": true,
               "audio": true,
               "private": false,
-              "indicator": "💡",
+              "indicator": "\ud83d\udca1",
               "isVideoForAll": false
             },
             "cached": {
@@ -1371,14 +1400,14 @@
           "payload": {
             "preset": {
               "type": "text",
-              "title": "Submit your answer",
               "terminationCondition": "get_all_values",
               "scope": "player",
               "private": true,
               "vertical": true,
-              "sounds.waitForSoundEnd": false,
-              "backgroundColor": "#ffd0d7",
-              "borderColor": "black"
+              "sounds.waitForSoundEnd": false
+            },
+            "cached": {
+              "title": "submitYourAnswer"
             },
             "computed": {
               "duration": {
@@ -1639,13 +1668,13 @@
           "payload": {
             "preset": {
               "type": "text",
-              "title": "Submit your answer",
               "terminationCondition": "get_all_values",
               "scope": "player",
               "private": true,
-              "vertical": true,
-              "backgroundColor": "#ffd0d7",
-              "borderColor": "black"
+              "vertical": true
+            },
+            "cached": {
+              "title": "submitYourAnswer"
             },
             "computed": {
               "duration": {
@@ -1850,10 +1879,10 @@
           "key": "createNotification",
           "payload": {
             "preset": {
-              "header": "Sit tight!",
-              "duration": 6,
-              "backgroundColor": "#ffd0d7",
-              "borderColor": "black"
+              "duration": 6
+            },
+            "cached": {
+              "header": "sitTight"
             },
             "computed": {
               "text": {
@@ -1861,8 +1890,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "We got your submissions. Please wait while the other players finish typing!"
+                    "type": "cached",
+                    "value": "weGotYourSubmissions"
                   }
                 ]
               },
@@ -2189,7 +2218,7 @@
                 "video": true,
                 "audio": true,
                 "private": false,
-                "indicator": "💡",
+                "indicator": "\ud83d\udca1",
                 "isVideoForAll": false
               },
               "cached": {
@@ -2391,8 +2420,8 @@
                   "params": [
                     {
                       "name": "format",
-                      "type": "preset",
-                      "value": "Click on your favorite answer!"
+                      "type": "cached",
+                      "value": "clickOnYourFavorite"
                     },
                     {
                       "name": "arg1",
@@ -3465,7 +3494,6 @@
           "key": "createVote",
           "payload": {
             "preset": {
-              "title": "PLAY AGAIN?",
               "vertical": true,
               "type": "binary",
               "terminationCondition": "get_majority",
@@ -3493,10 +3521,11 @@
                 }
               },
               "duration": 300,
-              "question": "Would you like to play another round?",
-              "allowRevoting": true,
-              "backgroundColor": "#ffd0d7",
-              "borderColor": "black"
+              "allowRevoting": true
+            },
+            "cached": {
+              "title": "playAgainTitle",
+              "question": "wouldYouLikeTo"
             },
             "computed": {
               "actors": {
@@ -3541,9 +3570,7 @@
       "key": "createNotification",
       "payload": {
         "preset": {
-          "image": "winner",
-          "backgroundColor": "#ffd0d7",
-          "borderColor": "black"
+          "image": "winner"
         },
         "cached": {
           "to": "players"
@@ -3554,8 +3581,8 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "($1) ($2)!"
+                "type": "cached",
+                "value": "fmtLine1"
               },
               {
                 "name": "arg1",

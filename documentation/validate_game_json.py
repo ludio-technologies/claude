@@ -605,10 +605,16 @@ class Validator:
         p = Validator._strip_cosmetic(payload)
         if not isinstance(p, dict):
             return p
-        # 1. Drop `title` wherever it lives (preset when inline, cached when hoisted).
+        # 1. Drop the hoistable user-facing copy / option fields wherever they live
+        #    (preset when inline, cached when hoisted into gameInitOptions.strings):
+        #    the widget `title`, and — for multiple-choice votes — the option list
+        #    (`targets` / `poll.targets`) and `pollVoteTargetsOptions` display map.
+        #    These are all now allowed to be themed per variant, so they must not
+        #    break the tutorial-vs-emeralds MECHANICS comparison.
         for sect in ("preset", "cached", "computed"):
             if isinstance(p.get(sect), dict):
-                p[sect].pop("title", None)
+                for fld in ("title", "targets", "poll.targets", "pollVoteTargetsOptions"):
+                    p[sect].pop(fld, None)
         # 2. Blank the question formatString's `format` param (its value AND type,
         #    since hoisting flips it from preset literal to cached reference).
         question = (p.get("computed") or {}).get("question")
@@ -2202,8 +2208,20 @@ class Validator:
         if source_basename == "interference.json":
             return
 
-        # Check 1: targets must be exactly the three standard options
-        targets = (actual.get("payload", {}).get("preset", {}) or {}).get("targets")
+        # Check 1: targets must be exactly the three standard options.
+        # Targets may be hoisted into gameInitOptions.strings (the strings/variants feature),
+        # in which case they live at payload.cached.targets as a strings-var name -> resolve it.
+        payload = actual.get("payload", {}) or {}
+        targets = (payload.get("preset", {}) or {}).get("targets")
+        if targets is None:
+            cached_key = (payload.get("cached", {}) or {}).get("targets")
+            if isinstance(cached_key, str):
+                strings = (self.data.get("gameInitOptions", {}) or {}).get("strings")
+                if isinstance(strings, dict):
+                    for _variant, _mapping in strings.items():
+                        if isinstance(_mapping, dict) and cached_key in _mapping:
+                            targets = _mapping[cached_key]
+                            break
         expected_targets = ["Reset scores", "Keep scores", "I'M SO DONE"]
         if targets != expected_targets:
             self.err("gameLoop (end-of-round host vote)",

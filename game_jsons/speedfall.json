@@ -10,25 +10,25 @@
       10,
       12
     ],
-    "time": 20,
+    "time": 10,
     "configVariables": [
       {
         "name": "firstSetClueDuration",
         "label": "Time for First Clue (seconds)",
         "type": "number",
-        "default": 300
+        "default": 60
       },
       {
         "name": "nextSetClueDuration",
         "label": "Time for All Other Clues (seconds)",
         "type": "number",
-        "default": 120
+        "default": 30
       },
       {
         "name": "guessDuration",
         "label": "Time per guess (seconds)",
         "type": "number",
-        "default": 120
+        "default": 30
       }
     ],
     "notChangeLayoutAfterGame": true,
@@ -172,12 +172,12 @@
     },
     "strings": {
       "Default": {
-        "welcomeHeader": "Welcome to Pitfall!",
+        "welcomeHeader": "Welcome to Speedfall!",
         "guidesVoteTitle": "Vote for Guides",
         "redClickerQuestion": "Who wants to be a Red Clicker? We need 2 of you!",
         "blueClickerQuestion": "Who wants to be a Blue Clicker? We need 2 of you!",
-        "redGuessClipTitle": "Pitfall, Red guess",
-        "blueGuessClipTitle": "Pitfall, Blue guess",
+        "redGuessClipTitle": "Speedfall, Red guess",
+        "blueGuessClipTitle": "Speedfall, Blue guess",
         "redGuessHeader": "Team Red, time to guess!",
         "blueGuessHeader": "Team Blue, time to guess!",
         "welcomeText": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!",
@@ -2104,15 +2104,15 @@
         }
       },
       "Love Island": {
-        "welcomeHeader": "Welcome to Pitfall: Love Island!",
+        "welcomeHeader": "Welcome to Speedfall: Love Island!",
         "guidesVoteTitle": "Vote for Guides",
         "redClickerQuestion": "Who wants to be a Red Clicker? We need 2 of you!",
         "blueClickerQuestion": "Who wants to be a Blue Clicker? We need 2 of you!",
-        "redGuessClipTitle": "Pitfall: Love Island, Red guess",
-        "blueGuessClipTitle": "Pitfall: Love Island, Blue guess",
+        "redGuessClipTitle": "Speedfall: Love Island, Red guess",
+        "blueGuessClipTitle": "Speedfall: Love Island, Blue guess",
         "redGuessHeader": "Team Red, time to guess!",
         "blueGuessHeader": "Team Blue, time to guess!",
-        "welcomeText": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play Pitfall: Love Island!",
+        "welcomeText": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play Speedfall: Love Island!",
         "chooseGuidesQuestion": "($1), choose 2 ($2)Guides!",
         "chooseQuestion": "($1), choose ($2)!",
         "clueHeader": "($1), time to give your team a clue!",
@@ -2356,15 +2356,15 @@
         }
       },
       "Harry Potter": {
-        "welcomeHeader": "Welcome to Pitfall: Harry Potter!",
+        "welcomeHeader": "Welcome to Speedfall: Harry Potter!",
         "guidesVoteTitle": "Vote for Guides",
         "redClickerQuestion": "Who wants to be a Red Clicker? We need 2 of you!",
         "blueClickerQuestion": "Who wants to be a Blue Clicker? We need 2 of you!",
-        "redGuessClipTitle": "Pitfall: Harry Potter, Red guess",
-        "blueGuessClipTitle": "Pitfall: Harry Potter, Blue guess",
+        "redGuessClipTitle": "Speedfall: Harry Potter, Red guess",
+        "blueGuessClipTitle": "Speedfall: Harry Potter, Blue guess",
         "redGuessHeader": "Team Red, time to guess!",
         "blueGuessHeader": "Team Blue, time to guess!",
-        "welcomeText": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play Pitfall: Harry Potter!",
+        "welcomeText": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play Speedfall: Harry Potter!",
         "chooseGuidesQuestion": "($1), choose 2 ($2)Guides!",
         "chooseQuestion": "($1), choose ($2)!",
         "clueHeader": "($1), time to give your team a clue!",
@@ -2617,15 +2617,15 @@
         }
       },
       "Disney": {
-        "welcomeHeader": "Welcome to Pitfall: Disney!",
+        "welcomeHeader": "Welcome to Speedfall: Disney!",
         "guidesVoteTitle": "Vote for Guides",
         "redClickerQuestion": "Who wants to be a Red Clicker? We need 2 of you!",
         "blueClickerQuestion": "Who wants to be a Blue Clicker? We need 2 of you!",
-        "redGuessClipTitle": "Pitfall: Disney, Red guess",
-        "blueGuessClipTitle": "Pitfall: Disney, Blue guess",
+        "redGuessClipTitle": "Speedfall: Disney, Red guess",
+        "blueGuessClipTitle": "Speedfall: Disney, Blue guess",
         "redGuessHeader": "Team Red, time to guess!",
         "blueGuessHeader": "Team Blue, time to guess!",
-        "welcomeText": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play Pitfall: Disney!",
+        "welcomeText": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play Speedfall: Disney!",
         "chooseGuidesQuestion": "($1), choose 2 ($2)Guides!",
         "chooseQuestion": "($1), choose ($2)!",
         "clueHeader": "($1), time to give your team a clue!",
@@ -2960,7 +2960,7 @@
         "url": "https://res.cloudinary.com/liars-club/image/upload/images/pitfall/pitfall_blue.png"
       },
       "banner": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/pitfall_banner_nzhaep.png"
+        "url": "https://res.cloudinary.com/liars-club/image/upload/falling_tfsxke.jpg"
       },
       "Red": {
         "url": "https://res.cloudinary.com/liars-club/image/upload/red_owl_ansgnc.png"

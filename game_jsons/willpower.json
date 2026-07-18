@@ -29,7 +29,7 @@
         "roleInfo": {
           "id": "player",
           "name": "Player",
-          "description": "Resist temptation… or watch others crack.",
+          "description": "Resist temptation\u2026 or watch others crack.",
           "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
           "team": "all",
           "prefix": "a "
@@ -153,22 +153,22 @@
     "strings": {
       "Default": {
         "welcomeToWillpower": "Welcome to Willpower!",
-        "inAMomentTell": "<b>($1)</b> — in a moment, tell me whether you want Ludio to teach your group how to play Willpower!",
+        "inAMomentTell": "<b>($1)</b> \u2014 in a moment, tell me whether you want Ludio to teach your group how to play Willpower!",
         "tutorialMode": "Tutorial mode",
         "whoNeedsTheTutorial": "($1), who needs the tutorial? Click on the players or select from the middle.",
         "willpower15": "Willpower (1/5)",
-        "trickTakingWithA": "Trick-taking with a twist. You score points by watching <b>others</b> cave to temptation first. Win cards strategically — but the moment YOU win enough tricks, you're out of the round.",
+        "trickTakingWithA": "Trick-taking with a twist. You score points by watching <b>others</b> cave to temptation first. Win cards strategically \u2014 but the moment YOU win enough tricks, you're out of the round.",
         "yourHand25": "Your hand (2/5)",
-        "eachRoundYouRe": "Each round you're dealt 12 cards (10 in a 6-player game). 5 vice suits — <b>Sweets, Scroll, Splurge, Lounge, Sips</b> — each numbered 1-12. Higher rank = more irresistible.",
+        "eachRoundYouRe": "Each round you're dealt 12 cards (10 in a 6-player game). 5 vice suits \u2014 <b>Sweets, Scroll, Splurge, Lounge, Sips</b> \u2014 each numbered 1-12. Higher rank = more irresistible.",
         "theTrick35": "The trick (3/5)",
-        "goingClockwiseEachPlayer": "Going clockwise, each player plays one card. You MUST follow the lead suit if you have one. The <b>highest</b> card in the lead suit wins the trick — unless someone plays trump.",
+        "goingClockwiseEachPlayer": "Going clockwise, each player plays one card. You MUST follow the lead suit if you have one. The <b>highest</b> card in the lead suit wins the trick \u2014 unless someone plays trump.",
         "trump45": "Trump (4/5)",
-        "fromRound2On": "From round 2 on, the dealer picks one vice as today's craving — the <b>trump suit</b>. Trump beats any non-trump card. The dealer rotates each round.",
+        "fromRound2On": "From round 2 on, the dealer picks one vice as today's craving \u2014 the <b>trump suit</b>. Trump beats any non-trump card. The dealer rotates each round.",
         "goingOut55": "Going out (5/5)",
-        "hitYourTrickThreshold": "Hit your trick threshold and your willpower BREAKS — you leave the round and score points equal to <b>every other player's</b> tricks so far. Thresholds: 4 (3p), 3 (4-5p), 2 (6p). Break early → fewer points. Outlast everyone → ZERO points.",
+        "hitYourTrickThreshold": "Hit your trick threshold and your willpower BREAKS \u2014 you leave the round and score points equal to <b>every other player's</b> tricks so far. Thresholds: 4 (3p), 3 (4-5p), 2 (6p). Break early \u2192 fewer points. Outlast everyone \u2192 ZERO points.",
         "round": "Round ($1)!",
         "todaySCraving": "Today's craving?",
-        "pickTodaySCraving": "($1), pick today's craving — your trump suit.",
+        "pickTodaySCraving": "($1), pick today's craving \u2014 your trump suit.",
         "todaySCraving2": "Today's craving: ($1)",
         "pickedTheTrumpFor": "($1) picked the trump for this round.",
         "playACard": "($1), play a card!",
@@ -177,9 +177,9 @@
         "brokeWillpower": "($1) BROKE willpower!",
         "schadenfreudePoints": "+($1) schadenfreude points",
         "roundOver": "Round ($1) over!",
-        "theStrongestWillpowerEarned": "($1) ($2) the strongest willpower — earned 0.",
+        "theStrongestWillpowerEarned": "($1) ($2) the strongest willpower \u2014 earned 0.",
         "wouldYouLikeTo": "Would you like to play another round?",
-        "theSchadenfreudeCrown": "($1) ($2) the schadenfreude crown! 👑",
+        "theSchadenfreudeCrown": "($1) ($2) the schadenfreude crown! \ud83d\udc51",
         "cardSet": "all",
         "cravingTargets": [
           "Sweets",
@@ -238,26 +238,88 @@
         "tutLoungeImg": "tut_lounge",
         "playAgainTitle": "PLAY AGAIN?",
         "wallpaperImg": "wallpaper",
-        "bannerImg": "banner"
+        "bannerImg": "banner",
+        "everybodyNobodyTargets": [
+          "Everybody!",
+          "Nobody!"
+        ],
+        "everybodyNobodyOptions": {
+          "Everybody!": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "green"
+          },
+          "Nobody!": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "red"
+          }
+        },
+        "resetScoresKeepScoresTargets": [
+          "Reset scores",
+          "Keep scores",
+          "I'M SO DONE"
+        ],
+        "keepScoresResetScoresOptions": {
+          "Keep scores": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "green"
+          },
+          "Reset scores": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "blue"
+          },
+          "I'M SO DONE": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "red"
+          }
+        },
+        "suitLabel": {
+          "sweets": "Sweets",
+          "scroll": "Scroll",
+          "splurge": "Splurge",
+          "lounge": "Lounge",
+          "sips": "Sips"
+        },
+        "suitColor": {
+          "sweets": "#F8B3CB",
+          "scroll": "#9B6BD3",
+          "splurge": "#E8B833",
+          "lounge": "#4EC1A7",
+          "sips": "#D83232"
+        }
       },
       "Love Island": {
         "welcomeToWillpower": "Welcome to Willpower: Love Island!",
-        "inAMomentTell": "<b>($1)</b> — in a moment, tell me whether you want Ludio to teach your group how to play Willpower: Love Island!",
+        "inAMomentTell": "<b>($1)</b> \u2014 in a moment, tell me whether you want Ludio to teach your group how to play Willpower: Love Island!",
         "tutorialMode": "Tutorial mode",
         "whoNeedsTheTutorial": "($1), who needs the tutorial? Click on the players or select from the middle.",
         "willpower15": "Willpower: Love Island (1/5)",
-        "trickTakingWithA": "Trick-taking with a twist. You score points by watching <b>others</b> cave to temptation first. Win cards strategically — but the moment YOU win enough tricks, you're out of the round.",
+        "trickTakingWithA": "Trick-taking with a twist. You score points by watching <b>others</b> cave to temptation first. Win cards strategically \u2014 but the moment YOU win enough tricks, you're out of the round.",
         "yourHand25": "Your hand (2/5)",
-        "eachRoundYouRe": "Each round you're dealt 12 cards (10 in a 6-player game). 5 vice suits — <b>Sweets, Scroll, Splurge, Lounge, Sips</b> — each numbered 1-12. Higher rank = more irresistible.",
+        "eachRoundYouRe": "Each round you're dealt 12 cards (10 in a 6-player game). 5 vice suits \u2014 <b>Sweets, Scroll, Splurge, Lounge, Sips</b> \u2014 each numbered 1-12. Higher rank = more irresistible.",
         "theTrick35": "The trick (3/5)",
-        "goingClockwiseEachPlayer": "Going clockwise, each player plays one card. You MUST follow the lead suit if you have one. The <b>highest</b> card in the lead suit wins the trick — unless someone plays trump.",
+        "goingClockwiseEachPlayer": "Going clockwise, each player plays one card. You MUST follow the lead suit if you have one. The <b>highest</b> card in the lead suit wins the trick \u2014 unless someone plays trump.",
         "trump45": "Trump (4/5)",
-        "fromRound2On": "From round 2 on, the dealer picks one vice as today's temptation — the <b>trump suit</b>. Trump beats any non-trump card. The dealer rotates each round.",
+        "fromRound2On": "From round 2 on, the dealer picks one vice as today's temptation \u2014 the <b>trump suit</b>. Trump beats any non-trump card. The dealer rotates each round.",
         "goingOut55": "Going out (5/5)",
-        "hitYourTrickThreshold": "Hit your trick threshold and your willpower BREAKS — you leave the round and score points equal to <b>every other player's</b> tricks so far. Thresholds: 4 (3p), 3 (4-5p), 2 (6p). Break early → fewer points. Outlast everyone → ZERO points.",
+        "hitYourTrickThreshold": "Hit your trick threshold and your willpower BREAKS \u2014 you leave the round and score points equal to <b>every other player's</b> tricks so far. Thresholds: 4 (3p), 3 (4-5p), 2 (6p). Break early \u2192 fewer points. Outlast everyone \u2192 ZERO points.",
         "round": "Round ($1)!",
         "todaySCraving": "Today's temptation?",
-        "pickTodaySCraving": "($1), pick today's temptation — your trump suit.",
+        "pickTodaySCraving": "($1), pick today's temptation \u2014 your trump suit.",
         "todaySCraving2": "Today's temptation: ($1)",
         "pickedTheTrumpFor": "($1) picked the trump for this round.",
         "playACard": "($1), play a card!",
@@ -268,7 +330,7 @@
         "roundOver": "Round ($1) over!",
         "theStrongestWillpowerEarned": "($1) never succumbed to temptation - and earned 0 points.",
         "wouldYouLikeTo": "Would you like to play another round?",
-        "theSchadenfreudeCrown": "($1) ($2) the schadenfreude crown! 👑",
+        "theSchadenfreudeCrown": "($1) ($2) the schadenfreude crown! \ud83d\udc51",
         "cardSet": "Love Island",
         "cravingTargets": [
           "Grafting",
@@ -327,7 +389,69 @@
         "tutLoungeImg": "tut_lounge_li",
         "playAgainTitle": "PLAY AGAIN?",
         "wallpaperImg": "wallpaper_li",
-        "bannerImg": "banner_li"
+        "bannerImg": "banner_li",
+        "everybodyNobodyTargets": [
+          "Everybody!",
+          "Nobody!"
+        ],
+        "everybodyNobodyOptions": {
+          "Everybody!": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "green"
+          },
+          "Nobody!": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "red"
+          }
+        },
+        "resetScoresKeepScoresTargets": [
+          "Reset scores",
+          "Keep scores",
+          "I'M SO DONE"
+        ],
+        "keepScoresResetScoresOptions": {
+          "Keep scores": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "green"
+          },
+          "Reset scores": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "blue"
+          },
+          "I'M SO DONE": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "red"
+          }
+        },
+        "suitLabel": {
+          "sweets": "Grafting",
+          "scroll": "Texting",
+          "splurge": "Bombshells",
+          "lounge": "Sunbathing",
+          "sips": "Cocktails"
+        },
+        "suitColor": {
+          "sweets": "#A07383",
+          "scroll": "#644488",
+          "splurge": "#967620",
+          "lounge": "#317C6B",
+          "sips": "#8B2020"
+        }
       }
     }
   },
@@ -562,26 +686,6 @@
             "4": "5th",
             "5": "6th"
           }
-        },
-        {
-          "name": "suitLabel",
-          "value": {
-            "sweets": "Sweets",
-            "scroll": "Scroll",
-            "splurge": "Splurge",
-            "lounge": "Lounge",
-            "sips": "Sips"
-          }
-        },
-        {
-          "name": "suitColor",
-          "value": {
-            "sweets": "#F8B3CB",
-            "scroll": "#9B6BD3",
-            "splurge": "#E8B833",
-            "lounge": "#4EC1A7",
-            "sips": "#D83232"
-          }
         }
       ]
     },
@@ -708,35 +812,17 @@
           "point.allowFewerAnswers": true,
           "point.terminationCondition": "get_all_votes",
           "poll.answersQuantity": 1,
-          "poll.targets": [
-            "Everybody!",
-            "Nobody!"
-          ],
           "oneClick": true,
           "allowRevoting": true,
-          "pollVoteTargetsOptions": {
-            "Everybody!": {
-              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-              "backgroundColor": "#D3D3D3",
-              "boxIconColor": "#D3D3D3",
-              "textColor": "black",
-              "widgetIconColor": "green"
-            },
-            "Nobody!": {
-              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
-              "backgroundColor": "#D3D3D3",
-              "boxIconColor": "#D3D3D3",
-              "textColor": "black",
-              "widgetIconColor": "red"
-            }
-          },
           "poll.terminationCondition": "get_all_votes"
         },
         "cached": {
           "actors": "host",
           "point.targets": "players",
           "point.answersQuantity": "numPlayers",
-          "title": "tutorialMode"
+          "title": "tutorialMode",
+          "poll.targets": "everybodyNobodyTargets",
+          "pollVoteTargetsOptions": "everybodyNobodyOptions"
         },
         "computed": {
           "question": {
@@ -3877,41 +3963,15 @@
               "showResultInRealTime": true,
               "showResultDuration": 1,
               "showResultDelay": 0,
-              "targets": [
-                "Reset scores",
-                "Keep scores",
-                "I'M SO DONE"
-              ],
-              "pollVoteTargetsOptions": {
-                "Keep scores": {
-                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-                  "backgroundColor": "#D3D3D3",
-                  "boxIconColor": "#D3D3D3",
-                  "textColor": "black",
-                  "widgetIconColor": "green"
-                },
-                "Reset scores": {
-                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-                  "backgroundColor": "#D3D3D3",
-                  "boxIconColor": "#D3D3D3",
-                  "textColor": "black",
-                  "widgetIconColor": "blue"
-                },
-                "I'M SO DONE": {
-                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
-                  "backgroundColor": "#D3D3D3",
-                  "boxIconColor": "#D3D3D3",
-                  "textColor": "black",
-                  "widgetIconColor": "red"
-                }
-              },
               "duration": 120,
               "allowRevoting": true
             },
             "cached": {
               "actors": "host",
               "title": "playAgainTitle",
-              "question": "wouldYouLikeTo"
+              "question": "wouldYouLikeTo",
+              "targets": "resetScoresKeepScoresTargets",
+              "pollVoteTargetsOptions": "keepScoresResetScoresOptions"
             }
           },
           "saveValueInCache": [
