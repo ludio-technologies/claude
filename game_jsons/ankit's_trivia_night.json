@@ -340,7 +340,341 @@
             "winner": {
                 "url": "https://res.cloudinary.com/liars-club/image/upload/winner_h5eyfr.gif"
             }
+        },
+        "strings": {
+            "Default": {
+                "chooseTeams": "Choose teams",
+                "whatTeamShouldBe": "($1), what team should ($2) be on?",
+                "wallpaperImg": "wallpaper",
+                "welcomeToAnkitS": "Welcome to Ankit's Trivia Night!",
+                "bannerImg": "banner",
+                "inAMomentTell": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!",
+                "hostPassword": "Host password",
+                "whatIsThePassword": "What is the password to start this trivia game?",
+                "randomTeams2": "Random teams?",
+                "randomHostChoosesTargets": [
+                    "Random",
+                    "Host chooses"
+                ],
+                "randomHostChoosesOptions": {
+                    "Random": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dice.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "#D3D3D3",
+                        "textColor": "black",
+                        "widgetIconColor": "green"
+                    },
+                    "Host chooses": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "#D3D3D3",
+                        "textColor": "black",
+                        "widgetIconColor": "blue"
+                    }
+                },
+                "doYouWantRandom": "($1), do you want random teams?",
+                "vetoCategories": "Veto categories",
+                "chooseTheFirstCategory": "Choose the first category to veto.",
+                "chooseTheSecondCategory": "Choose the second category to veto.",
+                "yourFinalCategoriesAre": "Your final categories are...",
+                "fmtLine4": "- <b>($1)</b><br/>- <b>($2)</b><br/>- <b>($3)</b>!!",
+                "whoIsOnTeam": "($1), who is on team ($2)?",
+                "hostWaits": "Host waits",
+                "clickCONTINUEWhenEveryone": "Click CONTINUE when everyone is ready to start the round.",
+                "continueTargets": [
+                    "CONTINUE"
+                ],
+                "continueOptions": {
+                    "CONTINUE": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/next-svgrepo-com.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "#D3D3D3",
+                        "textColor": "black",
+                        "widgetIconColor": "green"
+                    }
+                },
+                "beforeTheRoundStarts": "Before the round starts...",
+                "comeUpWithYour": "... come up with your team name!",
+                "teamName": "Team name",
+                "whatIsYourTeam": "What is your team name?",
+                "fmtLine6": "($1)!",
+                "ankitSTriviaNight": "Ankit's Trivia Night, Round ($1)",
+                "hostReadsTheQuestion": "Host reads the question",
+                "fmtLine8": "($1).($2)) ($3)($4)",
+                "yourOptionsAre": " Your options are: ($1)",
+                "submitMultipleChoiceAnswer": "Submit multiple-choice answer",
+                "fmtLine10": "($1).($2)) ($3)",
+                "debugging": "DEBUGGING",
+                "keysValues": "Keys: ($1)<br/>Values: ($2)",
+                "answerTheQuestion": "Answer the question",
+                "markAnswers": "Mark answers",
+                "answer": "($1) — Answer: ($2)",
+                "withPointsYourWinners": "With <b>($2) points</b>, your winners are:<br/><br/><b>($1)</b>!!",
+                "winTheRound": "($1) win the round!",
+                "timeForPlayoffs": "Time for playoffs!",
+                "areTied": "($1) are tied!",
+                "clickCONTINUEWhenEveryone2": "Click CONTINUE when everyone is ready to move on.",
+                "hereAreAllThe": "Here are all the winners from today!",
+                "andTHESEPlayersWere": "<b>($1)</b>!!<br/><br/>And THESE players were on multiple winning teams!<br/><br/><b>($2)</b>",
+                "fmtLine19": "($1) ($2)!",
+                "categoryMapping": {
+                    "Monsters in Film and Fiction": "round1Questions",
+                    "Princess Treatment": "round2Questions",
+                    "Taylor, Swift, Taylor Swift": "round3Questions",
+                    "Young Adult Novels": "round4Questions",
+                    "Flags and Rags": "round5Questions"
+                },
+                "round1Questions": [
+                    {
+                        "q": "Name this creature — the title monster of a 1979 sci-fi horror film.",
+                        "answer": "The Alien (Xenomorph)",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/monster_1.jpg"
+                    },
+                    {
+                        "q": "Name this amphibious monster — the star of a 1954 Universal horror classic (and the inspiration for 2017's The Shape of Water).",
+                        "answer": "The Creature from the Black Lagoon (Gill-man)",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/monster_2.jpg"
+                    },
+                    {
+                        "q": "Name the 2006 Guillermo del Toro film featuring this child-eating creature with eyes in its hands.",
+                        "answer": "Pan's Labyrinth",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/monster_3.jpg"
+                    },
+                    {
+                        "q": "Name the Netflix series this faceless, petal-headed monster is from.",
+                        "answer": "Stranger Things",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/monster_4.jpg"
+                    },
+                    {
+                        "q": "Name this man-eating plant from the 1986 musical horror-comedy.",
+                        "answer": "Audrey II (Little Shop of Horrors)",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/monster_5.jpg"
+                    },
+                    {
+                        "q": "Name this dancing clown who terrorizes the town of Derry.",
+                        "answer": "Pennywise",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/monster_6.jpg"
+                    },
+                    {
+                        "q": "Don't feed them after midnight — name this 1984 movie about these mischievous creatures.",
+                        "answer": "Gremlins",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/monster_7.jpg"
+                    },
+                    {
+                        "q": "Name this top-hatted monster from a 2014 Australian horror film (its name is also the film's title).",
+                        "answer": "The Babadook",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/monster_8.jpg"
+                    },
+                    {
+                        "q": "Name the film trilogy in which this cave-dwelling beast attacks the heroes in the Mines of Moria.",
+                        "answer": "The Lord of the Rings",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/monster_9.jpg"
+                    },
+                    {
+                        "q": "Name this giant reptilian kaiju, first unleashed on screen in 1954.",
+                        "answer": "Godzilla",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/monster_10.jpg"
+                    }
+                ],
+                "round2Questions": [
+                    {
+                        "q": "Name this princess.",
+                        "answer": "Mia (Thermopolis)",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/princess_1.jpg"
+                    },
+                    {
+                        "q": "Name the movie this princess is from.",
+                        "answer": "The Princess Bride",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/princess_2.jpg"
+                    },
+                    {
+                        "q": "Name the movie this princess is from.",
+                        "answer": "Aladdin",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/princess_3.jpg"
+                    },
+                    {
+                        "q": "Name the movie this princess is from.",
+                        "answer": "Star Wars",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/princess_4.jpg"
+                    },
+                    {
+                        "q": "Name this princess.",
+                        "answer": "Giselle",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/princess_5.jpg"
+                    },
+                    {
+                        "q": "Name this princess.",
+                        "answer": "Princess Peach",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/princess_6.jpg"
+                    },
+                    {
+                        "q": "Name the movie these two royal sisters are from.",
+                        "answer": "Frozen",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/princess_7.jpg"
+                    },
+                    {
+                        "q": "Name the movie this princess is from.",
+                        "answer": "Sleeping Beauty",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/princess_8.jpg"
+                    },
+                    {
+                        "q": "Name this princess.",
+                        "answer": "Fiona",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/princess_9.jpg"
+                    },
+                    {
+                        "q": "Name this princess.",
+                        "answer": "Merida",
+                        "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_130/princess_10.jpg"
+                    }
+                ],
+                "round3Questions": [
+                    {
+                        "q": "Which violet-eyed actress, famous for playing Cleopatra, was married eight times?",
+                        "answer": "Elizabeth Taylor"
+                    },
+                    {
+                        "q": "The author Jonathan Swift wrote which famous book about an adventurous Englishman who travels to a series of strange and distant lands?",
+                        "answer": "Gulliver's Travels"
+                    },
+                    {
+                        "q": "What was the name of Taylor Swift's record-breaking 2023-24 tour?",
+                        "answer": "The Eras Tour"
+                    },
+                    {
+                        "q": "Which actor played the werewolf Jacob Black in the Twilight films? (Full name please.)",
+                        "answer": "Taylor Lautner"
+                    },
+                    {
+                        "q": "What is the name of the secure messaging system used globally by banks to transmit standardized payment instructions and transaction codes?",
+                        "answer": "SWIFT (Society for Worldwide Interbank Financial Telecommunication)"
+                    },
+                    {
+                        "q": "Taylor Swift's 2020 lockdown album marked her 'indie folk' phase — what is the album's name?",
+                        "answer": "Folklore"
+                    },
+                    {
+                        "q": "Which 12th US President was nicknamed 'Old Rough and Ready'? (Full name please.)",
+                        "answer": "Zachary Taylor"
+                    },
+                    {
+                        "q": "In 2014, which company launched the Swift programming language for building apps?",
+                        "answer": "Apple"
+                    },
+                    {
+                        "q": "Which soft-rock singer had hits with 'Fire and Rain' and 'You've Got a Friend'?",
+                        "answer": "James Taylor"
+                    },
+                    {
+                        "q": "Taylor Swift names her cats after TV characters — name any of her three cats.",
+                        "answer": "Meredith / Olivia / Benjamin"
+                    }
+                ],
+                "round4Questions": [
+                    {
+                        "q": "In The Hunger Games, which district is Katniss Everdeen from?",
+                        "answer": "District 12"
+                    },
+                    {
+                        "q": "In the Divergent series, society is split into five factions — name one of them.",
+                        "answer": "Dauntless, Erudite, Abnegation, Amity, Candor"
+                    },
+                    {
+                        "q": "Which John Green novel follows Hazel and Gus, who meet at a cancer support group?",
+                        "answer": "The Fault in Our Stars"
+                    },
+                    {
+                        "q": "In the Percy Jackson series, who is Percy's Greek-god father?",
+                        "answer": "Poseidon"
+                    },
+                    {
+                        "q": "In The Maze Runner, what are the deadly creatures in the maze called?",
+                        "answer": "Grievers"
+                    },
+                    {
+                        "q": "In which rainy Washington town is Twilight set?",
+                        "answer": "Forks"
+                    },
+                    {
+                        "q": "In Lois Lowry's The Giver, what does the Giver transmit to the Receiver?",
+                        "answer": "Memories"
+                    },
+                    {
+                        "q": "In the Artemis Fowl series by author Eoin Colfer, what do the fairies call the humans?",
+                        "answer": "Mud People (Mud Men)"
+                    },
+                    {
+                        "q": "Cassandra Clare's Mortal Instruments features demon-hunters called what?",
+                        "answer": "Shadowhunters (Nephilim)"
+                    },
+                    {
+                        "q": "The 2020 Hunger Games prequel follows a young version of which future President of Panem?",
+                        "answer": "(Coriolanus) Snow"
+                    }
+                ],
+                "round5Questions": [
+                    {
+                        "q": "In this two-player board game, you can 'flag' your opponent — winning because their clock runs down to zero before they finish. Name the game.",
+                        "answer": "Chess"
+                    },
+                    {
+                        "q": "Scott Joplin's 'The Entertainer' and 'Maple Leaf Rag' are classics of which syncopated piano style, popular around 1900?",
+                        "answer": "Ragtime"
+                    },
+                    {
+                        "q": "What improvised firebomb is made from a bottle of flammable liquid stoppered with a burning rag?",
+                        "answer": "Molotov cocktail"
+                    },
+                    {
+                        "q": "Which seamstress is traditionally credited with sewing the first American flag?",
+                        "answer": "Betsy Ross"
+                    },
+                    {
+                        "q": "In Norse mythology, what name is given to the prophesied end-of-the-world battle? (Fittingly, it hides a 'rag'.)",
+                        "answer": "Ragnarok"
+                    },
+                    {
+                        "q": "On a battlefield, raising a white flag is the universal signal for what?",
+                        "answer": "Surrender"
+                    },
+                    {
+                        "q": "What slow-simmered Italian meat sauce — the French call it 'ragout' — is the classic pairing for tagliatelle in Bologna?",
+                        "answer": "Ragu"
+                    },
+                    {
+                        "q": "What adjective means blatantly or outrageously bad — as in an obvious foul or a clear '___ violation' of the rules?",
+                        "answer": "Flagrant"
+                    },
+                    {
+                        "q": "What is a large historical jug or vessel used for serving ale, cider, or wine?",
+                        "answer": "A flagon"
+                    },
+                    {
+                        "q": "'The rag trade' is a long-standing nickname for which industry?",
+                        "answer": "Clothing / fashion"
+                    }
+                ],
+                "round6Questions": [
+                    {
+                        "q": "What was the Tunguska event?"
+                    }
+                ],
+                "round7Questions": [
+                    {
+                        "q": "Closest without going over (price is right rules), what year was Abraham Lincoln born in?"
+                    }
+                ],
+                "round8Questions": [
+                    {
+                        "q": "Closest without going over (price is right rules), what year BCE was Julius Caesar murdered?"
+                    }
+                ]
+            }
         }
+    },
+    "visualSettings": {
+        "backgroundColor": "#ddf0c7",
+        "borderColor": "black"
     },
     "turnPlayerToSpectatorActions": [
         {
@@ -480,7 +814,6 @@
             "key": "createVote",
             "payload": {
                 "preset": {
-                    "title": "Choose teams",
                     "type": "target_poll",
                     "terminationCondition": "get_all_votes",
                     "showResultInRealTime": true,
@@ -490,8 +823,6 @@
                     "sounds.list": [
                         "soundboard.reminder"
                     ],
-                    "backgroundColor": "#ddf0c7",
-                    "borderColor": "black",
                     "answersQuantity": 1,
                     "oneClick": false,
                     "vertical": true
@@ -499,7 +830,8 @@
                 "cached": {
                     "actors": "host",
                     "targets": "teams",
-                    "playList.1": "host"
+                    "playList.1": "host",
+                    "title": "chooseTeams"
                 },
                 "computed": {
                     "question": {
@@ -507,8 +839,8 @@
                         "params": [
                             {
                                 "name": "format",
-                                "type": "preset",
-                                "value": "($1), what team should ($2) be on?"
+                                "type": "cached",
+                                "value": "whatTeamShouldBe"
                             },
                             {
                                 "name": "arg1",
@@ -728,8 +1060,8 @@
         {
             "key": "changeBackground",
             "payload": {
-                "preset": {
-                    "image": "wallpaper"
+                "cached": {
+                    "image": "wallpaperImg"
                 }
             }
         },
@@ -819,11 +1151,11 @@
             "key": "createNotification",
             "payload": {
                 "preset": {
-                    "header": "Welcome to Ankit's Trivia Night!",
-                    "image": "banner",
-                    "duration": 8,
-                    "backgroundColor": "#ddf0c7",
-                    "borderColor": "black"
+                    "duration": 8
+                },
+                "cached": {
+                    "header": "welcomeToAnkitS",
+                    "image": "bannerImg"
                 },
                 "computed": {
                     "to": {
@@ -834,8 +1166,8 @@
                         "params": [
                             {
                                 "name": "format",
-                                "type": "preset",
-                                "value": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!"
+                                "type": "cached",
+                                "value": "inAMomentTell"
                             },
                             {
                                 "name": "arg1",
@@ -869,7 +1201,6 @@
             "key": "createInput",
             "payload": {
                 "preset": {
-                    "title": "Host password",
                     "type": "text",
                     "scope": "player",
                     "vertical": true,
@@ -878,14 +1209,13 @@
                     "sounds.list": [
                         "soundboard.reminder"
                     ],
-                    "backgroundColor": "#ddf0c7",
-                    "borderColor": "black",
-                    "question": "What is the password to start this trivia game?",
                     "private": true
                 },
                 "cached": {
                     "playList.0": "host",
-                    "actors": "host"
+                    "actors": "host",
+                    "title": "hostPassword",
+                    "question": "whatIsThePassword"
                 }
             },
             "saveValueInCache": [
@@ -963,35 +1293,19 @@
             "key": "createVote",
             "payload": {
                 "preset": {
-                    "title": "Random teams?",
                     "type": "target_poll",
                     "terminationCondition": "get_all_votes",
                     "showResultInRealTime": true,
                     "showResultDuration": 2,
                     "showResult": true,
                     "allowRevoting": false,
-                    "targets": [
-                        "Random",
-                        "Host chooses"
-                    ],
-                    "pollVoteTargetsOptions": {
-                        "Random": {
-                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dice.svg",
-                            "backgroundColor": "#D3D3D3",
-                            "boxIconColor": "#D3D3D3",
-                            "textColor": "black",
-                            "widgetIconColor": "green"
-                        },
-                        "Host chooses": {
-                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-                            "backgroundColor": "#D3D3D3",
-                            "boxIconColor": "#D3D3D3",
-                            "textColor": "black",
-                            "widgetIconColor": "blue"
-                        }
-                    },
-                    "backgroundColor": "#FFE5B4",
-                    "borderColor": "black"
+                    "backgroundColor": "#FFE5B4"
+                },
+                "cached": {
+                    "actors": "host",
+                    "title": "randomTeams2",
+                    "targets": "randomHostChoosesTargets",
+                    "pollVoteTargetsOptions": "randomHostChoosesOptions"
                 },
                 "computed": {
                     "question": {
@@ -999,8 +1313,8 @@
                         "params": [
                             {
                                 "name": "format",
-                                "type": "preset",
-                                "value": "($1), do you want random teams?"
+                                "type": "cached",
+                                "value": "doYouWantRandom"
                             },
                             {
                                 "name": "arg1",
@@ -1027,9 +1341,6 @@
                             }
                         ]
                     }
-                },
-                "cached": {
-                    "actors": "host"
                 }
             },
             "saveValueInCache": [
@@ -1045,8 +1356,8 @@
                             },
                             {
                                 "name": "target",
-                                "type": "preset",
-                                "value": "Random"
+                                "type": "cached",
+                                "value": "randomHostChoosesTargets.0"
                             }
                         ]
                     }
@@ -1059,16 +1370,6 @@
                 {
                     "name": "currentMinScore",
                     "value": 0
-                },
-                {
-                    "name": "categoryMapping",
-                    "value": {
-                        "Disney Deep Cut": "round1Questions",
-                        "Creature Feature": "round2Questions",
-                        "Taylor, Swift, Taylor Swift": "round3Questions",
-                        "Young Adult Novels": "round4Questions",
-                        "Cheese and Chocolate": "round5Questions"
-                    }
                 },
                 {
                     "name": "categories",
@@ -1136,275 +1437,6 @@
                             }
                         ]
                     }
-                },
-                {
-                    "name": "round1Questions",
-                    "value": [
-                        {
-                            "q": "Name this character (and the Disney film/show they're from).",
-                            "answer": "Kronk (The Emperor's New Groove)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_129/disney_1.jpg"
-                        },
-                        {
-                            "q": "Name this character (and the Disney film/show they're from).",
-                            "answer": "Kida (Atlantis)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_129/disney_2.jpg"
-                        },
-                        {
-                            "q": "Name this character (and the Disney film/show they're from).",
-                            "answer": "Perry / Agent P (Phineas and Ferb)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_129/disney_3.jpg"
-                        },
-                        {
-                            "q": "Name this character (and the Disney film/show they're from).",
-                            "answer": "Kim Possible",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_129/disney_4.jpg"
-                        },
-                        {
-                            "q": "Name this character (and the Disney film/show they're from).",
-                            "answer": "Baymax (Big Hero 6)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_129/disney_5.jpg"
-                        },
-                        {
-                            "q": "Name this character (and the Disney film/show they're from).",
-                            "answer": "Mantis (Guardians of the Galaxy)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_129/disney_6.jpg"
-                        },
-                        {
-                            "q": "Name this character (and the Disney film/show they're from).",
-                            "answer": "Ahsoka Tano (Star Wars)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_129/disney_7.jpg"
-                        },
-                        {
-                            "q": "Name this character (and the Disney film/show they're from).",
-                            "answer": "Figment (Epcot)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_129/disney_8.jpg"
-                        },
-                        {
-                            "q": "Name this character (and the Disney film/show they're from).",
-                            "answer": "Oswald the Lucky Rabbit",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_129/disney_9.jpg"
-                        },
-                        {
-                            "q": "Name this character (and the Disney film/show they're from).",
-                            "answer": "Ember (Elemental)",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_129/disney_10.jpg"
-                        }
-                    ]
-                },
-                {
-                    "name": "round2Questions",
-                    "value": [
-                        {
-                            "q": "Name this animal.",
-                            "answer": "Red panda",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_128/animal_1.jpg"
-                        },
-                        {
-                            "q": "Name this animal.",
-                            "answer": "Chameleon",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_128/animal_2.jpg"
-                        },
-                        {
-                            "q": "Name this animal.",
-                            "answer": "Ring-tailed lemur",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_128/animal_3.jpg"
-                        },
-                        {
-                            "q": "Name this animal.",
-                            "answer": "Okapi",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_128/animal_4.jpg"
-                        },
-                        {
-                            "q": "Name this animal.",
-                            "answer": "Aye-aye",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_128/animal_5.jpg"
-                        },
-                        {
-                            "q": "Name this animal.",
-                            "answer": "Platypus",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_128/animal_6.jpg"
-                        },
-                        {
-                            "q": "Name this animal.",
-                            "answer": "Axolotl",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_128/animal_7.jpg"
-                        },
-                        {
-                            "q": "Name this animal.",
-                            "answer": "Tapir",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_128/animal_8.jpg"
-                        },
-                        {
-                            "q": "Name this animal.",
-                            "answer": "Armadillo",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_128/animal_9.jpg"
-                        },
-                        {
-                            "q": "Name this animal.",
-                            "answer": "Pangolin",
-                            "i": "https://res.cloudinary.com/liars-club/image/upload/images/zee_trivia/trivia_128/animal_10.jpg"
-                        }
-                    ]
-                },
-                {
-                    "name": "round3Questions",
-                    "value": [
-                        {
-                            "q": "Which violet-eyed actress, famous as Cleopatra, was married eight times?",
-                            "answer": "Elizabeth Taylor"
-                        },
-                        {
-                            "q": "Which 18th-century author wrote Gulliver's Travels and 'A Modest Proposal'?",
-                            "answer": "Jonathan Swift"
-                        },
-                        {
-                            "q": "What was the name of Taylor Swift's record-breaking 2023-24 tour?",
-                            "answer": "The Eras Tour"
-                        },
-                        {
-                            "q": "Which actor played werewolf Jacob Black in the Twilight films?",
-                            "answer": "Taylor Lautner"
-                        },
-                        {
-                            "q": "Which fast-flying bird, able to sleep on the wing, shares its name with a word for 'quick'?",
-                            "answer": "The swift"
-                        },
-                        {
-                            "q": "Taylor Swift's 2020 lockdown album marked her 'indie folk' turn — name it.",
-                            "answer": "Folklore"
-                        },
-                        {
-                            "q": "Which 12th US President was nicknamed 'Old Rough and Ready'?",
-                            "answer": "Zachary Taylor"
-                        },
-                        {
-                            "q": "Apple launched which programming language, named like a bird, in 2014?",
-                            "answer": "Swift"
-                        },
-                        {
-                            "q": "Which soft-rock singer had hits with 'Fire and Rain' and 'You've Got a Friend'?",
-                            "answer": "James Taylor"
-                        },
-                        {
-                            "q": "Taylor Swift names her cats after TV characters — name one of the three.",
-                            "answer": "Meredith / Olivia / Benjamin"
-                        }
-                    ]
-                },
-                {
-                    "name": "round4Questions",
-                    "value": [
-                        {
-                            "q": "In The Hunger Games, which district is Katniss from?",
-                            "answer": "District 12"
-                        },
-                        {
-                            "q": "Who wrote The Hunger Games trilogy?",
-                            "answer": "Suzanne Collins"
-                        },
-                        {
-                            "q": "In Divergent, society is split into five of these — name one.",
-                            "answer": "Factions (Dauntless, Erudite, etc.)"
-                        },
-                        {
-                            "q": "Which John Green novel follows Hazel and Gus, who meet at a cancer support group?",
-                            "answer": "The Fault in Our Stars"
-                        },
-                        {
-                            "q": "The Percy Jackson series draws on which mythology?",
-                            "answer": "Greek"
-                        },
-                        {
-                            "q": "In The Maze Runner, what are the deadly creatures in the maze called?",
-                            "answer": "Grievers"
-                        },
-                        {
-                            "q": "In which rainy Washington town is Twilight set?",
-                            "answer": "Forks"
-                        },
-                        {
-                            "q": "In Lois Lowry's The Giver, what does the Giver transmit to the Receiver?",
-                            "answer": "Memories"
-                        },
-                        {
-                            "q": "Cassandra Clare's Mortal Instruments features demon-hunters called what?",
-                            "answer": "Shadowhunters"
-                        },
-                        {
-                            "q": "The 2020 Hunger Games prequel follows a young version of which future President of Panem?",
-                            "answer": "(Coriolanus) Snow"
-                        }
-                    ]
-                },
-                {
-                    "name": "round5Questions",
-                    "value": [
-                        {
-                            "q": "Which stringy cheese is the classic topping on a Margherita pizza?",
-                            "answer": "Mozzarella"
-                        },
-                        {
-                            "q": "Chocolate is toxic to dogs because of a bitter stimulant named after cacao's genus, Theobroma ('food of the gods'). Name this compound.",
-                            "answer": "Theobromine"
-                        },
-                        {
-                            "q": "Which pungent French blue cheese is aged in the limestone caves of the village that shares its name?",
-                            "answer": "Roquefort"
-                        },
-                        {
-                            "q": "The chocolate-smoothing 'conching' process was invented by this Swiss chocolatier, whose gold-wrapped Lindor truffles and Easter bunnies are sold worldwide. Name the brand.",
-                            "answer": "Lindt"
-                        },
-                        {
-                            "q": "What Greek brined white cheese is crumbled over a Greek salad?",
-                            "answer": "Feta"
-                        },
-                        {
-                            "q": "This West African nation — its French name, Cote d'Ivoire, recalls the old ivory trade — grows more cocoa than any country on Earth. Name it.",
-                            "answer": "Ivory Coast"
-                        },
-                        {
-                            "q": "This classic 'Swiss cheese,' full of large holes called 'eyes' and named after a valley near Bern, is a fondue staple. Name it.",
-                            "answer": "Emmental"
-                        },
-                        {
-                            "q": "What campfire treat sandwiches a roasted marshmallow and a piece of chocolate between two graham crackers?",
-                            "answer": "S'mores"
-                        },
-                        {
-                            "q": "Name one of the two Dutch towns whose names are given to famous round, wax-coated cheeses.",
-                            "answer": "Gouda (or Edam)"
-                        },
-                        {
-                            "q": "What warm drink is made by stirring cocoa or melted chocolate into hot milk, often topped with marshmallows?",
-                            "answer": "Hot chocolate"
-                        }
-                    ]
-                },
-                {
-                    "name": "round6Questions",
-                    "value": [
-                        {
-                            "q": "What was the Tunguska event?"
-                        }
-                    ]
-                },
-                {
-                    "name": "round7Questions",
-                    "value": [
-                        {
-                            "q": "Closest without going over (price is right rules), what year was Abraham Lincoln born in?"
-                        }
-                    ]
-                },
-                {
-                    "name": "round8Questions",
-                    "value": [
-                        {
-                            "q": "Closest without going over (price is right rules), what year BCE was Julius Caesar murdered?"
-                        }
-                    ]
                 },
                 {
                     "name": "round",
@@ -1721,7 +1753,6 @@
                     "key": "createVote",
                     "payload": {
                         "preset": {
-                            "title": "Veto categories",
                             "type": "target_poll",
                             "terminationCondition": "get_all_votes",
                             "duration": 45,
@@ -1731,16 +1762,15 @@
                             "sounds.list": [
                                 "soundboard.reminder"
                             ],
-                            "backgroundColor": "#ddf0c7",
-                            "borderColor": "black",
-                            "question": "Choose the first category to veto.",
                             "vertical": true
                         },
                         "cached": {
                             "targets": "categories",
                             "pollVoteTargetsOptions": "categoryAppearances",
                             "actors": "players",
-                            "playList.1": "players"
+                            "playList.1": "players",
+                            "title": "vetoCategories",
+                            "question": "chooseTheFirstCategory"
                         }
                     },
                     "saveValueInCache": [
@@ -1818,7 +1848,6 @@
                     "key": "createVote",
                     "payload": {
                         "preset": {
-                            "title": "Veto categories",
                             "type": "target_poll",
                             "terminationCondition": "get_all_votes",
                             "duration": 45,
@@ -1828,16 +1857,15 @@
                             "sounds.list": [
                                 "soundboard.reminder"
                             ],
-                            "backgroundColor": "#ddf0c7",
-                            "borderColor": "black",
-                            "question": "Choose the second category to veto.",
                             "vertical": true
                         },
                         "cached": {
                             "targets": "finalCategories",
                             "pollVoteTargetsOptions": "categoryAppearances",
                             "actors": "players",
-                            "playList.1": "players"
+                            "playList.1": "players",
+                            "title": "vetoCategories",
+                            "question": "chooseTheSecondCategory"
                         }
                     },
                     "saveValueInCache": [
@@ -1915,10 +1943,10 @@
                     "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "header": "Your final categories are...",
-                            "duration": 10,
-                            "backgroundColor": "#ddf0c7",
-                            "borderColor": "black"
+                            "duration": 10
+                        },
+                        "cached": {
+                            "header": "yourFinalCategoriesAre"
                         },
                         "computed": {
                             "to": {
@@ -1929,8 +1957,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "- <b>($1)</b><br/>- <b>($2)</b><br/>- <b>($3)</b>!!"
+                                        "type": "cached",
+                                        "value": "fmtLine4"
                                     },
                                     {
                                         "name": "arg1",
@@ -2295,7 +2323,6 @@
                     },
                     "payload": {
                         "preset": {
-                            "title": "Choose teams",
                             "type": "target_point",
                             "terminationCondition": "get_all_votes",
                             "showResultInRealTime": true,
@@ -2305,8 +2332,6 @@
                             "sounds.list": [
                                 "soundboard.reminder"
                             ],
-                            "backgroundColor": "#ddf0c7",
-                            "borderColor": "black",
                             "allowFewerAnswers": true,
                             "answersQuantity": 4,
                             "oneClick": true,
@@ -2315,7 +2340,8 @@
                         "cached": {
                             "actors": "host",
                             "targets": "unassignedPlayers",
-                            "playList.1": "host"
+                            "playList.1": "host",
+                            "title": "chooseTeams"
                         },
                         "computed": {
                             "question": {
@@ -2323,8 +2349,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1), who is on team ($2)?"
+                                        "type": "cached",
+                                        "value": "whoIsOnTeam"
                                     },
                                     {
                                         "name": "arg1",
@@ -2568,36 +2594,24 @@
                     "key": "createVote",
                     "payload": {
                         "preset": {
-                            "title": "Host waits",
                             "type": "target_poll",
                             "terminationCondition": "get_all_votes",
                             "showResultInRealTime": true,
                             "showResultDuration": 0,
                             "vertical": true,
                             "private": true,
-                            "pollVoteTargetsOptions": {
-                                "CONTINUE": {
-                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/next-svgrepo-com.svg",
-                                    "backgroundColor": "#D3D3D3",
-                                    "boxIconColor": "#D3D3D3",
-                                    "textColor": "black",
-                                    "widgetIconColor": "green"
-                                }
-                            },
                             "sounds.waitForSoundEnd": true,
                             "sounds.list": [
                                 "soundboard.reminder"
-                            ],
-                            "backgroundColor": "#ddf0c7",
-                            "borderColor": "black",
-                            "targets": [
-                                "CONTINUE"
-                            ],
-                            "question": "Click CONTINUE when everyone is ready to start the round."
+                            ]
                         },
                         "cached": {
                             "actors": "host",
-                            "playList.1": "host"
+                            "playList.1": "host",
+                            "title": "hostWaits",
+                            "question": "clickCONTINUEWhenEveryone",
+                            "targets": "continueTargets",
+                            "pollVoteTargetsOptions": "continueOptions"
                         }
                     }
                 },
@@ -2605,11 +2619,11 @@
                     "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "duration": 5,
-                            "backgroundColor": "#ddf0c7",
-                            "borderColor": "black",
-                            "header": "Before the round starts...",
-                            "text": "... come up with your team name!"
+                            "duration": 5
+                        },
+                        "cached": {
+                            "header": "beforeTheRoundStarts",
+                            "text": "comeUpWithYour"
                         },
                         "computed": {
                             "to": {
@@ -2885,7 +2899,6 @@
                     "key": "createInput",
                     "payload": {
                         "preset": {
-                            "title": "Team name",
                             "type": "text",
                             "scope": "team",
                             "vertical": true,
@@ -2894,15 +2907,14 @@
                             "sounds.list": [
                                 "soundboard.reminder"
                             ],
-                            "backgroundColor": "#ddf0c7",
-                            "borderColor": "black",
-                            "question": "What is your team name?",
                             "defaultValue": "The Monastic Weasels",
                             "duration": 60
                         },
                         "cached": {
                             "playList.0": "players",
-                            "actors": "teams"
+                            "actors": "teams",
+                            "title": "teamName",
+                            "question": "whatIsYourTeam"
                         }
                     },
                     "saveValueInCache": [
@@ -3158,10 +3170,10 @@
                     "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "image": "banner",
-                            "duration": 8,
-                            "backgroundColor": "#ddf0c7",
-                            "borderColor": "black"
+                            "duration": 8
+                        },
+                        "cached": {
+                            "image": "bannerImg"
                         },
                         "computed": {
                             "to": {
@@ -3172,8 +3184,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1)!"
+                                        "type": "cached",
+                                        "value": "fmtLine6"
                                     },
                                     {
                                         "name": "arg1",
@@ -3199,8 +3211,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "Ankit's Trivia Night, Round ($1)"
+                                        "type": "cached",
+                                        "value": "ankitSTriviaNight"
                                     },
                                     {
                                         "name": "arg1",
@@ -3498,36 +3510,24 @@
                         "key": "createVote",
                         "payload": {
                             "preset": {
-                                "title": "Host reads the question",
                                 "type": "target_poll",
                                 "terminationCondition": "get_needed_votes",
                                 "neededVotes": 1,
                                 "showResultInRealTime": true,
                                 "showResultDuration": 0,
                                 "vertical": true,
-                                "pollVoteTargetsOptions": {
-                                    "CONTINUE": {
-                                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/next-svgrepo-com.svg",
-                                        "backgroundColor": "#D3D3D3",
-                                        "boxIconColor": "#D3D3D3",
-                                        "textColor": "black",
-                                        "widgetIconColor": "green"
-                                    }
-                                },
                                 "sounds.waitForSoundEnd": true,
                                 "sounds.list": [
                                     "soundboard.reminder"
-                                ],
-                                "backgroundColor": "#ddf0c7",
-                                "borderColor": "black",
-                                "targets": [
-                                    "CONTINUE"
                                 ]
                             },
                             "cached": {
                                 "actors": "host",
                                 "playList.1": "host",
-                                "image": "currentImage"
+                                "image": "currentImage",
+                                "title": "hostReadsTheQuestion",
+                                "targets": "continueTargets",
+                                "pollVoteTargetsOptions": "continueOptions"
                             },
                             "computed": {
                                 "private": {
@@ -3550,8 +3550,8 @@
                                     "params": [
                                         {
                                             "name": "format",
-                                            "type": "preset",
-                                            "value": "($1).($2)) ($3)($4)"
+                                            "type": "cached",
+                                            "value": "fmtLine8"
                                         },
                                         {
                                             "name": "arg1",
@@ -3596,8 +3596,8 @@
                                                             "params": [
                                                                 {
                                                                     "name": "format",
-                                                                    "type": "preset",
-                                                                    "value": " Your options are: ($1)"
+                                                                    "type": "cached",
+                                                                    "value": "yourOptionsAre"
                                                                 },
                                                                 {
                                                                     "name": "arg1",
@@ -3641,8 +3641,8 @@
                                         },
                                         {
                                             "name": "target",
-                                            "type": "preset",
-                                            "value": "CONTINUE"
+                                            "type": "cached",
+                                            "value": "continueTargets.0"
                                         }
                                     ]
                                 }
@@ -3726,7 +3726,6 @@
                         },
                         "payload": {
                             "preset": {
-                                "title": "Submit multiple-choice answer",
                                 "type": "target_poll",
                                 "terminationCondition": "get_all_votes",
                                 "showResultInRealTime": false,
@@ -3734,8 +3733,6 @@
                                 "showResult": false,
                                 "allowRevoting": true,
                                 "sounds.waitForSoundEnd": false,
-                                "backgroundColor": "#ddf0c7",
-                                "borderColor": "black",
                                 "scope": "team",
                                 "vertical": true,
                                 "duration": 60
@@ -3745,7 +3742,8 @@
                                 "actors": "teams",
                                 "image": "currentImage",
                                 "targets": "currentOptions",
-                                "pollVoteTargetsOptions": "optionAppearances"
+                                "pollVoteTargetsOptions": "optionAppearances",
+                                "title": "submitMultipleChoiceAnswer"
                             },
                             "computed": {
                                 "sounds.list": {
@@ -3763,8 +3761,8 @@
                                     "params": [
                                         {
                                             "name": "format",
-                                            "type": "preset",
-                                            "value": "($1).($2)) ($3)"
+                                            "type": "cached",
+                                            "value": "fmtLine10"
                                         },
                                         {
                                             "name": "arg1",
@@ -3824,10 +3822,10 @@
                         },
                         "payload": {
                             "preset": {
-                                "duration": 5,
-                                "backgroundColor": "#ddf0c7",
-                                "borderColor": "black",
-                                "header": "DEBUGGING"
+                                "duration": 5
+                            },
+                            "cached": {
+                                "header": "debugging"
                             },
                             "computed": {
                                 "to": {
@@ -3838,8 +3836,8 @@
                                     "params": [
                                         {
                                             "name": "format",
-                                            "type": "preset",
-                                            "value": "Keys: ($1)<br/>Values: ($2)"
+                                            "type": "cached",
+                                            "value": "keysValues"
                                         },
                                         {
                                             "name": "arg1",
@@ -4023,19 +4021,17 @@
                         },
                         "payload": {
                             "preset": {
-                                "title": "Answer the question",
                                 "type": "text",
                                 "duration": 60,
                                 "scope": "team",
                                 "vertical": true,
-                                "sounds.waitForSoundEnd": false,
-                                "backgroundColor": "#ddf0c7",
-                                "borderColor": "black"
+                                "sounds.waitForSoundEnd": false
                             },
                             "cached": {
                                 "playList.0": "players",
                                 "actors": "teams",
-                                "image": "currentImage"
+                                "image": "currentImage",
+                                "title": "answerTheQuestion"
                             },
                             "computed": {
                                 "sounds.list": {
@@ -4073,8 +4069,8 @@
                                     "params": [
                                         {
                                             "name": "format",
-                                            "type": "preset",
-                                            "value": "($1).($2)) ($3)($4)"
+                                            "type": "cached",
+                                            "value": "fmtLine8"
                                         },
                                         {
                                             "name": "arg1",
@@ -4119,8 +4115,8 @@
                                                             "params": [
                                                                 {
                                                                     "name": "format",
-                                                                    "type": "preset",
-                                                                    "value": " Your options are: ($1)"
+                                                                    "type": "cached",
+                                                                    "value": "yourOptionsAre"
                                                                 },
                                                                 {
                                                                     "name": "arg1",
@@ -4588,7 +4584,6 @@
                         "key": "createVote",
                         "payload": {
                             "preset": {
-                                "title": "Mark answers",
                                 "type": "target_poll",
                                 "terminationCondition": "get_all_votes",
                                 "showResultInRealTime": true,
@@ -4598,8 +4593,6 @@
                                 "sounds.list": [
                                     "soundboard.reminder"
                                 ],
-                                "backgroundColor": "#ddf0c7",
-                                "borderColor": "black",
                                 "allowFewerAnswers": true,
                                 "allowSkipping": true,
                                 "vertical": true
@@ -4610,7 +4603,8 @@
                                 "targets": "answers",
                                 "playList.1": "host",
                                 "pollVoteTargetsOptions": "optionAppearances",
-                                "image": "currentImage"
+                                "image": "currentImage",
+                                "title": "markAnswers"
                             },
                             "computed": {
                                 "question": {
@@ -4618,8 +4612,8 @@
                                     "params": [
                                         {
                                             "name": "format",
-                                            "type": "preset",
-                                            "value": "($1) — Answer: ($2)"
+                                            "type": "cached",
+                                            "value": "answer"
                                         },
                                         {
                                             "name": "arg1",
@@ -5304,8 +5298,6 @@
                     "payload": {
                         "preset": {
                             "duration": 5,
-                            "backgroundColor": "#ddf0c7",
-                            "borderColor": "black",
                             "image": "winner"
                         },
                         "computed": {
@@ -5317,8 +5309,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "With <b>($2) points</b>, your winners are:<br/><br/><b>($1)</b>!!"
+                                        "type": "cached",
+                                        "value": "withPointsYourWinners"
                                     },
                                     {
                                         "name": "arg1",
@@ -5371,8 +5363,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1) win the round!"
+                                        "type": "cached",
+                                        "value": "winTheRound"
                                     },
                                     {
                                         "name": "arg1",
@@ -5499,10 +5491,10 @@
                     },
                     "payload": {
                         "preset": {
-                            "duration": 5,
-                            "backgroundColor": "#ddf0c7",
-                            "borderColor": "black",
-                            "header": "Time for playoffs!"
+                            "duration": 5
+                        },
+                        "cached": {
+                            "header": "timeForPlayoffs"
                         },
                         "computed": {
                             "to": {
@@ -5513,8 +5505,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1) are tied!"
+                                        "type": "cached",
+                                        "value": "areTied"
                                     },
                                     {
                                         "name": "arg1",
@@ -5568,36 +5560,24 @@
                     },
                     "payload": {
                         "preset": {
-                            "title": "Host waits",
                             "type": "target_poll",
                             "terminationCondition": "get_all_votes",
                             "showResultInRealTime": true,
                             "showResultDuration": 0,
                             "vertical": true,
                             "private": true,
-                            "pollVoteTargetsOptions": {
-                                "CONTINUE": {
-                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/next-svgrepo-com.svg",
-                                    "backgroundColor": "#D3D3D3",
-                                    "boxIconColor": "#D3D3D3",
-                                    "textColor": "black",
-                                    "widgetIconColor": "green"
-                                }
-                            },
                             "sounds.waitForSoundEnd": true,
                             "sounds.list": [
                                 "soundboard.reminder"
-                            ],
-                            "backgroundColor": "#ddf0c7",
-                            "borderColor": "black",
-                            "targets": [
-                                "CONTINUE"
-                            ],
-                            "question": "Click CONTINUE when everyone is ready to move on."
+                            ]
                         },
                         "cached": {
                             "actors": "host",
-                            "playList.1": "host"
+                            "playList.1": "host",
+                            "title": "hostWaits",
+                            "question": "clickCONTINUEWhenEveryone2",
+                            "targets": "continueTargets",
+                            "pollVoteTargetsOptions": "continueOptions"
                         }
                     }
                 }
@@ -5815,13 +5795,11 @@
             "payload": {
                 "preset": {
                     "duration": 7,
-                    "backgroundColor": "#ddf0c7",
-                    "borderColor": "black",
-                    "image": "winner",
-                    "header": "Here are all the winners from today!"
+                    "image": "winner"
                 },
                 "cached": {
-                    "to": "players"
+                    "to": "players",
+                    "header": "hereAreAllThe"
                 },
                 "computed": {
                     "text": {
@@ -5829,8 +5807,8 @@
                         "params": [
                             {
                                 "name": "format",
-                                "type": "preset",
-                                "value": "<b>($1)</b>!!<br/><br/>And THESE players were on multiple winning teams!<br/><br/><b>($2)</b>"
+                                "type": "cached",
+                                "value": "andTHESEPlayersWere"
                             },
                             {
                                 "name": "arg1",
@@ -5908,8 +5886,6 @@
             "payload": {
                 "preset": {
                     "duration": 7,
-                    "backgroundColor": "#ddf0c7",
-                    "borderColor": "black",
                     "image": "winner"
                 },
                 "cached": {
@@ -5921,8 +5897,8 @@
                         "params": [
                             {
                                 "name": "format",
-                                "type": "preset",
-                                "value": "($1) ($2)!"
+                                "type": "cached",
+                                "value": "fmtLine19"
                             },
                             {
                                 "name": "arg1",
@@ -6011,8 +5987,8 @@
                         "params": [
                             {
                                 "name": "format",
-                                "type": "preset",
-                                "value": "With <b>($2) points</b>, your winners are:<br/><br/><b>($1)</b>!!"
+                                "type": "cached",
+                                "value": "withPointsYourWinners"
                             },
                             {
                                 "name": "arg1",
