@@ -318,6 +318,14 @@ ACTIONS: Dict[str, dict] = {
     # ── Mafia application ─────────────────────────────────────────────────────
     "setDay":   {"required": []},
     "setNight": {"required": []},
+
+    # ── Codenames application (Pitfall / Speedfall retheme) ───────────────────
+    # Engine actions for the Codenames-style word-grid game. No deep spec here;
+    # registered with their essential required params so they aren't reported as
+    # "Unknown action key". (Confirmed against prod Pitfall/Speedfall.)
+    "createCodenames": {"required": ["words"]},   # words = the word-grid source
+    "setMasterClue":   {"required": ["team"]},    # which team's spymaster clues
+    "teamTurn":        {"required": ["team"]},    # whose team's turn it is
 }
 
 VALID_PARAM_TYPES = {"preset", "cached", "computed"}
@@ -2073,14 +2081,47 @@ class Validator:
         return results
 
     def _check_host_snippet(self):
-        """Every saveValueInCache entry named 'host' must use the canonical getHostPlayerId snippet."""
+        """
+        Every saveValueInCache entry named 'host' must resolve to
+        "the host if they're an active player, else the first player".
+
+        Checked SEMANTICALLY (by shape), not by verbatim equality, so
+        functionally-equivalent variants pass: the player list may be the cached
+        'players' var OR allPlayers(), and the fallback first-player may be
+        players[0] / 'players.0' OR selectElement(<players>, 0). A rigid verbatim
+        match here produced false "must use the canonical snippet" errors on
+        perfectly correct games (e.g. Pitfall) — brittle to legitimate refactors.
+        """
+        def sel(node):
+            return node.get("selector") if isinstance(node, dict) else None
+
+        def has_sel(node, name):
+            if isinstance(node, dict):
+                if node.get("selector") == name:
+                    return True
+                return any(has_sel(v, name) for v in node.values())
+            if isinstance(node, list):
+                return any(has_sel(v, name) for v in node)
+            return False
+
         for path, entry in self._find_entries_named(self.data, "host"):
-            if entry.get("value") != HOST_CACHE_VALUE:
+            val = entry.get("value")
+            params = val.get("params", []) if isinstance(val, dict) else []
+            by = {p.get("name"): p.get("value") for p in params if isinstance(p, dict)}
+            cond, then, els = by.get("condition"), by.get("thenValue"), by.get("elseValue")
+            ok = (
+                sel(val) == "ifElse"
+                and sel(cond) == "contains" and has_sel(cond, "getHostPlayerId")
+                and sel(then) == "createList" and has_sel(then, "getHostPlayerId")
+                and sel(els) == "createList"
+            )
+            if not ok:
                 self.err(path,
-                         "Cache variable 'host' must use the canonical snippet: "
-                         "ifElse(contains(players, getHostPlayerId()), "
-                         "createList(getHostPlayerId()), createList(players[0])). "
-                         "Copy it verbatim from Things to remember.md.")
+                         "Cache variable 'host' must resolve to host-if-player-else-first-player: "
+                         "ifElse(contains(<players>, getHostPlayerId()), "
+                         "createList(getHostPlayerId()), createList(<first player>)). "
+                         "The player list may be cached 'players' or allPlayers(); the fallback may "
+                         "be players[0] or selectElement(<players>, 0).")
 
     def _check_widget_visibility(self):
         """
@@ -2810,9 +2851,11 @@ class Validator:
                                  "Use 'lastActionResult' (not 'lastActionResult.voteResult') when reading results.")
             if post_handler == "randomSelectNeededVoters":
                 all_fields = self._payload_fields(payload)
-                if "neededVoters" not in all_fields:
-                    self.err(path, f"'{key}' uses postHandler 'randomSelectNeededVoters' but 'neededVoters' "
-                             "is missing from the payload. Add it (e.g. preset: {{\"neededVoters\": N}}) "
+                # The engine drives the random-target count from 'neededVotes' (the
+                # vote's needed-votes threshold). Accept 'neededVoters' too, just in case.
+                if "neededVotes" not in all_fields and "neededVoters" not in all_fields:
+                    self.err(path, f"'{key}' uses postHandler 'randomSelectNeededVoters' but neither "
+                             "'neededVotes' nor 'neededVoters' is in the payload. Add 'neededVotes': N "
                              "to specify how many random targets to select.")
 
         # createGenericCardWidget: dimensions[0] * dimensions[1] must be >= len(decks)
