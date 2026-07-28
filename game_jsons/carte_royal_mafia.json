@@ -45,7 +45,7 @@
           "id": "townsperson",
           "name": "Townsperson",
           "team": "town",
-          "description": "You score Gold cards. Avoid taking Mafia cards \u2014 they halve your Gold score.",
+          "description": "You score Gold cards. Avoid taking Mafia cards — they halve your Gold score.",
           "avatar": "https://res.cloudinary.com/liars-club/image/upload/images/carte_royal_mafia/townsperson_10.png",
           "prefix": "a "
         },
@@ -57,7 +57,7 @@
           "id": "mafia",
           "name": "Mafia",
           "team": "mafia",
-          "description": "You score Townsperson cards. Avoid taking Daggers \u2014 they halve your Townsperson score.",
+          "description": "You score Townsperson cards. Avoid taking Daggers — they halve your Townsperson score.",
           "avatar": "https://res.cloudinary.com/liars-club/image/upload/images/carte_royal_mafia/mafia.png",
           "prefix": "the "
         },
@@ -68,7 +68,7 @@
           "id": "warlock",
           "name": "Warlock",
           "team": "mafia",
-          "description": "On team Mafia, but you score Gold like a Townsperson \u2014 your gold gets credited to the Mafia team total. Mafia cards still halve your score.",
+          "description": "On team Mafia, but you score Gold like a Townsperson — your gold gets credited to the Mafia team total. Mafia cards still halve your score.",
           "avatar": "https://res.cloudinary.com/liars-club/image/upload/images/carte_royal_mafia/warlock.png",
           "prefix": "the "
         },
@@ -85,7 +85,7 @@
     ],
     "images": {
       "wallpaper": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/images/carte_royal_mafia/wallpaper.jpg"
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/carte_royal_mafia/wallpaper_speakeasy.jpg"
       },
       "banner": {
         "url": "https://res.cloudinary.com/liars-club/image/upload/images/carte_royal_mafia/banner.jpg"
@@ -98,6 +98,24 @@
       },
       "winner": {
         "url": "https://res.cloudinary.com/liars-club/image/upload/winner_h5eyfr.gif"
+      },
+      "tut1": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/carte_royal_mafia/tut1.png"
+      },
+      "tut2": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/carte_royal_mafia/tut2.png"
+      },
+      "tut3": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/carte_royal_mafia/tut3.png"
+      },
+      "tut4": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/carte_royal_mafia/tut4.png"
+      },
+      "tut5": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/carte_royal_mafia/tut5.png"
+      },
+      "tut6": {
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/carte_royal_mafia/tut6.png"
       }
     },
     "soundboard": {
@@ -114,6 +132,91 @@
       "warlock": "https://lottie.host/35a57e9e-cf62-4cd3-8bb2-52ae937a23f7/WfqPaIo7OW.json",
       "police": "https://lottie.host/58a01ba5-c9ae-48fd-aade-b7ca9ab30a02/a5TyvWaigz.json",
       "mafia": "https://lottie.host/2b220489-e5b5-40f5-bb7d-c2c6057f0a5e/Ef0Le7XyXB.json"
+    },
+    "strings": {
+      "Default": {
+        "wallpaperImg": "wallpaper",
+        "welcomeHeader": "Welcome to Carte Royal Mafia!",
+        "bannerImg": "banner",
+        "welcomeText": "<b>($1)</b> — a trick-taking game with hidden Mafia roles. Each round you'll be dealt a fresh role from the cards.",
+        "tutorialTitle": "Tutorial mode",
+        "everybodyNobodyTargets": [
+          "Everybody!",
+          "Nobody!"
+        ],
+        "everybodyNobodyOptions": {
+          "Everybody!": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "green"
+          },
+          "Nobody!": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "red"
+          }
+        },
+        "tutorialVoteQuestion": "($1), who needs the tutorial? Click on the players or select from the middle.",
+        "leadLabel": "LEAD",
+        "trumpLabel": "TRUMP",
+        "howItWorksHeader": "How Carte Royal Mafia Works (1/6)",
+        "howItWorksText": "Each round you'll be dealt cards. Look for the Mafia / Warlock / Police Officer in your hand — that determines your secret role. Town & Warlock score Gold; Mafia scores Townsperson. Play tricks to collect points.",
+        "trickTwistHeader": "The Trick-Taking Twist (2/6)",
+        "trickTwistText": "Opposite suit beats lead suit! If Gold is led, a Townsperson 1 beats a Gold 15. Watch the LEAD and TRUMP indicators on the board.",
+        "roundHeader": "Round ($1)",
+        "roundDealText": "Dealer: ($1). Each player just received ($2) cards — check your hand for Mafia, Warlock, or Police Officer.",
+        "playCardPrompt": "($1), play a card!",
+        "mafiaRevealHeader": "($1) revealed as Mafia!",
+        "trickWinnerHeader": "Trick winner: ($1)",
+        "summaryFormat": "🥇 ($1)\n👥 ($2)\n🗡️ ($3)\n🎩 ($4)",
+        "roundOverHeader": "Round over!",
+        "roundOverText": "Roles revealed below. Each player's per-round contribution shown next to their score.",
+        "roundWinnerHeader": "Round winner: ($1)",
+        "teamScoresText": "Mafia team: ($1)  |  Town team: ($2)",
+        "playAgainTitle": "PLAY AGAIN?",
+        "playAgainQuestion": "Would you like to play another round?",
+        "resetScoresKeepScoresTargets": [
+          "Reset scores",
+          "Keep scores",
+          "I'M SO DONE"
+        ],
+        "resetScoresKeepScoresOptions": {
+          "Keep scores": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "green"
+          },
+          "Reset scores": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "blue"
+          },
+          "I'M SO DONE": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "red"
+          }
+        },
+        "winnerLine": "($1) ($2)!",
+        "mafiaCardHeader": "The Mafia (3/6)",
+        "mafiaCardText": "If led: a TRUMP 16. Otherwise: the same suit as the previous card played, with rank +1. Playing it publicly reveals you as Mafia. If a Townsperson or Warlock captures it, their Gold score is halved.",
+        "warlockCardHeader": "The Warlock (4/6)",
+        "warlockCardText": "A 16 of the LEADING suit. Holding it (without any Mafia card) makes you the Warlock — you score Gold like a Townsperson, but you're secretly on Team Mafia.",
+        "policeCardHeader": "Police Officer (5/6)",
+        "policeCardText": "A TRUMP 16 — unless a Mafia card is played to the same trick, in which case it becomes a 0 of the LEADING suit.",
+        "daggerCardHeader": "Dagger (6/6)",
+        "daggerCardText": "A TRUMP 0 (usually loses). If a Mafia player captures it, their Townsperson score is halved."
+      }
     }
   },
   "visualSettings": {
@@ -128,8 +231,8 @@
     {
       "key": "changeBackground",
       "payload": {
-        "preset": {
-          "image": "wallpaper"
+        "cached": {
+          "image": "wallpaperImg"
         }
       }
     },
@@ -162,6 +265,10 @@
         },
         {
           "name": "roundIndex",
+          "value": 0
+        },
+        {
+          "name": "currentMinScore",
           "value": 0
         },
         {
@@ -307,8 +414,8 @@
           "name": "dimensions",
           "value": {
             "3": [
-              1,
-              5
+              2,
+              3
             ],
             "4": [
               2,
@@ -334,8 +441,8 @@
           "value": {
             "gold": "GOLD",
             "townsperson": "TOWN",
-            "L_ABS": "\u2014",
-            "T_ABS": "\u2014"
+            "L_ABS": "—",
+            "T_ABS": "—"
           }
         }
       ]
@@ -408,12 +515,12 @@
       "key": "createNotification",
       "payload": {
         "preset": {
-          "header": "Welcome to Carte Royal Mafia!",
-          "image": "banner",
           "duration": 8
         },
         "cached": {
-          "to": "players"
+          "to": "players",
+          "header": "welcomeHeader",
+          "image": "bannerImg"
         },
         "computed": {
           "text": {
@@ -421,8 +528,8 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "<b>($1)</b> \u2014 a trick-taking game with hidden Mafia roles. Each round you'll be dealt a fresh role from the cards."
+                "type": "cached",
+                "value": "welcomeText"
               },
               {
                 "name": "arg1",
@@ -456,7 +563,6 @@
       "key": "createMixVote",
       "payload": {
         "preset": {
-          "title": "Tutorial mode",
           "terminationCondition": "get_all_votes",
           "showResultInRealTime": true,
           "showResultDuration": 2,
@@ -464,36 +570,17 @@
           "point.allowFewerAnswers": true,
           "point.terminationCondition": "get_all_votes",
           "poll.answersQuantity": 1,
-          "poll.targets": [
-            "Everybody!",
-            "Nobody!"
-          ],
           "oneClick": true,
           "allowRevoting": true,
-          "pollVoteTargetsOptions": {
-            "Everybody!": {
-              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-              "backgroundColor": "#D3D3D3",
-              "boxIconColor": "#D3D3D3",
-              "textColor": "black",
-              "widgetIconColor": "green"
-            },
-            "Nobody!": {
-              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
-              "backgroundColor": "#D3D3D3",
-              "boxIconColor": "#D3D3D3",
-              "textColor": "black",
-              "widgetIconColor": "red"
-            }
-          },
-          "poll.terminationCondition": "get_all_votes",
-          "backgroundColor": "#1a2342",
-          "borderColor": "#d4af37"
+          "poll.terminationCondition": "get_all_votes"
         },
         "cached": {
           "actors": "host",
           "point.targets": "players",
-          "point.answersQuantity": "numPlayers"
+          "point.answersQuantity": "numPlayers",
+          "title": "tutorialTitle",
+          "poll.targets": "everybodyNobodyTargets",
+          "pollVoteTargetsOptions": "everybodyNobodyOptions"
         },
         "computed": {
           "question": {
@@ -501,8 +588,8 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "($1), who needs the tutorial? Click on the players or select from the middle."
+                "type": "cached",
+                "value": "tutorialVoteQuestion"
               },
               {
                 "name": "arg1",
@@ -584,8 +671,8 @@
                           },
                           {
                             "name": "element",
-                            "type": "preset",
-                            "value": "Everybody!"
+                            "type": "cached",
+                            "value": "everybodyNobodyTargets.0"
                           }
                         ]
                       }
@@ -816,8 +903,10 @@
       "payload": {
         "preset": {
           "name": "lead_suit_deck",
-          "public": true,
-          "label": "LEAD"
+          "public": true
+        },
+        "cached": {
+          "label": "leadLabel"
         }
       }
     },
@@ -826,8 +915,10 @@
       "payload": {
         "preset": {
           "name": "trump_suit_deck",
-          "public": true,
-          "label": "TRUMP"
+          "public": true
+        },
+        "cached": {
+          "label": "trumpLabel"
         }
       }
     },
@@ -1335,11 +1426,8 @@
                           },
                           {
                             "name": "arg2",
-                            "type": "computed",
-                            "value": {
-                              "selector": "getMinCurrentScore",
-                              "params": []
-                            }
+                            "type": "cached",
+                            "value": "currentMinScore"
                           }
                         ]
                       }
@@ -1349,6 +1437,19 @@
               }
             ]
           }
+        }
+      }
+    },
+    {
+      "key": "showScore",
+      "payload": {
+        "preset": {
+          "order": "highest",
+          "format": "($1)"
+        },
+        "cached": {
+          "from": "players",
+          "to": "players"
         }
       }
     },
@@ -1480,10 +1581,11 @@
           "payload": {
             "preset": {
               "duration": 10,
-              "header": "How Carte Royal Mafia Works"
+              "image": "tut1"
             },
             "cached": {
-              "to": "learners"
+              "to": "learners",
+              "header": "howItWorksHeader"
             },
             "computed": {
               "text": {
@@ -1491,8 +1593,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "Each round you'll be dealt cards. Look for the Mafia / Warlock / Police Officer in your hand \u2014 that determines your secret role. Town & Warlock score Gold; Mafia scores Townsperson. Play tricks to collect points."
+                    "type": "cached",
+                    "value": "howItWorksText"
                   }
                 ]
               }
@@ -1504,10 +1606,11 @@
           "payload": {
             "preset": {
               "duration": 10,
-              "header": "The Trick-Taking Twist"
+              "image": "tut2"
             },
             "cached": {
-              "to": "learners"
+              "to": "learners",
+              "header": "trickTwistHeader"
             },
             "computed": {
               "text": {
@@ -1515,8 +1618,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "Opposite suit beats lead suit! If Gold is led, a Townsperson 1 beats a Gold 15. Watch the LEAD and TRUMP indicators on the board."
+                    "type": "cached",
+                    "value": "trickTwistText"
                   }
                 ]
               }
@@ -1528,10 +1631,11 @@
           "payload": {
             "preset": {
               "duration": 10,
-              "header": "Special Cards"
+              "image": "tut3"
             },
             "cached": {
-              "to": "learners"
+              "to": "learners",
+              "header": "mafiaCardHeader"
             },
             "computed": {
               "text": {
@@ -1539,8 +1643,83 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "Mafia card: 16 of trump (reveals you!) or +1 from previous. Police Officer: 16 of trump, unless Mafia is played \u2014 then 0 of lead. Warlock: 16 of lead. Dagger: 0 of trump (halves Mafia score if Mafia takes it)."
+                    "type": "cached",
+                    "value": "mafiaCardText"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "duration": 10,
+              "image": "tut4"
+            },
+            "cached": {
+              "to": "learners",
+              "header": "warlockCardHeader"
+            },
+            "computed": {
+              "text": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "cached",
+                    "value": "warlockCardText"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "duration": 10,
+              "image": "tut5"
+            },
+            "cached": {
+              "to": "learners",
+              "header": "policeCardHeader"
+            },
+            "computed": {
+              "text": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "cached",
+                    "value": "policeCardText"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "duration": 10,
+              "image": "tut6"
+            },
+            "cached": {
+              "to": "learners",
+              "header": "daggerCardHeader"
+            },
+            "computed": {
+              "text": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "cached",
+                    "value": "daggerCardText"
                   }
                 ]
               }
@@ -1934,8 +2113,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "Round ($1)"
+                    "type": "cached",
+                    "value": "roundHeader"
                   },
                   {
                     "name": "arg1",
@@ -1958,8 +2137,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "Dealer: ($1). Each player just received ($2) cards \u2014 check your hand for Mafia, Warlock, or Police Officer."
+                    "type": "cached",
+                    "value": "roundDealText"
                   },
                   {
                     "name": "arg1",
@@ -2628,8 +2807,8 @@
                   "params": [
                     {
                       "name": "format",
-                      "type": "preset",
-                      "value": "($1), play a card!"
+                      "type": "cached",
+                      "value": "playCardPrompt"
                     },
                     {
                       "name": "arg1",
@@ -3194,7 +3373,7 @@
                     {
                       "name": "defaultValue",
                       "type": "preset",
-                      "value": "\u2014"
+                      "value": "—"
                     }
                   ]
                 }
@@ -3257,7 +3436,7 @@
                     {
                       "name": "defaultValue",
                       "type": "preset",
-                      "value": "\u2014"
+                      "value": "—"
                     }
                   ]
                 }
@@ -3359,8 +3538,8 @@
                   "params": [
                     {
                       "name": "format",
-                      "type": "preset",
-                      "value": "($1) revealed as Mafia!"
+                      "type": "cached",
+                      "value": "mafiaRevealHeader"
                     },
                     {
                       "name": "arg1",
@@ -3573,7 +3752,7 @@
                     {
                       "name": "defaultValue",
                       "type": "preset",
-                      "value": "\u2014"
+                      "value": "—"
                     }
                   ]
                 }
@@ -3626,7 +3805,7 @@
                     {
                       "name": "defaultValue",
                       "type": "preset",
-                      "value": "\u2014"
+                      "value": "—"
                     }
                   ]
                 }
@@ -4700,8 +4879,8 @@
                   "params": [
                     {
                       "name": "format",
-                      "type": "preset",
-                      "value": "Trick winner: ($1)"
+                      "type": "cached",
+                      "value": "trickWinnerHeader"
                     },
                     {
                       "name": "arg1",
@@ -6206,8 +6385,8 @@
                   "params": [
                     {
                       "name": "format",
-                      "type": "preset",
-                      "value": "\ud83e\ude99 ($1)   \ud83d\udc65 ($2)\n\ud83d\udde1\ufe0f ($3)   \ud83c\udfa9 ($4)"
+                      "type": "cached",
+                      "value": "summaryFormat"
                     },
                     {
                       "name": "arg1",
@@ -6352,12 +6531,12 @@
           "payload": {
             "preset": {
               "duration": 5,
-              "isAnnounceOnly": true,
-              "header": "Round over!",
-              "text": "Roles revealed below. Each player's per-round contribution shown next to their score."
+              "isAnnounceOnly": true
             },
             "cached": {
-              "to": "players"
+              "to": "players",
+              "header": "roundOverHeader",
+              "text": "roundOverText"
             }
           }
         }
@@ -6723,8 +6902,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "Round winner: ($1)"
+                    "type": "cached",
+                    "value": "roundWinnerHeader"
                   },
                   {
                     "name": "arg1",
@@ -6738,8 +6917,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "Mafia team: ($1)  |  Town team: ($2)"
+                    "type": "cached",
+                    "value": "teamScoresText"
                   },
                   {
                     "name": "arg1",
@@ -6889,48 +7068,20 @@
           "key": "createVote",
           "payload": {
             "preset": {
-              "title": "PLAY AGAIN?",
               "type": "target_poll",
               "terminationCondition": "get_majority",
               "showResultInRealTime": true,
               "showResultDuration": 1,
               "showResultDelay": 0,
-              "targets": [
-                "Reset scores",
-                "Keep scores",
-                "I'M SO DONE"
-              ],
-              "pollVoteTargetsOptions": {
-                "Keep scores": {
-                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-                  "backgroundColor": "#D3D3D3",
-                  "boxIconColor": "#D3D3D3",
-                  "textColor": "black",
-                  "widgetIconColor": "green"
-                },
-                "Reset scores": {
-                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-                  "backgroundColor": "#D3D3D3",
-                  "boxIconColor": "#D3D3D3",
-                  "textColor": "black",
-                  "widgetIconColor": "blue"
-                },
-                "I'M SO DONE": {
-                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
-                  "backgroundColor": "#D3D3D3",
-                  "boxIconColor": "#D3D3D3",
-                  "textColor": "black",
-                  "widgetIconColor": "red"
-                }
-              },
               "duration": 120,
-              "question": "Would you like to play another round?",
-              "allowRevoting": true,
-              "backgroundColor": "#1a2342",
-              "borderColor": "#d4af37"
+              "allowRevoting": true
             },
             "cached": {
-              "actors": "host"
+              "actors": "host",
+              "title": "playAgainTitle",
+              "question": "playAgainQuestion",
+              "targets": "resetScoresKeepScoresTargets",
+              "pollVoteTargetsOptions": "resetScoresKeepScoresOptions"
             }
           },
           "saveValueInCache": [
@@ -6952,8 +7103,8 @@
                         },
                         {
                           "name": "target",
-                          "type": "preset",
-                          "value": "I'M SO DONE"
+                          "type": "cached",
+                          "value": "resetScoresKeepScoresTargets.2"
                         }
                       ]
                     }
@@ -6973,8 +7124,8 @@
                   },
                   {
                     "name": "target",
-                    "type": "preset",
-                    "value": "Reset scores"
+                    "type": "cached",
+                    "value": "resetScoresKeepScoresTargets.0"
                   }
                 ]
               }
@@ -7228,6 +7379,13 @@
                   }
                 ]
               }
+            },
+            {
+              "name": "currentMinScore",
+              "value": {
+                "selector": "getMinCurrentScore",
+                "params": []
+              }
             }
           ]
         }
@@ -7278,9 +7436,7 @@
       "key": "createNotification",
       "payload": {
         "preset": {
-          "image": "winner",
-          "backgroundColor": "#1a2342",
-          "borderColor": "#d4af37"
+          "image": "winner"
         },
         "cached": {
           "to": "players"
@@ -7291,8 +7447,8 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "($1) ($2)!"
+                "type": "cached",
+                "value": "winnerLine"
               },
               {
                 "name": "arg1",

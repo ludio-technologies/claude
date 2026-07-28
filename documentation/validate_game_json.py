@@ -626,6 +626,56 @@ class Validator:
         return p
 
     @staticmethod
+    def _strip_tutorial_svc_hoistable(entry: Any) -> Any:
+        """Normalize a tutorial-vote saveValueInCache entry (used for the emeralds
+        comparison) so that a hoisted vote-option COMPARISON literal still matches.
+
+        The `learners` logic checks `contains(voteResult, "Everybody!")`; that option
+        string is now allowed to be hoisted into gameInitOptions.strings and referenced
+        as a cached list element (e.g. `everybodyNobodyTargets.0`). Only the `element`
+        of a `contains` over the whole `voteResult` list is neutralized — every other
+        mechanic in the entry is still compared verbatim against emeralds."""
+        if isinstance(entry, dict):
+            out = {k: Validator._strip_tutorial_svc_hoistable(v) for k, v in entry.items()}
+            if out.get("selector") == "contains" and isinstance(out.get("params"), list):
+                over_voteresult = any(
+                    isinstance(p, dict) and p.get("name") == "list"
+                    and p.get("type") == "cached" and p.get("value") == "voteResult"
+                    for p in out["params"])
+                if over_voteresult:
+                    for p in out["params"]:
+                        if isinstance(p, dict) and p.get("name") == "element":
+                            p["type"] = "<hoistable>"
+                            p["value"] = "<hoistable>"
+            return out
+        if isinstance(entry, list):
+            return [Validator._strip_tutorial_svc_hoistable(v) for v in entry]
+        return entry
+
+    @staticmethod
+    def _strip_end_of_round_svc_hoistable(entry: Any) -> Any:
+        """Normalize an end-of-round-vote saveValueInCache entry (used for the emeralds
+        comparison) so that hoisted vote-option COMPARISON literals still match.
+
+        The playAgain/reset logic compares the vote result against option strings via
+        `isTargetGotMajority(voteResult, target="I'M SO DONE" / "Reset scores")`; those
+        option strings are now allowed to be hoisted into gameInitOptions.strings and
+        referenced as cached list elements (e.g. `resetScoresKeepScoresTargets.2`). Only
+        the `target` param of `isTargetGotMajority` is neutralized — all other mechanics
+        are still compared verbatim against emeralds."""
+        if isinstance(entry, dict):
+            out = {k: Validator._strip_end_of_round_svc_hoistable(v) for k, v in entry.items()}
+            if out.get("selector") == "isTargetGotMajority" and isinstance(out.get("params"), list):
+                for p in out["params"]:
+                    if isinstance(p, dict) and p.get("name") == "target":
+                        p["type"] = "<hoistable>"
+                        p["value"] = "<hoistable>"
+            return out
+        if isinstance(entry, list):
+            return [Validator._strip_end_of_round_svc_hoistable(v) for v in entry]
+        return entry
+
+    @staticmethod
     def _refs_vote_result(obj: Any) -> bool:
         """Return True if obj contains any string starting with 'lastActionResult.voteResult'."""
         if isinstance(obj, str):
@@ -2133,7 +2183,9 @@ class Validator:
                               self._strip_tutorial_hoistable(ref.get("payload")))
                 ref_svc = ref.get("saveValueInCache", [])
                 actual_svc = tutorial_vote.get("saveValueInCache", [])
-                svc_ok = actual_svc[:len(ref_svc)] == ref_svc
+                norm = self._strip_tutorial_svc_hoistable
+                svc_ok = ([norm(e) for e in actual_svc[:len(ref_svc)]] ==
+                          [norm(e) for e in ref_svc])
                 if not payload_ok or not svc_ok:
                     self.err(f"beforeLoopActions[{tutorial_idx}]",
                              "Tutorial createMixVote does not match the emeralds.json reference "
@@ -2235,7 +2287,10 @@ class Validator:
             if ref is not None:
                 actual_svc = actual.get("saveValueInCache")
                 ref_svc = ref.get("saveValueInCache")
-                if actual_svc != ref_svc:
+                norm = self._strip_end_of_round_svc_hoistable
+                a_norm = [norm(e) for e in actual_svc] if isinstance(actual_svc, list) else actual_svc
+                r_norm = [norm(e) for e in ref_svc] if isinstance(ref_svc, list) else ref_svc
+                if a_norm != r_norm:
                     self.err("gameLoop (end-of-round host vote)",
                              "End-of-round vote saveValueInCache (playAgain/reset logic) does not match "
                              "the emeralds.json reference. Copy it verbatim from emeralds.json.")

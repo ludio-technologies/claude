@@ -22,7 +22,7 @@
                 },
                 {
                     "title": "Hidden roles from your hand",
-                    "text": "Each round you're dealt 9 cards (7 at 5 players). Your role is derived from your hand:<br>— Hold a Mafia card → you are <i>Mafia</i>.<br>— No Mafia card but you hold the Warlock → you are <i>Warlock</i> (secretly on Team Mafia).<br>— Otherwise → you are <i>Townsperson</i>.<br><br>Your role stays secret until your team is revealed at round's end (or a Mafia card is played, which reveals that player immediately)."
+                    "text": "Each round you're dealt 9 cards (7 at 5 players). Your role is derived from your hand:<br>— Hold a Mafia card → you are Mafia.<br>— No Mafia card but you hold the Warlock → you are Warlock (secretly on Team Mafia).<br>— Otherwise → you are Townsperson.<br><br>Your role stays secret until your team is revealed at round's end (or a Mafia card is played, which reveals that player immediately)."
                 },
                 {
                     "title": "The trick (per turn)",
@@ -57,5 +57,9 @@
             ]
         }
     ],
-    "tags": ["card game", "social deduction", "strategic"]
+    "tags": [
+        "card game",
+        "social deduction",
+        "strategic"
+    ]
 }

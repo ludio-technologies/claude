@@ -91,6 +91,67 @@
       "perf_review": "https://res.cloudinary.com/liars-club/raw/upload/animations/not_my_problem/perf_review.json",
       "onboarding_doc": "https://res.cloudinary.com/liars-club/raw/upload/animations/not_my_problem/onboarding_doc.json",
       "buried": "https://assets5.lottiefiles.com/packages/lf20_oAByvh2C1K.json"
+    },
+    "strings": {
+      "Default": {
+        "wallpaperImg": "wallpaper",
+        "welcomeHeader": "Not My Problem",
+        "welcomeText": "Delegate dreaded tasks face-down and lie about what they are. Get stuck with 4 of the same task on your desk and you're BURIED. Last ones standing win!",
+        "bannerImg": "banner",
+        "tutorialTitle": "Tutorial mode",
+        "everybodyNobodyTargets": [
+          "Everybody!",
+          "Nobody!"
+        ],
+        "everybodyNobodyOptions": {
+          "Everybody!": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "green"
+          },
+          "Nobody!": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "red"
+          }
+        },
+        "tutorialVoteQuestion": "($1), who needs the tutorial? Click on the players or select from the middle.",
+        "stuckHeader": "($1) is stuck!",
+        "stuckText": "($1) has nothing left to delegate. Everyone else wins!",
+        "pickTaskPrompt": "($1), pick a task to delegate (kept face-down).",
+        "trueOrBluffText": "True, or a total bluff?",
+        "claimsHeader": "($1) claims: ($2)",
+        "onYourDeskHeader": "It's on your desk.",
+        "decideText": "Decide: True, Bluff, or Peek & Pass.",
+        "decisionPromptPeek": "($1): True, Bluff, or Peek & Pass?",
+        "decisionPromptNoPeek": "($1): everyone has seen it — True or Bluff?",
+        "calledRightHeader": "($1) called it right!",
+        "guessedWrongHeader": "($1) guessed wrong!",
+        "revealText": "It was a ($1). ($2) takes it.",
+        "deskWarnLabel": "($1) ⚠️",
+        "buriedHeader": "($1) is BURIED!",
+        "buriedText": "Four ($1)s on one desk. Everyone else wins!",
+        "claimAndDumpText": "Now claim what you like and dump it on someone new.",
+        "peekRevealHeader": "Psst — it's really a ($1).",
+        "winnerText": "The buck stopped with someone else.",
+        "winnerHeaderLine": "($1) ($2)!",
+        "winsWord": "wins",
+        "shareWinWord": "share the win",
+        "problemLabelByKey": {
+          "monday_meeting": "Monday Meeting",
+          "expense_report": "Expense Report",
+          "it_ticket": "IT Ticket",
+          "jury_duty": "Jury Duty",
+          "reply_all": "Reply-All Thread",
+          "printer_jam": "Printer Jam",
+          "perf_review": "Performance Review",
+          "onboarding_doc": "Onboarding Doc"
+        }
+      }
     }
   },
   "visualSettings": {
@@ -105,8 +166,8 @@
     {
       "key": "changeBackground",
       "payload": {
-        "preset": {
-          "image": "wallpaper"
+        "cached": {
+          "image": "wallpaperImg"
         }
       }
     },
@@ -228,7 +289,8 @@
       "key": "createVideoboxDecks",
       "payload": {
         "preset": {
-          "cardback": "cardback"
+          "cardback": "cardback",
+          "facedown": true
         },
         "cached": {
           "players": "players"
@@ -299,42 +361,6 @@
                   "printer_jam",
                   "perf_review",
                   "onboarding_doc"
-                ]
-              }
-            ]
-          }
-        },
-        {
-          "name": "problemLabelByKey",
-          "value": {
-            "selector": "createDict",
-            "params": [
-              {
-                "name": "keys",
-                "type": "preset",
-                "value": [
-                  "monday_meeting",
-                  "expense_report",
-                  "it_ticket",
-                  "jury_duty",
-                  "reply_all",
-                  "printer_jam",
-                  "perf_review",
-                  "onboarding_doc"
-                ]
-              },
-              {
-                "name": "values",
-                "type": "preset",
-                "value": [
-                  "Monday Meeting",
-                  "Expense Report",
-                  "IT Ticket",
-                  "Jury Duty",
-                  "Reply-All Thread",
-                  "Printer Jam",
-                  "Performance Review",
-                  "Onboarding Doc"
                 ]
               }
             ]
@@ -435,13 +461,13 @@
       "key": "createNotification",
       "payload": {
         "preset": {
-          "header": "Not My Problem",
-          "image": "banner",
-          "duration": 6,
-          "text": "Delegate dreaded tasks face-down and lie about what they are. Get stuck with 4 of the same task on your desk and you're BURIED. Last ones standing win!"
+          "duration": 6
         },
         "cached": {
-          "to": "players"
+          "to": "players",
+          "header": "welcomeHeader",
+          "text": "welcomeText",
+          "image": "bannerImg"
         }
       }
     },
@@ -449,7 +475,6 @@
       "key": "createMixVote",
       "payload": {
         "preset": {
-          "title": "Tutorial mode",
           "terminationCondition": "get_all_votes",
           "showResultInRealTime": true,
           "showResultDuration": 2,
@@ -457,28 +482,8 @@
           "point.allowFewerAnswers": true,
           "point.terminationCondition": "get_all_votes",
           "poll.answersQuantity": 1,
-          "poll.targets": [
-            "Everybody!",
-            "Nobody!"
-          ],
           "oneClick": true,
           "allowRevoting": true,
-          "pollVoteTargetsOptions": {
-            "Everybody!": {
-              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-              "backgroundColor": "#D3D3D3",
-              "boxIconColor": "#D3D3D3",
-              "textColor": "black",
-              "widgetIconColor": "green"
-            },
-            "Nobody!": {
-              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
-              "backgroundColor": "#D3D3D3",
-              "boxIconColor": "#D3D3D3",
-              "textColor": "black",
-              "widgetIconColor": "red"
-            }
-          },
           "poll.terminationCondition": "get_all_votes",
           "backgroundColor": "#D3FBEE",
           "borderColor": "black"
@@ -486,7 +491,10 @@
         "cached": {
           "actors": "host",
           "point.targets": "players",
-          "point.answersQuantity": "numPlayers"
+          "point.answersQuantity": "numPlayers",
+          "title": "tutorialTitle",
+          "poll.targets": "everybodyNobodyTargets",
+          "pollVoteTargetsOptions": "everybodyNobodyOptions"
         },
         "computed": {
           "question": {
@@ -494,8 +502,8 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "($1), who needs the tutorial? Click on the players or select from the middle."
+                "type": "cached",
+                "value": "tutorialVoteQuestion"
               },
               {
                 "name": "arg1",
@@ -577,8 +585,8 @@
                           },
                           {
                             "name": "element",
-                            "type": "preset",
-                            "value": "Everybody!"
+                            "type": "cached",
+                            "value": "everybodyNobodyTargets.0"
                           }
                         ]
                       }
@@ -686,9 +694,25 @@
             "preset": {
               "name": "problem_monday_meeting",
               "public": true,
-              "label": "Monday Meeting",
               "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/monday_meeting.png",
               "enlargeOnHover": true
+            },
+            "computed": {
+              "label": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "problemLabelByKey"
+                  },
+                  {
+                    "name": "value",
+                    "type": "preset",
+                    "value": "monday_meeting"
+                  }
+                ]
+              }
             }
           }
         },
@@ -698,9 +722,25 @@
             "preset": {
               "name": "problem_expense_report",
               "public": true,
-              "label": "Expense Report",
               "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/expense_report.png",
               "enlargeOnHover": true
+            },
+            "computed": {
+              "label": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "problemLabelByKey"
+                  },
+                  {
+                    "name": "value",
+                    "type": "preset",
+                    "value": "expense_report"
+                  }
+                ]
+              }
             }
           }
         },
@@ -710,9 +750,25 @@
             "preset": {
               "name": "problem_it_ticket",
               "public": true,
-              "label": "IT Ticket",
               "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/it_ticket.png",
               "enlargeOnHover": true
+            },
+            "computed": {
+              "label": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "problemLabelByKey"
+                  },
+                  {
+                    "name": "value",
+                    "type": "preset",
+                    "value": "it_ticket"
+                  }
+                ]
+              }
             }
           }
         },
@@ -722,9 +778,25 @@
             "preset": {
               "name": "problem_jury_duty",
               "public": true,
-              "label": "Jury Duty",
               "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/jury_duty.png",
               "enlargeOnHover": true
+            },
+            "computed": {
+              "label": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "problemLabelByKey"
+                  },
+                  {
+                    "name": "value",
+                    "type": "preset",
+                    "value": "jury_duty"
+                  }
+                ]
+              }
             }
           }
         },
@@ -734,9 +806,25 @@
             "preset": {
               "name": "problem_reply_all",
               "public": true,
-              "label": "Reply-All Thread",
               "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/reply_all.png",
               "enlargeOnHover": true
+            },
+            "computed": {
+              "label": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "problemLabelByKey"
+                  },
+                  {
+                    "name": "value",
+                    "type": "preset",
+                    "value": "reply_all"
+                  }
+                ]
+              }
             }
           }
         },
@@ -746,9 +834,25 @@
             "preset": {
               "name": "problem_printer_jam",
               "public": true,
-              "label": "Printer Jam",
               "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/printer_jam.png",
               "enlargeOnHover": true
+            },
+            "computed": {
+              "label": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "problemLabelByKey"
+                  },
+                  {
+                    "name": "value",
+                    "type": "preset",
+                    "value": "printer_jam"
+                  }
+                ]
+              }
             }
           }
         },
@@ -758,9 +862,25 @@
             "preset": {
               "name": "problem_perf_review",
               "public": true,
-              "label": "Performance Review",
               "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/perf_review.png",
               "enlargeOnHover": true
+            },
+            "computed": {
+              "label": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "problemLabelByKey"
+                  },
+                  {
+                    "name": "value",
+                    "type": "preset",
+                    "value": "perf_review"
+                  }
+                ]
+              }
             }
           }
         },
@@ -770,9 +890,25 @@
             "preset": {
               "name": "problem_onboarding_doc",
               "public": true,
-              "label": "Onboarding Doc",
               "emptyImage": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/onboarding_doc.png",
               "enlargeOnHover": true
+            },
+            "computed": {
+              "label": {
+                "selector": "getCachedObjectValue",
+                "params": [
+                  {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "problemLabelByKey"
+                  },
+                  {
+                    "name": "value",
+                    "type": "preset",
+                    "value": "onboarding_doc"
+                  }
+                ]
+              }
             }
           }
         }
@@ -891,10 +1027,6 @@
               "ratio": "0.77",
               "cardback": "cardback",
               "enlargeOnHover": true,
-              "dimensions": [
-                2,
-                8
-              ],
               "backgroundImage": "https://res.cloudinary.com/liars-club/image/upload/wood_qbegm0.jpg"
             },
             "computed": {
@@ -944,6 +1076,63 @@
                         }
                       ]
                     }
+                  }
+                ]
+              },
+              "dimensions": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "add",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "preset",
+                          "value": 2
+                        },
+                        {
+                          "name": "arg2",
+                          "type": "computed",
+                          "value": {
+                            "selector": "integerDivide",
+                            "params": [
+                              {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "add",
+                                  "params": [
+                                    {
+                                      "name": "arg1",
+                                      "type": "cached",
+                                      "value": "numPlayers"
+                                    },
+                                    {
+                                      "name": "arg2",
+                                      "type": "preset",
+                                      "value": 3
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 4
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "arg2",
+                    "type": "preset",
+                    "value": 4
                   }
                 ]
               }
@@ -1232,8 +1421,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "($1) is stuck!"
+                    "type": "cached",
+                    "value": "stuckHeader"
                   },
                   {
                     "name": "arg1",
@@ -1256,8 +1445,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "($1) has nothing left to delegate. Everyone else wins!"
+                    "type": "cached",
+                    "value": "stuckText"
                   },
                   {
                     "name": "arg1",
@@ -1379,8 +1568,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "($1), pick a task to delegate (kept face-down)."
+                    "type": "cached",
+                    "value": "pickTaskPrompt"
                   },
                   {
                     "name": "arg1",
@@ -1576,11 +1765,9 @@
             ]
           },
           "payload": {
-            "preset": {
-              "text": "True, or a total bluff?"
-            },
             "cached": {
-              "to": "players"
+              "to": "players",
+              "text": "trueOrBluffText"
             },
             "computed": {
               "image": {
@@ -1598,8 +1785,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "($1) claims: ($2)"
+                    "type": "cached",
+                    "value": "claimsHeader"
                   },
                   {
                     "name": "arg1",
@@ -1876,9 +2063,9 @@
             ]
           },
           "payload": {
-            "preset": {
-              "header": "It's on your desk.",
-              "text": "Decide: True, Bluff, or Peek & Pass."
+            "cached": {
+              "header": "onYourDeskHeader",
+              "text": "decideText"
             },
             "computed": {
               "to": {
@@ -2098,8 +2285,8 @@
                       "params": [
                         {
                           "name": "format",
-                          "type": "preset",
-                          "value": "($1): True, Bluff, or Peek & Pass?"
+                          "type": "cached",
+                          "value": "decisionPromptPeek"
                         },
                         {
                           "name": "arg1",
@@ -2126,8 +2313,8 @@
                       "params": [
                         {
                           "name": "format",
-                          "type": "preset",
-                          "value": "($1): everyone has seen it — True or Bluff?"
+                          "type": "cached",
+                          "value": "decisionPromptNoPeek"
                         },
                         {
                           "name": "arg1",
@@ -2292,17 +2479,31 @@
             {
               "name": "holderCorrect",
               "value": {
-                "selector": "equals",
+                "selector": "ifElse",
                 "params": [
                   {
-                    "name": "arg1",
+                    "name": "condition",
                     "type": "cached",
                     "value": "guessTrue"
                   },
                   {
-                    "name": "arg2",
+                    "name": "thenValue",
                     "type": "cached",
                     "value": "claimWasTrue"
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "logicalNOT",
+                      "params": [
+                        {
+                          "name": "arg",
+                          "type": "cached",
+                          "value": "claimWasTrue"
+                        }
+                      ]
+                    }
                   }
                 ]
               }
@@ -2686,8 +2887,8 @@
                       "params": [
                         {
                           "name": "format",
-                          "type": "preset",
-                          "value": "($1) called it right!"
+                          "type": "cached",
+                          "value": "calledRightHeader"
                         },
                         {
                           "name": "arg1",
@@ -2714,8 +2915,8 @@
                       "params": [
                         {
                           "name": "format",
-                          "type": "preset",
-                          "value": "($1) guessed wrong!"
+                          "type": "cached",
+                          "value": "guessedWrongHeader"
                         },
                         {
                           "name": "arg1",
@@ -2741,8 +2942,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "It was a ($1). ($2) takes it."
+                    "type": "cached",
+                    "value": "revealText"
                   },
                   {
                     "name": "arg1",
@@ -2832,8 +3033,8 @@
                       "params": [
                         {
                           "name": "format",
-                          "type": "preset",
-                          "value": "($1) ⚠️"
+                          "type": "cached",
+                          "value": "deskWarnLabel"
                         },
                         {
                           "name": "arg1",
@@ -3085,8 +3286,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "($1) is BURIED!"
+                    "type": "cached",
+                    "value": "buriedHeader"
                   },
                   {
                     "name": "arg1",
@@ -3109,8 +3310,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "Four ($1)s on one desk. Everyone else wins!"
+                    "type": "cached",
+                    "value": "buriedText"
                   },
                   {
                     "name": "arg1",
@@ -3220,8 +3421,8 @@
             ]
           },
           "payload": {
-            "preset": {
-              "text": "Now claim what you like and dump it on someone new."
+            "cached": {
+              "text": "claimAndDumpText"
             },
             "computed": {
               "to": {
@@ -3249,8 +3450,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "Psst — it's really a ($1)."
+                    "type": "cached",
+                    "value": "peekRevealHeader"
                   },
                   {
                     "name": "arg1",
@@ -3440,11 +3641,9 @@
             ]
           },
           "payload": {
-            "preset": {
-              "text": "True, or a total bluff?"
-            },
             "cached": {
-              "to": "players"
+              "to": "players",
+              "text": "trueOrBluffText"
             },
             "computed": {
               "image": {
@@ -3462,8 +3661,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "($1) claims: ($2)"
+                    "type": "cached",
+                    "value": "claimsHeader"
                   },
                   {
                     "name": "arg1",
@@ -3824,9 +4023,9 @@
             ]
           },
           "payload": {
-            "preset": {
-              "header": "It's on your desk.",
-              "text": "Decide: True, Bluff, or Peek & Pass."
+            "cached": {
+              "header": "onYourDeskHeader",
+              "text": "decideText"
             },
             "computed": {
               "to": {
@@ -3967,11 +4166,11 @@
       "key": "createNotification",
       "payload": {
         "preset": {
-          "image": "winner",
-          "text": "The buck stopped with someone else."
+          "image": "winner"
         },
         "cached": {
-          "to": "players"
+          "to": "players",
+          "text": "winnerText"
         },
         "computed": {
           "header": {
@@ -3979,8 +4178,8 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "($1) ($2)!"
+                "type": "cached",
+                "value": "winnerHeaderLine"
               },
               {
                 "name": "arg1",
@@ -4025,13 +4224,13 @@
                     },
                     {
                       "name": "thenValue",
-                      "type": "preset",
-                      "value": "wins"
+                      "type": "cached",
+                      "value": "winsWord"
                     },
                     {
                       "name": "elseValue",
-                      "type": "preset",
-                      "value": "share the win"
+                      "type": "cached",
+                      "value": "shareWinWord"
                     }
                   ]
                 }
