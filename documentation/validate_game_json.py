@@ -91,7 +91,7 @@ SELECTORS: Dict[str, dict] = {
 
     # ── Object ────────────────────────────────────────────────────────────────
     "getObjectField":       {"params": ["obj", "field"], "optional": ["defaultValue"]},
-    "getObjectFieldList":   {"params": ["obj", "field"], "optional": ["defaultValue"]},
+    "getObjectFieldList":   {"params": ["list", "field"], "optional": ["defaultValue"]},
     "getObjectKeys":        {"params": ["obj"]},
     "getObjectValues":      {"params": ["obj"]},
     "createDict":           {"params": ["keys", "values"]},

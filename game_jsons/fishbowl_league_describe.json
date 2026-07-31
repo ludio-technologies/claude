@@ -1,0 +1,45 @@
+{
+  "name": "Fishbowl League",
+  "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+  "banner": "https://res.cloudinary.com/liars-club/image/upload/images/fishbowl/fishbowl_league_banner.png",
+  "description": {
+    "summary": "Guess your team's phrases based on clues from your Cluegiver!",
+    "description_title": "Fishbowl Overview",
+    "tutorial_link": "https://www.youtube.com/watch?v=1F8-WyVFXIg&ab_channel=Ludio",
+    "Tutorial": "<a href='https://www.youtube.com/watch?v=1F8-WyVFXIg&ab_channel=Ludio'>Fishbowl: How to play</a>",
+    "# Players": "4-6",
+    "players": "4-6",
+    "Duration": "25 mins"
+  },
+  "rules": [
+    {
+      "name": "Basic Rules",
+      "icon": "icon.png",
+      "content": [
+        {
+          "title": "Overview",
+          "text": "Players are randomly assigned to either the Red team or the Blue team at the start of the game. The game has 3 rounds.<br><br>At the start of each round, one team member from both teams volunteers to be the Cluegiver. Each Cluegiver receives a deck of 20 cards with phrases on them. Team Red goes first.<br><br>The Red Cluegiver will be dealt one card at a time from their deck. They must describe the phrase on the card, following the constraint of that round, until someone on their team guesses the phrase correctly. Once this happens, the Cluegiver clicks the current card to receive the next card from their deck. The Cluegiver can also choose to pass, in which case the current card is put in their team's discard pile and the Cluegiver receives the next card from their deck.<br><br>This continues until the 45-second timer runs out, at which point it's now the Blue Cluegiver's turn to do the same thing for their cards. If a Cluegiver exhausts all the cards in their deck, they get to attempt their discarded cards again.<br><br>The two teams take turns back and forth until one team has successfully guessed all their cards, at which point the round ends. (If team Red guesses all their cards, team Blue still gets one more turn before the round ends.)"
+        },
+        {
+          "title": "Points",
+          "text": "At the end of a round, the winning team receives points equal to the number of cards in the other team's discard pile.<br><br>The same process is repeated for all 3 rounds. The team with the most points at the end wins!"
+        },
+        {
+          "title": "The Deck",
+          "text": "The deck of cards that each team receives at the start of the game does not change from round to round. In other words, Rounds 2 and 3 feature EXACTLY the same cards that were used in Round 1."
+        },
+        {
+          "title": "The Constraints",
+          "text": "In Round 1, the Cluegivers cannot use any words included in the phrase on the card.<br>In Round 2, the Cluegivers can only use ONE word to describe the phrase on the card.<br/>In Round 3, the Cluegivers are MUTED. They must act out the phrase on the card."
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "creativity",
+    "icebreaker",
+    "filler",
+    "played in teams"
+  ],
+  "type": "FULL"
+}

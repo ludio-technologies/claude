@@ -1,17 +1,15 @@
 {
   "gameInitOptions": {
     "allowRecorder": true,
-    "allowSpectatorBecomePlayer": true,
-    "allowPlayerBecomeSpectator": true,
+    "allowSpectatorBecomePlayer": false,
+    "allowPlayerBecomeSpectator": false,
     "useDefaultRoles": true,
     "roleConfirmation": false,
     "minPlayers": 4,
-    "maxPlayers": 24,
+    "maxPlayers": 6,
     "preferredPlayersQnt": [
-      6,
-      10,
-      12,
-      14
+      4,
+      6
     ],
     "showImageRowOnSmallScreen": false,
     "minExtraRoles": 0,
@@ -131,7 +129,7 @@
         "url": "https://res.cloudinary.com/liars-club/image/upload/images/picky_eaters/special/blue.png"
       },
       "banner": {
-        "url": "https://res.cloudinary.com/liars-club/image/upload/images/fishbowl/fishbowl_cardback.png"
+        "url": "https://res.cloudinary.com/liars-club/image/upload/images/fishbowl/fishbowl_league_banner.png"
       },
       "transparent": {
         "url": "https://res.cloudinary.com/liars-club/image/upload/transparent_sbx4wv.png"
@@ -175,7 +173,7 @@
     "strings": {
       "Default": {
         "wallpaperImg": "calm_wallpaper",
-        "welcomeHeader": "Welcome to Fishbowl!",
+        "welcomeHeader": "Welcome to Fishbowl League!",
         "bannerImg": "banner",
         "fmtTeachMoment": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!",
         "tutorialModeTitle": "Tutorial mode",
@@ -187,36 +185,6 @@
         "blueDiscardLabel": "Blue (Discard)",
         "noNotesHeader": "Please don't take notes!",
         "noNotesText": "We promise the game is a lot more fun this way 😊",
-        "gameModeTitle": "Game Mode",
-        "gameModeTargets": [
-          "Short (8 cards)",
-          "Medium (12 cards)",
-          "Full (15 cards)"
-        ],
-        "gameModeOptions": {
-          "Short (8 cards)": {
-            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/small_fish.svg",
-            "backgroundColor": "#D3D3D3",
-            "boxIconColor": "#D3D3D3",
-            "textColor": "black",
-            "widgetIconColor": "green"
-          },
-          "Medium (12 cards)": {
-            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/medium_fish.svg",
-            "backgroundColor": "#D3D3D3",
-            "boxIconColor": "#D3D3D3",
-            "textColor": "black",
-            "widgetIconColor": "blue"
-          },
-          "Full (15 cards)": {
-            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/large_fish.svg",
-            "backgroundColor": "#D3D3D3",
-            "boxIconColor": "#D3D3D3",
-            "textColor": "black",
-            "widgetIconColor": "red"
-          }
-        },
-        "fmtGameLength": "What length of game do you want to play?",
         "fmtTimeForRound": "Time for Round ($1)!",
         "fmtChooseCluegiver": "($1)<br/><br/><b>Team ($2)</b>, time to choose a Cluegiver...",
         "voteCluegiverTitle": "Vote for Cluegiver",
@@ -273,520 +241,25 @@
         "tut5Text": "Here's the twist: each team's deck <b>stays the same</b> every round. Rounds 2 and 3 use the <b>exact same cards</b> as Round 1 — so pay close attention early on!",
         "tut6Header": "How to Play - Part 6",
         "tut6Text": "The catch is how you can give clues each round:<br/><br/><b>Round 1:</b> describe freely, but never say a word printed on the card.<br/><b>Round 2:</b> you may use only <b>ONE word</b>.<br/><b>Round 3:</b> no talking — you must <b>act it out!</b>",
+        "chooseRedTeamTitle": "Choose Red team",
+        "fmtChooseRedTeam": "($1), tap to choose the Red team! Everyone else joins Blue.",
+        "randomTargets": [
+          "Random!"
+        ],
+        "randomOptions": {
+          "Random!": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "green"
+          }
+        },
         "shareTheWin": "share the win",
         "wins": "wins"
       }
     }
   },
-  "turnPlayerToSpectatorActions": [
-    {
-      "key": "emptyAction",
-      "saveValueInCache": [
-        {
-          "name": "players",
-          "value": {
-            "selector": "allPlayers"
-          }
-        },
-        {
-          "name": "numPlayers",
-          "value": {
-            "selector": "listLength",
-            "params": [
-              {
-                "name": "list",
-                "type": "cached",
-                "value": "players"
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "turnSpectatorToPlayerActions": [
-    {
-      "key": "emptyAction",
-      "saveValueInCache": [
-        {
-          "name": "newPlayer",
-          "value": {
-            "selector": "getCachedValue",
-            "params": [
-              {
-                "name": "name",
-                "type": "preset",
-                "value": "waitingSpectator"
-              }
-            ]
-          }
-        },
-        {
-          "name": "players",
-          "value": {
-            "selector": "allPlayers"
-          }
-        },
-        {
-          "name": "numPlayers",
-          "value": {
-            "selector": "listLength",
-            "params": [
-              {
-                "name": "list",
-                "type": "cached",
-                "value": "players"
-              }
-            ]
-          }
-        },
-        {
-          "name": "newRole",
-          "value": {
-            "selector": "ifElse",
-            "params": [
-              {
-                "name": "condition",
-                "type": "computed",
-                "value": {
-                  "selector": "lessThan",
-                  "params": [
-                    {
-                      "name": "arg1",
-                      "type": "computed",
-                      "value": {
-                        "selector": "listLength",
-                        "params": [
-                          {
-                            "name": "list",
-                            "type": "computed",
-                            "value": {
-                              "selector": "getPlayersFromTeam",
-                              "params": [
-                                {
-                                  "name": "teamId",
-                                  "type": "preset",
-                                  "value": "red"
-                                }
-                              ]
-                            }
-                          }
-                        ]
-                      }
-                    },
-                    {
-                      "name": "arg2",
-                      "type": "computed",
-                      "value": {
-                        "selector": "listLength",
-                        "params": [
-                          {
-                            "name": "list",
-                            "type": "computed",
-                            "value": {
-                              "selector": "getPlayersFromTeam",
-                              "params": [
-                                {
-                                  "name": "teamId",
-                                  "type": "preset",
-                                  "value": "blue"
-                                }
-                              ]
-                            }
-                          }
-                        ]
-                      }
-                    }
-                  ]
-                }
-              },
-              {
-                "name": "thenValue",
-                "type": "preset",
-                "value": "redPlayer"
-              },
-              {
-                "name": "elseValue",
-                "type": "preset",
-                "value": "bluePlayer"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "key": "setRole",
-      "payload": {
-        "cached": {
-          "playerId": "newPlayer",
-          "roleId": "newRole"
-        }
-      },
-      "saveValueInCache": [
-        {
-          "name": "redTeam",
-          "value": {
-            "selector": "getPlayersFromTeam",
-            "params": [
-              {
-                "name": "teamId",
-                "type": "preset",
-                "value": "red"
-              }
-            ]
-          }
-        },
-        {
-          "name": "blueTeam",
-          "value": {
-            "selector": "getPlayersFromTeam",
-            "params": [
-              {
-                "name": "teamId",
-                "type": "preset",
-                "value": "blue"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "key": "removeAllHighlights"
-    },
-    {
-      "key": "highlightPlayers",
-      "payload": {
-        "preset": {
-          "color": "#D83232"
-        },
-        "computed": {
-          "listOfPlayers": {
-            "selector": "getPlayersFromTeam",
-            "params": [
-              {
-                "name": "teamId",
-                "type": "preset",
-                "value": "red"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "key": "highlightPlayers",
-      "payload": {
-        "preset": {
-          "color": "#4EC1D0"
-        },
-        "computed": {
-          "listOfPlayers": {
-            "selector": "getPlayersFromTeam",
-            "params": [
-              {
-                "name": "teamId",
-                "type": "preset",
-                "value": "blue"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "key": "changeLayout",
-      "payload": {
-        "preset": {
-          "type": "HIGHLIGHT",
-          "direction": "VERTICAL",
-          "percent": 35
-        },
-        "computed": {
-          "top": {
-            "selector": "getPlayersFromTeam",
-            "params": [
-              {
-                "name": "teamId",
-                "type": "preset",
-                "value": "red"
-              }
-            ]
-          },
-          "bottom": {
-            "selector": "getPlayersFromTeam",
-            "params": [
-              {
-                "name": "teamId",
-                "type": "preset",
-                "value": "blue"
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "key": "changeLayout",
-      "skipCondition": {
-        "selector": "notEqual",
-        "params": [
-          {
-            "name": "arg1",
-            "type": "cached",
-            "value": "round"
-          },
-          {
-            "name": "arg2",
-            "type": "preset",
-            "value": 3
-          }
-        ]
-      },
-      "payload": {
-        "preset": {
-          "type": "HIGHLIGHT",
-          "direction": "VERTICAL",
-          "percent": 35
-        },
-        "computed": {
-          "top": {
-            "selector": "createList",
-            "params": [
-              {
-                "name": "arg1",
-                "type": "cached",
-                "value": "cluegiver"
-              }
-            ]
-          },
-          "bottom": {
-            "selector": "listsSubtract",
-            "params": [
-              {
-                "name": "list1",
-                "type": "cached",
-                "value": "players"
-              },
-              {
-                "name": "list2",
-                "type": "computed",
-                "value": {
-                  "selector": "createList",
-                  "params": [
-                    {
-                      "name": "arg1",
-                      "type": "cached",
-                      "value": "cluegiver"
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "key": "updateScore",
-      "payload": {
-        "computed": {
-          "scores": {
-            "selector": "createList",
-            "params": [
-              {
-                "name": "arg1",
-                "type": "computed",
-                "value": {
-                  "selector": "createDict",
-                  "params": [
-                    {
-                      "name": "keys",
-                      "type": "preset",
-                      "value": [
-                        "list",
-                        "score"
-                      ]
-                    },
-                    {
-                      "name": "values",
-                      "type": "computed",
-                      "value": {
-                        "selector": "createList",
-                        "params": [
-                          {
-                            "name": "arg1",
-                            "type": "computed",
-                            "value": {
-                              "selector": "getPlayersFromTeam",
-                              "params": [
-                                {
-                                  "name": "teamId",
-                                  "type": "preset",
-                                  "value": "red"
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "name": "arg2",
-                            "type": "computed",
-                            "value": {
-                              "selector": "getPlayerScore",
-                              "params": [
-                                {
-                                  "name": "playerId",
-                                  "type": "computed",
-                                  "value": {
-                                    "selector": "randomElement",
-                                    "params": [
-                                      {
-                                        "name": "list",
-                                        "type": "computed",
-                                        "value": {
-                                          "selector": "getPlayersWithMaxScore",
-                                          "params": [
-                                            {
-                                              "name": "players",
-                                              "type": "computed",
-                                              "value": {
-                                                "selector": "getPlayersFromTeam",
-                                                "params": [
-                                                  {
-                                                    "name": "teamId",
-                                                    "type": "preset",
-                                                    "value": "red"
-                                                  }
-                                                ]
-                                              }
-                                            }
-                                          ]
-                                        }
-                                      }
-                                    ]
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        ]
-                      }
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "key": "updateScore",
-      "payload": {
-        "computed": {
-          "scores": {
-            "selector": "createList",
-            "params": [
-              {
-                "name": "arg1",
-                "type": "computed",
-                "value": {
-                  "selector": "createDict",
-                  "params": [
-                    {
-                      "name": "keys",
-                      "type": "preset",
-                      "value": [
-                        "list",
-                        "score"
-                      ]
-                    },
-                    {
-                      "name": "values",
-                      "type": "computed",
-                      "value": {
-                        "selector": "createList",
-                        "params": [
-                          {
-                            "name": "arg1",
-                            "type": "computed",
-                            "value": {
-                              "selector": "getPlayersFromTeam",
-                              "params": [
-                                {
-                                  "name": "teamId",
-                                  "type": "preset",
-                                  "value": "blue"
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "name": "arg2",
-                            "type": "computed",
-                            "value": {
-                              "selector": "getPlayerScore",
-                              "params": [
-                                {
-                                  "name": "playerId",
-                                  "type": "computed",
-                                  "value": {
-                                    "selector": "randomElement",
-                                    "params": [
-                                      {
-                                        "name": "list",
-                                        "type": "computed",
-                                        "value": {
-                                          "selector": "getPlayersWithMaxScore",
-                                          "params": [
-                                            {
-                                              "name": "players",
-                                              "type": "computed",
-                                              "value": {
-                                                "selector": "getPlayersFromTeam",
-                                                "params": [
-                                                  {
-                                                    "name": "teamId",
-                                                    "type": "preset",
-                                                    "value": "blue"
-                                                  }
-                                                ]
-                                              }
-                                            }
-                                          ]
-                                        }
-                                      }
-                                    ]
-                                  }
-                                }
-                              ]
-                            }
-                          }
-                        ]
-                      }
-                    }
-                  ]
-                }
-              }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "key": "showScore",
-      "payload": {
-        "preset": {
-          "order": "highest"
-        },
-        "cached": {
-          "from": "players",
-          "to": "players"
-        }
-      }
-    }
-  ],
   "visualSettings": {
     "isCardAnimationsOff": true,
     "increaseHandHeight": true,
@@ -827,14 +300,6 @@
                 "value": "players"
               }
             ]
-          }
-        },
-        {
-          "name": "typeToCards",
-          "value": {
-            "Short (8 cards)": 8,
-            "Medium (12 cards)": 12,
-            "Full (15 cards)": 15
           }
         },
         {
@@ -959,6 +424,10 @@
         {
           "name": "blueCluegiver",
           "value": "NONE"
+        },
+        {
+          "name": "numCards",
+          "value": 20
         }
       ]
     },
@@ -1469,90 +938,6 @@
               "image": "bannerImg"
             }
           }
-        },
-        {
-          "key": "createVote",
-          "payload": {
-            "preset": {
-              "type": "target_poll",
-              "terminationCondition": "get_majority",
-              "duration": 30,
-              "showResultInRealTime": true,
-              "showResultDuration": 2,
-              "showResult": true,
-              "allowRevoting": true
-            },
-            "cached": {
-              "actors": "host",
-              "title": "gameModeTitle",
-              "targets": "gameModeTargets",
-              "pollVoteTargetsOptions": "gameModeOptions"
-            },
-            "computed": {
-              "question": {
-                "selector": "formatString",
-                "params": [
-                  {
-                    "name": "format",
-                    "type": "cached",
-                    "value": "fmtGameLength"
-                  }
-                ]
-              }
-            }
-          },
-          "saveValueInCache": [
-            {
-              "name": "gameMode",
-              "value": {
-                "selector": "selectElement",
-                "params": [
-                  {
-                    "name": "list",
-                    "type": "computed",
-                    "value": {
-                      "selector": "append",
-                      "params": [
-                        {
-                          "name": "list",
-                          "type": "cached",
-                          "value": "lastActionResult.voteResult"
-                        },
-                        {
-                          "name": "element",
-                          "type": "cached",
-                          "value": "gameModeTargets.1"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "name": "index",
-                    "type": "preset",
-                    "value": 0
-                  }
-                ]
-              }
-            },
-            {
-              "name": "numCards",
-              "value": {
-                "selector": "getCachedObjectValue",
-                "params": [
-                  {
-                    "name": "objectName",
-                    "type": "preset",
-                    "value": "typeToCards"
-                  },
-                  {
-                    "name": "value",
-                    "type": "cached",
-                    "value": "gameMode"
-                  }
-                ]
-              }
-            }
-          ]
         }
       ]
     },
@@ -1571,6 +956,207 @@
         }
       ],
       "actions": [
+        {
+          "key": "createMixVote",
+          "payload": {
+            "preset": {
+              "terminationCondition": "get_all_votes",
+              "showResultInRealTime": true,
+              "showResultDuration": 2,
+              "showResultDelay": 0,
+              "point.allowFewerAnswers": true,
+              "point.terminationCondition": "get_all_votes",
+              "poll.answersQuantity": 1,
+              "oneClick": true,
+              "allowRevoting": true,
+              "poll.terminationCondition": "get_all_votes"
+            },
+            "cached": {
+              "title": "chooseRedTeamTitle",
+              "actors": "host",
+              "point.targets": "players",
+              "poll.targets": "randomTargets",
+              "pollVoteTargetsOptions": "randomOptions"
+            },
+            "computed": {
+              "point.answersQuantity": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "computed",
+                    "value": {
+                      "selector": "equals",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "cached",
+                          "value": "numPlayers"
+                        },
+                        {
+                          "name": "arg2",
+                          "type": "preset",
+                          "value": 4
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "preset",
+                    "value": 2
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "preset",
+                    "value": 3
+                  }
+                ]
+              },
+              "question": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "cached",
+                    "value": "fmtChooseRedTeam"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNameById",
+                      "params": [
+                        {
+                          "name": "id",
+                          "type": "cached",
+                          "value": "host.0"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "saveValueInCache": [
+            {
+              "name": "voteResult",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "lastActionResult.voteResult"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "redTeam",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "computed",
+                    "value": {
+                      "selector": "contains",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "players"
+                        },
+                        {
+                          "name": "element",
+                          "type": "cached",
+                          "value": "voteResult.0"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "cached",
+                    "value": "voteResult"
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "randomElementsList",
+                      "params": [
+                        {
+                          "name": "length",
+                          "type": "computed",
+                          "value": {
+                            "selector": "ifElse",
+                            "params": [
+                              {
+                                "name": "condition",
+                                "type": "computed",
+                                "value": {
+                                  "selector": "equals",
+                                  "params": [
+                                    {
+                                      "name": "arg1",
+                                      "type": "cached",
+                                      "value": "numPlayers"
+                                    },
+                                    {
+                                      "name": "arg2",
+                                      "type": "preset",
+                                      "value": 4
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "name": "thenValue",
+                                "type": "preset",
+                                "value": 2
+                              },
+                              {
+                                "name": "elseValue",
+                                "type": "preset",
+                                "value": 3
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "players"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "name": "blueTeam",
+              "value": {
+                "selector": "listsSubtract",
+                "params": [
+                  {
+                    "name": "list1",
+                    "type": "cached",
+                    "value": "players"
+                  },
+                  {
+                    "name": "list2",
+                    "type": "cached",
+                    "value": "redTeam"
+                  }
+                ]
+              }
+            }
+          ]
+        },
         {
           "key": "setRole",
           "payload": {
@@ -3454,7 +3040,6 @@
     },
     {
       "name": "Round ends?",
-      "turnSpectatorsToPlayers": true,
       "skipCondition": [
         {
           "selector": "equals",
@@ -3687,8 +3272,7 @@
           ]
         }
       ],
-      "checkWinCondition": true,
-      "turnPlayersToSpectators": true
+      "checkWinCondition": true
     },
     {
       "name": "Browse of shame",
