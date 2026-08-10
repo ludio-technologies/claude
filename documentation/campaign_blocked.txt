@@ -1,0 +1,4 @@
+# Refactor Readiness Campaign — blocked games (skipped by campaign_status.py).
+# One per line: <setup-id-or-exact-name>  # <reason>
+# A run adds a game here when it can't be auto-refactored (validation won't reach
+# 0 errors, push mismatch, or too risky). Remove the line once a human resolves it.
