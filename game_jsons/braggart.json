@@ -1,0 +1,4083 @@
+{
+ "gameInitOptions": {
+  "minPlayers": 3,
+  "maxPlayers": 5,
+  "timePerRound": 6,
+  "allowRecorder": true,
+  "allowSpectatorBecomePlayer": true,
+  "allowPlayerBecomeSpectator": true,
+  "roleConfirmation": false,
+  "useDefaultRoles": true,
+  "teams": {
+   "all": {
+    "id": "all",
+    "name": "All",
+    "color": "#297a4d",
+    "roles": [
+     "player",
+     "1st",
+     "2nd",
+     "3rd",
+     "4th",
+     "5th"
+    ]
+   }
+  },
+  "roles": [
+   {
+    "roleInfo": {
+     "id": "player",
+     "name": "Player",
+     "description": "Boast big or take nothing!",
+     "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
+     "team": "all",
+     "prefix": "a "
+    },
+    "isDefaultRole": true,
+    "isRequired": false
+   },
+   {
+    "roleInfo": {
+     "id": "1st",
+     "name": "1st",
+     "team": "all"
+    },
+    "isRequired": false
+   },
+   {
+    "roleInfo": {
+     "id": "2nd",
+     "name": "2nd",
+     "team": "all"
+    },
+    "isRequired": false
+   },
+   {
+    "roleInfo": {
+     "id": "3rd",
+     "name": "3rd",
+     "team": "all"
+    },
+    "isRequired": false
+   },
+   {
+    "roleInfo": {
+     "id": "4th",
+     "name": "4th",
+     "team": "all"
+    },
+    "isRequired": false
+   },
+   {
+    "roleInfo": {
+     "id": "5th",
+     "name": "5th",
+     "team": "all"
+    },
+    "isRequired": false
+   }
+  ],
+  "images": {
+   "wallpaper": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/wallpaper.png"
+   },
+   "banner": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/banner.png"
+   },
+   "cardback": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/pirate_cardback_cii39m.png"
+   },
+   "transparent": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/transparent_sbx4wv.png"
+   },
+   "winner": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/winner_h5eyfr.gif"
+   },
+   "card_brains": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/brains_7.png"
+   },
+   "card_speed": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/speed_4.png"
+   },
+   "card_strength": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/strength_9.png"
+   },
+   "card_pass": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/pass.png"
+   }
+  },
+  "animations": {
+   "winner": "https://assets3.lottiefiles.com/packages/lf20_hgvbg30i.json",
+   "brains": "https://lottie.host/24bda4e4-95c5-4790-8b74-05f27d01456d/EPPEkEdnmI.json",
+   "speed": "https://lottie.host/dd6f96e1-53a3-48a5-a452-7a1257023ddd/ckbn0Q8ScQ.json",
+   "strength": "https://lottie.host/bc4b04bd-c589-4b88-bdc8-c9159d85591c/HDJq4HjZx6.json"
+  },
+  "soundboard": {
+   "default": {
+    "reminder": "https://res.cloudinary.com/liars-club/video/upload/audio/reminder.mp4",
+    "clap": "https://res.cloudinary.com/liars-club/video/upload/audio/polite_clap.mp3"
+   }
+  },
+  "strings": {
+   "Default": {
+    "wallpaperImg": "wallpaper",
+    "strongest": "Strongest",
+    "middle": "Middle",
+    "weakest": "Weakest",
+    "welcomeToBraggart": "Welcome to Braggart!",
+    "aTrickTakingGame": "A trick-taking game of bold claims. Win the EXACT target number of tricks, or ZERO \u2014 anything else scores nothing. Watch the shifting suit strengths and use your Pass cards wisely!",
+    "bannerImg": "banner",
+    "tutorialMode": "Tutorial mode",
+    "everybodyNobodyTargets": [
+     "Everybody!",
+     "Nobody!"
+    ],
+    "everybodyNobodyOptions": {
+     "Everybody!": {
+      "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+      "backgroundColor": "#D3D3D3",
+      "boxIconColor": "#D3D3D3",
+      "textColor": "black",
+      "widgetIconColor": "green"
+     },
+     "Nobody!": {
+      "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+      "backgroundColor": "#D3D3D3",
+      "boxIconColor": "#D3D3D3",
+      "textColor": "black",
+      "widgetIconColor": "red"
+     }
+    },
+    "whoNeedsTheTutorial": "($1), who needs the tutorial? Click on the players or select from the middle.",
+    "howToPlayPart": "How to Play - Part 1",
+    "braggartIsATrick": "Braggart is a trick-taking game for 3-5 players with three suits: <b>Brains</b>, <b>Speed</b>, and <b>Strength</b> (1-11).<br/><br/>Each round you get 7 cards. Follow the led suit if you can!",
+    "howToPlayPart2": "How to Play - Part 2",
+    "theThreeSuitsHave": "The three suits have a shifting strength order shown in the middle (<b>Strongest / Middle / Weakest</b>). ANY card of a stronger suit beats ANY card of a weaker one; numbers only break ties within a suit.<br/><br/>After each trick, the winning suit drops to Weakest! Play a <b>Pass</b> card to duck a trick \u2014 it never wins.",
+    "howToPlayPart3": "How to Play - Part 3",
+    "goBigOrGo": "<b>Go big or go home:</b> score <b>2 pts</b> for winning ZERO tricks, or <b>1 pt</b> for winning EXACTLY the target (3 tricks @3p, 2 @4p, 1 @5p). Anything else = 0.<br/><br/>Vote to keep playing; most points when you stop wins!",
+    "round": "Round ($1)!",
+    "scoreByWinningExactly": "Score by winning EXACTLY ($1) tricks \u2014 or ZERO. This round each suit runs 1\u2013($2). Anything else = 0 pts!",
+    "playACard": "($1), play a card!",
+    "winsTheTrick": "($1) wins the trick!",
+    "tricksAim0Or": "($1): ($2) tricks (aim 0 or ($3)) \u2192 ($4) pts",
+    "playAgain2": "PLAY AGAIN?",
+    "wouldYouLikeTo": "Would you like to play another round?",
+    "everybodyNobodyOptions2": {
+     "Keep scores": {
+      "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+      "backgroundColor": "#D3D3D3",
+      "boxIconColor": "#D3D3D3",
+      "textColor": "black",
+      "widgetIconColor": "green"
+     },
+     "Reset scores": {
+      "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+      "backgroundColor": "#D3D3D3",
+      "boxIconColor": "#D3D3D3",
+      "textColor": "black",
+      "widgetIconColor": "blue"
+     },
+     "I'M SO DONE": {
+      "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+      "backgroundColor": "#D3D3D3",
+      "boxIconColor": "#D3D3D3",
+      "textColor": "black",
+      "widgetIconColor": "red"
+     }
+    },
+    "str": "($1) ($2)!"
+   }
+  }
+ },
+ "visualSettings": {
+  "backgroundColor": "#fee893",
+  "textColor": "black",
+  "borderColor": "black",
+  "increaseHandHeight": true,
+  "cardHandBackgroundImage": "https://res.cloudinary.com/liars-club/image/upload/wood_qbegm0.jpg"
+ },
+ "beforeLoopActions": [
+  {
+   "key": "changeBackground",
+   "payload": {
+    "preset": {},
+    "cached": {
+     "image": "wallpaperImg"
+    }
+   }
+  },
+  {
+   "key": "emptyAction",
+   "saveValueInCache": [
+    {
+     "name": "players",
+     "value": {
+      "selector": "allPlayers",
+      "params": []
+     }
+    },
+    {
+     "name": "numPlayers",
+     "value": {
+      "selector": "listLength",
+      "params": [
+       {
+        "name": "list",
+        "type": "cached",
+        "value": "players"
+       }
+      ]
+     }
+    },
+    {
+     "name": "trickDecks",
+     "value": {
+      "selector": "sublist",
+      "params": [
+       {
+        "name": "list",
+        "type": "preset",
+        "value": [
+         "trick_0",
+         "trick_1",
+         "trick_2",
+         "trick_3",
+         "trick_4"
+        ]
+       },
+       {
+        "name": "start",
+        "type": "preset",
+        "value": 0
+       },
+       {
+        "name": "end",
+        "type": "cached",
+        "value": "numPlayers"
+       }
+      ]
+     }
+    },
+    {
+     "name": "hierarchyDecks",
+     "value": [
+      "hier_strong",
+      "hier_mid",
+      "hier_weak"
+     ]
+    },
+    {
+     "name": "suitsInHand",
+     "value": []
+    },
+    {
+     "name": "leader",
+     "value": {
+      "selector": "selectElement",
+      "params": [
+       {
+        "name": "list",
+        "type": "cached",
+        "value": "players"
+       },
+       {
+        "name": "index",
+        "type": "preset",
+        "value": 0
+       }
+      ]
+     }
+    },
+    {
+     "name": "roundIndex",
+     "value": 0
+    },
+    {
+     "name": "playAgain",
+     "value": true
+    },
+    {
+     "name": "reset",
+     "value": false
+    },
+    {
+     "name": "dimensions",
+     "value": {
+      "3": [
+       2,
+       3
+      ],
+      "4": [
+       2,
+       4
+      ],
+      "5": [
+       2,
+       5
+      ]
+     }
+    },
+    {
+     "name": "ordinal",
+     "value": {
+      "0": "1st",
+      "1": "2nd",
+      "2": "3rd",
+      "3": "4th",
+      "4": "5th"
+     }
+    },
+    {
+     "name": "targetsByCount",
+     "value": {
+      "3": 3,
+      "4": 2,
+      "5": 1
+     }
+    },
+    {
+     "name": "maxRankByCount",
+     "value": {
+      "3": 7,
+      "4": 9,
+      "5": 11
+     }
+    },
+    {
+     "name": "secondScoreFormats",
+     "value": {
+      "1": "($1)\ud83c\udccf/1",
+      "2": "($1)\ud83c\udccf/2",
+      "3": "($1)\ud83c\udccf/3"
+     }
+    },
+    {
+     "name": "recreateDecks",
+     "value": true
+    }
+   ]
+  },
+  {
+   "key": "emptyAction",
+   "saveValueInCache": []
+  },
+  {
+   "key": "emptyAction",
+   "saveValueInCache": [
+    {
+     "name": "host",
+     "value": {
+      "selector": "ifElse",
+      "params": [
+       {
+        "name": "condition",
+        "type": "computed",
+        "value": {
+         "selector": "contains",
+         "params": [
+          {
+           "name": "list",
+           "type": "cached",
+           "value": "players"
+          },
+          {
+           "name": "element",
+           "type": "computed",
+           "value": {
+            "selector": "getHostPlayerId"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "name": "thenValue",
+        "type": "computed",
+        "value": {
+         "selector": "createList",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "computed",
+           "value": {
+            "selector": "getHostPlayerId"
+           }
+          }
+         ]
+        }
+       },
+       {
+        "name": "elseValue",
+        "type": "computed",
+        "value": {
+         "selector": "createList",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "cached",
+           "value": "players.0"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "key": "createDeck",
+   "payload": {
+    "preset": {
+     "name": "braggart"
+    },
+    "computed": {
+     "set": {
+      "selector": "formatString",
+      "params": [
+       {
+        "name": "format",
+        "type": "preset",
+        "value": "p($1)"
+       },
+       {
+        "name": "arg1",
+        "type": "cached",
+        "value": "numPlayers"
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "key": "createCustomDeck",
+   "payload": {
+    "preset": {
+     "name": "discard",
+     "public": false
+    }
+   }
+  },
+  {
+   "key": "createDeck",
+   "payload": {
+    "preset": {
+     "name": "braggart",
+     "set": "indicators",
+     "customName": "indicator_pool"
+    }
+   }
+  },
+  {
+   "key": "createCustomDeck",
+   "payload": {
+    "preset": {
+     "name": "hier_strong",
+     "public": true
+    }
+   }
+  },
+  {
+   "key": "createCustomDeck",
+   "payload": {
+    "preset": {
+     "name": "hier_mid",
+     "public": true
+    }
+   }
+  },
+  {
+   "key": "createCustomDeck",
+   "payload": {
+    "preset": {
+     "name": "hier_weak",
+     "public": true
+    }
+   }
+  },
+  {
+   "key": "setDeckLabel",
+   "payload": {
+    "preset": {
+     "deck": "hier_strong"
+    },
+    "cached": {
+     "label": "strongest"
+    }
+   }
+  },
+  {
+   "key": "setDeckLabel",
+   "payload": {
+    "preset": {
+     "deck": "hier_mid"
+    },
+    "cached": {
+     "label": "middle"
+    }
+   }
+  },
+  {
+   "key": "setDeckLabel",
+   "payload": {
+    "preset": {
+     "deck": "hier_weak"
+    },
+    "cached": {
+     "label": "weakest"
+    }
+   }
+  },
+  {
+   "key": "createCustomDeck",
+   "payload": {
+    "preset": {
+     "name": "trick_0",
+     "public": true
+    }
+   }
+  },
+  {
+   "key": "createCustomDeck",
+   "payload": {
+    "preset": {
+     "name": "trick_1",
+     "public": true
+    }
+   }
+  },
+  {
+   "key": "createCustomDeck",
+   "payload": {
+    "preset": {
+     "name": "trick_2",
+     "public": true
+    }
+   }
+  },
+  {
+   "key": "createCustomDeck",
+   "payload": {
+    "preset": {
+     "name": "trick_3",
+     "public": true
+    }
+   }
+  },
+  {
+   "key": "createCustomDeck",
+   "payload": {
+    "preset": {
+     "name": "trick_4",
+     "public": true
+    }
+   }
+  },
+  {
+   "key": "createVideoboxDecks",
+   "payload": {
+    "preset": {
+     "cardback": "cardback"
+    },
+    "cached": {
+     "players": "players"
+    }
+   }
+  },
+  {
+   "key": "createNotification",
+   "payload": {
+    "preset": {
+     "duration": 8
+    },
+    "cached": {
+     "to": "players",
+     "header": "welcomeToBraggart",
+     "text": "aTrickTakingGame",
+     "image": "bannerImg"
+    }
+   }
+  },
+  {
+   "key": "createMixVote",
+   "payload": {
+    "preset": {
+     "terminationCondition": "get_all_votes",
+     "showResultInRealTime": true,
+     "showResultDuration": 2,
+     "showResultDelay": 0,
+     "point.allowFewerAnswers": true,
+     "point.terminationCondition": "get_all_votes",
+     "poll.answersQuantity": 1,
+     "oneClick": true,
+     "allowRevoting": true,
+     "poll.terminationCondition": "get_all_votes"
+    },
+    "cached": {
+     "actors": "host",
+     "point.targets": "players",
+     "point.answersQuantity": "numPlayers",
+     "title": "tutorialMode",
+     "poll.targets": "everybodyNobodyTargets",
+     "pollVoteTargetsOptions": "everybodyNobodyOptions"
+    },
+    "computed": {
+     "question": {
+      "selector": "formatString",
+      "params": [
+       {
+        "name": "format",
+        "type": "cached",
+        "value": "whoNeedsTheTutorial"
+       },
+       {
+        "name": "arg1",
+        "type": "computed",
+        "value": {
+         "selector": "getPlayerNameById",
+         "params": [
+          {
+           "name": "id",
+           "type": "cached",
+           "value": "host.0"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    }
+   },
+   "saveValueInCache": [
+    {
+     "name": "voteResult",
+     "value": {
+      "selector": "getCachedValue",
+      "params": [
+       {
+        "name": "name",
+        "type": "preset",
+        "value": "lastActionResult.voteResult"
+       }
+      ]
+     }
+    },
+    {
+     "name": "learners",
+     "value": {
+      "selector": "ifElse",
+      "params": [
+       {
+        "name": "condition",
+        "type": "computed",
+        "value": {
+         "selector": "contains",
+         "params": [
+          {
+           "name": "list",
+           "type": "cached",
+           "value": "players"
+          },
+          {
+           "name": "element",
+           "type": "cached",
+           "value": "voteResult.0"
+          }
+         ]
+        }
+       },
+       {
+        "name": "thenValue",
+        "type": "cached",
+        "value": "voteResult"
+       },
+       {
+        "name": "elseValue",
+        "type": "computed",
+        "value": {
+         "selector": "ifElse",
+         "params": [
+          {
+           "name": "condition",
+           "type": "computed",
+           "value": {
+            "selector": "contains",
+            "params": [
+             {
+              "name": "list",
+              "type": "cached",
+              "value": "voteResult"
+             },
+             {
+              "name": "element",
+              "type": "cached",
+              "value": "everybodyNobodyTargets.0"
+             }
+            ]
+           }
+          },
+          {
+           "name": "thenValue",
+           "type": "cached",
+           "value": "players"
+          },
+          {
+           "name": "elseValue",
+           "type": "preset",
+           "value": []
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    {
+     "name": "tutorial",
+     "value": {
+      "selector": "greaterThan",
+      "params": [
+       {
+        "name": "arg1",
+        "type": "computed",
+        "value": {
+         "selector": "listLength",
+         "params": [
+          {
+           "name": "list",
+           "type": "cached",
+           "value": "learners"
+          }
+         ]
+        }
+       },
+       {
+        "name": "arg2",
+        "type": "preset",
+        "value": 0
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "key": "setImagesRow",
+   "payload": {
+    "preset": {
+     "maxHeight": 230,
+     "images": [
+      "transparent"
+     ]
+    }
+   }
+  },
+  {
+   "key": "changeLayout",
+   "payload": {
+    "preset": {
+     "type": "HIGHLIGHT",
+     "direction": "VERTICAL",
+     "percent": 45
+    }
+   }
+  },
+  {
+   "key": "showScore",
+   "payload": {
+    "preset": {
+     "order": "highest"
+    },
+    "cached": {
+     "from": "players",
+     "to": "players"
+    }
+   }
+  },
+  {
+   "key": "showScore",
+   "payload": {
+    "preset": {
+     "secondScore": true,
+     "order": "highest",
+     "format": "($1) \ud83c\udccf"
+    },
+    "cached": {
+     "from": "players",
+     "to": "players"
+    }
+   }
+  },
+  {
+   "key": "showHand",
+   "payload": {
+    "preset": {
+     "to": "spectators"
+    },
+    "cached": {
+     "from": "players"
+    }
+   }
+  }
+ ],
+ "gameLoop": [
+  {
+   "name": "Tutorial",
+   "skipCondition": [
+    {
+     "selector": "greaterThan",
+     "params": [
+      {
+       "name": "arg1",
+       "type": "cached",
+       "value": "gameLoopIndex"
+      },
+      {
+       "name": "arg2",
+       "type": "preset",
+       "value": 0
+      }
+     ]
+    },
+    {
+     "selector": "logicalNOT",
+     "params": [
+      {
+       "name": "arg",
+       "type": "cached",
+       "value": "tutorial"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "createNotification",
+     "payload": {
+      "preset": {
+       "duration": 15,
+       "images": [
+        "card_brains",
+        "card_speed",
+        "card_strength"
+       ]
+      },
+      "cached": {
+       "to": "learners",
+       "header": "howToPlayPart",
+       "text": "braggartIsATrick"
+      }
+     }
+    },
+    {
+     "key": "createNotification",
+     "payload": {
+      "preset": {
+       "duration": 15,
+       "image": "card_pass"
+      },
+      "cached": {
+       "to": "learners",
+       "header": "howToPlayPart2",
+       "text": "theThreeSuitsHave"
+      }
+     }
+    },
+    {
+     "key": "createNotification",
+     "payload": {
+      "preset": {
+       "duration": 15
+      },
+      "cached": {
+       "to": "learners",
+       "header": "howToPlayPart3",
+       "text": "goBigOrGo"
+      }
+     }
+    },
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "tutorial",
+       "value": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Round Start",
+   "actions": [
+    {
+     "key": "shuffleDeck",
+     "payload": {
+      "preset": {
+       "deck": "braggart"
+      }
+     }
+    },
+    {
+     "key": "dealDeck",
+     "payload": {
+      "preset": {
+       "deck": "braggart",
+       "qnt": 7,
+       "sortBy": "weight",
+       "order": "asc"
+      },
+      "cached": {
+       "targets": "players"
+      }
+     }
+    },
+    {
+     "key": "showAllPlayersHands"
+    },
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "tricksWon",
+       "value": {}
+      },
+      {
+       "name": "target",
+       "value": {
+        "selector": "getCachedObjectValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "targetsByCount"
+         },
+         {
+          "name": "value",
+          "type": "cached",
+          "value": "numPlayers"
+         },
+         {
+          "name": "defaultValue",
+          "type": "preset",
+          "value": 2
+         }
+        ]
+       }
+      },
+      {
+       "name": "maxRank",
+       "value": {
+        "selector": "getCachedObjectValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "maxRankByCount"
+         },
+         {
+          "name": "value",
+          "type": "cached",
+          "value": "numPlayers"
+         },
+         {
+          "name": "defaultValue",
+          "type": "preset",
+          "value": 11
+         }
+        ]
+       }
+      },
+      {
+       "name": "hierarchy",
+       "value": {
+        "selector": "concat",
+        "params": [
+         {
+          "name": "list1",
+          "type": "computed",
+          "value": {
+           "selector": "sublist",
+           "params": [
+            {
+             "name": "list",
+             "type": "preset",
+             "value": [
+              "brains",
+              "speed",
+              "strength"
+             ]
+            },
+            {
+             "name": "start",
+             "type": "computed",
+             "value": {
+              "selector": "remainder",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "cached",
+                "value": "roundIndex"
+               },
+               {
+                "name": "arg2",
+                "type": "preset",
+                "value": 3
+               }
+              ]
+             }
+            },
+            {
+             "name": "end",
+             "type": "preset",
+             "value": 3
+            }
+           ]
+          }
+         },
+         {
+          "name": "list2",
+          "type": "computed",
+          "value": {
+           "selector": "sublist",
+           "params": [
+            {
+             "name": "list",
+             "type": "preset",
+             "value": [
+              "brains",
+              "speed",
+              "strength"
+             ]
+            },
+            {
+             "name": "start",
+             "type": "preset",
+             "value": 0
+            },
+            {
+             "name": "end",
+             "type": "computed",
+             "value": {
+              "selector": "remainder",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "cached",
+                "value": "roundIndex"
+               },
+               {
+                "name": "arg2",
+                "type": "preset",
+                "value": 3
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "moveCards",
+     "payload": {
+      "preset": {
+       "type": "deck",
+       "to": "indicator_pool"
+      },
+      "cached": {
+       "from": "hierarchyDecks"
+      }
+     }
+    },
+    {
+     "key": "moveCards",
+     "payload": {
+      "preset": {
+       "type": "deck",
+       "from": "indicator_pool",
+       "to": "hier_strong",
+       "qnt": 1
+      },
+      "computed": {
+       "cardNames": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "formatString",
+           "params": [
+            {
+             "name": "format",
+             "type": "preset",
+             "value": "($1)_indicator"
+            },
+            {
+             "name": "arg1",
+             "type": "cached",
+             "value": "hierarchy.0"
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "key": "moveCards",
+     "payload": {
+      "preset": {
+       "type": "deck",
+       "from": "indicator_pool",
+       "to": "hier_mid",
+       "qnt": 1
+      },
+      "computed": {
+       "cardNames": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "formatString",
+           "params": [
+            {
+             "name": "format",
+             "type": "preset",
+             "value": "($1)_indicator"
+            },
+            {
+             "name": "arg1",
+             "type": "cached",
+             "value": "hierarchy.1"
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "key": "moveCards",
+     "payload": {
+      "preset": {
+       "type": "deck",
+       "from": "indicator_pool",
+       "to": "hier_weak",
+       "qnt": 1
+      },
+      "computed": {
+       "cardNames": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "formatString",
+           "params": [
+            {
+             "name": "format",
+             "type": "preset",
+             "value": "($1)_indicator"
+            },
+            {
+             "name": "arg1",
+             "type": "cached",
+             "value": "hierarchy.2"
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "key": "showScore",
+     "payload": {
+      "preset": {
+       "secondScore": true,
+       "order": "highest"
+      },
+      "cached": {
+       "from": "players",
+       "to": "players"
+      },
+      "computed": {
+       "format": {
+        "selector": "getCachedObjectValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "secondScoreFormats"
+         },
+         {
+          "name": "value",
+          "type": "cached",
+          "value": "target"
+         },
+         {
+          "name": "defaultValue",
+          "type": "preset",
+          "value": "($1)\ud83c\udccf"
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "key": "createNotification",
+     "payload": {
+      "preset": {
+       "duration": 5
+      },
+      "cached": {
+       "to": "players",
+       "image": "bannerImg"
+      },
+      "computed": {
+       "header": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "cached",
+          "value": "round"
+         },
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "add",
+           "params": [
+            {
+             "name": "arg1",
+             "type": "cached",
+             "value": "roundIndex"
+            },
+            {
+             "name": "arg2",
+             "type": "preset",
+             "value": 1
+            }
+           ]
+          }
+         }
+        ]
+       },
+       "text": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "cached",
+          "value": "scoreByWinningExactly"
+         },
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "target"
+         },
+         {
+          "name": "arg2",
+          "type": "cached",
+          "value": "maxRank"
+         }
+        ]
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Setup Widget",
+   "skipCondition": [
+    {
+     "selector": "logicalNOT",
+     "params": [
+      {
+       "name": "arg",
+       "type": "cached",
+       "value": "recreateDecks"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "createGenericCardWidget",
+     "payload": {
+      "preset": {
+       "ratio": "0.77",
+       "cardback": "cardback",
+       "backgroundImage": "https://res.cloudinary.com/liars-club/image/upload/wood_qbegm0.jpg"
+      },
+      "computed": {
+       "decks": {
+        "selector": "concat",
+        "params": [
+         {
+          "name": "list1",
+          "type": "cached",
+          "value": "trickDecks"
+         },
+         {
+          "name": "list2",
+          "type": "cached",
+          "value": "hierarchyDecks"
+         }
+        ]
+       },
+       "dimensions": {
+        "selector": "getCachedObjectValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "dimensions"
+         },
+         {
+          "name": "value",
+          "type": "cached",
+          "value": "numPlayers"
+         },
+         {
+          "name": "defaultValue",
+          "type": "preset",
+          "value": [
+           2,
+           4
+          ]
+         }
+        ]
+       }
+      }
+     },
+     "saveValueInCache": [
+      {
+       "name": "recreateDecks",
+       "value": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Init Trick Leader",
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "trickLeader",
+       "value": {
+        "selector": "getCachedValue",
+        "params": [
+         {
+          "name": "name",
+          "type": "preset",
+          "value": "leader"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  [
+   {
+    "name": "Trick Start",
+    "actions": [
+     {
+      "key": "emptyAction",
+      "saveValueInCache": [
+       {
+        "name": "trickPlayers",
+        "value": []
+       },
+       {
+        "name": "trickSuits",
+        "value": []
+       },
+       {
+        "name": "trickRanks",
+        "value": []
+       },
+       {
+        "name": "leadSuit",
+        "value": "BLANK"
+       },
+       {
+        "name": "bestPower",
+        "value": -2
+       },
+       {
+        "name": "winPlayer",
+        "value": "BLANK"
+       },
+       {
+        "name": "winSuit",
+        "value": "BLANK"
+       }
+      ]
+     },
+     {
+      "key": "createGenericCardWidget",
+      "payload": {
+       "preset": {
+        "ratio": "0.77",
+        "cardback": "cardback",
+        "backgroundImage": "https://res.cloudinary.com/liars-club/image/upload/wood_qbegm0.jpg"
+       },
+       "computed": {
+        "decks": {
+         "selector": "concat",
+         "params": [
+          {
+           "name": "list1",
+           "type": "cached",
+           "value": "trickDecks"
+          },
+          {
+           "name": "list2",
+           "type": "cached",
+           "value": "hierarchyDecks"
+          }
+         ]
+        },
+        "dimensions": {
+         "selector": "getCachedObjectValue",
+         "params": [
+          {
+           "name": "objectName",
+           "type": "preset",
+           "value": "dimensions"
+          },
+          {
+           "name": "value",
+           "type": "cached",
+           "value": "numPlayers"
+          },
+          {
+           "name": "defaultValue",
+           "type": "preset",
+           "value": [
+            2,
+            4
+           ]
+          }
+         ]
+        }
+       }
+      }
+     }
+    ]
+   },
+   {
+    "name": "Show Order",
+    "parallel": {
+     "type": "smart",
+     "qnt": {
+      "selector": "getCachedValue",
+      "params": [
+       {
+        "name": "name",
+        "type": "preset",
+        "value": "numPlayers"
+       }
+      ]
+     }
+    },
+    "actions": [
+     {
+      "key": "showFakeRole",
+      "payload": {
+       "cached": {
+        "to": "players"
+       },
+       "computed": {
+        "roleId": {
+         "selector": "getCachedObjectValue",
+         "params": [
+          {
+           "name": "objectName",
+           "type": "preset",
+           "value": "ordinal"
+          },
+          {
+           "name": "value",
+           "type": "computed",
+           "value": {
+            "selector": "remainder",
+            "params": [
+             {
+              "name": "arg1",
+              "type": "computed",
+              "value": {
+               "selector": "add",
+               "params": [
+                {
+                 "name": "arg1",
+                 "type": "cached",
+                 "value": "numPlayers"
+                },
+                {
+                 "name": "arg2",
+                 "type": "computed",
+                 "value": {
+                  "selector": "subtract",
+                  "params": [
+                   {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "spaIndex"
+                   },
+                   {
+                    "name": "arg2",
+                    "type": "computed",
+                    "value": {
+                     "selector": "indexOf",
+                     "params": [
+                      {
+                       "name": "list",
+                       "type": "cached",
+                       "value": "players"
+                      },
+                      {
+                       "name": "element",
+                       "type": "cached",
+                       "value": "trickLeader"
+                      }
+                     ]
+                    }
+                   }
+                  ]
+                 }
+                }
+               ]
+              }
+             },
+             {
+              "name": "arg2",
+              "type": "cached",
+              "value": "numPlayers"
+             }
+            ]
+           }
+          },
+          {
+           "name": "defaultValue",
+           "type": "preset",
+           "value": "1st"
+          }
+         ]
+        },
+        "from": {
+         "selector": "createList",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "computed",
+           "value": {
+            "selector": "selectElement",
+            "params": [
+             {
+              "name": "list",
+              "type": "cached",
+              "value": "players"
+             },
+             {
+              "name": "index",
+              "type": "cached",
+              "value": "spaIndex"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       }
+      }
+     }
+    ]
+   },
+   {
+    "name": "Label Trick Decks",
+    "parallel": {
+     "type": "smart",
+     "qnt": {
+      "selector": "getCachedValue",
+      "params": [
+       {
+        "name": "name",
+        "type": "preset",
+        "value": "numPlayers"
+       }
+      ]
+     }
+    },
+    "actions": [
+     {
+      "key": "setDeckLabel",
+      "payload": {
+       "computed": {
+        "deck": {
+         "selector": "formatString",
+         "params": [
+          {
+           "name": "format",
+           "type": "preset",
+           "value": "trick_($1)"
+          },
+          {
+           "name": "arg1",
+           "type": "cached",
+           "value": "spaIndex"
+          }
+         ]
+        },
+        "label": {
+         "selector": "getPlayerNameById",
+         "params": [
+          {
+           "name": "id",
+           "type": "computed",
+           "value": {
+            "selector": "selectElement",
+            "params": [
+             {
+              "name": "list",
+              "type": "cached",
+              "value": "players"
+             },
+             {
+              "name": "index",
+              "type": "computed",
+              "value": {
+               "selector": "remainder",
+               "params": [
+                {
+                 "name": "arg1",
+                 "type": "computed",
+                 "value": {
+                  "selector": "add",
+                  "params": [
+                   {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "numPlayers"
+                   },
+                   {
+                    "name": "arg2",
+                    "type": "computed",
+                    "value": {
+                     "selector": "add",
+                     "params": [
+                      {
+                       "name": "arg1",
+                       "type": "computed",
+                       "value": {
+                        "selector": "indexOf",
+                        "params": [
+                         {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "players"
+                         },
+                         {
+                          "name": "element",
+                          "type": "cached",
+                          "value": "trickLeader"
+                         }
+                        ]
+                       }
+                      },
+                      {
+                       "name": "arg2",
+                       "type": "cached",
+                       "value": "spaIndex"
+                      }
+                     ]
+                    }
+                   }
+                  ]
+                 }
+                },
+                {
+                 "name": "arg2",
+                 "type": "cached",
+                 "value": "numPlayers"
+                }
+               ]
+              }
+             }
+            ]
+           }
+          }
+         ]
+        }
+       }
+      }
+     }
+    ]
+   },
+   {
+    "name": "Play Card Loop",
+    "repeat": {
+     "qnt": {
+      "selector": "getCachedValue",
+      "params": [
+       {
+        "name": "name",
+        "type": "preset",
+        "value": "numPlayers"
+       }
+      ]
+     }
+    },
+    "actions": [
+     {
+      "key": "emptyAction",
+      "saveValueInCache": [
+       {
+        "name": "currentPlayerIndex",
+        "value": {
+         "selector": "remainder",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "computed",
+           "value": {
+            "selector": "add",
+            "params": [
+             {
+              "name": "arg1",
+              "type": "cached",
+              "value": "numPlayers"
+             },
+             {
+              "name": "arg2",
+              "type": "computed",
+              "value": {
+               "selector": "add",
+               "params": [
+                {
+                 "name": "arg1",
+                 "type": "computed",
+                 "value": {
+                  "selector": "indexOf",
+                  "params": [
+                   {
+                    "name": "list",
+                    "type": "cached",
+                    "value": "players"
+                   },
+                   {
+                    "name": "element",
+                    "type": "cached",
+                    "value": "trickLeader"
+                   }
+                  ]
+                 }
+                },
+                {
+                 "name": "arg2",
+                 "type": "cached",
+                 "value": "repeatIndex"
+                }
+               ]
+              }
+             }
+            ]
+           }
+          },
+          {
+           "name": "arg2",
+           "type": "cached",
+           "value": "numPlayers"
+          }
+         ]
+        }
+       },
+       {
+        "name": "currentPlayer",
+        "value": {
+         "selector": "selectElement",
+         "params": [
+          {
+           "name": "list",
+           "type": "cached",
+           "value": "players"
+          },
+          {
+           "name": "index",
+           "type": "cached",
+           "value": "currentPlayerIndex"
+          }
+         ]
+        }
+       },
+       {
+        "name": "suitsInHand",
+        "value": {
+         "selector": "fetchHandField",
+         "params": [
+          {
+           "name": "playerId",
+           "type": "cached",
+           "value": "currentPlayer"
+          },
+          {
+           "name": "field",
+           "type": "preset",
+           "value": "suit"
+          }
+         ]
+        }
+       },
+       {
+        "name": "hasLeadSuit",
+        "value": {
+         "selector": "contains",
+         "params": [
+          {
+           "name": "list",
+           "type": "cached",
+           "value": "suitsInHand"
+          },
+          {
+           "name": "element",
+           "type": "cached",
+           "value": "leadSuit"
+          }
+         ]
+        }
+       },
+       {
+        "name": "playableSuits",
+        "value": {
+         "selector": "ifElse",
+         "params": [
+          {
+           "name": "condition",
+           "type": "computed",
+           "value": {
+            "selector": "equals",
+            "params": [
+             {
+              "name": "arg1",
+              "type": "cached",
+              "value": "leadSuit"
+             },
+             {
+              "name": "arg2",
+              "type": "preset",
+              "value": "BLANK"
+             }
+            ]
+           }
+          },
+          {
+           "name": "thenValue",
+           "type": "preset",
+           "value": [
+            "brains",
+            "speed",
+            "strength"
+           ]
+          },
+          {
+           "name": "elseValue",
+           "type": "computed",
+           "value": {
+            "selector": "ifElse",
+            "params": [
+             {
+              "name": "condition",
+              "type": "cached",
+              "value": "hasLeadSuit"
+             },
+             {
+              "name": "thenValue",
+              "type": "computed",
+              "value": {
+               "selector": "createList",
+               "params": [
+                {
+                 "name": "arg1",
+                 "type": "cached",
+                 "value": "leadSuit"
+                },
+                {
+                 "name": "arg2",
+                 "type": "preset",
+                 "value": "pass"
+                }
+               ]
+              }
+             },
+             {
+              "name": "elseValue",
+              "type": "preset",
+              "value": [
+               "brains",
+               "speed",
+               "strength",
+               "pass"
+              ]
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       {
+        "name": "trickTargetDeck",
+        "value": {
+         "selector": "formatString",
+         "params": [
+          {
+           "name": "format",
+           "type": "preset",
+           "value": "trick_($1)"
+          },
+          {
+           "name": "arg1",
+           "type": "cached",
+           "value": "repeatIndex"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "highlightPlayers",
+      "payload": {
+       "preset": {
+        "color": "red"
+       },
+       "computed": {
+        "listOfPlayers": {
+         "selector": "createList",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "cached",
+           "value": "currentPlayer"
+          }
+         ]
+        }
+       }
+      }
+     },
+     {
+      "key": "playCards",
+      "payload": {
+       "preset": {
+        "oneClick": true,
+        "playable": "availableCards",
+        "sounds.list": [
+         "soundboard.reminder"
+        ],
+        "sounds.waitForSoundEnd": false
+       },
+       "cached": {
+        "actor": "currentPlayer",
+        "target": "trickTargetDeck",
+        "playableInclude.suits": "playableSuits"
+       },
+       "computed": {
+        "playList.0": {
+         "selector": "createList",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "cached",
+           "value": "currentPlayer"
+          }
+         ]
+        },
+        "notification": {
+         "selector": "formatString",
+         "params": [
+          {
+           "name": "format",
+           "type": "cached",
+           "value": "playACard"
+          },
+          {
+           "name": "arg1",
+           "type": "computed",
+           "value": {
+            "selector": "getPlayerNameById",
+            "params": [
+             {
+              "name": "id",
+              "type": "cached",
+              "value": "currentPlayer"
+             }
+            ]
+           }
+          }
+         ]
+        },
+        "duration": {
+         "selector": "ifElse",
+         "params": [
+          {
+           "name": "condition",
+           "type": "computed",
+           "value": {
+            "selector": "contains",
+            "params": [
+             {
+              "name": "list",
+              "type": "computed",
+              "value": {
+               "selector": "allConnectedUsers"
+              }
+             },
+             {
+              "name": "element",
+              "type": "cached",
+              "value": "currentPlayer"
+             }
+            ]
+           }
+          },
+          {
+           "name": "thenValue",
+           "type": "preset",
+           "value": 30
+          },
+          {
+           "name": "elseValue",
+           "type": "preset",
+           "value": 1
+          }
+         ]
+        }
+       }
+      },
+      "postHandler": "playOneRandomCard",
+      "saveValueInCache": [
+       {
+        "name": "lastCardPlayed",
+        "value": {
+         "selector": "selectElement",
+         "params": [
+          {
+           "name": "list",
+           "type": "computed",
+           "value": {
+            "selector": "getCachedObjectValue",
+            "params": [
+             {
+              "name": "objectName",
+              "type": "preset",
+              "value": "lastActionResult"
+             },
+             {
+              "name": "value",
+              "type": "preset",
+              "value": "cards"
+             },
+             {
+              "name": "defaultValue",
+              "type": "preset",
+              "value": []
+             }
+            ]
+           }
+          },
+          {
+           "name": "index",
+           "type": "preset",
+           "value": 0
+          }
+         ]
+        }
+       },
+       {
+        "name": "currentSuit",
+        "value": {
+         "selector": "getCardField",
+         "params": [
+          {
+           "name": "cardId",
+           "type": "cached",
+           "value": "lastCardPlayed"
+          },
+          {
+           "name": "field",
+           "type": "preset",
+           "value": "suit"
+          }
+         ]
+        }
+       },
+       {
+        "name": "currentRank",
+        "value": {
+         "selector": "getCardField",
+         "params": [
+          {
+           "name": "cardId",
+           "type": "cached",
+           "value": "lastCardPlayed"
+          },
+          {
+           "name": "field",
+           "type": "preset",
+           "value": "rank"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "emptyAction",
+      "saveValueInCache": [
+       {
+        "name": "leadSuit",
+        "value": {
+         "selector": "ifElse",
+         "params": [
+          {
+           "name": "condition",
+           "type": "computed",
+           "value": {
+            "selector": "equals",
+            "params": [
+             {
+              "name": "arg1",
+              "type": "cached",
+              "value": "leadSuit"
+             },
+             {
+              "name": "arg2",
+              "type": "preset",
+              "value": "BLANK"
+             }
+            ]
+           }
+          },
+          {
+           "name": "thenValue",
+           "type": "cached",
+           "value": "currentSuit"
+          },
+          {
+           "name": "elseValue",
+           "type": "cached",
+           "value": "leadSuit"
+          }
+         ]
+        }
+       },
+       {
+        "name": "trickPlayers",
+        "value": {
+         "selector": "append",
+         "params": [
+          {
+           "name": "list",
+           "type": "cached",
+           "value": "trickPlayers"
+          },
+          {
+           "name": "element",
+           "type": "cached",
+           "value": "currentPlayer"
+          }
+         ]
+        }
+       },
+       {
+        "name": "trickSuits",
+        "value": {
+         "selector": "append",
+         "params": [
+          {
+           "name": "list",
+           "type": "cached",
+           "value": "trickSuits"
+          },
+          {
+           "name": "element",
+           "type": "cached",
+           "value": "currentSuit"
+          }
+         ]
+        }
+       },
+       {
+        "name": "trickRanks",
+        "value": {
+         "selector": "append",
+         "params": [
+          {
+           "name": "list",
+           "type": "cached",
+           "value": "trickRanks"
+          },
+          {
+           "name": "element",
+           "type": "cached",
+           "value": "currentRank"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "removeAllHighlights"
+     }
+    ]
+   },
+   {
+    "name": "Evaluate Winner",
+    "repeat": {
+     "qnt": {
+      "selector": "getCachedValue",
+      "params": [
+       {
+        "name": "name",
+        "type": "preset",
+        "value": "numPlayers"
+       }
+      ]
+     }
+    },
+    "actions": [
+     {
+      "key": "emptyAction",
+      "saveValueInCache": [
+       {
+        "name": "evalPlayer",
+        "value": {
+         "selector": "selectElement",
+         "params": [
+          {
+           "name": "list",
+           "type": "cached",
+           "value": "trickPlayers"
+          },
+          {
+           "name": "index",
+           "type": "cached",
+           "value": "repeatIndex"
+          }
+         ]
+        }
+       },
+       {
+        "name": "evalSuit",
+        "value": {
+         "selector": "selectElement",
+         "params": [
+          {
+           "name": "list",
+           "type": "cached",
+           "value": "trickSuits"
+          },
+          {
+           "name": "index",
+           "type": "cached",
+           "value": "repeatIndex"
+          }
+         ]
+        }
+       },
+       {
+        "name": "evalRank",
+        "value": {
+         "selector": "selectElement",
+         "params": [
+          {
+           "name": "list",
+           "type": "cached",
+           "value": "trickRanks"
+          },
+          {
+           "name": "index",
+           "type": "cached",
+           "value": "repeatIndex"
+          }
+         ]
+        }
+       },
+       {
+        "name": "power",
+        "value": {
+         "selector": "ifElse",
+         "params": [
+          {
+           "name": "condition",
+           "type": "computed",
+           "value": {
+            "selector": "equals",
+            "params": [
+             {
+              "name": "arg1",
+              "type": "cached",
+              "value": "evalSuit"
+             },
+             {
+              "name": "arg2",
+              "type": "preset",
+              "value": "pass"
+             }
+            ]
+           }
+          },
+          {
+           "name": "thenValue",
+           "type": "preset",
+           "value": -1
+          },
+          {
+           "name": "elseValue",
+           "type": "computed",
+           "value": {
+            "selector": "add",
+            "params": [
+             {
+              "name": "arg1",
+              "type": "computed",
+              "value": {
+               "selector": "selectElement",
+               "params": [
+                {
+                 "name": "list",
+                 "type": "preset",
+                 "value": [
+                  200,
+                  100,
+                  0
+                 ]
+                },
+                {
+                 "name": "index",
+                 "type": "computed",
+                 "value": {
+                  "selector": "maxValue",
+                  "params": [
+                   {
+                    "name": "list",
+                    "type": "computed",
+                    "value": {
+                     "selector": "createList",
+                     "params": [
+                      {
+                       "name": "arg1",
+                       "type": "computed",
+                       "value": {
+                        "selector": "indexOf",
+                        "params": [
+                         {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "hierarchy"
+                         },
+                         {
+                          "name": "element",
+                          "type": "cached",
+                          "value": "evalSuit"
+                         }
+                        ]
+                       }
+                      },
+                      {
+                       "name": "arg2",
+                       "type": "preset",
+                       "value": 0
+                      }
+                     ]
+                    }
+                   }
+                  ]
+                 }
+                }
+               ]
+              }
+             },
+             {
+              "name": "arg2",
+              "type": "cached",
+              "value": "evalRank"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       },
+       {
+        "name": "isBetter",
+        "value": {
+         "selector": "greaterThan",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "cached",
+           "value": "power"
+          },
+          {
+           "name": "arg2",
+           "type": "cached",
+           "value": "bestPower"
+          }
+         ]
+        }
+       },
+       {
+        "name": "bestPower",
+        "value": {
+         "selector": "ifElse",
+         "params": [
+          {
+           "name": "condition",
+           "type": "cached",
+           "value": "isBetter"
+          },
+          {
+           "name": "thenValue",
+           "type": "cached",
+           "value": "power"
+          },
+          {
+           "name": "elseValue",
+           "type": "cached",
+           "value": "bestPower"
+          }
+         ]
+        }
+       },
+       {
+        "name": "winPlayer",
+        "value": {
+         "selector": "ifElse",
+         "params": [
+          {
+           "name": "condition",
+           "type": "cached",
+           "value": "isBetter"
+          },
+          {
+           "name": "thenValue",
+           "type": "cached",
+           "value": "evalPlayer"
+          },
+          {
+           "name": "elseValue",
+           "type": "cached",
+           "value": "winPlayer"
+          }
+         ]
+        }
+       },
+       {
+        "name": "winSuit",
+        "value": {
+         "selector": "ifElse",
+         "params": [
+          {
+           "name": "condition",
+           "type": "cached",
+           "value": "isBetter"
+          },
+          {
+           "name": "thenValue",
+           "type": "cached",
+           "value": "evalSuit"
+          },
+          {
+           "name": "elseValue",
+           "type": "cached",
+           "value": "winSuit"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "name": "End Trick",
+    "actions": [
+     {
+      "key": "emptyAction",
+      "saveValueInCache": [
+       {
+        "name": "currentWinner",
+        "value": {
+         "selector": "getCachedValue",
+         "params": [
+          {
+           "name": "name",
+           "type": "preset",
+           "value": "winPlayer"
+          }
+         ]
+        }
+       },
+       {
+        "name": "winnerSuit",
+        "value": {
+         "selector": "getCachedValue",
+         "params": [
+          {
+           "name": "name",
+           "type": "preset",
+           "value": "winSuit"
+          }
+         ]
+        }
+       },
+       {
+        "name": "tricksWon",
+        "value": {
+         "selector": "incObjectFieldValue",
+         "params": [
+          {
+           "name": "objectName",
+           "type": "preset",
+           "value": "tricksWon"
+          },
+          {
+           "name": "ids",
+           "type": "computed",
+           "value": {
+            "selector": "createList",
+            "params": [
+             {
+              "name": "arg1",
+              "type": "cached",
+              "value": "currentWinner"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "updateScore",
+      "payload": {
+       "computed": {
+        "scores": {
+         "selector": "createList",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "computed",
+           "value": {
+            "selector": "createDict",
+            "params": [
+             {
+              "name": "keys",
+              "type": "preset",
+              "value": [
+               "list",
+               "score",
+               "secondScore"
+              ]
+             },
+             {
+              "name": "values",
+              "type": "computed",
+              "value": {
+               "selector": "createList",
+               "params": [
+                {
+                 "name": "arg1",
+                 "type": "computed",
+                 "value": {
+                  "selector": "createList",
+                  "params": [
+                   {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentWinner"
+                   }
+                  ]
+                 }
+                },
+                {
+                 "name": "arg2",
+                 "type": "computed",
+                 "value": {
+                  "selector": "getCachedObjectValue",
+                  "params": [
+                   {
+                    "name": "objectName",
+                    "type": "preset",
+                    "value": "tricksWon"
+                   },
+                   {
+                    "name": "value",
+                    "type": "cached",
+                    "value": "currentWinner"
+                   },
+                   {
+                    "name": "defaultValue",
+                    "type": "preset",
+                    "value": 0
+                   }
+                  ]
+                 }
+                },
+                {
+                 "name": "arg3",
+                 "type": "preset",
+                 "value": true
+                }
+               ]
+              }
+             }
+            ]
+           }
+          }
+         ]
+        }
+       }
+      }
+     },
+     {
+      "key": "emptyAction",
+      "payload": {
+       "preset": {
+        "sounds.list": [
+         "soundboard.clap"
+        ],
+        "sounds.waitForSoundEnd": false
+       },
+       "cached": {
+        "playList.0": "players"
+       }
+      }
+     },
+     {
+      "key": "animateBox",
+      "payload": {
+       "cached": {
+        "animation": "winnerSuit"
+       },
+       "computed": {
+        "userIds": {
+         "selector": "createList",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "cached",
+           "value": "currentWinner"
+          }
+         ]
+        }
+       }
+      }
+     },
+     {
+      "key": "createNotification",
+      "payload": {
+       "preset": {
+        "duration": 3,
+        "isAnnounceOnly": true
+       },
+       "cached": {
+        "to": "players"
+       },
+       "computed": {
+        "header": {
+         "selector": "formatString",
+         "params": [
+          {
+           "name": "format",
+           "type": "cached",
+           "value": "winsTheTrick"
+          },
+          {
+           "name": "arg1",
+           "type": "computed",
+           "value": {
+            "selector": "getPlayerNameById",
+            "params": [
+             {
+              "name": "id",
+              "type": "cached",
+              "value": "currentWinner"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       }
+      }
+     },
+     {
+      "key": "moveCards",
+      "payload": {
+       "preset": {
+        "type": "deck",
+        "to": "discard"
+       },
+       "computed": {
+        "from": {
+         "selector": "getCachedValue",
+         "params": [
+          {
+           "name": "name",
+           "type": "preset",
+           "value": "trickDecks"
+          }
+         ]
+        }
+       }
+      }
+     },
+     {
+      "key": "emptyAction",
+      "saveValueInCache": [
+       {
+        "name": "hierarchy",
+        "value": {
+         "selector": "append",
+         "params": [
+          {
+           "name": "list",
+           "type": "computed",
+           "value": {
+            "selector": "listsSubtract",
+            "params": [
+             {
+              "name": "list1",
+              "type": "cached",
+              "value": "hierarchy"
+             },
+             {
+              "name": "list2",
+              "type": "computed",
+              "value": {
+               "selector": "createList",
+               "params": [
+                {
+                 "name": "arg1",
+                 "type": "cached",
+                 "value": "winnerSuit"
+                }
+               ]
+              }
+             }
+            ]
+           }
+          },
+          {
+           "name": "element",
+           "type": "cached",
+           "value": "winnerSuit"
+          }
+         ]
+        }
+       }
+      ]
+     },
+     {
+      "key": "moveCards",
+      "payload": {
+       "preset": {
+        "type": "deck",
+        "to": "indicator_pool"
+       },
+       "cached": {
+        "from": "hierarchyDecks"
+       }
+      }
+     },
+     {
+      "key": "moveCards",
+      "payload": {
+       "preset": {
+        "type": "deck",
+        "from": "indicator_pool",
+        "to": "hier_strong",
+        "qnt": 1
+       },
+       "computed": {
+        "cardNames": {
+         "selector": "createList",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "computed",
+           "value": {
+            "selector": "formatString",
+            "params": [
+             {
+              "name": "format",
+              "type": "preset",
+              "value": "($1)_indicator"
+             },
+             {
+              "name": "arg1",
+              "type": "cached",
+              "value": "hierarchy.0"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       }
+      }
+     },
+     {
+      "key": "moveCards",
+      "payload": {
+       "preset": {
+        "type": "deck",
+        "from": "indicator_pool",
+        "to": "hier_mid",
+        "qnt": 1
+       },
+       "computed": {
+        "cardNames": {
+         "selector": "createList",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "computed",
+           "value": {
+            "selector": "formatString",
+            "params": [
+             {
+              "name": "format",
+              "type": "preset",
+              "value": "($1)_indicator"
+             },
+             {
+              "name": "arg1",
+              "type": "cached",
+              "value": "hierarchy.1"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       }
+      }
+     },
+     {
+      "key": "moveCards",
+      "payload": {
+       "preset": {
+        "type": "deck",
+        "from": "indicator_pool",
+        "to": "hier_weak",
+        "qnt": 1
+       },
+       "computed": {
+        "cardNames": {
+         "selector": "createList",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "computed",
+           "value": {
+            "selector": "formatString",
+            "params": [
+             {
+              "name": "format",
+              "type": "preset",
+              "value": "($1)_indicator"
+             },
+             {
+              "name": "arg1",
+              "type": "cached",
+              "value": "hierarchy.2"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       }
+      }
+     },
+     {
+      "key": "emptyAction",
+      "saveValueInCache": [
+       {
+        "name": "trickLeader",
+        "value": {
+         "selector": "getCachedValue",
+         "params": [
+          {
+           "name": "name",
+           "type": "preset",
+           "value": "currentWinner"
+          }
+         ]
+        }
+       },
+       {
+        "name": "isActionLoop",
+        "value": {
+         "selector": "greaterThan",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "computed",
+           "value": {
+            "selector": "listLength",
+            "params": [
+             {
+              "name": "list",
+              "type": "computed",
+              "value": {
+               "selector": "playerHand",
+               "params": [
+                {
+                 "name": "playerId",
+                 "type": "cached",
+                 "value": "players.0"
+                }
+               ]
+              }
+             }
+            ]
+           }
+          },
+          {
+           "name": "arg2",
+           "type": "preset",
+           "value": 0
+          }
+         ]
+        }
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  {
+   "name": "Round Scoring",
+   "repeat": {
+    "qnt": {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "numPlayers"
+      }
+     ]
+    }
+   },
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "scoringPlayer",
+       "value": {
+        "selector": "selectElement",
+        "params": [
+         {
+          "name": "list",
+          "type": "cached",
+          "value": "players"
+         },
+         {
+          "name": "index",
+          "type": "cached",
+          "value": "repeatIndex"
+         }
+        ]
+       }
+      },
+      {
+       "name": "tricks",
+       "value": {
+        "selector": "getCachedObjectValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "tricksWon"
+         },
+         {
+          "name": "value",
+          "type": "computed",
+          "value": {
+           "selector": "selectElement",
+           "params": [
+            {
+             "name": "list",
+             "type": "cached",
+             "value": "players"
+            },
+            {
+             "name": "index",
+             "type": "cached",
+             "value": "repeatIndex"
+            }
+           ]
+          }
+         },
+         {
+          "name": "defaultValue",
+          "type": "preset",
+          "value": 0
+         }
+        ]
+       }
+      },
+      {
+       "name": "scoreDelta",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "computed",
+          "value": {
+           "selector": "equals",
+           "params": [
+            {
+             "name": "arg1",
+             "type": "cached",
+             "value": "tricks"
+            },
+            {
+             "name": "arg2",
+             "type": "preset",
+             "value": 0
+            }
+           ]
+          }
+         },
+         {
+          "name": "thenValue",
+          "type": "preset",
+          "value": 2
+         },
+         {
+          "name": "elseValue",
+          "type": "computed",
+          "value": {
+           "selector": "ifElse",
+           "params": [
+            {
+             "name": "condition",
+             "type": "computed",
+             "value": {
+              "selector": "equals",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "cached",
+                "value": "tricks"
+               },
+               {
+                "name": "arg2",
+                "type": "cached",
+                "value": "target"
+               }
+              ]
+             }
+            },
+            {
+             "name": "thenValue",
+             "type": "preset",
+             "value": 1
+            },
+            {
+             "name": "elseValue",
+             "type": "preset",
+             "value": 0
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "updateScore",
+     "payload": {
+      "computed": {
+       "scores": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "createDict",
+           "params": [
+            {
+             "name": "keys",
+             "type": "preset",
+             "value": [
+              "list",
+              "delta"
+             ]
+            },
+            {
+             "name": "values",
+             "type": "computed",
+             "value": {
+              "selector": "createList",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                 "selector": "createList",
+                 "params": [
+                  {
+                   "name": "arg1",
+                   "type": "cached",
+                   "value": "scoringPlayer"
+                  }
+                 ]
+                }
+               },
+               {
+                "name": "arg2",
+                "type": "cached",
+                "value": "scoreDelta"
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "key": "updateScore",
+     "payload": {
+      "computed": {
+       "scores": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "createDict",
+           "params": [
+            {
+             "name": "keys",
+             "type": "preset",
+             "value": [
+              "list",
+              "score",
+              "secondScore"
+             ]
+            },
+            {
+             "name": "values",
+             "type": "computed",
+             "value": {
+              "selector": "createList",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                 "selector": "createList",
+                 "params": [
+                  {
+                   "name": "arg1",
+                   "type": "cached",
+                   "value": "scoringPlayer"
+                  }
+                 ]
+                }
+               },
+               {
+                "name": "arg2",
+                "type": "cached",
+                "value": "tricks"
+               },
+               {
+                "name": "arg3",
+                "type": "preset",
+                "value": true
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "key": "createNotification",
+     "payload": {
+      "preset": {
+       "duration": 4,
+       "isAnnounceOnly": true
+      },
+      "cached": {
+       "to": "players"
+      },
+      "computed": {
+       "text": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "cached",
+          "value": "tricksAim0Or"
+         },
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "getPlayerNameById",
+           "params": [
+            {
+             "name": "id",
+             "type": "cached",
+             "value": "scoringPlayer"
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg2",
+          "type": "cached",
+          "value": "tricks"
+         },
+         {
+          "name": "arg3",
+          "type": "cached",
+          "value": "target"
+         },
+         {
+          "name": "arg4",
+          "type": "cached",
+          "value": "scoreDelta"
+         }
+        ]
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Play Again Vote",
+   "checkWinCondition": true,
+   "actions": [
+    {
+     "key": "removeWidget",
+     "payload": {
+      "preset": {
+       "id": "GenericCardWidget"
+      }
+     }
+    },
+    {
+     "key": "createVote",
+     "payload": {
+      "preset": {
+       "type": "target_poll",
+       "terminationCondition": "get_majority",
+       "showResultInRealTime": true,
+       "showResultDuration": 1,
+       "showResultDelay": 0,
+       "targets": [
+        "Reset scores",
+        "Keep scores",
+        "I'M SO DONE"
+       ],
+       "duration": 120,
+       "allowRevoting": true
+      },
+      "cached": {
+       "actors": "host",
+       "title": "playAgain2",
+       "question": "wouldYouLikeTo",
+       "pollVoteTargetsOptions": "everybodyNobodyOptions2"
+      }
+     },
+     "saveValueInCache": [
+      {
+       "name": "playAgain",
+       "value": {
+        "selector": "logicalNOT",
+        "params": [
+         {
+          "name": "arg",
+          "type": "computed",
+          "value": {
+           "selector": "isTargetGotMajority",
+           "params": [
+            {
+             "name": "voteResult",
+             "type": "cached",
+             "value": "lastActionResult"
+            },
+            {
+             "name": "target",
+             "type": "preset",
+             "value": "I'M SO DONE"
+            }
+           ]
+          }
+         }
+        ]
+       }
+      },
+      {
+       "name": "reset",
+       "value": {
+        "selector": "isTargetGotMajority",
+        "params": [
+         {
+          "name": "voteResult",
+          "type": "cached",
+          "value": "lastActionResult"
+         },
+         {
+          "name": "target",
+          "type": "preset",
+          "value": "Reset scores"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "restoreWidget",
+     "payload": {
+      "preset": {
+       "id": "GenericCardWidget"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Reset Scores",
+   "skipCondition": [
+    {
+     "selector": "logicalNOT",
+     "params": [
+      {
+       "name": "arg",
+       "type": "cached",
+       "value": "reset"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "updateScore",
+     "payload": {
+      "computed": {
+       "scores": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "createDict",
+           "params": [
+            {
+             "name": "keys",
+             "type": "preset",
+             "value": [
+              "list",
+              "score"
+             ]
+            },
+            {
+             "name": "values",
+             "type": "computed",
+             "value": {
+              "selector": "createList",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "cached",
+                "value": "players"
+               },
+               {
+                "name": "arg2",
+                "type": "preset",
+                "value": 0
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "End Round",
+   "actions": [
+    {
+     "key": "updateScore",
+     "payload": {
+      "computed": {
+       "scores": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "createDict",
+           "params": [
+            {
+             "name": "keys",
+             "type": "preset",
+             "value": [
+              "list",
+              "score",
+              "secondScore"
+             ]
+            },
+            {
+             "name": "values",
+             "type": "computed",
+             "value": {
+              "selector": "createList",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "cached",
+                "value": "players"
+               },
+               {
+                "name": "arg2",
+                "type": "preset",
+                "value": 0
+               },
+               {
+                "name": "arg3",
+                "type": "preset",
+                "value": true
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "key": "recallCards",
+     "payload": {
+      "preset": {
+       "deck": "braggart"
+      },
+      "cached": {
+       "targets": "players"
+      }
+     }
+    },
+    {
+     "key": "moveCards",
+     "payload": {
+      "preset": {
+       "type": "deck",
+       "from": "discard",
+       "to": "braggart"
+      }
+     }
+    },
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "roundIndex",
+       "value": {
+        "selector": "add",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "roundIndex"
+         },
+         {
+          "name": "arg2",
+          "type": "preset",
+          "value": 1
+         }
+        ]
+       }
+      },
+      {
+       "name": "currentMinScore",
+       "value": {
+        "selector": "getMinCurrentScore"
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Change Players",
+   "turnPlayersToSpectators": true,
+   "turnSpectatorsToPlayers": true,
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "players",
+       "value": {
+        "selector": "allPlayers",
+        "params": []
+       }
+      },
+      {
+       "name": "numPlayers",
+       "value": {
+        "selector": "listLength",
+        "params": [
+         {
+          "name": "list",
+          "type": "cached",
+          "value": "players"
+         }
+        ]
+       }
+      },
+      {
+       "name": "trickDecks",
+       "value": {
+        "selector": "sublist",
+        "params": [
+         {
+          "name": "list",
+          "type": "preset",
+          "value": [
+           "trick_0",
+           "trick_1",
+           "trick_2",
+           "trick_3",
+           "trick_4"
+          ]
+         },
+         {
+          "name": "start",
+          "type": "preset",
+          "value": 0
+         },
+         {
+          "name": "end",
+          "type": "cached",
+          "value": "numPlayers"
+         }
+        ]
+       }
+      },
+      {
+       "name": "leader",
+       "value": {
+        "selector": "nextPlayer",
+        "params": [
+         {
+          "name": "playersList",
+          "type": "cached",
+          "value": "players"
+         },
+         {
+          "name": "playerId",
+          "type": "cached",
+          "value": "leader"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "playersWinCondition": {
+  "gameOverCondition": {
+   "selector": "logicalNOT",
+   "params": [
+    {
+     "name": "arg",
+     "type": "cached",
+     "value": "playAgain"
+    }
+   ]
+  },
+  "winners": {
+   "selector": "getPlayerNamesByIds",
+   "params": [
+    {
+     "name": "ids",
+     "type": "computed",
+     "value": {
+      "selector": "getPlayersWithMaxScore"
+     }
+    }
+   ]
+  }
+ },
+ "postGameActions": [
+  {
+   "key": "createNotification",
+   "payload": {
+    "preset": {
+     "duration": 10,
+     "image": "winner"
+    },
+    "cached": {
+     "to": "players"
+    },
+    "computed": {
+     "header": {
+      "selector": "formatString",
+      "params": [
+       {
+        "name": "format",
+        "type": "cached",
+        "value": "str"
+       },
+       {
+        "name": "arg1",
+        "type": "cached",
+        "value": "winner"
+       },
+       {
+        "name": "arg2",
+        "type": "computed",
+        "value": {
+         "selector": "ifElse",
+         "params": [
+          {
+           "name": "condition",
+           "type": "computed",
+           "value": {
+            "selector": "equals",
+            "params": [
+             {
+              "name": "arg1",
+              "type": "computed",
+              "value": {
+               "selector": "listLength",
+               "params": [
+                {
+                 "name": "list",
+                 "type": "computed",
+                 "value": {
+                  "selector": "getPlayersWithMaxScore"
+                 }
+                }
+               ]
+              }
+             },
+             {
+              "name": "arg2",
+              "type": "preset",
+              "value": 1
+             }
+            ]
+           }
+          },
+          {
+           "name": "thenValue",
+           "type": "preset",
+           "value": "wins"
+          },
+          {
+           "name": "elseValue",
+           "type": "preset",
+           "value": "share the win"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    }
+   }
+  }
+ ],
+ "turnPlayerToSpectatorActions": [
+  {
+   "key": "recallCards",
+   "payload": {
+    "preset": {
+     "deck": "braggart"
+    },
+    "cached": {
+     "targets": "oldPlayer"
+    }
+   }
+  },
+  {
+   "key": "emptyAction",
+   "saveValueInCache": [
+    {
+     "name": "players",
+     "value": {
+      "selector": "allPlayers",
+      "params": []
+     }
+    },
+    {
+     "name": "numPlayers",
+     "value": {
+      "selector": "listLength",
+      "params": [
+       {
+        "name": "list",
+        "type": "cached",
+        "value": "players"
+       }
+      ]
+     }
+    },
+    {
+     "name": "trickDecks",
+     "value": {
+      "selector": "sublist",
+      "params": [
+       {
+        "name": "list",
+        "type": "preset",
+        "value": [
+         "trick_0",
+         "trick_1",
+         "trick_2",
+         "trick_3",
+         "trick_4"
+        ]
+       },
+       {
+        "name": "start",
+        "type": "preset",
+        "value": 0
+       },
+       {
+        "name": "end",
+        "type": "cached",
+        "value": "numPlayers"
+       }
+      ]
+     }
+    },
+    {
+     "name": "recreateDecks",
+     "value": true
+    }
+   ]
+  },
+  {
+   "key": "createDeck",
+   "payload": {
+    "preset": {
+     "name": "braggart"
+    },
+    "computed": {
+     "set": {
+      "selector": "formatString",
+      "params": [
+       {
+        "name": "format",
+        "type": "preset",
+        "value": "p($1)"
+       },
+       {
+        "name": "arg1",
+        "type": "cached",
+        "value": "numPlayers"
+       }
+      ]
+     }
+    }
+   }
+  }
+ ],
+ "turnSpectatorToPlayerActions": [
+  {
+   "key": "emptyAction",
+   "saveValueInCache": [
+    {
+     "name": "newPlayer",
+     "value": {
+      "selector": "getCachedValue",
+      "params": [
+       {
+        "name": "name",
+        "type": "preset",
+        "value": "waitingSpectator"
+       }
+      ]
+     }
+    },
+    {
+     "name": "players",
+     "value": {
+      "selector": "allPlayers",
+      "params": []
+     }
+    },
+    {
+     "name": "numPlayers",
+     "value": {
+      "selector": "listLength",
+      "params": [
+       {
+        "name": "list",
+        "type": "cached",
+        "value": "players"
+       }
+      ]
+     }
+    },
+    {
+     "name": "trickDecks",
+     "value": {
+      "selector": "sublist",
+      "params": [
+       {
+        "name": "list",
+        "type": "preset",
+        "value": [
+         "trick_0",
+         "trick_1",
+         "trick_2",
+         "trick_3",
+         "trick_4"
+        ]
+       },
+       {
+        "name": "start",
+        "type": "preset",
+        "value": 0
+       },
+       {
+        "name": "end",
+        "type": "cached",
+        "value": "numPlayers"
+       }
+      ]
+     }
+    },
+    {
+     "name": "recreateDecks",
+     "value": true
+    }
+   ]
+  },
+  {
+   "key": "setRole",
+   "payload": {
+    "preset": {
+     "roleId": "player"
+    },
+    "cached": {
+     "playerId": "newPlayer"
+    }
+   }
+  },
+  {
+   "key": "updateScore",
+   "payload": {
+    "computed": {
+     "scores": {
+      "selector": "createList",
+      "params": [
+       {
+        "name": "arg1",
+        "type": "computed",
+        "value": {
+         "selector": "createDict",
+         "params": [
+          {
+           "name": "keys",
+           "type": "preset",
+           "value": [
+            "list",
+            "score"
+           ]
+          },
+          {
+           "name": "values",
+           "type": "computed",
+           "value": {
+            "selector": "createList",
+            "params": [
+             {
+              "name": "arg1",
+              "type": "computed",
+              "value": {
+               "selector": "createList",
+               "params": [
+                {
+                 "name": "arg1",
+                 "type": "cached",
+                 "value": "newPlayer"
+                }
+               ]
+              }
+             },
+             {
+              "name": "arg2",
+              "type": "cached",
+              "value": "currentMinScore"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "key": "showScore",
+   "payload": {
+    "preset": {
+     "order": "highest"
+    },
+    "cached": {
+     "from": "players",
+     "to": "players"
+    }
+   }
+  },
+  {
+   "key": "showScore",
+   "payload": {
+    "preset": {
+     "secondScore": true,
+     "order": "highest"
+    },
+    "cached": {
+     "from": "players",
+     "to": "players"
+    },
+    "computed": {
+     "format": {
+      "selector": "getCachedObjectValue",
+      "params": [
+       {
+        "name": "objectName",
+        "type": "preset",
+        "value": "secondScoreFormats"
+       },
+       {
+        "name": "value",
+        "type": "cached",
+        "value": "target"
+       },
+       {
+        "name": "defaultValue",
+        "type": "preset",
+        "value": "($1)\ud83c\udccf"
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "key": "createVideoboxDecks",
+   "payload": {
+    "preset": {
+     "cardback": "cardback"
+    },
+    "cached": {
+     "players": "players"
+    }
+   }
+  },
+  {
+   "key": "createDeck",
+   "payload": {
+    "preset": {
+     "name": "braggart"
+    },
+    "computed": {
+     "set": {
+      "selector": "formatString",
+      "params": [
+       {
+        "name": "format",
+        "type": "preset",
+        "value": "p($1)"
+       },
+       {
+        "name": "arg1",
+        "type": "cached",
+        "value": "numPlayers"
+       }
+      ]
+     }
+    }
+   }
+  }
+ ]
+}

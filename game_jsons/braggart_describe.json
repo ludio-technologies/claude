@@ -1,0 +1,68 @@
+{
+    "name": "Braggart",
+    "demo": false,
+    "parallel": false,
+    "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+    "banner": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/banner.png",
+    "description": {
+        "summary": "A bold trick-taking game — win your exact target number of tricks, or none at all.",
+        "description_title": "Braggart Overview",
+        "# Players": "3-5",
+        "players": "3-5",
+        "Duration": "6 mins/round"
+    },
+    "rules": [
+        {
+            "name": "Basic Rules",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Overview",
+                    "text": "Braggart is a trick-taking game for 3-5 players. The deck has three suits — Brains, Speed, and Strength — numbered 1-11, plus a few Pass cards. Each round you are dealt 7 cards and play 7 tricks. The catch: you only score by winning the exact target number of tricks, or by winning none at all."
+                },
+                {
+                    "title": "The shifting hierarchy",
+                    "text": "At all times the three suits sit in a strength order shown in the middle of the table: Strongest, Middle, and Weakest. ANY card of a stronger suit beats ANY card of a weaker suit — the number only matters to break ties within the same suit.<br><br>The twist: after each trick, the winning suit immediately drops to Weakest. So the pecking order is always rotating."
+                },
+                {
+                    "title": "Playing a trick",
+                    "text": "The trick leader plays any suit; everyone else must follow that suit if they can. The trick is won by the strongest-suit card played (ties broken by the higher number). The winner leads the next trick.<br><br>Because a stronger off-suit card beats the led suit, you can steal a trick even when you can't follow!"
+                },
+                {
+                    "title": "Pass cards",
+                    "text": "Instead of following suit, you may play a Pass card. A Pass never wins a trick and hides whether you could have followed — perfect for ducking a trick you don't want."
+                },
+                {
+                    "title": "Scoring",
+                    "text": "At the end of each round you score for tricks won:<br>2 points for winning ZERO tricks.<br>1 point for winning EXACTLY the target: 3 tricks with 3 players, 2 with 4 players, 1 with 5 players.<br>0 points for anything else. Overshoot or undershoot your boast and you get nothing!"
+                }
+            ]
+        },
+        {
+            "name": "Win Conditions",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Most points wins",
+                    "text": "Braggart is played over multiple rounds. After each round you vote whether to play again; when the table decides to stop, the player with the most total points wins (ties share the win)."
+                }
+            ]
+        },
+        {
+            "name": "Mechanics",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Turn order & timeouts",
+                    "text": "Play proceeds clockwise from the trick leader. Your current trick count for the round is shown as your 🃏 score. If you run out of time to play, a random legal card is played for you."
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "card game",
+        "trick-taking",
+        "strategic",
+        "bluffing"
+    ]
+}

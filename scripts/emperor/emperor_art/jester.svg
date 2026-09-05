@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" width="500" height="700">
+<rect width="500" height="700" rx="36" fill="#8A6D12"/>
+<rect x="8" y="8" width="484" height="684" rx="30" fill="#C9A227"/>
+<rect x="30" y="30" width="440" height="640" rx="18" fill="#F6F1E7"/>
+<path d="M176 46 L200 76 L176 106 L152 76 Z" fill="#9E2B2B" opacity="0.85"/><path d="M224 46 L248 76 L224 106 L200 76 Z" fill="#C9A227" opacity="0.85"/><path d="M272 46 L296 76 L272 106 L248 76 Z" fill="#9E2B2B" opacity="0.85"/><path d="M320 46 L344 76 L320 106 L296 76 Z" fill="#C9A227" opacity="0.85"/>
+<text x="250.0" y="330" text-anchor="middle" font-family="Georgia, serif"
+      font-size="230" font-weight="bold" fill="#C9A227">13</text>
+<text x="250.0" y="408" text-anchor="middle" font-family="Georgia, serif"
+      font-size="44" fill="#2B2417">Jester</text>
+<path d="M140 440 H360" stroke="#EBD98A" stroke-width="4" stroke-linecap="round"/>
+<circle cx="233.0" cy="500.0" r="9" fill="#C9A227"/><circle cx="267.0" cy="500.0" r="9" fill="#C9A227"/>
+<text x="250.0" y="612" text-anchor="middle" font-family="Georgia, serif"
+      font-size="26" fill="#2B2417" opacity="0.6">Wild &#183; 2 in the deck</text>
+<text x="66" y="98" text-anchor="middle" font-family="Georgia, serif"
+      font-size="46" font-weight="bold" fill="#C9A227">13</text>
+<g transform="rotate(180 434 602)"><text x="434" y="602"
+      text-anchor="middle" font-family="Georgia, serif" font-size="46"
+      font-weight="bold" fill="#C9A227">13</text></g>
+</svg>

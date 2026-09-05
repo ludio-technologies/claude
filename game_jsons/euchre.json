@@ -163,6 +163,135 @@
                 "url": "https://deckofcardsapi.com/static/img/9H.png"
             }
         },
+        "strings": {
+            "Default": {
+                "wallpaperImg": "wallpaper",
+                "welcomeToEuchre": "Welcome to Euchre!",
+                "bannerImg": "banner",
+                "inAMomentTell": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play Euchre!",
+                "tutorialMode": "Tutorial mode",
+                "everybodyNobodyTargets": [
+                    "Everybody!",
+                    "Nobody!"
+                ],
+                "everybodyNobodyOptions": {
+                    "Everybody!": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "#D3D3D3",
+                        "textColor": "black",
+                        "widgetIconColor": "green"
+                    },
+                    "Nobody!": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "#D3D3D3",
+                        "textColor": "black",
+                        "widgetIconColor": "red"
+                    }
+                },
+                "whoNeedsTheTutorial": "($1), who needs the tutorial? Click on the players or select from the middle.",
+                "pickTheRedTeam": "Pick the Red team",
+                "pick2PlayersTo": "($1), pick 2 players to form the Red team. The other 2 will be on the Blue team.",
+                "euchreBasics17": "Euchre Basics (1/7)",
+                "4PlayersIn2": "4 players in 2 teams (<b>Red</b> & <b>Blue</b>) — partners sit across from each other. The deck has only <b>24 cards</b>: 9, 10, J, Q, K, A of each suit. Each hand is 5 tricks. First team to <b>10 points</b> wins!",
+                "cardRanksNonTrump": "Card Ranks — Non-Trump (2/7)",
+                "whenASuitIs": "When a suit is NOT trump, cards rank low → high:<br/><b>9 → 10 → J → Q → K → A (highest)</b>.<br/>So in any non-trump suit, the Ace is king.",
+                "trumpTheBowers3": "Trump & the Bowers (3/7)",
+                "eachHandOneSuit": "Each hand, one suit becomes <b>trump</b> — trump beats every non-trump card.<br/><br/>Inside the trump suit, the Jacks get special names:<br/>• <b>Right Bower</b> = Jack of trump → <i>highest card in the whole deck</i><br/>• <b>Left Bower</b> = Jack of the <i>same-color</i> suit → <i>second highest, and it counts as trump too!</i>",
+                "workedExampleHeartsIs": "Worked Example: Hearts is Trump (4/7)",
+                "fullRankingWhenHearts": "Full ranking when Hearts is trump, highest → lowest:<br/><b>J♥ (Right Bower)</b> &gt; <b>J♦ (Left Bower)</b> &gt; A♥ &gt; K♥ &gt; Q♥ &gt; 10♥ &gt; 9♥<br/><br/>Why is J♦ in there? Hearts and Diamonds are both <b>red</b>, so the J of the same-color suit joins the trump suit for this hand.<br/>Same-color pairs: <b>♥ ↔ ♦</b> and <b>♠ ↔ ♣</b>.",
+                "biddingRound1Order": "Bidding — Round 1: Order It Up (5/7)",
+                "eachHandStartsWith": "Each hand starts with the top card of the kitty <b>flipped face-up</b>. Starting left of the dealer, going clockwise, each player chooses:<br/>• <b>Pass</b><br/>• <b>Order it up</b> — accept the flipped card's suit as trump<br/><br/>If anyone orders up, the <b>dealer picks up the flipped card</b> and discards one. The ordering team becomes the <b>makers</b> and must win at least <b>3 tricks</b>.",
+                "biddingRound2Name": "Bidding — Round 2: Name a Suit (6/7)",
+                "ifAll4Players": "If all 4 players pass, the flipped card is turned down and a second round begins. Each player can:<br/>• <b>Pass</b><br/>• <b>Name any other suit</b> as trump (you can't pick the rejected suit)<br/><br/>Whoever names trump becomes a maker and needs 3+ tricks. If all 4 pass again, the hand is thrown in and re-dealt.",
+                "scoringFollowSuit7": "Scoring & Follow-Suit (7/7)",
+                "scoringPerHandMakers": "<b>Scoring per hand:</b><br/>• Makers win 3–4 tricks → <b>1 point</b><br/>• Makers win all 5 (a <i>march</i>) → <b>2 points</b><br/>• Makers win fewer than 3 (<i>euchred!</i>) → opponents get <b>2 points</b><br/><br/><b>Playing:</b> you must follow the lead suit when you can. Heads-up: the <b>Left Bower counts as trump</b>, NOT its printed suit — so if Hearts is trump and someone leads Diamonds, your J♦ is <i>not</i> a Diamond. The app enforces legal plays automatically.",
+                "trumpOffer": "Trump offer: ($1)!",
+                "dealerBiddingStartsLeft": "Dealer: ($1). Bidding starts left of dealer — order up or pass?",
+                "bidRound1": "Bid Round 1",
+                "orderUpPassTargets": [
+                    "Order Up",
+                    "Pass"
+                ],
+                "orderUpPassOptions": {
+                    "Order Up": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/up.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "#D3D3D3",
+                        "textColor": "black",
+                        "widgetIconColor": "green"
+                    },
+                    "Pass": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/fail-svgrepo-com.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "#D3D3D3",
+                        "textColor": "black",
+                        "widgetIconColor": "blue"
+                    }
+                },
+                "makeTrump": "($1), make ($2) trump?",
+                "dealerPickUpAs": "($1) (dealer), pick up ($2) as trump?",
+                "dealerDiscard1Card": "($1) (dealer), discard 1 card face-down.",
+                "bidRound2": "Bid Round 2",
+                "heartsDiamondsClubsSpadesTargets": [
+                    "Hearts",
+                    "Diamonds",
+                    "Clubs",
+                    "Spades",
+                    "Pass"
+                ],
+                "nameATrumpSuit": "($1), name a trump suit (or pass).",
+                "bidRound2Dealer": "Bid Round 2 - Dealer Must Choose",
+                "heartsDiamondsClubsSpadesTargets2": [
+                    "Hearts",
+                    "Diamonds",
+                    "Clubs",
+                    "Spades"
+                ],
+                "dealerYouMustChoose": "($1) (dealer) — you must choose trump! (Screw the dealer)",
+                "trumpIs": "Trump is ($1)!",
+                "areTheMakersThey": "($1) are the makers — they must win 3+ tricks. Right Bower (J of trump) is highest; Left Bower (J of ($2)) is second.",
+                "trump2": "($1), ($2)! Trump: ($3)",
+                "follow": "follow ($1)",
+                "handResultWonTricks": "Hand result: ($1) won ($2) tricks",
+                "redPtBluePt": "Red: +($1) pt | Blue: +($2) pt → Score: Red ($3) - Blue ($4)",
+                "playAGAIN": "PLAY AGAIN?",
+                "keepPlayingFirstTeam": "Keep playing? (First team to 10 points wins!)",
+                "resetScoresKeepScoresTargets": [
+                    "Reset scores",
+                    "Keep scores",
+                    "I'M SO DONE"
+                ],
+                "keepScoresResetScoresOptions": {
+                    "Keep scores": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "#D3D3D3",
+                        "textColor": "black",
+                        "widgetIconColor": "green"
+                    },
+                    "Reset scores": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "#D3D3D3",
+                        "textColor": "black",
+                        "widgetIconColor": "blue"
+                    },
+                    "I'M SO DONE": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "#D3D3D3",
+                        "textColor": "black",
+                        "widgetIconColor": "red"
+                    }
+                },
+                "fmtLine21": "($1) ($2)!",
+                "deckOrderLabel": "($1). ($2)",
+                "winsLabel": "wins",
+                "shareWinLabel": "share the win"
+            }
+        },
         "animations": {
             "winner": "https://lottie.host/ae7f6864-0454-4f5b-9d5d-598a8234f4b4/P4YrwOR8gd.json",
             "trick_winner": "https://lottie.host/ea2afd95-9c1c-4517-8b62-3f6f4f909b75/jMGMFghnpN.json"
@@ -175,6 +304,8 @@
         }
     },
     "visualSettings": {
+        "backgroundColor": "#EDC6A0",
+        "borderColor": "black",
         "increaseHandHeight": true,
         "isCardAnimationsOff": true,
         "cardHandBackgroundImage": "https://res.cloudinary.com/liars-club/image/upload/wood_qbegm0.jpg"
@@ -183,8 +314,8 @@
         {
             "key": "changeBackground",
             "payload": {
-                "preset": {
-                    "image": "wallpaper"
+                "cached": {
+                    "image": "wallpaperImg"
                 }
             }
         },
@@ -532,14 +663,12 @@
             "key": "createNotification",
             "payload": {
                 "preset": {
-                    "header": "Welcome to Euchre!",
-                    "image": "banner",
-                    "duration": 8,
-                    "backgroundColor": "#EDC6A0",
-                    "borderColor": "black"
+                    "duration": 8
                 },
                 "cached": {
-                    "to": "players"
+                    "to": "players",
+                    "header": "welcomeToEuchre",
+                    "image": "bannerImg"
                 },
                 "computed": {
                     "text": {
@@ -547,8 +676,8 @@
                         "params": [
                             {
                                 "name": "format",
-                                "type": "preset",
-                                "value": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play Euchre!"
+                                "type": "cached",
+                                "value": "inAMomentTell"
                             },
                             {
                                 "name": "arg1",
@@ -582,7 +711,6 @@
             "key": "createMixVote",
             "payload": {
                 "preset": {
-                    "title": "Tutorial mode",
                     "terminationCondition": "get_all_votes",
                     "showResultInRealTime": true,
                     "showResultDuration": 2,
@@ -590,36 +718,17 @@
                     "point.allowFewerAnswers": true,
                     "point.terminationCondition": "get_all_votes",
                     "poll.answersQuantity": 1,
-                    "poll.targets": [
-                        "Everybody!",
-                        "Nobody!"
-                    ],
                     "oneClick": true,
                     "allowRevoting": true,
-                    "pollVoteTargetsOptions": {
-                        "Everybody!": {
-                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-                            "backgroundColor": "#D3D3D3",
-                            "boxIconColor": "#D3D3D3",
-                            "textColor": "black",
-                            "widgetIconColor": "green"
-                        },
-                        "Nobody!": {
-                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
-                            "backgroundColor": "#D3D3D3",
-                            "boxIconColor": "#D3D3D3",
-                            "textColor": "black",
-                            "widgetIconColor": "red"
-                        }
-                    },
-                    "poll.terminationCondition": "get_all_votes",
-                    "backgroundColor": "#EDC6A0",
-                    "borderColor": "black"
+                    "poll.terminationCondition": "get_all_votes"
                 },
                 "cached": {
                     "actors": "host",
                     "point.targets": "players",
-                    "point.answersQuantity": "numPlayers"
+                    "point.answersQuantity": "numPlayers",
+                    "title": "tutorialMode",
+                    "poll.targets": "everybodyNobodyTargets",
+                    "pollVoteTargetsOptions": "everybodyNobodyOptions"
                 },
                 "computed": {
                     "question": {
@@ -627,8 +736,8 @@
                         "params": [
                             {
                                 "name": "format",
-                                "type": "preset",
-                                "value": "($1), who needs the tutorial? Click on the players or select from the middle."
+                                "type": "cached",
+                                "value": "whoNeedsTheTutorial"
                             },
                             {
                                 "name": "arg1",
@@ -710,8 +819,8 @@
                                                     },
                                                     {
                                                         "name": "element",
-                                                        "type": "preset",
-                                                        "value": "Everybody!"
+                                                        "type": "cached",
+                                                        "value": "everybodyNobodyTargets.0"
                                                     }
                                                 ]
                                             }
@@ -765,7 +874,6 @@
             "key": "createVote",
             "payload": {
                 "preset": {
-                    "title": "Pick the Red team",
                     "type": "target_point",
                     "terminationCondition": "get_all_votes",
                     "showResultInRealTime": true,
@@ -774,13 +882,12 @@
                     "oneClick": true,
                     "allowRevoting": true,
                     "answersQuantity": 2,
-                    "allowFewerAnswers": true,
-                    "backgroundColor": "#EDC6A0",
-                    "borderColor": "black"
+                    "allowFewerAnswers": true
                 },
                 "cached": {
                     "actors": "host",
-                    "targets": "players"
+                    "targets": "players",
+                    "title": "pickTheRedTeam"
                 },
                 "computed": {
                     "question": {
@@ -788,8 +895,8 @@
                         "params": [
                             {
                                 "name": "format",
-                                "type": "preset",
-                                "value": "($1), pick 2 players to form the Red team. The other 2 will be on the Blue team."
+                                "type": "cached",
+                                "value": "pick2PlayersTo"
                             },
                             {
                                 "name": "arg1",
@@ -964,29 +1071,16 @@
             }
         },
         {
+            "key": "showRole",
+            "payload": {
+                "cached": {
+                    "from": "players",
+                    "to": "players"
+                }
+            }
+        },
+        {
             "key": "removeAllHighlights"
-        },
-        {
-            "key": "highlightPlayers",
-            "payload": {
-                "preset": {
-                    "color": "#D83232"
-                },
-                "cached": {
-                    "listOfPlayers": "redTeam"
-                }
-            }
-        },
-        {
-            "key": "highlightPlayers",
-            "payload": {
-                "preset": {
-                    "color": "#4EC1D0"
-                },
-                "cached": {
-                    "listOfPlayers": "blueTeam"
-                }
-            }
         },
         {
             "key": "createDeck",
@@ -1025,7 +1119,7 @@
             "payload": {
                 "preset": {
                     "secondScore": true,
-                    "format": "($1)\ud83c\udccf",
+                    "format": "($1)🃏",
                     "order": "highest"
                 },
                 "cached": {
@@ -1066,14 +1160,12 @@
                     "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "duration": 14,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black",
-                            "header": "Euchre Basics (1/7)",
-                            "text": "4 players in 2 teams (<b>Red</b> & <b>Blue</b>) \u2014 partners sit across from each other. The deck has only <b>24 cards</b>: 9, 10, J, Q, K, A of each suit. Each hand is 5 tricks. First team to <b>10 points</b> wins!"
+                            "duration": 14
                         },
                         "cached": {
-                            "to": "learners"
+                            "to": "learners",
+                            "header": "euchreBasics17",
+                            "text": "4PlayersIn2"
                         }
                     }
                 },
@@ -1082,14 +1174,12 @@
                     "payload": {
                         "preset": {
                             "duration": 12,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black",
-                            "header": "Card Ranks \u2014 Non-Trump (2/7)",
-                            "text": "When a suit is NOT trump, cards rank low \u2192 high:<br/><b>9 \u2192 10 \u2192 J \u2192 Q \u2192 K \u2192 A (highest)</b>.<br/>So in any non-trump suit, the Ace is king.",
                             "image": "card_ah"
                         },
                         "cached": {
-                            "to": "learners"
+                            "to": "learners",
+                            "header": "cardRanksNonTrump",
+                            "text": "whenASuitIs"
                         }
                     }
                 },
@@ -1098,14 +1188,12 @@
                     "payload": {
                         "preset": {
                             "duration": 18,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black",
-                            "header": "Trump & the Bowers (3/7)",
-                            "text": "Each hand, one suit becomes <b>trump</b> \u2014 trump beats every non-trump card.<br/><br/>Inside the trump suit, the Jacks get special names:<br/>\u2022 <b>Right Bower</b> = Jack of trump \u2192 <i>highest card in the whole deck</i><br/>\u2022 <b>Left Bower</b> = Jack of the <i>same-color</i> suit \u2192 <i>second highest, and it counts as trump too!</i>",
                             "image": "card_jh"
                         },
                         "cached": {
-                            "to": "learners"
+                            "to": "learners",
+                            "header": "trumpTheBowers3",
+                            "text": "eachHandOneSuit"
                         }
                     }
                 },
@@ -1114,14 +1202,12 @@
                     "payload": {
                         "preset": {
                             "duration": 20,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black",
-                            "header": "Worked Example: Hearts is Trump (4/7)",
-                            "text": "Full ranking when Hearts is trump, highest \u2192 lowest:<br/><b>J\u2665 (Right Bower)</b> &gt; <b>J\u2666 (Left Bower)</b> &gt; A\u2665 &gt; K\u2665 &gt; Q\u2665 &gt; 10\u2665 &gt; 9\u2665<br/><br/>Why is J\u2666 in there? Hearts and Diamonds are both <b>red</b>, so the J of the same-color suit joins the trump suit for this hand.<br/>Same-color pairs: <b>\u2665 \u2194 \u2666</b> and <b>\u2660 \u2194 \u2663</b>.",
                             "image": "card_jd"
                         },
                         "cached": {
-                            "to": "learners"
+                            "to": "learners",
+                            "header": "workedExampleHeartsIs",
+                            "text": "fullRankingWhenHearts"
                         }
                     }
                 },
@@ -1130,14 +1216,12 @@
                     "payload": {
                         "preset": {
                             "duration": 20,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black",
-                            "header": "Bidding \u2014 Round 1: Order It Up (5/7)",
-                            "text": "Each hand starts with the top card of the kitty <b>flipped face-up</b>. Starting left of the dealer, going clockwise, each player chooses:<br/>\u2022 <b>Pass</b><br/>\u2022 <b>Order it up</b> \u2014 accept the flipped card's suit as trump<br/><br/>If anyone orders up, the <b>dealer picks up the flipped card</b> and discards one. The ordering team becomes the <b>makers</b> and must win at least <b>3 tricks</b>.",
                             "image": "card_js"
                         },
                         "cached": {
-                            "to": "learners"
+                            "to": "learners",
+                            "header": "biddingRound1Order",
+                            "text": "eachHandStartsWith"
                         }
                     }
                 },
@@ -1146,14 +1230,12 @@
                     "payload": {
                         "preset": {
                             "duration": 18,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black",
-                            "header": "Bidding \u2014 Round 2: Name a Suit (6/7)",
-                            "text": "If all 4 players pass, the flipped card is turned down and a second round begins. Each player can:<br/>\u2022 <b>Pass</b><br/>\u2022 <b>Name any other suit</b> as trump (you can't pick the rejected suit)<br/><br/>Whoever names trump becomes a maker and needs 3+ tricks. If all 4 pass again, the hand is thrown in and re-dealt.",
                             "image": "card_kh"
                         },
                         "cached": {
-                            "to": "learners"
+                            "to": "learners",
+                            "header": "biddingRound2Name",
+                            "text": "ifAll4Players"
                         }
                     }
                 },
@@ -1162,14 +1244,12 @@
                     "payload": {
                         "preset": {
                             "duration": 22,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black",
-                            "header": "Scoring & Follow-Suit (7/7)",
-                            "text": "<b>Scoring per hand:</b><br/>\u2022 Makers win 3\u20134 tricks \u2192 <b>1 point</b><br/>\u2022 Makers win all 5 (a <i>march</i>) \u2192 <b>2 points</b><br/>\u2022 Makers win fewer than 3 (<i>euchred!</i>) \u2192 opponents get <b>2 points</b><br/><br/><b>Playing:</b> you must follow the lead suit when you can. Heads-up: the <b>Left Bower counts as trump</b>, NOT its printed suit \u2014 so if Hearts is trump and someone leads Diamonds, your J\u2666 is <i>not</i> a Diamond. The app enforces legal plays automatically.",
                             "image": "card_9h"
                         },
                         "cached": {
-                            "to": "learners"
+                            "to": "learners",
+                            "header": "scoringFollowSuit7",
+                            "text": "scoringPerHandMakers"
                         }
                     }
                 },
@@ -1783,9 +1863,7 @@
                     "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "duration": 6,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black"
+                            "duration": 6
                         },
                         "cached": {
                             "to": "players",
@@ -1797,8 +1875,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "Trump offer: ($1)!"
+                                        "type": "cached",
+                                        "value": "trumpOffer"
                                     },
                                     {
                                         "name": "arg1",
@@ -1812,8 +1890,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "Dealer: ($1). Bidding starts left of dealer \u2014 order up or pass?"
+                                        "type": "cached",
+                                        "value": "dealerBiddingStartsLeft"
                                     },
                                     {
                                         "name": "arg1",
@@ -1852,42 +1930,33 @@
             ],
             "actions": [
                 {
+                    "key": "highlightPlayers",
+                    "payload": {
+                        "preset": {
+                            "color": "#FF8C00"
+                        },
+                        "cached": {
+                            "listOfPlayers": "bid1Player"
+                        }
+                    }
+                },
+                {
                     "key": "createVote",
                     "payload": {
                         "preset": {
-                            "title": "Bid Round 1",
                             "type": "target_poll",
                             "terminationCondition": "get_all_votes",
                             "showResultInRealTime": true,
                             "showResultDuration": 1,
                             "showResultDelay": 0,
-                            "targets": [
-                                "Order Up",
-                                "Pass"
-                            ],
-                            "pollVoteTargetsOptions": {
-                                "Order Up": {
-                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/up.svg",
-                                    "backgroundColor": "#D3D3D3",
-                                    "boxIconColor": "#D3D3D3",
-                                    "textColor": "black",
-                                    "widgetIconColor": "green"
-                                },
-                                "Pass": {
-                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/fail-svgrepo-com.svg",
-                                    "backgroundColor": "#D3D3D3",
-                                    "boxIconColor": "#D3D3D3",
-                                    "textColor": "black",
-                                    "widgetIconColor": "blue"
-                                }
-                            },
                             "oneClick": true,
-                            "allowRevoting": false,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black"
+                            "allowRevoting": false
                         },
                         "cached": {
-                            "actors": "bid1Player"
+                            "actors": "bid1Player",
+                            "title": "bidRound1",
+                            "targets": "orderUpPassTargets",
+                            "pollVoteTargetsOptions": "orderUpPassOptions"
                         },
                         "computed": {
                             "question": {
@@ -1895,8 +1964,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1), make ($2) trump?"
+                                        "type": "cached",
+                                        "value": "makeTrump"
                                     },
                                     {
                                         "name": "arg1",
@@ -1977,8 +2046,8 @@
                                                 },
                                                 {
                                                     "name": "element",
-                                                    "type": "preset",
-                                                    "value": "Pass"
+                                                    "type": "cached",
+                                                    "value": "orderUpPassTargets.1"
                                                 }
                                             ]
                                         }
@@ -2015,8 +2084,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -2061,8 +2130,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -2107,8 +2176,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -2130,6 +2199,9 @@
                             }
                         }
                     ]
+                },
+                {
+                    "key": "removeAllHighlights"
                 }
             ]
         },
@@ -2149,42 +2221,33 @@
             ],
             "actions": [
                 {
+                    "key": "highlightPlayers",
+                    "payload": {
+                        "preset": {
+                            "color": "#FF8C00"
+                        },
+                        "cached": {
+                            "listOfPlayers": "bid2Player"
+                        }
+                    }
+                },
+                {
                     "key": "createVote",
                     "payload": {
                         "preset": {
-                            "title": "Bid Round 1",
                             "type": "target_poll",
                             "terminationCondition": "get_all_votes",
                             "showResultInRealTime": true,
                             "showResultDuration": 1,
                             "showResultDelay": 0,
-                            "targets": [
-                                "Order Up",
-                                "Pass"
-                            ],
-                            "pollVoteTargetsOptions": {
-                                "Order Up": {
-                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/up.svg",
-                                    "backgroundColor": "#D3D3D3",
-                                    "boxIconColor": "#D3D3D3",
-                                    "textColor": "black",
-                                    "widgetIconColor": "green"
-                                },
-                                "Pass": {
-                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/fail-svgrepo-com.svg",
-                                    "backgroundColor": "#D3D3D3",
-                                    "boxIconColor": "#D3D3D3",
-                                    "textColor": "black",
-                                    "widgetIconColor": "blue"
-                                }
-                            },
                             "oneClick": true,
-                            "allowRevoting": false,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black"
+                            "allowRevoting": false
                         },
                         "cached": {
-                            "actors": "bid2Player"
+                            "actors": "bid2Player",
+                            "title": "bidRound1",
+                            "targets": "orderUpPassTargets",
+                            "pollVoteTargetsOptions": "orderUpPassOptions"
                         },
                         "computed": {
                             "question": {
@@ -2192,8 +2255,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1), make ($2) trump?"
+                                        "type": "cached",
+                                        "value": "makeTrump"
                                     },
                                     {
                                         "name": "arg1",
@@ -2274,8 +2337,8 @@
                                                 },
                                                 {
                                                     "name": "element",
-                                                    "type": "preset",
-                                                    "value": "Pass"
+                                                    "type": "cached",
+                                                    "value": "orderUpPassTargets.1"
                                                 }
                                             ]
                                         }
@@ -2312,8 +2375,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -2358,8 +2421,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -2404,8 +2467,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -2427,6 +2490,9 @@
                             }
                         }
                     ]
+                },
+                {
+                    "key": "removeAllHighlights"
                 }
             ]
         },
@@ -2446,42 +2512,33 @@
             ],
             "actions": [
                 {
+                    "key": "highlightPlayers",
+                    "payload": {
+                        "preset": {
+                            "color": "#FF8C00"
+                        },
+                        "cached": {
+                            "listOfPlayers": "bid3Player"
+                        }
+                    }
+                },
+                {
                     "key": "createVote",
                     "payload": {
                         "preset": {
-                            "title": "Bid Round 1",
                             "type": "target_poll",
                             "terminationCondition": "get_all_votes",
                             "showResultInRealTime": true,
                             "showResultDuration": 1,
                             "showResultDelay": 0,
-                            "targets": [
-                                "Order Up",
-                                "Pass"
-                            ],
-                            "pollVoteTargetsOptions": {
-                                "Order Up": {
-                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/up.svg",
-                                    "backgroundColor": "#D3D3D3",
-                                    "boxIconColor": "#D3D3D3",
-                                    "textColor": "black",
-                                    "widgetIconColor": "green"
-                                },
-                                "Pass": {
-                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/fail-svgrepo-com.svg",
-                                    "backgroundColor": "#D3D3D3",
-                                    "boxIconColor": "#D3D3D3",
-                                    "textColor": "black",
-                                    "widgetIconColor": "blue"
-                                }
-                            },
                             "oneClick": true,
-                            "allowRevoting": false,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black"
+                            "allowRevoting": false
                         },
                         "cached": {
-                            "actors": "bid3Player"
+                            "actors": "bid3Player",
+                            "title": "bidRound1",
+                            "targets": "orderUpPassTargets",
+                            "pollVoteTargetsOptions": "orderUpPassOptions"
                         },
                         "computed": {
                             "question": {
@@ -2489,8 +2546,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1), make ($2) trump?"
+                                        "type": "cached",
+                                        "value": "makeTrump"
                                     },
                                     {
                                         "name": "arg1",
@@ -2571,8 +2628,8 @@
                                                 },
                                                 {
                                                     "name": "element",
-                                                    "type": "preset",
-                                                    "value": "Pass"
+                                                    "type": "cached",
+                                                    "value": "orderUpPassTargets.1"
                                                 }
                                             ]
                                         }
@@ -2609,8 +2666,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -2655,8 +2712,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -2701,8 +2758,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -2724,6 +2781,9 @@
                             }
                         }
                     ]
+                },
+                {
+                    "key": "removeAllHighlights"
                 }
             ]
         },
@@ -2743,42 +2803,33 @@
             ],
             "actions": [
                 {
+                    "key": "highlightPlayers",
+                    "payload": {
+                        "preset": {
+                            "color": "#FF8C00"
+                        },
+                        "cached": {
+                            "listOfPlayers": "dealerList"
+                        }
+                    }
+                },
+                {
                     "key": "createVote",
                     "payload": {
                         "preset": {
-                            "title": "Bid Round 1",
                             "type": "target_poll",
                             "terminationCondition": "get_all_votes",
                             "showResultInRealTime": true,
                             "showResultDuration": 1,
                             "showResultDelay": 0,
-                            "targets": [
-                                "Order Up",
-                                "Pass"
-                            ],
-                            "pollVoteTargetsOptions": {
-                                "Order Up": {
-                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/up.svg",
-                                    "backgroundColor": "#D3D3D3",
-                                    "boxIconColor": "#D3D3D3",
-                                    "textColor": "black",
-                                    "widgetIconColor": "green"
-                                },
-                                "Pass": {
-                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/fail-svgrepo-com.svg",
-                                    "backgroundColor": "#D3D3D3",
-                                    "boxIconColor": "#D3D3D3",
-                                    "textColor": "black",
-                                    "widgetIconColor": "blue"
-                                }
-                            },
                             "oneClick": true,
-                            "allowRevoting": false,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black"
+                            "allowRevoting": false
                         },
                         "cached": {
-                            "actors": "dealerList"
+                            "actors": "dealerList",
+                            "title": "bidRound1",
+                            "targets": "orderUpPassTargets",
+                            "pollVoteTargetsOptions": "orderUpPassOptions"
                         },
                         "computed": {
                             "question": {
@@ -2786,8 +2837,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1) (dealer), pick up ($2) as trump?"
+                                        "type": "cached",
+                                        "value": "dealerPickUpAs"
                                     },
                                     {
                                         "name": "arg1",
@@ -2868,8 +2919,8 @@
                                                 },
                                                 {
                                                     "name": "element",
-                                                    "type": "preset",
-                                                    "value": "Pass"
+                                                    "type": "cached",
+                                                    "value": "orderUpPassTargets.1"
                                                 }
                                             ]
                                         }
@@ -2906,8 +2957,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -2952,8 +3003,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -2998,8 +3049,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -3021,6 +3072,9 @@
                             }
                         }
                     ]
+                },
+                {
+                    "key": "removeAllHighlights"
                 }
             ]
         },
@@ -3093,6 +3147,26 @@
                     }
                 },
                 {
+                    "key": "highlightPlayers",
+                    "payload": {
+                        "preset": {
+                            "color": "#FF8C00"
+                        },
+                        "computed": {
+                            "listOfPlayers": {
+                                "selector": "createList",
+                                "params": [
+                                    {
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "dealerPlayer"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
                     "key": "playCards",
                     "payload": {
                         "preset": {
@@ -3112,8 +3186,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1) (dealer), discard 1 card face-down."
+                                        "type": "cached",
+                                        "value": "dealerDiscard1Card"
                                     },
                                     {
                                         "name": "arg1",
@@ -3182,6 +3256,9 @@
                     "postHandler": "playOneRandomCard"
                 },
                 {
+                    "key": "removeAllHighlights"
+                },
+                {
                     "key": "removeWidget",
                     "payload": {
                         "preset": {
@@ -3207,29 +3284,32 @@
             ],
             "actions": [
                 {
+                    "key": "highlightPlayers",
+                    "payload": {
+                        "preset": {
+                            "color": "#FF8C00"
+                        },
+                        "cached": {
+                            "listOfPlayers": "bid1Player"
+                        }
+                    }
+                },
+                {
                     "key": "createVote",
                     "payload": {
                         "preset": {
-                            "title": "Bid Round 2",
                             "type": "target_poll",
                             "terminationCondition": "get_all_votes",
                             "showResultInRealTime": true,
                             "showResultDuration": 1,
                             "showResultDelay": 0,
-                            "targets": [
-                                "Hearts",
-                                "Diamonds",
-                                "Clubs",
-                                "Spades",
-                                "Pass"
-                            ],
                             "oneClick": true,
-                            "allowRevoting": false,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black"
+                            "allowRevoting": false
                         },
                         "cached": {
-                            "actors": "bid1Player"
+                            "actors": "bid1Player",
+                            "title": "bidRound2",
+                            "targets": "heartsDiamondsClubsSpadesTargets"
                         },
                         "computed": {
                             "question": {
@@ -3237,8 +3317,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1), name a trump suit (or pass)."
+                                        "type": "cached",
+                                        "value": "nameATrumpSuit"
                                     },
                                     {
                                         "name": "arg1",
@@ -3314,8 +3394,8 @@
                                                 },
                                                 {
                                                     "name": "element",
-                                                    "type": "preset",
-                                                    "value": "Pass"
+                                                    "type": "cached",
+                                                    "value": "orderUpPassTargets.1"
                                                 }
                                             ]
                                         }
@@ -3352,8 +3432,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -3398,8 +3478,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -3463,8 +3543,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -3486,6 +3566,9 @@
                             }
                         }
                     ]
+                },
+                {
+                    "key": "removeAllHighlights"
                 }
             ]
         },
@@ -3505,29 +3588,32 @@
             ],
             "actions": [
                 {
+                    "key": "highlightPlayers",
+                    "payload": {
+                        "preset": {
+                            "color": "#FF8C00"
+                        },
+                        "cached": {
+                            "listOfPlayers": "bid2Player"
+                        }
+                    }
+                },
+                {
                     "key": "createVote",
                     "payload": {
                         "preset": {
-                            "title": "Bid Round 2",
                             "type": "target_poll",
                             "terminationCondition": "get_all_votes",
                             "showResultInRealTime": true,
                             "showResultDuration": 1,
                             "showResultDelay": 0,
-                            "targets": [
-                                "Hearts",
-                                "Diamonds",
-                                "Clubs",
-                                "Spades",
-                                "Pass"
-                            ],
                             "oneClick": true,
-                            "allowRevoting": false,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black"
+                            "allowRevoting": false
                         },
                         "cached": {
-                            "actors": "bid2Player"
+                            "actors": "bid2Player",
+                            "title": "bidRound2",
+                            "targets": "heartsDiamondsClubsSpadesTargets"
                         },
                         "computed": {
                             "question": {
@@ -3535,8 +3621,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1), name a trump suit (or pass)."
+                                        "type": "cached",
+                                        "value": "nameATrumpSuit"
                                     },
                                     {
                                         "name": "arg1",
@@ -3612,8 +3698,8 @@
                                                 },
                                                 {
                                                     "name": "element",
-                                                    "type": "preset",
-                                                    "value": "Pass"
+                                                    "type": "cached",
+                                                    "value": "orderUpPassTargets.1"
                                                 }
                                             ]
                                         }
@@ -3650,8 +3736,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -3696,8 +3782,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -3761,8 +3847,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -3784,6 +3870,9 @@
                             }
                         }
                     ]
+                },
+                {
+                    "key": "removeAllHighlights"
                 }
             ]
         },
@@ -3803,29 +3892,32 @@
             ],
             "actions": [
                 {
+                    "key": "highlightPlayers",
+                    "payload": {
+                        "preset": {
+                            "color": "#FF8C00"
+                        },
+                        "cached": {
+                            "listOfPlayers": "bid3Player"
+                        }
+                    }
+                },
+                {
                     "key": "createVote",
                     "payload": {
                         "preset": {
-                            "title": "Bid Round 2",
                             "type": "target_poll",
                             "terminationCondition": "get_all_votes",
                             "showResultInRealTime": true,
                             "showResultDuration": 1,
                             "showResultDelay": 0,
-                            "targets": [
-                                "Hearts",
-                                "Diamonds",
-                                "Clubs",
-                                "Spades",
-                                "Pass"
-                            ],
                             "oneClick": true,
-                            "allowRevoting": false,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black"
+                            "allowRevoting": false
                         },
                         "cached": {
-                            "actors": "bid3Player"
+                            "actors": "bid3Player",
+                            "title": "bidRound2",
+                            "targets": "heartsDiamondsClubsSpadesTargets"
                         },
                         "computed": {
                             "question": {
@@ -3833,8 +3925,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1), name a trump suit (or pass)."
+                                        "type": "cached",
+                                        "value": "nameATrumpSuit"
                                     },
                                     {
                                         "name": "arg1",
@@ -3910,8 +4002,8 @@
                                                 },
                                                 {
                                                     "name": "element",
-                                                    "type": "preset",
-                                                    "value": "Pass"
+                                                    "type": "cached",
+                                                    "value": "orderUpPassTargets.1"
                                                 }
                                             ]
                                         }
@@ -3948,8 +4040,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -3994,8 +4086,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -4059,8 +4151,8 @@
                                                             },
                                                             {
                                                                 "name": "arg2",
-                                                                "type": "preset",
-                                                                "value": "Pass"
+                                                                "type": "cached",
+                                                                "value": "orderUpPassTargets.1"
                                                             }
                                                         ]
                                                     }
@@ -4082,6 +4174,9 @@
                             }
                         }
                     ]
+                },
+                {
+                    "key": "removeAllHighlights"
                 }
             ]
         },
@@ -4101,28 +4196,32 @@
             ],
             "actions": [
                 {
+                    "key": "highlightPlayers",
+                    "payload": {
+                        "preset": {
+                            "color": "#FF8C00"
+                        },
+                        "cached": {
+                            "listOfPlayers": "dealerList"
+                        }
+                    }
+                },
+                {
                     "key": "createVote",
                     "payload": {
                         "preset": {
-                            "title": "Bid Round 2 - Dealer Must Choose",
                             "type": "target_poll",
                             "terminationCondition": "get_all_votes",
                             "showResultInRealTime": true,
                             "showResultDuration": 1,
                             "showResultDelay": 0,
-                            "targets": [
-                                "Hearts",
-                                "Diamonds",
-                                "Clubs",
-                                "Spades"
-                            ],
                             "oneClick": true,
-                            "allowRevoting": false,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black"
+                            "allowRevoting": false
                         },
                         "cached": {
-                            "actors": "dealerList"
+                            "actors": "dealerList",
+                            "title": "bidRound2Dealer",
+                            "targets": "heartsDiamondsClubsSpadesTargets2"
                         },
                         "computed": {
                             "question": {
@@ -4130,8 +4229,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1) (dealer) \u2014 you must choose trump! (Screw the dealer)"
+                                        "type": "cached",
+                                        "value": "dealerYouMustChoose"
                                     },
                                     {
                                         "name": "arg1",
@@ -4207,8 +4306,8 @@
                                                 },
                                                 {
                                                     "name": "element",
-                                                    "type": "preset",
-                                                    "value": "Hearts"
+                                                    "type": "cached",
+                                                    "value": "heartsDiamondsClubsSpadesTargets.0"
                                                 }
                                             ]
                                         }
@@ -4262,6 +4361,9 @@
                             }
                         }
                     ]
+                },
+                {
+                    "key": "removeAllHighlights"
                 }
             ]
         },
@@ -4355,9 +4457,7 @@
                     "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "duration": 5,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black"
+                            "duration": 5
                         },
                         "cached": {
                             "to": "players"
@@ -4368,8 +4468,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "Trump is ($1)!"
+                                        "type": "cached",
+                                        "value": "trumpIs"
                                     },
                                     {
                                         "name": "arg1",
@@ -4383,8 +4483,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1) are the makers \u2014 they must win 3+ tricks. Right Bower (J of trump) is highest; Left Bower (J of ($2)) is second."
+                                        "type": "cached",
+                                        "value": "areTheMakersThey"
                                     },
                                     {
                                         "name": "arg1",
@@ -4571,102 +4671,6 @@
                 },
                 "actions": [
                     {
-                        "key": "showFakeRole",
-                        "payload": {
-                            "cached": {
-                                "to": "players"
-                            },
-                            "computed": {
-                                "roleId": {
-                                    "selector": "getCachedObjectValue",
-                                    "params": [
-                                        {
-                                            "name": "objectName",
-                                            "type": "preset",
-                                            "value": "ordinal"
-                                        },
-                                        {
-                                            "name": "value",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "remainder",
-                                                "params": [
-                                                    {
-                                                        "name": "arg1",
-                                                        "type": "computed",
-                                                        "value": {
-                                                            "selector": "add",
-                                                            "params": [
-                                                                {
-                                                                    "name": "arg1",
-                                                                    "type": "preset",
-                                                                    "value": 4
-                                                                },
-                                                                {
-                                                                    "name": "arg2",
-                                                                    "type": "computed",
-                                                                    "value": {
-                                                                        "selector": "subtract",
-                                                                        "params": [
-                                                                            {
-                                                                                "name": "arg1",
-                                                                                "type": "cached",
-                                                                                "value": "spaIndex"
-                                                                            },
-                                                                            {
-                                                                                "name": "arg2",
-                                                                                "type": "cached",
-                                                                                "value": "leaderIndex"
-                                                                            }
-                                                                        ]
-                                                                    }
-                                                                }
-                                                            ]
-                                                        }
-                                                    },
-                                                    {
-                                                        "name": "arg2",
-                                                        "type": "preset",
-                                                        "value": 4
-                                                    }
-                                                ]
-                                            }
-                                        },
-                                        {
-                                            "name": "defaultValue",
-                                            "type": "preset",
-                                            "value": "1st"
-                                        }
-                                    ]
-                                },
-                                "from": {
-                                    "selector": "createList",
-                                    "params": [
-                                        {
-                                            "name": "arg1",
-                                            "type": "computed",
-                                            "value": {
-                                                "selector": "selectElement",
-                                                "params": [
-                                                    {
-                                                        "name": "list",
-                                                        "type": "cached",
-                                                        "value": "players"
-                                                    },
-                                                    {
-                                                        "name": "index",
-                                                        "type": "cached",
-                                                        "value": "spaIndex"
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    ]
-                                }
-                            }
-                        }
-                    },
-                    {
                         "key": "setDeckLabel",
                         "payload": {
                             "computed": {
@@ -4686,48 +4690,76 @@
                                     ]
                                 },
                                 "label": {
-                                    "selector": "getPlayerNameById",
+                                    "selector": "formatString",
                                     "params": [
                                         {
-                                            "name": "id",
+                                            "name": "format",
+                                            "type": "cached",
+                                            "value": "deckOrderLabel"
+                                        },
+                                        {
+                                            "name": "arg1",
                                             "type": "computed",
                                             "value": {
-                                                "selector": "selectElement",
+                                                "selector": "inc",
                                                 "params": [
                                                     {
-                                                        "name": "list",
+                                                        "name": "arg",
                                                         "type": "cached",
-                                                        "value": "players"
-                                                    },
+                                                        "value": "spaIndex"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "arg2",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "getPlayerNameById",
+                                                "params": [
                                                     {
-                                                        "name": "index",
+                                                        "name": "id",
                                                         "type": "computed",
                                                         "value": {
-                                                            "selector": "remainder",
+                                                            "selector": "selectElement",
                                                             "params": [
                                                                 {
-                                                                    "name": "arg1",
+                                                                    "name": "list",
+                                                                    "type": "cached",
+                                                                    "value": "players"
+                                                                },
+                                                                {
+                                                                    "name": "index",
                                                                     "type": "computed",
                                                                     "value": {
-                                                                        "selector": "add",
+                                                                        "selector": "remainder",
                                                                         "params": [
                                                                             {
                                                                                 "name": "arg1",
-                                                                                "type": "cached",
-                                                                                "value": "leaderIndex"
+                                                                                "type": "computed",
+                                                                                "value": {
+                                                                                    "selector": "add",
+                                                                                    "params": [
+                                                                                        {
+                                                                                            "name": "arg1",
+                                                                                            "type": "cached",
+                                                                                            "value": "leaderIndex"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "arg2",
+                                                                                            "type": "cached",
+                                                                                            "value": "spaIndex"
+                                                                                        }
+                                                                                    ]
+                                                                                }
                                                                             },
                                                                             {
                                                                                 "name": "arg2",
-                                                                                "type": "cached",
-                                                                                "value": "spaIndex"
+                                                                                "type": "preset",
+                                                                                "value": 4
                                                                             }
                                                                         ]
                                                                     }
-                                                                },
-                                                                {
-                                                                    "name": "arg2",
-                                                                    "type": "preset",
-                                                                    "value": 4
                                                                 }
                                                             ]
                                                         }
@@ -4865,6 +4897,26 @@
                         ]
                     },
                     {
+                        "key": "highlightPlayers",
+                        "payload": {
+                            "preset": {
+                                "color": "#FF8C00"
+                            },
+                            "computed": {
+                                "listOfPlayers": {
+                                    "selector": "createList",
+                                    "params": [
+                                        {
+                                            "name": "arg1",
+                                            "type": "cached",
+                                            "value": "currentTrickPlayer"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
                         "key": "playCards",
                         "payload": {
                             "preset": {
@@ -4899,8 +4951,8 @@
                                     "params": [
                                         {
                                             "name": "format",
-                                            "type": "preset",
-                                            "value": "($1), ($2)! Trump: ($3)"
+                                            "type": "cached",
+                                            "value": "trump2"
                                         },
                                         {
                                             "name": "arg1",
@@ -4940,8 +4992,8 @@
                                                             "params": [
                                                                 {
                                                                     "name": "format",
-                                                                    "type": "preset",
-                                                                    "value": "follow ($1)"
+                                                                    "type": "cached",
+                                                                    "value": "follow"
                                                                 },
                                                                 {
                                                                     "name": "arg1",
@@ -5460,6 +5512,9 @@
                                 }
                             }
                         ]
+                    },
+                    {
+                        "key": "removeAllHighlights"
                     }
                 ]
             },
@@ -6138,9 +6193,7 @@
                     "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "duration": 6,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black"
+                            "duration": 6
                         },
                         "cached": {
                             "to": "players"
@@ -6151,8 +6204,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "Hand result: ($1) won ($2) tricks"
+                                        "type": "cached",
+                                        "value": "handResultWonTricks"
                                     },
                                     {
                                         "name": "arg1",
@@ -6190,8 +6243,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "Red: +($1) pt | Blue: +($2) pt \u2192 Score: Red ($3) - Blue ($4)"
+                                        "type": "cached",
+                                        "value": "redPtBluePt"
                                     },
                                     {
                                         "name": "arg1",
@@ -6299,47 +6352,19 @@
                     ],
                     "payload": {
                         "preset": {
-                            "title": "PLAY AGAIN?",
                             "type": "target_poll",
                             "terminationCondition": "get_majority",
                             "showResultInRealTime": true,
                             "showResultDuration": 1,
                             "showResultDelay": 0,
-                            "targets": [
-                                "Reset scores",
-                                "Keep scores",
-                                "I'M SO DONE"
-                            ],
-                            "pollVoteTargetsOptions": {
-                                "Keep scores": {
-                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-                                    "backgroundColor": "#D3D3D3",
-                                    "boxIconColor": "#D3D3D3",
-                                    "textColor": "black",
-                                    "widgetIconColor": "green"
-                                },
-                                "Reset scores": {
-                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-                                    "backgroundColor": "#D3D3D3",
-                                    "boxIconColor": "#D3D3D3",
-                                    "textColor": "black",
-                                    "widgetIconColor": "blue"
-                                },
-                                "I'M SO DONE": {
-                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
-                                    "backgroundColor": "#D3D3D3",
-                                    "boxIconColor": "#D3D3D3",
-                                    "textColor": "black",
-                                    "widgetIconColor": "red"
-                                }
-                            },
-                            "question": "Keep playing? (First team to 10 points wins!)",
-                            "allowRevoting": true,
-                            "backgroundColor": "#EDC6A0",
-                            "borderColor": "black"
+                            "allowRevoting": true
                         },
                         "cached": {
-                            "actors": "host"
+                            "actors": "host",
+                            "title": "playAGAIN",
+                            "question": "keepPlayingFirstTeam",
+                            "targets": "resetScoresKeepScoresTargets",
+                            "pollVoteTargetsOptions": "keepScoresResetScoresOptions"
                         },
                         "computed": {
                             "duration": {
@@ -6399,8 +6424,8 @@
                                                 },
                                                 {
                                                     "name": "target",
-                                                    "type": "preset",
-                                                    "value": "I'M SO DONE"
+                                                    "type": "cached",
+                                                    "value": "resetScoresKeepScoresTargets.2"
                                                 }
                                             ]
                                         }
@@ -6420,8 +6445,8 @@
                                     },
                                     {
                                         "name": "target",
-                                        "type": "preset",
-                                        "value": "Reset scores"
+                                        "type": "cached",
+                                        "value": "resetScoresKeepScoresTargets.0"
                                     }
                                 ]
                             }
@@ -6657,9 +6682,7 @@
             "key": "createNotification",
             "payload": {
                 "preset": {
-                    "image": "winner",
-                    "backgroundColor": "#EDC6A0",
-                    "borderColor": "black"
+                    "image": "winner"
                 },
                 "cached": {
                     "to": "players"
@@ -6670,8 +6693,8 @@
                         "params": [
                             {
                                 "name": "format",
-                                "type": "preset",
-                                "value": "($1) ($2)!"
+                                "type": "cached",
+                                "value": "fmtLine21"
                             },
                             {
                                 "name": "arg1",
@@ -6716,13 +6739,13 @@
                                         },
                                         {
                                             "name": "thenValue",
-                                            "type": "preset",
-                                            "value": "wins"
+                                            "type": "cached",
+                                            "value": "winsLabel"
                                         },
                                         {
                                             "name": "elseValue",
-                                            "type": "preset",
-                                            "value": "share the win"
+                                            "type": "cached",
+                                            "value": "shareWinLabel"
                                         }
                                     ]
                                 }

@@ -1,0 +1,183 @@
+{
+ "key": "createMixVote",
+ "payload": {
+  "preset": {
+   "title": "Tutorial mode",
+   "terminationCondition": "get_all_votes",
+   "showResultInRealTime": true,
+   "showResultDuration": 2,
+   "showResultDelay": 0,
+   "point.allowFewerAnswers": true,
+   "point.terminationCondition": "get_all_votes",
+   "poll.answersQuantity": 1,
+   "poll.targets": [
+    "Everybody!",
+    "Nobody!"
+   ],
+   "oneClick": true,
+   "allowRevoting": true,
+   "pollVoteTargetsOptions": {
+    "Everybody!": {
+     "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+     "backgroundColor": "#D3D3D3",
+     "boxIconColor": "#D3D3D3",
+     "textColor": "black",
+     "widgetIconColor": "green"
+    },
+    "Nobody!": {
+     "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+     "backgroundColor": "#D3D3D3",
+     "boxIconColor": "#D3D3D3",
+     "textColor": "black",
+     "widgetIconColor": "red"
+    }
+   },
+   "poll.terminationCondition": "get_all_votes",
+   "backgroundColor": "#e6ffe6",
+   "borderColor": "black"
+  },
+  "cached": {
+   "actors": "host",
+   "point.targets": "players",
+   "point.answersQuantity": "numPlayers"
+  },
+  "computed": {
+   "question": {
+    "selector": "formatString",
+    "params": [
+     {
+      "name": "format",
+      "type": "preset",
+      "value": "($1), who needs the tutorial? Click on the players or select from the middle."
+     },
+     {
+      "name": "arg1",
+      "type": "computed",
+      "value": {
+       "selector": "getPlayerNameById",
+       "params": [
+        {
+         "name": "id",
+         "type": "cached",
+         "value": "host.0"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  }
+ },
+ "saveValueInCache": [
+  {
+   "name": "voteResult",
+   "value": {
+    "selector": "getCachedValue",
+    "params": [
+     {
+      "name": "name",
+      "type": "preset",
+      "value": "lastActionResult.voteResult"
+     }
+    ]
+   }
+  },
+  {
+   "name": "learners",
+   "value": {
+    "selector": "ifElse",
+    "params": [
+     {
+      "name": "condition",
+      "type": "computed",
+      "value": {
+       "selector": "contains",
+       "params": [
+        {
+         "name": "list",
+         "type": "cached",
+         "value": "players"
+        },
+        {
+         "name": "element",
+         "type": "cached",
+         "value": "voteResult.0"
+        }
+       ]
+      }
+     },
+     {
+      "name": "thenValue",
+      "type": "cached",
+      "value": "voteResult"
+     },
+     {
+      "name": "elseValue",
+      "type": "computed",
+      "value": {
+       "selector": "ifElse",
+       "params": [
+        {
+         "name": "condition",
+         "type": "computed",
+         "value": {
+          "selector": "contains",
+          "params": [
+           {
+            "name": "list",
+            "type": "cached",
+            "value": "voteResult"
+           },
+           {
+            "name": "element",
+            "type": "preset",
+            "value": "Everybody!"
+           }
+          ]
+         }
+        },
+        {
+         "name": "thenValue",
+         "type": "cached",
+         "value": "players"
+        },
+        {
+         "name": "elseValue",
+         "type": "preset",
+         "value": []
+        }
+       ]
+      }
+     }
+    ]
+   }
+  },
+  {
+   "name": "tutorial",
+   "value": {
+    "selector": "greaterThan",
+    "params": [
+     {
+      "name": "arg1",
+      "type": "computed",
+      "value": {
+       "selector": "listLength",
+       "params": [
+        {
+         "name": "list",
+         "type": "cached",
+         "value": "learners"
+        }
+       ]
+      }
+     },
+     {
+      "name": "arg2",
+      "type": "preset",
+      "value": 0
+     }
+    ]
+   }
+  }
+ ]
+}

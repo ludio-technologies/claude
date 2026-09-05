@@ -225,19 +225,6 @@
         "snake_hiss": "https://res.cloudinary.com/liars-club/video/upload/audio/intrigue.mp3"
       }
     },
-    "voices": {
-      "default": {
-        "gas1": "https://res.cloudinary.com/liars-club/video/upload/audio/gaslight/gas1.mp3",
-        "gas6": "https://res.cloudinary.com/liars-club/video/upload/audio/gaslight/gas6.mp3",
-        "gas8": "https://res.cloudinary.com/liars-club/video/upload/audio/gaslight/gas8.mp3",
-        "gas9": "https://res.cloudinary.com/liars-club/video/upload/audio/gaslight/gas9.mp3",
-        "gas10": "https://res.cloudinary.com/liars-club/video/upload/audio/gaslight/gas10.mp3",
-        "gas12": "https://res.cloudinary.com/liars-club/video/upload/audio/gaslight/gas12.mp3",
-        "gas17": "https://res.cloudinary.com/liars-club/video/upload/audio/gaslight/gas17.mp3",
-        "gas18": "https://res.cloudinary.com/liars-club/video/upload/audio/gaslight/gas18.mp3",
-        "gas20": "https://res.cloudinary.com/liars-club/video/upload/audio/gaslight/gas20.mp3"
-      }
-    },
     "animations": {
       "winner": "https://lottie.host/3cba778c-312b-410c-8240-c9fdc0c4f5ef/Iu7CfEX2Va.json",
       "loser": "https://assets5.lottiefiles.com/packages/lf20_oAByvh2C1K.json",
@@ -273,7 +260,90 @@
       "winner": {
         "url": "https://res.cloudinary.com/liars-club/image/upload/winner_h5eyfr.gif"
       }
+    },
+    "strings": {
+      "Default": {
+        "welcomeToGaslight": "Welcome to Gaslight!",
+        "tutorialMode": "Tutorial mode",
+        "thisRoundYouAre": "This round, you are a Sneak!",
+        "theQuestionIs": "The question is...",
+        "chooseAnswer": "CHOOSE ANSWER",
+        "thisRoundYouAre2": "This round, you are a Traveler!",
+        "areYouReadyTo2": "Are you ready to move on?",
+        "onceEnoughPeopleHave": "Once enough people have clicked Ready, the game will proceed!",
+        "theSneaksWere": "The Sneaks were ...",
+        "playAgainStr": "PLAY AGAIN?",
+        "wouldYouLikeTo": "Would you like to play again?",
+        "inAMomentTell": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!",
+        "theSneaksAre": "The Sneaks are <b>($1)</b>!",
+        "letSGetReady": "<b>($1)</b><br/><br/>Let's get ready to see the options...",
+        "fmtLine1": "($1)!",
+        "answeredCorrectly": "($1)<br/><br/><b>($2)</b> answered correctly!",
+        "isTheNewBeacon": "($1) is the new Beacon of Light!",
+        "heySneaksTheCorrect": "<b>($1)</b><br/><br/><i>Hey <b>Sneaks</b> ... the correct answer is <b>($2)</b></i>!",
+        "gaslightQuestion": "Gaslight, Question #($1)",
+        "fmtLine2": "($1) ($2)!",
+        "playAgainTargets": [
+          "HELL YEAH!",
+          "I'M SO DONE"
+        ],
+        "playAgainOptions": {
+          "HELL YEAH!": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "green"
+          },
+          "I'M SO DONE": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "red"
+          }
+        },
+        "skipOption": "SKIP",
+        "bannerImg": "banner",
+        "forestBgImg": "forest_background",
+        "nightBgImg": "night_background",
+        "everybodyNobodyTargets": [
+          "Everybody!",
+          "Nobody!"
+        ],
+        "everybodyNobodyOptions": {
+          "Everybody!": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "green"
+          },
+          "Nobody!": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "red"
+          }
+        },
+        "whoNeedsTutorialQuestion": "($1), who needs the tutorial? Click on the players or select from the middle.",
+        "tutOverviewHeader": "Overview",
+        "tutOverviewText": "Everyone sees a trivia question with 3 possible answers. Some of the players are secretly Sneaks - they know the identities of the other Sneaks. The Sneaks already know the correct answer to the question, and are trying to get as many Travelers (i.e. non-Sneak players) as possible to guess the wrong answer.",
+        "tutBeaconHeader": "The Beacon of Light",
+        "tutBeaconText": "Every round, one Traveler is randomly chosen to be the Beacon of Light. Everyone knows this player is the Beacon (and that this player can therefore NOT be a Sneak).",
+        "tutPickingHeader": "Picking the answer",
+        "tutPickingText": "Before the 2-minute timer runs out, everyone must click on one of the possible answers. Everyone's guesses are then shown simultaneously, and the correct answer is revealed.",
+        "tutScoringHeader": "Scoring",
+        "tutScoringText": "Sneaks get 10 points per non-Sneak player who guessed incorrectly. Travelers get 10 points per Traveler (including the Beacon) who guessed correctly.",
+        "tutWinningHeader": "Winning",
+        "tutWinningText": "You can stop the game after any number of questions. The winner is the player with the most points! We recommend playing to 100."
+      }
     }
+  },
+  "visualSettings": {
+    "backgroundColor": "#fff0db",
+    "borderColor": "black"
   },
   "turnSpectatorToPlayerActions": [
     {
@@ -379,8 +449,8 @@
     {
       "key": "changeBackground",
       "payload": {
-        "preset": {
-          "image": "forest_background"
+        "cached": {
+          "image": "forestBgImg"
         }
       }
     },
@@ -389,10 +459,6 @@
       "saveValueInCache": [
         {
           "name": "currentMinScore",
-          "value": 0
-        },
-        {
-          "name": "roundNumber",
           "value": 0
         },
         {
@@ -413,454 +479,904 @@
           "name": "questions",
           "value": [
             {
-              "question": "France was still executing people by guillotine when which of these happened?",
+              "question": "The company Nintendo was founded in 1889. What did it originally make?",
               "options": [
-                "Star Wars premiered in cinemas",
-                "The Berlin Wall fell",
-                "Michael Jackson released Thriller"
+                "Playing cards",
+                "Bicycles",
+                "Vacuum cleaners"
               ],
-              "answer": "Star Wars premiered in cinemas"
+              "answer": "Playing cards"
             },
             {
-              "question": "Cleopatra lived closer in time to which of these events?",
+              "question": "Play-Doh was originally manufactured and sold as a...",
               "options": [
-                "The Moon Landing",
-                "The construction of the Great Pyramid of Giza",
-                "The founding of Rome"
+                "Wallpaper cleaner",
+                "Denture mold",
+                "Ceiling insulation foam"
               ],
-              "answer": "The Moon Landing"
+              "answer": "Wallpaper cleaner"
             },
             {
-              "question": "Oxford University was already teaching students before which of these existed?",
+              "question": "Bubble wrap was originally invented and marketed as...",
               "options": [
-                "The Aztec Empire",
-                "The Black Death",
-                "The Colosseum in Rome"
+                "Textured wallpaper",
+                "Greenhouse insulation",
+                "Mattress padding"
               ],
-              "answer": "The Aztec Empire"
+              "answer": "Textured wallpaper"
             },
             {
-              "question": "Which came first?",
+              "question": "In the 1830s, ketchup was briefly sold as a...",
               "options": [
-                "The first commercial airline flight",
-                "Sliced bread being sold commercially",
-                "The first traffic light"
+                "Medicine for the stomach",
+                "Metal polish",
+                "Hair tonic"
               ],
-              "answer": "The first commercial airline flight"
+              "answer": "Medicine for the stomach"
             },
             {
-              "question": "Charles Darwin and which other famous figure share the exact same birthday — February 12, 1809?",
+              "question": "When it first launched, Coca-Cola was marketed as a...",
               "options": [
-                "Abraham Lincoln",
-                "Napoleon Bonaparte",
-                "Duke of Wellington"
+                "Brain tonic and headache cure",
+                "Liquid floor cleaner",
+                "Children's cough syrup"
               ],
-              "answer": "Abraham Lincoln"
+              "answer": "Brain tonic and headache cure"
             },
             {
-              "question": "Nintendo (founded 1889) is older than which of these?",
+              "question": "American soldiers in the Vietnam War commonly repurposed the toy Slinky as a...",
               "options": [
-                "Velcro",
-                "Coca-Cola",
-                "The Eiffel Tower"
+                "Portable radio antenna",
+                "Tripwire alarm",
+                "Makeshift tourniquet"
               ],
-              "answer": "Velcro"
+              "answer": "Portable radio antenna"
             },
             {
-              "question": "How do butterflies taste food?",
+              "question": "The chainsaw was originally invented to help with...",
               "options": [
-                "Through sensors in their feet",
-                "Through sensors in their antennae",
-                "They don't taste — they smell instead"
+                "Childbirth",
+                "Trimming jungle vines",
+                "Cutting blocks of ice"
               ],
-              "answer": "Through sensors in their feet"
+              "answer": "Childbirth"
             },
             {
-              "question": "What is unique about wombat feces?",
+              "question": "The man who designed the modern Frisbee had his remains...",
               "options": [
-                "It's cube-shaped",
-                "It glows faintly in the dark",
-                "It's completely odourless"
+                "Molded into memorial Frisbees",
+                "Pressed into a vinyl record",
+                "Sealed inside a bowling ball"
               ],
-              "answer": "It's cube-shaped"
+              "answer": "Molded into memorial Frisbees"
             },
             {
-              "question": "How long can a garden snail sleep to survive dry conditions?",
+              "question": "The inventor of the Pringles can was, at his request, partly...",
               "options": [
-                "Up to 3 years",
-                "About 6 weeks",
-                "A maximum of 9 months"
+                "Buried inside a Pringles can",
+                "Given a Pringle-shaped headstone",
+                "Cremated with a full can in his arms"
               ],
-              "answer": "Up to 3 years"
+              "answer": "Buried inside a Pringles can"
             },
             {
-              "question": "Which can hold its breath longer underwater?",
+              "question": "The world's first webcam was set up so people could keep an eye on a...",
               "options": [
-                "A sloth",
-                "A bottlenose dolphin",
-                "They're roughly equal at about 10 minutes"
+                "Coffee pot",
+                "Fish tank",
+                "Office door"
               ],
-              "answer": "A sloth"
+              "answer": "Coffee pot"
             },
             {
-              "question": "How many hearts does an octopus have?",
+              "question": "The very first mechanical alarm clock could only ring at one fixed time:",
               "options": [
-                "Three",
-                "One",
-                "Two"
+                "4 a.m.",
+                "On every hour",
+                "Exactly at sunrise"
               ],
-              "answer": "Three"
+              "answer": "4 a.m."
             },
             {
-              "question": "If you shaved a tiger, what would you find underneath?",
+              "question": "The shell of the very first computer mouse was made of...",
               "options": [
-                "The same stripe pattern on its skin",
-                "Plain pale skin",
-                "Spots"
+                "Wood",
+                "Bakelite",
+                "Aluminum"
               ],
-              "answer": "The same stripe pattern on its skin"
+              "answer": "Wood"
             },
             {
-              "question": "What ability have crows been scientifically proven to have?",
+              "question": "Which of these animals has three hearts?",
               "options": [
-                "Recognising individual human faces and holding grudges",
-                "Counting to at least one hundred",
-                "Predicting rainfall 24 hours in advance"
+                "The octopus",
+                "The giraffe",
+                "The crocodile"
               ],
-              "answer": "Recognising individual human faces and holding grudges"
+              "answer": "The octopus"
             },
             {
-              "question": "How do male Gentoo penguins 'propose' to a potential mate?",
+              "question": "Which creature has blue blood because it is based on copper, not iron?",
               "options": [
-                "By presenting a carefully selected pebble",
-                "By performing an elaborate dance",
-                "By catching and offering a live fish"
+                "The horseshoe crab",
+                "The blue whale",
+                "The electric eel"
               ],
-              "answer": "By presenting a carefully selected pebble"
+              "answer": "The horseshoe crab"
             },
             {
-              "question": "What is true about Venus?",
+              "question": "A shrimp's heart is located in its...",
               "options": [
-                "A day on Venus is longer than a year on Venus",
-                "Venus has the longest year in the solar system",
-                "Venus is the hottest because it's the closest planet to the Sun"
+                "Head",
+                "Tail",
+                "Front claws"
               ],
-              "answer": "A day on Venus is longer than a year on Venus"
+              "answer": "Head"
             },
             {
-              "question": "What do scientists believe it rains on Neptune and Uranus?",
+              "question": "Wombat droppings are famously shaped like...",
               "options": [
-                "Diamonds",
-                "Liquid iron",
-                "Glass shards"
+                "Cubes",
+                "Perfect spheres",
+                "Tiny pyramids"
               ],
-              "answer": "Diamonds"
+              "answer": "Cubes"
             },
             {
-              "question": "Which of these numbers is larger?",
+              "question": "Which animal has fingerprints so close to ours they can confuse crime scenes?",
               "options": [
-                "The number of possible unique chess games",
-                "The number of atoms in the observable universe",
-                "They're roughly equal"
+                "The koala",
+                "The chimpanzee",
+                "The raccoon"
               ],
-              "answer": "The number of possible unique chess games"
+              "answer": "The koala"
             },
             {
-              "question": "Under the right conditions, which freezes faster?",
+              "question": "Which tiny creature can survive the vacuum of outer space?",
               "options": [
-                "Hot water",
-                "Cold water",
-                "They always freeze at exactly the same rate"
+                "The tardigrade",
+                "The cockroach",
+                "The scorpion"
               ],
-              "answer": "Hot water"
+              "answer": "The tardigrade"
             },
             {
-              "question": "What happens to astronauts' height during spaceflight?",
+              "question": "To survive dry spells, a garden snail can sleep for up to...",
               "options": [
-                "They grow up to 2 inches taller",
-                "They shrink slightly",
-                "Their height stays exactly the same"
+                "3 years",
+                "6 months",
+                "6 weeks"
               ],
-              "answer": "They grow up to 2 inches taller"
+              "answer": "3 years"
             },
             {
-              "question": "The Eiffel Tower changes height with the seasons. By how much?",
+              "question": "Which of these can hold its breath longer than a dolphin?",
               "options": [
-                "Up to 6 inches (15cm)",
-                "About half an inch (1cm)",
-                "It doesn't — it's specially sealed to prevent this"
+                "The sloth",
+                "The hippo",
+                "The sea otter"
               ],
-              "answer": "Up to 6 inches (15cm)"
+              "answer": "The sloth"
             },
             {
-              "question": "Which US state is simultaneously the most eastern AND most western state in the country?",
+              "question": "A starfish is unusual among animals because it has no...",
               "options": [
-                "Alaska",
-                "Hawaii",
-                "That's geographically impossible"
+                "Brain",
+                "Stomach",
+                "Eyes"
               ],
-              "answer": "Alaska"
+              "answer": "Brain"
             },
             {
-              "question": "How many countries lie between Finland and North Korea?",
+              "question": "Which of these is the only bird that can truly fly backwards?",
               "options": [
-                "Just one",
-                "Four",
-                "Seven"
+                "The hummingbird",
+                "The kingfisher",
+                "The swift"
               ],
-              "answer": "Just one"
+              "answer": "The hummingbird"
             },
             {
-              "question": "Which country has the most time zones?",
+              "question": "Flamingos are pink mainly because of what in their diet?",
               "options": [
-                "France",
-                "Russia",
-                "United States"
+                "Pigments from shrimp and algae",
+                "Red clay they swallow",
+                "Iron in the water"
               ],
-              "answer": "France"
+              "answer": "Pigments from shrimp and algae"
             },
             {
-              "question": "What was the chainsaw originally invented for?",
+              "question": "Sea otters sometimes hold hands while sleeping in order to...",
               "options": [
-                "To assist in difficult childbirths",
-                "To cut through jungle undergrowth on expeditions",
-                "To harvest ice for refrigeration"
+                "Keep from drifting apart",
+                "Share body heat",
+                "Pass food to each other"
               ],
-              "answer": "To assist in difficult childbirths"
+              "answer": "Keep from drifting apart"
             },
             {
-              "question": "What was tomato ketchup sold as in the 1830s?",
+              "question": "A study found that dairy cows produce more milk if they have a...",
               "options": [
-                "A medicine",
-                "A leather conditioner",
-                "A hair treatment"
+                "Name",
+                "Window with a view",
+                "Radio playing nearby"
               ],
-              "answer": "A medicine"
+              "answer": "Name"
             },
             {
-              "question": "What did the original Coca-Cola contain that was removed in 1903?",
+              "question": "Which flavor can cats not taste at all?",
               "options": [
-                "Cocaine",
-                "Opium",
-                "Alcohol"
+                "Sweetness",
+                "Saltiness",
+                "Bitterness"
               ],
-              "answer": "Cocaine"
+              "answer": "Sweetness"
             },
             {
-              "question": "The word 'muscle' comes from the Latin for...",
+              "question": "A group of flamingos is officially called a...",
               "options": [
-                "Little mouse",
-                "Strength stone",
-                "Hardened cord"
+                "Flamboyance",
+                "Blush",
+                "Shimmer"
               ],
-              "answer": "Little mouse"
+              "answer": "Flamboyance"
             },
             {
-              "question": "What is the technical name for the dot over the letters 'i' and 'j'?",
+              "question": "A group of owls is officially called a...",
+              "options": [
+                "Parliament",
+                "Senate",
+                "Congress"
+              ],
+              "answer": "Parliament"
+            },
+            {
+              "question": "A group of crows is officially called a...",
+              "options": [
+                "Murder",
+                "Menace",
+                "Gloom"
+              ],
+              "answer": "Murder"
+            },
+            {
+              "question": "A group of pugs is officially called a...",
+              "options": [
+                "Grumble",
+                "Wrinkle",
+                "Snort"
+              ],
+              "answer": "Grumble"
+            },
+            {
+              "question": "A group of ferrets is officially called a...",
+              "options": [
+                "Business",
+                "Bother",
+                "Fidget"
+              ],
+              "answer": "Business"
+            },
+            {
+              "question": "A group of jellyfish is officially called a...",
+              "options": [
+                "Smack",
+                "Sting",
+                "Drift"
+              ],
+              "answer": "Smack"
+            },
+            {
+              "question": "A group of porcupines is officially called a...",
+              "options": [
+                "Prickle",
+                "Bristle",
+                "Needle"
+              ],
+              "answer": "Prickle"
+            },
+            {
+              "question": "A baby puffin is officially called a...",
+              "options": [
+                "Puffling",
+                "Pufflet",
+                "Downy"
+              ],
+              "answer": "Puffling"
+            },
+            {
+              "question": "The dot over a lowercase 'i' or 'j' has an actual name:",
               "options": [
                 "A tittle",
-                "A diacritic",
-                "A serif"
+                "A jot",
+                "A pip"
               ],
               "answer": "A tittle"
             },
             {
-              "question": "What is the official technical name for the # symbol?",
+              "question": "The little plastic or metal tip on the end of a shoelace is called...",
+              "options": [
+                "An aglet",
+                "A ferrule",
+                "A nib"
+              ],
+              "answer": "An aglet"
+            },
+            {
+              "question": "The '#' symbol is technically named the...",
               "options": [
                 "Octothorpe",
-                "Heptagon",
-                "Astericule"
+                "Hexpoint",
+                "Crosshatch"
               ],
               "answer": "Octothorpe"
             },
             {
-              "question": "What is Scotland's official national animal?",
+              "question": "The medical term for the rumbling sound of your stomach is...",
+              "options": [
+                "Borborygmus",
+                "Rumbolus",
+                "Gastralgia"
+              ],
+              "answer": "Borborygmus"
+            },
+            {
+              "question": "The smooth space between your eyebrows is anatomically called the...",
+              "options": [
+                "Glabella",
+                "Philtrum",
+                "Nasion"
+              ],
+              "answer": "Glabella"
+            },
+            {
+              "question": "The fear of the number 13 is called...",
+              "options": [
+                "Triskaidekaphobia",
+                "Decaphobia",
+                "Tridecophobia"
+              ],
+              "answer": "Triskaidekaphobia"
+            },
+            {
+              "question": "The word 'nerd' first appeared in print in a book by...",
+              "options": [
+                "Dr. Seuss",
+                "Mark Twain",
+                "Roald Dahl"
+              ],
+              "answer": "Dr. Seuss"
+            },
+            {
+              "question": "'Boustrophedon' is an ancient style of...",
+              "options": [
+                "Writing in alternating directions",
+                "Plowing fields in a spiral",
+                "Counting on both hands"
+              ],
+              "answer": "Writing in alternating directions"
+            },
+            {
+              "question": "The longest word in most major dictionaries refers to a...",
+              "options": [
+                "Lung disease",
+                "Dinosaur",
+                "Legal document"
+              ],
+              "answer": "Lung disease"
+            },
+            {
+              "question": "'Wi-Fi' officially stands for...",
+              "options": [
+                "Nothing at all",
+                "Wireless Fidelity",
+                "Wireless Field"
+              ],
+              "answer": "Nothing at all"
+            },
+            {
+              "question": "Which planet has a day that is longer than its own year?",
+              "options": [
+                "Venus",
+                "Mercury",
+                "Mars"
+              ],
+              "answer": "Venus"
+            },
+            {
+              "question": "Which planet has the hottest surface in the solar system?",
+              "options": [
+                "Venus",
+                "Mercury",
+                "They're about equal"
+              ],
+              "answer": "Venus"
+            },
+            {
+              "question": "Which planet would float if you could drop it in a giant bathtub?",
+              "options": [
+                "Saturn",
+                "Neptune",
+                "Uranus"
+              ],
+              "answer": "Saturn"
+            },
+            {
+              "question": "On which planet are the sunsets blue instead of orange?",
+              "options": [
+                "Mars",
+                "Jupiter",
+                "Mercury"
+              ],
+              "answer": "Mars"
+            },
+            {
+              "question": "A single teaspoon of a neutron star would weigh about as much as...",
+              "options": [
+                "A mountain",
+                "A cruise ship",
+                "A blue whale"
+              ],
+              "answer": "A mountain"
+            },
+            {
+              "question": "There are more stars in the observable universe than there are...",
+              "options": [
+                "Grains of sand on Earth's beaches",
+                "Atoms in your body",
+                "Ways to shuffle a deck of cards"
+              ],
+              "answer": "Grains of sand on Earth's beaches"
+            },
+            {
+              "question": "On which planet do scientists think it actually rains diamonds?",
+              "options": [
+                "Neptune",
+                "Venus",
+                "Mars"
+              ],
+              "answer": "Neptune"
+            },
+            {
+              "question": "Light from the Sun takes about how long to reach Earth?",
+              "options": [
+                "8 minutes",
+                "8 seconds",
+                "8 hours"
+              ],
+              "answer": "8 minutes"
+            },
+            {
+              "question": "The astronauts' footprints on the Moon will likely last for about...",
+              "options": [
+                "Millions of years",
+                "A few centuries",
+                "Until the next moonquake"
+              ],
+              "answer": "Millions of years"
+            },
+            {
+              "question": "Mount Chimborazo in Ecuador, not Everest, is the point on Earth that is...",
+              "options": [
+                "Farthest from Earth's center",
+                "Closest to the Sun",
+                "The hardest to breathe on"
+              ],
+              "answer": "Farthest from Earth's center"
+            },
+            {
+              "question": "Because of the Moon drifting away, each day on Earth is slowly getting...",
+              "options": [
+                "Longer",
+                "Shorter",
+                "Exactly the same"
+              ],
+              "answer": "Longer"
+            },
+            {
+              "question": "Astronauts on long missions temporarily grow taller by about...",
+              "options": [
+                "2 inches",
+                "Half an inch",
+                "5 inches"
+              ],
+              "answer": "2 inches"
+            },
+            {
+              "question": "You are at your tallest at what point in the day?",
+              "options": [
+                "In the morning",
+                "Late at night",
+                "Right after exercise"
+              ],
+              "answer": "In the morning"
+            },
+            {
+              "question": "For its size, the strongest muscle in the human body is the...",
+              "options": [
+                "Jaw muscle",
+                "Tongue",
+                "Heart"
+              ],
+              "answer": "Jaw muscle"
+            },
+            {
+              "question": "Humans share roughly what percentage of their DNA with a banana?",
+              "options": [
+                "About 60%",
+                "About 30%",
+                "About 10%"
+              ],
+              "answer": "About 60%"
+            },
+            {
+              "question": "Your body contains enough iron to make one small...",
+              "options": [
+                "Nail",
+                "Door key",
+                "Spoon"
+              ],
+              "answer": "Nail"
+            },
+            {
+              "question": "Bananas are very slightly radioactive because they contain...",
+              "options": [
+                "Potassium",
+                "Uranium",
+                "Radon"
+              ],
+              "answer": "Potassium"
+            },
+            {
+              "question": "The red food coloring 'carmine' is traditionally made from...",
+              "options": [
+                "Crushed beetles",
+                "Beet skins",
+                "Red algae"
+              ],
+              "answer": "Crushed beetles"
+            },
+            {
+              "question": "Worcestershire sauce gets much of its flavor from fermented...",
+              "options": [
+                "Anchovies",
+                "Oyster shells",
+                "Squid ink"
+              ],
+              "answer": "Anchovies"
+            },
+            {
+              "question": "Botanically speaking, a peanut is actually a...",
+              "options": [
+                "Legume",
+                "Nut",
+                "Berry"
+              ],
+              "answer": "Legume"
+            },
+            {
+              "question": "Botanically, tomatoes, cucumbers, and watermelons are all classified as...",
+              "options": [
+                "Berries",
+                "Melons",
+                "Gourds"
+              ],
+              "answer": "Berries"
+            },
+            {
+              "question": "The vanilla-like flavoring 'castoreum' historically came from a beaver's...",
+              "options": [
+                "Scent glands",
+                "Liver",
+                "Teeth"
+              ],
+              "answer": "Scent glands"
+            },
+            {
+              "question": "Cleopatra lived closer in time to which of these than to the building of the Great Pyramid?",
+              "options": [
+                "The first Moon landing",
+                "The invention of the wheel",
+                "The invention of writing"
+              ],
+              "answer": "The first Moon landing"
+            },
+            {
+              "question": "Oxford University had already been teaching for centuries before the founding of...",
+              "options": [
+                "The Aztec Empire",
+                "The Roman Colosseum",
+                "The Viking Age"
+              ],
+              "answer": "The Aztec Empire"
+            },
+            {
+              "question": "Harvard University was founded before the invention of...",
+              "options": [
+                "Calculus",
+                "The telescope",
+                "Shakespeare's final play"
+              ],
+              "answer": "Calculus"
+            },
+            {
+              "question": "France carried out its last guillotine execution the same year as the release of...",
+              "options": [
+                "Star Wars",
+                "Jaws",
+                "E.T."
+              ],
+              "answer": "Star Wars"
+            },
+            {
+              "question": "The last woolly mammoths were still alive on Earth while...",
+              "options": [
+                "The Great Pyramid was being built",
+                "The Roman Empire was falling",
+                "Columbus was sailing to America"
+              ],
+              "answer": "The Great Pyramid was being built"
+            },
+            {
+              "question": "The fax machine was actually invented before...",
+              "options": [
+                "The American Civil War",
+                "The French Revolution",
+                "Napoleon's coronation"
+              ],
+              "answer": "The American Civil War"
+            },
+            {
+              "question": "Anne Frank and Martin Luther King Jr. were...",
+              "options": [
+                "Born in the same year",
+                "Both born in Germany",
+                "Distant cousins"
+              ],
+              "answer": "Born in the same year"
+            },
+            {
+              "question": "Before politics, Ronald Reagan worked as a lifeguard and reportedly...",
+              "options": [
+                "Saved 77 people",
+                "Wrestled an alligator",
+                "Never fully learned to swim"
+              ],
+              "answer": "Saved 77 people"
+            },
+            {
+              "question": "The shortest war in recorded history, under 45 minutes, was between Britain and...",
+              "options": [
+                "Zanzibar",
+                "Tunisia",
+                "Morocco"
+              ],
+              "answer": "Zanzibar"
+            },
+            {
+              "question": "A real Victorian plumber who helped popularize the flush toilet was actually named...",
+              "options": [
+                "Thomas Crapper",
+                "John Loo",
+                "William Flushman"
+              ],
+              "answer": "Thomas Crapper"
+            },
+            {
+              "question": "Napoleon Bonaparte was once famously mobbed and forced to flee by a horde of...",
+              "options": [
+                "Rabbits",
+                "Geese",
+                "Bees"
+              ],
+              "answer": "Rabbits"
+            },
+            {
+              "question": "Which was invented first?",
+              "options": [
+                "The flush toilet",
+                "The telephone",
+                "They came the same decade"
+              ],
+              "answer": "The flush toilet"
+            },
+            {
+              "question": "Which of these countries has no permanent rivers at all?",
+              "options": [
+                "Saudi Arabia",
+                "Egypt",
+                "Iceland"
+              ],
+              "answer": "Saudi Arabia"
+            },
+            {
+              "question": "Which country actually has the most ancient pyramids?",
+              "options": [
+                "Sudan",
+                "Egypt",
+                "Mexico"
+              ],
+              "answer": "Sudan"
+            },
+            {
+              "question": "At their absolute closest, Russia and the United States are only about how far apart?",
+              "options": [
+                "2.4 miles",
+                "50 miles",
+                "300 miles"
+              ],
+              "answer": "2.4 miles"
+            },
+            {
+              "question": "Which single U.S. state is both the easternmost and the westernmost?",
+              "options": [
+                "Alaska",
+                "Maine",
+                "Hawaii"
+              ],
+              "answer": "Alaska"
+            },
+            {
+              "question": "The largest desert in the world is actually...",
+              "options": [
+                "Antarctica",
+                "The Sahara",
+                "The Arabian Desert"
+              ],
+              "answer": "Antarctica"
+            },
+            {
+              "question": "A few thousand years ago, the Sahara Desert was...",
+              "options": [
+                "Green and full of lakes",
+                "Completely frozen",
+                "Under the ocean"
+              ],
+              "answer": "Green and full of lakes"
+            },
+            {
+              "question": "Australia is actually wider than...",
+              "options": [
+                "The Moon",
+                "Mars",
+                "Mercury"
+              ],
+              "answer": "The Moon"
+            },
+            {
+              "question": "Which city has more miles of canals than Venice?",
+              "options": [
+                "Birmingham",
+                "Amsterdam",
+                "Hamburg"
+              ],
+              "answer": "Birmingham"
+            },
+            {
+              "question": "On a hot summer day, the Eiffel Tower can grow taller by about...",
+              "options": [
+                "6 inches",
+                "2 feet",
+                "1 inch"
+              ],
+              "answer": "6 inches"
+            },
+            {
+              "question": "Measured from its base, the tallest mountain on Earth is not Everest but...",
+              "options": [
+                "Mauna Kea",
+                "K2",
+                "Denali"
+              ],
+              "answer": "Mauna Kea"
+            },
+            {
+              "question": "The very first product ever scanned with a barcode in a store was a...",
+              "options": [
+                "Pack of chewing gum",
+                "Carton of milk",
+                "Box of cereal"
+              ],
+              "answer": "Pack of chewing gum"
+            },
+            {
+              "question": "The first item ever sold on eBay was a...",
+              "options": [
+                "Broken laser pointer",
+                "Used textbook",
+                "Beanie Baby"
+              ],
+              "answer": "Broken laser pointer"
+            },
+            {
+              "question": "The very first video uploaded to YouTube was about...",
+              "options": [
+                "Elephants at the zoo",
+                "A cat playing piano",
+                "A sneezing panda"
+              ],
+              "answer": "Elephants at the zoo"
+            },
+            {
+              "question": "Before it was called Google, the search engine was originally named...",
+              "options": [
+                "BackRub",
+                "SearchIt",
+                "WebCrawl"
+              ],
+              "answer": "BackRub"
+            },
+            {
+              "question": "The QWERTY keyboard layout was arranged mainly to...",
+              "options": [
+                "Stop old typewriters from jamming",
+                "Help people type faster",
+                "Match the piano keyboard"
+              ],
+              "answer": "Stop old typewriters from jamming"
+            },
+            {
+              "question": "A 'jiffy' is genuinely a real unit of...",
+              "options": [
+                "Time",
+                "Distance",
+                "Weight"
+              ],
+              "answer": "Time"
+            },
+            {
+              "question": "The number of ways to shuffle a standard deck of 52 cards is...",
+              "options": [
+                "Greater than the number of atoms on Earth",
+                "About one trillion",
+                "Roughly a billion billion"
+              ],
+              "answer": "Greater than the number of atoms on Earth"
+            },
+            {
+              "question": "Jars of honey found sealed in ancient Egyptian tombs turned out to be...",
+              "options": [
+                "Still edible",
+                "Fossilized solid",
+                "Turned to vinegar"
+              ],
+              "answer": "Still edible"
+            },
+            {
+              "question": "The heart of a blue whale is roughly the size of a...",
+              "options": [
+                "Small car",
+                "Microwave",
+                "Washing machine"
+              ],
+              "answer": "Small car"
+            },
+            {
+              "question": "A bolt of lightning is roughly how hot compared to the surface of the Sun?",
+              "options": [
+                "About 5 times hotter",
+                "About the same",
+                "About half as hot"
+              ],
+              "answer": "About 5 times hotter"
+            },
+            {
+              "question": "Scotland's official national animal is the...",
               "options": [
                 "Unicorn",
-                "Red deer",
-                "Golden eagle"
+                "Griffin",
+                "Phoenix"
               ],
               "answer": "Unicorn"
             },
             {
-              "question": "The shortest war in recorded history lasted less than an hour. Who was fighting?",
+              "question": "The 'S' in U.S. President Harry S. Truman's name officially stands for...",
               "options": [
-                "Britain and Zanzibar",
-                "France and Tunisia",
-                "Portugal and Morocco"
+                "Nothing — it is just the letter S",
+                "Solomon",
+                "Samuel"
               ],
-              "answer": "Britain and Zanzibar"
-            },
-            {
-              "question": "The Canary Islands are not named after the bird. What are they actually named after?",
-              "options": [
-                "Dogs",
-                "A Roman general named Canarius",
-                "A yellow flower native to the islands"
-              ],
-              "answer": "Dogs"
-            },
-            {
-              "question": "What was lobster considered in colonial America?",
-              "options": [
-                "Poor people's food, fed to prisoners and servants",
-                "A sacred food avoided by European settlers",
-                "A luxury reserved for visiting royalty"
-              ],
-              "answer": "Poor people's food, fed to prisoners and servants"
-            },
-            {
-              "question": "The Statue of Liberty was originally designed for...",
-              "options": [
-                "The entrance to the Suez Canal in Egypt",
-                "The port of Marseille in France",
-                "The mouth of the River Thames in London"
-              ],
-              "answer": "The entrance to the Suez Canal in Egypt"
-            },
-            {
-              "question": "What did Al Capone's older brother do for a living?",
-              "options": [
-                "He was a Prohibition agent who hunted bootleggers",
-                "He was a Catholic priest",
-                "He ran a rival gang in Chicago"
-              ],
-              "answer": "He was a Prohibition agent who hunted bootleggers"
-            },
-            {
-              "question": "How many people were officially recorded as dying in the Great Fire of London (1666), which destroyed 13,000 houses?",
-              "options": [
-                "Fewer than 10",
-                "Over 1,000",
-                "Exactly 42"
-              ],
-              "answer": "Fewer than 10"
-            },
-            {
-              "question": "The inventor of the frontal lobotomy (a brutal procedure later banned worldwide)...",
-              "options": [
-                "Won a Nobel Prize",
-                "Was eventually imprisoned for practicing it",
-                "Publicly disavowed it before he died"
-              ],
-              "answer": "Won a Nobel Prize"
-            },
-            {
-              "question": "Why is a software error called a 'bug'?",
-              "options": [
-                "An actual moth was found stuck inside an early computer",
-                "Early code was written on paper that attracted beetles",
-                "It comes from 'buggy', meaning poorly made"
-              ],
-              "answer": "An actual moth was found stuck inside an early computer"
-            },
-            {
-              "question": "Which of these is botanically classified as a true berry?",
-              "options": [
-                "Banana",
-                "Strawberry",
-                "Raspberry"
-              ],
-              "answer": "Banana"
-            },
-            {
-              "question": "Which letter of the alphabet does not appear in any US state name?",
-              "options": [
-                "Q",
-                "X",
-                "Z"
-              ],
-              "answer": "Q"
-            },
-            {
-              "question": "Which commonly stated 'fact' is actually false?",
-              "options": [
-                "The Great Wall of China is visible from space with the naked eye",
-                "Goldfish have a 3-second memory",
-                "Your fingerprints are unique"
-              ],
-              "answer": "The Great Wall of China is visible from space with the naked eye"
-            },
-            {
-              "question": "Which of these is true?",
-              "options": [
-                "Humans share about 60% of their DNA with bananas",
-                "Humans share about 60% of their DNA with chimpanzees",
-                "No plant shares more than 10% of its DNA with humans"
-              ],
-              "answer": "Humans share about 60% of their DNA with bananas"
-            },
-            {
-              "question": "The longest recorded case of hiccups lasted...",
-              "options": [
-                "68 years",
-                "3 weeks",
-                "11 months"
-              ],
-              "answer": "68 years"
-            },
-            {
-              "question": "In the US, which kills more people per year?",
-              "options": [
-                "Vending machines",
-                "Sharks",
-                "They're about equal"
-              ],
-              "answer": "Vending machines"
-            },
-            {
-              "question": "Which of these comparisons is true?",
-              "options": [
-                "There are more tigers in Texas than left in the entire wild worldwide",
-                "There are more wild lions than wild tigers",
-                "There are more captive pandas than wild ones"
-              ],
-              "answer": "There are more tigers in Texas than left in the entire wild worldwide"
-            },
-            {
-              "question": "Which of these was once an Olympic sport?",
-              "options": [
-                "Tug of war",
-                "Dodgeball",
-                "Limbo dancing"
-              ],
-              "answer": "Tug of war"
-            },
-            {
-              "question": "What happened to Ed Headrick, the inventor of the modern Frisbee, after he died?",
-              "options": [
-                "His ashes were molded into memorial Frisbees",
-                "He was buried with his full Frisbee collection",
-                "His estate donated all Frisbee patents to charity"
-              ],
-              "answer": "His ashes were molded into memorial Frisbees"
-            },
-            {
-              "question": "What happened to Fred Baur, the inventor of the Pringles can, after he died?",
-              "options": [
-                "His ashes were buried in a Pringles can",
-                "He was buried with the original prototype",
-                "The Pringles company named a flavor after him"
-              ],
-              "answer": "His ashes were buried in a Pringles can"
-            },
-            {
-              "question": "The actors who voiced Mickey Mouse and Minnie Mouse for decades...",
-              "options": [
-                "Were married to each other in real life",
-                "Reportedly never met in person",
-                "Had a famous feud behind the scenes"
-              ],
-              "answer": "Were married to each other in real life"
-            },
-            {
-              "question": "Which word was first used by Shakespeare?",
-              "options": [
-                "Lonely",
-                "Sandwich",
-                "Umbrella"
-              ],
-              "answer": "Lonely"
+              "answer": "Nothing — it is just the letter S"
             }
           ]
         },
@@ -912,6 +1428,23 @@
         {
           "name": "guessed",
           "value": false
+        },
+        {
+          "name": "numPlayers",
+          "value": {
+            "selector": "listLength",
+            "params": [
+              {
+                "name": "list",
+                "type": "cached",
+                "value": "players"
+              }
+            ]
+          }
+        },
+        {
+          "name": "playAgain",
+          "value": true
         }
       ]
     },
@@ -1013,11 +1546,11 @@
       "key": "createNotification",
       "payload": {
         "preset": {
-          "header": "Welcome to Gaslight!",
-          "image": "banner",
-          "duration": 8,
-          "backgroundColor": "#fff0db",
-          "borderColor": "black"
+          "duration": 8
+        },
+        "cached": {
+          "header": "welcomeToGaslight",
+          "image": "bannerImg"
         },
         "computed": {
           "to": {
@@ -1028,8 +1561,8 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!"
+                "type": "cached",
+                "value": "inAMomentTell"
               },
               {
                 "name": "arg1",
@@ -1060,36 +1593,27 @@
       }
     },
     {
-      "key": "createVote",
+      "key": "createMixVote",
       "payload": {
         "preset": {
-          "title": "Tutorial Mode",
-          "type": "target_poll",
           "terminationCondition": "get_all_votes",
           "showResultInRealTime": true,
           "showResultDuration": 2,
-          "showResult": true,
-          "allowRevoting": false,
-          "targets": [
-            "Yes Please!",
-            "No Thanks"
-          ],
-          "pollVoteTargetsOptions": {
-            "Yes Please!": {
-              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-              "backgroundColor": "#D3D3D3",
-              "boxIconColor": "#D3D3D3",
-              "textColor": "black",
-              "widgetIconColor": "green"
-            },
-            "No Thanks": {
-              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
-              "backgroundColor": "#D3D3D3",
-              "boxIconColor": "#D3D3D3",
-              "textColor": "black",
-              "widgetIconColor": "red"
-            }
-          }
+          "showResultDelay": 0,
+          "point.allowFewerAnswers": true,
+          "point.terminationCondition": "get_all_votes",
+          "poll.answersQuantity": 1,
+          "oneClick": true,
+          "allowRevoting": true,
+          "poll.terminationCondition": "get_all_votes"
+        },
+        "cached": {
+          "actors": "host",
+          "point.targets": "players",
+          "point.answersQuantity": "numPlayers",
+          "title": "tutorialMode",
+          "poll.targets": "everybodyNobodyTargets",
+          "pollVoteTargetsOptions": "everybodyNobodyOptions"
         },
         "computed": {
           "question": {
@@ -1097,28 +1621,104 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "($1), do you want Ludio to teach your group how to play this game?"
+                "type": "cached",
+                "value": "whoNeedsTutorialQuestion"
               },
               {
                 "name": "arg1",
                 "type": "computed",
                 "value": {
-                  "selector": "listToString",
+                  "selector": "getPlayerNameById",
+                  "params": [
+                    {
+                      "name": "id",
+                      "type": "cached",
+                      "value": "host.0"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "saveValueInCache": [
+        {
+          "name": "voteResult",
+          "value": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "lastActionResult.voteResult"
+              }
+            ]
+          }
+        },
+        {
+          "name": "learners",
+          "value": {
+            "selector": "ifElse",
+            "params": [
+              {
+                "name": "condition",
+                "type": "computed",
+                "value": {
+                  "selector": "contains",
                   "params": [
                     {
                       "name": "list",
+                      "type": "cached",
+                      "value": "players"
+                    },
+                    {
+                      "name": "element",
+                      "type": "cached",
+                      "value": "voteResult.0"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "thenValue",
+                "type": "cached",
+                "value": "voteResult"
+              },
+              {
+                "name": "elseValue",
+                "type": "computed",
+                "value": {
+                  "selector": "ifElse",
+                  "params": [
+                    {
+                      "name": "condition",
                       "type": "computed",
                       "value": {
-                        "selector": "getPlayerNamesByIds",
+                        "selector": "contains",
                         "params": [
                           {
-                            "name": "ids",
+                            "name": "list",
                             "type": "cached",
-                            "value": "host"
+                            "value": "voteResult"
+                          },
+                          {
+                            "name": "element",
+                            "type": "cached",
+                            "value": "everybodyNobodyTargets.0"
                           }
                         ]
                       }
+                    },
+                    {
+                      "name": "thenValue",
+                      "type": "cached",
+                      "value": "players"
+                    },
+                    {
+                      "name": "elseValue",
+                      "type": "preset",
+                      "value": []
                     }
                   ]
                 }
@@ -1126,25 +1726,29 @@
             ]
           }
         },
-        "cached": {
-          "actors": "host"
-        }
-      },
-      "saveValueInCache": [
         {
           "name": "tutorial",
           "value": {
-            "selector": "isTargetGotMajority",
+            "selector": "greaterThan",
             "params": [
               {
-                "name": "voteResult",
-                "type": "cached",
-                "value": "lastActionResult"
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                  "selector": "listLength",
+                  "params": [
+                    {
+                      "name": "list",
+                      "type": "cached",
+                      "value": "learners"
+                    }
+                  ]
+                }
               },
               {
-                "name": "target",
+                "name": "arg2",
                 "type": "preset",
-                "value": "Yes Please!"
+                "value": 0
               }
             ]
           }
@@ -1169,1251 +1773,83 @@
       ],
       "actions": [
         {
-          "key": "createConfirmation",
-          "payload": {
-            "preset": {
-              "header": "Are you ready for the tutorial?",
-              "text": "Once enough people click Ready, the tutorial will start!",
-              "passCriterion": "majority",
-              "backgroundColor": "#fff0db",
-              "borderColor": "black"
-            },
-            "computed": {
-              "actors": {
-                "selector": "allPlayers"
-              }
-            }
-          }
-        },
-        {
-          "key": "emptyAction",
-          "saveValueInCache": [
-            {
-              "name": "randomIndex",
-              "value": {
-                "selector": "randomNumber",
-                "params": [
-                  {
-                    "name": "max",
-                    "type": "computed",
-                    "value": {
-                      "selector": "subtract",
-                      "params": [
-                        {
-                          "name": "arg1",
-                          "type": "computed",
-                          "value": {
-                            "selector": "listLength",
-                            "params": [
-                              {
-                                "name": "list",
-                                "type": "cached",
-                                "value": "questions"
-                              }
-                            ]
-                          }
-                        },
-                        {
-                          "name": "arg2",
-                          "type": "preset",
-                          "value": 1
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "name": "currentQuestion",
-              "value": {
-                "selector": "selectElement",
-                "params": [
-                  {
-                    "name": "list",
-                    "type": "cached",
-                    "value": "questions"
-                  },
-                  {
-                    "name": "index",
-                    "type": "cached",
-                    "value": "randomIndex"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "questions",
-              "value": {
-                "selector": "concat",
-                "params": [
-                  {
-                    "name": "list1",
-                    "type": "computed",
-                    "value": {
-                      "selector": "sublist",
-                      "params": [
-                        {
-                          "name": "list",
-                          "type": "cached",
-                          "value": "questions"
-                        },
-                        {
-                          "name": "start",
-                          "type": "preset",
-                          "value": 0
-                        },
-                        {
-                          "name": "end",
-                          "type": "cached",
-                          "value": "randomIndex"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "name": "list2",
-                    "type": "computed",
-                    "value": {
-                      "selector": "sublist",
-                      "params": [
-                        {
-                          "name": "list",
-                          "type": "cached",
-                          "value": "questions"
-                        },
-                        {
-                          "name": "start",
-                          "type": "computed",
-                          "value": {
-                            "selector": "add",
-                            "params": [
-                              {
-                                "name": "arg1",
-                                "type": "cached",
-                                "value": "randomIndex"
-                              },
-                              {
-                                "name": "arg2",
-                                "type": "preset",
-                                "value": 1
-                              }
-                            ]
-                          }
-                        },
-                        {
-                          "name": "end",
-                          "type": "computed",
-                          "value": {
-                            "selector": "listLength",
-                            "params": [
-                              {
-                                "name": "list",
-                                "type": "cached",
-                                "value": "questions"
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "name": "options",
-              "value": {
-                "selector": "shuffleList",
-                "params": [
-                  {
-                    "name": "list",
-                    "type": "cached",
-                    "value": "currentQuestion.options"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "optionAppearances",
-              "value": {
-                "selector": "createDict",
-                "params": [
-                  {
-                    "name": "keys",
-                    "type": "computed",
-                    "value": {
-                      "selector": "append",
-                      "params": [
-                        {
-                          "name": "list",
-                          "type": "cached",
-                          "value": "options"
-                        },
-                        {
-                          "name": "element",
-                          "type": "preset",
-                          "value": "SKIP"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "name": "values",
-                    "type": "preset",
-                    "value": [
-                      {
-                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/letter_a.svg",
-                        "backgroundColor": "#93c47d",
-                        "boxIconColor": "#93c47d",
-                        "textColor": "black",
-                        "widgetIconColor": "black"
-                      },
-                      {
-                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/letter_b.svg",
-                        "backgroundColor": "#b6d7a8",
-                        "boxIconColor": "#b6d7a8",
-                        "textColor": "black",
-                        "widgetIconColor": "black"
-                      },
-                      {
-                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/letter_c.svg",
-                        "backgroundColor": "#e1f2fb",
-                        "boxIconColor": "#e1f2fb",
-                        "textColor": "black",
-                        "widgetIconColor": "black"
-                      },
-                      {
-                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/next-svgrepo-com.svg",
-                        "backgroundColor": "#D3D3D3",
-                        "boxIconColor": "#D3D3D3",
-                        "textColor": "black",
-                        "widgetIconColor": "green"
-                      }
-                    ]
-                  }
-                ]
-              }
-            }
-          ]
-        },
-        {
-          "key": "emptyAction",
-          "payload": {
-            "preset": {
-              "sounds.waitForSoundEnd": true,
-              "sounds.list": [
-                "voices.gas1",
-                "delay.1000"
-              ]
-            },
-            "computed": {
-              "playList.0": {
-                "selector": "allUsers"
-              }
-            }
-          }
-        },
-        {
-          "key": "showFakeRole",
-          "payload": {
-            "preset": {
-              "roleId": "member"
-            },
-            "cached": {
-              "to": "players",
-              "from": "players"
-            }
-          }
-        },
-        {
-          "key": "showFakeRole",
-          "payload": {
-            "preset": {
-              "roleId": "mongoose"
-            },
-            "cached": {
-              "to": "players",
-              "from": "mongoose"
-            }
-          }
-        },
-        {
-          "key": "showFakeRole",
-          "payload": {
-            "preset": {
-              "roleId": "snake"
-            },
-            "cached": {
-              "to": "snakes",
-              "from": "snakes"
-            }
-          }
-        },
-        {
-          "key": "animateBox",
-          "payload": {
-            "preset": {
-              "animation": "truth"
-            },
-            "cached": {
-              "userIds": "mongoose"
-            }
-          }
-        },
-        {
-          "key": "emptyAction",
-          "payload": {
-            "preset": {
-              "sounds.waitForSoundEnd": true,
-              "sounds.list": [
-                "delay.1000",
-                "voices.gas6"
-              ]
-            },
-            "computed": {
-              "playList.0": {
-                "selector": "allUsers"
-              }
-            }
-          }
-        },
-        {
-          "key": "changeBackground",
-          "payload": {
-            "preset": {
-              "image": "night_background",
-              "sounds.waitForSoundEnd": true,
-              "sounds.list": [
-                "soundboard.go_to_sleep"
-              ]
-            },
-            "computed": {
-              "playList.1": {
-                "selector": "allLivePlayers"
-              }
-            }
-          }
-        },
-        {
-          "key": "createIndividualConversationGroups",
-          "payload": {
-            "preset": {
-              "video": true,
-              "audio": false,
-              "private": true
-            }
-          }
-        },
-        {
-          "key": "showFakeRole",
-          "payload": {
-            "preset": {
-              "roleId": "snake"
-            },
-            "cached": {
-              "to": "snakes",
-              "from": "snakes"
-            }
-          }
-        },
-        {
-          "key": "createConversationGroup",
-          "payload": {
-            "preset": {
-              "video": true,
-              "audio": false,
-              "private": true,
-              "indicator": "🦝"
-            },
-            "cached": {
-              "members": "snakes"
-            }
-          }
-        },
-        {
           "key": "createNotification",
-          "title": "SHOW SNAKES",
           "payload": {
             "preset": {
-              "header": "This round, you are a Sneak!",
               "image": "snake",
-              "sounds.waitForSoundEnd": true,
-              "sounds.list": [
-                "soundboard.snake_hiss"
-              ],
-              "backgroundColor": "#fff0db",
-              "borderColor": "black"
+              "duration": 20
             },
             "cached": {
-              "to": "snakes",
-              "playList.1": "snakes"
-            },
-            "computed": {
-              "text": {
-                "selector": "formatString",
-                "params": [
-                  {
-                    "name": "format",
-                    "type": "preset",
-                    "value": "The Sneaks are <b>($1)</b>!"
-                  },
-                  {
-                    "name": "arg1",
-                    "type": "computed",
-                    "value": {
-                      "selector": "listToString",
-                      "params": [
-                        {
-                          "name": "list",
-                          "type": "computed",
-                          "value": {
-                            "selector": "getPlayerNamesByIds",
-                            "params": [
-                              {
-                                "name": "ids",
-                                "type": "cached",
-                                "value": "snakes"
-                              }
-                            ]
-                          }
-                        },
-                        {
-                          "name": "readable",
-                          "type": "preset",
-                          "value": true
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "emptyAction",
-          "payload": {
-            "preset": {
-              "delay": 2
-            }
-          }
-        },
-        {
-          "key": "destroyConversationGroups"
-        },
-        {
-          "key": "changeBackground",
-          "payload": {
-            "preset": {
-              "image": "forest_background"
-            }
-          }
-        },
-        {
-          "key": "emptyAction",
-          "payload": {
-            "preset": {
-              "sounds.waitForSoundEnd": true,
-              "sounds.list": [
-                "voices.gas8",
-                "delay.1000"
-              ]
-            },
-            "computed": {
-              "playList.0": {
-                "selector": "allUsers"
-              }
-            }
-          }
-        },
-        {
-          "key": "animateBox",
-          "payload": {
-            "preset": {
-              "animation": "jungle"
-            },
-            "computed": {
-              "userIds": {
-                "selector": "concat",
-                "params": [
-                  {
-                    "name": "list1",
-                    "type": "cached",
-                    "value": "members"
-                  },
-                  {
-                    "name": "list2",
-                    "type": "cached",
-                    "value": "snakes"
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "emptyAction",
-          "payload": {
-            "preset": {
-              "sounds.waitForSoundEnd": true,
-              "sounds.list": [
-                "delay.1000",
-                "voices.gas9",
-                "voices.gas10",
-                "delay.1000"
-              ]
-            },
-            "computed": {
-              "playList.0": {
-                "selector": "allUsers"
-              }
+              "to": "learners",
+              "header": "tutOverviewHeader",
+              "text": "tutOverviewText"
             }
           }
         },
         {
           "key": "createNotification",
-          "title": "MEMBER ANNOUNCEMENT",
           "payload": {
             "preset": {
-              "header": "The question is...",
-              "image": "questions",
-              "duration": 10,
-              "backgroundColor": "#fff0db",
-              "borderColor": "black"
+              "image": "mongoose",
+              "duration": 20
             },
-            "computed": {
-              "to": {
-                "selector": "allPlayers"
-              },
-              "text": {
-                "selector": "formatString",
-                "params": [
-                  {
-                    "name": "format",
-                    "type": "preset",
-                    "value": "<b>($1)</b><br/><br/>Let's get ready to see the options..."
-                  },
-                  {
-                    "name": "arg1",
-                    "type": "cached",
-                    "value": "currentQuestion.question"
-                  },
-                  {
-                    "name": "arg2",
-                    "type": "computed",
-                    "value": {
-                      "selector": "listToString",
-                      "params": [
-                        {
-                          "name": "list",
-                          "type": "cached",
-                          "value": "currentQuestion.options"
-                        },
-                        {
-                          "name": "readable",
-                          "type": "preset",
-                          "value": true
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
+            "cached": {
+              "to": "learners",
+              "header": "tutBeaconHeader",
+              "text": "tutBeaconText"
             }
           }
         },
         {
           "key": "createNotification",
-          "title": "SHOW ANSWER",
           "payload": {
             "preset": {
-              "header": "Hey Sneaks...",
               "image": "questions",
-              "duration": 6,
-              "backgroundColor": "#fff0db",
-              "borderColor": "black"
+              "duration": 20
             },
             "cached": {
-              "to": "snakes"
+              "to": "learners",
+              "header": "tutPickingHeader",
+              "text": "tutPickingText"
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "image": "trivia",
+              "duration": 20
             },
-            "computed": {
-              "text": {
-                "selector": "formatString",
-                "params": [
-                  {
-                    "name": "format",
-                    "type": "preset",
-                    "value": "... the correct answer is <b>($2)</b></i>!"
-                  },
-                  {
-                    "name": "arg1",
-                    "type": "cached",
-                    "value": "currentQuestion.question"
-                  },
-                  {
-                    "name": "arg2",
-                    "type": "cached",
-                    "value": "currentQuestion.answer"
-                  },
-                  {
-                    "name": "arg3",
-                    "type": "computed",
-                    "value": {
-                      "selector": "listToString",
-                      "params": [
-                        {
-                          "name": "list",
-                          "type": "cached",
-                          "value": "currentQuestion.options"
-                        },
-                        {
-                          "name": "readable",
-                          "type": "preset",
-                          "value": true
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
+            "cached": {
+              "to": "learners",
+              "header": "tutScoringHeader",
+              "text": "tutScoringText"
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "image": "winner",
+              "duration": 20
+            },
+            "cached": {
+              "to": "learners",
+              "header": "tutWinningHeader",
+              "text": "tutWinningText"
             }
           }
         },
         {
           "key": "emptyAction",
-          "payload": {
-            "preset": {
-              "sounds.waitForSoundEnd": true,
-              "sounds.list": [
-                "voices.gas12",
-                "voices.gas17",
-                "delay.1000"
-              ]
-            },
-            "computed": {
-              "playList.0": {
-                "selector": "allUsers"
-              }
-            }
-          }
-        },
-        {
-          "key": "createVote",
-          "payload": {
-            "preset": {
-              "title": "CHOOSE ANSWER",
-              "type": "target_poll",
-              "terminationCondition": "get_all_votes",
-              "showResultInRealTime": false,
-              "allowRevoting": true,
-              "showResultDuration": 1,
-              "showResultDelay": 0,
-              "duration": 60
-            },
-            "cached": {
-              "actors": "players",
-              "pollVoteTargetsOptions": "optionAppearances",
-              "question": "currentQuestion.question",
-              "targets": "options"
-            }
-          },
           "saveValueInCache": [
             {
-              "name": "skipped",
-              "value": {
-                "selector": "isTargetGotMajority",
-                "params": [
-                  {
-                    "name": "voteResult",
-                    "type": "cached",
-                    "value": "lastActionResult"
-                  },
-                  {
-                    "name": "target",
-                    "type": "preset",
-                    "value": "SKIP"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "votes",
-              "value": {
-                "selector": "getCachedValue",
-                "params": [
-                  {
-                    "name": "name",
-                    "type": "preset",
-                    "value": "lastActionResult.answersVoters"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "membersGettingPoints",
-              "value": {
-                "selector": "listsSubtract",
-                "params": [
-                  {
-                    "name": "list1",
-                    "type": "computed",
-                    "value": {
-                      "selector": "getCachedObjectValue",
-                      "params": [
-                        {
-                          "name": "objectName",
-                          "type": "preset",
-                          "value": "votes"
-                        },
-                        {
-                          "name": "value",
-                          "type": "cached",
-                          "value": "currentQuestion.answer"
-                        },
-                        {
-                          "name": "defaultValue",
-                          "type": "preset",
-                          "value": []
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "name": "list2",
-                    "type": "cached",
-                    "value": "snakes"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "numMembersNotGettingPoints",
-              "value": {
-                "selector": "listLength",
-                "params": [
-                  {
-                    "name": "list",
-                    "type": "computed",
-                    "value": {
-                      "selector": "listsSubtract",
-                      "params": [
-                        {
-                          "name": "list1",
-                          "type": "computed",
-                          "value": {
-                            "selector": "concat",
-                            "params": [
-                              {
-                                "name": "list1",
-                                "type": "cached",
-                                "value": "mongoose"
-                              },
-                              {
-                                "name": "list2",
-                                "type": "cached",
-                                "value": "members"
-                              }
-                            ]
-                          }
-                        },
-                        {
-                          "name": "list2",
-                          "type": "cached",
-                          "value": "membersGettingPoints"
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
+              "name": "tutorial",
+              "value": false
             }
           ]
-        },
-        {
-          "key": "createNotification",
-          "title": "SHOW ANSWER",
-          "skipCondition": {
-            "selector": "getCachedValue",
-            "params": [
-              {
-                "name": "name",
-                "type": "preset",
-                "value": "skipped"
-              }
-            ]
-          },
-          "payload": {
-            "preset": {
-              "sounds.waitForSoundEnd": false,
-              "sounds.list": [
-                "soundboard.success"
-              ],
-              "backgroundColor": "#fff0db",
-              "borderColor": "black"
-            },
-            "cached": {
-              "to": "players",
-              "playList.1": "players"
-            },
-            "computed": {
-              "header": {
-                "selector": "formatString",
-                "params": [
-                  {
-                    "name": "format",
-                    "type": "preset",
-                    "value": "($1)!"
-                  },
-                  {
-                    "name": "arg1",
-                    "type": "cached",
-                    "value": "currentQuestion.answer"
-                  }
-                ]
-              },
-              "text": {
-                "selector": "formatString",
-                "params": [
-                  {
-                    "name": "format",
-                    "type": "preset",
-                    "value": "($1)<br/><br/><b>($2)</b> answered correctly!"
-                  },
-                  {
-                    "name": "arg1",
-                    "type": "cached",
-                    "value": "currentQuestion.question"
-                  },
-                  {
-                    "name": "arg2",
-                    "type": "computed",
-                    "value": {
-                      "selector": "listToString",
-                      "params": [
-                        {
-                          "name": "list",
-                          "type": "computed",
-                          "value": {
-                            "selector": "ifElse",
-                            "params": [
-                              {
-                                "name": "condition",
-                                "type": "computed",
-                                "value": {
-                                  "selector": "greaterThan",
-                                  "params": [
-                                    {
-                                      "name": "arg1",
-                                      "type": "computed",
-                                      "value": {
-                                        "selector": "listLength",
-                                        "params": [
-                                          {
-                                            "name": "list",
-                                            "type": "cached",
-                                            "value": "membersGettingPoints"
-                                          }
-                                        ]
-                                      }
-                                    },
-                                    {
-                                      "name": "arg2",
-                                      "type": "preset",
-                                      "value": 0
-                                    }
-                                  ]
-                                }
-                              },
-                              {
-                                "name": "thenValue",
-                                "type": "computed",
-                                "value": {
-                                  "selector": "getPlayerNamesByIds",
-                                  "params": [
-                                    {
-                                      "name": "ids",
-                                      "type": "cached",
-                                      "value": "membersGettingPoints"
-                                    }
-                                  ]
-                                }
-                              },
-                              {
-                                "name": "elseValue",
-                                "type": "preset",
-                                "value": [
-                                  "Nobody"
-                                ]
-                              }
-                            ]
-                          }
-                        },
-                        {
-                          "name": "readable",
-                          "type": "preset",
-                          "value": true
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "emptyAction",
-          "payload": {
-            "preset": {
-              "sounds.waitForSoundEnd": true,
-              "sounds.list": [
-                "voices.gas18"
-              ]
-            },
-            "computed": {
-              "playList.0": {
-                "selector": "allUsers"
-              }
-            }
-          }
-        },
-        {
-          "key": "updateScore",
-          "skipCondition": {
-            "selector": "getCachedValue",
-            "params": [
-              {
-                "name": "name",
-                "type": "preset",
-                "value": "skipped"
-              }
-            ]
-          },
-          "payload": {
-            "computed": {
-              "scores": {
-                "selector": "createItemList",
-                "params": [
-                  {
-                    "name": "length",
-                    "type": "preset",
-                    "value": 1
-                  },
-                  {
-                    "name": "item",
-                    "type": "computed",
-                    "value": {
-                      "selector": "createDict",
-                      "params": [
-                        {
-                          "name": "keys",
-                          "type": "preset",
-                          "value": [
-                            "list",
-                            "delta"
-                          ]
-                        },
-                        {
-                          "name": "values",
-                          "type": "computed",
-                          "value": {
-                            "selector": "createList",
-                            "params": [
-                              {
-                                "name": "arg1",
-                                "type": "cached",
-                                "value": "membersGettingPoints"
-                              },
-                              {
-                                "name": "arg2",
-                                "type": "computed",
-                                "value": {
-                                  "selector": "multiply",
-                                  "params": [
-                                    {
-                                      "name": "arg1",
-                                      "type": "computed",
-                                      "value": {
-                                        "selector": "listLength",
-                                        "params": [
-                                          {
-                                            "name": "list",
-                                            "type": "cached",
-                                            "value": "membersGettingPoints"
-                                          }
-                                        ]
-                                      }
-                                    },
-                                    {
-                                      "name": "arg2",
-                                      "type": "preset",
-                                      "value": 10
-                                    }
-                                  ]
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "animateBox",
-          "skipCondition": {
-            "selector": "equals",
-            "params": [
-              {
-                "name": "arg1",
-                "type": "computed",
-                "value": {
-                  "selector": "listLength",
-                  "params": [
-                    {
-                      "name": "list",
-                      "type": "cached",
-                      "value": "membersGettingPoints"
-                    }
-                  ]
-                }
-              },
-              {
-                "name": "arg2",
-                "type": "preset",
-                "value": 0
-              }
-            ]
-          },
-          "payload": {
-            "preset": {
-              "animation": "winner"
-            },
-            "cached": {
-              "userIds": "membersGettingPoints"
-            }
-          }
-        },
-        {
-          "key": "updateScore",
-          "payload": {
-            "computed": {
-              "scores": {
-                "selector": "createItemList",
-                "params": [
-                  {
-                    "name": "length",
-                    "type": "preset",
-                    "value": 1
-                  },
-                  {
-                    "name": "item",
-                    "type": "computed",
-                    "value": {
-                      "selector": "createDict",
-                      "params": [
-                        {
-                          "name": "keys",
-                          "type": "preset",
-                          "value": [
-                            "list",
-                            "delta"
-                          ]
-                        },
-                        {
-                          "name": "values",
-                          "type": "computed",
-                          "value": {
-                            "selector": "createList",
-                            "params": [
-                              {
-                                "name": "arg1",
-                                "type": "cached",
-                                "value": "snakes"
-                              },
-                              {
-                                "name": "arg2",
-                                "type": "computed",
-                                "value": {
-                                  "selector": "multiply",
-                                  "params": [
-                                    {
-                                      "name": "arg1",
-                                      "type": "cached",
-                                      "value": "numMembersNotGettingPoints"
-                                    },
-                                    {
-                                      "name": "arg2",
-                                      "type": "preset",
-                                      "value": 10
-                                    }
-                                  ]
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            }
-          }
-        },
-        {
-          "key": "animateBox",
-          "skipCondition": {
-            "selector": "logicalOR",
-            "params": [
-              {
-                "name": "arg1",
-                "type": "computed",
-                "value": {
-                  "selector": "equals",
-                  "params": [
-                    {
-                      "name": "arg1",
-                      "type": "cached",
-                      "value": "numMembersNotGettingPoints"
-                    },
-                    {
-                      "name": "arg2",
-                      "type": "preset",
-                      "value": 0
-                    }
-                  ]
-                }
-              },
-              {
-                "name": "arg2",
-                "type": "computed",
-                "value": {
-                  "selector": "getCachedValue",
-                  "params": [
-                    {
-                      "name": "name",
-                      "type": "preset",
-                      "value": "skipped"
-                    }
-                  ]
-                }
-              }
-            ]
-          },
-          "payload": {
-            "preset": {
-              "animation": "snake"
-            },
-            "cached": {
-              "userIds": "snakes"
-            }
-          }
-        },
-        {
-          "key": "showFakeRole",
-          "payload": {
-            "preset": {
-              "roleId": "snake"
-            },
-            "cached": {
-              "to": "players",
-              "from": "snakes"
-            }
-          }
-        },
-        {
-          "key": "emptyAction",
-          "payload": {
-            "preset": {
-              "sounds.waitForSoundEnd": true,
-              "sounds.list": [
-                "voices.gas20"
-              ]
-            },
-            "computed": {
-              "playList.0": {
-                "selector": "allUsers"
-              }
-            }
-          }
-        },
-        {
-          "key": "createConfirmation",
-          "payload": {
-            "preset": {
-              "header": "Are you ready to start the game?",
-              "text": "Once enough people click Ready, the real game will start!",
-              "passCriterion": "majority",
-              "backgroundColor": "#fff0db",
-              "borderColor": "black"
-            },
-            "computed": {
-              "actors": {
-                "selector": "allPlayers"
-              }
-            }
-          }
-        },
-        {
-          "key": "updateScore",
-          "payload": {
-            "computed": {
-              "scores": {
-                "selector": "createItemList",
-                "params": [
-                  {
-                    "name": "length",
-                    "type": "preset",
-                    "value": 1
-                  },
-                  {
-                    "name": "item",
-                    "type": "computed",
-                    "value": {
-                      "selector": "createDict",
-                      "params": [
-                        {
-                          "name": "keys",
-                          "type": "preset",
-                          "value": [
-                            "list",
-                            "score"
-                          ]
-                        },
-                        {
-                          "name": "values",
-                          "type": "computed",
-                          "value": {
-                            "selector": "createList",
-                            "params": [
-                              {
-                                "name": "arg1",
-                                "type": "computed",
-                                "value": {
-                                  "selector": "allPlayers"
-                                }
-                              },
-                              {
-                                "name": "arg2",
-                                "type": "preset",
-                                "value": 0
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            }
-          }
         }
       ]
     },
@@ -2433,7 +1869,7 @@
                   {
                     "name": "arg1",
                     "type": "cached",
-                    "value": "roundNumber"
+                    "value": "gameLoopIndex"
                   },
                   {
                     "name": "arg2",
@@ -2644,11 +2080,13 @@
           "key": "changeBackground",
           "payload": {
             "preset": {
-              "image": "night_background",
               "sounds.waitForSoundEnd": true,
               "sounds.list": [
                 "soundboard.go_to_sleep"
               ]
+            },
+            "cached": {
+              "image": "nightBgImg"
             },
             "computed": {
               "playList.1": {
@@ -2771,10 +2209,10 @@
           "title": "SHOW MEMBERS",
           "payload": {
             "preset": {
-              "header": "This round, you are a Traveler!",
-              "image": "member",
-              "backgroundColor": "#fff0db",
-              "borderColor": "black"
+              "image": "member"
+            },
+            "cached": {
+              "header": "thisRoundYouAre2"
             },
             "computed": {
               "to": {
@@ -2823,18 +2261,16 @@
           "title": "SHOW SNAKES",
           "payload": {
             "preset": {
-              "header": "This round, you are a Sneak!",
               "image": "snake",
               "sounds.waitForSoundEnd": true,
               "sounds.list": [
                 "soundboard.snake_hiss"
-              ],
-              "backgroundColor": "#fff0db",
-              "borderColor": "black"
+              ]
             },
             "cached": {
               "to": "snakes",
-              "playList.1": "snakes"
+              "playList.1": "snakes",
+              "header": "thisRoundYouAre"
             },
             "computed": {
               "text": {
@@ -2842,8 +2278,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "The Sneaks are <b>($1)</b>!"
+                    "type": "cached",
+                    "value": "theSneaksAre"
                   },
                   {
                     "name": "arg1",
@@ -2887,16 +2323,16 @@
           "key": "createConfirmation",
           "payload": {
             "preset": {
-              "header": "Are you ready to move on?",
-              "text": "Once enough people have clicked Ready, the game will proceed!",
               "passCriterion": "two-thirds",
               "timer": 20,
               "sounds.waitForSoundEnd": true,
               "sounds.list": [
                 "soundboard.wake_up"
-              ],
-              "backgroundColor": "#fff0db",
-              "borderColor": "black"
+              ]
+            },
+            "cached": {
+              "header": "areYouReadyTo2",
+              "text": "onceEnoughPeopleHave"
             },
             "computed": {
               "actors": {
@@ -2922,8 +2358,8 @@
         {
           "key": "changeBackground",
           "payload": {
-            "preset": {
-              "image": "forest_background"
+            "cached": {
+              "image": "forestBgImg"
             }
           }
         },
@@ -2933,9 +2369,7 @@
           "payload": {
             "preset": {
               "image": "mongoose",
-              "duration": 4,
-              "backgroundColor": "#fff0db",
-              "borderColor": "black"
+              "duration": 4
             },
             "cached": {
               "to": "players"
@@ -2946,8 +2380,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "($1) is the new Beacon of Light!"
+                    "type": "cached",
+                    "value": "isTheNewBeacon"
                   },
                   {
                     "name": "arg1",
@@ -3165,8 +2599,8 @@
                         },
                         {
                           "name": "element",
-                          "type": "preset",
-                          "value": "SKIP"
+                          "type": "cached",
+                          "value": "skipOption"
                         }
                       ]
                     }
@@ -3223,14 +2657,12 @@
           "title": "SHOW ANSWER",
           "payload": {
             "preset": {
-              "header": "The question is...",
               "image": "questions",
-              "duration": 10,
-              "backgroundColor": "#fff0db",
-              "borderColor": "black"
+              "duration": 10
             },
             "cached": {
-              "to": "snakes"
+              "to": "snakes",
+              "header": "theQuestionIs"
             },
             "computed": {
               "text": {
@@ -3238,8 +2670,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "<b>($1)</b><br/><br/><i>Hey <b>Sneaks</b> ... the correct answer is <b>($2)</b></i>!"
+                    "type": "cached",
+                    "value": "heySneaksTheCorrect"
                   },
                   {
                     "name": "arg1",
@@ -3289,11 +2721,11 @@
           "title": "MEMBER ANNOUNCEMENT",
           "payload": {
             "preset": {
-              "header": "The question is...",
               "image": "questions",
-              "duration": 10,
-              "backgroundColor": "#fff0db",
-              "borderColor": "black"
+              "duration": 10
+            },
+            "cached": {
+              "header": "theQuestionIs"
             },
             "computed": {
               "to": {
@@ -3316,8 +2748,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "<b>($1)</b><br/><br/>Let's get ready to see the options..."
+                    "type": "cached",
+                    "value": "letSGetReady"
                   },
                   {
                     "name": "arg1",
@@ -3362,8 +2794,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "Gaslight, Question #($1)"
+                    "type": "cached",
+                    "value": "gaslightQuestion"
                   },
                   {
                     "name": "arg1",
@@ -3388,7 +2820,6 @@
           "key": "createVote",
           "payload": {
             "preset": {
-              "title": "CHOOSE ANSWER",
               "type": "target_poll",
               "terminationCondition": "get_all_votes",
               "showResultInRealTime": false,
@@ -3400,7 +2831,8 @@
             "cached": {
               "actors": "players",
               "pollVoteTargetsOptions": "optionAppearances",
-              "question": "currentQuestion.question"
+              "question": "currentQuestion.question",
+              "title": "chooseAnswer"
             },
             "computed": {
               "targets": {
@@ -3413,8 +2845,8 @@
                   },
                   {
                     "name": "element",
-                    "type": "preset",
-                    "value": "SKIP"
+                    "type": "cached",
+                    "value": "skipOption"
                   }
                 ]
               }
@@ -3433,8 +2865,8 @@
                   },
                   {
                     "name": "target",
-                    "type": "preset",
-                    "value": "SKIP"
+                    "type": "cached",
+                    "value": "skipOption"
                   }
                 ]
               }
@@ -3550,9 +2982,7 @@
               "sounds.waitForSoundEnd": false,
               "sounds.list": [
                 "soundboard.success"
-              ],
-              "backgroundColor": "#fff0db",
-              "borderColor": "black"
+              ]
             },
             "cached": {
               "to": "players",
@@ -3564,8 +2994,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "($1)!"
+                    "type": "cached",
+                    "value": "fmtLine1"
                   },
                   {
                     "name": "arg1",
@@ -3579,8 +3009,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "($1)<br/><br/><b>($2)</b> answered correctly!"
+                    "type": "cached",
+                    "value": "answeredCorrectly"
                   },
                   {
                     "name": "arg1",
@@ -3948,7 +3378,7 @@
       ]
     },
     {
-      "name": "PLAY AGAIN?",
+      "name": "REVEAL SNAKES",
       "actions": [
         {
           "key": "createNotification",
@@ -3969,14 +3399,12 @@
               "sounds.waitForSoundEnd": false,
               "sounds.list": [
                 "soundboard.snake_hiss"
-              ],
-              "header": "The Sneaks were ...",
-              "backgroundColor": "#fff0db",
-              "borderColor": "black"
+              ]
             },
             "cached": {
               "to": "players",
-              "playList.1": "players"
+              "playList.1": "players",
+              "header": "theSneaksWere"
             },
             "computed": {
               "text": {
@@ -3984,8 +3412,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "($1)!"
+                    "type": "cached",
+                    "value": "fmtLine1"
                   },
                   {
                     "name": "arg1",
@@ -4041,43 +3469,61 @@
               "from": "snakes"
             }
           }
-        },
+        }
+      ]
+    },
+    {
+      "name": "PLAY AGAIN?",
+      "skipCondition": [
+        {
+          "selector": "notEqual",
+          "params": [
+            {
+              "name": "arg1",
+              "type": "computed",
+              "value": {
+                "selector": "remainder",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "gameLoopIndex"
+                  },
+                  {
+                    "name": "arg2",
+                    "type": "preset",
+                    "value": 5
+                  }
+                ]
+              }
+            },
+            {
+              "name": "arg2",
+              "type": "preset",
+              "value": 4
+            }
+          ]
+        }
+      ],
+      "actions": [
         {
           "key": "createVote",
           "payload": {
             "preset": {
-              "title": "PLAY AGAIN?",
               "type": "binary",
               "terminationCondition": "get_majority",
               "showResultInRealTime": true,
               "showResultDuration": 1,
               "showResultDelay": 0,
-              "binaryAnswerAliases": [
-                "HELL YEAH!",
-                "I'M SO DONE"
-              ],
-              "pollVoteTargetsOptions": {
-                "HELL YEAH!": {
-                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-                  "backgroundColor": "#D3D3D3",
-                  "boxIconColor": "#D3D3D3",
-                  "textColor": "black",
-                  "widgetIconColor": "green"
-                },
-                "I'M SO DONE": {
-                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
-                  "backgroundColor": "#D3D3D3",
-                  "boxIconColor": "#D3D3D3",
-                  "textColor": "black",
-                  "widgetIconColor": "red"
-                }
-              },
               "duration": 120,
-              "question": "Would you like to play again?",
               "allowRevoting": true
             },
             "cached": {
-              "actors": "players"
+              "actors": "players",
+              "title": "playAgainStr",
+              "question": "wouldYouLikeTo",
+              "binaryAnswerAliases": "playAgainTargets",
+              "pollVoteTargetsOptions": "playAgainOptions"
             }
           },
           "saveValueInCache": [
@@ -4141,26 +3587,8 @@
                   },
                   {
                     "name": "target",
-                    "type": "preset",
-                    "value": "HELL YEAH!"
-                  }
-                ]
-              }
-            },
-            {
-              "name": "roundNumber",
-              "value": {
-                "selector": "add",
-                "params": [
-                  {
-                    "name": "arg1",
                     "type": "cached",
-                    "value": "roundNumber"
-                  },
-                  {
-                    "name": "arg2",
-                    "type": "preset",
-                    "value": 1
+                    "value": "playAgainTargets.0"
                   }
                 ]
               }
@@ -4270,9 +3698,7 @@
       "key": "createNotification",
       "payload": {
         "preset": {
-          "image": "winner",
-          "backgroundColor": "#fff0db",
-          "borderColor": "black"
+          "image": "winner"
         },
         "cached": {
           "to": "players"
@@ -4283,8 +3709,8 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "($1) ($2)!"
+                "type": "cached",
+                "value": "fmtLine2"
               },
               {
                 "name": "arg1",

@@ -243,6 +243,119 @@
                 "url": "https://res.cloudinary.com/liars-club/image/upload/images/stoneball/first_aid.png"
             }
         },
+        "strings": {
+            "Default": {
+                "bgImg": "background",
+                "welcomeToStoneball": "Welcome to Stoneball!",
+                "bannerImg": "banner",
+                "inAMomentTell": "<b>($1)</b> - in a moment, choose which players would like Ludio to teach them how to play this game!",
+                "tutorialMode": "Tutorial Mode",
+                "gameLength": "Game Length",
+                "howLongShouldThis": "($1), how long should this game be?",
+                "roundOf": "Round ($1) of ($2)!",
+                "ofThePossibleStoneballs": "<b>($1)</b> of the <b>($2)</b> possible stoneballs have been used.<br/><br/>Get ready to <b>play a snowball</b> after you see the items...",
+                "chooseTarget": "Choose target",
+                "whoWillYouThrow": "Who will you throw your snowball at?",
+                "stoneballFight": "Stoneball, Fight #($1)",
+                "youAreTheSnow": "($1), you are the Snow Queen. Click on someone aiming at you to make them change their target!",
+                "chooseNewTarget": "Choose new target",
+                "changeYourTarget": "($1), change your target!",
+                "stayInTheFight": "Stay in the fight?",
+                "theTargetsAreFinal": "The targets are final. Would you like to stay in the fight?",
+                "bringITONRunTargets": [
+                    "BRING IT ON",
+                    "Run Away!"
+                ],
+                "bringITONRunOptions": {
+                    "BRING IT ON": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/snowman.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "black",
+                        "textColor": "black",
+                        "widgetIconColor": "green"
+                    },
+                    "Run Away!": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/run_away.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "black",
+                        "textColor": "black",
+                        "widgetIconColor": "red"
+                    }
+                },
+                "snowballFIGHT": "SNOWBALL FIGHT!",
+                "ifYouReStill": "If you're still in the fight, let's put you in the center!",
+                "stoneballEndOfGame": "Stoneball, End of Game",
+                "timeToShareThe": "Time to share the items!",
+                "theVictorsWillTake": "The victors will take turns claiming the items in the center!",
+                "noNeedToClick": "No need to click anything - the game will speed through this.",
+                "getsAllTheItems": "($1) gets all the items!",
+                "lookAtThe9": "($1), look at the 9 items. Which one will you take?",
+                "noOneIsLeft": "No-one is left in the snowball fight!",
+                "allTheItemsThis": "All the items this round go to waste.",
+                "theyLoseHalfTheir": "They lose <b>half their points</b> but are back to full health. Getting hit by 3 stoneballs sure hurts!",
+                "passesOut": "($1) passes out!",
+                "theMarshmallowBonusGoes": "The Marshmallow bonus goes to...",
+                "whoCollectedATotal": "... <b>($1)</b>, who collected a total of <b>($2) marshmallow cards</b>!<br/><br/>They get a bonus of <b>40 points</b>.",
+                "noOneEachCollected": "... <b>no-one</b>!<br/><br/><b>($1)</b> each collected a total of <b>($2) marshmallows</b>, but there was no unique winner.",
+                "fmtLine15": "($1) ($2)!",
+                "shortFullTargets": [
+                    "Short (5 rounds)",
+                    "Full (8 rounds)"
+                ],
+                "shortFullOptions": {
+                    "Short (5 rounds)": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/half.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "#D3D3D3",
+                        "textColor": "black",
+                        "widgetIconColor": "green"
+                    },
+                    "Full (8 rounds)": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/clock.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "#D3D3D3",
+                        "textColor": "black",
+                        "widgetIconColor": "blue"
+                    }
+                },
+                "winsLabel": "wins",
+                "shareWinLabel": "share the win",
+                "everybodyNobodyTargets": [
+                    "Everybody!",
+                    "Nobody!"
+                ],
+                "everybodyNobodyOptions": {
+                    "Everybody!": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "#D3D3D3",
+                        "textColor": "black",
+                        "widgetIconColor": "green"
+                    },
+                    "Nobody!": {
+                        "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+                        "backgroundColor": "#D3D3D3",
+                        "boxIconColor": "#D3D3D3",
+                        "textColor": "black",
+                        "widgetIconColor": "red"
+                    }
+                },
+                "whoNeedsTutorial": "($1), who needs the tutorial? Click on the players or select from the middle.",
+                "competeInSnowballFights": "Compete in snowball fights to collect items — <b>chocolates</b>, <b>marshmallows</b> and <b>mugs</b> — and brew the most hot chocolate. Whoever has the most points at the end wins!",
+                "itemsArePoints": "Items are points",
+                "everyItemYouClaim": "Every item you claim is worth points. The player holding the most <b>marshmallow</b> cards at the end also earns a <b>+40 point bonus</b>!",
+                "loadYourThrow": "Load your throw",
+                "eachRoundYouSecretly": "Each round you secretly load a <b>snowball</b> (harmless) or a <b>stoneball</b> — a snowball packed with a rock that <b>injures</b> whoever it hits. Your stoneballs are limited, so aim them wisely!",
+                "takeAim": "Take aim",
+                "everyoneAimsAtAnother": "Everyone aims at another player at the same time, then you'll see who is targeting <i>you</i>. Each round one player is the <b>Snow Queen</b> — she can force someone aiming at her to switch to a different target!",
+                "stayInTheFight2": "Stay in the fight — or run",
+                "onceTargetsAreFinal": "Once targets are final, choose to <b>stay in the fight</b> or <b>run away</b>. Run away and you're safe, but you earn <b>no items</b> this round. The only way to score is to stay and dodge every stoneball coming your way!",
+                "mindYourInjuries": "Mind your injuries",
+                "getHitByA": "Get hit by a stoneball and you're injured. Your name is color-coded: <b>green</b> (healthy), <b>orange</b> (1 injury), <b>red</b> (2). A <b>3rd</b> injury costs you <b>half your points</b> — then you reset to green.",
+                "claimTheLoot": "Claim the loot",
+                "survivorsWhoWerenT": "Survivors who weren't hit take turns claiming items from the center. Watch for special cards — <b>Heal Once</b>, <b>Full Health</b>, an extra <b>Stoneball</b>, and the <b>Snow Queen</b> card for next round. Review it all anytime via the <b>Cheatsheet</b>!"
+            }
+        },
         "animations": {
             "throw": "https://lottie.host/bbbc5104-a4fb-40a8-9984-f8be50213730/zCTsDWuqsU.json",
             "snowball": "https://lottie.host/1c071444-ccbc-448b-9658-767340c11b19/dGyieekWTo.json",
@@ -285,6 +398,8 @@
         }
     },
     "visualSettings": {
+        "backgroundColor": "#b9f2ff",
+        "borderColor": "black",
         "isCardAnimationsOff": true,
         "cardHandBackgroundImage": "https://res.cloudinary.com/liars-club/image/upload/blue_background_izlan7.jpg"
     },
@@ -369,8 +484,8 @@
         {
             "key": "changeBackground",
             "payload": {
-                "preset": {
-                    "image": "background"
+                "cached": {
+                    "image": "bgImg"
                 }
             }
         },
@@ -398,6 +513,10 @@
                 {
                     "name": "round",
                     "value": 1
+                },
+                {
+                    "name": "maxRounds",
+                    "value": 8
                 },
                 {
                     "name": "players",
@@ -636,11 +755,11 @@
             "key": "createNotification",
             "payload": {
                 "preset": {
-                    "header": "Welcome to Stoneball!",
-                    "image": "banner",
-                    "duration": 8,
-                    "backgroundColor": "#b9f2ff",
-                    "borderColor": "black"
+                    "duration": 8
+                },
+                "cached": {
+                    "header": "welcomeToStoneball",
+                    "image": "bannerImg"
                 },
                 "computed": {
                     "to": {
@@ -651,8 +770,8 @@
                         "params": [
                             {
                                 "name": "format",
-                                "type": "preset",
-                                "value": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!"
+                                "type": "cached",
+                                "value": "inAMomentTell"
                             },
                             {
                                 "name": "arg1",
@@ -683,38 +802,27 @@
             }
         },
         {
-            "key": "createVote",
+            "key": "createMixVote",
             "payload": {
                 "preset": {
-                    "title": "Tutorial Mode",
-                    "type": "target_poll",
                     "terminationCondition": "get_all_votes",
                     "showResultInRealTime": true,
                     "showResultDuration": 2,
-                    "showResult": true,
-                    "allowRevoting": false,
-                    "targets": [
-                        "Yes Please!",
-                        "No Thanks"
-                    ],
-                    "pollVoteTargetsOptions": {
-                        "Yes Please!": {
-                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-                            "backgroundColor": "#D3D3D3",
-                            "boxIconColor": "#D3D3D3",
-                            "textColor": "black",
-                            "widgetIconColor": "green"
-                        },
-                        "No Thanks": {
-                            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
-                            "backgroundColor": "#D3D3D3",
-                            "boxIconColor": "#D3D3D3",
-                            "textColor": "black",
-                            "widgetIconColor": "red"
-                        }
-                    },
-                    "backgroundColor": "#b9f2ff",
-                    "borderColor": "black"
+                    "showResultDelay": 0,
+                    "point.allowFewerAnswers": true,
+                    "point.terminationCondition": "get_all_votes",
+                    "poll.answersQuantity": 1,
+                    "oneClick": true,
+                    "allowRevoting": true,
+                    "poll.terminationCondition": "get_all_votes"
+                },
+                "cached": {
+                    "actors": "host",
+                    "point.targets": "players",
+                    "point.answersQuantity": "numPlayers",
+                    "title": "tutorialMode",
+                    "poll.targets": "everybodyNobodyTargets",
+                    "pollVoteTargetsOptions": "everybodyNobodyOptions"
                 },
                 "computed": {
                     "question": {
@@ -722,8 +830,165 @@
                         "params": [
                             {
                                 "name": "format",
+                                "type": "cached",
+                                "value": "whoNeedsTutorial"
+                            },
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "getPlayerNameById",
+                                    "params": [
+                                        {
+                                            "name": "id",
+                                            "type": "cached",
+                                            "value": "host.0"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "saveValueInCache": [
+                {
+                    "name": "voteResult",
+                    "value": {
+                        "selector": "getCachedValue",
+                        "params": [
+                            {
+                                "name": "name",
                                 "type": "preset",
-                                "value": "($1), do you want Ludio to teach your group how to play this game?"
+                                "value": "lastActionResult.voteResult"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "learners",
+                    "value": {
+                        "selector": "ifElse",
+                        "params": [
+                            {
+                                "name": "condition",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "contains",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "players"
+                                        },
+                                        {
+                                            "name": "element",
+                                            "type": "cached",
+                                            "value": "voteResult.0"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "thenValue",
+                                "type": "cached",
+                                "value": "voteResult"
+                            },
+                            {
+                                "name": "elseValue",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "ifElse",
+                                    "params": [
+                                        {
+                                            "name": "condition",
+                                            "type": "computed",
+                                            "value": {
+                                                "selector": "contains",
+                                                "params": [
+                                                    {
+                                                        "name": "list",
+                                                        "type": "cached",
+                                                        "value": "voteResult"
+                                                    },
+                                                    {
+                                                        "name": "element",
+                                                        "type": "cached",
+                                                        "value": "everybodyNobodyTargets.0"
+                                                    }
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "name": "thenValue",
+                                            "type": "cached",
+                                            "value": "players"
+                                        },
+                                        {
+                                            "name": "elseValue",
+                                            "type": "preset",
+                                            "value": []
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "tutorial",
+                    "value": {
+                        "selector": "greaterThan",
+                        "params": [
+                            {
+                                "name": "arg1",
+                                "type": "computed",
+                                "value": {
+                                    "selector": "listLength",
+                                    "params": [
+                                        {
+                                            "name": "list",
+                                            "type": "cached",
+                                            "value": "learners"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "arg2",
+                                "type": "preset",
+                                "value": 0
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "key": "createVote",
+            "payload": {
+                "preset": {
+                    "type": "target_poll",
+                    "terminationCondition": "get_all_votes",
+                    "showResultInRealTime": true,
+                    "showResultDuration": 2,
+                    "showResult": true,
+                    "allowRevoting": false
+                },
+                "cached": {
+                    "actors": "host",
+                    "title": "gameLength",
+                    "targets": "shortFullTargets",
+                    "pollVoteTargetsOptions": "shortFullOptions"
+                },
+                "computed": {
+                    "question": {
+                        "selector": "formatString",
+                        "params": [
+                            {
+                                "name": "format",
+                                "type": "cached",
+                                "value": "howLongShouldThis"
                             },
                             {
                                 "name": "arg1",
@@ -750,14 +1015,11 @@
                             }
                         ]
                     }
-                },
-                "cached": {
-                    "actors": "host"
                 }
             },
             "saveValueInCache": [
                 {
-                    "name": "tutorial",
+                    "name": "shortGame",
                     "value": {
                         "selector": "isTargetGotMajority",
                         "params": [
@@ -768,8 +1030,95 @@
                             },
                             {
                                 "name": "target",
+                                "type": "cached",
+                                "value": "shortFullTargets.0"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "maxRounds",
+                    "value": {
+                        "selector": "ifElse",
+                        "params": [
+                            {
+                                "name": "condition",
+                                "type": "cached",
+                                "value": "shortGame"
+                            },
+                            {
+                                "name": "thenValue",
                                 "type": "preset",
-                                "value": "Yes Please!"
+                                "value": 5
+                            },
+                            {
+                                "name": "elseValue",
+                                "type": "preset",
+                                "value": 8
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "stonePerPlayer",
+                    "value": {
+                        "selector": "ifElse",
+                        "params": [
+                            {
+                                "name": "condition",
+                                "type": "cached",
+                                "value": "shortGame"
+                            },
+                            {
+                                "name": "thenValue",
+                                "type": "preset",
+                                "value": 2
+                            },
+                            {
+                                "name": "elseValue",
+                                "type": "preset",
+                                "value": 3
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "snowPerPlayer",
+                    "value": {
+                        "selector": "ifElse",
+                        "params": [
+                            {
+                                "name": "condition",
+                                "type": "cached",
+                                "value": "shortGame"
+                            },
+                            {
+                                "name": "thenValue",
+                                "type": "preset",
+                                "value": 3
+                            },
+                            {
+                                "name": "elseValue",
+                                "type": "preset",
+                                "value": 5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "totalStones",
+                    "value": {
+                        "selector": "multiply",
+                        "params": [
+                            {
+                                "name": "arg1",
+                                "type": "cached",
+                                "value": "numPlayers"
+                            },
+                            {
+                                "name": "arg2",
+                                "type": "cached",
+                                "value": "stonePerPlayer"
                             }
                         ]
                     }
@@ -1030,11 +1379,11 @@
             "payload": {
                 "preset": {
                     "deck": "stoneball_stone",
-                    "sortBy": "type",
-                    "qnt": 3
+                    "sortBy": "type"
                 },
                 "cached": {
-                    "targets": "players"
+                    "targets": "players",
+                    "qnt": "stonePerPlayer"
                 }
             }
         },
@@ -1043,11 +1392,11 @@
             "payload": {
                 "preset": {
                     "deck": "stoneball_snow",
-                    "sortBy": "type",
-                    "qnt": 5
+                    "sortBy": "type"
                 },
                 "cached": {
-                    "targets": "players"
+                    "targets": "players",
+                    "qnt": "snowPerPlayer"
                 }
             }
         },
@@ -1060,11 +1409,14 @@
                     "percent": 30
                 }
             }
+        },
+        {
+            "key": "showAllPlayersHands"
         }
     ],
     "gameLoop": [
         {
-            "name": "Tutorial Part 1",
+            "name": "Tutorial",
             "skipCondition": [
                 {
                     "selector": "logicalNOT",
@@ -1079,33 +1431,16 @@
             ],
             "actions": [
                 {
-                    "key": "createConfirmation",
+                    "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "header": "Are you ready for the tutorial?",
-                            "text": "Once enough people click Ready, the tutorial will start!",
-                            "passCriterion": "majority",
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
+                            "image": "banner",
+                            "duration": 12
                         },
                         "cached": {
-                            "actors": "players"
-                        }
-                    }
-                },
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.st1"
-                            ]
-                        },
-                        "computed": {
-                            "playList.1": {
-                                "selector": "allUsers"
-                            }
+                            "to": "learners",
+                            "header": "welcomeToStoneball",
+                            "text": "competeInSnowballFights"
                         }
                     }
                 },
@@ -1113,34 +1448,13 @@
                     "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "header": "Chocolates are worth points",
-                            "duration": 5,
-                            "images": [
-                                "chocolate",
-                                "chocolate_10",
-                                "chocolate_20"
-                            ],
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
+                            "image": "marshmallow",
+                            "duration": 12
                         },
                         "cached": {
-                            "to": "players"
-                        }
-                    }
-                },
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.st2"
-                            ]
-                        },
-                        "computed": {
-                            "playList.1": {
-                                "selector": "allUsers"
-                            }
+                            "to": "learners",
+                            "header": "itemsArePoints",
+                            "text": "everyItemYouClaim"
                         }
                     }
                 },
@@ -1148,35 +1462,13 @@
                     "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "header": "Marshmallows are worth points",
-                            "duration": 7,
-                            "images": [
-                                "marshmallow",
-                                "marshmallow_5",
-                                "marshmallow_10"
-                            ],
-                            "text": "And the player with the most marshmallow cards at the end of the game gets a <b>40 point bonus</b>!",
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
+                            "image": "stoneball",
+                            "duration": 12
                         },
                         "cached": {
-                            "to": "players"
-                        }
-                    }
-                },
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.st3"
-                            ]
-                        },
-                        "computed": {
-                            "playList.1": {
-                                "selector": "allUsers"
-                            }
+                            "to": "learners",
+                            "header": "loadYourThrow",
+                            "text": "eachRoundYouSecretly"
                         }
                     }
                 },
@@ -1184,95 +1476,66 @@
                     "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "header": "Mugs are worth points",
-                            "duration": 9,
-                            "images": [
-                                "mug",
-                                "mug_points"
-                            ],
-                            "text": "You can find this information again in the <b>Cheatsheet</b> in the bottom-left of your screen.",
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
+                            "image": "snow_queen",
+                            "duration": 12
                         },
                         "cached": {
-                            "to": "players"
+                            "to": "learners",
+                            "header": "takeAim",
+                            "text": "everyoneAimsAtAnother"
                         }
                     }
                 },
                 {
-                    "key": "emptyAction",
+                    "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "delay.1000",
-                                "voices.st4"
-                            ]
-                        },
-                        "computed": {
-                            "playList.0": {
-                                "selector": "allUsers"
-                            }
-                        }
-                    }
-                },
-                {
-                    "key": "showAllPlayersHands"
-                },
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "delay.1000",
-                                "voices.st5",
-                                "delay.1000",
-                                "voices.st6"
-                            ]
-                        },
-                        "computed": {
-                            "playList.0": {
-                                "selector": "allUsers"
-                            }
-                        }
-                    }
-                },
-                {
-                    "key": "animateBox",
-                    "payload": {
-                        "preset": {
-                            "animation": "snow_queen"
+                            "image": "snowball",
+                            "duration": 12
                         },
                         "cached": {
-                            "userIds": "snowQueen"
+                            "to": "learners",
+                            "header": "stayInTheFight2",
+                            "text": "onceTargetsAreFinal"
                         }
                     }
                 },
                 {
-                    "key": "emptyAction",
+                    "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "delay": 1
-                        }
-                    }
-                },
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "delay.1000",
-                                "voices.st7"
-                            ]
+                            "image": "full_health",
+                            "duration": 12
                         },
-                        "computed": {
-                            "playList.0": {
-                                "selector": "allUsers"
-                            }
+                        "cached": {
+                            "to": "learners",
+                            "header": "mindYourInjuries",
+                            "text": "getHitByA"
                         }
                     }
+                },
+                {
+                    "key": "createNotification",
+                    "payload": {
+                        "preset": {
+                            "image": "heal_once",
+                            "duration": 12
+                        },
+                        "cached": {
+                            "to": "learners",
+                            "header": "claimTheLoot",
+                            "text": "survivorsWhoWerenT"
+                        }
+                    }
+                },
+                {
+                    "key": "emptyAction",
+                    "saveValueInCache": [
+                        {
+                            "name": "tutorial",
+                            "value": false
+                        }
+                    ]
                 }
             ]
         },
@@ -1365,9 +1628,7 @@
                     },
                     "payload": {
                         "preset": {
-                            "duration": 8,
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
+                            "duration": 8
                         },
                         "cached": {
                             "to": "players"
@@ -1378,13 +1639,18 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "Round ($1) of 8!"
+                                        "type": "cached",
+                                        "value": "roundOf"
                                     },
                                     {
                                         "name": "arg1",
                                         "type": "cached",
                                         "value": "round"
+                                    },
+                                    {
+                                        "name": "arg2",
+                                        "type": "cached",
+                                        "value": "maxRounds"
                                     }
                                 ]
                             },
@@ -1393,8 +1659,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "<b>($1)</b> of the <b>($2)</b> possible stoneballs have been used.<br/><br/>Get ready to <b>play a snowball</b> after you see the items..."
+                                        "type": "cached",
+                                        "value": "ofThePossibleStoneballs"
                                     },
                                     {
                                         "name": "arg1",
@@ -1653,39 +1919,6 @@
             ]
         },
         {
-            "name": "Tutorial Part 2",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "tutorial"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.st8"
-                            ]
-                        },
-                        "computed": {
-                            "playList.1": {
-                                "selector": "allUsers"
-                            }
-                        }
-                    }
-                }
-            ]
-        },
-        {
             "name": "Prepare snowball",
             "parallel": {
                 "type": "smart",
@@ -1912,39 +2145,6 @@
             ]
         },
         {
-            "name": "Tutorial Part 3",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "tutorial"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.st9"
-                            ]
-                        },
-                        "computed": {
-                            "playList.1": {
-                                "selector": "allUsers"
-                            }
-                        }
-                    }
-                }
-            ]
-        },
-        {
             "name": "Prepare target",
             "actions": [
                 {
@@ -1959,7 +2159,6 @@
                     "key": "createVote",
                     "payload": {
                         "preset": {
-                            "title": "Choose target",
                             "type": "target_point",
                             "terminationCondition": "get_all_votes",
                             "showResultInRealTime": false,
@@ -1967,19 +2166,18 @@
                             "showResultDelay": 0,
                             "oneClick": true,
                             "allowRevoting": true,
-                            "question": "Who will you throw your snowball at?",
                             "duration": 25,
                             "sounds.waitForSoundEnd": true,
                             "sounds.list": [
                                 "soundboard.reminder"
-                            ],
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
+                            ]
                         },
                         "cached": {
                             "actors": "players",
                             "targets": "players",
-                            "playList.1": "players"
+                            "playList.1": "players",
+                            "title": "chooseTarget",
+                            "question": "whoWillYouThrow"
                         }
                     },
                     "saveValueInCache": [
@@ -2088,8 +2286,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "Stoneball, Fight #($1)"
+                                        "type": "cached",
+                                        "value": "stoneballFight"
                                     },
                                     {
                                         "name": "arg1",
@@ -2106,39 +2304,6 @@
                     "payload": {
                         "preset": {
                             "delay": 2
-                        }
-                    }
-                }
-            ]
-        },
-        {
-            "name": "Tutorial Part 4",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "tutorial"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.st10"
-                            ]
-                        },
-                        "computed": {
-                            "playList.1": {
-                                "selector": "allUsers"
-                            }
                         }
                     }
                 }
@@ -2396,39 +2561,6 @@
             ]
         },
         {
-            "name": "Tutorial Part 5",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "tutorial"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.st11"
-                            ]
-                        },
-                        "computed": {
-                            "playList.1": {
-                                "selector": "allUsers"
-                            }
-                        }
-                    }
-                }
-            ]
-        },
-        {
             "name": "Ask Snow Queen",
             "skipCondition": [
                 {
@@ -2447,7 +2579,6 @@
                     "key": "createVote",
                     "payload": {
                         "preset": {
-                            "title": "Choose target",
                             "type": "target_point",
                             "terminationCondition": "get_all_votes",
                             "showResultInRealTime": true,
@@ -2459,13 +2590,12 @@
                             "sounds.waitForSoundEnd": true,
                             "sounds.list": [
                                 "soundboard.reminder"
-                            ],
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
+                            ]
                         },
                         "cached": {
                             "actors": "snowQueen",
-                            "playList.1": "snowQueen"
+                            "playList.1": "snowQueen",
+                            "title": "chooseTarget"
                         },
                         "computed": {
                             "question": {
@@ -2473,8 +2603,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1), you are the Snow Queen. Click on someone aiming at you to make them change their target!"
+                                        "type": "cached",
+                                        "value": "youAreTheSnow"
                                     },
                                     {
                                         "name": "arg1",
@@ -2660,7 +2790,6 @@
                     "key": "createVote",
                     "payload": {
                         "preset": {
-                            "title": "Choose new target",
                             "type": "target_point",
                             "terminationCondition": "get_all_votes",
                             "showResultInRealTime": true,
@@ -2671,14 +2800,13 @@
                             "sounds.waitForSoundEnd": true,
                             "sounds.list": [
                                 "soundboard.reminder"
-                            ],
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
+                            ]
                         },
                         "cached": {
                             "actors": "changedVoter",
                             "targets": "changedVoterTargets",
-                            "playList.1": "changedVoter"
+                            "playList.1": "changedVoter",
+                            "title": "chooseNewTarget"
                         },
                         "computed": {
                             "question": {
@@ -2686,8 +2814,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1), change your target!"
+                                        "type": "cached",
+                                        "value": "changeYourTarget"
                                     },
                                     {
                                         "name": "arg1",
@@ -2851,102 +2979,30 @@
             ]
         },
         {
-            "name": "Tutorial Part 6",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "tutorial"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "delay.1000",
-                                "voices.st12"
-                            ]
-                        },
-                        "computed": {
-                            "playList.0": {
-                                "selector": "allUsers"
-                            }
-                        }
-                    }
-                },
-                {
-                    "key": "createNotification",
-                    "payload": {
-                        "preset": {
-                            "header": "The snowball fight!",
-                            "duration": 15,
-                            "images": [
-                                "stoneball"
-                            ],
-                            "text": "If you <b>run away</b>, you cannot earn any items this round.<br>If you <b>stay in the fight</b> AND you get hit with at least one <b>stoneball</b>, you get injured and cannot earn any items this round.<br><br>The <b>only</b> way to earn items is to stay in the fight and hope that no stoneballs are coming your way. Be brave!",
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
-                        },
-                        "cached": {
-                            "to": "players"
-                        }
-                    }
-                }
-            ]
-        },
-        {
             "name": "Stay in the fight?",
             "actions": [
                 {
                     "key": "createVote",
                     "payload": {
                         "preset": {
-                            "title": "Stay in the fight?",
-                            "question": "The targets are final. Would you like to stay in the fight?",
                             "type": "target_poll",
                             "terminationCondition": "get_all_votes",
                             "showResultInRealTime": false,
                             "showResultDuration": 2,
                             "showResult": true,
                             "duration": 20,
-                            "targets": [
-                                "BRING IT ON",
-                                "Run Away!"
-                            ],
-                            "pollVoteTargetsOptions": {
-                                "BRING IT ON": {
-                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/snowman.svg",
-                                    "backgroundColor": "#D3D3D3",
-                                    "boxIconColor": "black",
-                                    "textColor": "black",
-                                    "widgetIconColor": "green"
-                                },
-                                "Run Away!": {
-                                    "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/run_away.svg",
-                                    "backgroundColor": "#D3D3D3",
-                                    "boxIconColor": "black",
-                                    "textColor": "black",
-                                    "widgetIconColor": "red"
-                                }
-                            },
                             "sounds.waitForSoundEnd": true,
                             "sounds.list": [
                                 "soundboard.reminder"
-                            ],
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
+                            ]
                         },
                         "cached": {
                             "actors": "players",
-                            "playList.1": "players"
+                            "playList.1": "players",
+                            "title": "stayInTheFight",
+                            "question": "theTargetsAreFinal",
+                            "targets": "bringITONRunTargets",
+                            "pollVoteTargetsOptions": "bringITONRunOptions"
                         }
                     },
                     "saveValueInCache": [
@@ -2992,8 +3048,8 @@
                                                             },
                                                             {
                                                                 "name": "value",
-                                                                "type": "preset",
-                                                                "value": "BRING IT ON"
+                                                                "type": "cached",
+                                                                "value": "bringITONRunTargets.0"
                                                             },
                                                             {
                                                                 "name": "defaultValue",
@@ -3016,8 +3072,8 @@
                                                             },
                                                             {
                                                                 "name": "value",
-                                                                "type": "preset",
-                                                                "value": "Run Away!"
+                                                                "type": "cached",
+                                                                "value": "bringITONRunTargets.1"
                                                             },
                                                             {
                                                                 "name": "defaultValue",
@@ -3098,8 +3154,8 @@
                                                 },
                                                 {
                                                     "name": "value",
-                                                    "type": "preset",
-                                                    "value": "BRING IT ON"
+                                                    "type": "cached",
+                                                    "value": "bringITONRunTargets.0"
                                                 },
                                                 {
                                                     "name": "defaultValue",
@@ -3502,58 +3558,6 @@
             ]
         },
         {
-            "name": "Tutorial Part 7",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "tutorial"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.st12a"
-                            ]
-                        },
-                        "computed": {
-                            "playList.1": {
-                                "selector": "allUsers"
-                            }
-                        }
-                    }
-                },
-                {
-                    "key": "animateBox",
-                    "payload": {
-                        "preset": {
-                            "animation": "snowman"
-                        },
-                        "cached": {
-                            "userIds": "staying"
-                        }
-                    }
-                },
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "delay": 1
-                        }
-                    }
-                }
-            ]
-        },
-        {
             "name": "Remove snowballs thrown at people who left the fight",
             "parallel": {
                 "type": "smart",
@@ -3807,14 +3811,12 @@
                     "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "duration": 5,
-                            "header": "SNOWBALL FIGHT!",
-                            "text": "If you're still in the fight, let's put you in the center!",
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
+                            "duration": 5
                         },
                         "cached": {
-                            "to": "players"
+                            "to": "players",
+                            "header": "snowballFIGHT",
+                            "text": "ifYouReStill"
                         }
                     }
                 },
@@ -3844,39 +3846,6 @@
                     "payload": {
                         "preset": {
                             "delay": 2
-                        }
-                    }
-                }
-            ]
-        },
-        {
-            "name": "Tutorial Part 8",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "tutorial"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.st13"
-                            ]
-                        },
-                        "computed": {
-                            "playList.1": {
-                                "selector": "allUsers"
-                            }
                         }
                     }
                 }
@@ -4597,39 +4566,6 @@
             }
         ],
         {
-            "name": "Tutorial Part 9",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "tutorial"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.st14"
-                            ]
-                        },
-                        "computed": {
-                            "playList.1": {
-                                "selector": "allUsers"
-                            }
-                        }
-                    }
-                }
-            ]
-        },
-        {
             "name": "Remove hit players, show cards",
             "actions": [
                 {
@@ -5021,8 +4957,8 @@
                             },
                             {
                                 "name": "arg2",
-                                "type": "preset",
-                                "value": 8
+                                "type": "cached",
+                                "value": "maxRounds"
                             }
                         ]
                     },
@@ -5033,8 +4969,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "Stoneball, End of Game"
+                                        "type": "cached",
+                                        "value": "stoneballEndOfGame"
                                     },
                                     {
                                         "name": "arg1",
@@ -5052,16 +4988,21 @@
             "name": "Change layout for loot",
             "skipCondition": [
                 {
-                    "selector": "logicalAND",
+                    "selector": "getCachedValue",
                     "params": [
                         {
-                            "name": "arg1",
-                            "type": "cached",
+                            "name": "name",
+                            "type": "preset",
                             "value": "noLootTakers"
-                        },
+                        }
+                    ]
+                },
+                {
+                    "selector": "getCachedValue",
+                    "params": [
                         {
-                            "name": "arg2",
-                            "type": "cached",
+                            "name": "name",
+                            "type": "preset",
                             "value": "tutorial"
                         }
                     ]
@@ -5080,14 +5021,12 @@
                     "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "duration": 5,
-                            "header": "Time to share the items!",
-                            "text": "The victors will take turns claiming the items in the center!",
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
+                            "duration": 5
                         },
                         "cached": {
-                            "to": "players"
+                            "to": "players",
+                            "header": "timeToShareThe",
+                            "text": "theVictorsWillTake"
                         }
                     }
                 },
@@ -5232,13 +5171,11 @@
                     "payload": {
                         "preset": {
                             "duration": 5,
-                            "text": "No need to click anything - the game will speed through this.",
-                            "image": "aggressive",
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
+                            "image": "aggressive"
                         },
                         "cached": {
-                            "to": "players"
+                            "to": "players",
+                            "text": "noNeedToClick"
                         },
                         "computed": {
                             "header": {
@@ -5246,8 +5183,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1) gets all the items!"
+                                        "type": "cached",
+                                        "value": "getsAllTheItems"
                                     },
                                     {
                                         "name": "arg1",
@@ -5273,127 +5210,6 @@
                     "payload": {
                         "preset": {
                             "delay": 1
-                        }
-                    }
-                }
-            ]
-        },
-        {
-            "name": "Tutorial Part 10",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "tutorial"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.st15"
-                            ]
-                        },
-                        "computed": {
-                            "playList.1": {
-                                "selector": "allUsers"
-                            }
-                        }
-                    }
-                },
-                {
-                    "key": "createNotification",
-                    "payload": {
-                        "preset": {
-                            "header": "In a real game...",
-                            "duration": 8,
-                            "images": [
-                                "chocolate",
-                                "marshmallow",
-                                "mug"
-                            ],
-                            "text": "... the victors in the snowball fight will take turns clicking on items from the center to claim them, until all the items are gone.",
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
-                        },
-                        "cached": {
-                            "to": "players"
-                        }
-                    }
-                },
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.st15a"
-                            ]
-                        },
-                        "computed": {
-                            "playList.1": {
-                                "selector": "allUsers"
-                            }
-                        }
-                    }
-                },
-                {
-                    "key": "createNotification",
-                    "payload": {
-                        "preset": {
-                            "header": "Special cards",
-                            "duration": 15,
-                            "images": [
-                                "heal_once",
-                                "full_health",
-                                "snow_queen",
-                                "stoneball_card"
-                            ],
-                            "text": "<b>Heal Once</b>: remove one injury<br/><b>Full Health</b>: back to 0 injuries<br/><b>Snow Queen</b>: become the Snow Queen next round<br/><b>Stoneball</b>: get an extra stoneball!<br/><br/><b>Every round</b> there is a Snow Queen card up for grabs.",
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
-                        },
-                        "cached": {
-                            "to": "players"
-                        }
-                    }
-                },
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.st16"
-                            ]
-                        },
-                        "computed": {
-                            "playList.1": {
-                                "selector": "allUsers"
-                            }
-                        }
-                    }
-                },
-                {
-                    "key": "createNotification",
-                    "payload": {
-                        "preset": {
-                            "header": "Injuries",
-                            "duration": 12,
-                            "text": "Your name is color-coded according to your health. You start with <i>full health</i> (<b>green</b>).<br/><br/>After 1 injury, you become <b>orange</b>.</br>After 2 injuries, you become <b>red</b>.<br/>After 3 injuries, you lose half your points and go back to green!",
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
-                        },
-                        "cached": {
-                            "to": "players"
                         }
                     }
                 }
@@ -5625,8 +5441,8 @@
                                     "params": [
                                         {
                                             "name": "format",
-                                            "type": "preset",
-                                            "value": "($1), look at the 9 items. Which one will you take?"
+                                            "type": "cached",
+                                            "value": "lookAtThe9"
                                         },
                                         {
                                             "name": "arg1",
@@ -6125,7 +5941,7 @@
                                                     {
                                                         "name": "value",
                                                         "type": "cached",
-                                                        "value": "current_player"
+                                                        "value": "currentPlayer"
                                                     },
                                                     {
                                                         "name": "defaultValue",
@@ -6583,14 +6399,12 @@
                     "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "duration": 5,
-                            "header": "No-one is left in the snowball fight!",
-                            "text": "All the items this round go to waste.",
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
+                            "duration": 5
                         },
                         "cached": {
-                            "to": "players"
+                            "to": "players",
+                            "header": "noOneIsLeft",
+                            "text": "allTheItemsThis"
                         }
                     }
                 },
@@ -6738,13 +6552,11 @@
                     },
                     "payload": {
                         "preset": {
-                            "duration": 5,
-                            "text": "They lose <b>half their points</b> but are back to full health. Getting hit by 3 stoneballs sure hurts!",
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
+                            "duration": 5
                         },
                         "cached": {
-                            "to": "players"
+                            "to": "players",
+                            "text": "theyLoseHalfTheir"
                         },
                         "computed": {
                             "header": {
@@ -6752,8 +6564,8 @@
                                 "params": [
                                     {
                                         "name": "format",
-                                        "type": "preset",
-                                        "value": "($1) passes out!"
+                                        "type": "cached",
+                                        "value": "passesOut"
                                     },
                                     {
                                         "name": "arg1",
@@ -7113,8 +6925,8 @@
                         },
                         {
                             "name": "arg2",
-                            "type": "preset",
-                            "value": 8
+                            "type": "cached",
+                            "value": "maxRounds"
                         }
                     ]
                 }
@@ -7156,11 +6968,11 @@
                     "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "header": "The Marshmallow bonus goes to...",
                             "image": "marshmallow",
-                            "duration": 8,
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
+                            "duration": 8
+                        },
+                        "cached": {
+                            "header": "theMarshmallowBonusGoes"
                         },
                         "computed": {
                             "to": {
@@ -7182,8 +6994,8 @@
                                             "params": [
                                                 {
                                                     "name": "format",
-                                                    "type": "preset",
-                                                    "value": "... <b>($1)</b>, who collected a total of <b>($2) marshmallow cards</b>!<br/><br/>They get a bonus of <b>40 points</b>."
+                                                    "type": "cached",
+                                                    "value": "whoCollectedATotal"
                                                 },
                                                 {
                                                     "name": "arg1",
@@ -7224,8 +7036,8 @@
                                             "params": [
                                                 {
                                                     "name": "format",
-                                                    "type": "preset",
-                                                    "value": "... <b>no-one</b>!<br/><br/><b>($1)</b> each collected a total of <b>($2) marshmallows</b>, but there was no unique winner."
+                                                    "type": "cached",
+                                                    "value": "noOneEachCollected"
                                                 },
                                                 {
                                                     "name": "arg1",
@@ -7343,189 +7155,6 @@
                 }
             ],
             "checkWinCondition": true
-        },
-        {
-            "name": "Tutorial Part 11",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "tutorial"
-                        }
-                    ]
-                }
-            ],
-            "actions": [
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "sounds.waitForSoundEnd": true,
-                            "sounds.list": [
-                                "voices.st17"
-                            ]
-                        },
-                        "computed": {
-                            "playList.1": {
-                                "selector": "allUsers"
-                            }
-                        }
-                    }
-                },
-                {
-                    "key": "createConfirmation",
-                    "payload": {
-                        "preset": {
-                            "header": "Are you ready to start the game?",
-                            "text": "Once enough people click Ready, the real game will start!",
-                            "passCriterion": "majority",
-                            "backgroundColor": "#b9f2ff",
-                            "borderColor": "black"
-                        },
-                        "computed": {
-                            "actors": {
-                                "selector": "allPlayers"
-                            }
-                        }
-                    }
-                },
-                {
-                    "key": "moveCards",
-                    "payload": {
-                        "preset": {
-                            "type": "deck",
-                            "from": [
-                                "card_0",
-                                "card_1",
-                                "card_2",
-                                "card_3",
-                                "card_4",
-                                "card_5",
-                                "card_6",
-                                "card_7",
-                                "card_8"
-                            ],
-                            "to": "stoneball_loot"
-                        }
-                    }
-                },
-                {
-                    "key": "recallCards",
-                    "payload": {
-                        "preset": {
-                            "deck": "discard"
-                        },
-                        "cached": {
-                            "targets": "players"
-                        }
-                    }
-                },
-                {
-                    "key": "createDeck",
-                    "payload": {
-                        "preset": {
-                            "name": "stoneball_stone",
-                            "set": "stone"
-                        }
-                    }
-                },
-                {
-                    "key": "dealDeck",
-                    "payload": {
-                        "preset": {
-                            "deck": "stoneball_stone",
-                            "sortBy": "type",
-                            "qnt": 3
-                        },
-                        "cached": {
-                            "targets": "players"
-                        }
-                    }
-                },
-                {
-                    "key": "dealDeck",
-                    "payload": {
-                        "preset": {
-                            "deck": "stoneball_snow",
-                            "sortBy": "type",
-                            "qnt": 5
-                        },
-                        "cached": {
-                            "targets": "players"
-                        }
-                    }
-                },
-                {
-                    "key": "createDeck",
-                    "payload": {
-                        "preset": {
-                            "name": "stoneball_snow",
-                            "set": "snow"
-                        }
-                    }
-                },
-                {
-                    "key": "shuffleDeck",
-                    "payload": {
-                        "preset": {
-                            "deck": "stoneball_loot"
-                        }
-                    }
-                },
-                {
-                    "key": "emptyAction",
-                    "payload": {
-                        "preset": {
-                            "delay": 1
-                        }
-                    },
-                    "saveValueInCache": [
-                        {
-                            "name": "tutorial",
-                            "value": false
-                        },
-                        {
-                            "name": "round",
-                            "value": 1
-                        },
-                        {
-                            "name": "fakeTeams",
-                            "value": {
-                                "selector": "createDict",
-                                "params": [
-                                    {
-                                        "name": "keys",
-                                        "type": "cached",
-                                        "value": "players"
-                                    },
-                                    {
-                                        "name": "values",
-                                        "type": "computed",
-                                        "value": {
-                                            "selector": "createItemList",
-                                            "params": [
-                                                {
-                                                    "name": "length",
-                                                    "type": "cached",
-                                                    "value": "numPlayers"
-                                                },
-                                                {
-                                                    "name": "item",
-                                                    "type": "preset",
-                                                    "value": "all"
-                                                }
-                                            ]
-                                        }
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                }
-            ]
         }
     ],
     "playersWinCondition": {
@@ -7539,8 +7168,8 @@
                 },
                 {
                     "name": "arg2",
-                    "type": "preset",
-                    "value": 8
+                    "type": "cached",
+                    "value": "maxRounds"
                 }
             ]
         },
@@ -7562,9 +7191,7 @@
             "key": "createNotification",
             "payload": {
                 "preset": {
-                    "image": "winner",
-                    "backgroundColor": "#b9f2ff",
-                    "borderColor": "black"
+                    "image": "winner"
                 },
                 "cached": {
                     "to": "players"
@@ -7575,8 +7202,8 @@
                         "params": [
                             {
                                 "name": "format",
-                                "type": "preset",
-                                "value": "($1) ($2)!"
+                                "type": "cached",
+                                "value": "fmtLine15"
                             },
                             {
                                 "name": "arg1",
@@ -7621,13 +7248,13 @@
                                         },
                                         {
                                             "name": "thenValue",
-                                            "type": "preset",
-                                            "value": "wins"
+                                            "type": "cached",
+                                            "value": "winsLabel"
                                         },
                                         {
                                             "name": "elseValue",
-                                            "type": "preset",
-                                            "value": "share the win"
+                                            "type": "cached",
+                                            "value": "shareWinLabel"
                                         }
                                     ]
                                 }

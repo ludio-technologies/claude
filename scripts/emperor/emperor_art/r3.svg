@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 700" width="500" height="700">
+<rect width="500" height="700" rx="36" fill="#43194E"/>
+<rect x="8" y="8" width="484" height="684" rx="30" fill="#6B277D"/>
+<rect x="30" y="30" width="440" height="640" rx="18" fill="#F6F1E7"/>
+
+<text x="250.0" y="330" text-anchor="middle" font-family="Georgia, serif"
+      font-size="230" font-weight="bold" fill="#6B277D">3</text>
+<text x="250.0" y="408" text-anchor="middle" font-family="Georgia, serif"
+      font-size="44" fill="#2B2417">Earl Marshal</text>
+<path d="M140 440 H360" stroke="#BA7ECA" stroke-width="4" stroke-linecap="round"/>
+<circle cx="216.0" cy="500.0" r="9" fill="#6B277D"/><circle cx="250.0" cy="500.0" r="9" fill="#6B277D"/><circle cx="284.0" cy="500.0" r="9" fill="#6B277D"/>
+<text x="250.0" y="612" text-anchor="middle" font-family="Georgia, serif"
+      font-size="26" fill="#2B2417" opacity="0.6">3 in the deck</text>
+<text x="66" y="98" text-anchor="middle" font-family="Georgia, serif"
+      font-size="46" font-weight="bold" fill="#6B277D">3</text>
+<g transform="rotate(180 434 602)"><text x="434" y="602"
+      text-anchor="middle" font-family="Georgia, serif" font-size="46"
+      font-weight="bold" fill="#6B277D">3</text></g>
+</svg>

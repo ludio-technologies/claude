@@ -1,0 +1,6202 @@
+{
+ "gameInitOptions": {
+  "useDefaultRoles": true,
+  "roleConfirmation": false,
+  "allowSpectatorBecomePlayer": false,
+  "allowPlayerBecomeSpectator": false,
+  "notChangeLayoutAfterGame": true,
+  "minPlayers": 2,
+  "maxPlayers": 2,
+  "preferredPlayersQnt": [
+   2
+  ],
+  "time": 20,
+  "teams": {
+   "blue": {
+    "id": "blue",
+    "name": "Blue",
+    "description": "Blue starts in the bottom-left corner",
+    "color": "#2E5BA8",
+    "roles": [
+     "blue_player"
+    ]
+   },
+   "red": {
+    "id": "red",
+    "name": "Red",
+    "description": "Red starts in the top-right corner",
+    "color": "#D83232",
+    "roles": [
+     "red_player"
+    ]
+   },
+   "all": {
+    "id": "all",
+    "name": "All",
+    "description": "All players",
+    "color": "#666666",
+    "roles": [
+     "player"
+    ]
+   }
+  },
+  "roles": [
+   {
+    "roleInfo": {
+     "id": "player",
+     "name": "Player",
+     "description": "Rock, paper, scissors as a board game.",
+     "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
+     "team": "all",
+     "prefix": "a "
+    },
+    "isDefaultRole": true,
+    "isRequired": false
+   },
+   {
+    "roleInfo": {
+     "id": "blue_player",
+     "name": "Blue",
+     "description": "You are Blue. Your corner is A1; reach I9 to win.",
+     "avatar": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_R.png",
+     "team": "blue",
+     "prefix": ""
+    },
+    "isDefaultRole": false,
+    "isRequired": false
+   },
+   {
+    "roleInfo": {
+     "id": "red_player",
+     "name": "Red",
+     "description": "You are Red. Your corner is I9; reach A1 to win.",
+     "avatar": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_R.png",
+     "team": "red",
+     "prefix": ""
+    },
+    "isDefaultRole": false,
+    "isRequired": false
+   }
+  ],
+  "rolesPreset": {},
+  "images": {
+   "piece_blue_R": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_R.png"
+   },
+   "piece_blue_P": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_P.png"
+   },
+   "piece_blue_S": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_S.png"
+   },
+   "piece_red_R": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_R.png"
+   },
+   "piece_red_P": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_P.png"
+   },
+   "piece_red_S": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_S.png"
+   },
+   "cell": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/cell.png"
+   },
+   "cell_home_blue": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/cell_home_blue.png"
+   },
+   "cell_home_red": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/cell_home_red.png"
+   },
+   "banner": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/banner.png"
+   },
+   "wallpaper": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/wallpaper.png"
+   },
+   "board_bg": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/board_bg.png"
+   },
+   "winner": {
+    "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/winner.png"
+   },
+   "capture": {
+    "url": "https://res.cloudinary.com/liars-club/video/upload/audio/intransitive/capture.mp3"
+   },
+   "capture_R": {
+    "url": "https://res.cloudinary.com/liars-club/video/upload/audio/intransitive/capture_R.mp3"
+   },
+   "capture_P": {
+    "url": "https://res.cloudinary.com/liars-club/video/upload/audio/intransitive/capture_P.mp3"
+   },
+   "capture_S": {
+    "url": "https://res.cloudinary.com/liars-club/video/upload/audio/intransitive/capture_S.mp3"
+   },
+   "move": {
+    "url": "https://res.cloudinary.com/liars-club/video/upload/audio/intransitive/move.mp3"
+   }
+  },
+  "animations": {},
+  "soundboard": {
+   "default": {
+    "capture_R": "https://res.cloudinary.com/liars-club/video/upload/audio/intransitive/capture_R.mp3",
+    "capture_P": "https://res.cloudinary.com/liars-club/video/upload/audio/intransitive/capture_P.mp3",
+    "capture_S": "https://res.cloudinary.com/liars-club/video/upload/audio/intransitive/capture_S.mp3",
+    "move": "https://res.cloudinary.com/liars-club/video/upload/audio/intransitive/move.mp3"
+   }
+  }
+ },
+ "visualSettings": {
+  "isCardAnimationsOff": true
+ },
+ "beforeLoopActions": [
+  {
+   "key": "changeBackground",
+   "payload": {
+    "preset": {
+     "image": "wallpaper"
+    }
+   }
+  },
+  {
+   "key": "emptyAction",
+   "saveValueInCache": [
+    {
+     "name": "clockTable",
+     "value": {
+      "No clock": 0,
+      "5 minutes each": 300,
+      "10 minutes each": 600
+     }
+    }
+   ]
+  },
+  {
+   "key": "createDeck",
+   "payload": {
+    "preset": {
+     "name": "intransitive_cards",
+     "set": "pieces",
+     "customName": "piece_pool"
+    }
+   }
+  },
+  {
+   "key": "emptyAction",
+   "saveValueInCache": [
+    {
+     "name": "cells",
+     "value": [
+      "A1",
+      "B1",
+      "C1",
+      "D1",
+      "E1",
+      "F1",
+      "G1",
+      "H1",
+      "I1",
+      "A2",
+      "B2",
+      "C2",
+      "D2",
+      "E2",
+      "F2",
+      "G2",
+      "H2",
+      "I2",
+      "A3",
+      "B3",
+      "C3",
+      "D3",
+      "E3",
+      "F3",
+      "G3",
+      "H3",
+      "I3",
+      "A4",
+      "B4",
+      "C4",
+      "D4",
+      "E4",
+      "F4",
+      "G4",
+      "H4",
+      "I4",
+      "A5",
+      "B5",
+      "C5",
+      "D5",
+      "E5",
+      "F5",
+      "G5",
+      "H5",
+      "I5",
+      "A6",
+      "B6",
+      "C6",
+      "D6",
+      "E6",
+      "F6",
+      "G6",
+      "H6",
+      "I6",
+      "A7",
+      "B7",
+      "C7",
+      "D7",
+      "E7",
+      "F7",
+      "G7",
+      "H7",
+      "I7",
+      "A8",
+      "B8",
+      "C8",
+      "D8",
+      "E8",
+      "F8",
+      "G8",
+      "H8",
+      "I8",
+      "A9",
+      "B9",
+      "C9",
+      "D9",
+      "E9",
+      "F9",
+      "G9",
+      "H9",
+      "I9"
+     ]
+    },
+    {
+     "name": "neighbors",
+     "value": {
+      "A1": [
+       "A2",
+       "B1",
+       "B2"
+      ],
+      "A2": [
+       "A1",
+       "A3",
+       "B1",
+       "B2",
+       "B3"
+      ],
+      "A3": [
+       "A2",
+       "A4",
+       "B2",
+       "B3",
+       "B4"
+      ],
+      "A4": [
+       "A3",
+       "A5",
+       "B3",
+       "B4",
+       "B5"
+      ],
+      "A5": [
+       "A4",
+       "A6",
+       "B4",
+       "B5",
+       "B6"
+      ],
+      "A6": [
+       "A5",
+       "A7",
+       "B5",
+       "B6",
+       "B7"
+      ],
+      "A7": [
+       "A6",
+       "A8",
+       "B6",
+       "B7",
+       "B8"
+      ],
+      "A8": [
+       "A7",
+       "A9",
+       "B7",
+       "B8",
+       "B9"
+      ],
+      "A9": [
+       "A8",
+       "B8",
+       "B9"
+      ],
+      "B1": [
+       "A1",
+       "A2",
+       "B2",
+       "C1",
+       "C2"
+      ],
+      "B2": [
+       "A1",
+       "A2",
+       "A3",
+       "B1",
+       "B3",
+       "C1",
+       "C2",
+       "C3"
+      ],
+      "B3": [
+       "A2",
+       "A3",
+       "A4",
+       "B2",
+       "B4",
+       "C2",
+       "C3",
+       "C4"
+      ],
+      "B4": [
+       "A3",
+       "A4",
+       "A5",
+       "B3",
+       "B5",
+       "C3",
+       "C4",
+       "C5"
+      ],
+      "B5": [
+       "A4",
+       "A5",
+       "A6",
+       "B4",
+       "B6",
+       "C4",
+       "C5",
+       "C6"
+      ],
+      "B6": [
+       "A5",
+       "A6",
+       "A7",
+       "B5",
+       "B7",
+       "C5",
+       "C6",
+       "C7"
+      ],
+      "B7": [
+       "A6",
+       "A7",
+       "A8",
+       "B6",
+       "B8",
+       "C6",
+       "C7",
+       "C8"
+      ],
+      "B8": [
+       "A7",
+       "A8",
+       "A9",
+       "B7",
+       "B9",
+       "C7",
+       "C8",
+       "C9"
+      ],
+      "B9": [
+       "A8",
+       "A9",
+       "B8",
+       "C8",
+       "C9"
+      ],
+      "C1": [
+       "B1",
+       "B2",
+       "C2",
+       "D1",
+       "D2"
+      ],
+      "C2": [
+       "B1",
+       "B2",
+       "B3",
+       "C1",
+       "C3",
+       "D1",
+       "D2",
+       "D3"
+      ],
+      "C3": [
+       "B2",
+       "B3",
+       "B4",
+       "C2",
+       "C4",
+       "D2",
+       "D3",
+       "D4"
+      ],
+      "C4": [
+       "B3",
+       "B4",
+       "B5",
+       "C3",
+       "C5",
+       "D3",
+       "D4",
+       "D5"
+      ],
+      "C5": [
+       "B4",
+       "B5",
+       "B6",
+       "C4",
+       "C6",
+       "D4",
+       "D5",
+       "D6"
+      ],
+      "C6": [
+       "B5",
+       "B6",
+       "B7",
+       "C5",
+       "C7",
+       "D5",
+       "D6",
+       "D7"
+      ],
+      "C7": [
+       "B6",
+       "B7",
+       "B8",
+       "C6",
+       "C8",
+       "D6",
+       "D7",
+       "D8"
+      ],
+      "C8": [
+       "B7",
+       "B8",
+       "B9",
+       "C7",
+       "C9",
+       "D7",
+       "D8",
+       "D9"
+      ],
+      "C9": [
+       "B8",
+       "B9",
+       "C8",
+       "D8",
+       "D9"
+      ],
+      "D1": [
+       "C1",
+       "C2",
+       "D2",
+       "E1",
+       "E2"
+      ],
+      "D2": [
+       "C1",
+       "C2",
+       "C3",
+       "D1",
+       "D3",
+       "E1",
+       "E2",
+       "E3"
+      ],
+      "D3": [
+       "C2",
+       "C3",
+       "C4",
+       "D2",
+       "D4",
+       "E2",
+       "E3",
+       "E4"
+      ],
+      "D4": [
+       "C3",
+       "C4",
+       "C5",
+       "D3",
+       "D5",
+       "E3",
+       "E4",
+       "E5"
+      ],
+      "D5": [
+       "C4",
+       "C5",
+       "C6",
+       "D4",
+       "D6",
+       "E4",
+       "E5",
+       "E6"
+      ],
+      "D6": [
+       "C5",
+       "C6",
+       "C7",
+       "D5",
+       "D7",
+       "E5",
+       "E6",
+       "E7"
+      ],
+      "D7": [
+       "C6",
+       "C7",
+       "C8",
+       "D6",
+       "D8",
+       "E6",
+       "E7",
+       "E8"
+      ],
+      "D8": [
+       "C7",
+       "C8",
+       "C9",
+       "D7",
+       "D9",
+       "E7",
+       "E8",
+       "E9"
+      ],
+      "D9": [
+       "C8",
+       "C9",
+       "D8",
+       "E8",
+       "E9"
+      ],
+      "E1": [
+       "D1",
+       "D2",
+       "E2",
+       "F1",
+       "F2"
+      ],
+      "E2": [
+       "D1",
+       "D2",
+       "D3",
+       "E1",
+       "E3",
+       "F1",
+       "F2",
+       "F3"
+      ],
+      "E3": [
+       "D2",
+       "D3",
+       "D4",
+       "E2",
+       "E4",
+       "F2",
+       "F3",
+       "F4"
+      ],
+      "E4": [
+       "D3",
+       "D4",
+       "D5",
+       "E3",
+       "E5",
+       "F3",
+       "F4",
+       "F5"
+      ],
+      "E5": [
+       "D4",
+       "D5",
+       "D6",
+       "E4",
+       "E6",
+       "F4",
+       "F5",
+       "F6"
+      ],
+      "E6": [
+       "D5",
+       "D6",
+       "D7",
+       "E5",
+       "E7",
+       "F5",
+       "F6",
+       "F7"
+      ],
+      "E7": [
+       "D6",
+       "D7",
+       "D8",
+       "E6",
+       "E8",
+       "F6",
+       "F7",
+       "F8"
+      ],
+      "E8": [
+       "D7",
+       "D8",
+       "D9",
+       "E7",
+       "E9",
+       "F7",
+       "F8",
+       "F9"
+      ],
+      "E9": [
+       "D8",
+       "D9",
+       "E8",
+       "F8",
+       "F9"
+      ],
+      "F1": [
+       "E1",
+       "E2",
+       "F2",
+       "G1",
+       "G2"
+      ],
+      "F2": [
+       "E1",
+       "E2",
+       "E3",
+       "F1",
+       "F3",
+       "G1",
+       "G2",
+       "G3"
+      ],
+      "F3": [
+       "E2",
+       "E3",
+       "E4",
+       "F2",
+       "F4",
+       "G2",
+       "G3",
+       "G4"
+      ],
+      "F4": [
+       "E3",
+       "E4",
+       "E5",
+       "F3",
+       "F5",
+       "G3",
+       "G4",
+       "G5"
+      ],
+      "F5": [
+       "E4",
+       "E5",
+       "E6",
+       "F4",
+       "F6",
+       "G4",
+       "G5",
+       "G6"
+      ],
+      "F6": [
+       "E5",
+       "E6",
+       "E7",
+       "F5",
+       "F7",
+       "G5",
+       "G6",
+       "G7"
+      ],
+      "F7": [
+       "E6",
+       "E7",
+       "E8",
+       "F6",
+       "F8",
+       "G6",
+       "G7",
+       "G8"
+      ],
+      "F8": [
+       "E7",
+       "E8",
+       "E9",
+       "F7",
+       "F9",
+       "G7",
+       "G8",
+       "G9"
+      ],
+      "F9": [
+       "E8",
+       "E9",
+       "F8",
+       "G8",
+       "G9"
+      ],
+      "G1": [
+       "F1",
+       "F2",
+       "G2",
+       "H1",
+       "H2"
+      ],
+      "G2": [
+       "F1",
+       "F2",
+       "F3",
+       "G1",
+       "G3",
+       "H1",
+       "H2",
+       "H3"
+      ],
+      "G3": [
+       "F2",
+       "F3",
+       "F4",
+       "G2",
+       "G4",
+       "H2",
+       "H3",
+       "H4"
+      ],
+      "G4": [
+       "F3",
+       "F4",
+       "F5",
+       "G3",
+       "G5",
+       "H3",
+       "H4",
+       "H5"
+      ],
+      "G5": [
+       "F4",
+       "F5",
+       "F6",
+       "G4",
+       "G6",
+       "H4",
+       "H5",
+       "H6"
+      ],
+      "G6": [
+       "F5",
+       "F6",
+       "F7",
+       "G5",
+       "G7",
+       "H5",
+       "H6",
+       "H7"
+      ],
+      "G7": [
+       "F6",
+       "F7",
+       "F8",
+       "G6",
+       "G8",
+       "H6",
+       "H7",
+       "H8"
+      ],
+      "G8": [
+       "F7",
+       "F8",
+       "F9",
+       "G7",
+       "G9",
+       "H7",
+       "H8",
+       "H9"
+      ],
+      "G9": [
+       "F8",
+       "F9",
+       "G8",
+       "H8",
+       "H9"
+      ],
+      "H1": [
+       "G1",
+       "G2",
+       "H2",
+       "I1",
+       "I2"
+      ],
+      "H2": [
+       "G1",
+       "G2",
+       "G3",
+       "H1",
+       "H3",
+       "I1",
+       "I2",
+       "I3"
+      ],
+      "H3": [
+       "G2",
+       "G3",
+       "G4",
+       "H2",
+       "H4",
+       "I2",
+       "I3",
+       "I4"
+      ],
+      "H4": [
+       "G3",
+       "G4",
+       "G5",
+       "H3",
+       "H5",
+       "I3",
+       "I4",
+       "I5"
+      ],
+      "H5": [
+       "G4",
+       "G5",
+       "G6",
+       "H4",
+       "H6",
+       "I4",
+       "I5",
+       "I6"
+      ],
+      "H6": [
+       "G5",
+       "G6",
+       "G7",
+       "H5",
+       "H7",
+       "I5",
+       "I6",
+       "I7"
+      ],
+      "H7": [
+       "G6",
+       "G7",
+       "G8",
+       "H6",
+       "H8",
+       "I6",
+       "I7",
+       "I8"
+      ],
+      "H8": [
+       "G7",
+       "G8",
+       "G9",
+       "H7",
+       "H9",
+       "I7",
+       "I8",
+       "I9"
+      ],
+      "H9": [
+       "G8",
+       "G9",
+       "H8",
+       "I8",
+       "I9"
+      ],
+      "I1": [
+       "H1",
+       "H2",
+       "I2"
+      ],
+      "I2": [
+       "H1",
+       "H2",
+       "H3",
+       "I1",
+       "I3"
+      ],
+      "I3": [
+       "H2",
+       "H3",
+       "H4",
+       "I2",
+       "I4"
+      ],
+      "I4": [
+       "H3",
+       "H4",
+       "H5",
+       "I3",
+       "I5"
+      ],
+      "I5": [
+       "H4",
+       "H5",
+       "H6",
+       "I4",
+       "I6"
+      ],
+      "I6": [
+       "H5",
+       "H6",
+       "H7",
+       "I5",
+       "I7"
+      ],
+      "I7": [
+       "H6",
+       "H7",
+       "H8",
+       "I6",
+       "I8"
+      ],
+      "I8": [
+       "H7",
+       "H8",
+       "H9",
+       "I7",
+       "I9"
+      ],
+      "I9": [
+       "H8",
+       "H9",
+       "I8"
+      ]
+     }
+    },
+    {
+     "name": "preyOf",
+     "value": {
+      "blueR": "redS",
+      "blueP": "redR",
+      "blueS": "redP",
+      "redR": "blueS",
+      "redP": "blueR",
+      "redS": "blueP"
+     }
+    },
+    {
+     "name": "homeBlue",
+     "value": "A1"
+    },
+    {
+     "name": "homeRed",
+     "value": "I9"
+    },
+    {
+     "name": "startCells",
+     "value": [
+      "B4",
+      "F8",
+      "C3",
+      "G7",
+      "D2",
+      "H6",
+      "B5",
+      "E8",
+      "C4",
+      "F7",
+      "D3",
+      "G6",
+      "E2",
+      "H5",
+      "C5",
+      "E7",
+      "D4",
+      "F6",
+      "E3",
+      "G5"
+     ]
+    },
+    {
+     "name": "startCards",
+     "value": [
+      "blue_R_1",
+      "red_R_1",
+      "blue_R_2",
+      "red_R_2",
+      "blue_R_3",
+      "red_R_3",
+      "blue_P_1",
+      "red_P_1",
+      "blue_P_2",
+      "red_P_2",
+      "blue_P_3",
+      "red_P_3",
+      "blue_P_4",
+      "red_P_4",
+      "blue_S_1",
+      "red_S_1",
+      "blue_S_2",
+      "red_S_2",
+      "blue_S_3",
+      "red_S_3"
+     ]
+    },
+    {
+     "name": "typeNames",
+     "value": {
+      "R": "Rock",
+      "P": "Paper",
+      "S": "Scissors"
+     }
+    },
+    {
+     "name": "teamName",
+     "value": {
+      "blue": "Blue",
+      "red": "Red"
+     }
+    },
+    {
+     "name": "teamEmoji",
+     "value": {
+      "blue": "\ud83d\udd35",
+      "red": "\ud83d\udfe5"
+     }
+    },
+    {
+     "name": "pieceEmoji",
+     "value": {
+      "R": "\ud83e\udea8",
+      "P": "\ud83d\udcc4",
+      "S": "\u2702\ufe0f"
+     }
+    },
+    {
+     "name": "captureSound",
+     "value": {
+      "R": "soundboard.capture_R",
+      "P": "soundboard.capture_P",
+      "S": "soundboard.capture_S"
+     }
+    }
+   ]
+  },
+  {
+   "key": "emptyAction",
+   "saveValueInCache": [
+    {
+     "name": "players",
+     "value": {
+      "selector": "allPlayers",
+      "params": []
+     }
+    },
+    {
+     "name": "numPlayers",
+     "value": {
+      "selector": "listLength",
+      "params": [
+       {
+        "name": "list",
+        "type": "computed",
+        "value": {
+         "selector": "allPlayers",
+         "params": []
+        }
+       }
+      ]
+     }
+    },
+    {
+     "name": "host",
+     "value": {
+      "selector": "ifElse",
+      "params": [
+       {
+        "name": "condition",
+        "type": "computed",
+        "value": {
+         "selector": "contains",
+         "params": [
+          {
+           "name": "list",
+           "type": "cached",
+           "value": "players"
+          },
+          {
+           "name": "element",
+           "type": "computed",
+           "value": {
+            "selector": "getHostPlayerId",
+            "params": []
+           }
+          }
+         ]
+        }
+       },
+       {
+        "name": "thenValue",
+        "type": "computed",
+        "value": {
+         "selector": "createList",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "computed",
+           "value": {
+            "selector": "getHostPlayerId",
+            "params": []
+           }
+          }
+         ]
+        }
+       },
+       {
+        "name": "elseValue",
+        "type": "computed",
+        "value": {
+         "selector": "createList",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "cached",
+           "value": "players.0"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "key": "createNotification",
+   "payload": {
+    "preset": {
+     "header": "Welcome to Intransitive!",
+     "image": "banner",
+     "duration": 8,
+     "backgroundColor": "#F4EEE8",
+     "borderColor": "#2B2B2B",
+     "textColor": "#2B2B2B"
+    },
+    "cached": {
+     "to": "players"
+    },
+    "computed": {
+     "text": {
+      "selector": "formatString",
+      "params": [
+       {
+        "name": "format",
+        "type": "preset",
+        "value": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play Intransitive!"
+       },
+       {
+        "name": "arg1",
+        "type": "computed",
+        "value": {
+         "selector": "listToString",
+         "params": [
+          {
+           "name": "list",
+           "type": "computed",
+           "value": {
+            "selector": "getPlayerNamesByIds",
+            "params": [
+             {
+              "name": "ids",
+              "type": "cached",
+              "value": "host"
+             }
+            ]
+           }
+          }
+         ]
+        }
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "key": "createMixVote",
+   "payload": {
+    "preset": {
+     "title": "Tutorial mode",
+     "terminationCondition": "get_all_votes",
+     "showResultInRealTime": true,
+     "showResultDuration": 2,
+     "showResultDelay": 0,
+     "point.allowFewerAnswers": true,
+     "point.terminationCondition": "get_all_votes",
+     "poll.answersQuantity": 1,
+     "poll.targets": [
+      "Everybody!",
+      "Nobody!"
+     ],
+     "oneClick": true,
+     "allowRevoting": true,
+     "pollVoteTargetsOptions": {
+      "Everybody!": {
+       "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+       "backgroundColor": "#D3D3D3",
+       "boxIconColor": "#D3D3D3",
+       "textColor": "black",
+       "widgetIconColor": "green"
+      },
+      "Nobody!": {
+       "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+       "backgroundColor": "#D3D3D3",
+       "boxIconColor": "#D3D3D3",
+       "textColor": "black",
+       "widgetIconColor": "red"
+      }
+     },
+     "poll.terminationCondition": "get_all_votes",
+     "backgroundColor": "#F4EEE8",
+     "borderColor": "#2B2B2B"
+    },
+    "cached": {
+     "actors": "host",
+     "point.targets": "players",
+     "point.answersQuantity": "numPlayers"
+    },
+    "computed": {
+     "question": {
+      "selector": "formatString",
+      "params": [
+       {
+        "name": "format",
+        "type": "preset",
+        "value": "($1), who needs the tutorial? Click on the players or select from the middle."
+       },
+       {
+        "name": "arg1",
+        "type": "computed",
+        "value": {
+         "selector": "getPlayerNameById",
+         "params": [
+          {
+           "name": "id",
+           "type": "cached",
+           "value": "host.0"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    }
+   },
+   "saveValueInCache": [
+    {
+     "name": "voteResult",
+     "value": {
+      "selector": "getCachedValue",
+      "params": [
+       {
+        "name": "name",
+        "type": "preset",
+        "value": "lastActionResult.voteResult"
+       }
+      ]
+     }
+    },
+    {
+     "name": "learners",
+     "value": {
+      "selector": "ifElse",
+      "params": [
+       {
+        "name": "condition",
+        "type": "computed",
+        "value": {
+         "selector": "contains",
+         "params": [
+          {
+           "name": "list",
+           "type": "cached",
+           "value": "players"
+          },
+          {
+           "name": "element",
+           "type": "cached",
+           "value": "voteResult.0"
+          }
+         ]
+        }
+       },
+       {
+        "name": "thenValue",
+        "type": "cached",
+        "value": "voteResult"
+       },
+       {
+        "name": "elseValue",
+        "type": "computed",
+        "value": {
+         "selector": "ifElse",
+         "params": [
+          {
+           "name": "condition",
+           "type": "computed",
+           "value": {
+            "selector": "contains",
+            "params": [
+             {
+              "name": "list",
+              "type": "cached",
+              "value": "voteResult"
+             },
+             {
+              "name": "element",
+              "type": "preset",
+              "value": "Everybody!"
+             }
+            ]
+           }
+          },
+          {
+           "name": "thenValue",
+           "type": "cached",
+           "value": "players"
+          },
+          {
+           "name": "elseValue",
+           "type": "preset",
+           "value": []
+          }
+         ]
+        }
+       }
+      ]
+     }
+    },
+    {
+     "name": "tutorial",
+     "value": {
+      "selector": "greaterThan",
+      "params": [
+       {
+        "name": "arg1",
+        "type": "computed",
+        "value": {
+         "selector": "listLength",
+         "params": [
+          {
+           "name": "list",
+           "type": "cached",
+           "value": "learners"
+          }
+         ]
+        }
+       },
+       {
+        "name": "arg2",
+        "type": "preset",
+        "value": 0
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "key": "createVote",
+   "payload": {
+    "preset": {
+     "title": "Time control",
+     "type": "target_poll",
+     "targets": [
+      "No clock",
+      "5 minutes each",
+      "10 minutes each"
+     ],
+     "pollVoteTargetsOptions": {
+      "No clock": {
+       "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/sleep_face.svg",
+       "backgroundColor": "#D3D3D3",
+       "boxIconColor": "#D3D3D3",
+       "textColor": "black",
+       "widgetIconColor": "black"
+      },
+      "5 minutes each": {
+       "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/five.svg",
+       "backgroundColor": "#D3D3D3",
+       "boxIconColor": "#D3D3D3",
+       "textColor": "black",
+       "widgetIconColor": "#2E5BA8"
+      },
+      "10 minutes each": {
+       "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/ten.svg",
+       "backgroundColor": "#D3D3D3",
+       "boxIconColor": "#D3D3D3",
+       "textColor": "black",
+       "widgetIconColor": "#D83232"
+      }
+     },
+     "terminationCondition": "get_all_votes",
+     "showResultInRealTime": true,
+     "showResult": true,
+     "showResultDuration": 2,
+     "allowRevoting": false,
+     "duration": 30,
+     "backgroundColor": "#F4EEE8",
+     "textColor": "#2B2B2B",
+     "borderColor": "#2B2B2B"
+    },
+    "cached": {
+     "actors": "host"
+    },
+    "computed": {
+     "question": {
+      "selector": "formatString",
+      "params": [
+       {
+        "name": "format",
+        "type": "preset",
+        "value": "($1), how long should each side get on the clock?"
+       },
+       {
+        "name": "arg1",
+        "type": "computed",
+        "value": {
+         "selector": "getPlayerNameById",
+         "params": [
+          {
+           "name": "id",
+           "type": "cached",
+           "value": "host.0"
+          }
+         ]
+        }
+       }
+      ]
+     }
+    }
+   },
+   "saveValueInCache": [
+    {
+     "name": "modeChoice",
+     "value": {
+      "selector": "selectElement",
+      "params": [
+       {
+        "name": "list",
+        "type": "computed",
+        "value": {
+         "selector": "append",
+         "params": [
+          {
+           "name": "list",
+           "type": "cached",
+           "value": "lastActionResult.voteResult"
+          },
+          {
+           "name": "element",
+           "type": "preset",
+           "value": "No clock"
+          }
+         ]
+        }
+       },
+       {
+        "name": "index",
+        "type": "preset",
+        "value": 0
+       }
+      ]
+     }
+    },
+    {
+     "name": "startClock",
+     "value": {
+      "selector": "getCachedObjectValue",
+      "params": [
+       {
+        "name": "objectName",
+        "type": "preset",
+        "value": "clockTable"
+       },
+       {
+        "name": "value",
+        "type": "cached",
+        "value": "modeChoice"
+       },
+       {
+        "name": "defaultValue",
+        "type": "preset",
+        "value": 0
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "key": "emptyAction",
+   "saveValueInCache": [
+    {
+     "name": "isTimed",
+     "value": {
+      "selector": "greaterThan",
+      "params": [
+       {
+        "name": "arg1",
+        "type": "cached",
+        "value": "startClock"
+       },
+       {
+        "name": "arg2",
+        "type": "preset",
+        "value": 0
+       }
+      ]
+     }
+    },
+    {
+     "name": "clockBlue",
+     "value": {
+      "selector": "getCachedValue",
+      "params": [
+       {
+        "name": "name",
+        "type": "preset",
+        "value": "startClock"
+       }
+      ]
+     }
+    },
+    {
+     "name": "clockRed",
+     "value": {
+      "selector": "getCachedValue",
+      "params": [
+       {
+        "name": "name",
+        "type": "preset",
+        "value": "startClock"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "key": "emptyAction",
+   "saveValueInCache": [
+    {
+     "name": "seating",
+     "value": {
+      "selector": "shuffleList",
+      "params": [
+       {
+        "name": "list",
+        "type": "cached",
+        "value": "players"
+       }
+      ]
+     }
+    },
+    {
+     "name": "blueId",
+     "value": {
+      "selector": "getCachedValue",
+      "params": [
+       {
+        "name": "name",
+        "type": "preset",
+        "value": "seating.0"
+       }
+      ]
+     }
+    },
+    {
+     "name": "redId",
+     "value": {
+      "selector": "getCachedValue",
+      "params": [
+       {
+        "name": "name",
+        "type": "preset",
+        "value": "seating.1"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "key": "setRole",
+   "payload": {
+    "preset": {
+     "roleId": "blue_player"
+    },
+    "computed": {
+     "playerId": {
+      "selector": "createList",
+      "params": [
+       {
+        "name": "arg1",
+        "type": "cached",
+        "value": "blueId"
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "key": "setRole",
+   "payload": {
+    "preset": {
+     "roleId": "red_player"
+    },
+    "computed": {
+     "playerId": {
+      "selector": "createList",
+      "params": [
+       {
+        "name": "arg1",
+        "type": "cached",
+        "value": "redId"
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "key": "showRole",
+   "payload": {
+    "cached": {
+     "from": "players",
+     "to": "players"
+    }
+   }
+  },
+  {
+   "key": "removeAllHighlights",
+   "payload": {}
+  },
+  {
+   "key": "changeLayout",
+   "payload": {
+    "preset": {
+     "type": "HIGHLIGHT",
+     "direction": "VERTICAL",
+     "percent": 62
+    },
+    "computed": {
+     "top": {
+      "selector": "createList",
+      "params": [
+       {
+        "name": "arg1",
+        "type": "cached",
+        "value": "blueId"
+       }
+      ]
+     },
+     "bottom": {
+      "selector": "createList",
+      "params": [
+       {
+        "name": "arg1",
+        "type": "cached",
+        "value": "redId"
+       }
+      ]
+     }
+    }
+   }
+  },
+  {
+   "key": "showScore",
+   "payload": {
+    "preset": {
+     "order": "highest",
+     "format": "($1) \u265f"
+    },
+    "cached": {
+     "from": "players",
+     "to": "players"
+    }
+   }
+  },
+  {
+   "key": "showScore",
+   "skipCondition": [
+    {
+     "selector": "logicalNOT",
+     "params": [
+      {
+       "name": "arg",
+       "type": "cached",
+       "value": "isTimed"
+      }
+     ]
+    }
+   ],
+   "payload": {
+    "preset": {
+     "secondScore": true,
+     "order": "highest",
+     "format": "($1) \u23f0"
+    },
+    "cached": {
+     "from": "players",
+     "to": "players"
+    }
+   }
+  }
+ ],
+ "gameLoop": [
+  {
+   "name": "Tutorial",
+   "skipCondition": [
+    {
+     "selector": "logicalNOT",
+     "params": [
+      {
+       "name": "arg",
+       "type": "cached",
+       "value": "tutorial"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "createNotification",
+     "payload": {
+      "preset": {
+       "header": "Intransitive (1/5)",
+       "text": "Two armies of ten: <b>3 rock, 4 paper, 3 scissors</b>. Blue starts in the bottom-left corner, Red in the top-right.",
+       "duration": 11,
+       "backgroundColor": "#F4EEE8",
+       "borderColor": "#2B2B2B",
+       "textColor": "#2B2B2B",
+       "image": "banner"
+      },
+      "cached": {
+       "to": "learners"
+      }
+     }
+    },
+    {
+     "key": "createNotification",
+     "payload": {
+      "preset": {
+       "header": "Moving (2/5)",
+       "text": "On your turn you move <b>one piece one square</b> \u2014 straight or diagonally, in any of the eight directions. That is the whole move. You must move; there is no passing.",
+       "duration": 11,
+       "backgroundColor": "#F4EEE8",
+       "borderColor": "#2B2B2B",
+       "textColor": "#2B2B2B"
+      },
+      "cached": {
+       "to": "learners"
+      }
+     }
+    },
+    {
+     "key": "createNotification",
+     "payload": {
+      "preset": {
+       "header": "Taking (3/5)",
+       "text": "Step onto an enemy you beat and you capture it. <b>Rock takes scissors, scissors takes paper, paper takes rock.</b>",
+       "duration": 11,
+       "backgroundColor": "#F4EEE8",
+       "borderColor": "#2B2B2B",
+       "textColor": "#2B2B2B",
+       "images": [
+        "piece_blue_R",
+        "piece_red_S"
+       ]
+      },
+      "cached": {
+       "to": "learners"
+      }
+     }
+    },
+    {
+     "key": "createNotification",
+     "payload": {
+      "preset": {
+       "header": "Blockades (4/5)",
+       "text": "You <b>cannot</b> step onto your own piece \u2014 or onto an enemy that beats you. A rock simply cannot enter a square held by paper, so pieces genuinely wall each other off.",
+       "duration": 12,
+       "backgroundColor": "#F4EEE8",
+       "borderColor": "#2B2B2B",
+       "textColor": "#2B2B2B",
+       "images": [
+        "piece_red_P",
+        "piece_blue_R"
+       ]
+      },
+      "cached": {
+       "to": "learners"
+      }
+     }
+    },
+    {
+     "key": "createNotification",
+     "payload": {
+      "preset": {
+       "header": "Winning (5/5)",
+       "text": "Get any one of your pieces into <b>your opponent's corner</b> \u2014 Blue is aiming at I9, Red at A1. First one there wins. If you ever have no legal move at all, you lose.",
+       "duration": 12,
+       "backgroundColor": "#F4EEE8",
+       "borderColor": "#2B2B2B",
+       "textColor": "#2B2B2B",
+       "image": "winner"
+      },
+      "cached": {
+       "to": "learners"
+      }
+     }
+    },
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "tutorial",
+       "value": false
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Cell list",
+   "skipCondition": [
+    {
+     "selector": "notEqual",
+     "params": [
+      {
+       "name": "arg1",
+       "type": "cached",
+       "value": "gameLoopIndex"
+      },
+      {
+       "name": "arg2",
+       "type": "preset",
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "normalCells",
+       "value": [
+        "B1",
+        "C1",
+        "D1",
+        "E1",
+        "F1",
+        "G1",
+        "H1",
+        "I1",
+        "A2",
+        "B2",
+        "C2",
+        "D2",
+        "E2",
+        "F2",
+        "G2",
+        "H2",
+        "I2",
+        "A3",
+        "B3",
+        "C3",
+        "D3",
+        "E3",
+        "F3",
+        "G3",
+        "H3",
+        "I3",
+        "A4",
+        "B4",
+        "C4",
+        "D4",
+        "E4",
+        "F4",
+        "G4",
+        "H4",
+        "I4",
+        "A5",
+        "B5",
+        "C5",
+        "D5",
+        "E5",
+        "F5",
+        "G5",
+        "H5",
+        "I5",
+        "A6",
+        "B6",
+        "C6",
+        "D6",
+        "E6",
+        "F6",
+        "G6",
+        "H6",
+        "I6",
+        "A7",
+        "B7",
+        "C7",
+        "D7",
+        "E7",
+        "F7",
+        "G7",
+        "H7",
+        "I7",
+        "A8",
+        "B8",
+        "C8",
+        "D8",
+        "E8",
+        "F8",
+        "G8",
+        "H8",
+        "I8",
+        "A9",
+        "B9",
+        "C9",
+        "D9",
+        "E9",
+        "F9",
+        "G9",
+        "H9"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Create cells",
+   "skipCondition": [
+    {
+     "selector": "notEqual",
+     "params": [
+      {
+       "name": "arg1",
+       "type": "cached",
+       "value": "gameLoopIndex"
+      },
+      {
+       "name": "arg2",
+       "type": "preset",
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "repeat": {
+    "qnt": {
+     "selector": "listLength",
+     "params": [
+      {
+       "name": "list",
+       "type": "cached",
+       "value": "normalCells"
+      }
+     ]
+    }
+   },
+   "actions": [
+    {
+     "key": "createCustomDeck",
+     "payload": {
+      "preset": {
+       "public": true,
+       "counter": false,
+       "facedown": false,
+       "emptyImage": "cell"
+      },
+      "computed": {
+       "name": {
+        "selector": "selectElement",
+        "params": [
+         {
+          "name": "list",
+          "type": "cached",
+          "value": "normalCells"
+         },
+         {
+          "name": "index",
+          "type": "cached",
+          "value": "repeatIndex"
+         }
+        ]
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Create home corners and captured piles",
+   "skipCondition": [
+    {
+     "selector": "notEqual",
+     "params": [
+      {
+       "name": "arg1",
+       "type": "cached",
+       "value": "gameLoopIndex"
+      },
+      {
+       "name": "arg2",
+       "type": "preset",
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "createCustomDeck",
+     "payload": {
+      "preset": {
+       "name": "A1",
+       "public": true,
+       "counter": false,
+       "facedown": false,
+       "emptyImage": "cell_home_blue"
+      }
+     }
+    },
+    {
+     "key": "createCustomDeck",
+     "payload": {
+      "preset": {
+       "name": "I9",
+       "public": true,
+       "counter": false,
+       "facedown": false,
+       "emptyImage": "cell_home_red"
+      }
+     }
+    },
+    {
+     "key": "createCustomDeck",
+     "payload": {
+      "preset": {
+       "name": "taken_blue",
+       "public": true,
+       "counter": true
+      }
+     }
+    },
+    {
+     "key": "createCustomDeck",
+     "payload": {
+      "preset": {
+       "name": "taken_red",
+       "public": true,
+       "counter": true
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Mount the board",
+   "skipCondition": [
+    {
+     "selector": "notEqual",
+     "params": [
+      {
+       "name": "arg1",
+       "type": "cached",
+       "value": "gameLoopIndex"
+      },
+      {
+       "name": "arg2",
+       "type": "preset",
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "createGenericCardWidget",
+     "payload": {
+      "preset": {
+       "ratio": "1",
+       "backgroundImage": "board_bg",
+       "dimensions": [
+        9,
+        9
+       ],
+       "decks": [
+        "A9",
+        "B9",
+        "C9",
+        "D9",
+        "E9",
+        "F9",
+        "G9",
+        "H9",
+        "I9",
+        "A8",
+        "B8",
+        "C8",
+        "D8",
+        "E8",
+        "F8",
+        "G8",
+        "H8",
+        "I8",
+        "A7",
+        "B7",
+        "C7",
+        "D7",
+        "E7",
+        "F7",
+        "G7",
+        "H7",
+        "I7",
+        "A6",
+        "B6",
+        "C6",
+        "D6",
+        "E6",
+        "F6",
+        "G6",
+        "H6",
+        "I6",
+        "A5",
+        "B5",
+        "C5",
+        "D5",
+        "E5",
+        "F5",
+        "G5",
+        "H5",
+        "I5",
+        "A4",
+        "B4",
+        "C4",
+        "D4",
+        "E4",
+        "F4",
+        "G4",
+        "H4",
+        "I4",
+        "A3",
+        "B3",
+        "C3",
+        "D3",
+        "E3",
+        "F3",
+        "G3",
+        "H3",
+        "I3",
+        "A2",
+        "B2",
+        "C2",
+        "D2",
+        "E2",
+        "F2",
+        "G2",
+        "H2",
+        "I2",
+        "A1",
+        "B1",
+        "C1",
+        "D1",
+        "E1",
+        "F1",
+        "G1",
+        "H1",
+        "I1"
+       ]
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Init board state",
+   "skipCondition": [
+    {
+     "selector": "notEqual",
+     "params": [
+      {
+       "name": "arg1",
+       "type": "cached",
+       "value": "gameLoopIndex"
+      },
+      {
+       "name": "arg2",
+       "type": "preset",
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "owner",
+       "value": {
+        "B4": "blue",
+        "F8": "red",
+        "C3": "blue",
+        "G7": "red",
+        "D2": "blue",
+        "H6": "red",
+        "B5": "blue",
+        "E8": "red",
+        "C4": "blue",
+        "F7": "red",
+        "D3": "blue",
+        "G6": "red",
+        "E2": "blue",
+        "H5": "red",
+        "C5": "blue",
+        "E7": "red",
+        "D4": "blue",
+        "F6": "red",
+        "E3": "blue",
+        "G5": "red"
+       }
+      },
+      {
+       "name": "ptype",
+       "value": {
+        "B4": "R",
+        "F8": "R",
+        "C3": "R",
+        "G7": "R",
+        "D2": "R",
+        "H6": "R",
+        "B5": "P",
+        "E8": "P",
+        "C4": "P",
+        "F7": "P",
+        "D3": "P",
+        "G6": "P",
+        "E2": "P",
+        "H5": "P",
+        "C5": "S",
+        "E7": "S",
+        "D4": "S",
+        "F6": "S",
+        "E3": "S",
+        "G5": "S"
+       }
+      },
+      {
+       "name": "sets",
+       "value": {
+        "blueR": [
+         "B4",
+         "C3",
+         "D2"
+        ],
+        "blueP": [
+         "B5",
+         "C4",
+         "D3",
+         "E2"
+        ],
+        "blueS": [
+         "C5",
+         "D4",
+         "E3"
+        ],
+        "redR": [
+         "F8",
+         "G7",
+         "H6"
+        ],
+        "redP": [
+         "E8",
+         "F7",
+         "G6",
+         "H5"
+        ],
+        "redS": [
+         "E7",
+         "F6",
+         "G5"
+        ]
+       }
+      },
+      {
+       "name": "turnTeam",
+       "value": "blue"
+      },
+      {
+       "name": "gameOver",
+       "value": false
+      },
+      {
+       "name": "winner",
+       "value": ""
+      },
+      {
+       "name": "postgameMessage",
+       "value": ""
+      },
+      {
+       "name": "moveNumber",
+       "value": 1
+      },
+      {
+       "name": "trailBlue",
+       "value": []
+      },
+      {
+       "name": "trailRed",
+       "value": []
+      },
+      {
+       "name": "piecesBlue",
+       "value": {
+        "selector": "concat",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "sets"
+            },
+            {
+             "name": "value",
+             "type": "preset",
+             "value": "blueR"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": []
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg2",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "sets"
+            },
+            {
+             "name": "value",
+             "type": "preset",
+             "value": "blueP"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": []
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg3",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "sets"
+            },
+            {
+             "name": "value",
+             "type": "preset",
+             "value": "blueS"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": []
+            }
+           ]
+          }
+         }
+        ]
+       }
+      },
+      {
+       "name": "piecesRed",
+       "value": {
+        "selector": "concat",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "sets"
+            },
+            {
+             "name": "value",
+             "type": "preset",
+             "value": "redR"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": []
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg2",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "sets"
+            },
+            {
+             "name": "value",
+             "type": "preset",
+             "value": "redP"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": []
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg3",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "sets"
+            },
+            {
+             "name": "value",
+             "type": "preset",
+             "value": "redS"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": []
+            }
+           ]
+          }
+         }
+        ]
+       }
+      },
+      {
+       "name": "occupied",
+       "value": {
+        "selector": "concat",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "piecesBlue"
+         },
+         {
+          "name": "arg2",
+          "type": "cached",
+          "value": "piecesRed"
+         }
+        ]
+       }
+      },
+      {
+       "name": "emptyCells",
+       "value": {
+        "selector": "listsSubtract",
+        "params": [
+         {
+          "name": "list1",
+          "type": "cached",
+          "value": "cells"
+         },
+         {
+          "name": "list2",
+          "type": "cached",
+          "value": "occupied"
+         }
+        ]
+       }
+      },
+      {
+       "name": "cntBlue",
+       "value": {
+        "selector": "listLength",
+        "params": [
+         {
+          "name": "list",
+          "type": "cached",
+          "value": "piecesBlue"
+         }
+        ]
+       }
+      },
+      {
+       "name": "cntRed",
+       "value": {
+        "selector": "listLength",
+        "params": [
+         {
+          "name": "list",
+          "type": "cached",
+          "value": "piecesRed"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Place pieces",
+   "skipCondition": [
+    {
+     "selector": "notEqual",
+     "params": [
+      {
+       "name": "arg1",
+       "type": "cached",
+       "value": "gameLoopIndex"
+      },
+      {
+       "name": "arg2",
+       "type": "preset",
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "repeat": {
+    "qnt": {
+     "selector": "listLength",
+     "params": [
+      {
+       "name": "list",
+       "type": "cached",
+       "value": "startCells"
+      }
+     ]
+    }
+   },
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "pCell",
+       "value": {
+        "selector": "selectElement",
+        "params": [
+         {
+          "name": "list",
+          "type": "cached",
+          "value": "startCells"
+         },
+         {
+          "name": "index",
+          "type": "cached",
+          "value": "repeatIndex"
+         }
+        ]
+       }
+      },
+      {
+       "name": "pCard",
+       "value": {
+        "selector": "selectElement",
+        "params": [
+         {
+          "name": "list",
+          "type": "cached",
+          "value": "startCards"
+         },
+         {
+          "name": "index",
+          "type": "cached",
+          "value": "repeatIndex"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "moveCards",
+     "payload": {
+      "preset": {
+       "type": "deck",
+       "qnt": 1,
+       "from": "piece_pool"
+      },
+      "cached": {
+       "to": "pCell"
+      },
+      "computed": {
+       "cardNames": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "pCard"
+         }
+        ]
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Opening board readout",
+   "skipCondition": [
+    {
+     "selector": "notEqual",
+     "params": [
+      {
+       "name": "arg1",
+       "type": "cached",
+       "value": "gameLoopIndex"
+      },
+      {
+       "name": "arg2",
+       "type": "preset",
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "updateScore",
+     "payload": {
+      "computed": {
+       "scores": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "createDict",
+           "params": [
+            {
+             "name": "keys",
+             "type": "preset",
+             "value": [
+              "list",
+              "score"
+             ]
+            },
+            {
+             "name": "values",
+             "type": "computed",
+             "value": {
+              "selector": "createList",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                 "selector": "createList",
+                 "params": [
+                  {
+                   "name": "arg1",
+                   "type": "cached",
+                   "value": "blueId"
+                  }
+                 ]
+                }
+               },
+               {
+                "name": "arg2",
+                "type": "cached",
+                "value": "cntBlue"
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "key": "updateScore",
+     "payload": {
+      "computed": {
+       "scores": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "createDict",
+           "params": [
+            {
+             "name": "keys",
+             "type": "preset",
+             "value": [
+              "list",
+              "score"
+             ]
+            },
+            {
+             "name": "values",
+             "type": "computed",
+             "value": {
+              "selector": "createList",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                 "selector": "createList",
+                 "params": [
+                  {
+                   "name": "arg1",
+                   "type": "cached",
+                   "value": "redId"
+                  }
+                 ]
+                }
+               },
+               {
+                "name": "arg2",
+                "type": "cached",
+                "value": "cntRed"
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "key": "updateScore",
+     "skipCondition": [
+      {
+       "selector": "logicalNOT",
+       "params": [
+        {
+         "name": "arg",
+         "type": "cached",
+         "value": "isTimed"
+        }
+       ]
+      }
+     ],
+     "payload": {
+      "computed": {
+       "scores": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "createDict",
+           "params": [
+            {
+             "name": "keys",
+             "type": "preset",
+             "value": [
+              "list",
+              "score",
+              "secondScore"
+             ]
+            },
+            {
+             "name": "values",
+             "type": "computed",
+             "value": {
+              "selector": "createList",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                 "selector": "createList",
+                 "params": [
+                  {
+                   "name": "arg1",
+                   "type": "cached",
+                   "value": "blueId"
+                  }
+                 ]
+                }
+               },
+               {
+                "name": "arg2",
+                "type": "cached",
+                "value": "clockBlue"
+               },
+               {
+                "name": "arg3",
+                "type": "preset",
+                "value": true
+               }
+              ]
+             }
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg2",
+          "type": "computed",
+          "value": {
+           "selector": "createDict",
+           "params": [
+            {
+             "name": "keys",
+             "type": "preset",
+             "value": [
+              "list",
+              "score",
+              "secondScore"
+             ]
+            },
+            {
+             "name": "values",
+             "type": "computed",
+             "value": {
+              "selector": "createList",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                 "selector": "createList",
+                 "params": [
+                  {
+                   "name": "arg1",
+                   "type": "cached",
+                   "value": "redId"
+                  }
+                 ]
+                }
+               },
+               {
+                "name": "arg2",
+                "type": "cached",
+                "value": "clockRed"
+               },
+               {
+                "name": "arg3",
+                "type": "preset",
+                "value": true
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "key": "createNotification",
+     "payload": {
+      "preset": {
+       "header": "The board is set",
+       "text": "Blue moves first. Ten pieces each: 3 rock, 4 paper, 3 scissors. Blue is aiming at <b>I9</b>, Red at <b>A1</b>.",
+       "duration": 8,
+       "backgroundColor": "#F4EEE8",
+       "borderColor": "#2B2B2B",
+       "textColor": "#2B2B2B",
+       "image": "banner"
+      },
+      "cached": {
+       "to": "players"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Whose turn",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "isBlueTurn",
+       "value": {
+        "selector": "equals",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "turnTeam"
+         },
+         {
+          "name": "arg2",
+          "type": "preset",
+          "value": "blue"
+         }
+        ]
+       }
+      },
+      {
+       "name": "mover",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "cached",
+          "value": "isBlueTurn"
+         },
+         {
+          "name": "thenValue",
+          "type": "cached",
+          "value": "blueId"
+         },
+         {
+          "name": "elseValue",
+          "type": "cached",
+          "value": "redId"
+         }
+        ]
+       }
+      },
+      {
+       "name": "waiter",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "cached",
+          "value": "isBlueTurn"
+         },
+         {
+          "name": "thenValue",
+          "type": "cached",
+          "value": "redId"
+         },
+         {
+          "name": "elseValue",
+          "type": "cached",
+          "value": "blueId"
+         }
+        ]
+       }
+      },
+      {
+       "name": "otherTeam",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "cached",
+          "value": "isBlueTurn"
+         },
+         {
+          "name": "thenValue",
+          "type": "preset",
+          "value": "red"
+         },
+         {
+          "name": "elseValue",
+          "type": "preset",
+          "value": "blue"
+         }
+        ]
+       }
+      },
+      {
+       "name": "myPieces",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "cached",
+          "value": "isBlueTurn"
+         },
+         {
+          "name": "thenValue",
+          "type": "cached",
+          "value": "piecesBlue"
+         },
+         {
+          "name": "elseValue",
+          "type": "cached",
+          "value": "piecesRed"
+         }
+        ]
+       }
+      },
+      {
+       "name": "targetCell",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "cached",
+          "value": "isBlueTurn"
+         },
+         {
+          "name": "thenValue",
+          "type": "cached",
+          "value": "homeRed"
+         },
+         {
+          "name": "elseValue",
+          "type": "cached",
+          "value": "homeBlue"
+         }
+        ]
+       }
+      },
+      {
+       "name": "myClock",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "cached",
+          "value": "isBlueTurn"
+         },
+         {
+          "name": "thenValue",
+          "type": "cached",
+          "value": "clockBlue"
+         },
+         {
+          "name": "elseValue",
+          "type": "cached",
+          "value": "clockRed"
+         }
+        ]
+       }
+      },
+      {
+       "name": "movers",
+       "value": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "mover"
+         }
+        ]
+       }
+      },
+      {
+       "name": "moverName",
+       "value": {
+        "selector": "getPlayerNameById",
+        "params": [
+         {
+          "name": "id",
+          "type": "cached",
+          "value": "mover"
+         }
+        ]
+       }
+      },
+      {
+       "name": "movable",
+       "value": []
+      },
+      {
+       "name": "destsByCell",
+       "value": {}
+      },
+      {
+       "name": "myTrail",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "cached",
+          "value": "isBlueTurn"
+         },
+         {
+          "name": "thenValue",
+          "type": "cached",
+          "value": "trailBlue"
+         },
+         {
+          "name": "elseValue",
+          "type": "cached",
+          "value": "trailRed"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "removeAllHighlights",
+     "payload": {}
+    },
+    {
+     "key": "highlightPlayers",
+     "payload": {
+      "preset": {
+       "color": "#3FA34D"
+      },
+      "cached": {
+       "listOfPlayers": "movers"
+      }
+     }
+    },
+    {
+     "key": "removeHighlightDecks",
+     "skipCondition": [
+      {
+       "selector": "equals",
+       "params": [
+        {
+         "name": "arg1",
+         "type": "computed",
+         "value": {
+          "selector": "listLength",
+          "params": [
+           {
+            "name": "list",
+            "type": "cached",
+            "value": "myTrail"
+           }
+          ]
+         }
+        },
+        {
+         "name": "arg2",
+         "type": "preset",
+         "value": 0
+        }
+       ]
+      }
+     ],
+     "payload": {
+      "cached": {
+       "decks": "myTrail"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Find pieces that can move",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    }
+   ],
+   "repeat": {
+    "qnt": {
+     "selector": "listLength",
+     "params": [
+      {
+       "name": "list",
+       "type": "cached",
+       "value": "myPieces"
+      }
+     ]
+    }
+   },
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "scanCell",
+       "value": {
+        "selector": "selectElement",
+        "params": [
+         {
+          "name": "list",
+          "type": "cached",
+          "value": "myPieces"
+         },
+         {
+          "name": "index",
+          "type": "cached",
+          "value": "repeatIndex"
+         }
+        ]
+       }
+      },
+      {
+       "name": "scanNbrs",
+       "value": {
+        "selector": "getCachedObjectValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "neighbors"
+         },
+         {
+          "name": "value",
+          "type": "cached",
+          "value": "scanCell"
+         },
+         {
+          "name": "defaultValue",
+          "type": "preset",
+          "value": []
+         }
+        ]
+       }
+      },
+      {
+       "name": "scanPrey",
+       "value": {
+        "selector": "getCachedObjectValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "sets"
+         },
+         {
+          "name": "value",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "preyOf"
+            },
+            {
+             "name": "value",
+             "type": "computed",
+             "value": {
+              "selector": "formatString",
+              "params": [
+               {
+                "name": "format",
+                "type": "preset",
+                "value": "($1)($2)"
+               },
+               {
+                "name": "arg1",
+                "type": "cached",
+                "value": "turnTeam"
+               },
+               {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                 "selector": "getCachedObjectValue",
+                 "params": [
+                  {
+                   "name": "objectName",
+                   "type": "preset",
+                   "value": "ptype"
+                  },
+                  {
+                   "name": "value",
+                   "type": "cached",
+                   "value": "scanCell"
+                  },
+                  {
+                   "name": "defaultValue",
+                   "type": "preset",
+                   "value": ""
+                  }
+                 ]
+                }
+               }
+              ]
+             }
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": ""
+            }
+           ]
+          }
+         },
+         {
+          "name": "defaultValue",
+          "type": "preset",
+          "value": []
+         }
+        ]
+       }
+      },
+      {
+       "name": "scanDests",
+       "value": {
+        "selector": "concat",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "intersect",
+           "params": [
+            {
+             "name": "list1",
+             "type": "cached",
+             "value": "scanNbrs"
+            },
+            {
+             "name": "list2",
+             "type": "cached",
+             "value": "emptyCells"
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg2",
+          "type": "computed",
+          "value": {
+           "selector": "intersect",
+           "params": [
+            {
+             "name": "list1",
+             "type": "cached",
+             "value": "scanNbrs"
+            },
+            {
+             "name": "list2",
+             "type": "cached",
+             "value": "scanPrey"
+            }
+           ]
+          }
+         }
+        ]
+       }
+      },
+      {
+       "name": "destsByCell",
+       "value": {
+        "selector": "setCachedObjectFieldValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "destsByCell"
+         },
+         {
+          "name": "fieldName",
+          "type": "cached",
+          "value": "scanCell"
+         },
+         {
+          "name": "value",
+          "type": "cached",
+          "value": "scanDests"
+         }
+        ]
+       }
+      },
+      {
+       "name": "movable",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "computed",
+          "value": {
+           "selector": "greaterThan",
+           "params": [
+            {
+             "name": "arg1",
+             "type": "computed",
+             "value": {
+              "selector": "listLength",
+              "params": [
+               {
+                "name": "list",
+                "type": "cached",
+                "value": "scanDests"
+               }
+              ]
+             }
+            },
+            {
+             "name": "arg2",
+             "type": "preset",
+             "value": 0
+            }
+           ]
+          }
+         },
+         {
+          "name": "thenValue",
+          "type": "computed",
+          "value": {
+           "selector": "append",
+           "params": [
+            {
+             "name": "list",
+             "type": "cached",
+             "value": "movable"
+            },
+            {
+             "name": "element",
+             "type": "cached",
+             "value": "scanCell"
+            }
+           ]
+          }
+         },
+         {
+          "name": "elseValue",
+          "type": "cached",
+          "value": "movable"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Trapped with no legal move",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    },
+    {
+     "selector": "greaterThan",
+     "params": [
+      {
+       "name": "arg1",
+       "type": "computed",
+       "value": {
+        "selector": "listLength",
+        "params": [
+         {
+          "name": "list",
+          "type": "cached",
+          "value": "movable"
+         }
+        ]
+       }
+      },
+      {
+       "name": "arg2",
+       "type": "preset",
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "gameOver",
+       "value": true
+      },
+      {
+       "name": "winner",
+       "value": {
+        "selector": "getCachedValue",
+        "params": [
+         {
+          "name": "name",
+          "type": "preset",
+          "value": "otherTeam"
+         }
+        ]
+       }
+      },
+      {
+       "name": "postgameMessage",
+       "value": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "preset",
+          "value": "($1) had no legal move left."
+         },
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "teamName"
+            },
+            {
+             "name": "value",
+             "type": "cached",
+             "value": "turnTeam"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": ""
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Pick a piece (clock)",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    },
+    {
+     "selector": "logicalNOT",
+     "params": [
+      {
+       "name": "arg",
+       "type": "cached",
+       "value": "isTimed"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "selectCentralWidgetDeck",
+     "payload": {
+      "cached": {
+       "actors": "movers",
+       "decks": "movable"
+      },
+      "computed": {
+       "question": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "preset",
+          "value": "($1), your move \u2014 click the piece you want to move."
+         },
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "moverName"
+         }
+        ]
+       },
+       "duration": {
+        "selector": "maxValue",
+        "params": [
+         {
+          "name": "list",
+          "type": "computed",
+          "value": {
+           "selector": "createList",
+           "params": [
+            {
+             "name": "arg1",
+             "type": "cached",
+             "value": "myClock"
+            },
+            {
+             "name": "arg2",
+             "type": "preset",
+             "value": 1
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Pick a piece (no clock)",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    },
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "isTimed"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "selectCentralWidgetDeck",
+     "payload": {
+      "cached": {
+       "actors": "movers",
+       "decks": "movable"
+      },
+      "computed": {
+       "question": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "preset",
+          "value": "($1), your move \u2014 click the piece you want to move."
+         },
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "moverName"
+         }
+        ]
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Read the piece",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "pickRaw",
+       "value": {
+        "selector": "selectElement",
+        "params": [
+         {
+          "name": "list",
+          "type": "computed",
+          "value": {
+           "selector": "append",
+           "params": [
+            {
+             "name": "list",
+             "type": "computed",
+             "value": {
+              "selector": "getObjectValues",
+              "params": [
+               {
+                "name": "obj",
+                "type": "cached",
+                "value": "lastActionResult"
+               }
+              ]
+             }
+            },
+            {
+             "name": "element",
+             "type": "preset",
+             "value": ""
+            }
+           ]
+          }
+         },
+         {
+          "name": "index",
+          "type": "preset",
+          "value": 0
+         }
+        ]
+       }
+      },
+      {
+       "name": "fromCell",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "computed",
+          "value": {
+           "selector": "equals",
+           "params": [
+            {
+             "name": "arg1",
+             "type": "cached",
+             "value": "pickRaw"
+            },
+            {
+             "name": "arg2",
+             "type": "preset",
+             "value": ""
+            }
+           ]
+          }
+         },
+         {
+          "name": "thenValue",
+          "type": "computed",
+          "value": {
+           "selector": "selectElement",
+           "params": [
+            {
+             "name": "list",
+             "type": "computed",
+             "value": {
+              "selector": "append",
+              "params": [
+               {
+                "name": "list",
+                "type": "cached",
+                "value": "movable"
+               },
+               {
+                "name": "element",
+                "type": "preset",
+                "value": ""
+               }
+              ]
+             }
+            },
+            {
+             "name": "index",
+             "type": "preset",
+             "value": 0
+            }
+           ]
+          }
+         },
+         {
+          "name": "elseValue",
+          "type": "cached",
+          "value": "pickRaw"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "emptyAction",
+     "skipCondition": [
+      {
+       "selector": "logicalNOT",
+       "params": [
+        {
+         "name": "arg",
+         "type": "cached",
+         "value": "isTimed"
+        }
+       ]
+      }
+     ],
+     "saveValueInCache": [
+      {
+       "name": "myClock",
+       "value": {
+        "selector": "getRemainingTimer",
+        "params": [
+         {
+          "name": "timerId",
+          "type": "cached",
+          "value": "lastActionId"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Flag falls after choosing a piece",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    },
+    {
+     "selector": "logicalNOT",
+     "params": [
+      {
+       "name": "arg",
+       "type": "cached",
+       "value": "isTimed"
+      }
+     ]
+    },
+    {
+     "selector": "greaterThan",
+     "params": [
+      {
+       "name": "arg1",
+       "type": "cached",
+       "value": "myClock"
+      },
+      {
+       "name": "arg2",
+       "type": "preset",
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "gameOver",
+       "value": true
+      },
+      {
+       "name": "winner",
+       "value": {
+        "selector": "getCachedValue",
+        "params": [
+         {
+          "name": "name",
+          "type": "preset",
+          "value": "otherTeam"
+         }
+        ]
+       }
+      },
+      {
+       "name": "postgameMessage",
+       "value": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "preset",
+          "value": "($1) ran out of time."
+         },
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "teamName"
+            },
+            {
+             "name": "value",
+             "type": "cached",
+             "value": "turnTeam"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": ""
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Load the destinations",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "dests",
+       "value": {
+        "selector": "getCachedObjectValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "destsByCell"
+         },
+         {
+          "name": "value",
+          "type": "cached",
+          "value": "fromCell"
+         },
+         {
+          "name": "defaultValue",
+          "type": "preset",
+          "value": []
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Pick a destination (clock)",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    },
+    {
+     "selector": "logicalNOT",
+     "params": [
+      {
+       "name": "arg",
+       "type": "cached",
+       "value": "isTimed"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "selectCentralWidgetDeck",
+     "payload": {
+      "cached": {
+       "actors": "movers",
+       "decks": "dests"
+      },
+      "computed": {
+       "question": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "preset",
+          "value": "($1), now click the square to move it to."
+         },
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "moverName"
+         }
+        ]
+       },
+       "duration": {
+        "selector": "maxValue",
+        "params": [
+         {
+          "name": "list",
+          "type": "computed",
+          "value": {
+           "selector": "createList",
+           "params": [
+            {
+             "name": "arg1",
+             "type": "cached",
+             "value": "myClock"
+            },
+            {
+             "name": "arg2",
+             "type": "preset",
+             "value": 1
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Pick a destination (no clock)",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    },
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "isTimed"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "selectCentralWidgetDeck",
+     "payload": {
+      "cached": {
+       "actors": "movers",
+       "decks": "dests"
+      },
+      "computed": {
+       "question": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "preset",
+          "value": "($1), now click the square to move it to."
+         },
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "moverName"
+         }
+        ]
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Read the destination",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "destRaw",
+       "value": {
+        "selector": "selectElement",
+        "params": [
+         {
+          "name": "list",
+          "type": "computed",
+          "value": {
+           "selector": "append",
+           "params": [
+            {
+             "name": "list",
+             "type": "computed",
+             "value": {
+              "selector": "getObjectValues",
+              "params": [
+               {
+                "name": "obj",
+                "type": "cached",
+                "value": "lastActionResult"
+               }
+              ]
+             }
+            },
+            {
+             "name": "element",
+             "type": "preset",
+             "value": ""
+            }
+           ]
+          }
+         },
+         {
+          "name": "index",
+          "type": "preset",
+          "value": 0
+         }
+        ]
+       }
+      },
+      {
+       "name": "toCell",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "computed",
+          "value": {
+           "selector": "equals",
+           "params": [
+            {
+             "name": "arg1",
+             "type": "cached",
+             "value": "destRaw"
+            },
+            {
+             "name": "arg2",
+             "type": "preset",
+             "value": ""
+            }
+           ]
+          }
+         },
+         {
+          "name": "thenValue",
+          "type": "computed",
+          "value": {
+           "selector": "selectElement",
+           "params": [
+            {
+             "name": "list",
+             "type": "computed",
+             "value": {
+              "selector": "append",
+              "params": [
+               {
+                "name": "list",
+                "type": "cached",
+                "value": "dests"
+               },
+               {
+                "name": "element",
+                "type": "cached",
+                "value": "fromCell"
+               }
+              ]
+             }
+            },
+            {
+             "name": "index",
+             "type": "preset",
+             "value": 0
+            }
+           ]
+          }
+         },
+         {
+          "name": "elseValue",
+          "type": "cached",
+          "value": "destRaw"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "emptyAction",
+     "skipCondition": [
+      {
+       "selector": "logicalNOT",
+       "params": [
+        {
+         "name": "arg",
+         "type": "cached",
+         "value": "isTimed"
+        }
+       ]
+      }
+     ],
+     "saveValueInCache": [
+      {
+       "name": "myClock",
+       "value": {
+        "selector": "getRemainingTimer",
+        "params": [
+         {
+          "name": "timerId",
+          "type": "cached",
+          "value": "lastActionId"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Flag falls choosing a destination",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    },
+    {
+     "selector": "logicalNOT",
+     "params": [
+      {
+       "name": "arg",
+       "type": "cached",
+       "value": "isTimed"
+      }
+     ]
+    },
+    {
+     "selector": "greaterThan",
+     "params": [
+      {
+       "name": "arg1",
+       "type": "cached",
+       "value": "myClock"
+      },
+      {
+       "name": "arg2",
+       "type": "preset",
+       "value": 0
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "gameOver",
+       "value": true
+      },
+      {
+       "name": "winner",
+       "value": {
+        "selector": "getCachedValue",
+        "params": [
+         {
+          "name": "name",
+          "type": "preset",
+          "value": "otherTeam"
+         }
+        ]
+       }
+      },
+      {
+       "name": "postgameMessage",
+       "value": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "preset",
+          "value": "($1) ran out of time."
+         },
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "teamName"
+            },
+            {
+             "name": "value",
+             "type": "cached",
+             "value": "turnTeam"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": ""
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Resolve the capture",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "capturedTeam",
+       "value": {
+        "selector": "getCachedObjectValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "owner"
+         },
+         {
+          "name": "value",
+          "type": "cached",
+          "value": "toCell"
+         },
+         {
+          "name": "defaultValue",
+          "type": "preset",
+          "value": ""
+         }
+        ]
+       }
+      },
+      {
+       "name": "capturedType",
+       "value": {
+        "selector": "getCachedObjectValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "ptype"
+         },
+         {
+          "name": "value",
+          "type": "cached",
+          "value": "toCell"
+         },
+         {
+          "name": "defaultValue",
+          "type": "preset",
+          "value": ""
+         }
+        ]
+       }
+      },
+      {
+       "name": "isCapture",
+       "value": {
+        "selector": "notEqual",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "owner"
+            },
+            {
+             "name": "value",
+             "type": "cached",
+             "value": "toCell"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": ""
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg2",
+          "type": "preset",
+          "value": ""
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "moveCards",
+     "skipCondition": [
+      {
+       "selector": "logicalNOT",
+       "params": [
+        {
+         "name": "arg",
+         "type": "cached",
+         "value": "isCapture"
+        }
+       ]
+      }
+     ],
+     "payload": {
+      "preset": {
+       "type": "deck",
+       "qnt": 1
+      },
+      "cached": {
+       "from": "toCell"
+      },
+      "computed": {
+       "to": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "preset",
+          "value": "taken_($1)"
+         },
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "capturedTeam"
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "key": "emptyAction",
+     "skipCondition": [
+      {
+       "selector": "logicalNOT",
+       "params": [
+        {
+         "name": "arg",
+         "type": "cached",
+         "value": "isCapture"
+        }
+       ]
+      }
+     ],
+     "saveValueInCache": [
+      {
+       "name": "capturedBucket",
+       "value": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "preset",
+          "value": "($1)($2)"
+         },
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "capturedTeam"
+         },
+         {
+          "name": "arg2",
+          "type": "cached",
+          "value": "capturedType"
+         }
+        ]
+       }
+      },
+      {
+       "name": "sets",
+       "value": {
+        "selector": "setCachedObjectFieldValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "sets"
+         },
+         {
+          "name": "fieldName",
+          "type": "cached",
+          "value": "capturedBucket"
+         },
+         {
+          "name": "value",
+          "type": "computed",
+          "value": {
+           "selector": "listsSubtract",
+           "params": [
+            {
+             "name": "list1",
+             "type": "computed",
+             "value": {
+              "selector": "getCachedObjectValue",
+              "params": [
+               {
+                "name": "objectName",
+                "type": "preset",
+                "value": "sets"
+               },
+               {
+                "name": "value",
+                "type": "cached",
+                "value": "capturedBucket"
+               },
+               {
+                "name": "defaultValue",
+                "type": "preset",
+                "value": []
+               }
+              ]
+             }
+            },
+            {
+             "name": "list2",
+             "type": "computed",
+             "value": {
+              "selector": "createList",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "cached",
+                "value": "toCell"
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Move the piece",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "moveCards",
+     "payload": {
+      "preset": {
+       "type": "deck",
+       "qnt": 1
+      },
+      "cached": {
+       "from": "fromCell",
+       "to": "toCell"
+      }
+     }
+    },
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "movedType",
+       "value": {
+        "selector": "getCachedObjectValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "ptype"
+         },
+         {
+          "name": "value",
+          "type": "cached",
+          "value": "fromCell"
+         },
+         {
+          "name": "defaultValue",
+          "type": "preset",
+          "value": ""
+         }
+        ]
+       }
+      },
+      {
+       "name": "owner",
+       "value": {
+        "selector": "setCachedObjectFieldValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "owner"
+         },
+         {
+          "name": "fieldName",
+          "type": "cached",
+          "value": "fromCell"
+         },
+         {
+          "name": "value",
+          "type": "preset",
+          "value": ""
+         }
+        ]
+       }
+      },
+      {
+       "name": "ptype",
+       "value": {
+        "selector": "setCachedObjectFieldValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "ptype"
+         },
+         {
+          "name": "fieldName",
+          "type": "cached",
+          "value": "fromCell"
+         },
+         {
+          "name": "value",
+          "type": "preset",
+          "value": ""
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "owner",
+       "value": {
+        "selector": "setCachedObjectFieldValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "owner"
+         },
+         {
+          "name": "fieldName",
+          "type": "cached",
+          "value": "toCell"
+         },
+         {
+          "name": "value",
+          "type": "cached",
+          "value": "turnTeam"
+         }
+        ]
+       }
+      },
+      {
+       "name": "ptype",
+       "value": {
+        "selector": "setCachedObjectFieldValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "ptype"
+         },
+         {
+          "name": "fieldName",
+          "type": "cached",
+          "value": "toCell"
+         },
+         {
+          "name": "value",
+          "type": "cached",
+          "value": "movedType"
+         }
+        ]
+       }
+      },
+      {
+       "name": "movedBucket",
+       "value": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "preset",
+          "value": "($1)($2)"
+         },
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "turnTeam"
+         },
+         {
+          "name": "arg2",
+          "type": "cached",
+          "value": "movedType"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "sets",
+       "value": {
+        "selector": "setCachedObjectFieldValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "sets"
+         },
+         {
+          "name": "fieldName",
+          "type": "cached",
+          "value": "movedBucket"
+         },
+         {
+          "name": "value",
+          "type": "computed",
+          "value": {
+           "selector": "listsSubtract",
+           "params": [
+            {
+             "name": "list1",
+             "type": "computed",
+             "value": {
+              "selector": "getCachedObjectValue",
+              "params": [
+               {
+                "name": "objectName",
+                "type": "preset",
+                "value": "sets"
+               },
+               {
+                "name": "value",
+                "type": "cached",
+                "value": "movedBucket"
+               },
+               {
+                "name": "defaultValue",
+                "type": "preset",
+                "value": []
+               }
+              ]
+             }
+            },
+            {
+             "name": "list2",
+             "type": "computed",
+             "value": {
+              "selector": "createList",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "cached",
+                "value": "fromCell"
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "sets",
+       "value": {
+        "selector": "setCachedObjectFieldValue",
+        "params": [
+         {
+          "name": "objectName",
+          "type": "preset",
+          "value": "sets"
+         },
+         {
+          "name": "fieldName",
+          "type": "cached",
+          "value": "movedBucket"
+         },
+         {
+          "name": "value",
+          "type": "computed",
+          "value": {
+           "selector": "append",
+           "params": [
+            {
+             "name": "list",
+             "type": "computed",
+             "value": {
+              "selector": "getCachedObjectValue",
+              "params": [
+               {
+                "name": "objectName",
+                "type": "preset",
+                "value": "sets"
+               },
+               {
+                "name": "value",
+                "type": "cached",
+                "value": "movedBucket"
+               },
+               {
+                "name": "defaultValue",
+                "type": "preset",
+                "value": []
+               }
+              ]
+             }
+            },
+            {
+             "name": "element",
+             "type": "cached",
+             "value": "toCell"
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "clockBlue",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "cached",
+          "value": "isBlueTurn"
+         },
+         {
+          "name": "thenValue",
+          "type": "cached",
+          "value": "myClock"
+         },
+         {
+          "name": "elseValue",
+          "type": "cached",
+          "value": "clockBlue"
+         }
+        ]
+       }
+      },
+      {
+       "name": "clockRed",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "cached",
+          "value": "isBlueTurn"
+         },
+         {
+          "name": "thenValue",
+          "type": "cached",
+          "value": "clockRed"
+         },
+         {
+          "name": "elseValue",
+          "type": "cached",
+          "value": "myClock"
+         }
+        ]
+       }
+      },
+      {
+       "name": "piecesBlue",
+       "value": {
+        "selector": "concat",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "sets"
+            },
+            {
+             "name": "value",
+             "type": "preset",
+             "value": "blueR"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": []
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg2",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "sets"
+            },
+            {
+             "name": "value",
+             "type": "preset",
+             "value": "blueP"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": []
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg3",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "sets"
+            },
+            {
+             "name": "value",
+             "type": "preset",
+             "value": "blueS"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": []
+            }
+           ]
+          }
+         }
+        ]
+       }
+      },
+      {
+       "name": "piecesRed",
+       "value": {
+        "selector": "concat",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "sets"
+            },
+            {
+             "name": "value",
+             "type": "preset",
+             "value": "redR"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": []
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg2",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "sets"
+            },
+            {
+             "name": "value",
+             "type": "preset",
+             "value": "redP"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": []
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg3",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "sets"
+            },
+            {
+             "name": "value",
+             "type": "preset",
+             "value": "redS"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": []
+            }
+           ]
+          }
+         }
+        ]
+       }
+      },
+      {
+       "name": "occupied",
+       "value": {
+        "selector": "concat",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "piecesBlue"
+         },
+         {
+          "name": "arg2",
+          "type": "cached",
+          "value": "piecesRed"
+         }
+        ]
+       }
+      },
+      {
+       "name": "emptyCells",
+       "value": {
+        "selector": "listsSubtract",
+        "params": [
+         {
+          "name": "list1",
+          "type": "cached",
+          "value": "cells"
+         },
+         {
+          "name": "list2",
+          "type": "cached",
+          "value": "occupied"
+         }
+        ]
+       }
+      },
+      {
+       "name": "cntBlue",
+       "value": {
+        "selector": "listLength",
+        "params": [
+         {
+          "name": "list",
+          "type": "cached",
+          "value": "piecesBlue"
+         }
+        ]
+       }
+      },
+      {
+       "name": "cntRed",
+       "value": {
+        "selector": "listLength",
+        "params": [
+         {
+          "name": "list",
+          "type": "cached",
+          "value": "piecesRed"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "updateScore",
+     "payload": {
+      "computed": {
+       "scores": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "createDict",
+           "params": [
+            {
+             "name": "keys",
+             "type": "preset",
+             "value": [
+              "list",
+              "score"
+             ]
+            },
+            {
+             "name": "values",
+             "type": "computed",
+             "value": {
+              "selector": "createList",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                 "selector": "createList",
+                 "params": [
+                  {
+                   "name": "arg1",
+                   "type": "cached",
+                   "value": "blueId"
+                  }
+                 ]
+                }
+               },
+               {
+                "name": "arg2",
+                "type": "cached",
+                "value": "cntBlue"
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "key": "updateScore",
+     "payload": {
+      "computed": {
+       "scores": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "createDict",
+           "params": [
+            {
+             "name": "keys",
+             "type": "preset",
+             "value": [
+              "list",
+              "score"
+             ]
+            },
+            {
+             "name": "values",
+             "type": "computed",
+             "value": {
+              "selector": "createList",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                 "selector": "createList",
+                 "params": [
+                  {
+                   "name": "arg1",
+                   "type": "cached",
+                   "value": "redId"
+                  }
+                 ]
+                }
+               },
+               {
+                "name": "arg2",
+                "type": "cached",
+                "value": "cntRed"
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "key": "updateScore",
+     "skipCondition": [
+      {
+       "selector": "logicalNOT",
+       "params": [
+        {
+         "name": "arg",
+         "type": "cached",
+         "value": "isTimed"
+        }
+       ]
+      }
+     ],
+     "payload": {
+      "computed": {
+       "scores": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "createDict",
+           "params": [
+            {
+             "name": "keys",
+             "type": "preset",
+             "value": [
+              "list",
+              "score",
+              "secondScore"
+             ]
+            },
+            {
+             "name": "values",
+             "type": "computed",
+             "value": {
+              "selector": "createList",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                 "selector": "createList",
+                 "params": [
+                  {
+                   "name": "arg1",
+                   "type": "cached",
+                   "value": "blueId"
+                  }
+                 ]
+                }
+               },
+               {
+                "name": "arg2",
+                "type": "cached",
+                "value": "clockBlue"
+               },
+               {
+                "name": "arg3",
+                "type": "preset",
+                "value": true
+               }
+              ]
+             }
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg2",
+          "type": "computed",
+          "value": {
+           "selector": "createDict",
+           "params": [
+            {
+             "name": "keys",
+             "type": "preset",
+             "value": [
+              "list",
+              "score",
+              "secondScore"
+             ]
+            },
+            {
+             "name": "values",
+             "type": "computed",
+             "value": {
+              "selector": "createList",
+              "params": [
+               {
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                 "selector": "createList",
+                 "params": [
+                  {
+                   "name": "arg1",
+                   "type": "cached",
+                   "value": "redId"
+                  }
+                 ]
+                }
+               },
+               {
+                "name": "arg2",
+                "type": "cached",
+                "value": "clockRed"
+               },
+               {
+                "name": "arg3",
+                "type": "preset",
+                "value": true
+               }
+              ]
+             }
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "movePrefix",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "cached",
+          "value": "isBlueTurn"
+         },
+         {
+          "name": "thenValue",
+          "type": "computed",
+          "value": {
+           "selector": "formatString",
+           "params": [
+            {
+             "name": "format",
+             "type": "preset",
+             "value": "($1)."
+            },
+            {
+             "name": "arg1",
+             "type": "cached",
+             "value": "moveNumber"
+            }
+           ]
+          }
+         },
+         {
+          "name": "elseValue",
+          "type": "preset",
+          "value": "\u2026"
+         }
+        ]
+       }
+      },
+      {
+       "name": "trailCells",
+       "value": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "fromCell"
+         },
+         {
+          "name": "arg2",
+          "type": "cached",
+          "value": "toCell"
+         }
+        ]
+       }
+      },
+      {
+       "name": "trailColor",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "cached",
+          "value": "isBlueTurn"
+         },
+         {
+          "name": "thenValue",
+          "type": "preset",
+          "value": "#BBD0EE"
+         },
+         {
+          "name": "elseValue",
+          "type": "preset",
+          "value": "#F5C2C2"
+         }
+        ]
+       }
+      },
+      {
+       "name": "trailBlue",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "cached",
+          "value": "isBlueTurn"
+         },
+         {
+          "name": "thenValue",
+          "type": "cached",
+          "value": "trailCells"
+         },
+         {
+          "name": "elseValue",
+          "type": "cached",
+          "value": "trailBlue"
+         }
+        ]
+       }
+      },
+      {
+       "name": "trailRed",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "cached",
+          "value": "isBlueTurn"
+         },
+         {
+          "name": "thenValue",
+          "type": "cached",
+          "value": "trailRed"
+         },
+         {
+          "name": "elseValue",
+          "type": "cached",
+          "value": "trailCells"
+         }
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "key": "highlightDecks",
+     "payload": {
+      "cached": {
+       "decks": "trailCells",
+       "color": "trailColor"
+      }
+     }
+    },
+    {
+     "key": "createNotification",
+     "skipCondition": [
+      {
+       "selector": "getCachedValue",
+       "params": [
+        {
+         "name": "name",
+         "type": "preset",
+         "value": "isCapture"
+        }
+       ]
+      }
+     ],
+     "payload": {
+      "preset": {
+       "isAnnounceOnly": true,
+       "sounds.waitForSoundEnd": false,
+       "sounds.list": [
+        "soundboard.move"
+       ]
+      },
+      "cached": {
+       "to": "players",
+       "playList.0": "players"
+      },
+      "computed": {
+       "header": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "preset",
+          "value": "($1) ($2)($3) ($4) ($5)"
+         },
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "movePrefix"
+         },
+         {
+          "name": "arg2",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "teamEmoji"
+            },
+            {
+             "name": "value",
+             "type": "cached",
+             "value": "turnTeam"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": ""
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg3",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "pieceEmoji"
+            },
+            {
+             "name": "value",
+             "type": "cached",
+             "value": "movedType"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": ""
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg4",
+          "type": "cached",
+          "value": "fromCell"
+         },
+         {
+          "name": "arg5",
+          "type": "cached",
+          "value": "toCell"
+         }
+        ]
+       }
+      }
+     }
+    },
+    {
+     "key": "createNotification",
+     "skipCondition": [
+      {
+       "selector": "logicalNOT",
+       "params": [
+        {
+         "name": "arg",
+         "type": "cached",
+         "value": "isCapture"
+        }
+       ]
+      }
+     ],
+     "payload": {
+      "preset": {
+       "isAnnounceOnly": true,
+       "sounds.waitForSoundEnd": false
+      },
+      "cached": {
+       "to": "players",
+       "playList.0": "players"
+      },
+      "computed": {
+       "header": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "preset",
+          "value": "($1) ($2)($3) ($4) x($5)"
+         },
+         {
+          "name": "arg1",
+          "type": "cached",
+          "value": "movePrefix"
+         },
+         {
+          "name": "arg2",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "teamEmoji"
+            },
+            {
+             "name": "value",
+             "type": "cached",
+             "value": "turnTeam"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": ""
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg3",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "pieceEmoji"
+            },
+            {
+             "name": "value",
+             "type": "cached",
+             "value": "movedType"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": ""
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg4",
+          "type": "cached",
+          "value": "fromCell"
+         },
+         {
+          "name": "arg5",
+          "type": "cached",
+          "value": "toCell"
+         }
+        ]
+       },
+       "sounds.list": {
+        "selector": "createList",
+        "params": [
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "captureSound"
+            },
+            {
+             "name": "value",
+             "type": "cached",
+             "value": "movedType"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": ""
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "Corner reached",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    },
+    {
+     "selector": "notEqual",
+     "params": [
+      {
+       "name": "arg1",
+       "type": "cached",
+       "value": "toCell"
+      },
+      {
+       "name": "arg2",
+       "type": "cached",
+       "value": "targetCell"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "gameOver",
+       "value": true
+      },
+      {
+       "name": "winner",
+       "value": {
+        "selector": "getCachedValue",
+        "params": [
+         {
+          "name": "name",
+          "type": "preset",
+          "value": "turnTeam"
+         }
+        ]
+       }
+      },
+      {
+       "name": "postgameMessage",
+       "value": {
+        "selector": "formatString",
+        "params": [
+         {
+          "name": "format",
+          "type": "preset",
+          "value": "($1) reached ($2)."
+         },
+         {
+          "name": "arg1",
+          "type": "computed",
+          "value": {
+           "selector": "getCachedObjectValue",
+           "params": [
+            {
+             "name": "objectName",
+             "type": "preset",
+             "value": "teamName"
+            },
+            {
+             "name": "value",
+             "type": "cached",
+             "value": "turnTeam"
+            },
+            {
+             "name": "defaultValue",
+             "type": "preset",
+             "value": ""
+            }
+           ]
+          }
+         },
+         {
+          "name": "arg2",
+          "type": "cached",
+          "value": "toCell"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Next side",
+   "skipCondition": [
+    {
+     "selector": "getCachedValue",
+     "params": [
+      {
+       "name": "name",
+       "type": "preset",
+       "value": "gameOver"
+      }
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "key": "emptyAction",
+     "saveValueInCache": [
+      {
+       "name": "turnTeam",
+       "value": {
+        "selector": "getCachedValue",
+        "params": [
+         {
+          "name": "name",
+          "type": "preset",
+          "value": "otherTeam"
+         }
+        ]
+       }
+      },
+      {
+       "name": "moveNumber",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "cached",
+          "value": "isBlueTurn"
+         },
+         {
+          "name": "thenValue",
+          "type": "cached",
+          "value": "moveNumber"
+         },
+         {
+          "name": "elseValue",
+          "type": "computed",
+          "value": {
+           "selector": "inc",
+           "params": [
+            {
+             "name": "arg",
+             "type": "cached",
+             "value": "moveNumber"
+            }
+           ]
+          }
+         }
+        ]
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Check for a winner",
+   "checkWinCondition": true,
+   "actions": []
+  }
+ ],
+ "winCondition": {
+  "blue": {
+   "selector": "logicalAND",
+   "params": [
+    {
+     "name": "arg1",
+     "type": "cached",
+     "value": "gameOver"
+    },
+    {
+     "name": "arg2",
+     "type": "computed",
+     "value": {
+      "selector": "equals",
+      "params": [
+       {
+        "name": "arg1",
+        "type": "cached",
+        "value": "winner"
+       },
+       {
+        "name": "arg2",
+        "type": "preset",
+        "value": "blue"
+       }
+      ]
+     }
+    }
+   ]
+  },
+  "red": {
+   "selector": "logicalAND",
+   "params": [
+    {
+     "name": "arg1",
+     "type": "cached",
+     "value": "gameOver"
+    },
+    {
+     "name": "arg2",
+     "type": "computed",
+     "value": {
+      "selector": "equals",
+      "params": [
+       {
+        "name": "arg1",
+        "type": "cached",
+        "value": "winner"
+       },
+       {
+        "name": "arg2",
+        "type": "preset",
+        "value": "red"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "postGameActions": [
+  {
+   "key": "removeAllHighlights"
+  },
+  {
+   "key": "createNotification",
+   "payload": {
+    "preset": {
+     "duration": 14,
+     "image": "winner",
+     "backgroundColor": "#F4EEE8",
+     "borderColor": "#2B2B2B",
+     "textColor": "#2B2B2B"
+    },
+    "cached": {
+     "to": "players",
+     "text": "postgameMessage"
+    },
+    "computed": {
+     "header": {
+      "selector": "ifElse",
+      "params": [
+       {
+        "name": "condition",
+        "type": "computed",
+        "value": {
+         "selector": "equals",
+         "params": [
+          {
+           "name": "arg1",
+           "type": "cached",
+           "value": "winner"
+          },
+          {
+           "name": "arg2",
+           "type": "preset",
+           "value": "blue"
+          }
+         ]
+        }
+       },
+       {
+        "name": "thenValue",
+        "type": "preset",
+        "value": "Blue wins!"
+       },
+       {
+        "name": "elseValue",
+        "type": "preset",
+        "value": "Red wins!"
+       }
+      ]
+     }
+    }
+   }
+  }
+ ]
+}

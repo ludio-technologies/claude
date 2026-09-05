@@ -1,0 +1,64 @@
+{
+    "name": "Mafia Shootout",
+    "demo": false,
+    "parallel": false,
+    "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+    "banner": "https://res.cloudinary.com/liars-club/image/upload/images/mafia_shootout/banner.png",
+    "description": {
+        "summary": "A real-time Mafia shootout — no day/night phases. Everyone acts at once, spending HP to check, heal, and attack. Mafia can shoot for free. Last team standing wins.",
+        "description_title": "Mafia Shootout Overview",
+        "# Players": "6-12",
+        "players": "6-12",
+        "Duration": "5-10 mins"
+    },
+    "rules": [
+        {
+            "name": "Basic Rules",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Overview",
+                    "text": "Roughly a third of players are secretly Mafia; the rest are Townspeople. Everyone starts with 10 HP — your HP is shown as your score, and only YOU can see your own. There are no day or night phases: play is continuous and simultaneous. You are eliminated when your HP drops to 0 or below. Mafia know who their fellow Mafia are from the start."
+                },
+                {
+                    "title": "Taking actions",
+                    "text": "Every few seconds, all living players get a short window to choose one action — or to wait. If you pick an action, you then choose its target. All players act at the same time, and effects resolve together at the end of each window (so a player who is eliminated in a window still gets their own action off)."
+                },
+                {
+                    "title": "The actions",
+                    "text": "Check — spend 5 HP to privately learn one player's alignment (Mafia or Town).<br>Buff — spend 1 HP to give another player +2 HP.<br>Vote — spend 1 HP to deplete another player by 2 HP. Votes are public.<br>Shoot — Mafia only, costs nothing, depletes another player by 4 HP."
+                },
+                {
+                    "title": "HP costs & cooldowns",
+                    "text": "You can never spend HP you don't have — an action you can't afford is hidden (so your own action can never eliminate you). HP is capped at 10; buffing past 10 is wasted.<br><br>Each action has a cooldown, counted in action-windows, before you can use it again: Vote 3, Buff 9, Shoot 15, Check 25. Cooldowns are per-action, so using one doesn't block the others."
+                }
+            ]
+        },
+        {
+            "name": "Win Conditions",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Last team standing",
+                    "text": "The Mafia win when every Townsperson has been eliminated. The Town wins when every Mafia has been eliminated. If both teams are wiped out in the same window, the round is a draw."
+                }
+            ]
+        },
+        {
+            "name": "Mechanics",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Not taking your action",
+                    "text": "If you don't choose an action in time, you simply wait that window out. If you choose an action but don't pick a target in time, a random valid target is chosen for you."
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "social deduction",
+        "mafia",
+        "player elimination",
+        "real-time"
+    ]
+}

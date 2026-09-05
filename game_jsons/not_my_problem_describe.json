@@ -1,0 +1,72 @@
+{
+  "name": "Not My Problem",
+  "demo": false,
+  "parallel": false,
+  "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+  "banner": "https://res.cloudinary.com/liars-club/image/upload/images/not_my_problem/banner.png",
+  "description": {
+    "summary": "A bluffing game for 3-6 players. Delegate dreaded office tasks face-down, lie about what they are, and don't get stuck with three of one task on your desk!",
+    "description_title": "Not My Problem Overview",
+    "description": "Slide a task to a coworker face-down and claim what it is — truth or bluff. They call it (True or Bluff) or peek and pass it on with a new claim. Guess right and it lands back on the sender; guess wrong and it's yours. Pile up three of any one task and you're buried — everyone else wins.",
+    "# Players": "3-6",
+    "players": "3-6",
+    "Duration": "20 mins"
+  },
+  "rules": [
+    {
+      "name": "Basic Rules",
+      "icon": "icon.png",
+      "content": [
+        {
+          "title": "Goal",
+          "text": "Nobody wants to get stuck with work. Pass dreaded office tasks to your coworkers and avoid piling up matching tasks on your own desk. Collect THREE of the same task and you are BURIED and out — everyone still standing wins. The goal isn't points; it's simply making sure someone else gets stuck with the buck."
+        },
+        {
+          "title": "Delegating a task",
+          "text": "On your turn, pick a task card from your hand and slide it face-down to any coworker. Then announce a claim — say what the task is. You can tell the truth or bluff completely, for example claiming it's a Jury Duty when it's really a Printer Jam."
+        },
+        {
+          "title": "True, Bluff, or Peek",
+          "text": "When a face-down task is pushed to you, you have two choices. Call the claim — say True or Bluff. If you are right, the card goes onto the sender's desk; if you are wrong, it goes onto yours. Or Peek and Pass: secretly look at the card, then slide it to a coworker who hasn't seen it yet, along with your own fresh claim (true or bluff)."
+        },
+        {
+          "title": "Nowhere left to pass",
+          "text": "A task can only be passed to players who haven't seen it yet. Once everyone else at the table has already seen it, the last coworker holding it has to call it — True or Bluff. No more peeking or passing."
+        }
+      ]
+    },
+    {
+      "name": "Win Conditions",
+      "icon": "icon.png",
+      "content": [
+        {
+          "title": "Getting buried",
+          "text": "Every time a task is revealed it lands on a desk and stacks with matching tasks already there. The instant any player has three of the same task on their desk, they are BURIED — they lose and the game ends immediately."
+        },
+        {
+          "title": "Who wins",
+          "text": "Everyone except the buried player wins. Stay off the hot seat, keep your desk clear, and make sure the buck stops with somebody else."
+        }
+      ]
+    },
+    {
+      "name": "Advanced Rules",
+      "icon": "icon.png",
+      "content": [
+        {
+          "title": "Read the desks",
+          "text": "Watch which tasks are piling up in front of each player. Truthfully claiming the exact task a coworker already has two of is a great way to bury them — if they believe you and call it wrong."
+        },
+        {
+          "title": "When in doubt, peek",
+          "text": "If you can't tell whether a claim is true, peeking lets you learn the real task and keep the pressure moving. But remember you can only pass to someone who hasn't seen it, so don't hold it too long."
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "card game",
+    "social deduction",
+    "strategic"
+  ]
+}

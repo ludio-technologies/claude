@@ -1,0 +1,669 @@
+{
+ "name": "pageant_cards",
+ "cards": [
+  {
+   "name": "crimson_0",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/crimson_0.png",
+   "label": "Crimson 0",
+   "type": "crimson",
+   "color": "crimson",
+   "value": 0,
+   "weight": 0
+  },
+  {
+   "name": "crimson_1",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/crimson_1.png",
+   "label": "Crimson 1",
+   "type": "crimson",
+   "color": "crimson",
+   "value": 1,
+   "weight": 1
+  },
+  {
+   "name": "crimson_2",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/crimson_2.png",
+   "label": "Crimson 2",
+   "type": "crimson",
+   "color": "crimson",
+   "value": 2,
+   "weight": 2
+  },
+  {
+   "name": "crimson_3",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/crimson_3.png",
+   "label": "Crimson 3",
+   "type": "crimson",
+   "color": "crimson",
+   "value": 3,
+   "weight": 3
+  },
+  {
+   "name": "crimson_4",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/crimson_4.png",
+   "label": "Crimson 4",
+   "type": "crimson",
+   "color": "crimson",
+   "value": 4,
+   "weight": 4
+  },
+  {
+   "name": "crimson_5",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/crimson_5.png",
+   "label": "Crimson 5",
+   "type": "crimson",
+   "color": "crimson",
+   "value": 5,
+   "weight": 5
+  },
+  {
+   "name": "crimson_6",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/crimson_6.png",
+   "label": "Crimson 6",
+   "type": "crimson",
+   "color": "crimson",
+   "value": 6,
+   "weight": 6
+  },
+  {
+   "name": "crimson_7",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/crimson_7.png",
+   "label": "Crimson 7",
+   "type": "crimson",
+   "color": "crimson",
+   "value": 7,
+   "weight": 7
+  },
+  {
+   "name": "crimson_8",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/crimson_8.png",
+   "label": "Crimson 8",
+   "type": "crimson",
+   "color": "crimson",
+   "value": 8,
+   "weight": 8
+  },
+  {
+   "name": "crimson_9",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/crimson_9.png",
+   "label": "Crimson 9",
+   "type": "crimson",
+   "color": "crimson",
+   "value": 9,
+   "weight": 9
+  },
+  {
+   "name": "crimson_10",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/crimson_10.png",
+   "label": "Crimson 10",
+   "type": "crimson",
+   "color": "crimson",
+   "value": 10,
+   "weight": 10
+  },
+  {
+   "name": "amber_0",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/amber_0.png",
+   "label": "Amber 0",
+   "type": "amber",
+   "color": "amber",
+   "value": 0,
+   "weight": 11
+  },
+  {
+   "name": "amber_1",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/amber_1.png",
+   "label": "Amber 1",
+   "type": "amber",
+   "color": "amber",
+   "value": 1,
+   "weight": 12
+  },
+  {
+   "name": "amber_2",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/amber_2.png",
+   "label": "Amber 2",
+   "type": "amber",
+   "color": "amber",
+   "value": 2,
+   "weight": 13
+  },
+  {
+   "name": "amber_3",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/amber_3.png",
+   "label": "Amber 3",
+   "type": "amber",
+   "color": "amber",
+   "value": 3,
+   "weight": 14
+  },
+  {
+   "name": "amber_4",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/amber_4.png",
+   "label": "Amber 4",
+   "type": "amber",
+   "color": "amber",
+   "value": 4,
+   "weight": 15
+  },
+  {
+   "name": "amber_5",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/amber_5.png",
+   "label": "Amber 5",
+   "type": "amber",
+   "color": "amber",
+   "value": 5,
+   "weight": 16
+  },
+  {
+   "name": "amber_6",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/amber_6.png",
+   "label": "Amber 6",
+   "type": "amber",
+   "color": "amber",
+   "value": 6,
+   "weight": 17
+  },
+  {
+   "name": "amber_7",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/amber_7.png",
+   "label": "Amber 7",
+   "type": "amber",
+   "color": "amber",
+   "value": 7,
+   "weight": 18
+  },
+  {
+   "name": "amber_8",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/amber_8.png",
+   "label": "Amber 8",
+   "type": "amber",
+   "color": "amber",
+   "value": 8,
+   "weight": 19
+  },
+  {
+   "name": "amber_9",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/amber_9.png",
+   "label": "Amber 9",
+   "type": "amber",
+   "color": "amber",
+   "value": 9,
+   "weight": 20
+  },
+  {
+   "name": "amber_10",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/amber_10.png",
+   "label": "Amber 10",
+   "type": "amber",
+   "color": "amber",
+   "value": 10,
+   "weight": 21
+  },
+  {
+   "name": "emerald_0",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/emerald_0.png",
+   "label": "Emerald 0",
+   "type": "emerald",
+   "color": "emerald",
+   "value": 0,
+   "weight": 22
+  },
+  {
+   "name": "emerald_1",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/emerald_1.png",
+   "label": "Emerald 1",
+   "type": "emerald",
+   "color": "emerald",
+   "value": 1,
+   "weight": 23
+  },
+  {
+   "name": "emerald_2",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/emerald_2.png",
+   "label": "Emerald 2",
+   "type": "emerald",
+   "color": "emerald",
+   "value": 2,
+   "weight": 24
+  },
+  {
+   "name": "emerald_3",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/emerald_3.png",
+   "label": "Emerald 3",
+   "type": "emerald",
+   "color": "emerald",
+   "value": 3,
+   "weight": 25
+  },
+  {
+   "name": "emerald_4",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/emerald_4.png",
+   "label": "Emerald 4",
+   "type": "emerald",
+   "color": "emerald",
+   "value": 4,
+   "weight": 26
+  },
+  {
+   "name": "emerald_5",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/emerald_5.png",
+   "label": "Emerald 5",
+   "type": "emerald",
+   "color": "emerald",
+   "value": 5,
+   "weight": 27
+  },
+  {
+   "name": "emerald_6",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/emerald_6.png",
+   "label": "Emerald 6",
+   "type": "emerald",
+   "color": "emerald",
+   "value": 6,
+   "weight": 28
+  },
+  {
+   "name": "emerald_7",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/emerald_7.png",
+   "label": "Emerald 7",
+   "type": "emerald",
+   "color": "emerald",
+   "value": 7,
+   "weight": 29
+  },
+  {
+   "name": "emerald_8",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/emerald_8.png",
+   "label": "Emerald 8",
+   "type": "emerald",
+   "color": "emerald",
+   "value": 8,
+   "weight": 30
+  },
+  {
+   "name": "emerald_9",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/emerald_9.png",
+   "label": "Emerald 9",
+   "type": "emerald",
+   "color": "emerald",
+   "value": 9,
+   "weight": 31
+  },
+  {
+   "name": "emerald_10",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/emerald_10.png",
+   "label": "Emerald 10",
+   "type": "emerald",
+   "color": "emerald",
+   "value": 10,
+   "weight": 32
+  },
+  {
+   "name": "sapphire_0",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/sapphire_0.png",
+   "label": "Sapphire 0",
+   "type": "sapphire",
+   "color": "sapphire",
+   "value": 0,
+   "weight": 33
+  },
+  {
+   "name": "sapphire_1",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/sapphire_1.png",
+   "label": "Sapphire 1",
+   "type": "sapphire",
+   "color": "sapphire",
+   "value": 1,
+   "weight": 34
+  },
+  {
+   "name": "sapphire_2",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/sapphire_2.png",
+   "label": "Sapphire 2",
+   "type": "sapphire",
+   "color": "sapphire",
+   "value": 2,
+   "weight": 35
+  },
+  {
+   "name": "sapphire_3",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/sapphire_3.png",
+   "label": "Sapphire 3",
+   "type": "sapphire",
+   "color": "sapphire",
+   "value": 3,
+   "weight": 36
+  },
+  {
+   "name": "sapphire_4",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/sapphire_4.png",
+   "label": "Sapphire 4",
+   "type": "sapphire",
+   "color": "sapphire",
+   "value": 4,
+   "weight": 37
+  },
+  {
+   "name": "sapphire_5",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/sapphire_5.png",
+   "label": "Sapphire 5",
+   "type": "sapphire",
+   "color": "sapphire",
+   "value": 5,
+   "weight": 38
+  },
+  {
+   "name": "sapphire_6",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/sapphire_6.png",
+   "label": "Sapphire 6",
+   "type": "sapphire",
+   "color": "sapphire",
+   "value": 6,
+   "weight": 39
+  },
+  {
+   "name": "sapphire_7",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/sapphire_7.png",
+   "label": "Sapphire 7",
+   "type": "sapphire",
+   "color": "sapphire",
+   "value": 7,
+   "weight": 40
+  },
+  {
+   "name": "sapphire_8",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/sapphire_8.png",
+   "label": "Sapphire 8",
+   "type": "sapphire",
+   "color": "sapphire",
+   "value": 8,
+   "weight": 41
+  },
+  {
+   "name": "sapphire_9",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/sapphire_9.png",
+   "label": "Sapphire 9",
+   "type": "sapphire",
+   "color": "sapphire",
+   "value": 9,
+   "weight": 42
+  },
+  {
+   "name": "sapphire_10",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/sapphire_10.png",
+   "label": "Sapphire 10",
+   "type": "sapphire",
+   "color": "sapphire",
+   "value": 10,
+   "weight": 43
+  },
+  {
+   "name": "violet_0",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/violet_0.png",
+   "label": "Violet 0",
+   "type": "violet",
+   "color": "violet",
+   "value": 0,
+   "weight": 44
+  },
+  {
+   "name": "violet_1",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/violet_1.png",
+   "label": "Violet 1",
+   "type": "violet",
+   "color": "violet",
+   "value": 1,
+   "weight": 45
+  },
+  {
+   "name": "violet_2",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/violet_2.png",
+   "label": "Violet 2",
+   "type": "violet",
+   "color": "violet",
+   "value": 2,
+   "weight": 46
+  },
+  {
+   "name": "violet_3",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/violet_3.png",
+   "label": "Violet 3",
+   "type": "violet",
+   "color": "violet",
+   "value": 3,
+   "weight": 47
+  },
+  {
+   "name": "violet_4",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/violet_4.png",
+   "label": "Violet 4",
+   "type": "violet",
+   "color": "violet",
+   "value": 4,
+   "weight": 48
+  },
+  {
+   "name": "violet_5",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/violet_5.png",
+   "label": "Violet 5",
+   "type": "violet",
+   "color": "violet",
+   "value": 5,
+   "weight": 49
+  },
+  {
+   "name": "violet_6",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/violet_6.png",
+   "label": "Violet 6",
+   "type": "violet",
+   "color": "violet",
+   "value": 6,
+   "weight": 50
+  },
+  {
+   "name": "violet_7",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/violet_7.png",
+   "label": "Violet 7",
+   "type": "violet",
+   "color": "violet",
+   "value": 7,
+   "weight": 51
+  },
+  {
+   "name": "violet_8",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/violet_8.png",
+   "label": "Violet 8",
+   "type": "violet",
+   "color": "violet",
+   "value": 8,
+   "weight": 52
+  },
+  {
+   "name": "violet_9",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/violet_9.png",
+   "label": "Violet 9",
+   "type": "violet",
+   "color": "violet",
+   "value": 9,
+   "weight": 53
+  },
+  {
+   "name": "violet_10",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/violet_10.png",
+   "label": "Violet 10",
+   "type": "violet",
+   "color": "violet",
+   "value": 10,
+   "weight": 54
+  },
+  {
+   "name": "rose_0",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/rose_0.png",
+   "label": "Rose 0",
+   "type": "rose",
+   "color": "rose",
+   "value": 0,
+   "weight": 55
+  },
+  {
+   "name": "rose_1",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/rose_1.png",
+   "label": "Rose 1",
+   "type": "rose",
+   "color": "rose",
+   "value": 1,
+   "weight": 56
+  },
+  {
+   "name": "rose_2",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/rose_2.png",
+   "label": "Rose 2",
+   "type": "rose",
+   "color": "rose",
+   "value": 2,
+   "weight": 57
+  },
+  {
+   "name": "rose_3",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/rose_3.png",
+   "label": "Rose 3",
+   "type": "rose",
+   "color": "rose",
+   "value": 3,
+   "weight": 58
+  },
+  {
+   "name": "rose_4",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/rose_4.png",
+   "label": "Rose 4",
+   "type": "rose",
+   "color": "rose",
+   "value": 4,
+   "weight": 59
+  },
+  {
+   "name": "rose_5",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/rose_5.png",
+   "label": "Rose 5",
+   "type": "rose",
+   "color": "rose",
+   "value": 5,
+   "weight": 60
+  },
+  {
+   "name": "rose_6",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/rose_6.png",
+   "label": "Rose 6",
+   "type": "rose",
+   "color": "rose",
+   "value": 6,
+   "weight": 61
+  },
+  {
+   "name": "rose_7",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/rose_7.png",
+   "label": "Rose 7",
+   "type": "rose",
+   "color": "rose",
+   "value": 7,
+   "weight": 62
+  },
+  {
+   "name": "rose_8",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/rose_8.png",
+   "label": "Rose 8",
+   "type": "rose",
+   "color": "rose",
+   "value": 8,
+   "weight": 63
+  },
+  {
+   "name": "rose_9",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/rose_9.png",
+   "label": "Rose 9",
+   "type": "rose",
+   "color": "rose",
+   "value": 9,
+   "weight": 64
+  },
+  {
+   "name": "rose_10",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/rose_10.png",
+   "label": "Rose 10",
+   "type": "rose",
+   "color": "rose",
+   "value": 10,
+   "weight": 65
+  }
+ ],
+ "sets": {
+  "full": {
+   "crimson_0": 1,
+   "crimson_1": 1,
+   "crimson_2": 1,
+   "crimson_3": 1,
+   "crimson_4": 1,
+   "crimson_5": 1,
+   "crimson_6": 1,
+   "crimson_7": 1,
+   "crimson_8": 1,
+   "crimson_9": 1,
+   "crimson_10": 1,
+   "amber_0": 1,
+   "amber_1": 1,
+   "amber_2": 1,
+   "amber_3": 1,
+   "amber_4": 1,
+   "amber_5": 1,
+   "amber_6": 1,
+   "amber_7": 1,
+   "amber_8": 1,
+   "amber_9": 1,
+   "amber_10": 1,
+   "emerald_0": 1,
+   "emerald_1": 1,
+   "emerald_2": 1,
+   "emerald_3": 1,
+   "emerald_4": 1,
+   "emerald_5": 1,
+   "emerald_6": 1,
+   "emerald_7": 1,
+   "emerald_8": 1,
+   "emerald_9": 1,
+   "emerald_10": 1,
+   "sapphire_0": 1,
+   "sapphire_1": 1,
+   "sapphire_2": 1,
+   "sapphire_3": 1,
+   "sapphire_4": 1,
+   "sapphire_5": 1,
+   "sapphire_6": 1,
+   "sapphire_7": 1,
+   "sapphire_8": 1,
+   "sapphire_9": 1,
+   "sapphire_10": 1,
+   "violet_0": 1,
+   "violet_1": 1,
+   "violet_2": 1,
+   "violet_3": 1,
+   "violet_4": 1,
+   "violet_5": 1,
+   "violet_6": 1,
+   "violet_7": 1,
+   "violet_8": 1,
+   "violet_9": 1,
+   "violet_10": 1,
+   "rose_0": 1,
+   "rose_1": 1,
+   "rose_2": 1,
+   "rose_3": 1,
+   "rose_4": 1,
+   "rose_5": 1,
+   "rose_6": 1,
+   "rose_7": 1,
+   "rose_8": 1,
+   "rose_9": 1,
+   "rose_10": 1
+  }
+ }
+}

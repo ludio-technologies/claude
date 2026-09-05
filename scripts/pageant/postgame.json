@@ -1,0 +1,98 @@
+[
+ {
+  "key": "hideAllPlayersHands"
+ },
+ {
+  "key": "setImagesRow",
+  "payload": {
+   "preset": {
+    "maxHeight": 10,
+    "images": [
+     "transparent"
+    ]
+   }
+  }
+ },
+ {
+  "key": "createNotification",
+  "payload": {
+   "preset": {
+    "image": "winner",
+    "backgroundColor": "#e6ffe6",
+    "borderColor": "black"
+   },
+   "cached": {
+    "to": "players"
+   },
+   "computed": {
+    "header": {
+     "selector": "formatString",
+     "params": [
+      {
+       "name": "format",
+       "type": "preset",
+       "value": "($1) ($2)!"
+      },
+      {
+       "name": "arg1",
+       "type": "cached",
+       "value": "winner"
+      },
+      {
+       "name": "arg2",
+       "type": "computed",
+       "value": {
+        "selector": "ifElse",
+        "params": [
+         {
+          "name": "condition",
+          "type": "computed",
+          "value": {
+           "selector": "equals",
+           "params": [
+            {
+             "name": "arg1",
+             "type": "computed",
+             "value": {
+              "selector": "listLength",
+              "params": [
+               {
+                "name": "list",
+                "type": "computed",
+                "value": {
+                 "selector": "getPlayersWithMaxScore"
+                }
+               }
+              ]
+             }
+            },
+            {
+             "name": "arg2",
+             "type": "preset",
+             "value": 1
+            }
+           ]
+          }
+         },
+         {
+          "name": "thenValue",
+          "type": "preset",
+          "value": "wins"
+         },
+         {
+          "name": "elseValue",
+          "type": "preset",
+          "value": "share the win"
+         }
+        ]
+       }
+      }
+     ]
+    }
+   }
+  }
+ },
+ {
+  "key": "endClip"
+ }
+]

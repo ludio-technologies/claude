@@ -1,0 +1,67 @@
+{
+    "name": "Grapheme",
+    "demo": false,
+    "parallel": false,
+    "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+    "banner": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/banner.png",
+    "description": {
+        "summary": "Spell words, build your deck, and out-write the table in this word-building deck game.",
+        "description_title": "Grapheme Overview",
+        "# Players": "2-6",
+        "players": "2-6",
+        "Duration": "6 mins/round"
+    },
+    "rules": [
+        {
+            "name": "Basic Rules",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Overview",
+                    "text": "Grapheme is a word-building deck game for 2-6 players. You start with 10 points and buy your OWN opening set of letter tiles, so every deck is different. Each round you draw a hand of tiles and spell one real word — the longer and higher-value your word, the more points you score. I check every word against the dictionary, so no gibberish!"
+                },
+                {
+                    "title": "Spelling a word",
+                    "text": "Play letter tiles from your hand in order to spell a word. Some tiles show two or three letters at once (like TH, ST or ING) — they still count as a single tile. Each tile's number is its letter value; your word score is the sum of the tiles you play, and that score is added to your running total. Play a word of 6 or more tiles for a +5 bonus (you're loaned a free A every turn to help)!"
+                },
+                {
+                    "title": "The market",
+                    "text": "Here's the twist: your score is also your money. After spelling, visit the market at the top of the board and buy stronger letter tiles into your deck. A bigger, better deck lets you spell bigger words in future rounds. Click a market pile to buy its top tile, then click the green DONE pile when you are finished shopping."
+                },
+                {
+                    "title": "Spend wisely",
+                    "text": "Every tile's number is BOTH its point value and its price. Buying costs you points now but pays off later, so weigh each purchase. You can buy up to seven tiles each round, as long as you can afford them."
+                }
+            ]
+        },
+        {
+            "name": "Win Conditions",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Play to 40 (or stop sooner)",
+                    "text": "The game ends the moment any author reaches 40 points — or you can end it earlier: every 4 rounds the host is asked whether the table wants to keep playing. Either way, the author with the most points wins, and ties share the win (so if several players pass 40 in the same round, the highest score takes it)."
+                }
+            ]
+        },
+        {
+            "name": "Mechanics",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Deck & hands",
+                    "text": "Each turn your hand is 6 tiles (from your face-down draw pile, shown in your last column) plus one loaned A. After spelling and shopping, you may KEEP up to 2 leftover tiles for next turn — the rest, plus the word you played, go to your discard pile. When your draw pile runs out it reshuffles (shuffled) from the discard. Keeping a tile or two lets you plan ahead, but you can't hoard an entire word. Everyone spells at the same time (100 seconds), so there is little waiting. Tap the Cheatsheet to see how many of each tile exist and where to buy them."
+                },
+                {
+                    "title": "Timeouts",
+                    "text": "If you run out of time while spelling, your turn simply ends and you score nothing that round. During shopping, letting the timer run is treated as clicking DONE."
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "word game",
+        "card game",
+        "strategic"
+    ]
+}

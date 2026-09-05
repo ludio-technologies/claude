@@ -1,0 +1,73 @@
+{
+ "name": "Emperor",
+ "demo": false,
+ "parallel": false,
+ "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+ "banner": "https://res.cloudinary.com/liars-club/image/upload/images/emperor/banner.png",
+ "description": {
+  "summary": "A card game of rank and revolution. Shed your hand first to rule the table next round - finish last and pay taxes to the people who beat you.",
+  "description_title": "Emperor Overview",
+  "# Players": "3-8",
+  "players": "3-8",
+  "Duration": "40 mins"
+ },
+ "rules": [
+  {
+   "name": "Basic Rules",
+   "icon": "icon.png",
+   "content": [
+    {
+     "title": "Overview",
+     "text": "Everyone holds a rank at the table, from the Great Emperor at the top down to the Great Serf at the bottom. Each round you race to get rid of your whole hand. Go out first and you are the Great Emperor next round; go out last and you are the Great Serf, who pays for the privilege."
+    },
+    {
+     "title": "The deck",
+     "text": "Eighty cards. There is one 1 (the Emperor), two 2s, three 3s, and so on down to twelve 12s (the Peasants), plus two Jesters. Low numbers are strong. Every card tells you how many of it exist, so you always know what you are up against."
+    },
+    {
+     "title": "Playing a trick",
+     "text": "The leader plays any number of cards of a single rank - one 7, or three 9s. Each player after must play the same NUMBER of cards at a LOWER rank, or pass. Three 9s can be beaten by three 4s, but never by two 4s. Passing puts you out of that trick only. When everyone else has passed, the trick ends and whoever played last leads the next one."
+    },
+    {
+     "title": "Jesters",
+     "text": "The two Jesters are wild. Play them alongside real cards to make up the numbers - two 5s and a Jester count as three 5s. Played on their own they are rank 13, the worst in the game, which makes them a fine way to dump a lead nobody wants."
+    },
+    {
+     "title": "Taxes",
+     "text": "Before each round the Great Serf hands their two best cards to the Great Emperor, who sends any two cards back. The Little Serf and Little Emperor do the same with one card. You cannot hold back your best - the tax takes exactly your lowest numbers."
+    },
+    {
+     "title": "Scoring",
+     "text": "Taking the crown is worth double the table: go out first and you score twice the number of players. Everyone below that scores on a plain ladder - one less than the player count for second, down to a single point for finishing last. So at six players the round pays 12 for first and 5 for second. The highest total when the table stops playing wins."
+    }
+   ]
+  },
+  {
+   "name": "Advanced Rules",
+   "icon": "icon.png",
+   "content": [
+    {
+     "title": "Revolution",
+     "text": "If you are dealt both Jesters you may call a Revolution before taxes are paid, and nobody pays anything that round. It is optional, and it is not always in your interest - if you are already the Great Emperor, the taxes were about to go your way."
+    },
+    {
+     "title": "Greater Revolution",
+     "text": "If the player holding both Jesters is the Greater Serf, calling a Revolution turns the whole table upside down: the seating order reverses, so the Great Serf becomes the Great Emperor and the Emperor drops to the bottom. No taxes are paid."
+    },
+    {
+     "title": "Uneven hands",
+     "text": "Eighty cards rarely divide evenly. The spare cards go to the bottom of the table, so the players about to be taxed get a little more to work with."
+    },
+    {
+     "title": "Three players",
+     "text": "At a table of three there is no Little Emperor or Little Serf - just the Great Emperor, a Merchant and the Great Serf, with the single two-card tax between top and bottom."
+    }
+   ]
+  }
+ ],
+ "tags": [
+  "card game",
+  "strategic",
+  "player elimination"
+ ]
+}

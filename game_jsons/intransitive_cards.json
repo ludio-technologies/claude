@@ -1,0 +1,149 @@
+{
+ "name": "intransitive_cards",
+ "cards": [
+  {
+   "name": "blue_R_1",
+   "label": "Blue Rock",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_R.png",
+   "weight": 1
+  },
+  {
+   "name": "red_R_1",
+   "label": "Red Rock",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_R.png",
+   "weight": 1
+  },
+  {
+   "name": "blue_R_2",
+   "label": "Blue Rock",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_R.png",
+   "weight": 1
+  },
+  {
+   "name": "red_R_2",
+   "label": "Red Rock",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_R.png",
+   "weight": 1
+  },
+  {
+   "name": "blue_R_3",
+   "label": "Blue Rock",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_R.png",
+   "weight": 1
+  },
+  {
+   "name": "red_R_3",
+   "label": "Red Rock",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_R.png",
+   "weight": 1
+  },
+  {
+   "name": "blue_P_1",
+   "label": "Blue Paper",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_P.png",
+   "weight": 2
+  },
+  {
+   "name": "red_P_1",
+   "label": "Red Paper",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_P.png",
+   "weight": 2
+  },
+  {
+   "name": "blue_P_2",
+   "label": "Blue Paper",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_P.png",
+   "weight": 2
+  },
+  {
+   "name": "red_P_2",
+   "label": "Red Paper",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_P.png",
+   "weight": 2
+  },
+  {
+   "name": "blue_P_3",
+   "label": "Blue Paper",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_P.png",
+   "weight": 2
+  },
+  {
+   "name": "red_P_3",
+   "label": "Red Paper",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_P.png",
+   "weight": 2
+  },
+  {
+   "name": "blue_P_4",
+   "label": "Blue Paper",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_P.png",
+   "weight": 2
+  },
+  {
+   "name": "red_P_4",
+   "label": "Red Paper",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_P.png",
+   "weight": 2
+  },
+  {
+   "name": "blue_S_1",
+   "label": "Blue Scissors",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_S.png",
+   "weight": 3
+  },
+  {
+   "name": "red_S_1",
+   "label": "Red Scissors",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_S.png",
+   "weight": 3
+  },
+  {
+   "name": "blue_S_2",
+   "label": "Blue Scissors",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_S.png",
+   "weight": 3
+  },
+  {
+   "name": "red_S_2",
+   "label": "Red Scissors",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_S.png",
+   "weight": 3
+  },
+  {
+   "name": "blue_S_3",
+   "label": "Blue Scissors",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_S.png",
+   "weight": 3
+  },
+  {
+   "name": "red_S_3",
+   "label": "Red Scissors",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_S.png",
+   "weight": 3
+  }
+ ],
+ "sets": {
+  "pieces": {
+   "blue_R_1": 1,
+   "red_R_1": 1,
+   "blue_R_2": 1,
+   "red_R_2": 1,
+   "blue_R_3": 1,
+   "red_R_3": 1,
+   "blue_P_1": 1,
+   "red_P_1": 1,
+   "blue_P_2": 1,
+   "red_P_2": 1,
+   "blue_P_3": 1,
+   "red_P_3": 1,
+   "blue_P_4": 1,
+   "red_P_4": 1,
+   "blue_S_1": 1,
+   "red_S_1": 1,
+   "blue_S_2": 1,
+   "red_S_2": 1,
+   "blue_S_3": 1,
+   "red_S_3": 1
+  }
+ }
+}

@@ -85,7 +85,7 @@
                 "pickTheSecondCard": "Pick the SECOND card to swap.",
                 "endTheRoundNeed": "End the round? Need majority within 20s — tap END ROUND to confirm.",
                 "of4Correct": "($1) of 4 correct",
-                "youSolvedOutOf": "You completed ($1) grid(s) in ($2) total attempts! 🧩",
+                "youSolvedOutOf": "You solved ($1) out of ($2) grids!",
                 "bannerImg": "banner",
                 "wallpaperImg": "wallpaper",
                 "everybodyNobodyTargets": [
@@ -128,9 +128,9 @@
                         "widgetIconColor": "red"
                     }
                 },
-                "solvedInAttempts": "Solved in ($1) attempt(s)! 🎉",
-                "retryLegend": "🟩 correct spot & rotation  ·  🟦 right spot, wrong rotation  ·  🟥 wrong spot — rearrange and guess again!",
-                "noGridsCompleted": "No grids completed — next time!"
+                "gridSolved": "Grid solved! +1 to the team.",
+                "closeNoPoint": "Close — no team point this round.",
+                "noGridsSolved": "No grids solved — next time!"
             }
         },
         "images": {
@@ -213,18 +213,6 @@
                 },
                 {
                     "name": "roundsSolved",
-                    "value": 0
-                },
-                {
-                    "name": "puzzleSolved",
-                    "value": true
-                },
-                {
-                    "name": "attempts",
-                    "value": 0
-                },
-                {
-                    "name": "totalAttempts",
                     "value": 0
                 }
             ]
@@ -1089,18 +1077,6 @@
         },
         {
             "name": "Turn prep",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "puzzleSolved"
-                        }
-                    ]
-                }
-            ],
             "actions": [
                 {
                     "key": "removeWidget",
@@ -1226,10 +1202,6 @@
                                     }
                                 ]
                             }
-                        },
-                        {
-                            "name": "attempts",
-                            "value": 0
                         }
                     ]
                 },
@@ -1312,18 +1284,6 @@
         },
         {
             "name": "Deal cards privately",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "puzzleSolved"
-                        }
-                    ]
-                }
-            ],
             "actions": [
                 {
                     "key": "shuffleDeck",
@@ -1494,18 +1454,6 @@
         },
         {
             "name": "Phase 2 — Clue 1",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "puzzleSolved"
-                        }
-                    ]
-                }
-            ],
             "actions": [
                 {
                     "key": "createInput",
@@ -1611,18 +1559,6 @@
         },
         {
             "name": "Phase 2 — Clue 2",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "puzzleSolved"
-                        }
-                    ]
-                }
-            ],
             "actions": [
                 {
                     "key": "createInput",
@@ -1728,18 +1664,6 @@
         },
         {
             "name": "Phase 2 — Clue 3",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "puzzleSolved"
-                        }
-                    ]
-                }
-            ],
             "actions": [
                 {
                     "key": "createInput",
@@ -1845,18 +1769,6 @@
         },
         {
             "name": "Phase 2 — Clue 4",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "puzzleSolved"
-                        }
-                    ]
-                }
-            ],
             "actions": [
                 {
                     "key": "createInput",
@@ -1970,18 +1882,6 @@
         },
         {
             "name": "Phase 3 — Shuffle + reveal",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "puzzleSolved"
-                        }
-                    ]
-                }
-            ],
             "actions": [
                 {
                     "key": "recallCards",
@@ -3860,9 +3760,6 @@
             "name": "Phase 5 — Score",
             "actions": [
                 {
-                    "key": "removeAllHighlightDecks"
-                },
-                {
                     "key": "emptyAction",
                     "saveValueInCache": [
                         {
@@ -4926,107 +4823,17 @@
                         {
                             "name": "success",
                             "value": {
-                                "selector": "getCachedValue",
+                                "selector": "greaterThanOrEqual",
                                 "params": [
                                     {
-                                        "name": "name",
+                                        "name": "arg1",
+                                        "type": "cached",
+                                        "value": "correctCount"
+                                    },
+                                    {
+                                        "name": "arg2",
                                         "type": "preset",
-                                        "value": "perfect"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "name": "puzzleSolved",
-                            "value": {
-                                "selector": "getCachedValue",
-                                "params": [
-                                    {
-                                        "name": "name",
-                                        "type": "preset",
-                                        "value": "perfect"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "name": "attempts",
-                            "value": {
-                                "selector": "inc",
-                                "params": [
-                                    {
-                                        "name": "arg",
-                                        "type": "cached",
-                                        "value": "attempts"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "name": "totalAttempts",
-                            "value": {
-                                "selector": "ifElse",
-                                "params": [
-                                    {
-                                        "name": "condition",
-                                        "type": "cached",
-                                        "value": "perfect"
-                                    },
-                                    {
-                                        "name": "thenValue",
-                                        "type": "computed",
-                                        "value": {
-                                            "selector": "add",
-                                            "params": [
-                                                {
-                                                    "name": "arg1",
-                                                    "type": "cached",
-                                                    "value": "totalAttempts"
-                                                },
-                                                {
-                                                    "name": "arg2",
-                                                    "type": "cached",
-                                                    "value": "attempts"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "name": "elseValue",
-                                        "type": "cached",
-                                        "value": "totalAttempts"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "name": "roundsPlayed",
-                            "value": {
-                                "selector": "ifElse",
-                                "params": [
-                                    {
-                                        "name": "condition",
-                                        "type": "cached",
-                                        "value": "perfect"
-                                    },
-                                    {
-                                        "name": "thenValue",
-                                        "type": "computed",
-                                        "value": {
-                                            "selector": "inc",
-                                            "params": [
-                                                {
-                                                    "name": "arg",
-                                                    "type": "cached",
-                                                    "value": "roundsPlayed"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "name": "elseValue",
-                                        "type": "cached",
-                                        "value": "roundsPlayed"
+                                        "value": 3
                                     }
                                 ]
                             }
@@ -5059,6 +4866,19 @@
                                         "name": "elseValue",
                                         "type": "cached",
                                         "value": "roundsSolved"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "name": "roundsPlayed",
+                            "value": {
+                                "selector": "inc",
+                                "params": [
+                                    {
+                                        "name": "arg",
+                                        "type": "cached",
+                                        "value": "roundsPlayed"
                                     }
                                 ]
                             }
@@ -5104,24 +4924,31 @@
                 },
                 {
                     "key": "animateBox",
-                    "skipCondition": [
-                        {
-                            "selector": "logicalNOT",
-                            "params": [
-                                {
-                                    "name": "arg",
-                                    "type": "cached",
-                                    "value": "perfect"
-                                }
-                            ]
-                        }
-                    ],
                     "payload": {
-                        "preset": {
-                            "animation": "success"
-                        },
                         "cached": {
                             "userIds": "players"
+                        },
+                        "computed": {
+                            "animation": {
+                                "selector": "ifElse",
+                                "params": [
+                                    {
+                                        "name": "condition",
+                                        "type": "cached",
+                                        "value": "success"
+                                    },
+                                    {
+                                        "name": "thenValue",
+                                        "type": "preset",
+                                        "value": "success"
+                                    },
+                                    {
+                                        "name": "elseValue",
+                                        "type": "preset",
+                                        "value": "fail"
+                                    }
+                                ]
+                            }
                         }
                     }
                 },
@@ -5129,7 +4956,7 @@
                     "key": "createNotification",
                     "payload": {
                         "preset": {
-                            "duration": 6,
+                            "duration": 8,
                             "isAnnounceOnly": true
                         },
                         "cached": {
@@ -5161,27 +4988,13 @@
                                     },
                                     {
                                         "name": "thenValue",
-                                        "type": "computed",
-                                        "value": {
-                                            "selector": "formatString",
-                                            "params": [
-                                                {
-                                                    "name": "format",
-                                                    "type": "cached",
-                                                    "value": "solvedInAttempts"
-                                                },
-                                                {
-                                                    "name": "arg1",
-                                                    "type": "cached",
-                                                    "value": "attempts"
-                                                }
-                                            ]
-                                        }
+                                        "type": "cached",
+                                        "value": "gridSolved"
                                     },
                                     {
                                         "name": "elseValue",
                                         "type": "cached",
-                                        "value": "retryLegend"
+                                        "value": "closeNoPoint"
                                     }
                                 ]
                             }
@@ -5192,18 +5005,6 @@
         },
         {
             "name": "Keep or end?",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "puzzleSolved"
-                        }
-                    ]
-                }
-            ],
             "actions": [
                 {
                     "key": "selectCentralWidgetDeck",
@@ -5298,18 +5099,6 @@
         },
         {
             "name": "Phase 6 — Cleanup",
-            "skipCondition": [
-                {
-                    "selector": "logicalNOT",
-                    "params": [
-                        {
-                            "name": "arg",
-                            "type": "cached",
-                            "value": "puzzleSolved"
-                        }
-                    ]
-                }
-            ],
             "actions": [
                 {
                     "key": "removeAllHighlights"
@@ -5476,7 +5265,7 @@
                                         {
                                             "name": "arg1",
                                             "type": "cached",
-                                            "value": "roundsPlayed"
+                                            "value": "roundsSolved"
                                         },
                                         {
                                             "name": "arg2",
@@ -5500,12 +5289,12 @@
                                         {
                                             "name": "arg1",
                                             "type": "cached",
-                                            "value": "roundsPlayed"
+                                            "value": "roundsSolved"
                                         },
                                         {
                                             "name": "arg2",
                                             "type": "cached",
-                                            "value": "totalAttempts"
+                                            "value": "roundsPlayed"
                                         }
                                     ]
                                 }
@@ -5513,7 +5302,7 @@
                             {
                                 "name": "elseValue",
                                 "type": "cached",
-                                "value": "noGridsCompleted"
+                                "value": "noGridsSolved"
                             }
                         ]
                     }

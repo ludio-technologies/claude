@@ -54,7 +54,7 @@
         "roleInfo": {
           "id": "player",
           "name": "Player",
-          "description": "Word association blows your mind 😎",
+          "description": "Word association blows your mind \ud83d\ude0e",
           "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
           "team": "all",
           "prefix": "a "
@@ -186,7 +186,7 @@
         "blueGuessedLabel": "Blue (Guessed)",
         "blueDiscardLabel": "Blue (Discard)",
         "noNotesHeader": "Please don't take notes!",
-        "noNotesText": "We promise the game is a lot more fun this way 😊",
+        "noNotesText": "We promise the game is a lot more fun this way \ud83d\ude0a",
         "gameModeTitle": "Game Mode",
         "gameModeTargets": [
           "Short (8 cards)",
@@ -264,15 +264,15 @@
         "tut1Header": "How to Play - Part 1",
         "tut1Text": "You're randomly placed on the <b>Red</b> or <b>Blue</b> team, and the game has <b>3 rounds</b>. At the start of each round, one player from each team volunteers to be the <b>Cluegiver</b>. Each Cluegiver gets a deck of 20 phrase cards. Team Red goes first!",
         "tut2Header": "How to Play - Part 2",
-        "tut2Text": "The Cluegiver is dealt one card at a time and describes the phrase on it — following that round's constraint — until a teammate guesses it correctly. Then tap the card to draw the next one. Stuck? Tap <b>Pass</b> to move the card to your discard pile and draw a new one.",
+        "tut2Text": "The Cluegiver is dealt one card at a time and describes the phrase on it \u2014 following that round's constraint \u2014 until a teammate guesses it correctly. Then tap the card to draw the next one. Stuck? Tap <b>Pass</b> to move the card to your discard pile and draw a new one.",
         "tut3Header": "How to Play - Part 3",
         "tut3Text": "Each turn lasts <b>45 seconds</b>, then the other team's Cluegiver takes over. Teams alternate back and forth until one team has guessed <b>all</b> their cards, which ends the round. (If Red finishes first, Blue still gets one final turn.) Run out of cards mid-turn? Your discards are reshuffled so you can try them again.",
         "tut4Header": "How to Play - Part 4",
         "tut4Text": "When a round ends, the winning team scores points equal to the number of cards the other team <b>could NOT guess</b> (their remaining deck plus discard pile). After all 3 rounds, the team with the most points wins!",
         "tut5Header": "How to Play - Part 5",
-        "tut5Text": "Here's the twist: each team's deck <b>stays the same</b> every round. Rounds 2 and 3 use the <b>exact same cards</b> as Round 1 — so pay close attention early on!",
+        "tut5Text": "Here's the twist: each team's deck <b>stays the same</b> every round. Rounds 2 and 3 use the <b>exact same cards</b> as Round 1 \u2014 so pay close attention early on!",
         "tut6Header": "How to Play - Part 6",
-        "tut6Text": "The catch is how you can give clues each round:<br/><br/><b>Round 1:</b> describe freely, but never say a word printed on the card.<br/><b>Round 2:</b> you may use only <b>ONE word</b>.<br/><b>Round 3:</b> no talking — you must <b>act it out!</b>",
+        "tut6Text": "The catch is how you can give clues each round:<br/><br/><b>Round 1:</b> describe freely, but never say a word printed on the card.<br/><b>Round 2:</b> you may use only <b>ONE word</b>.<br/><b>Round 3:</b> no talking \u2014 you must <b>act it out!</b>",
         "shareTheWin": "share the win",
         "wins": "wins"
       }
@@ -297,6 +297,32 @@
                 "name": "list",
                 "type": "cached",
                 "value": "players"
+              }
+            ]
+          }
+        },
+        {
+          "name": "redTeam",
+          "value": {
+            "selector": "getPlayersFromTeam",
+            "params": [
+              {
+                "name": "teamId",
+                "type": "preset",
+                "value": "red"
+              }
+            ]
+          }
+        },
+        {
+          "name": "blueTeam",
+          "value": {
+            "selector": "getPlayersFromTeam",
+            "params": [
+              {
+                "name": "teamId",
+                "type": "preset",
+                "value": "blue"
               }
             ]
           }
@@ -936,8 +962,8 @@
         {
           "name": "roundRestrictions",
           "value": {
-            "1": "Words, sounds and acting are allowed. Teams can’t use <b>any</b> part of the phrase on the card. Each card guessed correctly is worth <b>1 point</b>!",
-            "2": "Only <b>one word</b> per card. No acting. Teams can’t use <b>any</b> part of the phrase on the card. Each card guessed correctly is worth <b>2 points</b>!",
+            "1": "Words, sounds and acting are allowed. Teams can\u2019t use <b>any</b> part of the phrase on the card. Each card guessed correctly is worth <b>1 point</b>!",
+            "2": "Only <b>one word</b> per card. No acting. Teams can\u2019t use <b>any</b> part of the phrase on the card. Each card guessed correctly is worth <b>2 points</b>!",
             "3": "<b>Acting only</b>. No words or sounds. Each card guessed correctly is worth <b>3 points</b>!"
           }
         },
@@ -4213,6 +4239,11 @@
           }
         }
       ]
+    },
+    {
+      "name": "Check win condition",
+      "checkWinCondition": true,
+      "actions": []
     }
   ],
   "winCondition": {
@@ -4258,8 +4289,26 @@
                         "params": [
                           {
                             "name": "list",
-                            "type": "cached",
-                            "value": "redTeam"
+                            "type": "computed",
+                            "value": {
+                              "selector": "getPlayersWithMaxScore",
+                              "params": [
+                                {
+                                  "name": "players",
+                                  "type": "computed",
+                                  "value": {
+                                    "selector": "getPlayersFromTeam",
+                                    "params": [
+                                      {
+                                        "name": "teamId",
+                                        "type": "preset",
+                                        "value": "red"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
                           }
                         ]
                       }
@@ -4281,8 +4330,26 @@
                         "params": [
                           {
                             "name": "list",
-                            "type": "cached",
-                            "value": "blueTeam"
+                            "type": "computed",
+                            "value": {
+                              "selector": "getPlayersWithMaxScore",
+                              "params": [
+                                {
+                                  "name": "players",
+                                  "type": "computed",
+                                  "value": {
+                                    "selector": "getPlayersFromTeam",
+                                    "params": [
+                                      {
+                                        "name": "teamId",
+                                        "type": "preset",
+                                        "value": "blue"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
                           }
                         ]
                       }
@@ -4337,8 +4404,26 @@
                         "params": [
                           {
                             "name": "list",
-                            "type": "cached",
-                            "value": "redTeam"
+                            "type": "computed",
+                            "value": {
+                              "selector": "getPlayersWithMaxScore",
+                              "params": [
+                                {
+                                  "name": "players",
+                                  "type": "computed",
+                                  "value": {
+                                    "selector": "getPlayersFromTeam",
+                                    "params": [
+                                      {
+                                        "name": "teamId",
+                                        "type": "preset",
+                                        "value": "red"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
                           }
                         ]
                       }
@@ -4360,8 +4445,26 @@
                         "params": [
                           {
                             "name": "list",
-                            "type": "cached",
-                            "value": "blueTeam"
+                            "type": "computed",
+                            "value": {
+                              "selector": "getPlayersWithMaxScore",
+                              "params": [
+                                {
+                                  "name": "players",
+                                  "type": "computed",
+                                  "value": {
+                                    "selector": "getPlayersFromTeam",
+                                    "params": [
+                                      {
+                                        "name": "teamId",
+                                        "type": "preset",
+                                        "value": "blue"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
                           }
                         ]
                       }
@@ -4416,8 +4519,26 @@
                         "params": [
                           {
                             "name": "list",
-                            "type": "cached",
-                            "value": "blueTeam"
+                            "type": "computed",
+                            "value": {
+                              "selector": "getPlayersWithMaxScore",
+                              "params": [
+                                {
+                                  "name": "players",
+                                  "type": "computed",
+                                  "value": {
+                                    "selector": "getPlayersFromTeam",
+                                    "params": [
+                                      {
+                                        "name": "teamId",
+                                        "type": "preset",
+                                        "value": "blue"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
                           }
                         ]
                       }
@@ -4439,8 +4560,26 @@
                         "params": [
                           {
                             "name": "list",
-                            "type": "cached",
-                            "value": "redTeam"
+                            "type": "computed",
+                            "value": {
+                              "selector": "getPlayersWithMaxScore",
+                              "params": [
+                                {
+                                  "name": "players",
+                                  "type": "computed",
+                                  "value": {
+                                    "selector": "getPlayersFromTeam",
+                                    "params": [
+                                      {
+                                        "name": "teamId",
+                                        "type": "preset",
+                                        "value": "red"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
                           }
                         ]
                       }

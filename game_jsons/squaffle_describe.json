@@ -1,0 +1,82 @@
+{
+ "name": "Squaffle",
+ "demo": false,
+ "parallel": false,
+ "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+ "banner": "https://res.cloudinary.com/liars-club/image/upload/images/squaffle/banner.png",
+ "description": {
+  "summary": "A turn-based word game: draw, swap, or spell words from your growing hand of letter cards. Aim your words at your 2x/3x spaces and race to play your 6th word.",
+  "description_title": "Squaffle Overview",
+  "# Players": "2-6",
+  "players": "2-6",
+  "Duration": "25 mins"
+ },
+ "rules": [
+  {
+   "name": "Basic Rules",
+   "icon": "icon.png",
+   "content": [
+    {
+     "title": "Overview",
+     "text": "Squaffle is a turn-based word game for 2-6 players. You build a hand of letter cards and spell words for points. The endgame begins the moment any player has played their sixth word."
+    },
+    {
+     "title": "Your turn",
+     "text": "On your turn you play ONE of the five action cards in your hand: DRAW VOWEL (take the top card of the vowel pile), DRAW OTHER (take the top card of the consonant-and-combo pile), SWAP up to 5 cards (discard some and draw the same number back), PLAY a word, or - once per game - DRAW & PLAY (draw from the OTHER pile, then immediately play a word). Everyone holds the same five action cards all game, so you can always see your options; the card you play comes back to your hand at the end of your turn, except DRAW & PLAY, which is spent for good. Your hand can hold at most 11 letter cards, so you cannot draw once it is full."
+    },
+    {
+     "title": "Playing a word",
+     "text": "Spell a real word from your hand and I check it against the dictionary, so no gibberish! You score the value of the letters you used. If playing the word drops your hand below 5 cards, you refill back up to 5, split across the two piles in the same proportion as the deck (otherwise you draw nothing). Each word lands in your row of the board, labelled with its score."
+    },
+    {
+     "title": "Scoring",
+     "text": "Each word adds the value of its letters to your score, and each letter's value is printed on its tile. There is no penalty for unused cards - only words you play score."
+    }
+   ]
+  },
+  {
+   "name": "Advanced Rules",
+   "icon": "icon.png",
+   "content": [
+    {
+     "title": "Bonus spaces (2x and 3x)",
+     "text": "Every player's row of six word slots has one 2x space and one 3x space, marked \"2x\" and \"3x\". Both always fall in the middle four slots, never on the first or last, so every bonus is reachable; within those four they are randomly placed for each player, and everyone can see every player's bonus spaces. Your words fill your row left to right, so plan ahead: a word placed on your 2x space scores double, and a word on your 3x space scores triple."
+    },
+    {
+     "title": "Combo tiles",
+     "text": "Some tiles show two letters at once - TH, QU, ER, IN and CL. Each is a single card in your hand but spells both of its letters, so they help you make longer, higher-scoring words."
+    }
+   ]
+  },
+  {
+   "name": "Mechanics",
+   "icon": "icon.png",
+   "content": [
+    {
+     "title": "Growing hands",
+     "text": "You start with 5 cards - 2 vowels and 3 others - and your hand generally grows as you take DRAW turns. There are two draw piles: vowels (A E I O U) and everything else (consonants plus the CL, ER, IN, QU and TH combo tiles). If a pile cannot cover a draw, that pile's cards are pulled out of the discard and reshuffled back into it, so you can always keep drawing."
+    },
+    {
+     "title": "Timeouts",
+     "text": "Each step is timed. If you run out of time it defaults sensibly - playing one of the action cards still available to you, or simply ending your turn - so the game keeps moving."
+    }
+   ]
+  },
+  {
+   "name": "Win Conditions",
+   "icon": "icon.png",
+   "content": [
+    {
+     "title": "First to six words",
+     "text": "When a player plays their sixth word (filling the six columns in their row), the endgame begins: every other player gets one final turn in which they must play a word. Then whoever has the most points wins, and ties share the win. Good luck!"
+    }
+   ]
+  }
+ ],
+ "tags": [
+  "word game",
+  "card game",
+  "strategic",
+  "family"
+ ]
+}

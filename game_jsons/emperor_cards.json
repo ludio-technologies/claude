@@ -1,0 +1,126 @@
+{
+ "name": "emperor_cards",
+ "cards": [
+  {
+   "name": "r1",
+   "label": "1 Emperor",
+   "rank": 1,
+   "weight": 1,
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/emperor/r1.png",
+   "type": "emperor"
+  },
+  {
+   "name": "r2",
+   "label": "2 Archbishop",
+   "rank": 2,
+   "weight": 2,
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/emperor/r2.png",
+   "type": "emperor"
+  },
+  {
+   "name": "r3",
+   "label": "3 Earl Marshal",
+   "rank": 3,
+   "weight": 3,
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/emperor/r3.png",
+   "type": "emperor"
+  },
+  {
+   "name": "r4",
+   "label": "4 Baroness",
+   "rank": 4,
+   "weight": 4,
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/emperor/r4.png",
+   "type": "emperor"
+  },
+  {
+   "name": "r5",
+   "label": "5 Abbess",
+   "rank": 5,
+   "weight": 5,
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/emperor/r5.png",
+   "type": "emperor"
+  },
+  {
+   "name": "r6",
+   "label": "6 Knight",
+   "rank": 6,
+   "weight": 6,
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/emperor/r6.png",
+   "type": "emperor"
+  },
+  {
+   "name": "r7",
+   "label": "7 Seamstress",
+   "rank": 7,
+   "weight": 7,
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/emperor/r7.png",
+   "type": "emperor"
+  },
+  {
+   "name": "r8",
+   "label": "8 Mason",
+   "rank": 8,
+   "weight": 8,
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/emperor/r8.png",
+   "type": "emperor"
+  },
+  {
+   "name": "r9",
+   "label": "9 Cook",
+   "rank": 9,
+   "weight": 9,
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/emperor/r9.png",
+   "type": "emperor"
+  },
+  {
+   "name": "r10",
+   "label": "10 Shepherdess",
+   "rank": 10,
+   "weight": 10,
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/emperor/r10.png",
+   "type": "emperor"
+  },
+  {
+   "name": "r11",
+   "label": "11 Stonecutter",
+   "rank": 11,
+   "weight": 11,
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/emperor/r11.png",
+   "type": "emperor"
+  },
+  {
+   "name": "r12",
+   "label": "12 Peasant",
+   "rank": 12,
+   "weight": 12,
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/emperor/r12.png",
+   "type": "emperor"
+  },
+  {
+   "name": "jester",
+   "label": "Jester",
+   "rank": 13,
+   "weight": 13,
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/emperor/jester.png",
+   "type": "emperor"
+  }
+ ],
+ "sets": {
+  "full": {
+   "r1": 1,
+   "r2": 2,
+   "r3": 3,
+   "r4": 4,
+   "r5": 5,
+   "r6": 6,
+   "r7": 7,
+   "r8": 8,
+   "r9": 9,
+   "r10": 10,
+   "r11": 11,
+   "r12": 12,
+   "jester": 2
+  }
+ }
+}

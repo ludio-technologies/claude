@@ -1,0 +1,101 @@
+{
+ "piece_blue_R": {
+  "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_R.png",
+  "sha1": "6a9b5e3230f9",
+  "bytes": 2559
+ },
+ "piece_blue_P": {
+  "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_P.png",
+  "sha1": "99a6ac876813",
+  "bytes": 1608
+ },
+ "piece_blue_S": {
+  "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_blue_S.png",
+  "sha1": "53563422d0e6",
+  "bytes": 2768
+ },
+ "piece_red_R": {
+  "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_R.png",
+  "sha1": "496c1a9f2b36",
+  "bytes": 2550
+ },
+ "piece_red_P": {
+  "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_P.png",
+  "sha1": "e9ea6e201020",
+  "bytes": 1604
+ },
+ "piece_red_S": {
+  "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/piece_red_S.png",
+  "sha1": "ede2d356bce5",
+  "bytes": 2742
+ },
+ "cell": {
+  "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/cell.png",
+  "sha1": "68070ddd36ec",
+  "bytes": 307
+ },
+ "cell_home_blue": {
+  "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/cell_home_blue.png",
+  "sha1": "3bd6c75dba85",
+  "bytes": 1339
+ },
+ "cell_home_red": {
+  "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/cell_home_red.png",
+  "sha1": "82e3f0c8841f",
+  "bytes": 1262
+ },
+ "banner": {
+  "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/banner.png",
+  "sha1": "3dacd1a3b88a",
+  "bytes": 31550
+ },
+ "wallpaper": {
+  "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/wallpaper.png",
+  "sha1": "d696493db04f",
+  "bytes": 2799
+ },
+ "board_bg": {
+  "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/board_bg.png",
+  "sha1": "278cd8e646eb",
+  "bytes": 463
+ },
+ "winner": {
+  "url": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/winner.png",
+  "sha1": "59db2e7c696d",
+  "bytes": 18277
+ },
+ "capture": {
+  "url": "https://res.cloudinary.com/liars-club/video/upload/audio/intransitive/capture.mp3",
+  "credit": "Freesound #434873 'Whoosh to HIT 2' by Nic3_one (CC0)",
+  "bytes": 24494,
+  "sha1": "fb8a01707160"
+ },
+ "capture_R": {
+  "url": "https://res.cloudinary.com/liars-club/video/upload/audio/intransitive/capture_R.mp3",
+  "credit": "Freesound #321478 'Concrete Hit 2' by dslrguide (CC0)",
+  "bytes": 11955,
+  "sha1": "7bdfea0b64d0",
+  "verified": true
+ },
+ "capture_P": {
+  "url": "https://res.cloudinary.com/liars-club/video/upload/audio/intransitive/capture_P.mp3",
+  "credit": "Freesound #334200 'Paper Crumple 3' by WasabiWielder (CC0)",
+  "bytes": 10702,
+  "sha1": "9efeb9533b66",
+  "verified": true
+ },
+ "capture_S": {
+  "url": "https://res.cloudinary.com/liars-club/video/upload/audio/intransitive/capture_S.mp3",
+  "credit": "Freesound #800081 'Scissor Foley Snips and Cuts 8' by CVLTIV8R (CC0)",
+  "bytes": 6940,
+  "sha1": "901164c953a5",
+  "verified": true
+ },
+ "move": {
+  "url": "https://res.cloudinary.com/liars-club/video/upload/audio/intransitive/move.mp3",
+  "credit": "Freesound #546119 'Piece Placement' by el_boss (CC0)",
+  "bytes": 4432,
+  "sha1": "ccdce5473bf5",
+  "verified": true
+ }
+}

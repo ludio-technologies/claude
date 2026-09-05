@@ -181,7 +181,588 @@
       "winner": {
         "url": "https://res.cloudinary.com/liars-club/image/upload/winner_h5eyfr.gif"
       }
+    },
+    "strings": {
+      "Default": {
+        "bgImg": "background",
+        "words": [
+          "dog",
+          "cat",
+          "horse",
+          "cow",
+          "pig",
+          "chicken",
+          "duck",
+          "rabbit",
+          "mouse",
+          "lion",
+          "tiger",
+          "bear",
+          "wolf",
+          "fox",
+          "deer",
+          "frog",
+          "snake",
+          "turtle",
+          "shark",
+          "whale",
+          "crab",
+          "bee",
+          "ant",
+          "butterfly",
+          "owl",
+          "eagle",
+          "parrot",
+          "goat",
+          "donkey",
+          "camel",
+          "kangaroo",
+          "monkey",
+          "zebra",
+          "giraffe",
+          "hippo",
+          "rhino",
+          "squirrel",
+          "hamster",
+          "goldfish",
+          "ladybug",
+          "snail",
+          "crocodile",
+          "lizard",
+          "hedgehog",
+          "otter",
+          "seal",
+          "lobster",
+          "jellyfish",
+          "starfish",
+          "crow",
+          "pigeon",
+          "swan",
+          "beetle",
+          "pizza",
+          "burger",
+          "hotdog",
+          "sandwich",
+          "apple",
+          "banana",
+          "orange",
+          "grape",
+          "strawberry",
+          "watermelon",
+          "pineapple",
+          "lemon",
+          "cherry",
+          "peach",
+          "pear",
+          "coconut",
+          "carrot",
+          "potato",
+          "tomato",
+          "onion",
+          "garlic",
+          "cucumber",
+          "lettuce",
+          "mushroom",
+          "broccoli",
+          "bread",
+          "butter",
+          "cheese",
+          "milk",
+          "egg",
+          "bacon",
+          "sausage",
+          "steak",
+          "soup",
+          "salad",
+          "cake",
+          "cookie",
+          "pie",
+          "donut",
+          "muffin",
+          "cupcake",
+          "chocolate",
+          "candy",
+          "honey",
+          "coffee",
+          "tea",
+          "juice",
+          "pancake",
+          "toast",
+          "cereal",
+          "yogurt",
+          "pickle",
+          "peanut",
+          "sugar",
+          "salt",
+          "chair",
+          "table",
+          "desk",
+          "lamp",
+          "door",
+          "window",
+          "bed",
+          "pillow",
+          "blanket",
+          "couch",
+          "carpet",
+          "curtain",
+          "clock",
+          "mirror",
+          "shelf",
+          "drawer",
+          "closet",
+          "basket",
+          "bucket",
+          "broom",
+          "towel",
+          "soap",
+          "comb",
+          "brush",
+          "scissors",
+          "needle",
+          "button",
+          "rope",
+          "chain",
+          "hammer",
+          "screwdriver",
+          "wrench",
+          "ladder",
+          "flashlight",
+          "candle",
+          "key",
+          "lock",
+          "wallet",
+          "backpack",
+          "suitcase",
+          "glasses",
+          "watch",
+          "ring",
+          "necklace",
+          "spoon",
+          "fork",
+          "knife",
+          "plate",
+          "bowl",
+          "cup",
+          "mug",
+          "bottle",
+          "jar",
+          "pot",
+          "pan",
+          "kettle",
+          "oven",
+          "stove",
+          "fridge",
+          "toaster",
+          "blender",
+          "fan",
+          "television",
+          "phone",
+          "computer",
+          "laptop",
+          "keyboard",
+          "camera",
+          "printer",
+          "speaker",
+          "headphones",
+          "battery",
+          "lightbulb",
+          "sun",
+          "moon",
+          "star",
+          "cloud",
+          "rain",
+          "snow",
+          "wind",
+          "storm",
+          "thunder",
+          "lightning",
+          "rainbow",
+          "fog",
+          "fire",
+          "smoke",
+          "tree",
+          "leaf",
+          "branch",
+          "flower",
+          "rose",
+          "sunflower",
+          "grass",
+          "seed",
+          "forest",
+          "jungle",
+          "desert",
+          "mountain",
+          "hill",
+          "valley",
+          "cave",
+          "cliff",
+          "beach",
+          "sand",
+          "wave",
+          "ocean",
+          "lake",
+          "pond",
+          "river",
+          "stream",
+          "waterfall",
+          "island",
+          "garden",
+          "rock",
+          "stone",
+          "mud",
+          "puddle",
+          "head",
+          "face",
+          "hair",
+          "eye",
+          "ear",
+          "nose",
+          "mouth",
+          "lip",
+          "tongue",
+          "chin",
+          "cheek",
+          "eyebrow",
+          "neck",
+          "shoulder",
+          "arm",
+          "elbow",
+          "wrist",
+          "hand",
+          "finger",
+          "thumb",
+          "chest",
+          "stomach",
+          "leg",
+          "knee",
+          "ankle",
+          "foot",
+          "toe",
+          "heart",
+          "lung",
+          "bone",
+          "muscle",
+          "shirt",
+          "pants",
+          "jeans",
+          "shorts",
+          "skirt",
+          "dress",
+          "jacket",
+          "coat",
+          "sweater",
+          "hoodie",
+          "vest",
+          "suit",
+          "tie",
+          "scarf",
+          "gloves",
+          "hat",
+          "cap",
+          "helmet",
+          "shoe",
+          "boot",
+          "sandal",
+          "sock",
+          "belt",
+          "pajamas",
+          "apron",
+          "uniform",
+          "car",
+          "truck",
+          "bus",
+          "van",
+          "taxi",
+          "train",
+          "subway",
+          "bike",
+          "motorcycle",
+          "scooter",
+          "boat",
+          "ship",
+          "canoe",
+          "ferry",
+          "plane",
+          "helicopter",
+          "rocket",
+          "ambulance",
+          "tractor",
+          "wagon",
+          "sled",
+          "wheelchair",
+          "house",
+          "apartment",
+          "tower",
+          "castle",
+          "palace",
+          "cabin",
+          "tent",
+          "barn",
+          "garage",
+          "school",
+          "office",
+          "factory",
+          "store",
+          "market",
+          "mall",
+          "restaurant",
+          "cafe",
+          "bakery",
+          "hotel",
+          "hospital",
+          "pharmacy",
+          "bank",
+          "library",
+          "museum",
+          "theater",
+          "stadium",
+          "gym",
+          "park",
+          "playground",
+          "zoo",
+          "aquarium",
+          "farm",
+          "church",
+          "bridge",
+          "tunnel",
+          "road",
+          "street",
+          "highway",
+          "sidewalk",
+          "station",
+          "airport",
+          "harbor",
+          "lighthouse",
+          "windmill",
+          "fountain",
+          "statue",
+          "fence",
+          "gate",
+          "doctor",
+          "nurse",
+          "teacher",
+          "student",
+          "farmer",
+          "chef",
+          "waiter",
+          "baker",
+          "butcher",
+          "barber",
+          "tailor",
+          "plumber",
+          "carpenter",
+          "mechanic",
+          "painter",
+          "artist",
+          "writer",
+          "singer",
+          "dancer",
+          "actor",
+          "musician",
+          "pilot",
+          "sailor",
+          "soldier",
+          "judge",
+          "lawyer",
+          "banker",
+          "cashier",
+          "manager",
+          "scientist",
+          "engineer",
+          "dentist",
+          "librarian",
+          "gardener",
+          "fisherman",
+          "driver",
+          "clown",
+          "astronaut",
+          "referee",
+          "coach",
+          "athlete",
+          "soccer",
+          "football",
+          "basketball",
+          "baseball",
+          "tennis",
+          "golf",
+          "hockey",
+          "bowling",
+          "boxing",
+          "wrestling",
+          "swimming",
+          "diving",
+          "surfing",
+          "skiing",
+          "skating",
+          "running",
+          "cycling",
+          "hiking",
+          "climbing",
+          "camping",
+          "fishing",
+          "dancing",
+          "singing",
+          "painting",
+          "drawing",
+          "reading",
+          "cooking",
+          "baking",
+          "chess",
+          "checkers",
+          "puzzle",
+          "darts",
+          "morning",
+          "evening",
+          "night",
+          "midnight",
+          "sunrise",
+          "sunset",
+          "spring",
+          "summer",
+          "autumn",
+          "winter",
+          "holiday",
+          "birthday",
+          "wedding",
+          "party",
+          "festival",
+          "parade",
+          "concert",
+          "picnic",
+          "vacation",
+          "weekend",
+          "breakfast",
+          "lunch",
+          "dinner",
+          "dessert",
+          "money",
+          "coin",
+          "ticket",
+          "stamp",
+          "letter",
+          "envelope",
+          "newspaper",
+          "magazine",
+          "book",
+          "notebook",
+          "pencil",
+          "pen",
+          "marker",
+          "crayon",
+          "paper",
+          "glue",
+          "tape",
+          "stapler",
+          "eraser",
+          "ruler",
+          "chalk",
+          "map",
+          "globe",
+          "compass",
+          "flag",
+          "balloon",
+          "kite",
+          "ball",
+          "net",
+          "whistle",
+          "trophy",
+          "medal",
+          "ribbon",
+          "gift",
+          "box",
+          "bag",
+          "toy",
+          "doll",
+          "dice",
+          "marble",
+          "bubble",
+          "sticker",
+          "guitar",
+          "piano",
+          "drum",
+          "violin",
+          "trumpet",
+          "flute",
+          "harp",
+          "harmonica",
+          "xylophone",
+          "clarinet",
+          "tuba",
+          "organ",
+          "triangle"
+        ],
+        "welcomeHeader": "Welcome to Duplicate!",
+        "bannerImg": "banner",
+        "welcomeText": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!",
+        "tutorialModeTitle": "Tutorial Mode",
+        "aboutToSeeText": "... is about to see the secret word and type a clue.",
+        "everyoneWhoIsntHeader": "Everyone who isn't ($1)...",
+        "submitInputTitle": "Submit input",
+        "writeCluePrompt": "Write a 1-word clue related to the word \"($1)\"!",
+        "roundClipTitle": "Duplicate, Round #($1)",
+        "didNotSubmitText": "(Did not submit)",
+        "noUniqueCluesText": "No unique clues!",
+        "finalWordsTitle": "Final words",
+        "finalWordsOptions": {
+          "Correct!": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "green"
+          },
+          "Incorrect": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "red"
+          }
+        },
+        "hereAreYourCluesQuestion": "($1), here are your clues!",
+        "correctTarget": "Correct!",
+        "theCluesWereText": "The clues were:<br/><br/>($1)",
+        "theWordWasHeader": "The word was \"($1)\"!",
+        "scoredPointsHeader": "Your group scored ($1) points!",
+        "everybodyNobodyTargets": [
+          "Everybody!",
+          "Nobody!"
+        ],
+        "everybodyNobodyOptions": {
+          "Everybody!": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "green"
+          },
+          "Nobody!": {
+            "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
+            "backgroundColor": "#D3D3D3",
+            "boxIconColor": "#D3D3D3",
+            "textColor": "black",
+            "widgetIconColor": "red"
+          }
+        },
+        "whoNeedsTutorialQuestion": "($1), who needs the tutorial? Click on the players or select from the middle.",
+        "tut1Header": "How to play Duplicate",
+        "tut1Text": "Duplicate is a <b>collaborative</b> game. Each round there's a secret word, and one player is the <b>guesser</b>. Everyone else gives clues to help them guess it!",
+        "tut2Header": "Write a one-word clue",
+        "tut2Text": "Everyone who <b>isn't</b> the guesser secretly writes a <b>single word</b> related to the secret word.",
+        "tut3Header": "Don't be a copycat!",
+        "tut3Text": "All the clues are revealed, and any <b>duplicate</b> clues — ones that more than one person wrote — are <b>removed</b>. Think of something clever that no one else will!",
+        "tut4Header": "Only unique clues survive",
+        "tut4Text": "The remaining <b>unique</b> clues are shown to the guesser, who uses them to guess the secret word. The host confirms whether they got it right.",
+        "tut5Header": "Scoring",
+        "tut5Text": "If the guesser gets the word right, <b>everyone</b> earns 10 points. There's one round per player, so everyone gets a turn to guess!"
+      }
     }
+  },
+  "visualSettings": {
+    "backgroundColor": "#001861",
+    "textColor": "white",
+    "borderColor": "white"
   },
   "turnPlayerToSpectatorActions": [
     {
@@ -404,8 +985,8 @@
     {
       "key": "changeBackground",
       "payload": {
-        "preset": {
-          "image": "background"
+        "cached": {
+          "image": "bgImg"
         }
       }
     },
@@ -434,311 +1015,6 @@
         {
           "name": "round",
           "value": 1
-        },
-        {
-          "name": "words",
-          "value": [
-            "elephant",
-            "penguin",
-            "dolphin",
-            "raccoon",
-            "chameleon",
-            "octopus",
-            "flamingo",
-            "jaguar",
-            "gorilla",
-            "koala",
-            "armadillo",
-            "narwhal",
-            "platypus",
-            "cheetah",
-            "peacock",
-            "piranha",
-            "wolverine",
-            "manatee",
-            "capybara",
-            "sloth",
-            "hummingbird",
-            "coyote",
-            "pelican",
-            "porcupine",
-            "pangolin",
-            "axolotl",
-            "dragonfly",
-            "seahorse",
-            "tarantula",
-            "mongoose",
-            "avocado",
-            "sushi",
-            "pretzel",
-            "waffle",
-            "taco",
-            "fondue",
-            "churro",
-            "hummus",
-            "croissant",
-            "bagel",
-            "dumpling",
-            "lasagna",
-            "guacamole",
-            "nachos",
-            "popcorn",
-            "marshmallow",
-            "mochi",
-            "tiramisu",
-            "noodle",
-            "burrito",
-            "falafel",
-            "espresso",
-            "matcha",
-            "sourdough",
-            "smoothie",
-            "Sahara",
-            "Amazon",
-            "Everest",
-            "Antarctica",
-            "Venice",
-            "Manhattan",
-            "Niagara",
-            "Stonehenge",
-            "Pompeii",
-            "Alcatraz",
-            "Kilimanjaro",
-            "Colosseum",
-            "Atlantis",
-            "Bermuda",
-            "Siberia",
-            "Tasmania",
-            "Mesopotamia",
-            "Olympus",
-            "Yellowstone",
-            "Patagonia",
-            "Cleopatra",
-            "Napoleon",
-            "Shakespeare",
-            "Einstein",
-            "Darwin",
-            "Beethoven",
-            "Leonardo",
-            "Michelangelo",
-            "Aristotle",
-            "Newton",
-            "Copernicus",
-            "Galileo",
-            "Confucius",
-            "Socrates",
-            "Archimedes",
-            "Pythagoras",
-            "Voltaire",
-            "Machiavelli",
-            "Nero",
-            "Charlemagne",
-            "telescope",
-            "umbrella",
-            "kaleidoscope",
-            "trampoline",
-            "accordion",
-            "submarine",
-            "boomerang",
-            "chandelier",
-            "hammock",
-            "catapult",
-            "pendulum",
-            "hourglass",
-            "microscope",
-            "parachute",
-            "barometer",
-            "thermometer",
-            "metronome",
-            "prism",
-            "lasso",
-            "corkscrew",
-            "pitchfork",
-            "crossbow",
-            "cauldron",
-            "periscope",
-            "javelin",
-            "trebuchet",
-            "abacus",
-            "sextant",
-            "sundial",
-            "anvil",
-            "volcano",
-            "glacier",
-            "tornado",
-            "avalanche",
-            "tsunami",
-            "canyon",
-            "geyser",
-            "lagoon",
-            "tundra",
-            "swamp",
-            "fjord",
-            "monsoon",
-            "oasis",
-            "typhoon",
-            "coral",
-            "aurora",
-            "blizzard",
-            "whirlpool",
-            "dune",
-            "iceberg",
-            "rainforest",
-            "stalactite",
-            "quicksand",
-            "caldera",
-            "mangrove",
-            "democracy",
-            "karma",
-            "paradox",
-            "gravity",
-            "symmetry",
-            "nostalgia",
-            "utopia",
-            "anarchy",
-            "vertigo",
-            "infinity",
-            "momentum",
-            "eclipse",
-            "mirage",
-            "alchemy",
-            "renaissance",
-            "entropy",
-            "telepathy",
-            "solstice",
-            "labyrinth",
-            "equinox",
-            "vampire",
-            "werewolf",
-            "unicorn",
-            "dragon",
-            "mermaid",
-            "zombie",
-            "pirate",
-            "wizard",
-            "Jedi",
-            "hobbit",
-            "Kryptonite",
-            "Excalibur",
-            "Camelot",
-            "Hogwarts",
-            "Gandalf",
-            "Gollum",
-            "Voldemort",
-            "Sherlock",
-            "Dracula",
-            "Frankenstein",
-            "Cinderella",
-            "Aladdin",
-            "Pinocchio",
-            "Superman",
-            "Batman",
-            "saxophone",
-            "tambourine",
-            "sitar",
-            "ukulele",
-            "kazoo",
-            "trombone",
-            "bassoon",
-            "cello",
-            "bagpipe",
-            "theremin",
-            "harpsichord",
-            "banjo",
-            "mandolin",
-            "marimba",
-            "didgeridoo",
-            "marathon",
-            "gymnastics",
-            "archery",
-            "fencing",
-            "polo",
-            "lacrosse",
-            "curling",
-            "cricket",
-            "rugby",
-            "badminton",
-            "croquet",
-            "snowboard",
-            "kayak",
-            "bobsled",
-            "judo",
-            "surfboard",
-            "triathlon",
-            "weightlifting",
-            "volleyball",
-            "skateboard",
-            "satellite",
-            "hologram",
-            "chromosome",
-            "molecule",
-            "neutron",
-            "laser",
-            "radar",
-            "sonar",
-            "algorithm",
-            "asteroid",
-            "comet",
-            "nebula",
-            "galaxy",
-            "quasar",
-            "supernova",
-            "genome",
-            "neuron",
-            "microchip",
-            "drone",
-            "spacecraft",
-            "robot",
-            "cyborg",
-            "android",
-            "reactor",
-            "antenna",
-            "Nile",
-            "Himalaya",
-            "Capri",
-            "Sicily",
-            "Yosemite",
-            "Zeus",
-            "Poseidon",
-            "Athena",
-            "Hercules",
-            "Medusa",
-            "Minotaur",
-            "Centaur",
-            "Phoenix",
-            "Sphinx",
-            "Cyclops",
-            "Hydra",
-            "Pegasus",
-            "Odyssey",
-            "Achilles",
-            "Olympian",
-            "skeleton",
-            "fingerprint",
-            "eyelash",
-            "freckle",
-            "dimple",
-            "knuckle",
-            "kidney",
-            "tendon",
-            "torso",
-            "nostril",
-            "fedora",
-            "tuxedo",
-            "kimono",
-            "turban",
-            "stiletto",
-            "horoscope",
-            "cemetery",
-            "escalator",
-            "alphabet",
-            "acrobat",
-            "magician",
-            "detective",
-            "carnival",
-            "monastery",
-            "cathedral"
-          ]
         },
         {
           "name": "unusedWords",
@@ -854,12 +1130,11 @@
       "key": "createNotification",
       "payload": {
         "preset": {
-          "header": "Welcome to Duplicate!",
-          "image": "banner",
-          "duration": 8,
-          "backgroundColor": "#001861",
-          "textColor": "white",
-          "borderColor": "white"
+          "duration": 8
+        },
+        "cached": {
+          "header": "welcomeHeader",
+          "image": "bannerImg"
         },
         "computed": {
           "to": {
@@ -870,8 +1145,8 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "<b>($1)</b> - in a moment, tell me whether you want Ludio to teach your group how to play this game!"
+                "type": "cached",
+                "value": "welcomeText"
               },
               {
                 "name": "arg1",
@@ -902,39 +1177,27 @@
       }
     },
     {
-      "key": "createVote",
+      "key": "createMixVote",
       "payload": {
         "preset": {
-          "title": "Tutorial Mode",
-          "type": "target_poll",
           "terminationCondition": "get_all_votes",
           "showResultInRealTime": true,
           "showResultDuration": 2,
-          "showResult": true,
-          "allowRevoting": false,
-          "targets": [
-            "Yes Please!",
-            "No Thanks"
-          ],
-          "pollVoteTargetsOptions": {
-            "Yes Please!": {
-              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-              "backgroundColor": "#D3D3D3",
-              "boxIconColor": "#D3D3D3",
-              "textColor": "black",
-              "widgetIconColor": "green"
-            },
-            "No Thanks": {
-              "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
-              "backgroundColor": "#D3D3D3",
-              "boxIconColor": "#D3D3D3",
-              "textColor": "black",
-              "widgetIconColor": "red"
-            }
-          },
-          "backgroundColor": "#001861",
-          "textColor": "white",
-          "borderColor": "white"
+          "showResultDelay": 0,
+          "point.allowFewerAnswers": true,
+          "point.terminationCondition": "get_all_votes",
+          "poll.answersQuantity": 1,
+          "oneClick": true,
+          "allowRevoting": true,
+          "poll.terminationCondition": "get_all_votes"
+        },
+        "cached": {
+          "actors": "host",
+          "point.targets": "players",
+          "point.answersQuantity": "numPlayers",
+          "title": "tutorialModeTitle",
+          "poll.targets": "everybodyNobodyTargets",
+          "pollVoteTargetsOptions": "everybodyNobodyOptions"
         },
         "computed": {
           "question": {
@@ -942,28 +1205,104 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "($1), do you want Ludio to teach your group how to play this game?"
+                "type": "cached",
+                "value": "whoNeedsTutorialQuestion"
               },
               {
                 "name": "arg1",
                 "type": "computed",
                 "value": {
-                  "selector": "listToString",
+                  "selector": "getPlayerNameById",
+                  "params": [
+                    {
+                      "name": "id",
+                      "type": "cached",
+                      "value": "host.0"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "saveValueInCache": [
+        {
+          "name": "voteResult",
+          "value": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "lastActionResult.voteResult"
+              }
+            ]
+          }
+        },
+        {
+          "name": "learners",
+          "value": {
+            "selector": "ifElse",
+            "params": [
+              {
+                "name": "condition",
+                "type": "computed",
+                "value": {
+                  "selector": "contains",
                   "params": [
                     {
                       "name": "list",
+                      "type": "cached",
+                      "value": "players"
+                    },
+                    {
+                      "name": "element",
+                      "type": "cached",
+                      "value": "voteResult.0"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "thenValue",
+                "type": "cached",
+                "value": "voteResult"
+              },
+              {
+                "name": "elseValue",
+                "type": "computed",
+                "value": {
+                  "selector": "ifElse",
+                  "params": [
+                    {
+                      "name": "condition",
                       "type": "computed",
                       "value": {
-                        "selector": "getPlayerNamesByIds",
+                        "selector": "contains",
                         "params": [
                           {
-                            "name": "ids",
+                            "name": "list",
                             "type": "cached",
-                            "value": "host"
+                            "value": "voteResult"
+                          },
+                          {
+                            "name": "element",
+                            "type": "cached",
+                            "value": "everybodyNobodyTargets.0"
                           }
                         ]
                       }
+                    },
+                    {
+                      "name": "thenValue",
+                      "type": "cached",
+                      "value": "players"
+                    },
+                    {
+                      "name": "elseValue",
+                      "type": "preset",
+                      "value": []
                     }
                   ]
                 }
@@ -971,25 +1310,29 @@
             ]
           }
         },
-        "cached": {
-          "actors": "host"
-        }
-      },
-      "saveValueInCache": [
         {
           "name": "tutorial",
           "value": {
-            "selector": "isTargetGotMajority",
+            "selector": "greaterThan",
             "params": [
               {
-                "name": "voteResult",
-                "type": "cached",
-                "value": "lastActionResult"
+                "name": "arg1",
+                "type": "computed",
+                "value": {
+                  "selector": "listLength",
+                  "params": [
+                    {
+                      "name": "list",
+                      "type": "cached",
+                      "value": "learners"
+                    }
+                  ]
+                }
               },
               {
-                "name": "target",
+                "name": "arg2",
                 "type": "preset",
-                "value": "Yes Please!"
+                "value": 0
               }
             ]
           }
@@ -1035,8 +1378,23 @@
   ],
   "gameLoop": [
     {
-      "name": "Tutorial Part 1",
+      "name": "Tutorial",
       "skipCondition": [
+        {
+          "selector": "greaterThan",
+          "params": [
+            {
+              "name": "arg1",
+              "type": "cached",
+              "value": "gameLoopIndex"
+            },
+            {
+              "name": "arg2",
+              "type": "preset",
+              "value": 0
+            }
+          ]
+        },
         {
           "selector": "logicalNOT",
           "params": [
@@ -1053,17 +1411,74 @@
           "key": "createNotification",
           "payload": {
             "preset": {
-              "header": "We haven't built the tutorial yet :|",
-              "duration": 10,
-              "backgroundColor": "#001861",
-              "textColor": "white",
-              "borderColor": "white",
-              "text": "The game works, and the rules are up-to-date in the rulebook. We're adding the tutorial soon - sorry for the inconvenience!"
+              "image": "banner",
+              "duration": 15
             },
             "cached": {
-              "to": "players"
+              "to": "learners",
+              "header": "tut1Header",
+              "text": "tut1Text"
             }
-          },
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "image": "questions",
+              "duration": 15
+            },
+            "cached": {
+              "to": "learners",
+              "header": "tut2Header",
+              "text": "tut2Text"
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "image": "sheep",
+              "duration": 15
+            },
+            "cached": {
+              "to": "learners",
+              "header": "tut3Header",
+              "text": "tut3Text"
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "image": "unique",
+              "duration": 15
+            },
+            "cached": {
+              "to": "learners",
+              "header": "tut4Header",
+              "text": "tut4Text"
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "image": "winner",
+              "duration": 15
+            },
+            "cached": {
+              "to": "learners",
+              "header": "tut5Header",
+              "text": "tut5Text"
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
           "saveValueInCache": [
             {
               "name": "tutorial",
@@ -1207,14 +1622,11 @@
           "key": "createNotification",
           "payload": {
             "preset": {
-              "duration": 3,
-              "backgroundColor": "#001861",
-              "textColor": "white",
-              "borderColor": "white",
-              "text": "... is about to see the secret word and type a clue."
+              "duration": 3
             },
             "cached": {
-              "to": "players"
+              "to": "players",
+              "text": "aboutToSeeText"
             },
             "computed": {
               "header": {
@@ -1222,8 +1634,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "Everyone who isn't ($1)..."
+                    "type": "cached",
+                    "value": "everyoneWhoIsntHeader"
                   },
                   {
                     "name": "arg1",
@@ -1262,7 +1674,6 @@
           "key": "createInput",
           "payload": {
             "preset": {
-              "title": "Submit input",
               "type": "text",
               "duration": 45,
               "scope": "player",
@@ -1270,15 +1681,13 @@
               "terminationCondition": "get_all_values",
               "vertical": true,
               "private": true,
-              "backgroundColor": "#001861",
-              "textColor": "white",
-              "borderColor": "white",
               "checkIfValid": true,
               "overrideSpellCheck": true,
               "checkIfSingle": true
             },
             "cached": {
-              "actors": "remainingPlayers"
+              "actors": "remainingPlayers",
+              "title": "submitInputTitle"
             },
             "computed": {
               "question": {
@@ -1286,8 +1695,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "Write a 1-word clue related to the word \"($1)\"!"
+                    "type": "cached",
+                    "value": "writeCluePrompt"
                   },
                   {
                     "name": "arg1",
@@ -1400,8 +1809,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "Duplicate, Round #($1)"
+                    "type": "cached",
+                    "value": "roundClipTitle"
                   },
                   {
                     "name": "arg1",
@@ -1424,7 +1833,8 @@
             "preset": {
               "video": true,
               "audio": true,
-              "private": true
+              "private": true,
+              "indicator": "💬"
             },
             "cached": {
               "members": "remainingPlayers"
@@ -1437,7 +1847,8 @@
             "preset": {
               "video": true,
               "audio": true,
-              "private": true
+              "private": true,
+              "indicator": "🤔"
             },
             "computed": {
               "members": {
@@ -1552,8 +1963,8 @@
                   },
                   {
                     "name": "defaultValue",
-                    "type": "preset",
-                    "value": "(Did not submit)"
+                    "type": "cached",
+                    "value": "didNotSubmitText"
                   }
                 ]
               },
@@ -1631,8 +2042,8 @@
                               },
                               {
                                 "name": "defaultValue",
-                                "type": "preset",
-                                "value": "(Did not submit)"
+                                "type": "cached",
+                                "value": "didNotSubmitText"
                               }
                             ]
                           }
@@ -1685,8 +2096,8 @@
                         },
                         {
                           "name": "defaultValue",
-                          "type": "preset",
-                          "value": "(Did not submit)"
+                          "type": "cached",
+                          "value": "didNotSubmitText"
                         }
                       ]
                     }
@@ -1740,8 +2151,8 @@
                                     },
                                     {
                                       "name": "defaultValue",
-                                      "type": "preset",
-                                      "value": "(Did not submit)"
+                                      "type": "cached",
+                                      "value": "didNotSubmitText"
                                     }
                                   ]
                                 }
@@ -1853,8 +2264,8 @@
                         },
                         {
                           "name": "element",
-                          "type": "preset",
-                          "value": "No unique clues!"
+                          "type": "cached",
+                          "value": "noUniqueCluesText"
                         }
                       ]
                     }
@@ -1905,7 +2316,6 @@
           "key": "createVote",
           "payload": {
             "preset": {
-              "title": "Final words",
               "type": "target_poll",
               "terminationCondition": "get_all_votes",
               "showResultInRealTime": true,
@@ -1914,29 +2324,12 @@
               "answersQuantity": 1,
               "allowFewerAnswers": false,
               "allowRevoting": false,
-              "vertical": true,
-              "backgroundColor": "#001861",
-              "textColor": "white",
-              "borderColor": "white",
-              "pollVoteTargetsOptions": {
-                "Correct!": {
-                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/like.svg",
-                  "backgroundColor": "#D3D3D3",
-                  "boxIconColor": "#D3D3D3",
-                  "textColor": "black",
-                  "widgetIconColor": "green"
-                },
-                "Incorrect": {
-                  "icon": "https://res.cloudinary.com/liars-club/image/upload/icons/dislike.svg",
-                  "backgroundColor": "#D3D3D3",
-                  "boxIconColor": "#D3D3D3",
-                  "textColor": "black",
-                  "widgetIconColor": "red"
-                }
-              }
+              "vertical": true
             },
             "cached": {
-              "actors": "host"
+              "actors": "host",
+              "title": "finalWordsTitle",
+              "pollVoteTargetsOptions": "finalWordsOptions"
             },
             "computed": {
               "targets": {
@@ -1949,8 +2342,8 @@
                   },
                   {
                     "name": "element",
-                    "type": "preset",
-                    "value": "Correct!"
+                    "type": "cached",
+                    "value": "correctTarget"
                   }
                 ]
               },
@@ -1959,8 +2352,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "($1), here are your clues!"
+                    "type": "cached",
+                    "value": "hereAreYourCluesQuestion"
                   },
                   {
                     "name": "arg1",
@@ -1993,8 +2386,8 @@
                   },
                   {
                     "name": "target",
-                    "type": "preset",
-                    "value": "Correct!"
+                    "type": "cached",
+                    "value": "correctTarget"
                   }
                 ]
               }
@@ -2053,10 +2446,7 @@
           "key": "createNotification",
           "payload": {
             "preset": {
-              "duration": 12,
-              "backgroundColor": "#001861",
-              "textColor": "white",
-              "borderColor": "white"
+              "duration": 12
             },
             "cached": {
               "to": "players"
@@ -2067,8 +2457,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "The clues were:<br/><br/>($1)"
+                    "type": "cached",
+                    "value": "theCluesWereText"
                   },
                   {
                     "name": "arg1",
@@ -2091,8 +2481,8 @@
                 "params": [
                   {
                     "name": "format",
-                    "type": "preset",
-                    "value": "The word was \"($1)\"!"
+                    "type": "cached",
+                    "value": "theWordWasHeader"
                   },
                   {
                     "name": "arg1",
@@ -2409,10 +2799,7 @@
       "key": "createNotification",
       "payload": {
         "preset": {
-          "image": "winner",
-          "backgroundColor": "#001861",
-          "textColor": "white",
-          "borderColor": "white"
+          "image": "winner"
         },
         "cached": {
           "to": "players"
@@ -2423,8 +2810,8 @@
             "params": [
               {
                 "name": "format",
-                "type": "preset",
-                "value": "Your group scored ($1) points!"
+                "type": "cached",
+                "value": "scoredPointsHeader"
               },
               {
                 "name": "arg1",

@@ -5,7 +5,7 @@ Usage:  python3 validate_game_json.py path/to/game.json
         python3 validate_game_json.py path/to/game.json --strict   # also warn on optional-param mismatches
 """
 
-import json, sys, os
+import json, sys, os, re
 from typing import Any, Dict, List, Tuple, Optional
 
 # ─── Selector registry ────────────────────────────────────────────────────────
@@ -78,6 +78,11 @@ SELECTORS: Dict[str, dict] = {
     # formatString: "format" is required; arg1, arg2, … can have any names
     "formatString":         {"params": ["format"], "variadic_extra": True},
     "listToString":         {"params": ["list"], "optional": ["readable", "delimiter"]},
+    # toString stringifies a single value. The param is "value" — the Basic Selectors
+    # doc writes the signature as `toString({ any: string })`, but that is a doc bug;
+    # "value" is what Categorical (live on prod and staging) passes and what we
+    # standardise on here.
+    "toString":             {"params": ["value"]},
     "toLowerCase":          {"params": ["text"]},
     "toUpperCase":          {"params": ["text"]},
     "stringLength":         {"params": ["text"]},
@@ -152,6 +157,9 @@ SELECTORS: Dict[str, dict] = {
     "fetchHandField":           {"params": ["playerId", "field"]},
     "getCardField":             {"params": ["cardId", "field"]},
     "fetchDeckField":           {"params": ["deck", "field"]},
+    # Same idea as fetchDeckField/fetchHandField but over a list of card objects
+    # you already hold — in practice 'inputCards' inside an action's preHandler.
+    "fetchCardsField":          {"params": ["cards", "field"]},
     "getCardsIdsByType":        {"params": ["type"]},
     "getPlayerByCardName":      {"params": ["name"]},
     "getTrickWinner":           {"zero": True},
@@ -227,7 +235,7 @@ ACTIONS: Dict[str, dict] = {
     "setImagesRow":             {"required": ["images"]},
     "changeImageInRow":         {"required": ["index", "image"]},
     "changeBackground":         {"required": ["image"]},
-    "createConversationGroup":  {"required": ["members", "indicator"]},
+    "createConversationGroup":  {"required": ["members"], "recommended": ["indicator"]},
     "destroyConversationGroup": {"required": ["id"]},
     "destroyConversationGroups":{"required": []},
     "createPuzzgrid":           {"required": ["actors"]},
@@ -260,10 +268,24 @@ ACTIONS: Dict[str, dict] = {
     "createMissionHistory":     {"required": ["type", "title", "players"]},
     "updateMissionHistory":     {"required": []},
     "createAdvertisement":      {"required": ["header", "text"]},
-    "createDrawing":            {"required": ["actors", "question", "terminationCondition"]},
+    # createDrawing 'tools' = which whiteboard implements players get (see DRAWING_TOOLS).
+    # Optional; omit it to leave the whiteboard's default toolset alone.
+    "createDrawing":            {"required": ["actors", "question", "terminationCondition"],
+                                 "optional": ["duration", "capture", "private", "vertical",
+                                              "colors", "defaultImage", "tools",
+                                              "sounds.waitForSoundEnd", "sounds.list", "playList.1"]},
     "startClip":                {"required": ["title"]},
     "endClip":                  {"required": []},
+    # Captures the central widget and files the image under `title`. The uploaded
+    # image lands in `lastActionResult.cloudinaryUrl` — feed that straight into the
+    # next action (see createMoment.mediaUrl).
     "takeWidgetScreenshot":     {"required": ["title"]},
+    # Records a "moment" between players, for the cross-game moments feed. It writes
+    # one row for every pair in list1 × list2, so both must be LISTS of player IDs
+    # (|list1| × |list2| rows total). `mediaUrl` is optional and is normally the
+    # screenshot from an immediately-preceding takeWidgetScreenshot.
+    "createMoment":             {"required": ["description", "list1", "list2"],
+                                 "optional": ["mediaUrl"]},
     "createOneWordClue":        {"required": ["actor", "duration", "restrictedWords"]},
 
     # ── Votes module ──────────────────────────────────────────────────────────
@@ -271,6 +293,23 @@ ACTIONS: Dict[str, dict] = {
     "createMixVote":    {"required": ["title", "question", "terminationCondition", "actors",
                                       "showResultInRealTime", "point.targets", "poll.targets"]},
     "getTriviaQuestions": {"required": ["qnt"]},
+    # createCardVote: like createVote, but overlays the vote on the central CARD widget
+    # so the board stays VISIBLE while `actors` vote AT other players (clicking cameras).
+    # Replaces the old workarounds: selectCentralWidgetDeck-as-player-proxy, and
+    # removeWidget → createVote → restoreWidget. Notes:
+    #   • No `type` field — it is inherently a point/at-players vote.
+    #   • `targets` = the votable player IDs (e.g. players − [currentPlayer]).
+    #   • Requires the central widget to exist/be visible (enforced in _check_widget_visibility).
+    #   • Result: read like a createVote — `getCachedValue("lastActionResult.voteResult")`
+    #     is the list of chosen players (`.voteResult.0` for a single actor). BUT if a
+    #     `postHandler` is set, `lastActionResult` IS that list directly (no `.voteResult`) —
+    #     enforced by the postHandler check below.
+    "createCardVote":   {"required": ["actors", "targets", "question", "terminationCondition"],
+                         "optional": ["duration", "answersQuantity", "allowFewerAnswers",
+                                      "allowSkipping", "allowRevoting", "oneClick", "vertical",
+                                      "title", "showResultInRealTime", "showResultDuration",
+                                      "showResult", "playList.1", "sounds.waitForSoundEnd",
+                                      "sounds.list", "backgroundColor", "textColor", "borderColor"]},
 
     # ── Score module ──────────────────────────────────────────────────────────
     "showScore":        {"required": ["from", "to"]},
@@ -332,21 +371,136 @@ VALID_PARAM_TYPES = {"preset", "cached", "computed"}
 
 # Selectors whose result is a list (used by the cache-type pre-pass and the
 # list-expecting-field check).
+#
+# Membership below the "basic" group is taken from the engine's "Advanced Selectors"
+# doc (1ppEuY6xYExdtyr7tl1iXg9BuXjMGKKbIjYk9-MaW_f8), which gives each selector a
+# TypeScript signature — everything declared `=> string[]` or "array of card objects"
+# belongs here, everything declared `=> string | number | boolean` does not.
 _LIST_RETURNING_SELECTORS = {
-    "createList", "append", "listsSubtract", "intersect", "shuffleList",
-    "getDeckCards", "allPlayers", "getPlayersFromTeam", "getPlayerNamesByIds",
-    "sublist", "concat", "randomElementsList", "getObjectValues", "getObjectKeys",
-    "createDict",
+    # ── Basic / list manipulation ─────────────────────────────────────────────
+    "createList", "append", "listsSubtract", "trueSubtract", "intersect",
+    "shuffleList", "sublist", "concat", "randomElementsList", "removeElement",
+    "listByDictionary", "createItemList", "unique", "reverseList", "stringToList",
+    "getObjectValues", "getObjectKeys", "getObjectFieldList",
+    "getObjectKeysWithPositiveValue",
+
+    # ── Common state ──────────────────────────────────────────────────────────
+    "allPlayers", "allPlayersByOrder", "allConnectedUsers", "allSpectators",
+    "allUsers", "allHumanPlayers", "allRobotPlayers", "getPlayerNamesByIds",
+
+    # ── votes ─────────────────────────────────────────────────────────────────
+    "getVotersByAnswer",   # player ids who picked a given answer/target
+    "getPlayerVoice",      # how one player voted — always an array of strings
+
+    # ── teamsAndRoles ─────────────────────────────────────────────────────────
+    "getPlayersFromTeam", "getPlayersByRole",
+    "getPlayersRoles",     # maps player ids → role ids
+    "getPlayersTeams",     # maps player ids → team ids
+    "getCardNames",
+    "getAllRolesIdsExpandedByFrequency",
+    "getNonEmptyTeamsIds",
+
+    # ── playerScore ───────────────────────────────────────────────────────────
+    # NB: the singular/aggregate cousins (getPlayerScore, getMaxCurrentScore,
+    # getMinCurrentScore) return numbers and are deliberately NOT here.
+    "getPlayersByScore", "getPlayersWithMinScore", "getPlayersWithMaxScore",
+
+    # ── deadPlayer ────────────────────────────────────────────────────────────
+    "allLivePlayers", "getAllPlayersExcept",
+
+    # ── cards ─────────────────────────────────────────────────────────────────
+    "getDeckCards",        # array of card objects
+    "fetchDeckField",      # array of card objects
+    "playerHand",          # array of card objects
+    "fetchHandField",      # one field pulled from each card in a private hand
+    "getCardsIdsByType",
+    "getFugitivePlayableCards",
+    # Pulls one field off each card in a list of card OBJECTS. The list-shaped
+    # cousin of fetchDeckField/fetchHandField, and the way a preHandler reads
+    # the ranks (or names, or types) of the cards a player has just selected.
+    "fetchCardsField",
+    # Returns the list of card IDs in a player's hand matching a card name.
+    # Its whole purpose is to hand those IDs to getCardField (see _check_get_card_field_scope).
+    "getHandCardsIdsByName",
+
+    # ── mafia ─────────────────────────────────────────────────────────────────
+    "livePlayersFromTeam",
 }
 
-# Selectors whose result is a single scalar value (string/number/boolean/card).
+# Selectors whose result is a single (non-list) value — string / number / boolean /
+# card / object. Sourced from the same two engine docs as the list set above:
+# "Basic Selectors" (1uUZbyE7sG1Kj9hbv_76Ju0iMlOvKKjnPKPM67LkwyOY) and
+# "Advanced Selectors" (1ppEuY6xYExdtyr7tl1iXg9BuXjMGKKbIjYk9-MaW_f8).
+#
+# Two groups of selectors belong in NEITHER set, so they classify as 'unknown':
+#
+#   1. Polymorphic (`=> any`) — the shape depends on the argument, and several
+#      checks special-case them: ifElse, getCachedValue, getCachedObjectValue,
+#      getObjectField (returns dict[field], so it is whatever that field holds),
+#      incObjectFieldValue, decObjectFieldValue.
+#   2. Dict-returning — in these docs `Record<K, V>` means a dict ({"key": value}),
+#      which is neither a list nor a scalar: createDict (zips a list of string keys
+#      with a list of values), setCachedObjectFieldValue, setCachedObjectFieldsValues,
+#      and getTrueRoles / switchTrueRoles (=> TrueRoles).
+#
+# Do not "fix" these by adding them to a set — 'unknown' is the correct answer, and
+# the sole cache-shape consumer only acts on an explicit 'scalar'.
 _SCALAR_RETURNING_SELECTORS = {
-    "selectElement", "getCardField", "getObjectField", "getHostPlayerId",
-    "getPlayerNameById", "listLength", "minValue", "maxValue", "abs",
-    "add", "subtract", "multiply", "integerDivide", "inc", "dec",
-    "randomNumber", "randomElement", "indexOf", "formatString",
-    "equals", "notEquals", "lessThan", "lessThanOrEqual", "greaterThan",
+    # ── Math ──────────────────────────────────────────────────────────────────
+    "abs", "add", "subtract", "multiply", "integerDivide", "divide", "remainder",
+    "inc", "dec", "floor", "round", "negate", "polynomial",
+
+    # ── Logical / comparisons ─────────────────────────────────────────────────
+    "equals", "notEqual", "lessThan", "lessThanOrEqual", "greaterThan",
     "greaterThanOrEqual", "logicalAND", "logicalOR", "logicalNOT", "contains",
+
+    # ── List → single value ───────────────────────────────────────────────────
+    "listLength", "indexOf", "minValue", "maxValue", "maxIndex", "minIndex",
+    "sumAllElementsList", "selectElement", "randomElement", "randomNumber",
+
+    # ── Strings ───────────────────────────────────────────────────────────────
+    "formatString", "listToString", "toString", "toLowerCase", "toUpperCase",
+    "substring", "stringLength", "stringToInt", "isRealEnglishWord",
+
+    # ── Common state ──────────────────────────────────────────────────────────
+    "getHostPlayerId", "getPlayerNameById", "getRemainingTimer",
+    "nextPlayer", "prevPlayer", "selectRandomPuzzgridId",
+
+    # ── Objects / cache ───────────────────────────────────────────────────────
+    "isCachedObjectContainsField",
+
+    # ── teamsAndRoles ─────────────────────────────────────────────────────────
+    "getTeamNameByPlayerId", "getRoleNameByPlayerId", "getRoleName",
+    "getPlayerByRole", "getFewestPlayersTeam", "getMostPlayersTeam",
+    "isTrueRoleInGame",
+
+    # ── playerScore ───────────────────────────────────────────────────────────
+    "getPlayerScore", "getMaxCurrentScore", "getMinCurrentScore",
+
+    # ── cards ─────────────────────────────────────────────────────────────────
+    "getCardField", "getPlayerByCardName", "getTrickWinner", "getCardsScore",
+    "getDeckLabel", "getNoThanksCardsScore", "getLlamaPartyCardsScore",
+    "getGalaxyBrainThinkerRoundScore", "getGalaxyBrainJudgeRoundScore",
+
+    # ── grids ─────────────────────────────────────────────────────────────────
+    "getCodenamesWinner",
+
+    # ── votes / mafia ─────────────────────────────────────────────────────────
+    "isTargetGotMajority", "isAllTeamAlive", "isNotRoleInGame", "isVigilanteSkip",
+    "questFailsNumber",
+
+    # ── skipCondition specials (all boolean) ──────────────────────────────────
+    "isPrevActionGroupSkipped", "isPrevActionGroupDone",
+    "isPrevActionSkipped", "isPrevActionDone",
+
+    # ── Notification-text builders (all return a string) ──────────────────────
+    "prepareVigilanteChoiceAnnounce", "prepareParityCopChoiceAnnounce",
+    "prepareAccuserNotification", "prepareDeathVoteQuestion",
+    "prepareDeathVoteResultAnnounce", "prepareWerewolvesRevealAnnounce",
+    "prepareSeerChoiceAnnounce", "prepareEndGameAnnounce",
+
+    # ── winCondition specials (all boolean) ───────────────────────────────────
+    "isWerewolvesWin", "isTannerWins", "isVillagersWins",
 }
 
 # Ludio variables always available in cache without explicit saveValueInCache
@@ -360,6 +514,10 @@ BUILTIN_CACHE_VARS = {
     "waitingSpectator",   # injected in turnSpectatorToPlayerActions (the arriving spectator)
                           # games often immediately rename it: saveValueInCache [{name:"newPlayer",...}]
     "lastActionId",       # ID of the last action executed (engine-provided)
+    "inputCards",        # injected inside an action's preHandler: the card objects
+                         # the player has selected but NOT yet played. The whole
+                         # point of a preHandler is to judge them before they move,
+                         # so it exists only in that scope.
     # NOTE: "winner" is NOT a global built-in. It is set by the win-condition mechanism
     # (the winning key name from winCondition, or the winners list from playersWinCondition)
     # and is only accessible inside postGameActions. It is handled specially in _check_cached_ref.
@@ -368,12 +526,30 @@ BUILTIN_CACHE_VARS = {
 # Keys excluded when comparing actions against the emeralds.json reference template
 COSMETIC_KEYS = {"backgroundColor", "borderColor", "textColor"}
 
+# Every whiteboard tool createDrawing's optional 'tools' list accepts. The list is
+# a whitelist: pass it and players get exactly these implements, omit it and the
+# whiteboard keeps its default toolset. Source of truth is the staging game
+# "Drawing with tools" (ptr.ludio.gg setup 707afdd8-51c9-40e2-804e-61824bb04c31),
+# which enumerates the full set; no other game on either host uses the param yet.
+# The 'Fill' variants are the filled-shape counterparts of their outline versions.
+DRAWING_TOOLS = {"pen", "eraser", "circle", "circleFill", "rect", "rectFill"}
+
 # Free engine variables that must never appear as the target name of saveValueInCache.
 # isActionLoop is excluded: setting it to false to break a loop IS a valid use.
 FREE_VARS_NO_SAVE = {
     "repeatIndex", "spaIndex", "gameLoopIndex", "loopIndex",
     "oldPlayer", "waitingSpectator", "lastActionResult", "lastActionId",
 }
+
+# Fields of the optional top-level `winnersInfo` block. winCondition /
+# playersWinCondition resolve the winner to a display STRING, which is fragile —
+# it breaks if a player renames themselves mid-call. winnersInfo instead records
+# the structured result: `userIds` is the actual list of player IDs on the winning
+# team, which downstream Ludio features can rely on. `highScore` / `lowScore` are
+# optional score telemetry (e.g. tracking a game's best score over time) and only
+# belong in games whose scores are comparable ACROSS sessions — Rainbow Blackjack
+# yes; most card games no, since players there play a variable number of rounds.
+WINNERS_INFO_FIELDS = {"userIds", "highScore", "lowScore"}
 
 # Canonical key ordering for action groups, actions, and the payload sub-object.
 # Any keys not listed are ignored by the order check — only the relative ordering
@@ -764,6 +940,7 @@ class Validator:
         self._check_card_movement_targets()
         self._check_select_element_shorthand()
         self._check_get_card_field_scope()
+        self._check_param_tuple_leak()
         self._check_html_in_action_text()
         self._check_repeated_subexpressions()
         self._check_videobox_decks_initialized()
@@ -771,11 +948,14 @@ class Validator:
         self._check_win_condition_defined()
         self._check_post_game_actions_required()
         self._check_winners_returns_names()
+        self._check_winners_info()
+        self._check_create_moment()
         self._check_save_value_in_cache_shape()
         self._check_strings_not_overwritten()
         self._check_no_nested_groups_in_repeat_parallel()
         self._check_cardback_resolves()
         self._check_move_cards_payload()
+        self._check_select_central_widget_deck()
         self._check_asset_urls_resolve()
         self._check_spectator_transitions()
         self._check_contains_list_initialized()
@@ -1058,6 +1238,47 @@ class Validator:
 
         walk(self.data, "")
 
+    def _check_select_central_widget_deck(self):
+        """selectCentralWidgetDeck.defaultSelect must be a DECK NAME — the deck that gets
+        auto-selected when a player's timer runs out. It should be a string, or a
+        cached/computed selector that resolves to one (e.g. randomElement over the `decks`
+        list). A boolean `true` is a common mistake: the engine can't resolve it to a deck,
+        so on timeout the action yields no usable result and downstream lookups
+        (getCachedObjectValue(lastActionResult, actor), etc.) error out mid-game."""
+        def walk(item, path):
+            if isinstance(item, dict):
+                if item.get("key") == "selectCentralWidgetDeck":
+                    payload = item.get("payload") or {}
+                    has_question = False
+                    for section_name in ("preset", "cached", "computed"):
+                        section = payload.get(section_name) or {}
+                        if isinstance(section, dict) and "defaultSelect" in section:
+                            ds = section["defaultSelect"]
+                            if isinstance(ds, bool):
+                                self.err(f"{path}.payload.{section_name}.defaultSelect",
+                                         "selectCentralWidgetDeck `defaultSelect` must be a deck "
+                                         "NAME (string) or a selector that resolves to one — not a "
+                                         "boolean. On timeout the engine auto-picks this deck; a "
+                                         "bool can't resolve to a deck, so the action yields no "
+                                         "result and downstream lookups error out. Use e.g. a "
+                                         "computed randomElement over the `decks` list.")
+                        if isinstance(section, dict) and "question" in section:
+                            has_question = True
+                    if not has_question:
+                        self.err(f"{path}.payload",
+                                 "selectCentralWidgetDeck is missing a `question` — the actor sees "
+                                 "no prompt telling them what to click. Add a `question` (usually a "
+                                 "computed formatString) in preset/cached/computed. (Note: "
+                                 "`privatePrompt` is optional and can be omitted — the action is "
+                                 "still public and its result is hidden regardless.)")
+                for k, v in item.items():
+                    walk(v, f"{path}.{k}" if path else k)
+            elif isinstance(item, list):
+                for i, x in enumerate(item):
+                    walk(x, f"{path}[{i}]")
+
+        walk(self.data, "")
+
     def _check_cardback_resolves(self):
         """Every preset.cardback reference (createGenericCardWidget, createVideoboxDecks,
         etc.) must resolve to a real image — either a full http(s) URL or an alias key
@@ -1275,6 +1496,180 @@ class Validator:
                      "  {\"selector\": \"getPlayerNamesByIds\", \"params\": [{\"name\": \"ids\", "
                      "\"type\": \"computed\", \"value\": {\"selector\": \"getPlayersWithMaxScore\"}}]}")
 
+    def _check_winners_info(self):
+        """`winnersInfo` is an OPTIONAL top-level block that records the structured
+        outcome of a game, alongside (not instead of) winCondition /
+        playersWinCondition.
+
+        The distinction matters: winCondition / playersWinCondition resolve the
+        winner to a display STRING. That string is fragile — a player renaming
+        themselves mid-call changes it, and it carries no stable identity.
+        winnersInfo.userIds instead stores the actual player IDs of the winning
+        team, which is what downstream Ludio features should key off.
+
+        Note the deliberate inversion vs _check_winners_returns_names: there,
+        `playersWinCondition.winners` MUST be wrapped in getPlayerNamesByIds
+        because it is rendered as text. Here the opposite holds — names defeat
+        the entire purpose of the block.
+
+        `highScore` / `lowScore` are optional score telemetry (e.g. tracking the
+        highest score a game has ever produced). They only make sense where scores
+        are comparable BETWEEN sessions — Rainbow Blackjack yes; most card games
+        no, because players play a variable number of rounds, so the raw number
+        says nothing.
+        """
+        if not isinstance(self.data, dict):
+            return
+        if "winnersInfo" not in self.data:
+            return  # Optional block — absence is fine.
+
+        wi = self.data["winnersInfo"]
+        if not isinstance(wi, dict):
+            self.err("winnersInfo",
+                     f"winnersInfo must be an object mapping field → selector, got "
+                     f"{type(wi).__name__}. Valid fields: {sorted(WINNERS_INFO_FIELDS)}.")
+            return
+
+        for field in wi:
+            if field not in WINNERS_INFO_FIELDS:
+                self.err(f"winnersInfo.{field}",
+                         f"Unknown winnersInfo field '{field}'. Valid fields: "
+                         f"{sorted(WINNERS_INFO_FIELDS)}.")
+
+        # userIds is the reason the block exists.
+        if "userIds" not in wi:
+            self.err("winnersInfo",
+                     "winnersInfo is missing 'userIds' — the whole point of the block "
+                     "is recording the winning players' actual IDs (highScore/lowScore "
+                     "are optional extras). Use an ID-returning selector, e.g. "
+                     "{\"selector\": \"getPlayersFromTeam\", \"params\": [{\"name\": "
+                     "\"teamId\", \"type\": \"cached\", \"value\": \"<winning team>\"}]}.")
+        else:
+            uids = wi["userIds"]
+            if not isinstance(uids, dict) or "selector" not in uids:
+                self.err("winnersInfo.userIds",
+                         "winnersInfo.userIds must be a selector object returning a list "
+                         "of player IDs (e.g. getPlayersFromTeam, getPlayersWithMaxScore).")
+            else:
+                sel = uids.get("selector")
+                if sel == "getPlayerNamesByIds":
+                    self.err("winnersInfo.userIds",
+                             "winnersInfo.userIds uses 'getPlayerNamesByIds', which returns "
+                             "display NAMES, not IDs — that defeats the purpose of the block. "
+                             "Names are exactly the fragile value winnersInfo exists to avoid "
+                             "(they change when a player renames themselves mid-call). Drop the "
+                             "wrapper and use the ID-returning selector directly. "
+                             "(playersWinCondition.winners is the opposite case — it IS rendered "
+                             "as text and does need the wrapper.)")
+                elif sel in _SCALAR_RETURNING_SELECTORS:
+                    self.err("winnersInfo.userIds",
+                             f"winnersInfo.userIds uses '{sel}', which returns a single scalar. "
+                             "It must return a LIST of player IDs — even a solo winner is a "
+                             "one-element list. Wrap it with createList, or use a list-returning "
+                             "selector such as getPlayersFromTeam / getPlayersWithMaxScore.")
+
+        # highScore / lowScore are single numbers, never lists.
+        for field in ("highScore", "lowScore"):
+            if field not in wi:
+                continue
+            val = wi[field]
+            if isinstance(val, bool) or not isinstance(val, (dict, int, float)):
+                self.err(f"winnersInfo.{field}",
+                         f"winnersInfo.{field} must be a selector object returning a number "
+                         f"(or a literal number), got {type(val).__name__}.")
+            elif isinstance(val, dict):
+                if "selector" not in val:
+                    self.err(f"winnersInfo.{field}",
+                             f"winnersInfo.{field} must be a selector object returning a number.")
+                elif val["selector"] in _LIST_RETURNING_SELECTORS:
+                    self.err(f"winnersInfo.{field}",
+                             f"winnersInfo.{field} uses '{val['selector']}', which returns a "
+                             f"list. {field} is a single number — use a scalar selector such as "
+                             f"maxValue / minValue (or getCachedValue on a score variable).")
+
+    def _check_create_moment(self):
+        """`createMoment` records a moment between players for the moments feed.
+
+        Two things go wrong with it:
+
+        1. `list1` / `list2` must each be a LIST of player IDs. The action writes one
+           row per pair, so a scalar silently collapses the cross product, and player
+           NAMES (getPlayerNamesByIds) write display strings where the feed expects
+           stable IDs — the same trap as winnersInfo.userIds.
+        2. `mediaUrl` is normally `lastActionResult.cloudinaryUrl`, which only holds
+           the screenshot while takeWidgetScreenshot is the IMMEDIATELY preceding
+           action. Any action in between — even an emptyAction delay — overwrites
+           lastActionResult, and the moment is filed with the wrong image or none.
+        """
+        def scan(actions, path):
+            for i, a in enumerate(actions):
+                if not isinstance(a, dict) or a.get("key") != "createMoment":
+                    continue
+                apath = f"{path}[{i}]"
+                pay = a.get("payload") or {}
+                preset   = pay.get("preset")   if isinstance(pay.get("preset"), dict) else {}
+                cached   = pay.get("cached")   if isinstance(pay.get("cached"), dict) else {}
+                computed = pay.get("computed") if isinstance(pay.get("computed"), dict) else {}
+
+                for f in ("list1", "list2"):
+                    cv = computed.get(f)
+                    if isinstance(cv, dict) and "selector" in cv:
+                        s = cv["selector"]
+                        if s == "getPlayerNamesByIds":
+                            self.err(f"{apath}.payload.computed.{f}",
+                                     f"createMoment '{f}' uses 'getPlayerNamesByIds', which "
+                                     "returns display NAMES. Moments are keyed by player ID — "
+                                     "names change when a player renames themselves and can't "
+                                     "be joined back to a player. Use the ID-returning selector "
+                                     "directly (e.g. allPlayers).")
+                        elif s in _SCALAR_RETURNING_SELECTORS:
+                            self.err(f"{apath}.payload.computed.{f}",
+                                     f"createMoment '{f}' uses '{s}', which returns a single "
+                                     "scalar. It must be a LIST of player IDs — createMoment "
+                                     "writes one row per list1 x list2 pair. Wrap it with "
+                                     "createList for a single player.")
+                    sv = cached.get(f)
+                    if isinstance(sv, str) and self.cache_types.get(sv.split(".")[0]) == "scalar":
+                        self.err(f"{apath}.payload.cached.{f}",
+                                 f"createMoment '{f}' = '{sv}' points to a SCALAR cache value, "
+                                 "but it must be a LIST of player IDs. Wrap with createList in "
+                                 "'computed', or use a plural cache variable.")
+                    if f in preset and not isinstance(preset[f], list):
+                        self.err(f"{apath}.payload.preset.{f}",
+                                 f"createMoment '{f}' must be a list of player IDs, got "
+                                 f"{type(preset[f]).__name__}.")
+
+                media = cached.get("mediaUrl")
+                if isinstance(media, str) and media.split(".")[0] == "lastActionResult":
+                    if media != "lastActionResult.cloudinaryUrl":
+                        self.warn(f"{apath}.payload.cached.mediaUrl",
+                                  f"createMoment mediaUrl reads '{media}'. takeWidgetScreenshot "
+                                  "publishes its image as 'lastActionResult.cloudinaryUrl' — "
+                                  "any other field is likely to be empty.")
+                    prev = actions[i - 1] if i > 0 else None
+                    prev_key = prev.get("key") if isinstance(prev, dict) else None
+                    if prev_key != "takeWidgetScreenshot":
+                        self.err(f"{apath}.payload.cached.mediaUrl",
+                                 f"createMoment reads '{media}' but the preceding action is "
+                                 f"{prev_key!r}, not 'takeWidgetScreenshot'. lastActionResult "
+                                 "only holds the screenshot for the action immediately after the "
+                                 "capture — anything in between (even an emptyAction delay) "
+                                 "overwrites it, and the moment is filed with the wrong image. "
+                                 "Move takeWidgetScreenshot directly before this action, or save "
+                                 "its URL to a named cache var and reference that instead.")
+
+        def walk(node, path):
+            if isinstance(node, dict):
+                for k, v in node.items():
+                    if k == "actions" and isinstance(v, list):
+                        scan(v, f"{path}.actions" if path else "actions")
+                    walk(v, f"{path}.{k}" if path else k)
+            elif isinstance(node, list):
+                for i, v in enumerate(node):
+                    walk(v, f"{path}[{i}]")
+
+        walk(self.data, "")
+
     def _check_spectator_transitions(self):
         """If `allowPlayerBecomeSpectator` is enabled, the game must:
           1. Define `turnPlayerToSpectatorActions` at the top level (the action
@@ -1366,34 +1761,166 @@ class Validator:
 
         walk(self.data, "")
 
+    def _check_param_tuple_leak(self):
+        """Catch a silent, syntactically-valid mistake: a value that should be a selector
+        object (or literal) but is instead a 2- or 3-element LIST whose first element is the
+        string "cached" / "preset" / "computed". That is a param 'tuple' (name,type,value form
+        collapsed to [type, value]) that leaked into a saveValueInCache value, a skipCondition,
+        or a param `value`. At runtime it becomes a literal list of strings — e.g. saving
+        sum_x = ["cached","zeroPlayers"] instead of getCachedValue("zeroPlayers") — so later
+        selectElement/add on it yields garbage strings ('add argument is not a number').
+        To COPY a cached var into a new var use getCachedValue; for a computed value use the
+        selector object directly; for a literal use the raw value. (Found in Pageant 2026-08-07.)"""
+        MAGIC = {"cached", "preset", "computed"}
+
+        def looks_like_leak(v):
+            return (isinstance(v, list) and 2 <= len(v) <= 3
+                    and isinstance(v[0], str) and v[0] in MAGIC)
+
+        def walk(node, path):
+            if isinstance(node, dict):
+                # saveValueInCache entries: {"name":.., "value": <leak>}
+                if "value" in node and looks_like_leak(node.get("value")) and "name" in node:
+                    self.err(f"{path}.value",
+                             f"value is the literal list {node['value']!r} — this is a leaked "
+                             f"param tuple. To copy a cached var use getCachedValue; a computed "
+                             f"value should be the selector object; a literal should be raw.")
+                for k, v in node.items():
+                    if looks_like_leak(v) and k in ("value", "skipCondition", "thenValue", "elseValue", "condition"):
+                        self.err(f"{path}.{k}",
+                                 f"{k} is the literal list {v!r} — leaked param tuple "
+                                 f"(use getCachedValue / the selector object / a raw literal).")
+                    walk(v, f"{path}.{k}" if path else k)
+            elif isinstance(node, list):
+                for i, v in enumerate(node):
+                    walk(v, f"{path}[{i}]")
+
+        walk(self.data, "")
+
+    # Selectors that pass card-ID-ness through from a list/element argument. E.g.
+    # selectElement(<list of card IDs>, i) is still a card ID; sublist(...) is still a
+    # list of card IDs. Maps selector -> the param name that carries the card IDs.
+    _CARD_ID_PASS_THROUGH = {
+        "selectElement": "list", "sublist": "list", "shuffleList": "list",
+        "unique": "list", "randomElement": "list", "randomElementsList": "list",
+    }
+
+    @staticmethod
+    def _is_card_id_ref_str(s, card_id_vars):
+        """True if the cached-reference string `s` names a playCards-result card-ID source:
+        the built-in 'lastActionResult.cards' (or a dotted/indexed path off it), or a cache
+        variable already known to hold card IDs."""
+        if not isinstance(s, str):
+            return False
+        if s == "lastActionResult.cards" or s.startswith("lastActionResult.cards.") \
+                or s.startswith("lastActionResult.cards["):
+            return True
+        root = s.split(".")[0].split("[")[0]
+        return root in card_id_vars
+
+    def _param_is_card_id(self, param, card_id_vars):
+        """True if a param entry ({name,type,value}) resolves to a card ID / list of card IDs."""
+        if not isinstance(param, dict):
+            return False
+        if param.get("type") == "cached":
+            return self._is_card_id_ref_str(param.get("value"), card_id_vars)
+        if param.get("type") == "computed":
+            return self._value_is_card_id(param.get("value"), card_id_vars)
+        return False  # preset literal
+
+    def _value_is_card_id(self, value, card_id_vars):
+        """True if a computed selector value resolves to a card ID / list of card IDs.
+        Traces ONLY through card-ID sources (getHandCardsIdsByName / lastActionResult.cards)
+        and pass-through list ops — NOT through arbitrary selectors, so e.g. a variable set
+        by getCardField(...) (a suit/food scalar) is never mistaken for a card ID."""
+        if not isinstance(value, dict):
+            return False
+        sel = value.get("selector")
+        params = value.get("params", [])
+
+        def pget(pname):
+            return next((p for p in params
+                         if isinstance(p, dict) and p.get("name") == pname), None)
+
+        if sel == "getHandCardsIdsByName":
+            return True
+        if sel == "getCachedValue":
+            nm = pget("name")
+            return nm is not None and nm.get("type") == "preset" \
+                and self._is_card_id_ref_str(nm.get("value"), card_id_vars)
+        if sel in self._CARD_ID_PASS_THROUGH:
+            return self._param_is_card_id(pget(self._CARD_ID_PASS_THROUGH[sel]), card_id_vars)
+        if sel in ("append", "concat"):
+            return self._param_is_card_id(pget("list1") or pget("list"), card_id_vars)
+        return False
+
+    def _collect_card_id_vars(self):
+        """Fixed-point pass: cache-variable roots whose saveValueInCache value resolves to a
+        card ID / list of card IDs sourced from a playCards result or getHandCardsIdsByName."""
+        entries = []
+
+        def gather(obj):
+            if isinstance(obj, dict):
+                svc = obj.get("saveValueInCache")
+                if isinstance(svc, list):
+                    for e in svc:
+                        if isinstance(e, dict) and isinstance(e.get("name"), str):
+                            entries.append((e["name"].split(".")[0], e.get("value")))
+                for v in obj.values():
+                    gather(v)
+            elif isinstance(obj, list):
+                for v in obj:
+                    gather(v)
+
+        gather(self.data)
+        card_id_vars = set()
+        changed = True
+        while changed:
+            changed = False
+            for root, value in entries:
+                if root not in card_id_vars and self._value_is_card_id(value, card_id_vars):
+                    card_id_vars.add(root)
+                    changed = True
+        return card_id_vars
+
     def _check_get_card_field_scope(self):
-        """getCardField only works on a cardId, and cardIds only exist as the result
-        of a playCards action. So getCardField is only valid inside the
-        saveValueInCache list of a playCards action — anywhere else it fails at
-        runtime. To read a field on a known card object (e.g. the result of
-        selectElement(getDeckCards(...))), use getObjectField instead.
-        """
+        """getCardField only works on a card ID. Card IDs come from:
+          (1) a playCards action's RESULT object — so getCardField is valid inside that
+              action's saveValueInCache;
+          (2) the getHandCardsIdsByName selector, whose entire job is to extract the card
+              IDs of a player's hand cards matching a name, precisely so they can be fed to
+              getCardField; and
+          (3) a cache variable whose value was saved from a playCards result
+              ('lastActionResult.cards'), read back later via getCachedValue / a cached ref
+              (possibly through pass-through list ops like selectElement/sublist).
+        So a getCardField whose 'cardId' arg resolves to any of those is valid anywhere.
+        Anywhere else it fails at runtime ('Cannot read properties of undefined (reading id)').
+        For a card OBJECT returned by getDeckCards / fetchHandField, use getObjectField instead.
+        (Confirmed via Pageant play-test 2026-08-07: getObjectField on a played-card UUID fails
+        with 'argument is not valid'; getCardField on a getDeckCards object fails reading 'id'.)"""
+        card_id_vars = self._collect_card_id_vars()
+
         def walk(node, path, in_legal_scope):
             if isinstance(node, dict):
                 if not in_legal_scope and node.get("key") == "playCards":
-                    # Only this action's saveValueInCache is a legal scope.
                     for k, v in node.items():
-                        child_path = f"{path}.{k}" if path else k
-                        walk(v, child_path, k == "saveValueInCache")
+                        walk(v, f"{path}.{k}" if path else k, k == "saveValueInCache")
                     return
                 if not in_legal_scope and node.get("selector") == "getCardField":
-                    self.err(path or "(root)",
-                             "getCardField only works on a cardId, which only exists "
-                             "as the result of a playCards action — so it must appear "
-                             "inside that playCards action's saveValueInCache. For a "
-                             "known card object (e.g. selectElement(getDeckCards(...))), "
-                             "use getObjectField on the card object instead.")
+                    card_id = next((p for p in node.get("params", [])
+                                    if isinstance(p, dict) and p.get("name") == "cardId"), None)
+                    if not self._param_is_card_id(card_id, card_id_vars):
+                        self.err(path or "(root)",
+                                 "getCardField only works on a card ID from a playCards RESULT "
+                                 "(directly, saved to a cache var, or extracted via "
+                                 "getHandCardsIdsByName), so it must appear inside that playCards "
+                                 "action's saveValueInCache. For a card OBJECT from getDeckCards / "
+                                 "fetchHandField, use getObjectField.")
                 for k, v in node.items():
                     walk(v, f"{path}.{k}" if path else k, in_legal_scope)
             elif isinstance(node, list):
                 for i, v in enumerate(node):
                     walk(v, f"{path}[{i}]", in_legal_scope)
-
         walk(self.data, "", False)
 
     # Tags the engine renders as formatting *only* inside createNotification.text.
@@ -2142,10 +2669,10 @@ class Validator:
                 state["visible"] = False
             elif key == "restoreWidget":
                 state["visible"] = True
-            elif key in ("playCards", "selectCentralWidgetDeck"):
+            elif key in ("playCards", "selectCentralWidgetDeck", "createCardVote"):
                 if state["visible"] is None:
                     self.err(path, f"'{key}' fires but createGenericCardWidget was never called before "
-                             "this point. Create the central widget before using playCards or selectCentralWidgetDeck.")
+                             "this point. Create the central widget before using this action.")
                 elif not state["visible"]:
                     self.err(path, f"'{key}' fires but the central widget is currently hidden — "
                              "removeWidget was called without a subsequent restoreWidget. "
@@ -2155,7 +2682,9 @@ class Validator:
                           "Vote/input prompts usually want the widget hidden first so the "
                           "prompt UI isn't competing with the central card area. Pattern: "
                           "removeWidget → createVote/createInput → restoreWidget. "
-                          "(Ignore if this game genuinely wants both visible together.)")
+                          "If this is a vote where an actor picks ANOTHER PLAYER, use "
+                          "createCardVote instead — it's built to keep the card board visible "
+                          "while voting at players. (Ignore if this game genuinely wants both visible.)")
 
         def visit_flat(actions, base_path):
             if not isinstance(actions, list):
@@ -2374,11 +2903,12 @@ class Validator:
                 ok = True
 
         if not ok:
-            self.err(actual_path,
-                     "postGameActions winner notification header must handle ties. Two acceptable "
+            self.warn(actual_path,
+                     "postGameActions winner notification header should handle ties. Two acceptable "
                      "patterns: (A) Emeralds-style — formatString using cached 'winner' as arg1 "
                      "and an ifElse for 'wins'/'share the win' as arg2. (B) Team-style — a top-level "
-                     "ifElse selector whose branches choose between team-win strings and a tie message.")
+                     "ifElse selector whose branches choose between team-win strings and a tie message. "
+                     "(A game may legitimately handle ties in the body text instead — hence a warning, not an error.)")
 
     # ── Helpers for the type-consistency checks ───────────────────────────────
 
@@ -2661,15 +3191,15 @@ class Validator:
                 replacement = "inc" if sel == "add" else "dec"
                 self.warn(path, f"'{sel}' with a preset value of 1 — use '{replacement}(arg)' instead.")
 
-        # Error: equals/notEquals with a boolean preset argument. Ludio's
-        # equals/notEquals only compare numbers and strings — comparing a
+        # Error: equals/notEqual with a boolean preset argument. Ludio's
+        # equals/notEqual only compare numbers and strings — comparing a
         # boolean cache var against true/false is a no-op at runtime. Use
         # getCachedValue (or wrap with logicalNOT for "is false") directly.
-        if sel in ("equals", "notEquals"):
+        if sel in ("equals", "notEqual"):
             for p in params:
                 if isinstance(p, dict) and p.get("type") == "preset" and isinstance(p.get("value"), bool):
                     self.err(path, f"Selector '{sel}' has a boolean preset argument "
-                                   f"(value={p['value']}). equals/notEquals only work on numbers "
+                                   f"(value={p['value']}). equals/notEqual only work on numbers "
                                    f"and strings. To check if a cached boolean is true, use it "
                                    f"directly via getCachedValue (or via type='cached'); to "
                                    f"check if it is false, wrap with logicalNOT.")
@@ -2801,6 +3331,12 @@ class Validator:
             if req not in fields:
                 self.err(path, f"Action '{key}' missing required payload field '{req}' (present: {sorted(fields)})")
 
+        # Recommended (optional) fields — warn, don't error. e.g. createConversationGroup's
+        # 'indicator' (an emoji badge on the group) is optional; the group still works without it.
+        for rec in spec.get("recommended", []):
+            if rec not in fields:
+                self.warn(path, f"Action '{key}' missing recommended payload field '{rec}' (present: {sorted(fields)}). It's optional, but usually set.")
+
         # Extract payload sections for per-action checks
         preset_s   = payload.get("preset",   {}) if isinstance(payload, dict) else {}
         cached_s   = payload.get("cached",   {}) if isinstance(payload, dict) else {}
@@ -2838,9 +3374,41 @@ class Validator:
                          "Spectators receive notifications automatically — use "
                          "cached: {{\"to\": \"players\"}} instead.")
 
-        # createVote/createMixVote postHandler checks
+        # createDrawing 'tools': optional whitelist of whiteboard implements. Only a
+        # literal list can be checked, so 'cached' (a var name) and 'computed' (a
+        # selector) are left alone — a typo'd tool name there surfaces at runtime.
+        if key == "createDrawing" and "tools" in (preset_s or {}):
+            tools_val = preset_s["tools"]
+            if not isinstance(tools_val, list):
+                self.err(path, f"createDrawing 'tools' must be a list of tool names, got "
+                               f"{type(tools_val).__name__}. Valid tools: {sorted(DRAWING_TOOLS)}.")
+            elif not tools_val:
+                self.err(path, "createDrawing has an empty 'tools' list — players would get a "
+                               "whiteboard with no implements at all. Omit the field entirely to "
+                               "keep the default toolset, or list the tools you want: "
+                               f"{sorted(DRAWING_TOOLS)}.")
+            else:
+                for t in tools_val:
+                    if not isinstance(t, str):
+                        self.err(path, f"createDrawing 'tools' entry {t!r} is not a string. "
+                                       f"Valid tools: {sorted(DRAWING_TOOLS)}.")
+                    elif t not in DRAWING_TOOLS:
+                        # Near-miss hint: casing and the outline/fill suffix are the
+                        # two things that actually get mistyped (e.g. 'rectangle',
+                        # 'fillRect', 'Circle').
+                        near = [v for v in DRAWING_TOOLS if v.lower() == t.lower()]
+                        hint = f" Did you mean '{near[0]}'?" if near else ""
+                        self.err(path, f"createDrawing 'tools' has unknown tool '{t}'. "
+                                       f"Valid tools: {sorted(DRAWING_TOOLS)}.{hint}")
+                dupes = sorted({t for t in tools_val if isinstance(t, str)
+                                and tools_val.count(t) > 1})
+                if dupes:
+                    self.warn(path, f"createDrawing 'tools' lists {dupes} more than once — "
+                                    "duplicates have no effect.")
+
+        # createVote/createMixVote/createCardVote postHandler checks
         post_handler = obj.get("postHandler")
-        if key in ("createVote", "createMixVote") and post_handler:
+        if key in ("createVote", "createMixVote", "createCardVote") and post_handler:
             svc = obj.get("saveValueInCache", [])
             if isinstance(svc, list):
                 for i, entry in enumerate(svc):
@@ -3203,6 +3771,87 @@ class Validator:
                              "it must be extracted to the top-level gameLoop list")
 
 
+# ─── Describe-JSON validator ─────────────────────────────────────────────────
+
+def validate_describe(data):
+    """Validate a Describe JSON (game_jsons/<game>_describe.json). These files map to
+    a setup's TOP-LEVEL fields (name/description/rules/tags/banner), NOT `raw`.
+    Conventions enforced here:
+      • Every rule-section `name` must be from the fixed rulebook set (the games UI only
+        renders these tabs): "Basic Rules" | "Advanced Rules" | "Win Conditions" |
+        "Mechanics" | "Day Voting". Anything else (e.g. "Scoring") silently breaks the
+        rulebook — fold that content in as a `content[].title` under an allowed section.
+      • A "Win Conditions" section is expected (warned if absent).
+      • Rule content text may use newline tags (<br>) but NOT bold/italic (<b>/<i>) —
+        the rulebook renderer doesn't support them, so they show as literal markup.
+      • Every rule-section `icon` must be the hardcoded string "icon.png" (the engine
+        resolves it to the setup's own rulebook icon; a Cloudinary URL renders wrong).
+      • description.Duration must be a single value, never a range — for round-by-round
+        games write "N mins/round" (e.g. "6 mins/round").
+      • description.summary should be 1-2 short sentences; it shows on the games grid
+        (try.ludio.gg/games), so overly long summaries are flagged.
+    """
+    ALLOWED_SECTIONS = {"Basic Rules", "Advanced Rules", "Win Conditions", "Mechanics", "Day Voting"}
+    errors, warnings = [], []
+    section_names = []
+    for i, rule in enumerate(data.get('rules', []) or []):
+        icon = rule.get('icon') if isinstance(rule, dict) else None
+        if icon != 'icon.png':
+            errors.append((f"rules[{i}].icon",
+                           f'Describe-JSON rule icon must be hardcoded to "icon.png" (got {icon!r}).'))
+        name = rule.get('name') if isinstance(rule, dict) else None
+        section_names.append(name)
+        if name not in ALLOWED_SECTIONS:
+            errors.append((f"rules[{i}].name",
+                           f'Rule section name {name!r} is not allowed. Use one of '
+                           f'{sorted(ALLOWED_SECTIONS)} — put other topics (e.g. scoring) as a '
+                           'content[].title inside an allowed section.'))
+        # <br> is allowed; <b>/</b>/<i>/</i> are not (rulebook renders them literally).
+        for j, item in enumerate(rule.get('content', []) or []):
+            text = item.get('text') if isinstance(item, dict) else None
+            if isinstance(text, str) and re.search(r'</?[bi]>', text):
+                bad = sorted(set(re.findall(r'</?[bi]>', text)))
+                errors.append((f"rules[{i}].content[{j}].text",
+                               f'Rule text contains unsupported bold/italic tag(s) {bad} — '
+                               'the rulebook only renders <br>. Remove the tag(s) (keep the words).'))
+    if data.get('rules') and "Win Conditions" not in section_names:
+        warnings.append(("rules",
+                         'No "Win Conditions" section — games generally include one describing how the '
+                         'game is won.'))
+    desc = data.get('description')
+    # description must be a STRUCTURED OBJECT (maps to the setup's overview card / games grid),
+    # never a bare string. A plain string renders wrong and is the classic deploy-clobber bug.
+    if desc is not None and not isinstance(desc, dict):
+        errors.append(("description",
+                       f'description must be an OBJECT (got {type(desc).__name__}: {desc!r:.60}). '
+                       'Use keys summary/description_title/players/"# Players"/Duration — see a correct '
+                       'example like Grapheme. A bare string breaks the overview card and games grid.'))
+    if isinstance(desc, dict):
+        REQUIRED = ["summary", "description_title", "players", "Duration"]
+        missing = [k for k in REQUIRED if not desc.get(k)]
+        if missing:
+            errors.append(("description",
+                           f'description object is missing required non-empty key(s) {missing}. '
+                           'Required: summary, description_title, players, Duration '
+                           '(and conventionally "# Players").'))
+        dur = desc.get('Duration')
+        if isinstance(dur, str) and re.search(r'\d\s*[-–—]\s*\d', dur):
+            errors.append(("description.Duration",
+                           f'Duration must not be a range (got {dur!r}). Give a single value — for '
+                           'round-by-round games use "N mins/round" (e.g. "6 mins/round").'))
+        summ = desc.get('summary')
+        if isinstance(summ, str) and len(summ) > 200:
+            warnings.append(("description.summary",
+                             f"summary is {len(summ)} chars — condense to 1-2 short sentences "
+                             "(≤ ~200 chars); it shows on the games grid at try.ludio.gg/games."))
+    return errors, warnings
+
+
+def _looks_like_describe(data):
+    return (isinstance(data, dict) and 'gameInitOptions' not in data
+            and 'gameLoop' not in data and ('rules' in data or 'description' in data))
+
+
 # ─── Entry point ─────────────────────────────────────────────────────────────
 
 def main():
@@ -3221,9 +3870,12 @@ def main():
         print(f"File not found: {path}")
         sys.exit(1)
 
-    v = Validator(data)
-    v._source_path = os.path.abspath(path)
-    errors, warnings = v.run()
+    if _looks_like_describe(data):
+        errors, warnings = validate_describe(data)
+    else:
+        v = Validator(data)
+        v._source_path = os.path.abspath(path)
+        errors, warnings = v.run()
 
     if not errors and not warnings:
         print(f"✓ No errors found in {path}")

@@ -1,0 +1,68 @@
+{
+    "name": "Frantic",
+    "demo": false,
+    "parallel": false,
+    "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+    "banner": "https://res.cloudinary.com/liars-club/image/upload/images/frantic/banner.png",
+    "description": {
+        "summary": "A frantic drawing race — everyone sketches the same secret word at once, then one guesser tries to crack it as fast as they can.",
+        "description_title": "Frantic Overview",
+        "# Players": "4-8",
+        "players": "4-8",
+        "Duration": "8 mins/round"
+    },
+    "rules": [
+        {
+            "name": "Basic Rules",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Overview",
+                    "text": "Frantic is a fast drawing party game for 4-8 players. Each round one player is the GUESSER and everyone else is a drawer. All the drawers secretly get the SAME word and race to draw it on their own whiteboard before a shared, unpredictable timer runs out."
+                },
+                {
+                    "title": "The reveal",
+                    "text": "Once the timer stops, every drawing becomes a card. The guesser is then shown the drawings ONE AT A TIME and shouts out what they think the word is. Each new drawing that appears is a fresh clue - and previous drawings stay in the guesser's hand for reference."
+                },
+                {
+                    "title": "Honor-system judging",
+                    "text": "As drawings appear and the guesser calls out answers, the host taps Correct the moment they get it. If they nail it, the round ends immediately. If nobody has cracked it after every drawing, all the drawings appear together in the middle for one last all-at-once guess."
+                },
+                {
+                    "title": "Scoring",
+                    "text": "The guesser scores more the EARLIER they guess: the first drawing is worth the most, each later one worth a little less. The drawer whose drawing cracked the word earns a bonus. So draw clearly and quickly - being the picture that gets it pays off!"
+                }
+            ]
+        },
+        {
+            "name": "Win Conditions",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Most points wins",
+                    "text": "Everyone takes an equal number of turns as the guesser (two full rotations by default). After each rotation the table votes whether to keep going; when you stop, the player with the most total points wins - ties share the win."
+                }
+            ]
+        },
+        {
+            "name": "Mechanics",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Drawing & timers",
+                    "text": "Everyone draws for the same amount of time, but the total is randomized each round (roughly 25-45 seconds) so you never quite know how long you have. Use every color on the whiteboard - clarity beats detail when the clock is ticking."
+                },
+                {
+                    "title": "Talk it out",
+                    "text": "Guessing happens out loud over voice and video, so keep your mic on. The guesser can say as many guesses as they like while the drawings roll by."
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "party game",
+        "drawing",
+        "guessing",
+        "fast-paced"
+    ]
+}

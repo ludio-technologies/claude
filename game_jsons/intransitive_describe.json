@@ -1,0 +1,104 @@
+{
+ "name": "Intransitive",
+ "demo": false,
+ "parallel": false,
+ "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+ "banner": "https://res.cloudinary.com/liars-club/image/upload/images/intransitive/banner.png",
+ "description": {
+  "summary": "Rock, paper, scissors as a two-player board game. Ten pieces each on a 9x9 grid; race your opponent to their home corner.",
+  "description_title": "Intransitive Overview",
+  "# Players": "2",
+  "players": "2",
+  "Duration": "20 mins"
+ },
+ "tags": [
+  "two player",
+  "strategic"
+ ],
+ "rules": [
+  {
+   "name": "Basic Rules",
+   "content": [
+    {
+     "title": "The board",
+     "text": "A 9x9 grid. Blue's home corner is A1 (bottom-left), Red's is I9 (top-right). Both corners are marked."
+    },
+    {
+     "title": "Your army",
+     "text": "Ten pieces each: 3 rock, 4 paper and 3 scissors, arranged in three diagonal stripes in front of your corner. Red's setup is Blue's rotated 180 degrees."
+    },
+    {
+     "title": "The move",
+     "text": "Blue goes first. On your turn you move exactly one piece exactly one square, straight or diagonally, in any of the eight directions. There is no passing."
+    },
+    {
+     "title": "Capturing",
+     "text": "Move onto an enemy piece you beat and it is captured. Rock takes scissors, scissors takes paper, paper takes rock."
+    },
+    {
+     "title": "Blocking",
+     "text": "You may not move onto your own piece, and you may not move onto an enemy piece that beats yours. Those squares are not legal moves at all, so pieces wall each other off."
+    }
+   ]
+  },
+  {
+   "name": "Win Conditions",
+   "content": [
+    {
+     "title": "Reaching the corner",
+     "text": "Get any one of your pieces into your opponent's home corner. Blue wins by reaching I9; Red wins by reaching A1. The first player to do it wins immediately."
+    },
+    {
+     "title": "No stalemate",
+     "text": "If it is your turn and you have no legal move, you lose."
+    },
+    {
+     "title": "Running out of time",
+     "text": "In a timed game, a player whose clock reaches zero loses."
+    }
+   ]
+  },
+  {
+   "name": "Mechanics",
+   "content": [
+    {
+     "title": "Making a move",
+     "text": "Your turn takes two clicks on the board. First click one of your highlighted pieces \u2014 only the ones with a legal move are offered. The squares it can reach then light up; click one to move there."
+    },
+    {
+     "title": "Reading the board",
+     "text": "Each player's remaining rock, paper and scissors counts are shown on their own home corner, and their piece count and remaining time next to their camera."
+    },
+    {
+     "title": "Time control",
+     "text": "Before the board is built, the host picks one of three settings: no clock, 5 minutes each, or 10 minutes each."
+    },
+    {
+     "title": "How the clock runs",
+     "text": "In a timed game each side has its own bank. Your clock runs while you choose a piece and while you choose its destination, and stops as soon as you have moved. Run out and you lose."
+    }
+   ]
+  },
+  {
+   "name": "Advanced Rules",
+   "content": [
+    {
+     "title": "Material",
+     "text": "More pieces is better, but it is the least interesting of the three advantages."
+    },
+    {
+     "title": "Position",
+     "text": "Being closer to your opponent's corner than they are to yours cramps them and wins most endgames, so trades tend to favour whoever is further advanced."
+    },
+    {
+     "title": "Matchup",
+     "text": "The mix matters as much as the count. If you are down to one scissors, your opponent can create two threats with two papers and your single scissors can only answer one of them. A balanced 3/4/3 is usually the safest shape."
+    },
+    {
+     "title": "Defending a runner",
+     "text": "Against a piece heading for your corner you can defend actively (capture it) or passively (park a piece in your own corner so it cannot land). Either way you must stay ahead of it in rings: count the squares to the corner, and always be one closer than the attacker."
+    }
+   ]
+  }
+ ]
+}

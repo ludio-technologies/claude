@@ -199,7 +199,10 @@ def build_specs():
 # --- Cloudinary upload ---
 def upload_to_cloudinary(image_bytes: bytes, folder: str, public_id: str) -> dict:
     ts = str(int(time.time()))
-    sig_string = f"folder={folder}&overwrite=true&public_id={public_id}&timestamp={ts}{API_SECRET}"
+    # invalidate=true purges the CDN copy. We serve version-less URLs, so an
+    # overwrite without it leaves the old picture cached at the edge.
+    sig_string = (f"folder={folder}&invalidate=true&overwrite=true"
+                  f"&public_id={public_id}&timestamp={ts}{API_SECRET}")
     sig = hashlib.sha1(sig_string.encode()).hexdigest()
     boundary = "----CloudinaryBoundary12345"
     parts = []
@@ -207,6 +210,7 @@ def upload_to_cloudinary(image_bytes: bytes, folder: str, public_id: str) -> dic
         ("api_key", API_KEY),
         ("timestamp", ts),
         ("folder", folder),
+        ("invalidate", "true"),
         ("overwrite", "true"),
         ("public_id", public_id),
         ("signature", sig),

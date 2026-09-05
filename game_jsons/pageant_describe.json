@@ -1,0 +1,64 @@
+{
+    "name": "Pageant",
+    "demo": false,
+    "parallel": false,
+    "url": "../setups/ludio-v1-engine-setup/dist_cards/app.output.js",
+    "banner": "https://res.cloudinary.com/liars-club/image/upload/images/pageant/banner.png",
+    "description": {
+        "summary": "Send contestants onto the stage — but any you sweep up join your troupe as penalty points. Fewest points wins!",
+        "description_title": "Pageant Overview",
+        "# Players": "2-6",
+        "players": "2-6",
+        "Duration": "15 mins"
+    },
+    "rules": [
+        {
+            "name": "Basic Rules",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Overview",
+                    "text": "Pageant is a game for 2-6 players. The deck has 66 contestants in 6 sash colors, each numbered 0-10. You start with 5 cards in hand, and 6 contestants open the show in a lineup on stage. On your turn you add one contestant to the END of the lineup — but that may send others walking off into YOUR troupe. Collected contestants are penalty points, so you want as FEW as possible."
+                },
+                {
+                    "title": "Taking a turn",
+                    "text": "Play one card to the end of the lineup, then draw back up to 5.<br><br>The card's number N sets how far its 'gaze' reaches: the last N contestants already on stage are safe. Among every contestant BEFORE those, you must collect any that either share your card's color OR have a number equal to or less than N.<br><br>Play a 0 and the whole stage is fair game; play a 10 and almost everyone is safe."
+                },
+                {
+                    "title": "Ending the pageant",
+                    "text": "The end is triggered the moment a player has collected at least one contestant of all 6 colors, OR the draw pile runs out.<br><br>Once triggered, every other player takes one last turn (no drawing). Then each player discards 2 cards from their hand and adds the rest to their troupe. Now you score."
+                }
+            ]
+        },
+        {
+            "name": "Win Conditions",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Fewest points wins",
+                    "text": "Add up the numbers on every contestant in your troupe — that's your score, and the LOWEST score wins (a tie is broken by who collected fewer cards).<br><br>The saving grace: for each color, whoever collected the MOST of that color flips those cards face down, and they count just 1 point each instead of their face value. So dominating a color is good; a scattered handful of high numbers is what sinks you."
+                }
+            ]
+        },
+        {
+            "name": "Mechanics",
+            "icon": "icon.png",
+            "content": [
+                {
+                    "title": "Majorities & 2-player rule",
+                    "text": "Ties for a color majority all flip. In a 2-player game you need at least 2 MORE of a color than your opponent to claim its majority — otherwise nobody flips and both of you pay full value."
+                },
+                {
+                    "title": "Your troupe at a glance",
+                    "text": "A summary card at your seat always shows how many of each color you have collected, so you can see who is running away with a color.<br><br>If you run out of time on your turn, a random legal card is played for you."
+                }
+            ]
+        }
+    ],
+    "tags": [
+        "card game",
+        "set collection",
+        "strategic",
+        "family"
+    ]
+}

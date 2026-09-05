@@ -1,0 +1,429 @@
+{
+  "name": "braggart",
+  "cards": [
+    {
+      "name": "brains_1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/brains_1.png",
+      "label": "Brains 1",
+      "type": "brains",
+      "suit": "brains",
+      "rank": 1,
+      "weight": 1
+    },
+    {
+      "name": "brains_2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/brains_2.png",
+      "label": "Brains 2",
+      "type": "brains",
+      "suit": "brains",
+      "rank": 2,
+      "weight": 2
+    },
+    {
+      "name": "brains_3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/brains_3.png",
+      "label": "Brains 3",
+      "type": "brains",
+      "suit": "brains",
+      "rank": 3,
+      "weight": 3
+    },
+    {
+      "name": "brains_4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/brains_4.png",
+      "label": "Brains 4",
+      "type": "brains",
+      "suit": "brains",
+      "rank": 4,
+      "weight": 4
+    },
+    {
+      "name": "brains_5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/brains_5.png",
+      "label": "Brains 5",
+      "type": "brains",
+      "suit": "brains",
+      "rank": 5,
+      "weight": 5
+    },
+    {
+      "name": "brains_6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/brains_6.png",
+      "label": "Brains 6",
+      "type": "brains",
+      "suit": "brains",
+      "rank": 6,
+      "weight": 6
+    },
+    {
+      "name": "brains_7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/brains_7.png",
+      "label": "Brains 7",
+      "type": "brains",
+      "suit": "brains",
+      "rank": 7,
+      "weight": 7
+    },
+    {
+      "name": "brains_8",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/brains_8.png",
+      "label": "Brains 8",
+      "type": "brains",
+      "suit": "brains",
+      "rank": 8,
+      "weight": 8
+    },
+    {
+      "name": "brains_9",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/brains_9.png",
+      "label": "Brains 9",
+      "type": "brains",
+      "suit": "brains",
+      "rank": 9,
+      "weight": 9
+    },
+    {
+      "name": "brains_10",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/brains_10.png",
+      "label": "Brains 10",
+      "type": "brains",
+      "suit": "brains",
+      "rank": 10,
+      "weight": 10
+    },
+    {
+      "name": "brains_11",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/brains_11.png",
+      "label": "Brains 11",
+      "type": "brains",
+      "suit": "brains",
+      "rank": 11,
+      "weight": 11
+    },
+    {
+      "name": "speed_1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/speed_1.png",
+      "label": "Speed 1",
+      "type": "speed",
+      "suit": "speed",
+      "rank": 1,
+      "weight": 1
+    },
+    {
+      "name": "speed_2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/speed_2.png",
+      "label": "Speed 2",
+      "type": "speed",
+      "suit": "speed",
+      "rank": 2,
+      "weight": 2
+    },
+    {
+      "name": "speed_3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/speed_3.png",
+      "label": "Speed 3",
+      "type": "speed",
+      "suit": "speed",
+      "rank": 3,
+      "weight": 3
+    },
+    {
+      "name": "speed_4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/speed_4.png",
+      "label": "Speed 4",
+      "type": "speed",
+      "suit": "speed",
+      "rank": 4,
+      "weight": 4
+    },
+    {
+      "name": "speed_5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/speed_5.png",
+      "label": "Speed 5",
+      "type": "speed",
+      "suit": "speed",
+      "rank": 5,
+      "weight": 5
+    },
+    {
+      "name": "speed_6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/speed_6.png",
+      "label": "Speed 6",
+      "type": "speed",
+      "suit": "speed",
+      "rank": 6,
+      "weight": 6
+    },
+    {
+      "name": "speed_7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/speed_7.png",
+      "label": "Speed 7",
+      "type": "speed",
+      "suit": "speed",
+      "rank": 7,
+      "weight": 7
+    },
+    {
+      "name": "speed_8",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/speed_8.png",
+      "label": "Speed 8",
+      "type": "speed",
+      "suit": "speed",
+      "rank": 8,
+      "weight": 8
+    },
+    {
+      "name": "speed_9",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/speed_9.png",
+      "label": "Speed 9",
+      "type": "speed",
+      "suit": "speed",
+      "rank": 9,
+      "weight": 9
+    },
+    {
+      "name": "speed_10",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/speed_10.png",
+      "label": "Speed 10",
+      "type": "speed",
+      "suit": "speed",
+      "rank": 10,
+      "weight": 10
+    },
+    {
+      "name": "speed_11",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/speed_11.png",
+      "label": "Speed 11",
+      "type": "speed",
+      "suit": "speed",
+      "rank": 11,
+      "weight": 11
+    },
+    {
+      "name": "strength_1",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/strength_1.png",
+      "label": "Strength 1",
+      "type": "strength",
+      "suit": "strength",
+      "rank": 1,
+      "weight": 1
+    },
+    {
+      "name": "strength_2",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/strength_2.png",
+      "label": "Strength 2",
+      "type": "strength",
+      "suit": "strength",
+      "rank": 2,
+      "weight": 2
+    },
+    {
+      "name": "strength_3",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/strength_3.png",
+      "label": "Strength 3",
+      "type": "strength",
+      "suit": "strength",
+      "rank": 3,
+      "weight": 3
+    },
+    {
+      "name": "strength_4",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/strength_4.png",
+      "label": "Strength 4",
+      "type": "strength",
+      "suit": "strength",
+      "rank": 4,
+      "weight": 4
+    },
+    {
+      "name": "strength_5",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/strength_5.png",
+      "label": "Strength 5",
+      "type": "strength",
+      "suit": "strength",
+      "rank": 5,
+      "weight": 5
+    },
+    {
+      "name": "strength_6",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/strength_6.png",
+      "label": "Strength 6",
+      "type": "strength",
+      "suit": "strength",
+      "rank": 6,
+      "weight": 6
+    },
+    {
+      "name": "strength_7",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/strength_7.png",
+      "label": "Strength 7",
+      "type": "strength",
+      "suit": "strength",
+      "rank": 7,
+      "weight": 7
+    },
+    {
+      "name": "strength_8",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/strength_8.png",
+      "label": "Strength 8",
+      "type": "strength",
+      "suit": "strength",
+      "rank": 8,
+      "weight": 8
+    },
+    {
+      "name": "strength_9",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/strength_9.png",
+      "label": "Strength 9",
+      "type": "strength",
+      "suit": "strength",
+      "rank": 9,
+      "weight": 9
+    },
+    {
+      "name": "strength_10",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/strength_10.png",
+      "label": "Strength 10",
+      "type": "strength",
+      "suit": "strength",
+      "rank": 10,
+      "weight": 10
+    },
+    {
+      "name": "strength_11",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/strength_11.png",
+      "label": "Strength 11",
+      "type": "strength",
+      "suit": "strength",
+      "rank": 11,
+      "weight": 11
+    },
+    {
+      "name": "pass",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/pass.png",
+      "label": "Pass",
+      "type": "pass",
+      "suit": "pass",
+      "rank": 0,
+      "weight": 0
+    },
+    {
+      "name": "brains_indicator",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/brains_indicator.png",
+      "label": "Brains",
+      "type": "indicator",
+      "suit": "brains"
+    },
+    {
+      "name": "speed_indicator",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/speed_indicator.png",
+      "label": "Speed",
+      "type": "indicator",
+      "suit": "speed"
+    },
+    {
+      "name": "strength_indicator",
+      "image": "https://res.cloudinary.com/liars-club/image/upload/images/braggart/strength_indicator.png",
+      "label": "Strength",
+      "type": "indicator",
+      "suit": "strength"
+    }
+  ],
+  "sets": {
+    "p3": {
+      "brains_1": 1,
+      "brains_2": 1,
+      "brains_3": 1,
+      "brains_4": 1,
+      "brains_5": 1,
+      "brains_6": 1,
+      "brains_7": 1,
+      "speed_1": 1,
+      "speed_2": 1,
+      "speed_3": 1,
+      "speed_4": 1,
+      "speed_5": 1,
+      "speed_6": 1,
+      "speed_7": 1,
+      "strength_1": 1,
+      "strength_2": 1,
+      "strength_3": 1,
+      "strength_4": 1,
+      "strength_5": 1,
+      "strength_6": 1,
+      "strength_7": 1,
+      "pass": 2
+    },
+    "p4": {
+      "brains_1": 1,
+      "brains_2": 1,
+      "brains_3": 1,
+      "brains_4": 1,
+      "brains_5": 1,
+      "brains_6": 1,
+      "brains_7": 1,
+      "brains_8": 1,
+      "brains_9": 1,
+      "speed_1": 1,
+      "speed_2": 1,
+      "speed_3": 1,
+      "speed_4": 1,
+      "speed_5": 1,
+      "speed_6": 1,
+      "speed_7": 1,
+      "speed_8": 1,
+      "speed_9": 1,
+      "strength_1": 1,
+      "strength_2": 1,
+      "strength_3": 1,
+      "strength_4": 1,
+      "strength_5": 1,
+      "strength_6": 1,
+      "strength_7": 1,
+      "strength_8": 1,
+      "strength_9": 1,
+      "pass": 3
+    },
+    "p5": {
+      "brains_1": 1,
+      "brains_2": 1,
+      "brains_3": 1,
+      "brains_4": 1,
+      "brains_5": 1,
+      "brains_6": 1,
+      "brains_7": 1,
+      "brains_8": 1,
+      "brains_9": 1,
+      "brains_10": 1,
+      "brains_11": 1,
+      "speed_1": 1,
+      "speed_2": 1,
+      "speed_3": 1,
+      "speed_4": 1,
+      "speed_5": 1,
+      "speed_6": 1,
+      "speed_7": 1,
+      "speed_8": 1,
+      "speed_9": 1,
+      "speed_10": 1,
+      "speed_11": 1,
+      "strength_1": 1,
+      "strength_2": 1,
+      "strength_3": 1,
+      "strength_4": 1,
+      "strength_5": 1,
+      "strength_6": 1,
+      "strength_7": 1,
+      "strength_8": 1,
+      "strength_9": 1,
+      "strength_10": 1,
+      "strength_11": 1,
+      "pass": 4
+    },
+    "indicators": {
+      "brains_indicator": 1,
+      "speed_indicator": 1,
+      "strength_indicator": 1
+    }
+  }
+}

@@ -22,7 +22,7 @@
         "roleInfo": {
           "id": "player",
           "name": "Employee",
-          "description": "Delegate dreaded tasks. Don't end up with 4 of any one on your desk!",
+          "description": "Delegate dreaded tasks. Don't pile up too many of one type on your desk!",
           "avatar": "https://res.cloudinary.com/liars-club/image/upload/card_player_ed7jck.webp",
           "team": "all",
           "prefix": "an "
@@ -96,7 +96,7 @@
       "Default": {
         "wallpaperImg": "wallpaper",
         "welcomeHeader": "Not My Problem",
-        "welcomeText": "Delegate dreaded tasks face-down and lie about what they are. Get stuck with 4 of the same task on your desk and you're BURIED. Last ones standing win!",
+        "welcomeText": "Delegate dreaded tasks face-down and lie about what they are. Get stuck with ($1) of the same task on your desk and you're BURIED. Last ones standing win!",
         "bannerImg": "banner",
         "tutorialTitle": "Tutorial mode",
         "everybodyNobodyTargets": [
@@ -128,15 +128,13 @@
         "onYourDeskHeader": "It's on your desk.",
         "decideText": "Decide: True, Bluff, or Peek & Pass.",
         "decisionPromptPeek": "($1): True, Bluff, or Peek & Pass?",
-        "decisionPromptNoPeek": "($1): everyone has seen it — True or Bluff?",
-        "calledRightHeader": "($1) called it right!",
-        "guessedWrongHeader": "($1) guessed wrong!",
+        "decisionPromptNoPeek": "($1): everyone has seen it \u2014 True or Bluff?",
         "revealText": "It was a ($1). ($2) takes it.",
-        "deskWarnLabel": "($1) ⚠️",
+        "deskWarnLabel": "($1) \u26a0\ufe0f",
         "buriedHeader": "($1) is BURIED!",
-        "buriedText": "Four ($1)s on one desk. Everyone else wins!",
+        "buriedText": "($1) ($2)s on one desk. Everyone else wins!",
         "claimAndDumpText": "Now claim what you like and dump it on someone new.",
-        "peekRevealHeader": "Psst — it's really a ($1).",
+        "peekRevealHeader": "Psst \u2014 it's really a ($1).",
         "winnerText": "The buck stopped with someone else.",
         "winnerHeaderLine": "($1) ($2)!",
         "winsWord": "wins",
@@ -150,7 +148,22 @@
           "printer_jam": "Printer Jam",
           "perf_review": "Performance Review",
           "onboarding_doc": "Onboarding Doc"
-        }
+        },
+        "passPrompt": "($1), dump it on someone who hasn't seen it \u2014 click their camera.",
+        "tut1Header": "How to Play \u2014 Part 1",
+        "tut1Text": "Nobody wants extra work! In Not My Problem you pass dreaded office tasks face-down and <b>lie</b> about what they are.<br/><br/>Get stuck with <b>($1) of the same task</b> on your desk and you're <b>BURIED</b> \u2014 everyone else wins!",
+        "tut2Header": "How to Play \u2014 Part 2",
+        "tut2Text": "On your turn, pick a task from your hand and slide it <b>face-down</b> to a coworker. Then <b>claim</b> what it is \u2014 the truth, or a total bluff. (e.g. \u201cIt's a Jury Duty.\u201d)",
+        "tut3Header": "How to Play \u2014 Part 3",
+        "tut3Text": "A task lands on your desk? Call the claim <b>True</b> or <b>Bluff</b>.<br/>Right \u2192 it goes back to the sender's desk. Wrong \u2192 you keep it!<br/><br/>Or <b>Peek &amp; Pass</b>: secretly look, then pass it on with your own claim to someone who hasn't seen it.",
+        "tut4Header": "How to Play \u2014 Part 4",
+        "tut4Text": "Once everyone else has seen a task, the last coworker must decide \u2014 <b>True or Bluff</b>, no more passing.<br/><br/>Keep your desk clean and dodge the buck. The last players standing win!",
+        "guessResultHeader": "($1) ($2) thought ($3) was ($4)!",
+        "correctlyWord": "correctly",
+        "incorrectlyWord": "incorrectly",
+        "tellingTruthWord": "telling the truth",
+        "bluffingWord": "bluffing",
+        "claimPrompt": "($1), claim what it is. Tap a task."
       }
     }
   },
@@ -215,6 +228,93 @@
                 "name": "values",
                 "type": "preset",
                 "value": []
+              }
+            ]
+          }
+        },
+        {
+          "name": "burialThreshold",
+          "value": {
+            "selector": "ifElse",
+            "params": [
+              {
+                "name": "condition",
+                "type": "computed",
+                "value": {
+                  "selector": "greaterThanOrEqual",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "cached",
+                      "value": "numPlayers"
+                    },
+                    {
+                      "name": "arg2",
+                      "type": "preset",
+                      "value": 5
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "thenValue",
+                "type": "preset",
+                "value": 2
+              },
+              {
+                "name": "elseValue",
+                "type": "preset",
+                "value": 3
+              }
+            ]
+          }
+        },
+        {
+          "name": "warnThreshold",
+          "value": {
+            "selector": "dec",
+            "params": [
+              {
+                "name": "arg",
+                "type": "cached",
+                "value": "burialThreshold"
+              }
+            ]
+          }
+        },
+        {
+          "name": "burialNum",
+          "value": {
+            "selector": "ifElse",
+            "params": [
+              {
+                "name": "condition",
+                "type": "computed",
+                "value": {
+                  "selector": "greaterThanOrEqual",
+                  "params": [
+                    {
+                      "name": "arg1",
+                      "type": "cached",
+                      "value": "numPlayers"
+                    },
+                    {
+                      "name": "arg2",
+                      "type": "preset",
+                      "value": 5
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "thenValue",
+                "type": "preset",
+                "value": "2"
+              },
+              {
+                "name": "elseValue",
+                "type": "preset",
+                "value": "3"
               }
             ]
           }
@@ -466,8 +566,24 @@
         "cached": {
           "to": "players",
           "header": "welcomeHeader",
-          "text": "welcomeText",
           "image": "bannerImg"
+        },
+        "computed": {
+          "text": {
+            "selector": "formatString",
+            "params": [
+              {
+                "name": "format",
+                "type": "cached",
+                "value": "welcomeText"
+              },
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "burialNum"
+              }
+            ]
+          }
         }
       }
     },
@@ -485,8 +601,8 @@
           "oneClick": true,
           "allowRevoting": true,
           "poll.terminationCondition": "get_all_votes",
-          "backgroundColor": "#D3FBEE",
-          "borderColor": "black"
+          "backgroundColor": "#10233b",
+          "borderColor": "#f5c542"
         },
         "cached": {
           "actors": "host",
@@ -1024,7 +1140,7 @@
           "key": "createGenericCardWidget",
           "payload": {
             "preset": {
-              "ratio": "0.77",
+              "ratio": "1",
               "cardback": "cardback",
               "enlargeOnHover": true,
               "backgroundImage": "https://res.cloudinary.com/liars-club/image/upload/wood_qbegm0.jpg"
@@ -1190,6 +1306,130 @@
       ]
     },
     {
+      "name": "Tutorial",
+      "skipCondition": [
+        {
+          "selector": "greaterThan",
+          "params": [
+            {
+              "name": "arg1",
+              "type": "cached",
+              "value": "gameLoopIndex"
+            },
+            {
+              "name": "arg2",
+              "type": "preset",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "selector": "logicalNOT",
+          "params": [
+            {
+              "name": "arg",
+              "type": "cached",
+              "value": "tutorial"
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "duration": 15,
+              "image": "banner",
+              "backgroundColor": "#10233b",
+              "borderColor": "#f5c542"
+            },
+            "cached": {
+              "to": "learners",
+              "header": "tut1Header"
+            },
+            "computed": {
+              "text": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "cached",
+                    "value": "tut1Text"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "burialNum"
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "duration": 15,
+              "image": "jury_duty",
+              "backgroundColor": "#10233b",
+              "borderColor": "#f5c542"
+            },
+            "cached": {
+              "to": "learners",
+              "header": "tut2Header",
+              "text": "tut2Text"
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "duration": 15,
+              "images": [
+                "expense_report",
+                "printer_jam"
+              ],
+              "backgroundColor": "#10233b",
+              "borderColor": "#f5c542"
+            },
+            "cached": {
+              "to": "learners",
+              "header": "tut3Header",
+              "text": "tut3Text"
+            }
+          }
+        },
+        {
+          "key": "createNotification",
+          "payload": {
+            "preset": {
+              "duration": 15,
+              "image": "onboarding_doc",
+              "backgroundColor": "#10233b",
+              "borderColor": "#f5c542"
+            },
+            "cached": {
+              "to": "learners",
+              "header": "tut4Header",
+              "text": "tut4Text"
+            }
+          }
+        },
+        {
+          "key": "emptyAction",
+          "saveValueInCache": [
+            {
+              "name": "tutorial",
+              "value": false
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Turn: setup + empty-hand",
       "actions": [
         {
@@ -1218,6 +1458,52 @@
               "value": false
             }
           ]
+        },
+        {
+          "key": "changeLayout",
+          "payload": {
+            "preset": {
+              "type": "HIGHLIGHT",
+              "direction": "VERTICAL",
+              "percent": 50
+            },
+            "computed": {
+              "top": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentGiver"
+                  }
+                ]
+              },
+              "bottom": {
+                "selector": "listsSubtract",
+                "params": [
+                  {
+                    "name": "list1",
+                    "type": "cached",
+                    "value": "players"
+                  },
+                  {
+                    "name": "list2",
+                    "type": "computed",
+                    "value": {
+                      "selector": "createList",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "cached",
+                          "value": "currentGiver"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
         },
         {
           "key": "emptyAction",
@@ -1653,10 +1939,7 @@
                 "problem_perf_review",
                 "problem_onboarding_doc"
               ],
-              "duration": 20,
-              "forceConfirmation": true,
-              "defaultSelect": true,
-              "privatePrompt": true
+              "duration": 20
             },
             "computed": {
               "actors": {
@@ -1666,6 +1949,49 @@
                     "name": "arg1",
                     "type": "cached",
                     "value": "currentGiver"
+                  }
+                ]
+              },
+              "defaultSelect": {
+                "selector": "randomElement",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "preset",
+                    "value": [
+                      "problem_monday_meeting",
+                      "problem_expense_report",
+                      "problem_it_ticket",
+                      "problem_jury_duty",
+                      "problem_reply_all",
+                      "problem_printer_jam",
+                      "problem_perf_review",
+                      "problem_onboarding_doc"
+                    ]
+                  }
+                ]
+              },
+              "question": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "cached",
+                    "value": "claimPrompt"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNameById",
+                      "params": [
+                        {
+                          "name": "id",
+                          "type": "cached",
+                          "value": "currentGiver"
+                        }
+                      ]
+                    }
                   }
                 ]
               }
@@ -1753,6 +2079,77 @@
           ]
         },
         {
+          "key": "removeHighlightDecks",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "decks": [
+                "problem_monday_meeting",
+                "problem_expense_report",
+                "problem_it_ticket",
+                "problem_jury_duty",
+                "problem_reply_all",
+                "problem_printer_jam",
+                "problem_perf_review",
+                "problem_onboarding_doc"
+              ]
+            }
+          }
+        },
+        {
+          "key": "highlightDecks",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "color": "#f5c542"
+            },
+            "computed": {
+              "decks": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "formatString",
+                      "params": [
+                        {
+                          "name": "format",
+                          "type": "preset",
+                          "value": "problem_($1)"
+                        },
+                        {
+                          "name": "arg1",
+                          "type": "cached",
+                          "value": "currentClaim"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
           "key": "createNotification",
           "skipCondition": {
             "selector": "getCachedValue",
@@ -1765,6 +2162,9 @@
             ]
           },
           "payload": {
+            "preset": {
+              "isAnnounceOnly": true
+            },
             "cached": {
               "to": "players",
               "text": "trueOrBluffText"
@@ -1826,19 +2226,19 @@
           },
           "saveValueInCache": [
             {
-              "name": "allowedDesks",
+              "name": "allowedPlayers",
               "value": {
                 "selector": "listsSubtract",
                 "params": [
                   {
                     "name": "list1",
                     "type": "cached",
-                    "value": "allDeskNames"
+                    "value": "players"
                   },
                   {
                     "name": "list2",
                     "type": "cached",
-                    "value": "seenDesks"
+                    "value": "seen"
                   }
                 ]
               }
@@ -1846,7 +2246,7 @@
           ]
         },
         {
-          "key": "selectCentralWidgetDeck",
+          "key": "createCardVote",
           "skipCondition": {
             "selector": "getCachedValue",
             "params": [
@@ -1859,13 +2259,16 @@
           },
           "payload": {
             "preset": {
+              "terminationCondition": "get_all_votes",
               "duration": 20,
-              "forceConfirmation": true,
-              "defaultSelect": true,
-              "privatePrompt": true
+              "answersQuantity": 1,
+              "allowFewerAnswers": false,
+              "allowSkipping": false,
+              "allowRevoting": true,
+              "showResultInRealTime": true
             },
             "cached": {
-              "decks": "allowedDesks"
+              "targets": "allowedPlayers"
             },
             "computed": {
               "actors": {
@@ -1877,10 +2280,102 @@
                     "value": "currentGiver"
                   }
                 ]
+              },
+              "question": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "cached",
+                    "value": "passPrompt"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNameById",
+                      "params": [
+                        {
+                          "name": "id",
+                          "type": "cached",
+                          "value": "currentGiver"
+                        }
+                      ]
+                    }
+                  }
+                ]
               }
             }
           },
           "saveValueInCache": [
+            {
+              "name": "voteResult",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "lastActionResult.voteResult"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "targetPlayer",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "computed",
+                    "value": {
+                      "selector": "equals",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "computed",
+                          "value": {
+                            "selector": "listLength",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "voteResult"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "arg2",
+                          "type": "preset",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "randomElement",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "allowedPlayers"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "cached",
+                    "value": "voteResult.0"
+                  }
+                ]
+              }
+            },
             {
               "name": "chosenDesk",
               "value": {
@@ -1889,12 +2384,12 @@
                   {
                     "name": "objectName",
                     "type": "preset",
-                    "value": "lastActionResult"
+                    "value": "deskByPlayer"
                   },
                   {
                     "name": "value",
                     "type": "cached",
-                    "value": "currentGiver"
+                    "value": "targetPlayer"
                   }
                 ]
               }
@@ -1980,6 +2475,16 @@
                     "name": "arg1",
                     "type": "cached",
                     "value": "targetPlayer"
+                  }
+                ]
+              },
+              "cardNames": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "trueType"
                   }
                 ]
               }
@@ -2098,6 +2603,62 @@
         }
       },
       "actions": [
+        {
+          "key": "changeLayout",
+          "skipCondition": {
+            "selector": "getCachedValue",
+            "params": [
+              {
+                "name": "name",
+                "type": "preset",
+                "value": "resolved"
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "type": "HIGHLIGHT",
+              "direction": "VERTICAL",
+              "percent": 50
+            },
+            "computed": {
+              "top": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "currentHolder"
+                  }
+                ]
+              },
+              "bottom": {
+                "selector": "listsSubtract",
+                "params": [
+                  {
+                    "name": "list1",
+                    "type": "cached",
+                    "value": "players"
+                  },
+                  {
+                    "name": "list2",
+                    "type": "computed",
+                    "value": {
+                      "selector": "createList",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "cached",
+                          "value": "currentHolder"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
         {
           "key": "dealDeck",
           "skipCondition": {
@@ -2374,7 +2935,7 @@
           "payload": {
             "preset": {
               "deck": "action_source",
-              "cards": [
+              "cardNames": [
                 "action_true",
                 "action_false",
                 "action_peek"
@@ -2707,6 +3268,16 @@
                     "value": "keeper"
                   }
                 ]
+              },
+              "cardNames": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "trueType"
+                  }
+                ]
               }
             }
           }
@@ -2780,17 +3351,12 @@
         {
           "key": "emptyAction",
           "skipCondition": {
-            "selector": "logicalOR",
+            "selector": "getCachedValue",
             "params": [
               {
-                "name": "arg1",
-                "type": "cached",
+                "name": "name",
+                "type": "preset",
                 "value": "resolved"
-              },
-              {
-                "name": "arg2",
-                "type": "cached",
-                "value": "isPeek"
               }
             ]
           },
@@ -2872,65 +3438,85 @@
                 ]
               },
               "header": {
-                "selector": "ifElse",
+                "selector": "formatString",
                 "params": [
                   {
-                    "name": "condition",
+                    "name": "format",
                     "type": "cached",
-                    "value": "holderCorrect"
+                    "value": "guessResultHeader"
                   },
                   {
-                    "name": "thenValue",
+                    "name": "arg1",
                     "type": "computed",
                     "value": {
-                      "selector": "formatString",
+                      "selector": "getPlayerNameById",
                       "params": [
                         {
-                          "name": "format",
+                          "name": "id",
                           "type": "cached",
-                          "value": "calledRightHeader"
-                        },
-                        {
-                          "name": "arg1",
-                          "type": "computed",
-                          "value": {
-                            "selector": "getPlayerNameById",
-                            "params": [
-                              {
-                                "name": "id",
-                                "type": "cached",
-                                "value": "currentHolder"
-                              }
-                            ]
-                          }
+                          "value": "currentHolder"
                         }
                       ]
                     }
                   },
                   {
-                    "name": "elseValue",
+                    "name": "arg2",
                     "type": "computed",
                     "value": {
-                      "selector": "formatString",
+                      "selector": "ifElse",
                       "params": [
                         {
-                          "name": "format",
+                          "name": "condition",
                           "type": "cached",
-                          "value": "guessedWrongHeader"
+                          "value": "holderCorrect"
                         },
                         {
-                          "name": "arg1",
-                          "type": "computed",
-                          "value": {
-                            "selector": "getPlayerNameById",
-                            "params": [
-                              {
-                                "name": "id",
-                                "type": "cached",
-                                "value": "currentHolder"
-                              }
-                            ]
-                          }
+                          "name": "thenValue",
+                          "type": "cached",
+                          "value": "correctlyWord"
+                        },
+                        {
+                          "name": "elseValue",
+                          "type": "cached",
+                          "value": "incorrectlyWord"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "arg3",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNameById",
+                      "params": [
+                        {
+                          "name": "id",
+                          "type": "cached",
+                          "value": "claimerId"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "arg4",
+                    "type": "computed",
+                    "value": {
+                      "selector": "ifElse",
+                      "params": [
+                        {
+                          "name": "condition",
+                          "type": "cached",
+                          "value": "guessTrue"
+                        },
+                        {
+                          "name": "thenValue",
+                          "type": "cached",
+                          "value": "tellingTruthWord"
+                        },
+                        {
+                          "name": "elseValue",
+                          "type": "cached",
+                          "value": "bluffingWord"
                         }
                       ]
                     }
@@ -3019,8 +3605,8 @@
                         },
                         {
                           "name": "arg2",
-                          "type": "preset",
-                          "value": 3
+                          "type": "cached",
+                          "value": "warnThreshold"
                         }
                       ]
                     }
@@ -3109,8 +3695,8 @@
                     },
                     {
                       "name": "arg2",
-                      "type": "preset",
-                      "value": 4
+                      "type": "cached",
+                      "value": "burialThreshold"
                     }
                   ]
                 }
@@ -3209,8 +3795,8 @@
                     },
                     {
                       "name": "arg2",
-                      "type": "preset",
-                      "value": 4
+                      "type": "cached",
+                      "value": "burialThreshold"
                     }
                   ]
                 }
@@ -3268,8 +3854,8 @@
                     },
                     {
                       "name": "arg2",
-                      "type": "preset",
-                      "value": 4
+                      "type": "cached",
+                      "value": "burialThreshold"
                     }
                   ]
                 }
@@ -3315,6 +3901,11 @@
                   },
                   {
                     "name": "arg1",
+                    "type": "cached",
+                    "value": "burialNum"
+                  },
+                  {
+                    "name": "arg2",
                     "type": "cached",
                     "value": "trueLabel"
                   }
@@ -3501,10 +4092,7 @@
                 "problem_perf_review",
                 "problem_onboarding_doc"
               ],
-              "duration": 20,
-              "forceConfirmation": true,
-              "defaultSelect": true,
-              "privatePrompt": true
+              "duration": 20
             },
             "computed": {
               "actors": {
@@ -3514,6 +4102,49 @@
                     "name": "arg1",
                     "type": "cached",
                     "value": "currentHolder"
+                  }
+                ]
+              },
+              "defaultSelect": {
+                "selector": "randomElement",
+                "params": [
+                  {
+                    "name": "list",
+                    "type": "preset",
+                    "value": [
+                      "problem_monday_meeting",
+                      "problem_expense_report",
+                      "problem_it_ticket",
+                      "problem_jury_duty",
+                      "problem_reply_all",
+                      "problem_printer_jam",
+                      "problem_perf_review",
+                      "problem_onboarding_doc"
+                    ]
+                  }
+                ]
+              },
+              "question": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "cached",
+                    "value": "claimPrompt"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNameById",
+                      "params": [
+                        {
+                          "name": "id",
+                          "type": "cached",
+                          "value": "currentHolder"
+                        }
+                      ]
+                    }
                   }
                 ]
               }
@@ -3615,6 +4246,105 @@
           ]
         },
         {
+          "key": "removeHighlightDecks",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalNOT",
+                  "params": [
+                    {
+                      "name": "arg",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "decks": [
+                "problem_monday_meeting",
+                "problem_expense_report",
+                "problem_it_ticket",
+                "problem_jury_duty",
+                "problem_reply_all",
+                "problem_printer_jam",
+                "problem_perf_review",
+                "problem_onboarding_doc"
+              ]
+            }
+          }
+        },
+        {
+          "key": "highlightDecks",
+          "skipCondition": {
+            "selector": "logicalOR",
+            "params": [
+              {
+                "name": "arg1",
+                "type": "cached",
+                "value": "resolved"
+              },
+              {
+                "name": "arg2",
+                "type": "computed",
+                "value": {
+                  "selector": "logicalNOT",
+                  "params": [
+                    {
+                      "name": "arg",
+                      "type": "cached",
+                      "value": "isPeek"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "payload": {
+            "preset": {
+              "color": "#f5c542"
+            },
+            "computed": {
+              "decks": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "formatString",
+                      "params": [
+                        {
+                          "name": "format",
+                          "type": "preset",
+                          "value": "problem_($1)"
+                        },
+                        {
+                          "name": "arg1",
+                          "type": "cached",
+                          "value": "currentClaim"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
           "key": "createNotification",
           "skipCondition": {
             "selector": "logicalOR",
@@ -3641,6 +4371,9 @@
             ]
           },
           "payload": {
+            "preset": {
+              "isAnnounceOnly": true
+            },
             "cached": {
               "to": "players",
               "text": "trueOrBluffText"
@@ -3716,19 +4449,19 @@
           },
           "saveValueInCache": [
             {
-              "name": "allowedDesks",
+              "name": "allowedPlayers",
               "value": {
                 "selector": "listsSubtract",
                 "params": [
                   {
                     "name": "list1",
                     "type": "cached",
-                    "value": "allDeskNames"
+                    "value": "players"
                   },
                   {
                     "name": "list2",
                     "type": "cached",
-                    "value": "seenDesks"
+                    "value": "seen"
                   }
                 ]
               }
@@ -3736,7 +4469,7 @@
           ]
         },
         {
-          "key": "selectCentralWidgetDeck",
+          "key": "createCardVote",
           "skipCondition": {
             "selector": "logicalOR",
             "params": [
@@ -3763,13 +4496,16 @@
           },
           "payload": {
             "preset": {
+              "terminationCondition": "get_all_votes",
               "duration": 20,
-              "forceConfirmation": true,
-              "defaultSelect": true,
-              "privatePrompt": true
+              "answersQuantity": 1,
+              "allowFewerAnswers": false,
+              "allowSkipping": false,
+              "allowRevoting": true,
+              "showResultInRealTime": true
             },
             "cached": {
-              "decks": "allowedDesks"
+              "targets": "allowedPlayers"
             },
             "computed": {
               "actors": {
@@ -3781,10 +4517,102 @@
                     "value": "currentHolder"
                   }
                 ]
+              },
+              "question": {
+                "selector": "formatString",
+                "params": [
+                  {
+                    "name": "format",
+                    "type": "cached",
+                    "value": "passPrompt"
+                  },
+                  {
+                    "name": "arg1",
+                    "type": "computed",
+                    "value": {
+                      "selector": "getPlayerNameById",
+                      "params": [
+                        {
+                          "name": "id",
+                          "type": "cached",
+                          "value": "currentHolder"
+                        }
+                      ]
+                    }
+                  }
+                ]
               }
             }
           },
           "saveValueInCache": [
+            {
+              "name": "voteResult",
+              "value": {
+                "selector": "getCachedValue",
+                "params": [
+                  {
+                    "name": "name",
+                    "type": "preset",
+                    "value": "lastActionResult.voteResult"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "targetPlayer",
+              "value": {
+                "selector": "ifElse",
+                "params": [
+                  {
+                    "name": "condition",
+                    "type": "computed",
+                    "value": {
+                      "selector": "equals",
+                      "params": [
+                        {
+                          "name": "arg1",
+                          "type": "computed",
+                          "value": {
+                            "selector": "listLength",
+                            "params": [
+                              {
+                                "name": "list",
+                                "type": "cached",
+                                "value": "voteResult"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "arg2",
+                          "type": "preset",
+                          "value": 0
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "thenValue",
+                    "type": "computed",
+                    "value": {
+                      "selector": "randomElement",
+                      "params": [
+                        {
+                          "name": "list",
+                          "type": "cached",
+                          "value": "allowedPlayers"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "elseValue",
+                    "type": "cached",
+                    "value": "voteResult.0"
+                  }
+                ]
+              }
+            },
             {
               "name": "chosenDesk",
               "value": {
@@ -3793,12 +4621,12 @@
                   {
                     "name": "objectName",
                     "type": "preset",
-                    "value": "lastActionResult"
+                    "value": "deskByPlayer"
                   },
                   {
                     "name": "value",
                     "type": "cached",
-                    "value": "currentHolder"
+                    "value": "targetPlayer"
                   }
                 ]
               }
@@ -3912,6 +4740,16 @@
                     "name": "arg1",
                     "type": "cached",
                     "value": "targetPlayer"
+                  }
+                ]
+              },
+              "cardNames": {
+                "selector": "createList",
+                "params": [
+                  {
+                    "name": "arg1",
+                    "type": "cached",
+                    "value": "trueType"
                   }
                 ]
               }
@@ -4117,6 +4955,16 @@
     }
   },
   "postGameActions": [
+    {
+      "key": "changeLayout",
+      "payload": {
+        "preset": {
+          "type": "HIGHLIGHT",
+          "direction": "VERTICAL",
+          "percent": 50
+        }
+      }
+    },
     {
       "key": "setImagesRow",
       "payload": {

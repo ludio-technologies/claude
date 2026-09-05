@@ -1,0 +1,513 @@
+{
+ "name": "grapheme_cards",
+ "cards": [
+  {
+   "name": "a",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/a.png",
+   "label": "A",
+   "letter": "a",
+   "rank": 1,
+   "type": "tile",
+   "weight": 0
+  },
+  {
+   "name": "b",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/b.png",
+   "label": "B",
+   "letter": "b",
+   "rank": 3,
+   "type": "tile",
+   "weight": 1
+  },
+  {
+   "name": "c",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/c.png",
+   "label": "C",
+   "letter": "c",
+   "rank": 3,
+   "type": "tile",
+   "weight": 2
+  },
+  {
+   "name": "d",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/d.png",
+   "label": "D",
+   "letter": "d",
+   "rank": 2,
+   "type": "tile",
+   "weight": 3
+  },
+  {
+   "name": "e",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/e.png",
+   "label": "E",
+   "letter": "e",
+   "rank": 1,
+   "type": "tile",
+   "weight": 4
+  },
+  {
+   "name": "f",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/f.png",
+   "label": "F",
+   "letter": "f",
+   "rank": 4,
+   "type": "tile",
+   "weight": 5
+  },
+  {
+   "name": "g",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/g.png",
+   "label": "G",
+   "letter": "g",
+   "rank": 2,
+   "type": "tile",
+   "weight": 6
+  },
+  {
+   "name": "h",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/h.png",
+   "label": "H",
+   "letter": "h",
+   "rank": 4,
+   "type": "tile",
+   "weight": 7
+  },
+  {
+   "name": "i",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/i.png",
+   "label": "I",
+   "letter": "i",
+   "rank": 1,
+   "type": "tile",
+   "weight": 8
+  },
+  {
+   "name": "j",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/j.png",
+   "label": "J",
+   "letter": "j",
+   "rank": 8,
+   "type": "tile",
+   "weight": 9
+  },
+  {
+   "name": "k",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/k.png",
+   "label": "K",
+   "letter": "k",
+   "rank": 5,
+   "type": "tile",
+   "weight": 10
+  },
+  {
+   "name": "l",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/l.png",
+   "label": "L",
+   "letter": "l",
+   "rank": 1,
+   "type": "tile",
+   "weight": 11
+  },
+  {
+   "name": "m",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/m.png",
+   "label": "M",
+   "letter": "m",
+   "rank": 3,
+   "type": "tile",
+   "weight": 12
+  },
+  {
+   "name": "n",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/n.png",
+   "label": "N",
+   "letter": "n",
+   "rank": 1,
+   "type": "tile",
+   "weight": 13
+  },
+  {
+   "name": "o",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/o.png",
+   "label": "O",
+   "letter": "o",
+   "rank": 1,
+   "type": "tile",
+   "weight": 14
+  },
+  {
+   "name": "p",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/p.png",
+   "label": "P",
+   "letter": "p",
+   "rank": 3,
+   "type": "tile",
+   "weight": 15
+  },
+  {
+   "name": "q",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/q.png",
+   "label": "Q",
+   "letter": "q",
+   "rank": 10,
+   "type": "tile",
+   "weight": 16
+  },
+  {
+   "name": "r",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/r.png",
+   "label": "R",
+   "letter": "r",
+   "rank": 1,
+   "type": "tile",
+   "weight": 17
+  },
+  {
+   "name": "s",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/s.png",
+   "label": "S",
+   "letter": "s",
+   "rank": 1,
+   "type": "tile",
+   "weight": 18
+  },
+  {
+   "name": "t",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/t.png",
+   "label": "T",
+   "letter": "t",
+   "rank": 1,
+   "type": "tile",
+   "weight": 19
+  },
+  {
+   "name": "u",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/u.png",
+   "label": "U",
+   "letter": "u",
+   "rank": 1,
+   "type": "tile",
+   "weight": 20
+  },
+  {
+   "name": "v",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/v.png",
+   "label": "V",
+   "letter": "v",
+   "rank": 4,
+   "type": "tile",
+   "weight": 21
+  },
+  {
+   "name": "w",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/w.png",
+   "label": "W",
+   "letter": "w",
+   "rank": 4,
+   "type": "tile",
+   "weight": 22
+  },
+  {
+   "name": "x",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/x.png",
+   "label": "X",
+   "letter": "x",
+   "rank": 8,
+   "type": "tile",
+   "weight": 23
+  },
+  {
+   "name": "y",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/y.png",
+   "label": "Y",
+   "letter": "y",
+   "rank": 4,
+   "type": "tile",
+   "weight": 24
+  },
+  {
+   "name": "z",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/z.png",
+   "label": "Z",
+   "letter": "z",
+   "rank": 10,
+   "type": "tile",
+   "weight": 25
+  },
+  {
+   "name": "th",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/th.png",
+   "label": "TH",
+   "letter": "th",
+   "rank": 5,
+   "type": "tile",
+   "weight": 100
+  },
+  {
+   "name": "er",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/er.png",
+   "label": "ER",
+   "letter": "er",
+   "rank": 4,
+   "type": "tile",
+   "weight": 101
+  },
+  {
+   "name": "in",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/in.png",
+   "label": "IN",
+   "letter": "in",
+   "rank": 4,
+   "type": "tile",
+   "weight": 102
+  },
+  {
+   "name": "re",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/re.png",
+   "label": "RE",
+   "letter": "re",
+   "rank": 4,
+   "type": "tile",
+   "weight": 103
+  },
+  {
+   "name": "an",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/an.png",
+   "label": "AN",
+   "letter": "an",
+   "rank": 4,
+   "type": "tile",
+   "weight": 104
+  },
+  {
+   "name": "st",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/st.png",
+   "label": "ST",
+   "letter": "st",
+   "rank": 4,
+   "type": "tile",
+   "weight": 105
+  },
+  {
+   "name": "en",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/en.png",
+   "label": "EN",
+   "letter": "en",
+   "rank": 4,
+   "type": "tile",
+   "weight": 106
+  },
+  {
+   "name": "ed",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/ed.png",
+   "label": "ED",
+   "letter": "ed",
+   "rank": 4,
+   "type": "tile",
+   "weight": 107
+  },
+  {
+   "name": "ou",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/ou.png",
+   "label": "OU",
+   "letter": "ou",
+   "rank": 4,
+   "type": "tile",
+   "weight": 108
+  },
+  {
+   "name": "ch",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/ch.png",
+   "label": "CH",
+   "letter": "ch",
+   "rank": 6,
+   "type": "tile",
+   "weight": 109
+  },
+  {
+   "name": "nd",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/nd.png",
+   "label": "ND",
+   "letter": "nd",
+   "rank": 5,
+   "type": "tile",
+   "weight": 110
+  },
+  {
+   "name": "ar",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/ar.png",
+   "label": "AR",
+   "letter": "ar",
+   "rank": 4,
+   "type": "tile",
+   "weight": 111
+  },
+  {
+   "name": "ing",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/ing.png",
+   "label": "ING",
+   "letter": "ing",
+   "rank": 10,
+   "type": "tile",
+   "weight": 112
+  },
+  {
+   "name": "ion",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/ion.png",
+   "label": "ION",
+   "letter": "ion",
+   "rank": 6,
+   "type": "tile",
+   "weight": 113
+  },
+  {
+   "name": "ent",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/ent.png",
+   "label": "ENT",
+   "letter": "ent",
+   "rank": 6,
+   "type": "tile",
+   "weight": 114
+  },
+  {
+   "name": "ter",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/ter.png",
+   "label": "TER",
+   "letter": "ter",
+   "rank": 6,
+   "type": "tile",
+   "weight": 115
+  },
+  {
+   "name": "est",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/est.png",
+   "label": "EST",
+   "letter": "est",
+   "rank": 6,
+   "type": "tile",
+   "weight": 116
+  },
+  {
+   "name": "the",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/the.png",
+   "label": "THE",
+   "letter": "the",
+   "rank": 6,
+   "type": "tile",
+   "weight": 117
+  },
+  {
+   "name": "and",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/and.png",
+   "label": "AND",
+   "letter": "and",
+   "rank": 6,
+   "type": "tile",
+   "weight": 118
+  },
+  {
+   "name": "ate",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/ate.png",
+   "label": "ATE",
+   "letter": "ate",
+   "rank": 6,
+   "type": "tile",
+   "weight": 119
+  },
+  {
+   "name": "qu",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/qu.png",
+   "label": "QU",
+   "letter": "qu",
+   "rank": 5,
+   "type": "tile",
+   "weight": 120
+  },
+  {
+   "name": "done",
+   "image": "https://res.cloudinary.com/liars-club/image/upload/images/grapheme/done.png",
+   "label": "Done",
+   "type": "ui",
+   "rank": 0,
+   "weight": 999
+  }
+ ],
+ "sets": {
+  "start": {
+   "l": 1,
+   "s": 1,
+   "n": 1,
+   "t": 1,
+   "r": 1,
+   "a": 1,
+   "e": 1,
+   "o": 1
+  },
+  "done": {
+   "done": 1
+  },
+  "free_a": {
+   "a": 12
+  },
+  "market_vowels": {
+   "a": 1,
+   "e": 3,
+   "i": 2,
+   "o": 2,
+   "u": 1
+  },
+  "market_common": {
+   "t": 2,
+   "s": 3,
+   "n": 1,
+   "r": 1,
+   "d": 1,
+   "l": 1,
+   "h": 1
+  },
+  "market_uncommon": {
+   "c": 1,
+   "m": 1,
+   "g": 1,
+   "w": 1,
+   "f": 1,
+   "y": 1,
+   "p": 1,
+   "b": 1
+  },
+  "market_rare": {
+   "v": 1,
+   "k": 1,
+   "j": 1,
+   "x": 1,
+   "q": 1,
+   "z": 1
+  },
+  "market_digraph": {
+   "th": 1,
+   "er": 1,
+   "in": 1,
+   "re": 1,
+   "st": 1,
+   "an": 1,
+   "en": 1,
+   "ed": 1,
+   "ou": 1,
+   "ch": 1,
+   "nd": 1,
+   "ar": 1
+  },
+  "market_big": {
+   "ing": 1,
+   "the": 1,
+   "and": 1,
+   "ion": 1,
+   "ent": 1,
+   "ter": 1,
+   "est": 1,
+   "ate": 1,
+   "qu": 1
+  }
+ }
+}
